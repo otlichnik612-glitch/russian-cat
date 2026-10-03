@@ -169,13 +169,21 @@ export default defineConfig(({ command, isPreview }) => ({
     tanstackStart(),
     ...(command === "build" || isPreview
       ? [
-          nitro({
-            preset: "vercel",
-            // Auto-registers server/middleware/* (the PWA install page +
-            // manifest + head-tag middleware). Nitro v3 defaults serverDir to
-            // false, so removing this silently unwires /?install=1 on deploys.
-            serverDir: "./server",
-          }),
+          nitro(
+            process.env.NETLIFY === "true"
+              ? {
+                  // Netlify's dashboard publishes dist/client. The default
+                  // Vercel preset writes .vercel/output, so that folder never
+                  // appears and the deploy fails.
+                  preset: "netlify",
+                  serverDir: "./server",
+                  output: { publicDir: "dist/client" },
+                }
+              : {
+                  preset: "vercel",
+                  serverDir: "./server",
+                },
+          ),
         ]
       : []),
     viteReact(),
