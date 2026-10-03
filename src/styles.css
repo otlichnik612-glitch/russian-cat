@@ -1,0 +1,97 @@
+@import "@fontsource/nunito-sans/400.css";
+@import "@fontsource/nunito-sans/600.css";
+@import "@fontsource/nunito-sans/700.css";
+@import "@fontsource/nunito-sans/400-italic.css";
+@import "@fontsource/fraunces/600.css";
+@import "@fontsource/fraunces/700.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --color-paper: #f6f0e6;
+  --color-paper-deep: #efe2cf;
+  --color-card: #fffdf8;
+  --color-ink: #1c1712;
+  --color-muted: #5c5348;
+  --color-line: #e3d3bc;
+  --color-terra: #9a3418;
+  --color-on-terra: #fff7f2;
+  --color-garden: #1f5c4a;
+  --color-on-garden: #f4faf7;
+  --radius-card: 1.5rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  .display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-garden);
+    outline-offset: 3px;
+  }
+}
+
+.safe-bottom {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 220ms ease-out;
+}
+.pop {
+  animation: pop 280ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .pop {
+    animation: none;
+  }
+}
