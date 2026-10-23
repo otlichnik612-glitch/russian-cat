@@ -1,41 +1,49 @@
 import { useEffect, useId, useState } from "react";
 import { ChevronLeft } from "lucide-react";
+import { cityName } from "@/lib/course/curriculum";
 import { downloadFlashcards, downloadLessonDoc } from "@/lib/course/downloads";
+import { speakers } from "@/lib/course/speakers";
 import { useProgress } from "@/lib/course/progress";
 import { useSpeech } from "@/lib/course/speech";
-import type { Activity, Lesson } from "@/lib/course/types";
+import type { Activity, Lesson, Skill } from "@/lib/course/types";
 import { ActivityCard } from "./activities";
-import { Button, PlayButton, Ru } from "./ui";
+import { Button, Picture, PlayButton, Ru } from "./ui";
 
 type Frame =
   | { type: "goals" }
   | { type: "vocab" }
+  | { type: "letters" }
   | { type: "dialogue" }
   | { type: "grammar" }
-  | { type: "single"; kicker: string; title: string; items: Activity[] }
+  | { type: "single"; kicker: string; title: string; items: Activity[]; listenFirst?: boolean }
   | { type: "stack"; kicker: string; title: string; intro?: string; items: Activity[] };
 
+const skillLabels: Record<Skill, string> = {
+  words: "Words",
+  listening: "Listening",
+  grammar: "Grammar",
+  letters: "Letters",
+  speaking: "Speaking",
+  review: "Review · earlier lessons",
+};
+
+const numberWords = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+
 function framesOf(lesson: Lesson): Frame[] {
-  const frames: Frame[] = [
-    { type: "goals" },
-    { type: "vocab" },
-    { type: "single", kicker: "Vocabulary check", title: "A quick check", items: lesson.miniCheck },
+  const frames: Frame[] = [{ type: "goals" }, { type: "vocab" }];
+  if (lesson.letters?.length) frames.push({ type: "letters" });
+  frames.push(
+    {
+      type: "single",
+      kicker: "Listen first",
+      title: "Listen to the dialogue",
+      items: [lesson.dialogue.gist],
+      listenFirst: true,
+    },
     { type: "dialogue" },
-    { type: "single", kicker: "Comprehension", title: "Did you follow?", items: lesson.comprehension },
     { type: "grammar" },
-    { type: "single", kicker: "Grammar practice", title: "Try the pattern", items: lesson.grammarPractice },
-    { type: "stack", kicker: "Speaking", title: "Say it aloud", intro: lesson.speakingIntro, items: lesson.speaking },
-  ];
-  if (lesson.context?.length) {
-    frames.push({
-      type: "stack",
-      kicker: "Context practice",
-      title: "In the scene",
-      intro: lesson.contextIntro,
-      items: lesson.context,
-    });
-  }
-  frames.push({ type: "single", kicker: "Review", title: "Only words you know", items: lesson.review });
+    { type: "single", kicker: "Practice", title: "Your turn", items: lesson.tasks },
+  );
   return frames;
 }
 
@@ -117,25 +125,31 @@ export function LessonPlayer({
 
   const kicker =
     frame.type === "goals"
-      ? `A1 · Paris · Lesson ${lesson.number} of 7`
+      ? `${lesson.level} · ${cityName(lesson.cityId)} · Lesson ${lesson.number} of 7`
       : frame.type === "vocab"
         ? "Vocabulary Focus"
         : frame.type === "dialogue"
           ? "Dialogue"
           : frame.type === "grammar"
             ? "Grammar Focus"
-            : frame.kicker;
+            : frame.type === "letters"
+              ? "Russian letters"
+              : frame.type === "single" && single?.skill && !frame.listenFirst
+                ? skillLabels[single.skill]
+                : frame.kicker;
 
   const title =
     frame.type === "goals"
       ? lesson.title
       : frame.type === "vocab"
-        ? "Ten new phrases"
+        ? `${numberWords[lesson.vocab.length] ?? lesson.vocab.length} new phrases`
         : frame.type === "dialogue"
           ? lesson.dialogue.title
           : frame.type === "grammar"
             ? "How it works"
-            : frame.title;
+            : frame.type === "letters"
+              ? "New letters"
+              : frame.title;
 
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-lg flex-col">
@@ -185,11 +199,15 @@ export function LessonPlayer({
         {frame.type === "vocab" ? <Vocab lesson={lesson} /> : null}
         {frame.type === "dialogue" ? <Dialogue lesson={lesson} /> : null}
         {frame.type === "grammar" ? <Grammar lesson={lesson} /> : null}
+        {frame.type === "letters" ? <Letters lesson={lesson} /> : null}
+        {frame.type === "single" && frame.listenFirst ? <ListenFirst lesson={lesson} /> : null}
         {frame.type === "single" && single ? (
           <div className="rise" key={single.id}>
-            <p className="mb-3 text-muted">
-              Exercise {sub + 1} of {frame.items.length}
-            </p>
+            {frame.items.length > 1 ? (
+              <p className="mb-3 text-muted">
+                Exercise {sub + 1} of {frame.items.length}
+              </p>
+            ) : null}
             <ActivityCard
               activity={single}
               solved={Boolean(solved[single.id])}
@@ -266,13 +284,60 @@ function Vocab({ lesson }: { lesson: Lesson }) {
       {lesson.vocabNote ? <p className="rounded-3xl bg-paper-deep p-4">{lesson.vocabNote}</p> : null}
       {lesson.vocab.map((item) => (
         <article key={item.id} className="flex flex-col gap-3 rounded-3xl border border-line bg-card p-4">
-          <img src={item.image} alt="" className="aspect-square w-full rounded-2xl object-cover" />
+          <Picture src={item.image} className="aspect-square w-full rounded-2xl object-cover" />
           <h2 className="text-4xl">
             <Ru>{item.ru}</Ru>
           </h2>
+          {item.translit ? (
+            <p className="-mt-2 text-lg text-muted" aria-hidden>
+              {item.translit}
+            </p>
+          ) : null}
           <p>{item.en}</p>
           <p className="sr-only">{item.a11y}</p>
           <PlayButton id={item.id} text={item.ru} label={item.audioLabel} />
+        </article>
+      ))}
+    </div>
+  );
+}
+
+function ListenFirst({ lesson }: { lesson: Lesson }) {
+  const { playAll, playing, stop } = useSpeech();
+  const allId = `${lesson.id}-first`;
+  return (
+    <div className="flex flex-col gap-3 rounded-3xl bg-paper-deep p-4">
+      <p>Listen without the text first. Then answer the question. You will see the text next.</p>
+      <Button
+        aria-label={playing === allId ? "Stop the dialogue" : "Play the dialogue"}
+        onClick={() =>
+          playing === allId ? stop() : playAll(lesson.dialogue.lines.map((line) => ({ id: allId, text: line.ru, voice: line.speaker })))
+        }
+      >
+        {playing === allId ? "Stop" : "Play the dialogue"}
+      </Button>
+    </div>
+  );
+}
+
+function Letters({ lesson }: { lesson: Lesson }) {
+  return (
+    <div className="flex flex-col gap-4">
+      <p>Russian uses the Cyrillic alphabet. Here are the letters from today's phrases.</p>
+      {(lesson.letters ?? []).map((card) => (
+        <article key={card.letter} className="flex flex-col gap-2 rounded-3xl border border-line bg-card p-4">
+          <p className="text-6xl font-bold" lang="ru">
+            {card.letter}
+          </p>
+          <p className="text-xl">{card.sound}</p>
+          {card.trap ? <p className="font-bold text-terra">{card.trap}</p> : null}
+          <div className="flex flex-wrap items-center gap-3">
+            <p className="text-2xl">
+              <Ru>{card.example}</Ru>
+            </p>
+            <p className="text-muted">{card.exampleEn}</p>
+          </div>
+          <PlayButton id={`${lesson.id}-letter-${card.letter}`} text={card.example} label={`Play ${card.example}`} />
         </article>
       ))}
     </div>
@@ -288,15 +353,15 @@ function Dialogue({ lesson }: { lesson: Lesson }) {
       <Button
         variant="ghost"
         aria-label={playing === allId ? "Stop the dialogue" : "Play the entire dialogue"}
-        onClick={() => (playing === allId ? stop() : playAll(lines.map((line) => ({ id: allId, text: line.ru }))))}
+        onClick={() => (playing === allId ? stop() : playAll(lines.map((line) => ({ id: allId, text: line.ru, voice: line.speaker }))))}
       >
         {playing === allId ? "Stop" : "Play all"}
       </Button>
       {lesson.dialogue.note ? <p className="text-muted">{lesson.dialogue.note}</p> : null}
       <ol className="flex flex-col gap-3">
         {lines.map((line, index) => {
-          const name = line.speaker === "tom" ? "Tom" : "Murzik";
-          const ruName = line.speaker === "tom" ? "Том" : "Мурзик";
+          const name = speakers[line.speaker].en;
+          const ruName = speakers[line.speaker].ru;
           const mine = line.speaker === "murzik";
           return (
             <li key={`${line.ru}-${index}`} className={mine ? "pl-6" : "pr-6"}>
@@ -310,7 +375,7 @@ function Dialogue({ lesson }: { lesson: Lesson }) {
                   {name}: {line.en}
                 </p>
                 <div className="mt-3">
-                  <PlayButton id={`${lesson.id}-line-${index}`} text={line.ru} label={`Play ${name}: ${line.ru}`} />
+                  <PlayButton id={`${lesson.id}-line-${index}`} text={line.ru} label={`Play ${name}: ${line.ru}`} voice={line.speaker} />
                 </div>
               </div>
             </li>

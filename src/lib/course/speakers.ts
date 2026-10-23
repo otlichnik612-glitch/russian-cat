@@ -1,0 +1,30 @@
+import type { SpeakerId } from "./types";
+
+/** Display names for everyone who speaks in a dialogue. */
+export const speakers: Record<SpeakerId, { en: string; ru: string }> = {
+  tom: { en: "Tom", ru: "Том" },
+  murzik: { en: "Murzik", ru: "Мурзик" },
+  neighbour: { en: "Madame Dubois", ru: "Мадам Дюбуа" },
+  officer: { en: "Officer", ru: "Пограничник" },
+  passerby: { en: "Passer-by", ru: "Прохожая" },
+  waiter: { en: "Waiter", ru: "Официант" },
+  seller: { en: "Seller", ru: "Продавщица" },
+  cashier: { en: "Cashier", ru: "Кассир" },
+  barsik: { en: "Barsik", ru: "Барсик" },
+  musya: { en: "Musya", ru: "Муся" },
+  aunt: { en: "Aunt Olya", ru: "Тётя Оля" },
+  uncle: { en: "Uncle Petya", ru: "Дядя Петя" },
+  marco: { en: "Marco", ru: "Марко" },
+  irina: { en: "Irina", ru: "Ирина" },
+  karl: { en: "Karl", ru: "Карл" },
+  doctor: { en: "Dr Anna Petrovna", ru: "Анна Петровна" },
+  pharmacist: { en: "Pharmacist", ru: "Фармацевт" },
+  katya: { en: "Katya", ru: "Катя" },
+  editor: { en: "Editor", ru: "Редактор" },
+  nika: { en: "Nika", ru: "Ника" },
+  receptionist: { en: "Receptionist", ru: "Администратор" },
+  ewa: { en: "Pani Ewa", ru: "Пани Ева" },
+  dora: { en: "Dora", ru: "Дора" },
+  jamie: { en: "Jamie", ru: "Джейми" },
+  lev: { en: "The cat in the hat", ru: "Кот в шляпе" },
+};

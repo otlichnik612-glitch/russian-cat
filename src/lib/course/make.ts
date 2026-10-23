@@ -1,10 +1,12 @@
-import type { Activity, DialogueLine, ScriptLine, VocabItem } from "./types";
+import type { Activity, DialogueLine, LetterCard, ScriptLine, Skill, SpeakerId, VocabItem } from "./types";
 
 type Extra = {
   help?: string;
   promptLang?: "ru";
   image?: string;
   imageA11y?: string;
+  skill?: Skill;
+  audio?: string;
 };
 
 export function v(
@@ -14,11 +16,12 @@ export function v(
   a11y: string,
   audioLabel: string,
   image: string,
+  translit?: string,
 ): VocabItem {
-  return { id, ru, en, a11y, audioLabel, image };
+  return { id, ru, en, a11y, audioLabel, image, translit };
 }
 
-export function line(speaker: "tom" | "murzik", ru: string, en: string): DialogueLine {
+export function line(speaker: SpeakerId, ru: string, en: string): DialogueLine {
   return { speaker, ru, en };
 }
 
@@ -52,8 +55,14 @@ export function multi(
   };
 }
 
-export function tf(id: string, statement: string, correct: boolean, prompt = "True or false"): Activity {
-  return { kind: "truefalse", id, prompt, statement, correct };
+export function tf(
+  id: string,
+  statement: string,
+  correct: boolean,
+  prompt = "True or false",
+  extra?: Extra,
+): Activity {
+  return { kind: "truefalse", id, prompt, statement, correct, ...extra };
 }
 
 export function order(id: string, prompt: string, items: string[]): Activity {
@@ -67,19 +76,21 @@ export function fill(
   after: string,
   answer: string,
   options: string[],
+  extra?: Extra,
 ): Activity {
-  return { kind: "fill", id, prompt, before, after, answer, options };
+  return { kind: "fill", id, prompt, before, after, answer, options, ...extra };
 }
 
 export function build(id: string, prompt: string, words: string[]): Activity {
   return { kind: "build", id, prompt, words, help: "Use Up and Down to build the sentence." };
 }
 
-export function match(id: string, prompt: string, pairs: [string, string][]): Activity {
+export function match(id: string, prompt: string, pairs: [string, string][], extra?: Extra): Activity {
   return {
     kind: "match",
     id,
     prompt,
+    ...extra,
     pairs: pairs.map(([left, right]) => ({ left, right })),
   };
 }
@@ -91,11 +102,11 @@ export function speak(
   modelEn: string,
   extra?: Extra,
 ): Activity {
-  return { kind: "speak", id, prompt, model, modelEn, promptLang: "ru", ...extra };
+  return { kind: "speak", id, prompt, model, modelEn, promptLang: "ru", skill: "speaking", ...extra };
 }
 
-export function script(id: string, prompt: string, lines: ScriptLine[]): Activity {
-  return { kind: "script", id, prompt, lines };
+export function script(id: string, prompt: string, lines: ScriptLine[], extra?: Extra): Activity {
+  return { kind: "script", id, prompt, lines, ...extra };
 }
 
 export function seededShuffle<T>(items: readonly T[], seed: string): T[] {
@@ -121,4 +132,36 @@ export function seededShuffle<T>(items: readonly T[], seed: string): T[] {
 
 export function hasCyrillic(text: string) {
   return /[А-Яа-яЁё]/.test(text);
+}
+
+/** Listen to Russian (text hidden) and choose. */
+export function listen(
+  id: string,
+  prompt: string,
+  audio: string,
+  options: [string, boolean][],
+  extra?: Extra,
+): Activity {
+  return choice(id, prompt, options, { skill: "listening", ...extra, audio });
+}
+
+/** Build a word from its letters. */
+export function spell(id: string, prompt: string, word: string, extra?: string[], help?: string): Activity {
+  return { kind: "spell", id, prompt, word, extra, help, skill: "letters" };
+}
+
+/** Choose the missing letter inside a word: before + ? + after. */
+export function missing(
+  id: string,
+  prompt: string,
+  before: string,
+  after: string,
+  answer: string,
+  options: string[],
+): Activity {
+  return { kind: "fill", id, prompt, before, after, answer, options, tight: true, skill: "letters" };
+}
+
+export function letter(letter: string, sound: string, example: string, exampleEn: string, trap?: string): LetterCard {
+  return { letter, sound, example, exampleEn, trap };
 }

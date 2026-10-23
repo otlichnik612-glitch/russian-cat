@@ -1,7 +1,8 @@
 import { Volume2 } from "lucide-react";
-import { forwardRef, type ReactNode } from "react";
+import { forwardRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { hasCyrillic } from "@/lib/course/make";
+import type { VoiceId } from "@/lib/course/audio";
 import { useSpeech } from "@/lib/course/speech";
 
 export const Button = forwardRef<
@@ -37,11 +38,14 @@ export function PlayButton({
   text,
   label,
   lang = "ru-RU",
+  voice,
 }: {
   id: string;
   text: string;
   label: string;
   lang?: string;
+  /** Who says it. Leave empty for Murzik's narrator voice. */
+  voice?: VoiceId;
 }) {
   const { playing, play, stop } = useSpeech();
   const on = playing === id;
@@ -51,7 +55,7 @@ export function PlayButton({
       className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-full bg-garden px-4 text-base font-bold text-on-garden"
       aria-label={on ? label.replace(/^Play/, "Stop") : label}
       aria-pressed={on}
-      onClick={() => (on ? stop() : play(id, text, lang))}
+      onClick={() => (on ? stop() : play(id, text, lang, voice))}
     >
       <Volume2 aria-hidden className="size-5" />
       <span aria-hidden>{on ? "Stop" : "Play"}</span>
@@ -70,12 +74,24 @@ export function Illustration({
   className?: string;
   ratio?: string;
 }) {
+  const [missingSrc, setMissingSrc] = useState<string | null>(null);
+  if (missingSrc === src) return a11y ? <p className="sr-only">{a11y}</p> : null;
   return (
     <figure className={cn("overflow-hidden rounded-3xl bg-paper-deep", className)}>
-      <img src={src} alt="" className={cn("w-full object-cover", ratio)} />
+      <img src={src} alt="" className={cn("w-full object-cover", ratio)} onError={() => setMissingSrc(src)} />
       {a11y ? <figcaption className="sr-only">{a11y}</figcaption> : null}
     </figure>
   );
+}
+
+/**
+ * A decorative picture that quietly disappears if its file is not there yet,
+ * so a lesson still works while new illustrations are being drawn.
+ */
+export function Picture({ src, className }: { src: string; className?: string }) {
+  const [missingSrc, setMissingSrc] = useState<string | null>(null);
+  if (missingSrc === src) return null;
+  return <img src={src} alt="" className={className} onError={() => setMissingSrc(src)} />;
 }
 
 export function RussianLine({ text, id, label }: { text: string; id: string; label: string }) {

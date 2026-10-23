@@ -25,6 +25,19 @@ export function ActivityCard({
         {activity.promptLang === "ru" ? <Ru>{activity.prompt}</Ru> : activity.prompt}
       </h3>
       {activity.help ? <p className="text-muted">{activity.help}</p> : null}
+      {activity.audio ? (
+        <div className="flex flex-col gap-2 rounded-3xl bg-paper-deep p-4">
+          <PlayButton id={`${activity.id}-audio`} text={activity.audio} label="Play the Russian" />
+          {solved ? (
+            <p className="text-xl">
+              <span className="text-muted">You heard: </span>
+              <Ru>{activity.audio}</Ru>
+            </p>
+          ) : (
+            <p className="text-muted">Listen. You can play it as many times as you like.</p>
+          )}
+        </div>
+      ) : null}
       <Body activity={activity} solved={solved} onSolved={onSolved} onSlot={onSlot} />
     </div>
   );
@@ -109,6 +122,13 @@ function Graded({
     activity.kind === "build" ? seededShuffle(activity.words, activity.id) : [],
   );
   const [pairs, setPairs] = useState<Record<number, string>>({});
+  const tiles = useMemo(
+    () => (activity.kind === "spell" ? seededShuffle([...Array.from(activity.word), ...(activity.extra ?? [])], activity.id) : []),
+    [activity],
+  );
+  const [spelled, setSpelled] = useState<number[]>(() =>
+    activity.kind === "spell" && solved ? Array.from(activity.word).map((ch) => tiles.indexOf(ch)) : [],
+  );
   const [blanks, setBlanks] = useState<Record<number, string>>({});
   const rights = useMemo(
     () => (activity.kind === "match" ? seededShuffle(activity.pairs.map((pair) => pair.right), activity.id) : []),
@@ -130,6 +150,8 @@ function Graded({
       case "order":
       case "build":
         return true;
+      case "spell":
+        return spelled.length === Array.from(activity.word).length;
       case "match":
         return activity.pairs.every((_, index) => pairs[index]);
       case "script":
@@ -140,7 +162,17 @@ function Graded({
   })();
 
   checkRef.current = () => {
-    const ok = isCorrect(activity, { picked, multi, truth, word, lines, built, pairs, blanks });
+    const ok = isCorrect(activity, {
+      picked,
+      multi,
+      truth,
+      word,
+      lines,
+      built,
+      pairs,
+      blanks,
+      spelled: spelled.map((index) => tiles[index] ?? "").join(""),
+    });
     if (ok) {
       setStatus("good");
       onSolved();
@@ -183,6 +215,7 @@ function Graded({
             if (status === "bad") setStatus("idle");
           }}
           name={activity.id}
+          noAudio={Boolean(activity.audio)}
         />
       ) : null}
       {activity.kind === "multi" ? (
@@ -231,7 +264,14 @@ function Graded({
       {activity.kind === "fill" ? (
         <div className="flex flex-col gap-3">
           <p className="text-2xl">
-            <Ru>{`${activity.before} ${word ?? "______"} ${activity.after}`.replace(/\s+/g, " ").trim()}</Ru>
+            <Ru>
+              {activity.tight
+                ? `${activity.before}${word ?? "_"}${activity.after}`
+                : `${activity.before} ${word ?? "______"} ${activity.after}`
+                    .replace(/\s+/g, " ")
+                    .trim()
+                    .replace(/ ([.,!?»])/g, "$1")}
+            </Ru>
           </p>
           <div className="flex flex-col gap-2">
             {activity.options.map((option) => (
@@ -253,6 +293,64 @@ function Graded({
       ) : null}
       {activity.kind === "order" ? <Arrange items={lines} setItems={setLines} /> : null}
       {activity.kind === "build" ? <Arrange items={built} setItems={setBuilt} /> : null}
+      {activity.kind === "spell" ? (
+        <div className="flex flex-col gap-3">
+          <p
+            className="min-h-16 rounded-2xl border border-line bg-card px-4 py-3 text-4xl tracking-wide"
+            lang="ru"
+            aria-live="polite"
+          >
+            {spelled.length ? <Ru>{spelled.map((index) => tiles[index]).join("")}</Ru> : <span className="text-muted text-lg">Tap the letters in order</span>}
+          </p>
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Letters">
+            {tiles.map((tile, index) => {
+              const used = spelled.includes(index);
+              return (
+                <button
+                  key={`${tile}-${index}`}
+                  type="button"
+                  lang="ru"
+                  disabled={used || status === "good"}
+                  aria-label={`Letter ${tile}`}
+                  className="min-h-14 min-w-14 rounded-2xl border border-line bg-card px-3 text-2xl font-bold disabled:opacity-35"
+                  onClick={() => {
+                    setSpelled((cur) => [...cur, index]);
+                    if (status === "bad") setStatus("idle");
+                  }}
+                >
+                  {tile}
+                </button>
+              );
+            })}
+          </div>
+          {status !== "good" ? (
+            <div className="grid grid-cols-2 gap-2">
+              <Button
+                variant="ghost"
+                disabled={!spelled.length}
+                onClick={() => {
+                  setSpelled((cur) => cur.slice(0, -1));
+                  if (status === "bad") setStatus("idle");
+                }}
+              >
+                Undo
+              </Button>
+              <Button
+                variant="ghost"
+                disabled={!spelled.length}
+                onClick={() => {
+                  setSpelled([]);
+                  if (status === "bad") setStatus("idle");
+                }}
+              >
+                Clear
+              </Button>
+            </div>
+          ) : (
+            <PlayButton id={`${activity.id}-word`} text={activity.word} label={`Play ${activity.word}`} />
+          )}
+        </div>
+      ) : null}
       {activity.kind === "match" ? (
         <div className="flex flex-col gap-4">
           {activity.pairs.map((pair, index) => (
@@ -332,6 +430,7 @@ function isCorrect(
     built: string[];
     pairs: Record<number, string>;
     blanks: Record<number, string>;
+    spelled: string;
   },
 ) {
   switch (activity.kind) {
@@ -349,6 +448,8 @@ function isCorrect(
       return state.lines.join("|") === activity.items.join("|");
     case "build":
       return state.built.join("|") === activity.words.join("|");
+    case "spell":
+      return state.spelled.toLowerCase() === activity.word.toLowerCase();
     case "match":
       return activity.pairs.every((pair, index) => state.pairs[index] === pair.right);
     case "script":
@@ -365,6 +466,7 @@ function OptionList({
   correctIndex,
   onPick,
   name,
+  noAudio,
 }: {
   labels: string[];
   selected: number | null;
@@ -372,6 +474,7 @@ function OptionList({
   correctIndex: number;
   onPick: (index: number) => void;
   name: string;
+  noAudio?: boolean;
 }) {
   return (
     <div className="flex flex-col gap-2" role="radiogroup" aria-label={name}>
@@ -388,6 +491,7 @@ function OptionList({
             status === "good" && selected === index && index !== correctIndex,
           )}
           onClick={() => onPick(index)}
+          noAudio={noAudio}
         />
       ))}
     </div>
@@ -402,6 +506,7 @@ function ChoiceRow({
   pressed,
   role,
   checked,
+  noAudio,
 }: {
   label: string;
   playId: string;
@@ -410,6 +515,7 @@ function ChoiceRow({
   pressed?: boolean;
   role?: "radio";
   checked?: boolean;
+  noAudio?: boolean;
 }) {
   return (
     <div className="flex items-stretch gap-2">
@@ -423,7 +529,7 @@ function ChoiceRow({
       >
         {hasCyrillic(label) ? <Ru className="text-xl">{label}</Ru> : label}
       </button>
-      {hasCyrillic(label) ? <PlayButton id={playId} text={label} label={`Play ${label}`} /> : null}
+      {hasCyrillic(label) && !noAudio ? <PlayButton id={playId} text={label} label={`Play ${label}`} /> : null}
     </div>
   );
 }

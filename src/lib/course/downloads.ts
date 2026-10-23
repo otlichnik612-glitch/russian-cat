@@ -1,4 +1,6 @@
+import { cityName } from "./curriculum";
 import { seededShuffle } from "./make";
+import { speakers } from "./speakers";
 import type { Activity, Lesson, ScriptLine } from "./types";
 
 function saveBlob(blob: Blob, filename: string) {
@@ -22,6 +24,7 @@ function slug(title: string) {
 function activityText(activity: Activity): string[] {
   const lines: string[] = [activity.prompt];
   if (activity.help) lines.push(activity.help);
+  if (activity.audio) lines.push(`Listen (or read): ${activity.audio}`);
   switch (activity.kind) {
     case "choice":
     case "multi":
@@ -38,11 +41,21 @@ function activityText(activity: Activity): string[] {
       seededShuffle(activity.items, `${activity.id}-sheet`).forEach((item) => lines.push(`• ${item}`));
       break;
     case "fill":
-      lines.push(`${activity.before} ______ ${activity.after}`.trim());
+      lines.push(
+        activity.tight
+          ? `${activity.before}_${activity.after}`
+          : `${activity.before} ______ ${activity.after}`.trim().replace(/ ([.,!?»])/g, "$1"),
+      );
       lines.push(`Options: ${activity.options.join(" · ")}`);
       break;
     case "build":
       lines.push(seededShuffle(activity.words, `${activity.id}-sheet`).join(" / "));
+      break;
+    case "spell":
+      lines.push(
+        `Letters: ${seededShuffle([...Array.from(activity.word), ...(activity.extra ?? [])], `${activity.id}-sheet`).join(" ")}`,
+        "Write the word: ______",
+      );
       break;
     case "match": {
       lines.push("Column A");
@@ -78,32 +91,41 @@ export async function downloadLessonDoc(lesson: Lesson) {
 
   push(`Lesson ${lesson.number} — ${lesson.title}`, [
     lesson.level,
-    "Paris",
+    cityName(lesson.cityId),
     `About ${lesson.minutes} minutes`,
     "Student copy. Answers are not included.",
   ]);
   push("Lesson goal", lesson.goals.map((goal) => `• ${goal}`));
   push(
     "Vocabulary Focus",
-    lesson.vocab.flatMap((item, index) => [`${index + 1}. ${item.ru}`, item.en, ""]),
+    lesson.vocab.flatMap((item, index) => [
+      `${index + 1}. ${item.ru}${item.translit ? `  (${item.translit})` : ""}`,
+      item.en,
+      "",
+    ]),
   );
   if (lesson.vocabNote) push("Note", [lesson.vocabNote]);
-  push(
-    "Vocabulary practice",
-    lesson.miniCheck.flatMap((item, index) => [`${index + 1}.`, ...activityText(item), ""]),
-  );
+  if (lesson.letters?.length) {
+    push(
+      "New letters",
+      lesson.letters.flatMap((card) => [
+        `${card.letter} — ${card.sound}`,
+        `${card.example} (${card.exampleEn})`,
+        ...(card.trap ? [card.trap] : []),
+        "",
+      ]),
+    );
+  }
   push(`Dialogue: ${lesson.dialogue.title}`, [
     ...lesson.dialogue.lines.flatMap((line) => {
-      const name = line.speaker === "tom" ? "Tom" : "Murzik";
-      const ruName = line.speaker === "tom" ? "Том" : "Мурзик";
+      const name = speakers[line.speaker].en;
+      const ruName = speakers[line.speaker].ru;
       return [`${ruName}: ${line.ru}`, `${name}: ${line.en}`];
     }),
     ...(lesson.dialogue.note ? ["", lesson.dialogue.note] : []),
+    "",
+    ...activityText(lesson.dialogue.gist),
   ]);
-  push(
-    "Comprehension",
-    lesson.comprehension.flatMap((item, index) => [`${index + 1}.`, ...activityText(item), ""]),
-  );
   push(
     "Grammar Focus",
     lesson.grammar.flatMap((section) => [
@@ -114,22 +136,8 @@ export async function downloadLessonDoc(lesson: Lesson) {
     ]),
   );
   push(
-    "Grammar practice",
-    lesson.grammarPractice.flatMap((item, index) => [`${index + 1}.`, ...activityText(item), ""]),
-  );
-  push("Speaking practice", [
-    lesson.speakingIntro ?? "Say the answers aloud.",
-    ...lesson.speaking.flatMap((item, index) => [`${index + 1}.`, ...activityText(item), ""]),
-  ]);
-  if (lesson.context?.length) {
-    push("Context practice", [
-      lesson.contextIntro ?? "",
-      ...lesson.context.flatMap((item, index) => [`${index + 1}.`, ...activityText(item), ""]),
-    ]);
-  }
-  push(
-    "Review",
-    lesson.review.flatMap((item, index) => [`${index + 1}.`, ...activityText(item), ""]),
+    "Practice",
+    lesson.tasks.flatMap((item, index) => [`${index + 1}.`, ...activityText(item), ""]),
   );
 
   const children = blocks.flatMap(([heading, ...body]) => [

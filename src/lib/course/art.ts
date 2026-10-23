@@ -38,3 +38,11 @@ export const images = {
   park: "/art/park.jpg",
   street: "/art/street.jpg",
 } as const;
+
+/**
+ * A picture for one phrase or scene, stored at public/art/<name>.jpg.
+ * New pictures are listed with drawing notes in docs/grok-image-notes.md.
+ */
+export function pic(name: string): string {
+  return `/art/${name}.jpg`;
+}

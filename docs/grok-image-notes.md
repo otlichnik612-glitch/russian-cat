@@ -1,0 +1,1800 @@
+# Picture notes for Grok Build
+
+Every picture below is new. Draw exactly what the note says, save it as a JPEG at the exact path, and change nothing else.
+
+## Style for every picture
+
+- Warm storybook illustration: soft watercolour and coloured-pencil texture on cream paper, gentle natural light. Match the existing pictures in `public/art/` (for example `murzik.jpg`, `tom.jpg`, `greet.jpg`, `london.jpg`).
+- **Murzik**: a small ginger tabby kitten with big amber eyes, a white chest and white paws, wearing a rust-orange knitted scarf. He stands and walks upright on two legs and is very expressive. Same Murzik in every picture.
+- **Tom**: a young man of about 25 with curly brown hair, a long sage-green wool coat, a cream cable-knit sweater, dark navy trousers and brown leather boots. Same Tom in every picture.
+- **Madame Dubois** (Paris): a kind elderly French lady with silver hair in a bun, a small hat and a lavender cardigan.
+- **Passport officer** (London): a friendly man in a navy uniform with glasses. **Passer-by** (London): a woman of about 30 in a beige trench coat.
+- **Waiter** (Madrid): a man of about 40 with a black waistcoat, white shirt and long white apron. **Market seller** (Madrid): a cheerful woman of about 50 with curly dark hair and a green apron. **Cashier** (Madrid): a young woman with a ponytail and a blue shop shirt.
+- **Grandma Asya** (seen only in old photos and paintings): a slim ginger cat like Murzik, young, with a paint brush and a small beret. **Tea-shop lady** (London): a kind old lady with white hair and a tea-coloured shawl. **Café owner** (Madrid): an old man with a grey beard and a white shirt with rolled sleeves.
+- **Lev** (from Berlin on): an elderly white cat with soft fluffy fur, kind blue eyes and a warm, gentle smile; a grey felt hat and a long navy coat. He walks upright like Murzik and is drawn in the same warm, cheerful style. He is a good, friendly character — never dark, sad, sneaky or scary. In Berlin he is only seen from a distance, smiling.
+- **Irina** (Berlin): a Russian woman of about 50 with short ash-blond hair, glasses on a chain and a cosy knitted cardigan. **Ticket clerk** (Berlin station): a friendly man with a moustache and a red cap.
+- **Amsterdam**: **bike-rental woman** — tall, with a blond braid and an orange jacket; **museum cashier and guard** — a young man with round glasses and a friendly older guard in a dark uniform; **passer-by** — a woman of about 40 on a bicycle with a basket; **old fisherman** — a cheerful old man with a white beard and a yellow raincoat. Lev appears on a canal bridge (kind, smiling, pointing the way).
+- **Vienna**: **Karl** — a gentle old Austrian street musician (a human) with white hair, a grey moustache, a brown corduroy jacket and a violin; **coffee-house owner** — a round, smiling man with an apron. **Prague**: **Dr Anna Petrovna** — a kind Russian doctor of about 60 (a human) with grey hair in a bun, round glasses, a warm cardigan and a doctor's bag; **pharmacist** — a friendly young woman in a white coat; **shop assistant** — a young woman with a measuring tape around her neck. Murzik gets a new dark-blue knitted hat in Prague 2 and wears it from then on in Prague.
+- **Lisbon**: **Katya** — a lively Russian student of about 20 (a human) with a long light-brown braid, jeans and a yellow backpack; **editor** — a confident woman of about 45 with short dark hair and red glasses; **colleagues** — friendly young people in a bright office. Tom gets a new camera in Lisbon 6 and gives his old one to Murzik. **Athens**: **Nika** — a cheerful young woman of about 22 from a Greek-Russian family, with dark curly hair and a white summer dress; her **grandmother** (small, white hair, black dress, very kind), **grandfather** (big white moustache) and **mother**.
+- **Istanbul**: **receptionist** — a polite young man with neat black hair and a dark-red waistcoat; **porter**; **post office clerk** — a woman with glasses; **Pamuk** — the hotel cat: an ordinary fluffy white cat on four legs (not dressed, not upright — a normal animal, unlike Murzik). **Warsaw**: **Pani Ewa** — a lively elderly Polish lady (a human) with short silver hair, a red beret, a long green coat and bright eyes. **Madame Dubois** appears again in Warsaw 4, writing a letter in Paris.
+- **Budapest**: **Dora** — a curious girl of about ten (a human) with two long brown braids, a red cardigan and a big smile; her **grandmother** owns the guesthouse (round glasses, embroidered apron). **Edinburgh**: **Jamie** — Tom's school friend, a tall young man with messy red hair, freckles and a thick knitted jumper. In Edinburgh 6 **Lev** finally meets Murzik face to face under a street lamp: still kind, warm and gentle, never scary, even in the mist.
+- **Grandma Asya's two Paris postcards must look different.** The same on both: brown-ink handwriting and a small painted ginger cat in a corner (Asya's mark). Never show readable words.
+  1. **The door postcard** (prologue pictures `prologue/1.jpg`, `prologue/2.jpg`): small, cream-coloured, with soft worn corners. Front: a watercolour of a winding path with tiny paw prints. Back: handwriting and the cat. **No stamp, no address.**
+  2. **The London postcard** (found in the old desk in Paris 6; seen again in London and Rome): older, pale blue-grey, folded once with a crease. Front: a watercolour of Big Ben and the river in the rain. Back: handwriting, the cat, **a red stamp and a round London postmark.**
+  In `paris/postcards.jpg` both lie side by side, so the difference must be clear.
+- **Rome — Barsik's family (all cats, same style as Murzik):** **Barsik**, Murzik's cousin: a plump grey tabby cat with green eyes and a blue-and-white striped T-shirt, a bit sleepy. **Musya**, his little sister: a tiny grey kitten with a pink bow. **Aunt Olya**, their mum: a small, kind grey cat with an apron. **Uncle Petya**, their dad: a tall grey cat with a moustache and a bow tie (a chef's hat at work). **Grandpa**: an elderly grey cat with glasses and a walking stick. **Marco**: a young Italian man with dark curly hair. **Giulia**: a young woman with a red scarf and a sketchbook.
+- No words or letters in the pictures. The only exceptions are written into a note: numbers on number cards and price tags, the EXIT sign, “1 kg” on the scales, the signature «Ася» in the corner of Asya's painting, the big number 3 on the platform sign. Clock faces have hands but no numbers.
+- Phrase pictures (`kind: phrase`) and rewards: square, 1408 × 1408. Scenes (`kind: scene`): portrait, 1152 × 1728.
+- Show the meaning clearly: the right number of things, the right direction of arrows, the right action and emotion.
+
+## Languages (2 pictures)
+
+The two very first screens (choose your language, choose a course). No flags, no words, no letters in these pictures.
+
+- `public/art/languages/1.jpg` — scene — Languages native
+  - Draw: Murzik on cream paper with a faint watercolour world map behind him. He tilts his head with a curious, friendly smile, ears up, holding a small wooden sign with a painted question mark.
+- `public/art/languages/2.jpg` — scene — Languages target
+  - Draw: Murzik on cream paper with dotted travel lines between little cities. He happily balances a small globe on one paw like a ball, eyes shining, scarf fluttering. His suitcase stands at his feet.
+
+## Prologue (3 pictures)
+
+The three opening screens. Grandma Asya must NOT appear in any picture — only her handwriting and the little painted ginger cat on her postcard.
+
+- `public/art/prologue/1.jpg` — scene — Prologue find
+  - Draw: Morning in Paris. An old, slightly yellow postcard lies on the floor just inside the door of Murzik's empty apartment. Murzik bends down to pick it up, surprised.
+- `public/art/prologue/2.jpg` — scene — Prologue postcard
+  - Draw: Close-up of the old postcard: yellowed paper, a few lines of handwriting and a small painted ginger cat in the corner. No stamp and no address.
+- `public/art/prologue/3.jpg` — scene — Prologue journey
+  - Draw: Murzik and Tom stand side by side with their suitcases at the start of a long road that winds past little towns and cities into the distance.
+
+## Paris (49 pictures)
+
+- `public/art/paris/l1-2.jpg` — phrase — Paris 1 vocab «Здравствуйте!»
+  - Draw: Murzik stands up straight with his paws together and gives a small polite bow to an elderly lady.
+- `public/art/paris/l1-4.jpg` — phrase — Paris 1 vocab «Как тебя зовут?»
+  - Draw: Tom bends down towards Murzik with a friendly, curious face, as if asking a question.
+- `public/art/paris/l1-5.jpg` — phrase — Paris 1 vocab «Меня зовут…»
+  - Draw: Murzik puts a paw on his chest and proudly says his name.
+- `public/art/paris/l1-6.jpg` — phrase — Paris 1 vocab «А тебя?»
+  - Draw: Murzik points a paw at Tom with a questioning look.
+- `public/art/paris/l1-8.jpg` — phrase — Paris 1 vocab «Мне тоже.»
+  - Draw: Murzik nods happily and puts a paw on his chest, smiling back at Tom.
+- `public/art/paris/l2-1.jpg` — phrase — Paris 2 vocab «Как дела?»
+  - Draw: Tom waves at Murzik in the doorway with a warm, curious smile.
+- `public/art/paris/l2-3.jpg` — phrase — Paris 2 vocab «Хорошо, спасибо.»
+  - Draw: Murzik smiles calmly and shows a thumbs-up with his paw.
+- `public/art/paris/l2-4.jpg` — phrase — Paris 2 vocab «Отлично!»
+  - Draw: Murzik jumps for joy with both paws in the air.
+- `public/art/paris/l2-5.jpg` — phrase — Paris 2 vocab «Нормально.»
+  - Draw: Murzik shrugs with a relaxed, neutral face.
+- `public/art/paris/l2-6.jpg` — phrase — Paris 2 vocab «Так себе.»
+  - Draw: Murzik tilts his paw from side to side with a doubtful face.
+- `public/art/paris/l2-7.jpg` — phrase — Paris 2 vocab «Плохо.»
+  - Draw: Murzik sits under a small grey rain cloud with drooping ears.
+- `public/art/paris/l2-8.jpg` — phrase — Paris 2 vocab «А у тебя?»
+  - Draw: Murzik points a paw back at Tom with a friendly questioning look.
+- `public/art/paris/l3-1.jpg` — phrase — Paris 3 vocab «Спасибо!»
+  - Draw: Murzik holds a small gift box and smiles at Tom gratefully.
+- `public/art/paris/l3-2.jpg` — phrase — Paris 3 vocab «Спасибо большое!»
+  - Draw: Murzik hugs a gift box with shining eyes and a very big smile.
+- `public/art/paris/l3-3.jpg` — phrase — Paris 3 vocab «Пожалуйста.»
+  - Draw: Tom smiles warmly and makes a small modest gesture with his hand.
+- `public/art/paris/l3-5.jpg` — phrase — Paris 3 vocab «Вот, пожалуйста.»
+  - Draw: Tom holds out a small gift box to Murzik with both hands.
+- `public/art/paris/l3-6.jpg` — phrase — Paris 3 vocab «Извини!»
+  - Draw: Tom has stepped on Murzik's tail by accident and lifts his foot, looking sorry.
+- `public/art/paris/l3-7.jpg` — phrase — Paris 3 vocab «Извините!»
+  - Draw: Murzik politely raises a paw to get the attention of Madame Dubois on the staircase.
+- `public/art/paris/l3-8.jpg` — phrase — Paris 3 vocab «Ничего страшного.»
+  - Draw: Murzik smiles and waves his tail kindly, showing everything is fine.
+- `public/art/paris/l4-1.jpg` — phrase — Paris 4 vocab «Я не понимаю.»
+  - Draw: Tom scratches his head with a puzzled face. A question mark floats above him.
+- `public/art/paris/l4-3.jpg` — phrase — Paris 4 vocab «Повтори, пожалуйста.»
+  - Draw: Tom leans towards Murzik and cups a hand behind his ear.
+- `public/art/paris/l4-4.jpg` — phrase — Paris 4 vocab «Повторите, пожалуйста.»
+  - Draw: Murzik politely cups a paw behind his ear while Madame Dubois speaks.
+- `public/art/paris/l4-5.jpg` — phrase — Paris 4 vocab «Медленнее, пожалуйста.»
+  - Draw: Tom makes a gentle “slow down” gesture with both hands. A small snail sits on the table.
+- `public/art/paris/l4-8.jpg` — phrase — Paris 4 vocab «Как по-русски…?»
+  - Draw: Tom holds up a cup and looks at Murzik with a questioning face.
+- `public/art/paris/l4-9.jpg` — phrase — Paris 4 vocab «Что значит…?»
+  - Draw: Tom holds an open notebook with one word underlined and looks puzzled.
+- `public/art/paris/l4-10.jpg` — phrase — Paris 4 vocab «Я не знаю.»
+  - Draw: Murzik shrugs with both paws open and a funny, confused face.
+- `public/art/paris/l5-1.jpg` — phrase — Paris 5 vocab «Откуда ты?»
+  - Draw: Tom and Murzik sit at the kitchen table with cups of tea. Tom asks a question with a curious face.
+- `public/art/paris/l5-2.jpg` — phrase — Paris 5 vocab «Я из Москвы.»
+  - Draw: Murzik holds a postcard of Moscow's Red Square with colourful domes.
+- `public/art/paris/l5-3.jpg` — phrase — Paris 5 vocab «Я из Лондона.»
+  - Draw: Tom holds a postcard of London with Big Ben and a red bus.
+- `public/art/paris/l5-4.jpg` — phrase — Paris 5 vocab «Где ты живёшь?»
+  - Draw: Tom points at a small map of Europe on the wall with a questioning look.
+- `public/art/paris/l5-5.jpg` — phrase — Paris 5 vocab «Я живу в Париже.»
+  - Draw: Murzik stands at his window. The Eiffel Tower is visible outside.
+- `public/art/paris/l5-6.jpg` — phrase — Paris 5 vocab «Ты говоришь по-русски?»
+  - Draw: Murzik looks at Tom with raised eyebrows and an encouraging smile.
+- `public/art/paris/l5-7.jpg` — phrase — Paris 5 vocab «Да, немного.»
+  - Draw: Tom shows a tiny gap between his thumb and finger and smiles shyly.
+- `public/art/paris/l6-2.jpg` — phrase — Paris 6 vocab «Хочешь чай?»
+  - Draw: Tom holds a teapot over a cup and looks at Murzik.
+- `public/art/paris/l6-3.jpg` — phrase — Paris 6 vocab «Да, хочу.»
+  - Draw: Murzik nods eagerly and holds out his cup with both paws.
+- `public/art/paris/l6-5.jpg` — phrase — Paris 6 vocab «Нет, спасибо.»
+  - Draw: Murzik raises a paw politely and smiles, saying no kindly.
+- `public/art/paris/l6-6.jpg` — phrase — Paris 6 vocab «Конечно!»
+  - Draw: Murzik nods with great enthusiasm, his tail high in the air.
+- `public/art/paris/l6-7.jpg` — phrase — Paris 6 vocab «Может быть.»
+  - Draw: Murzik taps his chin with a paw, thinking, with one eyebrow raised.
+- `public/art/paris/l6-8.jpg` — phrase — Paris 6 vocab «Давай!»
+  - Draw: Murzik and Tom give each other a high five.
+- `public/art/paris/l6-9.jpg` — phrase — Paris 6 vocab «Пойдём гулять?»
+  - Draw: Tom stands at the door in his coat and points outside, inviting Murzik.
+- `public/art/paris/l7-1.jpg` — phrase — Paris 7 vocab «Пока!»
+  - Draw: Murzik waves goodbye to Tom at the door with a cheerful smile.
+- `public/art/paris/l7-2.jpg` — phrase — Paris 7 vocab «До свидания!»
+  - Draw: Murzik waves goodbye to Madame Dubois on the staircase, standing up straight.
+- `public/art/paris/l7-3.jpg` — phrase — Paris 7 vocab «До завтра!»
+  - Draw: Tom waves from the street in the evening. A crescent moon is in the sky.
+- `public/art/paris/l7-5.jpg` — phrase — Paris 7 vocab «Мне пора.»
+  - Draw: Tom looks at his wristwatch and puts on his coat in a hurry.
+- `public/art/paris/l7-6.jpg` — phrase — Paris 7 vocab «Хорошего дня!»
+  - Draw: Madame Dubois smiles and waves to Murzik on a sunny morning.
+- `public/art/paris/l7-7.jpg` — phrase — Paris 7 vocab «И тебе!»
+  - Draw: Murzik waves back to Tom with a big smile.
+- `public/art/paris/l7-9.jpg` — phrase — Paris 7 vocab «Счастливого пути!»
+  - Draw: Madame Dubois waves a handkerchief as Murzik carries his small suitcase.
+- `public/art/paris/postcards.jpg` — scene — Paris farewell 1
+  - Draw: Close-up: Murzik's paws hold two old, slightly yellow postcards with the same handwriting and the same small painted ginger cat in the corner. One has no stamp; the other has a London stamp. No readable words.
+- `public/art/london/arrival.jpg` — scene — Paris farewell 7; London welcome
+  - Draw: Murzik and Tom arrive in London with their suitcases. Behind them are Big Ben and a red double-decker bus. It is drizzling.
+
+## London (62 pictures)
+
+- `public/art/london/1-1b.jpg` — phrase — London 1 vocab «Паспорт, пожалуйста. — Вот мой паспорт.»
+  - Draw: A passport officer in a navy uniform holds out his hand; Murzik hands him a passport.
+- `public/art/london/1-2b.jpg` — phrase — London 1 vocab «аэропорт»
+  - Draw: A big, busy airport hall with tall windows and planes outside.
+- `public/art/london/1-3.jpg` — phrase — London 1 vocab «Вы турист?»
+  - Draw: The officer looks at Murzik over his glasses with a curious face.
+- `public/art/london/1-4b.jpg` — phrase — London 1 vocab «Это ваш чемодан? — Да, мой.»
+  - Draw: The officer points at a brown suitcase; Murzik nods and puts a paw on it.
+- `public/art/london/1-5b.jpg` — phrase — London 1 vocab «самолёт»
+  - Draw: A white plane lands on a runway under a grey London sky.
+- `public/art/london/1-7.jpg` — phrase — London 1 vocab «Где выход?»
+  - Draw: Murzik looks around a big airport hall with a puzzled face.
+- `public/art/london/1-10.jpg` — phrase — London 1 vocab «Добро пожаловать!»
+  - Draw: The officer smiles and stamps Murzik's passport.
+- `public/art/london/reward-1.jpg` — reward — London 1 reward «Плед»
+  - Draw: Tom wraps Murzik in a soft red-and-green tartan blanket in the airport hall. Murzik smiles, only his face showing.
+- `public/art/london/2-1b.jpg` — phrase — London 2 vocab «один, два, три, четыре, пять»
+  - Draw: Five red buses in a row with the numbers 1 to 5 on them.
+- `public/art/london/2-2b.jpg` — phrase — London 2 vocab «шесть, семь, восемь, девять, десять»
+  - Draw: Five red buses in a row with the numbers 6 to 10 on them.
+- `public/art/london/2-3b.jpg` — phrase — London 2 vocab «одиннадцать, двенадцать, тринадцать, четырнадцать, пятнадцать»
+  - Draw: Five number cards: 11, 12, 13, 14, 15.
+- `public/art/london/2-4b.jpg` — phrase — London 2 vocab «шестнадцать, семнадцать, восемнадцать, девятнадцать, двадцать»
+  - Draw: Five number cards: 16, 17, 18, 19, 20.
+- `public/art/london/2-0.jpg` — phrase — London 2 vocab «ноль»
+  - Draw: A card with a big number 0 and an empty bus stop.
+- `public/art/london/2-q.jpg` — phrase — London 2 vocab «Сколько?»
+  - Draw: Murzik looks out of a taxi window at many red buses, counting on his paw.
+- `public/art/london/2-n.jpg` — phrase — London 2 vocab «Номер…»
+  - Draw: A London front door with a big brass number 8 on it.
+- `public/art/london/reward-2.jpg` — reward — London 2 reward «Подушка»
+  - Draw: Murzik hugs a soft round cushion with a little red bus embroidered on it, at the door of flat number 10.
+- `public/art/london/4-1.jpg` — phrase — London 3 vocab «Это моя квартира.»
+  - Draw: Tom opens his front door and shows a cosy London flat with a big window.
+- `public/art/london/4-2.jpg` — phrase — London 3 vocab «Проходи!»
+  - Draw: Tom holds the door open and invites Murzik in with a sweeping gesture.
+- `public/art/london/4-3.jpg` — phrase — London 3 vocab «Чувствуй себя как дома.»
+  - Draw: Murzik lies relaxed on a cushion with a cup of tea. Tom smiles.
+- `public/art/london/4-4.jpg` — phrase — London 3 vocab «Вот ключ.»
+  - Draw: Tom gives Murzik a shiny key on a red key ring.
+- `public/art/london/4-5.jpg` — phrase — London 3 vocab «Какой этаж?»
+  - Draw: Murzik looks up a tall staircase with a questioning face.
+- `public/art/london/3-6b.jpg` — phrase — London 3 vocab «Вот кухня, а вот твоя комната.»
+  - Draw: Tom points at a small kitchen and then at an open door to a little room.
+- `public/art/london/3-7b.jpg` — phrase — London 3 vocab «Где ванная и туалет?»
+  - Draw: Murzik stands in a hallway looking at two closed doors with a questioning face.
+- `public/art/london/reward-3.jpg` — reward — London 3 reward «Кресло»
+  - Draw: Murzik sits in a soft green armchair by the big window of his London room, with the tartan blanket and the bus cushion on it.
+- `public/art/london/3-1.jpg` — phrase — London 4 vocab «метро»
+  - Draw: A London Underground entrance with the red-and-blue round sign.
+- `public/art/london/3-2.jpg` — phrase — London 4 vocab «автобус»
+  - Draw: A red double-decker bus on a London street.
+- `public/art/london/3-3.jpg` — phrase — London 4 vocab «остановка»
+  - Draw: A red London bus stop sign with a small bench. Murzik waits there.
+- `public/art/london/3-5.jpg` — phrase — London 4 vocab «Один билет, пожалуйста.»
+  - Draw: Murzik holds up one paw finger at a ticket window.
+- `public/art/london/3-6.jpg` — phrase — London 4 vocab «Едем на метро.»
+  - Draw: Tom and Murzik walk down the steps into the Underground.
+- `public/art/london/3-7.jpg` — phrase — London 4 vocab «Едем на автобусе.»
+  - Draw: Tom and Murzik sit on the top deck of a red bus, looking out of the window.
+- `public/art/london/3-10.jpg` — phrase — London 4 vocab «Поехали!»
+  - Draw: Murzik sits at the front of the top deck and raises both paws happily as the bus starts.
+- `public/art/london/reward-4.jpg` — reward — London 4 reward «Карта метро»
+  - Draw: Murzik pins a colourful London Underground map poster on the wall of his room, above the armchair.
+- `public/art/london/5-1.jpg` — phrase — London 5 vocab «Какая сегодня погода?»
+  - Draw: Murzik looks out of a window at a grey London sky, his nose against the glass.
+- `public/art/london/5-2.jpg` — phrase — London 5 vocab «Сегодня холодно.»
+  - Draw: Murzik shivers on a London street, wrapped in his scarf, with frosty breath.
+- `public/art/london/5-3.jpg` — phrase — London 5 vocab «Сегодня тепло.»
+  - Draw: Murzik sits relaxed on a park bench in gentle warm light.
+- `public/art/london/5-4.jpg` — phrase — London 5 vocab «Идёт дождь.»
+  - Draw: Rain falls on a London street with red buses and grey buildings.
+- `public/art/london/5-5.jpg` — phrase — London 5 vocab «Светит солнце.»
+  - Draw: The sun shines brightly over Big Ben and the river.
+- `public/art/london/5-7.jpg` — phrase — London 5 vocab «Мне холодно.»
+  - Draw: Murzik hugs himself and shivers, his fur standing on end.
+- `public/art/london/5-8.jpg` — phrase — London 5 vocab «Возьми зонт!»
+  - Draw: Murzik holds out a black umbrella to Tom at the front door.
+- `public/art/london/reward-5.jpg` — reward — London 5 reward «Цветок»
+  - Draw: Murzik puts a small pot with a bright yellow flower on the windowsill of his room. Rain runs down the glass outside.
+- `public/art/london/6-1.jpg` — phrase — London 6 vocab «Алло!»
+  - Draw: Murzik answers a ringing mobile phone, holding it to his ear.
+- `public/art/london/6-2.jpg` — phrase — London 6 vocab «Какой у тебя номер?»
+  - Draw: Tom holds his phone and looks at Murzik, ready to type.
+- `public/art/london/6-3.jpg` — phrase — London 6 vocab «Мой номер…»
+  - Draw: Murzik shows his phone screen with digits on it.
+- `public/art/london/6-5.jpg` — phrase — London 6 vocab «Позвони мне!»
+  - Draw: Murzik makes a “call me” gesture with his paw near his ear.
+- `public/art/london/6-6.jpg` — phrase — London 6 vocab «Напиши мне!»
+  - Draw: Murzik types a message on his phone with both paws. A heart floats above.
+- `public/art/london/6-7.jpg` — phrase — London 6 vocab «Ты где?»
+  - Draw: Tom talks on his phone in the street and looks around for Murzik.
+- `public/art/london/6-8.jpg` — phrase — London 6 vocab «Я дома.»
+  - Draw: Tom sits on his sofa at home, talking on the phone.
+- `public/art/london/reward-6.jpg` — reward — London 6 reward «Торшер»
+  - Draw: A tall floor lamp with a warm yellow shade stands next to the green armchair. Murzik reads under it, wrapped in his tartan blanket.
+- `public/art/london/7-1.jpg` — phrase — London 7 vocab «Как пройти к…?»
+  - Draw: Murzik politely asks a lady in the street, holding a small map.
+- `public/art/london/7-2.jpg` — phrase — London 7 vocab «Идите прямо.»
+  - Draw: A street with a big arrow going straight ahead.
+- `public/art/london/7-3.jpg` — phrase — London 7 vocab «Поверните направо.»
+  - Draw: A street corner with a big arrow turning right.
+- `public/art/london/7-4.jpg` — phrase — London 7 vocab «Поверните налево.»
+  - Draw: A street corner with a big arrow turning left.
+- `public/art/london/7-5.jpg` — phrase — London 7 vocab «Это далеко?»
+  - Draw: Murzik looks at a very long road with a worried face.
+- `public/art/london/7-6.jpg` — phrase — London 7 vocab «Нет, это близко.»
+  - Draw: The lady smiles and shows a small distance between her hands.
+- `public/art/london/7-9.jpg` — phrase — London 7 vocab «Мы на месте!»
+  - Draw: Tom and Murzik stand in front of Big Ben and celebrate.
+- `public/art/london/reward-7.jpg` — reward — London 7 reward «Чайник»
+  - Draw: Murzik holds a round white teapot with little blue flowers. Tom stands beside him, and Big Ben is behind them.
+- `public/art/london/departure.jpg` — scene — London departure; London farewell 4
+  - Draw: Murzik and Tom with their suitcases at a London airport. Murzik carries a red umbrella.
+- `public/art/london/tea-shop.jpg` — scene — London farewell 1
+  - Draw: A tiny old London tea shop with shelves full of teapots and tins. A kind old lady behind the counter looks at Asya's postcard in Murzik's paws and smiles. Tom stands next to Murzik.
+- `public/art/london/finale-1.jpg` — scene — London farewell 2
+  - Draw: Murzik stands in his cosy London room: a green armchair with a tartan blanket and a bus cushion, a floor lamp, a metro map on the wall and a yellow flower on the windowsill. He holds the white teapot.
+- `public/art/london/finale-2.jpg` — scene — London farewell 3
+  - Draw: Murzik jumps for joy in front of Big Ben. Tom celebrates with him.
+- `public/art/london/finale-4.jpg` — scene — London farewell 5
+  - Draw: A small plane flies south from rainy London towards a bright, sunny sky.
+- `public/art/madrid/arrival.jpg` — scene — London farewell 6; Madrid welcome
+  - Draw: Murzik and Tom arrive in sunny Madrid, in the big Plaza Mayor with its red buildings and arches. Murzik takes off his scarf in the warm sunshine.
+
+## Madrid (62 pictures)
+
+- `public/art/madrid/1-1.jpg` — phrase — Madrid 1 vocab «Что вы хотите?»
+  - Draw: A smiling waiter with a white apron holds a small notepad at a Madrid café table.
+- `public/art/madrid/1-2.jpg` — phrase — Madrid 1 vocab «Мне кофе, пожалуйста.»
+  - Draw: Tom points at a cup of coffee on the menu and smiles at the waiter.
+- `public/art/madrid/1-3.jpg` — phrase — Madrid 1 vocab «Можно чай?»
+  - Draw: Murzik raises his paw politely at a café table.
+- `public/art/madrid/1-4.jpg` — phrase — Madrid 1 vocab «С молоком?»
+  - Draw: The waiter holds a small jug of milk over a cup of coffee.
+- `public/art/madrid/1-5.jpg` — phrase — Madrid 1 vocab «Без сахара.»
+  - Draw: Tom gently pushes a sugar bowl away and shakes his head.
+- `public/art/madrid/1-8.jpg` — phrase — Madrid 1 vocab «Что-нибудь ещё?»
+  - Draw: The waiter raises his pen and eyebrows, waiting.
+- `public/art/madrid/1-9.jpg` — phrase — Madrid 1 vocab «Это всё.»
+  - Draw: Tom closes the menu and hands it back to the waiter.
+- `public/art/madrid/reward-1.jpg` — reward — Madrid 1 reward «Столик»
+  - Draw: Murzik stands on the small sunny balcony of his Madrid flat next to a little round blue table.
+- `public/art/madrid/2-1.jpg` — phrase — Madrid 2 vocab «Меню, пожалуйста.»
+  - Draw: Tom raises his hand at a restaurant table with a candle on it.
+- `public/art/madrid/2-3.jpg` — phrase — Madrid 2 vocab «Я буду…»
+  - Draw: Murzik points at a dish in the menu with a confident smile.
+- `public/art/madrid/2-4.jpg` — phrase — Madrid 2 vocab «суп»
+  - Draw: A bowl of hot vegetable soup with steam rising.
+- `public/art/madrid/2-4b.jpg` — phrase — Madrid 2 vocab «рыба или мясо»
+  - Draw: A plate of grilled fish next to a plate of meat with potatoes.
+- `public/art/madrid/2-6.jpg` — phrase — Madrid 2 vocab «курица»
+  - Draw: Roast chicken with potatoes on a plate.
+- `public/art/madrid/2-6b.jpg` — phrase — Madrid 2 vocab «И сок, пожалуйста.»
+  - Draw: A tall glass of orange juice on a restaurant table.
+- `public/art/madrid/2-10.jpg` — phrase — Madrid 2 vocab «Счёт, пожалуйста.»
+  - Draw: Tom makes a “writing in the air” gesture to the waiter.
+- `public/art/madrid/reward-2.jpg` — reward — Madrid 2 reward «Стулья»
+  - Draw: Two small wicker chairs stand by the round blue table on Murzik's balcony. Murzik sits in one of them.
+- `public/art/madrid/3-1.jpg` — phrase — Madrid 3 vocab «рынок»
+  - Draw: A busy, colourful covered market in Madrid with many stalls.
+- `public/art/madrid/3-3.jpg` — phrase — Madrid 3 vocab «помидоры»
+  - Draw: A wooden box full of red tomatoes.
+- `public/art/madrid/3-3b.jpg` — phrase — Madrid 3 vocab «апельсины и яблоки»
+  - Draw: A market stall with a pile of oranges next to a pile of red and green apples.
+- `public/art/madrid/3-5.jpg` — phrase — Madrid 3 vocab «клубника»
+  - Draw: A small basket of red strawberries.
+- `public/art/madrid/3-6.jpg` — phrase — Madrid 3 vocab «Дайте, пожалуйста…»
+  - Draw: Murzik politely points at the tomatoes at a market stall.
+- `public/art/madrid/3-7.jpg` — phrase — Madrid 3 vocab «Один килограмм.»
+  - Draw: The seller puts tomatoes on old-fashioned scales showing 1 kg.
+- `public/art/madrid/3-7b.jpg` — phrase — Madrid 3 vocab «овощи и фрукты»
+  - Draw: A colourful market stall: vegetables on one side, fruit on the other.
+- `public/art/madrid/reward-3.jpg` — reward — Madrid 3 reward «Цветы»
+  - Draw: Three clay pots with bright red geraniums stand along the railing of Murzik's sunny balcony.
+- `public/art/madrid/4-1.jpg` — phrase — Madrid 4 vocab «Сколько стоит?»
+  - Draw: Murzik holds up a small Spanish fan in a souvenir shop with a questioning face.
+- `public/art/madrid/4-3.jpg` — phrase — Madrid 4 vocab «евро»
+  - Draw: A few euro coins and a euro banknote on a shop counter.
+- `public/art/madrid/4-3b.jpg` — phrase — Madrid 4 vocab «тридцать, сорок, пятьдесят»
+  - Draw: Three price tags: 30 €, 40 €, 50 €.
+- `public/art/madrid/4-4b.jpg` — phrase — Madrid 4 vocab «шестьдесят, семьдесят, восемьдесят, девяносто»
+  - Draw: Four price tags: 60 €, 70 €, 80 €, 90 €.
+- `public/art/madrid/4-5b.jpg` — phrase — Madrid 4 vocab «сто, двести, тысяча»
+  - Draw: Three price tags: 100 €, 200 €, 1000 €.
+- `public/art/madrid/4-8.jpg` — phrase — Madrid 4 vocab «Это дорого.»
+  - Draw: Murzik looks at a price tag with huge eyes and his fur standing on end.
+- `public/art/madrid/4-9.jpg` — phrase — Madrid 4 vocab «Это дёшево.»
+  - Draw: Murzik happily holds a small magnet with a tiny price tag.
+- `public/art/madrid/reward-4.jpg` — reward — Madrid 4 reward «Веер»
+  - Draw: Murzik hangs an open red Spanish fan with white flowers on the white wall of his Madrid flat.
+- `public/art/madrid/5-1.jpg` — phrase — Madrid 5 vocab «Сколько с меня?»
+  - Draw: Murzik stands at a shop till and looks at the cashier.
+- `public/art/madrid/5-2.jpg` — phrase — Madrid 5 vocab «Можно картой?»
+  - Draw: Murzik holds up a bank card with a hopeful face.
+- `public/art/madrid/5-4.jpg` — phrase — Madrid 5 vocab «Только наличными.»
+  - Draw: A small sign on the till shows coins and a banknote. The cashier points to it.
+- `public/art/madrid/5-5.jpg` — phrase — Madrid 5 vocab «Пакет нужен?»
+  - Draw: The cashier holds up a paper bag with a questioning face.
+- `public/art/madrid/5-6.jpg` — phrase — Madrid 5 vocab «Нет, не нужен.»
+  - Draw: Murzik shakes his head, holding a rolled-up rug under his arm.
+- `public/art/madrid/5-8.jpg` — phrase — Madrid 5 vocab «Вот ваша сдача.»
+  - Draw: The cashier puts a few coins into Murzik's paw.
+- `public/art/madrid/5-10.jpg` — phrase — Madrid 5 vocab «Следующий!»
+  - Draw: The cashier waves to the next person in the queue.
+- `public/art/madrid/reward-5.jpg` — reward — Madrid 5 reward «Ковёр»
+  - Draw: Murzik rolls out a colourful striped rug on the tiled floor of his Madrid flat and lies on it happily.
+- `public/art/madrid/6-1.jpg` — phrase — Madrid 6 vocab «Вкусно!»
+  - Draw: Murzik licks his lips after a bite of tapas.
+- `public/art/madrid/6-3.jpg` — phrase — Madrid 6 vocab «Мне нравится…»
+  - Draw: Murzik hugs a plate of tortilla with a happy face.
+- `public/art/madrid/6-4.jpg` — phrase — Madrid 6 vocab «Мне не нравится…»
+  - Draw: Murzik frowns at a small dish of spicy sauce and shakes his head.
+- `public/art/madrid/6-5.jpg` — phrase — Madrid 6 vocab «Тебе нравится?»
+  - Draw: Tom watches Murzik taste something and asks with a curious smile.
+- `public/art/madrid/6-6.jpg` — phrase — Madrid 6 vocab «сладкий»
+  - Draw: Churros covered in sugar on a plate.
+- `public/art/madrid/6-7.jpg` — phrase — Madrid 6 vocab «острый»
+  - Draw: Murzik's face turns red after a bite of spicy potatoes. Small flames come from his mouth.
+- `public/art/madrid/6-10.jpg` — phrase — Madrid 6 vocab «Попробуй!»
+  - Draw: Tom holds out a fork with a piece of tortilla to Murzik.
+- `public/art/madrid/reward-6.jpg` — reward — Madrid 6 reward «Фонарь»
+  - Draw: A small metal lantern with coloured glass glows on the round table of Murzik's balcony in the evening.
+- `public/art/madrid/7-1.jpg` — phrase — Madrid 7 vocab «Давай приготовим ужин!»
+  - Draw: Murzik ties on a small apron in a sunny Madrid kitchen and raises a wooden spoon.
+- `public/art/madrid/7-2.jpg` — phrase — Madrid 7 vocab «Что нам нужно?»
+  - Draw: Tom and Murzik look into an almost empty fridge.
+- `public/art/madrid/7-3.jpg` — phrase — Madrid 7 vocab «Нужны яйца.»
+  - Draw: A box of six eggs on the kitchen table.
+- `public/art/madrid/7-4.jpg` — phrase — Madrid 7 vocab «Нужна картошка.»
+  - Draw: A small sack of potatoes on the kitchen floor.
+- `public/art/madrid/7-5.jpg` — phrase — Madrid 7 vocab «Нужен лук.»
+  - Draw: One golden onion on a cutting board.
+- `public/art/madrid/7-7.jpg` — phrase — Madrid 7 vocab «Помоги мне!»
+  - Draw: Murzik struggles to lift a big frying pan and looks at Tom.
+- `public/art/madrid/7-9.jpg` — phrase — Madrid 7 vocab «Готово!»
+  - Draw: Murzik proudly holds up a golden Spanish tortilla on a plate.
+- `public/art/madrid/reward-7.jpg` — reward — Madrid 7 reward «Сковорода»
+  - Draw: A big round paella pan with two handles hangs on the kitchen wall of Murzik's Madrid flat. Murzik points at it proudly.
+- `public/art/madrid/departure.jpg` — scene — Madrid departure; Madrid farewell 4
+  - Draw: Murzik and Tom with suitcases at Madrid airport. Murzik holds his red fan.
+- `public/art/madrid/asya-painting.jpg` — scene — Madrid farewell 1
+  - Draw: In the little Madrid café, the old café owner points at a small watercolour on the wall: a ginger cat on a sunny balcony, signed «Ася» in the corner. Murzik and Tom look at it.
+- `public/art/madrid/finale-1.jpg` — scene — Madrid farewell 2
+  - Draw: Murzik stands on the balcony of his bright Madrid flat with a little table, wicker chairs, flowers, a rug, a lantern, a fan on the wall and a paella pan. He holds the fan.
+- `public/art/madrid/finale-2.jpg` — scene — Madrid farewell 3
+  - Draw: Murzik and Tom celebrate in a sunny Madrid square.
+- `public/art/madrid/finale-4.jpg` — scene — Madrid farewell 5
+  - Draw: A small plane flies over the sea from Madrid towards Rome.
+- `public/art/madrid/finale-5.jpg` — scene — Madrid farewell 6; Rome welcome
+  - Draw: Murzik and Tom arrive in Rome and look up at the Colosseum.
+
+## Rome (62 pictures)
+
+- `public/art/rome/1-1.jpg` — phrase — Rome 1 vocab «Это моя семья.»
+  - Draw: Barsik, a plump grey cat, proudly shows a framed family photo of four cats.
+- `public/art/rome/1-2b.jpg` — phrase — Rome 1 vocab «мама и папа (мать и отец)»
+  - Draw: Two grown-up grey cats, Aunt Olya and Uncle Petya, smile side by side.
+- `public/art/rome/1-3b.jpg` — phrase — Rome 1 vocab «брат и сестра»
+  - Draw: Barsik and little Musya stand side by side and smile.
+- `public/art/rome/1-4b.jpg` — phrase — Rome 1 vocab «муж и жена»
+  - Draw: Aunt Olya and Uncle Petya hold paws, wearing wedding rings, in an old wedding photo.
+- `public/art/rome/1-5b.jpg` — phrase — Rome 1 vocab «дети: сын и дочь»
+  - Draw: Aunt Olya hugs her two children: Barsik (her son) and Musya (her daughter).
+- `public/art/rome/1-6b.jpg` — phrase — Rome 1 vocab «У меня есть…»
+  - Draw: Musya holds a toy mouse up proudly in both paws.
+- `public/art/rome/1-7b.jpg` — phrase — Rome 1 vocab «У тебя есть…? — Да, есть.»
+  - Draw: Barsik asks Murzik a question; Murzik nods, holding a photo of his brother.
+- `public/art/rome/reward-1.jpg` — reward — Rome 1 reward «Оливковое дерево»
+  - Draw: A small olive tree in a terracotta pot stands on the sunny terrace of Murzik's room in Rome. Murzik waters it.
+- `public/art/rome/2-1.jpg` — phrase — Rome 2 vocab «Сколько тебе лет?»
+  - Draw: Musya looks up at Tom with big curious eyes.
+- `public/art/rome/2-2.jpg` — phrase — Rome 2 vocab «Мне двадцать лет.»
+  - Draw: A birthday cake with the number 20 on it.
+- `public/art/rome/2-3b.jpg` — phrase — Rome 2 vocab «Сколько ему лет? — Ему три года.»
+  - Draw: Murzik points at a photo of a little kitten next to a cake with three candles.
+- `public/art/rome/2-4b.jpg` — phrase — Rome 2 vocab «мальчик и девочка»
+  - Draw: A little boy and a little girl play with a ball in a Roman square.
+- `public/art/rome/2-5.jpg` — phrase — Rome 2 vocab «Ей сорок лет.»
+  - Draw: Aunt Olya smiles next to a cake with the number 40.
+- `public/art/rome/2-6b.jpg` — phrase — Rome 2 vocab «старший брат, младшая сестра»
+  - Draw: Barsik stands tall next to little Musya, with his paw on her head.
+- `public/art/rome/2-7b.jpg` — phrase — Rome 2 vocab «мужчина и женщина»
+  - Draw: A man and a woman walk together past a Roman fountain.
+- `public/art/rome/reward-2.jpg` — reward — Rome 2 reward «Кресло-качалка»
+  - Draw: Murzik rocks happily in an old wooden rocking chair with a knitted cushion, next to the olive tree on his terrace.
+- `public/art/rome/3-1.jpg` — phrase — Rome 3 vocab «Какой он?»
+  - Draw: Tom looks at a family photo and points at one of the cats with a curious face.
+- `public/art/rome/3-2b.jpg` — phrase — Rome 3 vocab «высокий / невысокий»
+  - Draw: A tall grey cat and a short grey cat stand side by side.
+- `public/art/rome/3-3b.jpg` — phrase — Rome 3 vocab «лицо: глаза, нос, рот»
+  - Draw: A big, friendly close-up of Murzik's face with his amber eyes, pink nose and smiling mouth.
+- `public/art/rome/3-4b.jpg` — phrase — Rome 3 vocab «молодой / пожилой»
+  - Draw: A young cat and an elderly cat with glasses sit on a bench.
+- `public/art/rome/3-5b.jpg` — phrase — Rome 3 vocab «У него тёмные волосы.»
+  - Draw: Marco, a young man with dark curly hair, smiles.
+- `public/art/rome/3-6.jpg` — phrase — Rome 3 vocab «красивый»
+  - Draw: Uncle Petya straightens his bow tie in front of a mirror, looking smart.
+- `public/art/rome/3-7.jpg` — phrase — Rome 3 vocab «Он похож на папу.»
+  - Draw: Barsik and Uncle Petya stand side by side with the same pose and the same face.
+- `public/art/rome/reward-3.jpg` — reward — Rome 3 reward «Зеркало»
+  - Draw: Murzik admires himself in a round mirror with a golden frame on the wall of his room, straightening his scarf.
+- `public/art/rome/4-1.jpg` — phrase — Rome 4 vocab «Какой у него характер?»
+  - Draw: Tom and Murzik whisper, looking at Barsik asleep on a sofa.
+- `public/art/rome/4-2.jpg` — phrase — Rome 4 vocab «добрый»
+  - Draw: Aunt Olya gives a warm blanket to Musya.
+- `public/art/rome/4-3.jpg` — phrase — Rome 4 vocab «весёлый»
+  - Draw: Barsik dances and laughs with a spoon as a microphone.
+- `public/art/rome/4-4.jpg` — phrase — Rome 4 vocab «умный»
+  - Draw: Musya wears big glasses and reads a thick book.
+- `public/art/rome/4-5.jpg` — phrase — Rome 4 vocab «серьёзный»
+  - Draw: Uncle Petya reads a newspaper with a serious face and raised eyebrows.
+- `public/art/rome/4-6.jpg` — phrase — Rome 4 vocab «ленивый»
+  - Draw: Barsik lies on the sofa with his eyes closed. The clock shows midday.
+- `public/art/rome/4-7.jpg` — phrase — Rome 4 vocab «Он очень добрый.»
+  - Draw: Uncle Petya smiles and shares his newspaper and tea with Murzik.
+- `public/art/rome/reward-4.jpg` — reward — Rome 4 reward «Гамак»
+  - Draw: Murzik and Barsik lie together in a striped hammock on the sunny terrace, both with their eyes half closed.
+- `public/art/rome/5-1.jpg` — phrase — Rome 5 vocab «Кем ты работаешь?»
+  - Draw: Murzik asks Uncle Petya a question at the kitchen door.
+- `public/art/rome/5-2.jpg` — phrase — Rome 5 vocab «Я врач.»
+  - Draw: A cat doctor in a white coat with a stethoscope.
+- `public/art/rome/5-3.jpg` — phrase — Rome 5 vocab «Он повар.»
+  - Draw: Uncle Petya in a tall white chef's hat stirs a big pot.
+- `public/art/rome/5-4.jpg` — phrase — Rome 5 vocab «Она учительница.»
+  - Draw: Aunt Olya stands in front of a blackboard with chalk in her paw.
+- `public/art/rome/5-5.jpg` — phrase — Rome 5 vocab «Я студент.»
+  - Draw: Barsik carries a backpack and a pile of books, looking sleepy.
+- `public/art/rome/5-6.jpg` — phrase — Rome 5 vocab «Я работаю в…»
+  - Draw: Tom sits at a laptop in a small office with a window.
+- `public/art/rome/5-7b.jpg` — phrase — Rome 5 vocab «Она инженер.»
+  - Draw: A young woman in a hard hat holds plans in front of a bridge being built.
+- `public/art/rome/reward-5.jpg` — reward — Rome 5 reward «Кувшин»
+  - Draw: A painted clay jug with lemons on it stands on a small shelf in Murzik's room, with a few flowers inside.
+- `public/art/rome/6-1.jpg` — phrase — Rome 6 vocab «Это мой друг.»
+  - Draw: Barsik puts his paw on the shoulder of Marco, a young man with dark curly hair.
+- `public/art/rome/6-2.jpg` — phrase — Rome 6 vocab «Это моя подруга.»
+  - Draw: Marco introduces Giulia, a young woman with a red scarf and a sketchbook.
+- `public/art/rome/6-3.jpg` — phrase — Rome 6 vocab «Познакомься, это…»
+  - Draw: Barsik gestures between Murzik and Marco, introducing them.
+- `public/art/rome/6-4.jpg` — phrase — Rome 6 vocab «Мы друзья.»
+  - Draw: Murzik, Barsik, Tom and Marco stand arm in arm, smiling.
+- `public/art/rome/6-5.jpg` — phrase — Rome 6 vocab «Они из Италии.»
+  - Draw: Marco and Giulia wave in front of the Colosseum with a little Italian flag.
+- `public/art/rome/6-6b.jpg` — phrase — Rome 6 vocab «Он хороший человек.»
+  - Draw: Marco helps an old lady carry her shopping bags.
+- `public/art/rome/6-7.jpg` — phrase — Rome 6 vocab «Давай дружить!»
+  - Draw: Murzik holds out his paw to Marco, who shakes it happily.
+- `public/art/rome/reward-6.jpg` — reward — Rome 6 reward «Мозаика»
+  - Draw: A small square mosaic of a ginger cat made of colourful stones hangs on the yellow wall of Murzik's room.
+- `public/art/rome/7-1.jpg` — phrase — Rome 7 vocab «Садитесь, пожалуйста!»
+  - Draw: Aunt Olya invites everyone to a long table set with pasta and bread.
+- `public/art/rome/7-2.jpg` — phrase — Rome 7 vocab «Передай, пожалуйста, хлеб.»
+  - Draw: Musya passes a basket of bread across the table to Murzik.
+- `public/art/rome/7-3.jpg` — phrase — Rome 7 vocab «Ещё немного?»
+  - Draw: Aunt Olya holds a big spoon over Murzik's plate with a questioning smile.
+- `public/art/rome/7-4.jpg` — phrase — Rome 7 vocab «Спасибо, больше не надо.»
+  - Draw: Murzik politely raises his paw over his full plate and pats his round tummy.
+- `public/art/rome/7-5.jpg` — phrase — Rome 7 vocab «Было очень вкусно!»
+  - Draw: Murzik and Tom smile at Aunt Olya over empty plates.
+- `public/art/rome/7-6.jpg` — phrase — Rome 7 vocab «За семью!»
+  - Draw: Everyone at the table raises their glasses of juice for a toast.
+- `public/art/rome/7-7.jpg` — phrase — Rome 7 vocab «Приезжайте ещё!»
+  - Draw: The whole family waves goodbye at the door.
+- `public/art/rome/reward-7.jpg` — reward — Rome 7 reward «Семейное фото»
+  - Draw: A framed photo of the whole family at the dinner table: Aunt Olya, Uncle Petya, Barsik, Musya, Murzik and Tom, all smiling.
+- `public/art/rome/departure.jpg` — scene — Rome departure; Rome farewell 4
+  - Draw: The whole family waves goodbye to Murzik and Tom at Rome's train station. Murzik holds the framed family photo.
+- `public/art/rome/asya-photo.jpg` — scene — Rome farewell 1
+  - Draw: At the family table after dinner, Aunt Olya holds an old black-and-white photo of a young cat with a paint brush. Asya's postcard lies on the table. Murzik, Barsik and Musya look at the photo.
+- `public/art/rome/finale-1.jpg` — scene — Rome farewell 2
+  - Draw: Murzik stands in his cosy Roman room: an olive tree and a hammock on the terrace, a rocking chair, a round mirror, a clay jug and a cat mosaic on the yellow wall. He holds the family photo.
+- `public/art/rome/finale-2.jpg` — scene — Rome farewell 3
+  - Draw: Murzik, Tom, Barsik and Musya celebrate on the Spanish Steps.
+- `public/art/rome/finale-4.jpg` — scene — Rome farewell 5
+  - Draw: A night train travels north from Rome through the Alps towards Berlin.
+- `public/art/rome/finale-5.jpg` — scene — Rome farewell 6; Berlin welcome
+  - Draw: Murzik and Tom arrive in Berlin in the morning and look up at the Brandenburg Gate.
+
+## Berlin (62 pictures)
+
+- `public/art/berlin/1-1.jpg` — phrase — Berlin 1 vocab «Извините, который час?»
+  - Draw: Tom politely asks a woman in the street, pointing at his wrist.
+- `public/art/berlin/1-2.jpg` — phrase — Berlin 1 vocab «Сейчас два часа.»
+  - Draw: A big round clock face with the hands at two o'clock.
+- `public/art/berlin/1-3.jpg` — phrase — Berlin 1 vocab «Пять часов.»
+  - Draw: A big round clock face with the hands at five o'clock.
+- `public/art/berlin/1-4.jpg` — phrase — Berlin 1 vocab «Уже поздно!»
+  - Draw: Murzik yawns under a dark night sky with stars.
+- `public/art/berlin/1-5.jpg` — phrase — Berlin 1 vocab «Ещё рано.»
+  - Draw: Murzik peeks out of a window at a pink sunrise, the street still empty.
+- `public/art/berlin/1-6.jpg` — phrase — Berlin 1 vocab «У тебя есть часы?»
+  - Draw: Murzik looks at Tom's wrist with a questioning face.
+- `public/art/berlin/1-7.jpg` — phrase — Berlin 1 vocab «Мои часы не работают.»
+  - Draw: Tom taps his wristwatch with a puzzled face. The hands do not move.
+- `public/art/berlin/reward-1.jpg` — reward — Berlin 1 reward «Кровать»
+  - Draw: Murzik lies happily on a small wooden bed with a white duvet under a round attic window in Berlin.
+- `public/art/berlin/2-1.jpg` — phrase — Berlin 2 vocab «Какой сегодня день?»
+  - Draw: Murzik looks at a wall calendar with a curious face, a paw on his chin.
+- `public/art/berlin/2-2.jpg` — phrase — Berlin 2 vocab «Сегодня понедельник.»
+  - Draw: A row of seven squares for the week. The first square is circled in red.
+- `public/art/berlin/2-3.jpg` — phrase — Berlin 2 vocab «вторник и среда»
+  - Draw: A row of seven squares. The second and third squares are coloured blue.
+- `public/art/berlin/2-4.jpg` — phrase — Berlin 2 vocab «четверг и пятница»
+  - Draw: A row of seven squares. The fourth and fifth squares are coloured green.
+- `public/art/berlin/2-5.jpg` — phrase — Berlin 2 vocab «суббота и воскресенье»
+  - Draw: A row of seven squares. The last two squares are coloured yellow, with a little sun on them.
+- `public/art/berlin/2-6b.jpg` — phrase — Berlin 2 vocab «неделя: семь дней»
+  - Draw: A row of seven squares joined into one long bar, like a week planner.
+- `public/art/berlin/2-7.jpg` — phrase — Berlin 2 vocab «в воскресенье»
+  - Draw: Murzik dreams of a busy flea market full of old things, a little sun above it.
+- `public/art/berlin/reward-2.jpg` — reward — Berlin 2 reward «Календарь»
+  - Draw: Murzik pins a big wall calendar with pictures of Berlin onto the attic wall. One square is circled in red.
+- `public/art/berlin/3-1.jpg` — phrase — Berlin 3 vocab «Во сколько поезд?»
+  - Draw: Tom and Murzik look up at a big station clock with a curious face.
+- `public/art/berlin/3-2.jpg` — phrase — Berlin 3 vocab «В девять тридцать.»
+  - Draw: A station clock with the hands at half past nine, next to a waiting train.
+- `public/art/berlin/3-3.jpg` — phrase — Berlin 3 vocab «утром»
+  - Draw: Murzik stretches and drinks coffee at a window in bright morning sun.
+- `public/art/berlin/3-4.jpg` — phrase — Berlin 3 vocab «вечером»
+  - Draw: Murzik reads a book under a lamp; the window shows an orange evening sky.
+- `public/art/berlin/3-5.jpg` — phrase — Berlin 3 vocab «Какая платформа?»
+  - Draw: Murzik stands on a busy station and looks left and right, confused.
+- `public/art/berlin/3-6.jpg` — phrase — Berlin 3 vocab «Платформа три.»
+  - Draw: A platform sign with a big number 3, and a train waiting beside it.
+- `public/art/berlin/3-7.jpg` — phrase — Berlin 3 vocab «Сколько ехать?»
+  - Draw: Tom looks at a train map with a long line between two stations.
+- `public/art/berlin/reward-3.jpg` — reward — Berlin 3 reward «Книжная полка»
+  - Draw: Murzik puts a small travel guide onto a wooden bookshelf full of old books in the attic.
+- `public/art/berlin/4-1.jpg` — phrase — Berlin 4 vocab «Быстрее!»
+  - Draw: Murzik runs through the station, pulling Tom by the hand.
+- `public/art/berlin/4-2.jpg` — phrase — Berlin 4 vocab «Мы опоздали!»
+  - Draw: Tom and Murzik stop on the platform, out of breath, with shocked faces.
+- `public/art/berlin/4-3.jpg` — phrase — Berlin 4 vocab «Поезд ушёл.»
+  - Draw: The back of a train disappears from an empty platform.
+- `public/art/berlin/4-4.jpg` — phrase — Berlin 4 vocab «Когда следующий поезд?»
+  - Draw: Tom asks a ticket clerk at a window, pointing at the timetable.
+- `public/art/berlin/4-5.jpg` — phrase — Berlin 4 vocab «Через час.»
+  - Draw: A clock face with an arrow going one full hour forward.
+- `public/art/berlin/4-6.jpg` — phrase — Berlin 4 vocab «Мы проспали.»
+  - Draw: Murzik and Tom sleep deeply in the attic while the morning sun shines in.
+- `public/art/berlin/4-7.jpg` — phrase — Berlin 4 vocab «Подождём.»
+  - Draw: Murzik and Tom sit on a station bench with two cups of coffee, waiting calmly.
+- `public/art/berlin/reward-4.jpg` — reward — Berlin 4 reward «Будильник»
+  - Draw: Murzik holds a small round red alarm clock with two bells on top. Behind him, on the far end of the platform, a kind old white cat in a grey hat smiles.
+- `public/art/berlin/5-1.jpg` — phrase — Berlin 5 vocab «Давай пойдём в кино!»
+  - Draw: Tom holds up two cinema tickets with a big smile.
+- `public/art/berlin/5-2.jpg` — phrase — Berlin 5 vocab «У тебя есть время?»
+  - Draw: Tom points at a calendar and looks at a friend with a hopeful face.
+- `public/art/berlin/5-3.jpg` — phrase — Berlin 5 vocab «Извини, я не могу.»
+  - Draw: A woman shakes her head kindly and puts a hand on her heart.
+- `public/art/berlin/5-4.jpg` — phrase — Berlin 5 vocab «Во сколько встречаемся?»
+  - Draw: Murzik taps his paw on a clock with a questioning look.
+- `public/art/berlin/5-5.jpg` — phrase — Berlin 5 vocab «В семь часов.»
+  - Draw: A clock face with the hands at seven, next to a glowing cinema entrance at dusk.
+- `public/art/berlin/5-6.jpg` — phrase — Berlin 5 vocab «У входа.»
+  - Draw: Murzik waits by the doors of an old cinema, under bright lights.
+- `public/art/berlin/5-7.jpg` — phrase — Berlin 5 vocab «Договорились!»
+  - Draw: Tom and a woman shake hands and smile; Murzik gives a thumbs up.
+- `public/art/berlin/reward-5.jpg` — reward — Berlin 5 reward «Афиша»
+  - Draw: Murzik hangs an old colourful film poster with a cat and the moon (no words on it) on the attic wall next to the calendar.
+- `public/art/berlin/6-1.jpg` — phrase — Berlin 6 vocab «вчера»
+  - Draw: A small calendar page with yesterday's square crossed out, and an arrow pointing back.
+- `public/art/berlin/6-2.jpg` — phrase — Berlin 6 vocab «Где вы были?»
+  - Draw: Barsik on a phone screen leans forward with a curious face.
+- `public/art/berlin/6-3.jpg` — phrase — Berlin 6 vocab «Мы были в музее.»
+  - Draw: Murzik and Tom look up at a huge dinosaur skeleton in a museum.
+- `public/art/berlin/6-4.jpg` — phrase — Berlin 6 vocab «Что вы делали?»
+  - Draw: Barsik on a phone screen raises a paw with a questioning look.
+- `public/art/berlin/6-5.jpg` — phrase — Berlin 6 vocab «Мы гуляли.»
+  - Draw: Murzik and Tom walk along a river in Berlin with trees and old bridges.
+- `public/art/berlin/6-6.jpg` — phrase — Berlin 6 vocab «Мы смотрели фильм.»
+  - Draw: Murzik and Tom sit in a dark cinema with popcorn, their faces lit by the screen.
+- `public/art/berlin/6-7.jpg` — phrase — Berlin 6 vocab «Было интересно!»
+  - Draw: Murzik tells a story with wide eyes and both paws in the air.
+- `public/art/berlin/reward-6.jpg` — reward — Berlin 6 reward «Проигрыватель»
+  - Draw: An old suitcase-style record player plays a record on a small table in the attic. Murzik dances next to it with his eyes closed.
+- `public/art/berlin/7-1.jpg` — phrase — Berlin 7 vocab «Какие планы?»
+  - Draw: Irina sits with a cup of coffee and asks with a friendly smile.
+- `public/art/berlin/7-2.jpg` — phrase — Berlin 7 vocab «Что ты будешь делать?»
+  - Draw: Murzik looks at Tom and spreads his paws, asking.
+- `public/art/berlin/7-3.jpg` — phrase — Berlin 7 vocab «Я буду отдыхать.»
+  - Draw: Tom lies on the bed with his eyes closed and a happy, relaxed face.
+- `public/art/berlin/7-4.jpg` — phrase — Berlin 7 vocab «Мы будем гулять.»
+  - Draw: Murzik and Tom put on their coats and scarves by the door.
+- `public/art/berlin/7-5.jpg` — phrase — Berlin 7 vocab «потом»
+  - Draw: Two pictures joined by an arrow: first a cup of coffee, then a walk in the park.
+- `public/art/berlin/7-6.jpg` — phrase — Berlin 7 vocab «в выходные»
+  - Draw: Murzik relaxes in the sun on a Saturday, with a little picnic.
+- `public/art/berlin/7-7.jpg` — phrase — Berlin 7 vocab «Пока не знаю.»
+  - Draw: Tom shrugs with a smile and looks at a map full of roads.
+- `public/art/berlin/reward-7.jpg` — reward — Berlin 7 reward «Велосипед»
+  - Draw: Murzik sits proudly on a small old blue bicycle with a basket at a busy Sunday flea market. Far behind the stalls, a kind old white cat in a grey hat smiles and waves.
+- `public/art/berlin/departure.jpg` — scene — Berlin departure; Berlin farewell 4
+  - Draw: Irina waves goodbye to Murzik and Tom at Berlin's big glass railway station. Murzik holds the red alarm clock.
+- `public/art/berlin/finale-1.jpg` — scene — Berlin farewell 1
+  - Draw: Murzik stands in his cosy Berlin attic: a wooden bed under the round window, a wall calendar, a bookshelf, a film poster, a record player and a blue bicycle. He holds the red alarm clock.
+- `public/art/berlin/finale-2.jpg` — scene — Berlin farewell 2
+  - Draw: Murzik and Tom ride bicycles past the Brandenburg Gate and wave happily.
+- `public/art/berlin/lev.jpg` — scene — Berlin farewell 3
+  - Draw: On a busy railway platform, a kind old white cat in a grey hat and a long navy coat smiles warmly at Murzik and tips his hat. Murzik looks at him in surprise.
+- `public/art/berlin/finale-5.jpg` — scene — Berlin farewell 5
+  - Draw: A train travels west through flat green fields with windmills, from Berlin towards Amsterdam.
+- `public/art/amsterdam/arrival.jpg` — scene — Berlin farewell 6; Amsterdam welcome
+  - Draw: Murzik and Tom arrive in Amsterdam: a canal with narrow tall houses, little bridges and many bicycles.
+
+## Amsterdam (62 pictures)
+
+- `public/art/amsterdam/1-1.jpg` — phrase — Amsterdam 1 vocab «Куда ты идёшь?»
+  - Draw: Tom meets Murzik on a canal bridge and asks with a friendly wave.
+- `public/art/amsterdam/1-2.jpg` — phrase — Amsterdam 1 vocab «Я иду домой.»
+  - Draw: Murzik walks along a canal towards a little houseboat with a lit window.
+- `public/art/amsterdam/1-3.jpg` — phrase — Amsterdam 1 vocab «пешком»
+  - Draw: Murzik walks with long happy steps, close-up of his paws on old cobblestones.
+- `public/art/amsterdam/1-4b.jpg` — phrase — Amsterdam 1 vocab «велосипед или машина»
+  - Draw: A tall Dutch bicycle next to a small red car on a canal street.
+- `public/art/amsterdam/1-5.jpg` — phrase — Amsterdam 1 vocab «Я еду на велосипеде.»
+  - Draw: Tom rides a bicycle along a canal, his green coat flying.
+- `public/art/amsterdam/1-6.jpg` — phrase — Amsterdam 1 vocab «Пойдём пешком!»
+  - Draw: Murzik takes Tom by the hand and points down a pretty canal street.
+- `public/art/amsterdam/1-7.jpg` — phrase — Amsterdam 1 vocab «Здесь все на велосипедах!»
+  - Draw: A busy Amsterdam street full of people riding bicycles; Murzik stares with wide eyes.
+- `public/art/amsterdam/reward-1.jpg` — reward — Amsterdam 1 reward «Тюльпаны»
+  - Draw: Murzik sniffs a wooden window box full of red and yellow tulips on the deck of a little green houseboat.
+- `public/art/amsterdam/2-1.jpg` — phrase — Amsterdam 2 vocab «Можно взять велосипед?»
+  - Draw: Tom stands at a bike rental shop counter and points at a row of bicycles.
+- `public/art/amsterdam/2-2.jpg` — phrase — Amsterdam 2 vocab «На сколько?»
+  - Draw: The bike rental woman raises her eyebrows and taps her wristwatch.
+- `public/art/amsterdam/2-3.jpg` — phrase — Amsterdam 2 vocab «На один день.»
+  - Draw: A sun rises on the left and sets on the right, with a bicycle riding between them.
+- `public/art/amsterdam/2-4.jpg` — phrase — Amsterdam 2 vocab «Вот ваш велосипед.»
+  - Draw: The rental woman wheels a shiny bicycle towards Tom with a smile.
+- `public/art/amsterdam/2-5.jpg` — phrase — Amsterdam 2 vocab «шлем»
+  - Draw: Murzik puts on a round blue bicycle helmet that is a little too big for him.
+- `public/art/amsterdam/2-6.jpg` — phrase — Amsterdam 2 vocab «Осторожно!»
+  - Draw: Murzik grabs Barsik's handlebars just before he rides into a canal.
+- `public/art/amsterdam/2-7.jpg` — phrase — Amsterdam 2 vocab «Это легко!»
+  - Draw: Murzik rides a small bicycle with no hands and a big grin.
+- `public/art/amsterdam/reward-2.jpg` — reward — Amsterdam 2 reward «Гирлянда»
+  - Draw: A string of warm little lights hangs along the deck rail of the houseboat at dusk. Murzik and Barsik look at them happily.
+- `public/art/amsterdam/3-1.jpg` — phrase — Amsterdam 3 vocab «Куда едем?»
+  - Draw: Murzik, Tom and Barsik sit on their bikes at a crossroads, looking at each other.
+- `public/art/amsterdam/3-2.jpg` — phrase — Amsterdam 3 vocab «В музей!»
+  - Draw: Murzik points ahead at a grand old museum building with towers.
+- `public/art/amsterdam/3-3.jpg` — phrase — Amsterdam 3 vocab «Где музей?»
+  - Draw: Tom looks around a square with a questioning face.
+- `public/art/amsterdam/3-4.jpg` — phrase — Amsterdam 3 vocab «в центре»
+  - Draw: A simple round map of a city with a big red dot in the middle.
+- `public/art/amsterdam/3-5.jpg` — phrase — Amsterdam 3 vocab «Давай сначала в парк!»
+  - Draw: Barsik points at a green park with ducks and a pond.
+- `public/art/amsterdam/3-6.jpg` — phrase — Amsterdam 3 vocab «А потом в музей.»
+  - Draw: An arrow goes from a green park to a grand museum building.
+- `public/art/amsterdam/3-7.jpg` — phrase — Amsterdam 3 vocab «Мне всё равно.»
+  - Draw: Barsik shrugs with a relaxed, sleepy smile.
+- `public/art/amsterdam/reward-3.jpg` — reward — Amsterdam 3 reward «Корзинка»
+  - Draw: Murzik holds a wicker picnic basket with a checked cloth on the deck of the houseboat. Barsik peeks inside, hoping for food.
+- `public/art/amsterdam/4-1.jpg` — phrase — Amsterdam 4 vocab «Где касса?»
+  - Draw: Murzik looks around a big museum hall with a questioning face.
+- `public/art/amsterdam/4-2.jpg` — phrase — Amsterdam 4 vocab «Три билета, пожалуйста.»
+  - Draw: Tom holds up three fingers at a ticket window.
+- `public/art/amsterdam/4-3.jpg` — phrase — Amsterdam 4 vocab «Сколько стоит билет?»
+  - Draw: Tom holds one ticket and looks at the price board with a questioning face.
+- `public/art/amsterdam/4-4.jpg` — phrase — Amsterdam 4 vocab «Можно фотографировать?»
+  - Draw: Tom lifts his camera and looks at a museum guard with a hopeful face.
+- `public/art/amsterdam/4-5.jpg` — phrase — Amsterdam 4 vocab «Здесь нельзя.»
+  - Draw: A museum guard kindly shakes his finger next to a sign with a crossed-out camera.
+- `public/art/amsterdam/4-6.jpg` — phrase — Amsterdam 4 vocab «Можно.»
+  - Draw: A museum guard smiles and nods, opening his hand.
+- `public/art/amsterdam/4-7.jpg` — phrase — Amsterdam 4 vocab «Какая красота!»
+  - Draw: Murzik stands amazed in front of a big painting of a windmill at sunset.
+- `public/art/amsterdam/reward-4.jpg` — reward — Amsterdam 4 reward «Картина»
+  - Draw: Murzik hangs a small framed picture of a windmill at sunset above the round window of his houseboat room.
+- `public/art/amsterdam/5-1.jpg` — phrase — Amsterdam 5 vocab «Где мы?»
+  - Draw: Murzik, Tom and Barsik on their bikes look at a big paper map, puzzled.
+- `public/art/amsterdam/5-2.jpg` — phrase — Amsterdam 5 vocab «Мы здесь.»
+  - Draw: Murzik's paw points at a red dot on a paper map.
+- `public/art/amsterdam/5-3.jpg` — phrase — Amsterdam 5 vocab «Покажите на карте, пожалуйста.»
+  - Draw: Tom holds out a map to a friendly woman on a bicycle.
+- `public/art/amsterdam/5-4.jpg` — phrase — Amsterdam 5 vocab «Вот здесь.»
+  - Draw: A woman's finger touches one spot on the map; Tom leans in to look.
+- `public/art/amsterdam/5-5.jpg` — phrase — Amsterdam 5 vocab «там»
+  - Draw: Murzik points far away across green fields at a windmill.
+- `public/art/amsterdam/5-6.jpg` — phrase — Amsterdam 5 vocab «рядом»
+  - Draw: A windmill stands very close behind Murzik and his bike.
+- `public/art/amsterdam/5-7.jpg` — phrase — Amsterdam 5 vocab «Нам туда!»
+  - Draw: Murzik on his bike points down a country path with a big arrow-like gesture.
+- `public/art/amsterdam/reward-5.jpg` — reward — Amsterdam 5 reward «Печка»
+  - Draw: A small round black wood stove glows warmly in the corner of the houseboat room. Murzik warms his paws in front of it.
+- `public/art/amsterdam/6-1.jpg` — phrase — Amsterdam 6 vocab «Мы заблудились!»
+  - Draw: Murzik, Tom and Barsik stand with their bikes in a maze of identical canal streets, looking worried.
+- `public/art/amsterdam/6-2.jpg` — phrase — Amsterdam 6 vocab «Помогите, пожалуйста!»
+  - Draw: Barsik raises both paws and calls out with a worried face.
+- `public/art/amsterdam/6-3.jpg` — phrase — Amsterdam 6 vocab «Как называется эта улица?»
+  - Draw: Murzik looks up at a street corner with a puzzled face; the street sign is blank.
+- `public/art/amsterdam/6-4.jpg` — phrase — Amsterdam 6 vocab «Не волнуйся!»
+  - Draw: Tom puts a calm hand on Barsik's shoulder and smiles.
+- `public/art/amsterdam/6-5.jpg` — phrase — Amsterdam 6 vocab «Телефон сел.»
+  - Draw: Tom looks sadly at his phone; the screen shows an empty battery.
+- `public/art/amsterdam/6-6.jpg` — phrase — Amsterdam 6 vocab «Вон там!»
+  - Draw: On a little canal bridge, a kind old white cat in a grey hat smiles and points along the canal.
+- `public/art/amsterdam/6-7.jpg` — phrase — Amsterdam 6 vocab «Спасибо за помощь!»
+  - Draw: Murzik waves and calls out his thanks towards a little bridge.
+- `public/art/amsterdam/reward-6.jpg` — reward — Amsterdam 6 reward «Удочка»
+  - Draw: Murzik sits on the deck of the houseboat with a small wooden fishing rod over the canal, smiling.
+- `public/art/amsterdam/7-1.jpg` — phrase — Amsterdam 7 vocab «Мы устали.»
+  - Draw: Murzik, Tom and Barsik slump happily on deck cushions under the fairy lights.
+- `public/art/amsterdam/7-2.jpg` — phrase — Amsterdam 7 vocab «Какой день!»
+  - Draw: Murzik throws his paws up and laughs, remembering the day.
+- `public/art/amsterdam/7-3.jpg` — phrase — Amsterdam 7 vocab «Было весело!»
+  - Draw: Murzik, Tom and Barsik laugh together on the deck.
+- `public/art/amsterdam/7-4.jpg` — phrase — Amsterdam 7 vocab «Я буду скучать.»
+  - Draw: Murzik hugs Barsik tightly; both have soft, sad smiles.
+- `public/art/amsterdam/7-5.jpg` — phrase — Amsterdam 7 vocab «Приезжай в гости!»
+  - Draw: Barsik waves a paw invitingly, with Roman roofs in a little thought bubble.
+- `public/art/amsterdam/7-6.jpg` — phrase — Amsterdam 7 vocab «Обязательно!»
+  - Draw: Murzik nods firmly with a big smile and a paw on his heart.
+- `public/art/amsterdam/7-7.jpg` — phrase — Amsterdam 7 vocab «Спокойной ночи!»
+  - Draw: The houseboat at night with a moon over the canal and one lit round window.
+- `public/art/amsterdam/reward-7.jpg` — reward — Amsterdam 7 reward «Башмачки»
+  - Draw: Murzik proudly wears tiny yellow wooden clogs painted with red tulips on the deck of the houseboat. Barsik claps.
+- `public/art/amsterdam/departure.jpg` — scene — Amsterdam departure; Amsterdam farewell 4
+  - Draw: Murzik and Tom with their suitcases at Amsterdam's big red-brick railway station. Murzik wears his little wooden clogs.
+- `public/art/amsterdam/finale-1.jpg` — scene — Amsterdam farewell 1
+  - Draw: Murzik stands on the deck of his cosy houseboat: tulips, a string of lights, a picnic basket, a little stove glowing through the round window, a windmill picture and a fishing rod. He wears his tiny wooden clogs.
+- `public/art/amsterdam/finale-2.jpg` — scene — Amsterdam farewell 2
+  - Draw: Murzik and Tom ride their bikes over a canal bridge, waving happily.
+- `public/art/amsterdam/barsik-train.jpg` — scene — Amsterdam farewell 3
+  - Draw: Barsik waves from a train window. Murzik and Tom wave back from the platform.
+- `public/art/amsterdam/finale-5.jpg` — scene — Amsterdam farewell 5
+  - Draw: A train travels south-east through green hills and forests, from Amsterdam towards Vienna.
+- `public/art/vienna/arrival.jpg` — scene — Amsterdam farewell 6; Vienna welcome
+  - Draw: Murzik and Tom arrive in Vienna in front of a grand old opera house; a horse carriage passes by.
+
+## Vienna (62 pictures)
+
+- `public/art/vienna/1-1.jpg` — phrase — Vienna 1 vocab «Что ты любишь делать?»
+  - Draw: Tom sits at a café table and asks Murzik with a curious smile.
+- `public/art/vienna/1-2.jpg` — phrase — Vienna 1 vocab «Я люблю музыку.»
+  - Draw: Murzik listens to music with his eyes closed; little musical notes float around him.
+- `public/art/vienna/1-3.jpg` — phrase — Vienna 1 vocab «читать»
+  - Draw: Murzik reads a thick book in a cosy armchair.
+- `public/art/vienna/1-4.jpg` — phrase — Vienna 1 vocab «танцевать»
+  - Draw: Murzik dances happily, spinning on one paw.
+- `public/art/vienna/1-5.jpg` — phrase — Vienna 1 vocab «рисовать»
+  - Draw: Murzik draws a little house with coloured pencils, his tongue out in concentration.
+- `public/art/vienna/1-6.jpg` — phrase — Vienna 1 vocab «Я не люблю…»
+  - Draw: Murzik makes a funny face and pushes away a bowl of porridge.
+- `public/art/vienna/1-7.jpg` — phrase — Vienna 1 vocab «Это моё хобби.»
+  - Draw: Tom proudly holds up his camera.
+- `public/art/vienna/reward-1.jpg` — reward — Vienna 1 reward «Мольберт»
+  - Draw: Murzik stands at a small wooden easel by the window of his room above a Vienna coffee house, painting with a brush.
+- `public/art/vienna/2-1.jpg` — phrase — Vienna 2 vocab «Ты умеешь играть на пианино?»
+  - Draw: Murzik points at an old piano in a coffee house and looks at Tom.
+- `public/art/vienna/2-2.jpg` — phrase — Vienna 2 vocab «Да, умею.»
+  - Draw: Tom sits at the piano and plays with a confident smile.
+- `public/art/vienna/2-3.jpg` — phrase — Vienna 2 vocab «Нет, не умею.»
+  - Draw: Murzik presses one piano key and makes a funny face at the wrong note.
+- `public/art/vienna/2-4.jpg` — phrase — Vienna 2 vocab «играть на гитаре»
+  - Draw: Tom plays a guitar on a café terrace.
+- `public/art/vienna/2-5.jpg` — phrase — Vienna 2 vocab «петь»
+  - Draw: Murzik sings with his mouth wide open and his eyes closed.
+- `public/art/vienna/2-6.jpg` — phrase — Vienna 2 vocab «плавать»
+  - Draw: Murzik swims happily in a river with a little float ring.
+- `public/art/vienna/2-7.jpg` — phrase — Vienna 2 vocab «Научи меня!»
+  - Draw: Murzik pulls Tom's sleeve and points at the guitar with pleading eyes.
+- `public/art/vienna/reward-2.jpg` — reward — Vienna 2 reward «Гитара»
+  - Draw: Murzik holds a small old guitar with a red ribbon on it, sitting on his bed above the coffee house.
+- `public/art/vienna/3-1.jpg` — phrase — Vienna 3 vocab «Ты занимаешься спортом?»
+  - Draw: Tom in running clothes asks Murzik, who is lying on the sofa.
+- `public/art/vienna/3-2.jpg` — phrase — Vienna 3 vocab «Я играю в футбол.»
+  - Draw: Murzik kicks a football in a green park.
+- `public/art/vienna/3-3.jpg` — phrase — Vienna 3 vocab «Я бегаю.»
+  - Draw: Tom jogs along a park path among autumn trees.
+- `public/art/vienna/3-4.jpg` — phrase — Vienna 3 vocab «каждый день»
+  - Draw: A row of seven little suns, each with a tick under it.
+- `public/art/vienna/3-5.jpg` — phrase — Vienna 3 vocab «иногда»
+  - Draw: A row of seven little suns; only two have a tick under them.
+- `public/art/vienna/3-6.jpg` — phrase — Vienna 3 vocab «никогда»
+  - Draw: A row of seven little suns, none with a tick; Murzik shrugs.
+- `public/art/vienna/3-7.jpg` — phrase — Vienna 3 vocab «Пойдём на каток!»
+  - Draw: Murzik holds up a pair of ice skates in front of an outdoor ice rink with lights.
+- `public/art/vienna/reward-3.jpg` — reward — Vienna 3 reward «Коньки»
+  - Draw: A small pair of white ice skates with red laces hangs on a hook by Murzik's door.
+- `public/art/vienna/4-1.jpg` — phrase — Vienna 4 vocab «Где наши места?»
+  - Draw: Tom and Murzik in smart clothes look around a huge red-and-gold opera hall.
+- `public/art/vienna/4-2.jpg` — phrase — Vienna 4 vocab «Ряд пять, место десять.»
+  - Draw: A theatre ticket with the numbers 5 and 10, held in Murzik's paw.
+- `public/art/vienna/4-3.jpg` — phrase — Vienna 4 vocab «Тише!»
+  - Draw: A lady in the opera hall puts a finger to her lips.
+- `public/art/vienna/4-4.jpg` — phrase — Vienna 4 vocab «Начинается!»
+  - Draw: The lights go down and the big red curtain begins to open.
+- `public/art/vienna/4-5.jpg` — phrase — Vienna 4 vocab «антракт»
+  - Draw: People chat in a grand foyer with glasses of juice during the break.
+- `public/art/vienna/4-6.jpg` — phrase — Vienna 4 vocab «Браво!»
+  - Draw: Murzik stands up and claps wildly; singers bow on the stage.
+- `public/art/vienna/4-7.jpg` — phrase — Vienna 4 vocab «Мне очень понравилось!»
+  - Draw: Murzik walks out of the opera with shining, happy eyes.
+- `public/art/vienna/reward-4.jpg` — reward — Vienna 4 reward «Театральный бинокль»
+  - Draw: Murzik looks through small golden opera glasses out of his window at the roofs of Vienna.
+- `public/art/vienna/5-1.jpg` — phrase — Vienna 5 vocab «Какая красивая музыка!»
+  - Draw: Murzik stops in the park and listens to an old man playing the violin.
+- `public/art/vienna/5-2.jpg` — phrase — Vienna 5 vocab «Кто это играет?»
+  - Draw: Tom looks around the park, trying to see where the music comes from.
+- `public/art/vienna/5-3.jpg` — phrase — Vienna 5 vocab «грустная песня»
+  - Draw: Murzik listens with a small tear in his eye.
+- `public/art/vienna/5-4.jpg` — phrase — Vienna 5 vocab «Это моя любимая песня.»
+  - Draw: The old musician smiles and holds his violin close to his heart.
+- `public/art/vienna/5-5.jpg` — phrase — Vienna 5 vocab «Я помню.»
+  - Draw: The old musician looks into the distance with a warm, faraway smile.
+- `public/art/vienna/5-6.jpg` — phrase — Vienna 5 vocab «Это было давно.»
+  - Draw: An old black-and-white photo of a young violinist in a Vienna park.
+- `public/art/vienna/5-7.jpg` — phrase — Vienna 5 vocab «Расскажите, пожалуйста!»
+  - Draw: Murzik sits on the bench next to the old man, leaning in to listen.
+- `public/art/vienna/reward-5.jpg` — reward — Vienna 5 reward «Ноты»
+  - Draw: A framed page of old handwritten sheet music hangs above Murzik's easel. A tiny painted ginger cat sits in the corner of the page.
+- `public/art/vienna/6-1.jpg` — phrase — Vienna 6 vocab «Что ты обычно делаешь вечером?»
+  - Draw: Tom and Murzik sit by a rainy window in the evening.
+- `public/art/vienna/6-2.jpg` — phrase — Vienna 6 vocab «Обычно я читаю.»
+  - Draw: Murzik reads a book under a warm lamp with a cup of cocoa.
+- `public/art/vienna/6-3.jpg` — phrase — Vienna 6 vocab «Я слушаю музыку.»
+  - Draw: Tom lies on the bed with big headphones on.
+- `public/art/vienna/6-4.jpg` — phrase — Vienna 6 vocab «Я смотрю сериал.»
+  - Draw: Murzik watches a laptop screen, hugging a cushion.
+- `public/art/vienna/6-5.jpg` — phrase — Vienna 6 vocab «Мне скучно.»
+  - Draw: Murzik lies on the floor with his chin on his paws, looking very bored.
+- `public/art/vienna/6-6.jpg` — phrase — Vienna 6 vocab «Давай сыграем в шахматы!»
+  - Draw: Tom puts a chessboard on the table with a big smile.
+- `public/art/vienna/6-7.jpg` — phrase — Vienna 6 vocab «Твой ход!»
+  - Draw: Murzik thinks hard over a chessboard, one paw above a little horse piece.
+- `public/art/vienna/reward-6.jpg` — reward — Vienna 6 reward «Шахматы»
+  - Draw: A small wooden chessboard with pieces stands on a little table by Murzik's window. Rain drops run down the glass.
+- `public/art/vienna/7-1.jpg` — phrase — Vienna 7 vocab «Как тебе концерт?»
+  - Draw: Tom leans towards Murzik in a small concert hall and whispers a question.
+- `public/art/vienna/7-2.jpg` — phrase — Vienna 7 vocab «Это было чудесно!»
+  - Draw: Murzik presses his paws to his heart with shining eyes.
+- `public/art/vienna/7-3.jpg` — phrase — Vienna 7 vocab «Я в восторге!»
+  - Draw: Murzik jumps up with joy in his seat, arms in the air.
+- `public/art/vienna/7-4.jpg` — phrase — Vienna 7 vocab «Какой талант!»
+  - Draw: Karl bows on a small stage with his violin; flowers lie at his feet.
+- `public/art/vienna/7-5.jpg` — phrase — Vienna 7 vocab «Спасибо за вечер!»
+  - Draw: Murzik shakes Karl's hand warmly after the concert.
+- `public/art/vienna/7-6.jpg` — phrase — Vienna 7 vocab «До встречи!»
+  - Draw: Karl waves goodbye at the door of the concert hall.
+- `public/art/vienna/7-7.jpg` — phrase — Vienna 7 vocab «Мы ещё вернёмся!»
+  - Draw: Murzik and Tom wave at the Vienna skyline with big smiles.
+- `public/art/vienna/reward-7.jpg` — reward — Vienna 7 reward «Музыкальная шкатулка»
+  - Draw: Murzik opens a small wooden music box. Inside, a tiny ginger cat with a paint brush turns round and round while music plays.
+- `public/art/vienna/departure.jpg` — scene — Vienna departure; Vienna farewell 4
+  - Draw: Murzik and Tom with their suitcases at a Vienna railway station. Karl waves his hat goodbye. Murzik holds the little music box.
+- `public/art/vienna/finale-1.jpg` — scene — Vienna farewell 1
+  - Draw: Murzik stands in his cosy room above the coffee house: an easel, a guitar, ice skates on a hook, opera glasses, framed sheet music, a chess set. He holds the open music box. Far in the background, through the window, a kind old white cat in a grey hat walks past in the street.
+- `public/art/vienna/karl-story.jpg` — scene — Vienna farewell 2
+  - Draw: Karl and Murzik sit on a park bench. Karl holds an old drawing of himself as a young violinist, drawn by Asya.
+- `public/art/vienna/finale-2.jpg` — scene — Vienna farewell 3
+  - Draw: Murzik and Tom dance a little waltz in a Vienna square, laughing.
+- `public/art/vienna/finale-5.jpg` — scene — Vienna farewell 5
+  - Draw: A train travels north through autumn forests and rainy hills, from Vienna towards Prague.
+- `public/art/prague/arrival.jpg` — scene — Vienna farewell 6; Prague welcome
+  - Draw: Murzik and Tom arrive in Prague on a cold, windy autumn day: the old stone Charles Bridge, towers and red roofs. Murzik shivers.
+
+## Prague (62 pictures)
+
+- `public/art/prague/1-1.jpg` — phrase — Prague 1 vocab «Мне нужна куртка.»
+  - Draw: Murzik shivers in the cold wind on a Prague street, hugging himself.
+- `public/art/prague/1-2.jpg` — phrase — Prague 1 vocab «шапка»
+  - Draw: A warm knitted hat with a pompom.
+- `public/art/prague/1-3.jpg` — phrase — Prague 1 vocab «свитер»
+  - Draw: A thick cosy sweater folded on a chair.
+- `public/art/prague/1-4.jpg` — phrase — Prague 1 vocab «шарф»
+  - Draw: Murzik proudly touches his rust-orange knitted scarf.
+- `public/art/prague/1-5.jpg` — phrase — Prague 1 vocab «ботинки»
+  - Draw: A pair of warm brown boots by the door.
+- `public/art/prague/1-6.jpg` — phrase — Prague 1 vocab «Надень шапку!»
+  - Draw: Tom pulls a warm hat down over Murzik's ears.
+- `public/art/prague/1-7.jpg` — phrase — Prague 1 vocab «Тебе тепло?»
+  - Draw: Tom asks Murzik, who is wrapped in a hat, scarf and sweater, with only his eyes showing.
+- `public/art/prague/reward-1.jpg` — reward — Prague 1 reward «Вешалка»
+  - Draw: An old wooden coat stand by the door of Murzik's room in Prague, with his scarf hanging on it. The window shows red roofs.
+- `public/art/prague/2-1.jpg` — phrase — Prague 2 vocab «Какого цвета?»
+  - Draw: Murzik holds up a hat and looks at it with a questioning face.
+- `public/art/prague/2-2.jpg` — phrase — Prague 2 vocab «красный»
+  - Draw: A bright red apple and a red hat.
+- `public/art/prague/2-3b.jpg` — phrase — Prague 2 vocab «синий и голубой»
+  - Draw: Two paint patches: a deep dark blue like the sea at night, and a light sky blue.
+- `public/art/prague/2-4b.jpg` — phrase — Prague 2 vocab «зелёный и жёлтый»
+  - Draw: A green leaf and a yellow sun side by side.
+- `public/art/prague/2-5b.jpg` — phrase — Prague 2 vocab «розовый и коричневый»
+  - Draw: A pink flower and a brown teddy bear side by side.
+- `public/art/prague/2-6.jpg` — phrase — Prague 2 vocab «чёрный и белый»
+  - Draw: A black cat and a white cat sit side by side.
+- `public/art/prague/2-7.jpg` — phrase — Prague 2 vocab «Мой любимый цвет — синий.»
+  - Draw: Murzik hugs a dark blue hat with a happy face.
+- `public/art/prague/reward-2.jpg` — reward — Prague 2 reward «Акварельные краски»
+  - Draw: An open box of watercolour paints with many bright colours and a brush, on Murzik's windowsill above the red roofs of Prague.
+- `public/art/prague/3-1.jpg` — phrase — Prague 3 vocab «Можно примерить?»
+  - Draw: Tom holds up a jacket and points at a fitting room.
+- `public/art/prague/3-2b.jpg` — phrase — Prague 3 vocab «Какой размер? — Это мой размер.»
+  - Draw: A shop assistant with a measuring tape; Tom wears a jacket that fits perfectly.
+- `public/art/prague/3-3b.jpg` — phrase — Prague 3 vocab «рубашка и брюки»
+  - Draw: A white shirt and grey trousers on hangers.
+- `public/art/prague/3-4.jpg` — phrase — Prague 3 vocab «Слишком большая.»
+  - Draw: Murzik is lost inside a huge jacket; only his ears show.
+- `public/art/prague/3-5b.jpg` — phrase — Prague 3 vocab «Мне идёт? — Тебе очень идёт!»
+  - Draw: Tom turns in front of a mirror in a new jacket; Murzik gives two thumbs up.
+- `public/art/prague/3-6b.jpg` — phrase — Prague 3 vocab «джинсы, юбка, туфли»
+  - Draw: Blue jeans, a red skirt and a pair of shoes on a shop shelf.
+- `public/art/prague/3-7.jpg` — phrase — Prague 3 vocab «Беру!»
+  - Draw: Tom hands the jacket to the cashier with a happy face.
+- `public/art/prague/reward-3.jpg` — reward — Prague 3 reward «Шкаф»
+  - Draw: A small painted wooden wardrobe with flowers on its doors. Inside hang Murzik's new blue hat and Tom's new jacket.
+- `public/art/prague/4-1.jpg` — phrase — Prague 4 vocab «Как ты себя чувствуешь?»
+  - Draw: Tom sits on the edge of Murzik's bed with a worried face.
+- `public/art/prague/4-2b.jpg` — phrase — Prague 4 vocab «Мне плохо. У меня температура.»
+  - Draw: Murzik lies in bed with red cheeks and a thermometer in his mouth.
+- `public/art/prague/4-3b.jpg` — phrase — Prague 4 vocab «У меня болит голова. И горло.»
+  - Draw: Murzik holds his head with one paw and his throat with the other.
+- `public/art/prague/4-4b.jpg` — phrase — Prague 4 vocab «У меня болит живот.»
+  - Draw: Murzik holds his tummy with both paws and a sad face.
+- `public/art/prague/4-5b.jpg` — phrase — Prague 4 vocab «У меня болит зуб.»
+  - Draw: Murzik holds his cheek; one side of his face is a little swollen.
+- `public/art/prague/4-6b.jpg` — phrase — Prague 4 vocab «рука, нога, спина»
+  - Draw: A simple friendly picture of Tom with arrows pointing to his arm, his leg and his back.
+- `public/art/prague/4-7b.jpg` — phrase — Prague 4 vocab «Отдыхай! Выздоравливай!»
+  - Draw: Tom tucks the blanket around Murzik and puts a cup of tea by the bed.
+- `public/art/prague/reward-4.jpg` — reward — Prague 4 reward «Грелка»
+  - Draw: Murzik hugs a soft hot-water bottle in a knitted cat-shaped cover, tucked up in bed.
+- `public/art/prague/5-1.jpg` — phrase — Prague 5 vocab «Что у вас болит?»
+  - Draw: Anna Petrovna, a kind elderly doctor with glasses, sits by Murzik's bed.
+- `public/art/prague/5-2.jpg` — phrase — Prague 5 vocab «Откройте рот, пожалуйста.»
+  - Draw: Murzik opens his mouth wide while the doctor looks with a little light.
+- `public/art/prague/5-3.jpg` — phrase — Prague 5 vocab «Это простуда.»
+  - Draw: The doctor smiles calmly and closes her bag.
+- `public/art/prague/5-4.jpg` — phrase — Prague 5 vocab «Пейте много чая.»
+  - Draw: A big teapot and a cup of tea with lemon on the bedside table.
+- `public/art/prague/5-5.jpg` — phrase — Prague 5 vocab «Лежите три дня.»
+  - Draw: Murzik in bed next to a small calendar with three days circled.
+- `public/art/prague/5-6b.jpg` — phrase — Prague 5 vocab «Вот рецепт на лекарство.»
+  - Draw: The doctor hands Tom a small paper prescription and points at a medicine bottle.
+- `public/art/prague/5-7b.jpg` — phrase — Prague 5 vocab «Мне нужно в больницу?»
+  - Draw: Murzik looks worried, with a small picture of a hospital building in a thought bubble.
+- `public/art/prague/reward-5.jpg` — reward — Prague 5 reward «Мёд»
+  - Draw: A big jar of golden honey with a cloth lid tied with string, on the table next to a cup of tea.
+- `public/art/prague/6-1.jpg` — phrase — Prague 6 vocab «Где аптека?»
+  - Draw: Tom stands on a rainy Prague street, looking around with a prescription in his hand.
+- `public/art/prague/6-2.jpg` — phrase — Prague 6 vocab «У вас есть что-нибудь от горла?»
+  - Draw: Tom asks a pharmacist at the counter, pointing at his throat.
+- `public/art/prague/6-3.jpg` — phrase — Prague 6 vocab «таблетки»
+  - Draw: A small box of tablets on the pharmacy counter.
+- `public/art/prague/6-4.jpg` — phrase — Prague 6 vocab «Сколько раз в день?»
+  - Draw: Tom holds the box of tablets and looks at the pharmacist with a question.
+- `public/art/prague/6-5.jpg` — phrase — Prague 6 vocab «Три раза в день.»
+  - Draw: Three little suns: morning, midday and evening, each with one tablet.
+- `public/art/prague/6-6.jpg` — phrase — Prague 6 vocab «после еды»
+  - Draw: An empty plate, then an arrow, then one tablet with a glass of water.
+- `public/art/prague/6-7.jpg` — phrase — Prague 6 vocab «Будьте здоровы!»
+  - Draw: Tom sneezes; the pharmacist smiles kindly.
+- `public/art/prague/reward-6.jpg` — reward — Prague 6 reward «Ночник»
+  - Draw: A small round night light shaped like a moon glows softly beside Murzik's bed in the dark room.
+- `public/art/prague/7-1.jpg` — phrase — Prague 7 vocab «Мне уже лучше!»
+  - Draw: Murzik sits up in bed and stretches with a big smile.
+- `public/art/prague/7-2.jpg` — phrase — Prague 7 vocab «Как хорошо!»
+  - Draw: Tom claps his hands with relief.
+- `public/art/prague/7-3.jpg` — phrase — Prague 7 vocab «Я снова на ногах!»
+  - Draw: Murzik jumps out of bed and stands proudly on two feet.
+- `public/art/prague/7-4.jpg` — phrase — Prague 7 vocab «Спасибо за заботу!»
+  - Draw: Murzik hugs Anna Petrovna at her door.
+- `public/art/prague/7-5.jpg` — phrase — Prague 7 vocab «Береги себя!»
+  - Draw: Anna Petrovna wraps Murzik's scarf a little tighter around his neck.
+- `public/art/prague/7-6.jpg` — phrase — Prague 7 vocab «Не болей!»
+  - Draw: Anna Petrovna wags a finger kindly at Murzik with a smile.
+- `public/art/prague/7-7.jpg` — phrase — Prague 7 vocab «Ты как?»
+  - Draw: Tom peeks around the door and asks with a grin.
+- `public/art/prague/reward-7.jpg` — reward — Prague 7 reward «Марионетка»
+  - Draw: Murzik holds a wooden string puppet of a ginger cat in a little scarf — it looks just like him. He makes it dance.
+- `public/art/prague/departure.jpg` — scene — Prague departure; Prague farewell 4
+  - Draw: Anna Petrovna waves goodbye to Murzik and Tom at Prague's railway station. Murzik wears his new blue hat and holds the cat puppet.
+- `public/art/prague/finale-1.jpg` — scene — Prague farewell 1
+  - Draw: Murzik stands in his cosy Prague room: a coat stand, watercolour paints on the windowsill, a painted wardrobe, a hot-water bottle on the bed, a jar of honey and a moon night light. He holds the ginger cat puppet.
+- `public/art/prague/finale-2.jpg` — scene — Prague farewell 2
+  - Draw: Murzik and Tom celebrate on the Charles Bridge in their new warm clothes. Far behind them, among the people on the bridge, a kind old white cat in a grey hat smiles.
+- `public/art/prague/tom-email.jpg` — scene — Prague farewell 3
+  - Draw: Tom reads an email on his phone with a huge, surprised smile. Murzik jumps up to see the screen.
+- `public/art/prague/finale-5.jpg` — scene — Prague farewell 5
+  - Draw: A small plane flies south-west over the clouds, from cold grey Prague towards a sunny ocean coast.
+- `public/art/lisbon/arrival.jpg` — scene — Prague farewell 6; Lisbon welcome
+  - Draw: Murzik and Tom arrive in Lisbon: a yellow tram climbs a steep street of colourful tiled houses, with the ocean shining below.
+
+## Lisbon (62 pictures)
+
+- `public/art/lisbon/1-1.jpg` — phrase — Lisbon 1 vocab «Где ты работаешь?»
+  - Draw: Murzik asks Tom on a yellow tram climbing a steep Lisbon street.
+- `public/art/lisbon/1-2.jpg` — phrase — Lisbon 1 vocab «Я работаю в журнале.»
+  - Draw: A woman in an office holds up a glossy travel magazine with a photo of the sea on the cover.
+- `public/art/lisbon/1-3.jpg` — phrase — Lisbon 1 vocab «Я фотограф.»
+  - Draw: Tom proudly lifts his camera and takes a photo.
+- `public/art/lisbon/1-4.jpg` — phrase — Lisbon 1 vocab «Я ищу работу.»
+  - Draw: Tom looks through job ads on his laptop at a café table.
+- `public/art/lisbon/1-5.jpg` — phrase — Lisbon 1 vocab «Это интересная работа.»
+  - Draw: Tom photographs a colourful Lisbon street full of tiles and flowers.
+- `public/art/lisbon/1-6.jpg` — phrase — Lisbon 1 vocab «Мне нравится моя работа.»
+  - Draw: A happy baker in a white hat holds a tray of fresh custard tarts.
+- `public/art/lisbon/1-7.jpg` — phrase — Lisbon 1 vocab «У меня встреча.»
+  - Draw: Tom points at a circled time in his diary and looks nervous.
+- `public/art/lisbon/reward-1.jpg` — reward — Lisbon 1 reward «Трамвайчик»
+  - Draw: A small yellow toy tram stands on the windowsill of Murzik's room. Outside, the real yellow tram goes up the hill.
+- `public/art/lisbon/2-1.jpg` — phrase — Lisbon 2 vocab «Я учусь в университете.»
+  - Draw: A young woman with a backpack walks into an old university building.
+- `public/art/lisbon/2-2.jpg` — phrase — Lisbon 2 vocab «Что ты изучаешь?»
+  - Draw: Murzik looks at a pile of thick books with a curious face.
+- `public/art/lisbon/2-3.jpg` — phrase — Lisbon 2 vocab «Я изучаю историю.»
+  - Draw: A history book open at a picture of old ships sailing from Lisbon.
+- `public/art/lisbon/2-4.jpg` — phrase — Lisbon 2 vocab «студент / студентка»
+  - Draw: A young man and a young woman, both with backpacks and books, smile side by side.
+- `public/art/lisbon/2-5.jpg` — phrase — Lisbon 2 vocab «на первом курсе»
+  - Draw: A big number 1 on a university door.
+- `public/art/lisbon/2-6.jpg` — phrase — Lisbon 2 vocab «Это трудно?»
+  - Draw: Murzik looks at a huge book with worried, wide eyes.
+- `public/art/lisbon/2-7.jpg` — phrase — Lisbon 2 vocab «Мне нравится учиться.»
+  - Draw: Katya reads in the sun on the university steps with a happy smile.
+- `public/art/lisbon/reward-2.jpg` — reward — Lisbon 2 reward «Настольная лампа»
+  - Draw: A small green desk lamp shines on Murzik's sketchbook on a little table by the window.
+- `public/art/lisbon/3-1.jpg` — phrase — Lisbon 3 vocab «Когда ты встаёшь?»
+  - Draw: Murzik in pyjamas yawns next to an alarm clock.
+- `public/art/lisbon/3-2.jpg` — phrase — Lisbon 3 vocab «Я встаю в семь.»
+  - Draw: Katya stretches by a window; a clock shows seven.
+- `public/art/lisbon/3-3.jpg` — phrase — Lisbon 3 vocab «Я начинаю в девять.»
+  - Draw: Katya ties her café apron; a clock on the wall shows nine.
+- `public/art/lisbon/3-4.jpg` — phrase — Lisbon 3 vocab «В час — обед.»
+  - Draw: A plate of grilled sardines and salad on a sunny café table.
+- `public/art/lisbon/3-5.jpg` — phrase — Lisbon 3 vocab «Я заканчиваю в шесть.»
+  - Draw: Katya takes off her apron and waves goodbye; a clock shows six.
+- `public/art/lisbon/3-6.jpg` — phrase — Lisbon 3 vocab «рабочий день»
+  - Draw: A clock, a laptop and a cup of coffee on a busy office desk.
+- `public/art/lisbon/3-7.jpg` — phrase — Lisbon 3 vocab «Сегодня выходной!»
+  - Draw: Katya lies on a beach towel by the ocean with sunglasses on.
+- `public/art/lisbon/reward-3.jpg` — reward — Lisbon 3 reward «Кофеварка»
+  - Draw: A small silver stovetop coffee pot steams on a tiny stove in Murzik's room.
+- `public/art/lisbon/4-1.jpg` — phrase — Lisbon 4 vocab «Расскажите о себе.»
+  - Draw: The editor, a confident woman with short dark hair, sits across a desk from Tom.
+- `public/art/lisbon/4-2.jpg` — phrase — Lisbon 4 vocab «Я фотографирую путешествия.»
+  - Draw: A wall of Tom's photos: Paris, London, Madrid, Rome, Berlin, Amsterdam, Vienna, Prague.
+- `public/art/lisbon/4-3.jpg` — phrase — Lisbon 4 vocab «У меня есть опыт.»
+  - Draw: Tom sits up straight and smiles confidently, his hands on a portfolio.
+- `public/art/lisbon/4-4b.jpg` — phrase — Lisbon 4 vocab «Хороший ответ!»
+  - Draw: The editor smiles and nods, writing a tick in her notebook.
+- `public/art/lisbon/4-5.jpg` — phrase — Lisbon 4 vocab «Почему вы хотите эту работу?»
+  - Draw: The editor leans forward with a pen and a curious look.
+- `public/art/lisbon/4-6.jpg` — phrase — Lisbon 4 vocab «Потому что я люблю путешествовать.»
+  - Draw: Tom spreads his arms wide in front of a map of the world.
+- `public/art/lisbon/4-7.jpg` — phrase — Lisbon 4 vocab «Мы вам позвоним.»
+  - Draw: The editor shakes Tom's hand at the office door.
+- `public/art/lisbon/reward-4.jpg` — reward — Lisbon 4 reward «Рамка»
+  - Draw: On Murzik's wall hangs a framed photo by Tom: Murzik on the Charles Bridge in his blue hat.
+- `public/art/lisbon/5-1.jpg` — phrase — Lisbon 5 vocab «Хорошая новость!»
+  - Draw: Tom runs into the room with his phone in his hand and a huge smile.
+- `public/art/lisbon/5-2.jpg` — phrase — Lisbon 5 vocab «Меня взяли!»
+  - Draw: Tom jumps high in the air with both arms up.
+- `public/art/lisbon/5-3.jpg` — phrase — Lisbon 5 vocab «Поздравляю!»
+  - Draw: Murzik hugs Tom tightly.
+- `public/art/lisbon/5-4.jpg` — phrase — Lisbon 5 vocab «Получилось!»
+  - Draw: Murzik and Tom give each other a high five.
+- `public/art/lisbon/5-5.jpg` — phrase — Lisbon 5 vocab «Когда начинать?»
+  - Draw: Tom on the phone, holding up a calendar with a curious face.
+- `public/art/lisbon/5-6.jpg` — phrase — Lisbon 5 vocab «С понедельника.»
+  - Draw: A wall calendar with Monday circled in green.
+- `public/art/lisbon/5-7.jpg` — phrase — Lisbon 5 vocab «Надо отметить!»
+  - Draw: Katya holds up a cake box with a big grin.
+- `public/art/lisbon/reward-5.jpg` — reward — Lisbon 5 reward «Карта мира»
+  - Draw: A big world map hangs on Murzik's wall. Little red pins mark Paris, London, Madrid, Rome, Berlin, Amsterdam, Vienna, Prague and Lisbon.
+- `public/art/lisbon/6-1.jpg` — phrase — Lisbon 6 vocab «Знакомьтесь, это наш новый фотограф.»
+  - Draw: The editor introduces Tom to a smiling group in a bright office.
+- `public/art/lisbon/6-2.jpg` — phrase — Lisbon 6 vocab «Это мой коллега.»
+  - Draw: Tom shakes hands with a young man with a beard and a laptop.
+- `public/art/lisbon/6-3.jpg` — phrase — Lisbon 6 vocab «начальник»
+  - Draw: The editor sits at a big desk in a glass office, on the phone.
+- `public/art/lisbon/6-4.jpg` — phrase — Lisbon 6 vocab «офис»
+  - Draw: A bright office with big windows, desks, plants and a view of the river.
+- `public/art/lisbon/6-5.jpg` — phrase — Lisbon 6 vocab «Где мой стол?»
+  - Draw: Tom looks around the office holding a box of his things.
+- `public/art/lisbon/6-6.jpg` — phrase — Lisbon 6 vocab «Встреча в десять.»
+  - Draw: A clock shows ten; people sit down around a big table.
+- `public/art/lisbon/6-7.jpg` — phrase — Lisbon 6 vocab «Добро пожаловать в команду!»
+  - Draw: The whole office claps for Tom; Murzik claps too, sitting on his shoulder.
+- `public/art/lisbon/reward-6.jpg` — reward — Lisbon 6 reward «Фотоаппарат»
+  - Draw: Murzik holds Tom's old camera with both paws and takes his very first photo of the yellow tram.
+- `public/art/lisbon/7-1.jpg` — phrase — Lisbon 7 vocab «За работу!»
+  - Draw: Tom, Murzik and Katya raise glasses of lemonade by the ocean.
+- `public/art/lisbon/7-2.jpg` — phrase — Lisbon 7 vocab «Какой закат!»
+  - Draw: An orange and pink sunset over the ocean, with a lighthouse.
+- `public/art/lisbon/7-3.jpg` — phrase — Lisbon 7 vocab «океан»
+  - Draw: Big blue ocean waves on a sandy beach.
+- `public/art/lisbon/7-4.jpg` — phrase — Lisbon 7 vocab «Я горжусь тобой!»
+  - Draw: Murzik looks up at Tom with shining, proud eyes.
+- `public/art/lisbon/7-5.jpg` — phrase — Lisbon 7 vocab «Это только начало.»
+  - Draw: Tom looks at a long road leading along the coast into the sunset.
+- `public/art/lisbon/7-6.jpg` — phrase — Lisbon 7 vocab «Спасибо, что ты рядом.»
+  - Draw: Tom puts his arm around Murzik; they sit together on the sand.
+- `public/art/lisbon/7-7.jpg` — phrase — Lisbon 7 vocab «Вперёд!»
+  - Draw: Murzik points ahead towards the horizon with a brave face.
+- `public/art/lisbon/reward-7.jpg` — reward — Lisbon 7 reward «Плитка»
+  - Draw: Murzik holds a square blue and white painted Lisbon tile showing a little ship on the waves.
+- `public/art/lisbon/departure.jpg` — scene — Lisbon departure; Lisbon farewell 4
+  - Draw: Katya waves goodbye to Murzik and Tom at Lisbon airport. Tom carries his new camera; Murzik holds the blue tile.
+- `public/art/lisbon/finale-1.jpg` — scene — Lisbon farewell 1
+  - Draw: Murzik stands in his cosy Lisbon room: a toy yellow tram, a green desk lamp, a little coffee pot, a framed photo, a big world map with pins and Tom's old camera. He holds the blue and white tile.
+- `public/art/lisbon/finale-2.jpg` — scene — Lisbon farewell 2
+  - Draw: Murzik and Tom ride the yellow tram, waving out of the window. Tom has his new camera around his neck.
+- `public/art/lisbon/column.jpg` — scene — Lisbon farewell 3
+  - Draw: A magazine page with a big photo of Murzik on the yellow tram. Tom and Murzik look at it together, delighted.
+- `public/art/lisbon/finale-5.jpg` — scene — Lisbon farewell 5
+  - Draw: A small plane flies east over the blue Mediterranean Sea, from Lisbon towards Athens.
+- `public/art/athens/arrival.jpg` — scene — Lisbon farewell 6; Athens welcome
+  - Draw: Murzik and Tom arrive in sunny Athens and look up at the ancient Acropolis on its hill, with white houses below.
+
+## Athens (62 pictures)
+
+- `public/art/athens/1-1.jpg` — phrase — Athens 1 vocab «Какой сейчас месяц?»
+  - Draw: Murzik looks at a wall calendar on a sunny white terrace with a questioning face.
+- `public/art/athens/1-2.jpg` — phrase — Athens 1 vocab «Сейчас май.»
+  - Draw: A sunny Athens terrace with blooming flowers and a calendar page with spring flowers.
+- `public/art/athens/1-3.jpg` — phrase — Athens 1 vocab «зима: декабрь, январь, февраль»
+  - Draw: Three small snowy pictures in a row: a snowman, a fir tree, a frozen pond.
+- `public/art/athens/1-4.jpg` — phrase — Athens 1 vocab «весна: март, апрель, май»
+  - Draw: Three small spring pictures: melting snow, a bud, blooming flowers.
+- `public/art/athens/1-5.jpg` — phrase — Athens 1 vocab «лето: июнь, июль, август»
+  - Draw: Three small summer pictures: a beach, a big sun, a watermelon.
+- `public/art/athens/1-6.jpg` — phrase — Athens 1 vocab «осень: сентябрь, октябрь, ноябрь»
+  - Draw: Three small autumn pictures: a school bag, yellow leaves, rain.
+- `public/art/athens/1-7.jpg` — phrase — Athens 1 vocab «в мае»
+  - Draw: Murzik lies in the warm sun on the terrace with sunglasses on.
+- `public/art/athens/reward-1.jpg` — reward — Athens 1 reward «Ваза»
+  - Draw: A clay vase with a black and orange pattern stands on the windowsill of a small white room with a blue door.
+- `public/art/athens/2-1.jpg` — phrase — Athens 2 vocab «Какое сегодня число?»
+  - Draw: Tom looks at his phone calendar with a thinking face.
+- `public/art/athens/2-2.jpg` — phrase — Athens 2 vocab «Сегодня первое мая.»
+  - Draw: A calendar page with a big number 1 and a spring flower.
+- `public/art/athens/2-3.jpg` — phrase — Athens 2 vocab «второе, третье»
+  - Draw: Two calendar pages with the numbers 2 and 3.
+- `public/art/athens/2-4.jpg` — phrase — Athens 2 vocab «четвёртое, пятое»
+  - Draw: Two calendar pages with the numbers 4 and 5.
+- `public/art/athens/2-5.jpg` — phrase — Athens 2 vocab «десятое»
+  - Draw: A calendar page with the number 10.
+- `public/art/athens/2-6.jpg` — phrase — Athens 2 vocab «двадцатое»
+  - Draw: A calendar page with the number 20.
+- `public/art/athens/2-7.jpg` — phrase — Athens 2 vocab «Какое завтра число?»
+  - Draw: Murzik flips a calendar page forward with a curious face.
+- `public/art/athens/reward-2.jpg` — reward — Athens 2 reward «Ракушки»
+  - Draw: A little bowl full of white, pink and striped seashells on Murzik's windowsill, with the sea far away.
+- `public/art/athens/3-1.jpg` — phrase — Athens 3 vocab «Когда у тебя день рождения?»
+  - Draw: Nika asks Tom with a curious smile on the terrace at night.
+- `public/art/athens/3-2.jpg` — phrase — Athens 3 vocab «Пятого мая.»
+  - Draw: A calendar page with a big number 5 and a little birthday cake drawn on it.
+- `public/art/athens/3-3.jpg` — phrase — Athens 3 vocab «послезавтра»
+  - Draw: Two arrows jump forward over two calendar pages.
+- `public/art/athens/3-4.jpg` — phrase — Athens 3 vocab «Уже скоро!»
+  - Draw: Tom looks at a clock with excited, wide eyes.
+- `public/art/athens/3-5.jpg` — phrase — Athens 3 vocab «Давай устроим праздник!»
+  - Draw: Nika holds up colourful balloons and party hats with a big grin.
+- `public/art/athens/3-6.jpg` — phrase — Athens 3 vocab «Это сюрприз!»
+  - Draw: Tom hides a present behind his back and winks.
+- `public/art/athens/3-7.jpg` — phrase — Athens 3 vocab «Только никому не говори!»
+  - Draw: Nika puts a finger to her lips; Tom nods.
+- `public/art/athens/reward-3.jpg` — reward — Athens 3 reward «Колокольчик»
+  - Draw: A little blue and white wind chime with tiny bells hangs by the blue door of Murzik's room and sways in the breeze.
+- `public/art/athens/4-1.jpg` — phrase — Athens 4 vocab «Что ему подарить?»
+  - Draw: Tom and Nika stand at a market stall full of gifts, thinking.
+- `public/art/athens/4-2.jpg` — phrase — Athens 4 vocab «подарок»
+  - Draw: A box wrapped in blue paper with a white ribbon.
+- `public/art/athens/4-3.jpg` — phrase — Athens 4 vocab «Ему нравится рисовать.»
+  - Draw: Tom shows Nika a small drawing Murzik made of the Acropolis.
+- `public/art/athens/4-4.jpg` — phrase — Athens 4 vocab «альбом для рисования»
+  - Draw: A thick sketchbook with a leather cover and a pencil tied to it.
+- `public/art/athens/4-5.jpg` — phrase — Athens 4 vocab «Это хорошая идея!»
+  - Draw: Nika snaps her fingers with a bright face.
+- `public/art/athens/4-6.jpg` — phrase — Athens 4 vocab «Упакуйте, пожалуйста.»
+  - Draw: The seller wraps the sketchbook in blue paper.
+- `public/art/athens/4-7.jpg` — phrase — Athens 4 vocab «А что ты подаришь?»
+  - Draw: Tom turns to Nika with a questioning look, holding the wrapped present.
+- `public/art/athens/reward-4.jpg` — reward — Athens 4 reward «Воздушные шары»
+  - Draw: A bunch of blue, white and yellow balloons is tied to the railing of the roof terrace.
+- `public/art/athens/5-1.jpg` — phrase — Athens 5 vocab «С днём рождения!»
+  - Draw: Tom and Nika burst through the blue door with balloons, shouting happily.
+- `public/art/athens/5-2.jpg` — phrase — Athens 5 vocab «Это тебе!»
+  - Draw: Tom holds out a present wrapped in blue paper.
+- `public/art/athens/5-3b.jpg` — phrase — Athens 5 vocab «От всего сердца!»
+  - Draw: Murzik presses both paws to his heart with shining eyes.
+- `public/art/athens/5-4.jpg` — phrase — Athens 5 vocab «Какой красивый подарок!»
+  - Draw: Murzik holds up a leather sketchbook with shining eyes.
+- `public/art/athens/5-5.jpg` — phrase — Athens 5 vocab «Не надо было!»
+  - Draw: Murzik puts his paws to his cheeks, touched and happy.
+- `public/art/athens/5-6.jpg` — phrase — Athens 5 vocab «Мне очень нравится!»
+  - Draw: Murzik hugs the sketchbook to his chest.
+- `public/art/athens/5-7.jpg` — phrase — Athens 5 vocab «Ты лучший друг!»
+  - Draw: Murzik hugs Tom tightly.
+- `public/art/athens/reward-5.jpg` — reward — Athens 5 reward «Альбом»
+  - Draw: Murzik sits on the terrace drawing the Acropolis in his new leather sketchbook.
+- `public/art/athens/6-1.jpg` — phrase — Athens 6 vocab «Желаю счастья!»
+  - Draw: Nika's grandmother kisses Murzik on the head and smiles warmly.
+- `public/art/athens/6-2.jpg` — phrase — Athens 6 vocab «Желаю здоровья!»
+  - Draw: Nika's grandfather raises a glass of juice to Murzik.
+- `public/art/athens/6-3.jpg` — phrase — Athens 6 vocab «торт»
+  - Draw: A big round birthday cake with white cream and blue flowers.
+- `public/art/athens/6-4.jpg` — phrase — Athens 6 vocab «Задуй свечи!»
+  - Draw: Murzik takes a deep breath in front of a cake with lit candles.
+- `public/art/athens/6-5.jpg` — phrase — Athens 6 vocab «Загадай желание!»
+  - Draw: Murzik closes his eyes tightly and holds his paws together.
+- `public/art/athens/6-6.jpg` — phrase — Athens 6 vocab «Угощайтесь!»
+  - Draw: Nika's mother puts plates of food on a long table on the roof terrace.
+- `public/art/athens/6-7.jpg` — phrase — Athens 6 vocab «Какой вкусный торт!»
+  - Draw: Murzik has cream on his nose and a happy face.
+- `public/art/athens/reward-6.jpg` — reward — Athens 6 reward «Оберег»
+  - Draw: A round blue glass charm shaped like an eye hangs on a string by Murzik's bed.
+- `public/art/athens/7-1.jpg` — phrase — Athens 7 vocab «Тебе открытка!»
+  - Draw: Nika's grandmother hands Murzik an old-looking postcard.
+- `public/art/athens/7-2.jpg` — phrase — Athens 7 vocab «От кого?»
+  - Draw: Murzik turns the postcard over and over with a puzzled face.
+- `public/art/athens/7-3.jpg` — phrase — Athens 7 vocab «Здесь нет адреса.»
+  - Draw: The back of a postcard: a few lines of handwriting and an empty space where the address should be.
+- `public/art/athens/7-4.jpg` — phrase — Athens 7 vocab «Странно…»
+  - Draw: Tom scratches his head and frowns at the postcard.
+- `public/art/athens/7-5.jpg` — phrase — Athens 7 vocab «Кто это написал?»
+  - Draw: Murzik holds the postcard up to the lamp, looking closely at the writing.
+- `public/art/athens/7-6.jpg` — phrase — Athens 7 vocab «Может быть, бабушка?»
+  - Draw: Murzik looks up at the night sky with hope in his eyes.
+- `public/art/athens/7-7.jpg` — phrase — Athens 7 vocab «Не может быть!»
+  - Draw: Tom's mouth falls open in surprise.
+- `public/art/athens/reward-7.jpg` — reward — Athens 7 reward «Открытка»
+  - Draw: Murzik holds the mysterious birthday postcard. In the corner there is a small painted ginger cat — just like on the postcard from Paris.
+- `public/art/athens/departure.jpg` — scene — Athens departure; Athens farewell 4
+  - Draw: Nika and her family wave goodbye to Murzik and Tom at the port of Athens. A big white ferry waits. Murzik holds the postcard.
+- `public/art/athens/finale-1.jpg` — scene — Athens farewell 1
+  - Draw: Murzik stands in his white room on the roof: a Greek vase, seashells, a wind chime, balloons, his sketchbook and a blue eye charm. He holds the mysterious postcard.
+- `public/art/athens/finale-2.jpg` — scene — Athens farewell 2
+  - Draw: Murzik, Tom and Nika celebrate on the roof terrace at night with balloons and the lit Acropolis behind them.
+- `public/art/athens/stamp.jpg` — scene — Athens farewell 3
+  - Draw: Close-up of the corner of the postcard: a stamp with a picture of a big domed building and minarets, and a round postmark.
+- `public/art/athens/finale-5.jpg` — scene — Athens farewell 5
+  - Draw: A white ferry sails across a blue sea between islands, from Athens towards Istanbul, with seagulls above.
+- `public/art/istanbul/arrival.jpg` — scene — Athens farewell 6; Istanbul welcome
+  - Draw: Murzik and Tom arrive in Istanbul by sea: domes and minarets rise above the water, seagulls fly and boats sail by.
+
+## Istanbul (62 pictures)
+
+- `public/art/istanbul/1-1.jpg` — phrase — Istanbul 1 vocab «У меня бронь.»
+  - Draw: Tom stands at a hotel reception desk with his suitcase and smiles.
+- `public/art/istanbul/1-2.jpg` — phrase — Istanbul 1 vocab «На имя Том Браун.»
+  - Draw: The receptionist looks at a computer screen, finding the booking.
+- `public/art/istanbul/1-3.jpg` — phrase — Istanbul 1 vocab «На сколько ночей?»
+  - Draw: The receptionist raises his eyebrows with a friendly smile; a moon is in the window.
+- `public/art/istanbul/1-4.jpg` — phrase — Istanbul 1 vocab «На три ночи.»
+  - Draw: Three little moons in a row.
+- `public/art/istanbul/1-5.jpg` — phrase — Istanbul 1 vocab «Вот ваш ключ.»
+  - Draw: The receptionist hands Tom an old brass key with a big tassel.
+- `public/art/istanbul/1-6b.jpg` — phrase — Istanbul 1 vocab «Это хорошая гостиница.»
+  - Draw: A small, pretty hotel with flowers on the balconies and a view of the sea.
+- `public/art/istanbul/1-7.jpg` — phrase — Istanbul 1 vocab «Завтрак включён?»
+  - Draw: A breakfast table with bread, cheese, olives, tomatoes and tea in tulip-shaped glasses.
+- `public/art/istanbul/reward-1.jpg` — reward — Istanbul 1 reward «Лампа»
+  - Draw: A hanging lamp made of many little pieces of coloured glass glows in the hotel room. Through the balcony door the Bosphorus shines at night.
+- `public/art/istanbul/2-1.jpg` — phrase — Istanbul 2 vocab «Не работает кондиционер.»
+  - Draw: Tom presses the button of an air conditioner; nothing happens; he fans himself in the heat.
+- `public/art/istanbul/2-2.jpg` — phrase — Istanbul 2 vocab «Нет горячей воды.»
+  - Draw: Murzik under a cold shower with his fur standing on end.
+- `public/art/istanbul/2-3.jpg` — phrase — Istanbul 2 vocab «Нет полотенец.»
+  - Draw: An empty towel rail in a hotel bathroom; Murzik drips water on the floor.
+- `public/art/istanbul/2-4.jpg` — phrase — Istanbul 2 vocab «Можно другой номер?»
+  - Draw: Tom asks at the reception desk, pointing upstairs.
+- `public/art/istanbul/2-5.jpg` — phrase — Istanbul 2 vocab «Извините за неудобства.»
+  - Draw: The receptionist puts a hand on his heart and bows his head politely.
+- `public/art/istanbul/2-6.jpg` — phrase — Istanbul 2 vocab «Сейчас всё исправим.»
+  - Draw: A repairman with a toolbox walks quickly towards the room.
+- `public/art/istanbul/2-7.jpg` — phrase — Istanbul 2 vocab «Теперь всё в порядке.»
+  - Draw: Murzik, wrapped in a big fluffy towel, gives a thumbs up.
+- `public/art/istanbul/reward-2.jpg` — reward — Istanbul 2 reward «Стаканчики»
+  - Draw: Two small tulip-shaped glasses of red tea on little saucers stand on the balcony table.
+- `public/art/istanbul/3-1.jpg` — phrase — Istanbul 3 vocab «Можно ещё одну подушку?»
+  - Draw: Murzik hugs a pillow and holds up one finger at the reception.
+- `public/art/istanbul/3-2.jpg` — phrase — Istanbul 3 vocab «Разбудите меня в семь, пожалуйста.»
+  - Draw: Murzik points at a clock showing seven while asking the receptionist.
+- `public/art/istanbul/3-3.jpg` — phrase — Istanbul 3 vocab «Можно оставить чемодан?»
+  - Draw: Tom puts a suitcase down next to the reception desk.
+- `public/art/istanbul/3-4.jpg` — phrase — Istanbul 3 vocab «Вызовите такси, пожалуйста.»
+  - Draw: A yellow taxi waits in front of the hotel.
+- `public/art/istanbul/3-5.jpg` — phrase — Istanbul 3 vocab «Какой пароль от вай-фая?»
+  - Draw: Tom holds his phone up and looks at the receptionist.
+- `public/art/istanbul/3-6.jpg` — phrase — Istanbul 3 vocab «Без проблем.»
+  - Draw: The receptionist gives a friendly thumbs up.
+- `public/art/istanbul/3-7.jpg` — phrase — Istanbul 3 vocab «Мы скоро вернёмся.»
+  - Draw: Murzik and Tom wave at the hotel door as they leave.
+- `public/art/istanbul/reward-3.jpg` — reward — Istanbul 3 reward «Лукум»
+  - Draw: An open round wooden box of pink and white Turkish delight dusted with sugar, on the balcony table.
+- `public/art/istanbul/4-1.jpg` — phrase — Istanbul 4 vocab «Мы потеряли чемодан!»
+  - Draw: Murzik and Tom stand by the empty spot behind the reception desk with shocked faces.
+- `public/art/istanbul/4-2.jpg` — phrase — Istanbul 4 vocab «Он был здесь!»
+  - Draw: Murzik points at an empty place on the floor.
+- `public/art/istanbul/4-3.jpg` — phrase — Istanbul 4 vocab «Как он выглядит?»
+  - Draw: The receptionist holds a notepad and a pen, ready to write.
+- `public/art/istanbul/4-4.jpg` — phrase — Istanbul 4 vocab «Большой и коричневый.»
+  - Draw: Murzik spreads his arms wide to show a big suitcase; a brown colour patch next to him.
+- `public/art/istanbul/4-5.jpg` — phrase — Istanbul 4 vocab «Там все мои вещи!»
+  - Draw: A thought bubble above Murzik shows his bowl, teapot, fan, family photo, alarm clock, clogs, music box, puppet, tile and postcard.
+- `public/art/istanbul/4-6.jpg` — phrase — Istanbul 4 vocab «Мы обязательно поищем.»
+  - Draw: The receptionist and a porter start looking around the hotel.
+- `public/art/istanbul/4-7.jpg` — phrase — Istanbul 4 vocab «Не плачь!»
+  - Draw: Tom hugs Murzik, who has a tear on his cheek.
+- `public/art/istanbul/reward-4.jpg` — reward — Istanbul 4 reward «Фонарик»
+  - Draw: Murzik holds a small torch and shines it under the hotel stairs, looking very determined.
+- `public/art/istanbul/5-1.jpg` — phrase — Istanbul 5 vocab «Где почта?»
+  - Draw: Murzik and Tom look around a busy old street full of shops.
+- `public/art/istanbul/5-2.jpg` — phrase — Istanbul 5 vocab «Я хочу отправить открытку.»
+  - Draw: Murzik holds up a postcard of Istanbul at a post office counter.
+- `public/art/istanbul/5-3.jpg` — phrase — Istanbul 5 vocab «марка»
+  - Draw: A colourful postage stamp with a picture of a seagull.
+- `public/art/istanbul/5-4.jpg` — phrase — Istanbul 5 vocab «в Рим»
+  - Draw: An arrow goes from Istanbul to a little picture of the Colosseum.
+- `public/art/istanbul/5-5.jpg` — phrase — Istanbul 5 vocab «Кто отправил эту открытку?»
+  - Draw: Murzik shows the mysterious birthday postcard to a post office clerk.
+- `public/art/istanbul/5-6.jpg` — phrase — Istanbul 5 vocab «Я не помню.»
+  - Draw: The clerk shrugs with a kind, sorry face.
+- `public/art/istanbul/5-7.jpg` — phrase — Istanbul 5 vocab «Каждый день — сотни открыток.»
+  - Draw: A huge pile of postcards and letters on the post office counter.
+- `public/art/istanbul/reward-5.jpg` — reward — Istanbul 5 reward «Марки»
+  - Draw: Murzik opens a small blue stamp album with a few colourful stamps from different countries.
+- `public/art/istanbul/6-1.jpg` — phrase — Istanbul 6 vocab «Чемодан нашёлся!»
+  - Draw: The receptionist points at a big brown suitcase in a laundry room full of white sheets.
+- `public/art/istanbul/6-2.jpg` — phrase — Istanbul 6 vocab «Вот он!»
+  - Draw: Murzik runs towards the brown suitcase with open arms.
+- `public/art/istanbul/6-3.jpg` — phrase — Istanbul 6 vocab «Какое счастье!»
+  - Draw: Murzik hugs the suitcase with closed eyes and a huge smile.
+- `public/art/istanbul/6-4.jpg` — phrase — Istanbul 6 vocab «Всё на месте?»
+  - Draw: Tom opens the suitcase and looks inside.
+- `public/art/istanbul/6-5.jpg` — phrase — Istanbul 6 vocab «Ничего не пропало.»
+  - Draw: Inside the open suitcase: the bowl, the teapot, the fan, the family photo, the alarm clock, the clogs, the music box, the puppet, the tile and the postcard.
+- `public/art/istanbul/6-6.jpg` — phrase — Istanbul 6 vocab «Кто его нашёл?»
+  - Draw: Murzik looks around the laundry room with a questioning face.
+- `public/art/istanbul/6-7.jpg` — phrase — Istanbul 6 vocab «Спасибо огромное!»
+  - Draw: Murzik shakes the receptionist's hand with both paws.
+- `public/art/istanbul/reward-6.jpg` — reward — Istanbul 6 reward «Тарелка»
+  - Draw: A round plate painted with blue tulips and red flowers hangs on the wall of the hotel room. Pamuk, a fluffy white cat, sleeps on Murzik's bed below it.
+- `public/art/istanbul/7-1.jpg` — phrase — Istanbul 7 vocab «Мы выезжаем сегодня.»
+  - Draw: Tom stands at the reception with the suitcase and gives back the brass key.
+- `public/art/istanbul/7-2.jpg` — phrase — Istanbul 7 vocab «Вот ваш счёт.»
+  - Draw: The receptionist hands Tom a small paper bill.
+- `public/art/istanbul/7-3.jpg` — phrase — Istanbul 7 vocab «Всё было отлично!»
+  - Draw: Murzik gives two thumbs up with a big smile.
+- `public/art/istanbul/7-4.jpg` — phrase — Istanbul 7 vocab «Хорошей дороги!»
+  - Draw: The receptionist waves from the hotel door.
+- `public/art/istanbul/7-5.jpg` — phrase — Istanbul 7 vocab «Оставьте, пожалуйста, отзыв.»
+  - Draw: The receptionist shows a phone screen with five empty stars.
+- `public/art/istanbul/7-6.jpg` — phrase — Istanbul 7 vocab «Обязательно оставим!»
+  - Draw: Tom taps five stars on his phone.
+- `public/art/istanbul/7-7.jpg` — phrase — Istanbul 7 vocab «Приезжайте к нам ещё!»
+  - Draw: The whole hotel staff waves goodbye; Pamuk the cat sits on the steps.
+- `public/art/istanbul/reward-7.jpg` — reward — Istanbul 7 reward «Бирка»
+  - Draw: Murzik ties a little leather luggage tag shaped like a cat's paw to the handle of his brown suitcase.
+- `public/art/istanbul/departure.jpg` — scene — Istanbul departure; Istanbul farewell 4
+  - Draw: Murzik and Tom wave goodbye from the deck of a ferry leaving Istanbul. Murzik's suitcase has a paw-shaped luggage tag.
+- `public/art/istanbul/finale-1.jpg` — scene — Istanbul farewell 1
+  - Draw: Murzik on the balcony of room twelve: a coloured glass lamp, tulip-shaped tea glasses, a box of Turkish delight, a torch, a stamp album and a painted plate. Pamuk the white cat sleeps on the suitcase. Murzik holds the paw-shaped luggage tag.
+- `public/art/istanbul/finale-2.jpg` — scene — Istanbul farewell 2
+  - Draw: Murzik and Tom celebrate by the water, throwing bread to the seagulls, with domes and minarets behind them.
+- `public/art/istanbul/ferry.jpg` — scene — Istanbul farewell 3
+  - Draw: On a crowded ferry deck, far away at the other end, a kind old white cat in a grey hat stands at the rail and looks at the sea. Murzik doesn't see him.
+- `public/art/istanbul/finale-5.jpg` — scene — Istanbul farewell 5
+  - Draw: A small plane flies north over mountains and fields, from Istanbul towards Warsaw.
+- `public/art/warsaw/arrival.jpg` — scene — Istanbul farewell 6; Warsaw welcome
+  - Draw: Murzik and Tom arrive in Warsaw's old town square, surrounded by tall colourful houses; a bronze mermaid statue stands in the middle.
+
+## Warsaw (62 pictures)
+
+- `public/art/warsaw/1-1.jpg` — phrase — Warsaw 1 vocab «Что здесь есть?»
+  - Draw: Murzik looks around a big colourful old square with a curious face.
+- `public/art/warsaw/1-2.jpg` — phrase — Warsaw 1 vocab «Здесь есть парк.»
+  - Draw: A green park with old trees, a pond and a little palace.
+- `public/art/warsaw/1-3.jpg` — phrase — Warsaw 1 vocab «река»
+  - Draw: A wide river with a long bridge and the city on its bank.
+- `public/art/warsaw/1-4.jpg` — phrase — Warsaw 1 vocab «площадь»
+  - Draw: A big old market square with colourful houses all around it.
+- `public/art/warsaw/1-5.jpg` — phrase — Warsaw 1 vocab «старый город»
+  - Draw: Narrow streets with colourful old houses and a castle at the end.
+- `public/art/warsaw/1-6.jpg` — phrase — Warsaw 1 vocab «Здесь нет моря.»
+  - Draw: Murzik looks sadly at a map; there is no blue sea anywhere near Warsaw.
+- `public/art/warsaw/1-7.jpg` — phrase — Warsaw 1 vocab «Это мой район.»
+  - Draw: Pani Ewa, a lively elderly lady with a red beret, spreads her arms in a cosy street.
+- `public/art/warsaw/reward-1.jpg` — reward — Warsaw 1 reward «Кресло-мешок»
+  - Draw: Murzik sinks happily into a big soft orange bean bag in a small room with a window onto colourful old houses.
+- `public/art/warsaw/2-1.jpg` — phrase — Warsaw 2 vocab «Где находится банк?»
+  - Draw: Tom stands in a street with a map and asks a passer-by.
+- `public/art/warsaw/2-2.jpg` — phrase — Warsaw 2 vocab «Напротив.»
+  - Draw: Two buildings facing each other across a street; an arrow points across.
+- `public/art/warsaw/2-3.jpg` — phrase — Warsaw 2 vocab «Рядом с почтой.»
+  - Draw: Two buildings side by side; one has a post horn sign without words.
+- `public/art/warsaw/2-4.jpg` — phrase — Warsaw 2 vocab «За углом.»
+  - Draw: An arrow goes around the corner of a building.
+- `public/art/warsaw/2-5.jpg` — phrase — Warsaw 2 vocab «Между кафе и аптекой.»
+  - Draw: A small building squeezed between a café and a pharmacy with a green cross.
+- `public/art/warsaw/2-6.jpg` — phrase — Warsaw 2 vocab «Недалеко отсюда.»
+  - Draw: Pani Ewa points down the street with a smile; a building is close by.
+- `public/art/warsaw/2-7.jpg` — phrase — Warsaw 2 vocab «Спасибо, понятно!»
+  - Draw: Tom nods with a clear, happy face.
+- `public/art/warsaw/reward-2.jpg` — reward — Warsaw 2 reward «Янтарь»
+  - Draw: A warm golden piece of amber on a string hangs in Murzik's window and glows in the sunlight.
+- `public/art/warsaw/3-1.jpg` — phrase — Warsaw 3 vocab «Какой это город?»
+  - Draw: Tom holds his notebook and pen, ready to write his column.
+- `public/art/warsaw/3-2b.jpg` — phrase — Warsaw 3 vocab «старый / новый»
+  - Draw: An old stone church next to a new glass skyscraper.
+- `public/art/warsaw/3-3b.jpg` — phrase — Warsaw 3 vocab «Здесь много людей.»
+  - Draw: A busy old town square full of people, tourists and street musicians.
+- `public/art/warsaw/3-4b.jpg` — phrase — Warsaw 3 vocab «шумный / тихий»
+  - Draw: A noisy crossroads with cars next to a quiet courtyard with a sleeping dog.
+- `public/art/warsaw/3-5b.jpg` — phrase — Warsaw 3 vocab «Какое красивое небо!»
+  - Draw: A wide pink and orange sunset sky over the roofs of Warsaw.
+- `public/art/warsaw/3-6.jpg` — phrase — Warsaw 3 vocab «Здесь очень уютно.»
+  - Draw: Murzik curls up in a cosy café corner with a cup of cocoa.
+- `public/art/warsaw/3-7.jpg` — phrase — Warsaw 3 vocab «Мне здесь нравится.»
+  - Draw: Murzik smiles at the colourful houses of the old town.
+- `public/art/warsaw/reward-3.jpg` — reward — Warsaw 3 reward «Мишка»
+  - Draw: A brown teddy bear in a little soldier's cap sits on Murzik's bean bag.
+- `public/art/warsaw/4-1.jpg` — phrase — Warsaw 4 vocab «Тебе письмо!»
+  - Draw: Pani Ewa holds out a blue envelope with a Paris stamp.
+- `public/art/warsaw/4-2.jpg` — phrase — Warsaw 4 vocab «Дорогой Мурзик!»
+  - Draw: The top of a letter written in neat handwriting, with a little drawing of the Eiffel Tower.
+- `public/art/warsaw/4-3.jpg` — phrase — Warsaw 4 vocab «Как ты там?»
+  - Draw: Madame Dubois writes a letter at her kitchen table in Paris.
+- `public/art/warsaw/4-4.jpg` — phrase — Warsaw 4 vocab «У нас всё хорошо.»
+  - Draw: Madame Dubois waters flowers on her sunny Paris balcony.
+- `public/art/warsaw/4-5.jpg` — phrase — Warsaw 4 vocab «Я скучаю.»
+  - Draw: Madame Dubois looks at a photo of Murzik with a gentle smile.
+- `public/art/warsaw/4-6.jpg` — phrase — Warsaw 4 vocab «Пиши!»
+  - Draw: A pen and a blank sheet of paper on a table.
+- `public/art/warsaw/4-7.jpg` — phrase — Warsaw 4 vocab «Целую!»
+  - Draw: Little hearts at the bottom of a letter.
+- `public/art/warsaw/reward-4.jpg` — reward — Warsaw 4 reward «Бумага для писем»
+  - Draw: A neat pile of cream writing paper and envelopes tied with a ribbon on Murzik's table.
+- `public/art/warsaw/5-1.jpg` — phrase — Warsaw 5 vocab «Я пишу письмо.»
+  - Draw: Murzik writes at his table with a fountain pen, his tongue out in concentration.
+- `public/art/warsaw/5-2.jpg` — phrase — Warsaw 5 vocab «Мы сейчас в Варшаве.»
+  - Draw: Murzik and Tom wave in front of the colourful houses of Warsaw's old town square.
+- `public/art/warsaw/5-3.jpg` — phrase — Warsaw 5 vocab «Погода хорошая.»
+  - Draw: A sunny sky over red roofs with a few white clouds.
+- `public/art/warsaw/5-4.jpg` — phrase — Warsaw 5 vocab «Город очень красивый.»
+  - Draw: A view of Warsaw's old town from the river at sunset.
+- `public/art/warsaw/5-5.jpg` — phrase — Warsaw 5 vocab «Я по вам скучаю.»
+  - Draw: Murzik holds the photo of Madame Dubois close to his heart.
+- `public/art/warsaw/5-6.jpg` — phrase — Warsaw 5 vocab «До скорой встречи!»
+  - Draw: Murzik draws a heart at the end of his letter.
+- `public/art/warsaw/5-7.jpg` — phrase — Warsaw 5 vocab «С любовью, Мурзик.»
+  - Draw: Murzik signs the letter with a little paw print.
+- `public/art/warsaw/reward-5.jpg` — reward — Warsaw 5 reward «Перьевая ручка»
+  - Draw: A dark green fountain pen and a small bottle of blue ink on Murzik's table next to a sealed envelope.
+- `public/art/warsaw/6-1.jpg` — phrase — Warsaw 6 vocab «Где ближайший магазин?»
+  - Draw: Tom stands on a street corner with a shopping bag, looking around.
+- `public/art/warsaw/6-2.jpg` — phrase — Warsaw 6 vocab «Магазин открыт.»
+  - Draw: A shop with its door wide open and warm light inside.
+- `public/art/warsaw/6-3.jpg` — phrase — Warsaw 6 vocab «Магазин закрыт.»
+  - Draw: A shop with dark windows and a locked door; Murzik presses his nose to the glass.
+- `public/art/warsaw/6-4.jpg` — phrase — Warsaw 6 vocab «До скольки работает?»
+  - Draw: Murzik points at the opening hours board with a questioning face; the board shows only clock pictures.
+- `public/art/warsaw/6-5.jpg` — phrase — Warsaw 6 vocab «До десяти.»
+  - Draw: A clock with the hands at ten and a little moon next to it.
+- `public/art/warsaw/6-6.jpg` — phrase — Warsaw 6 vocab «Круглосуточно.»
+  - Draw: A shop glowing at night under the stars, with a sun and a moon on its sign.
+- `public/art/warsaw/6-7.jpg` — phrase — Warsaw 6 vocab «Всё рядом!»
+  - Draw: A map of a small neighbourhood with a shop, a pharmacy, a café and a bakery all close together.
+- `public/art/warsaw/reward-6.jpg` — reward — Warsaw 6 reward «Термос»
+  - Draw: A red thermos with a little cup on top stands next to Murzik's bean bag; steam rises from the cup.
+- `public/art/warsaw/7-1.jpg` — phrase — Warsaw 7 vocab «Давай я покажу тебе город!»
+  - Draw: Murzik in a little guide's cap holds a small flag and smiles at Tom.
+- `public/art/warsaw/7-2.jpg` — phrase — Warsaw 7 vocab «Посмотри!»
+  - Draw: Murzik points up at a tall column with a statue on top in the castle square.
+- `public/art/warsaw/7-3.jpg` — phrase — Warsaw 7 vocab «Здесь жил Шопен.»
+  - Draw: An old elegant house with a piano visible in the window.
+- `public/art/warsaw/7-4.jpg` — phrase — Warsaw 7 vocab «Это моё любимое место.»
+  - Draw: Murzik sits on a bench by the river at sunset with a happy face.
+- `public/art/warsaw/7-5.jpg` — phrase — Warsaw 7 vocab «Идём дальше!»
+  - Draw: Murzik walks ahead waving his little flag; Tom follows with his camera.
+- `public/art/warsaw/7-6.jpg` — phrase — Warsaw 7 vocab «А вот и русалка!»
+  - Draw: A bronze statue of a mermaid with a sword and a shield in the old town square.
+- `public/art/warsaw/7-7.jpg` — phrase — Warsaw 7 vocab «Экскурсия окончена!»
+  - Draw: Murzik takes a bow; Tom and Pani Ewa clap.
+- `public/art/warsaw/reward-7.jpg` — reward — Warsaw 7 reward «Русалка»
+  - Draw: Murzik holds a small bronze figure of the Warsaw mermaid with her sword and shield.
+- `public/art/warsaw/departure.jpg` — scene — Warsaw departure; Warsaw farewell 4
+  - Draw: Pani Ewa waves her red beret goodbye to Murzik and Tom at Warsaw's railway station. Murzik holds the little bronze mermaid.
+- `public/art/warsaw/finale-1.jpg` — scene — Warsaw farewell 1
+  - Draw: Murzik stands in his cosy Warsaw room: an orange bean bag, a piece of amber in the window, a teddy bear, writing paper, a fountain pen and a red thermos. He holds the little bronze mermaid.
+- `public/art/warsaw/finale-2.jpg` — scene — Warsaw farewell 2
+  - Draw: Murzik and Tom celebrate by the Vistula river at sunset, with the old town behind them.
+- `public/art/warsaw/letter.jpg` — scene — Warsaw farewell 3
+  - Draw: Murzik sits on his bean bag holding Madame Dubois's blue letter, thinking hard. Tom sits beside him.
+- `public/art/warsaw/finale-5.jpg` — scene — Warsaw farewell 5
+  - Draw: A train travels south through green hills and mountains, from Warsaw towards Budapest.
+- `public/art/budapest/arrival.jpg` — scene — Warsaw farewell 6; Budapest welcome
+  - Draw: Murzik and Tom arrive in Budapest: the grand Parliament building and a chain bridge over the wide Danube river.
+
+## Budapest (62 pictures)
+
+- `public/art/budapest/1-1.jpg` — phrase — Budapest 1 vocab «Что ты делал вчера?»
+  - Draw: Dora, a girl of about ten with two braids, asks Murzik with big curious eyes.
+- `public/art/budapest/1-2.jpg` — phrase — Budapest 1 vocab «Я гулял. / Я гуляла.»
+  - Draw: Murzik walks along the Danube embankment in the sunshine.
+- `public/art/budapest/1-3.jpg` — phrase — Budapest 1 vocab «Я читал. / Я читала.»
+  - Draw: Murzik reads a book on a bench by the river.
+- `public/art/budapest/1-4.jpg` — phrase — Budapest 1 vocab «Я работал. / Я работала.»
+  - Draw: Tom works at a laptop in a café, with his camera next to him.
+- `public/art/budapest/1-5.jpg` — phrase — Budapest 1 vocab «весь день»
+  - Draw: A sun rises, goes across the sky and sets — one full arc.
+- `public/art/budapest/1-6.jpg` — phrase — Budapest 1 vocab «Я весь день отдыхал.»
+  - Draw: Murzik lies in a hammock-like chair with his eyes closed from morning till evening.
+- `public/art/budapest/1-7.jpg` — phrase — Budapest 1 vocab «Сначала… потом…»
+  - Draw: Two small pictures joined by an arrow: first a cup of coffee, then a walk.
+- `public/art/budapest/reward-1.jpg` — reward — Budapest 1 reward «Паприка»
+  - Draw: A string of bright red dried peppers hangs by the window of an old room with a view of the Danube.
+- `public/art/budapest/2-1.jpg` — phrase — Budapest 2 vocab «Где ты был?»
+  - Draw: Dora points at the world map full of red pins.
+- `public/art/budapest/2-2.jpg` — phrase — Budapest 2 vocab «Я был в Париже. / Я была в Париже.»
+  - Draw: A small picture of the Eiffel Tower in a round frame.
+- `public/art/budapest/2-3.jpg` — phrase — Budapest 2 vocab «недавно»
+  - Draw: A calendar page from just a few days ago, with a little star.
+- `public/art/budapest/2-4.jpg` — phrase — Budapest 2 vocab «давно»
+  - Draw: An old faded calendar page with cobwebs.
+- `public/art/budapest/2-5.jpg` — phrase — Budapest 2 vocab «в прошлом году»
+  - Draw: Two calendars: last year's in grey, this year's in colour; an arrow points back.
+- `public/art/budapest/2-6.jpg` — phrase — Budapest 2 vocab «Ты был в Москве?»
+  - Draw: Dora points at a small picture of Moscow's colourful domes.
+- `public/art/budapest/2-7.jpg` — phrase — Budapest 2 vocab «Я никогда не был в…»
+  - Draw: Murzik shakes his head and points at an empty spot on the map.
+- `public/art/budapest/reward-2.jpg` — reward — Budapest 2 reward «Скатерть»
+  - Draw: A white tablecloth embroidered with bright red, blue and green flowers covers a small round table in Murzik's room.
+- `public/art/budapest/3-1.jpg` — phrase — Budapest 3 vocab «Что случилось?»
+  - Draw: Dora sits on the floor hugging her knees, leaning in to listen.
+- `public/art/budapest/3-2.jpg` — phrase — Budapest 3 vocab «Всё началось в Париже.»
+  - Draw: A soft, dreamy picture of Murzik's Paris apartment with the Eiffel Tower outside.
+- `public/art/budapest/3-3.jpg` — phrase — Budapest 3 vocab «Я нашёл открытку. / Я нашла открытку.»
+  - Draw: Murzik opens a desk drawer and finds an old postcard.
+- `public/art/budapest/3-4.jpg` — phrase — Budapest 3 vocab «вдруг»
+  - Draw: A big surprised “!” flash above Murzik's head.
+- `public/art/budapest/3-5.jpg` — phrase — Budapest 3 vocab «в конце»
+  - Draw: The last page of a book with a small star at the bottom.
+- `public/art/budapest/3-6.jpg` — phrase — Budapest 3 vocab «Мы решили поехать.»
+  - Draw: Murzik and Tom shake hands firmly in front of a suitcase.
+- `public/art/budapest/3-7.jpg` — phrase — Budapest 3 vocab «Вот так!»
+  - Draw: Murzik spreads his paws as if finishing a story.
+- `public/art/budapest/reward-3.jpg` — reward — Budapest 3 reward «Кубик Рубика»
+  - Draw: Murzik turns a colourful puzzle cube in his paws with a concentrated face.
+- `public/art/budapest/4-1.jpg` — phrase — Budapest 4 vocab «Тебе было страшно?»
+  - Draw: Dora asks with wide eyes, hiding half her face behind a cushion.
+- `public/art/budapest/4-2.jpg` — phrase — Budapest 4 vocab «Мне было страшно.»
+  - Draw: Memory picture: Murzik in the Istanbul hotel, looking at the empty spot where the suitcase was.
+- `public/art/budapest/4-3.jpg` — phrase — Budapest 4 vocab «Мне было грустно.»
+  - Draw: Memory picture: Murzik waving goodbye to Barsik at a train window.
+- `public/art/budapest/4-4.jpg` — phrase — Budapest 4 vocab «Мне было смешно.»
+  - Draw: Memory picture: Barsik wobbling on a bicycle in Amsterdam.
+- `public/art/budapest/4-5.jpg` — phrase — Budapest 4 vocab «Мне было одиноко.»
+  - Draw: Memory picture: Murzik alone in an empty Paris apartment before he met Tom.
+- `public/art/budapest/4-6.jpg` — phrase — Budapest 4 vocab «Но потом всё было хорошо.»
+  - Draw: Memory picture: Murzik hugging his found suitcase.
+- `public/art/budapest/4-7.jpg` — phrase — Budapest 4 vocab «Это был лучший день!»
+  - Draw: Memory picture: Murzik's birthday on the Athens roof with balloons and cake.
+- `public/art/budapest/reward-4.jpg` — reward — Budapest 4 reward «Рисунок Доры»
+  - Draw: A child's colourful crayon drawing of Murzik and Tom with a big suitcase and many little houses hangs on the wall.
+- `public/art/budapest/5-1.jpg` — phrase — Budapest 5 vocab «Ты уже был в купальне?»
+  - Draw: A grand yellow building with big outdoor pools full of steaming water.
+- `public/art/budapest/5-2.jpg` — phrase — Budapest 5 vocab «Ещё нет.»
+  - Draw: Murzik shakes his head with a curious smile.
+- `public/art/budapest/5-3.jpg` — phrase — Budapest 5 vocab «Уже!»
+  - Draw: Tom nods proudly, holding a towel.
+- `public/art/budapest/5-4.jpg` — phrase — Budapest 5 vocab «Я уже купил билеты.»
+  - Draw: Tom waves two tickets in front of the bath entrance.
+- `public/art/budapest/5-5.jpg` — phrase — Budapest 5 vocab «Вода очень тёплая!»
+  - Draw: Murzik sits in a steaming pool up to his chin, eyes closed with joy.
+- `public/art/budapest/5-6.jpg` — phrase — Budapest 5 vocab «Как приятно!»
+  - Draw: Murzik floats on his back in warm water with a blissful face.
+- `public/art/budapest/5-7.jpg` — phrase — Budapest 5 vocab «Ты ещё не ел лангош?»
+  - Draw: A big round fried dough bread with sour cream and cheese on a paper plate.
+- `public/art/budapest/reward-5.jpg` — reward — Budapest 5 reward «Халат»
+  - Draw: A small fluffy white bathrobe with a hood hangs on the door of Murzik's room.
+- `public/art/budapest/6-1.jpg` — phrase — Budapest 6 vocab «Помнишь, как…?»
+  - Draw: Tom and Murzik sit together looking at photos on a laptop, smiling.
+- `public/art/budapest/6-2.jpg` — phrase — Budapest 6 vocab «Конечно, помню!»
+  - Draw: Murzik laughs and puts a paw on his heart.
+- `public/art/budapest/6-3.jpg` — phrase — Budapest 6 vocab «Как мы опоздали на поезд!»
+  - Draw: Photo memory: Tom and Murzik on an empty Berlin platform.
+- `public/art/budapest/6-4.jpg` — phrase — Budapest 6 vocab «Как мы заблудились!»
+  - Draw: Photo memory: three bikes in a maze of Amsterdam canals.
+- `public/art/budapest/6-5.jpg` — phrase — Budapest 6 vocab «Это было так смешно!»
+  - Draw: Tom and Murzik laugh so hard they hold their tummies.
+- `public/art/budapest/6-6.jpg` — phrase — Budapest 6 vocab «Хорошее было время.»
+  - Draw: A row of small framed photos from many cities on a shelf.
+- `public/art/budapest/6-7b.jpg` — phrase — Budapest 6 vocab «Я часто думаю об этом.»
+  - Draw: Murzik sits by the window with his chin on his paw, thinking, the photo album on his lap.
+- `public/art/budapest/reward-6.jpg` — reward — Budapest 6 reward «Фотоальбом»
+  - Draw: Murzik opens a thick photo album full of pictures from every city. In the background of many photos, a tiny white cat in a hat can be seen.
+- `public/art/budapest/7-1.jpg` — phrase — Budapest 7 vocab «Расскажи всё с начала!»
+  - Draw: Dora sits in her pyjamas with a cup of cocoa, ready to listen.
+- `public/art/budapest/7-2.jpg` — phrase — Budapest 7 vocab «Мы ищем бабушку.»
+  - Draw: Murzik holds the Paris postcard and the birthday postcard side by side.
+- `public/art/budapest/7-3.jpg` — phrase — Budapest 7 vocab «Мы были в двенадцати городах.»
+  - Draw: The world map on the wall with twelve red pins and a thirteenth one in Budapest.
+- `public/art/budapest/7-4.jpg` — phrase — Budapest 7 vocab «Мы ещё не нашли её.»
+  - Draw: Murzik looks out of the window at the night sky, thinking.
+- `public/art/budapest/7-5.jpg` — phrase — Budapest 7 vocab «Но мы найдём!»
+  - Draw: Murzik clenches his paw with a brave, determined face.
+- `public/art/budapest/7-6.jpg` — phrase — Budapest 7 vocab «Это ещё не конец.»
+  - Draw: A road goes on over the hills towards a far-away sunrise.
+- `public/art/budapest/7-7.jpg` — phrase — Budapest 7 vocab «Спокойной ночи, Дора!»
+  - Draw: Murzik tucks a blanket around a sleepy Dora.
+- `public/art/budapest/reward-7.jpg` — reward — Budapest 7 reward «Дневник»
+  - Draw: Murzik writes in a thick notebook with a red ribbon. On the open page there is a little drawing of every city they have visited.
+- `public/art/budapest/departure.jpg` — scene — Budapest departure; Budapest farewell 4
+  - Draw: Dora and her grandmother wave goodbye to Murzik and Tom at Budapest's grand old railway station. Murzik holds his travel diary.
+- `public/art/budapest/finale-1.jpg` — scene — Budapest farewell 1
+  - Draw: Murzik stands in his cosy room by the Danube: a string of red peppers, an embroidered tablecloth, a puzzle cube, Dora's drawing on the wall, a fluffy bathrobe and a thick photo album. He holds his travel diary.
+- `public/art/budapest/finale-2.jpg` — scene — Budapest farewell 2
+  - Draw: Murzik, Tom and Dora celebrate on the chain bridge at night, with the lit Parliament behind them.
+- `public/art/budapest/diary.jpg` — scene — Budapest farewell 3
+  - Draw: Late at night Murzik writes in his diary by a lamp. Next to it lie the Paris postcard, the birthday postcard and a photo with a tiny cat in a hat circled.
+- `public/art/budapest/finale-5.jpg` — scene — Budapest farewell 5
+  - Draw: A small plane flies north-west over the clouds, from Budapest towards the green hills of Scotland.
+- `public/art/edinburgh/arrival.jpg` — scene — Budapest farewell 6; Edinburgh welcome
+  - Draw: Murzik and Tom arrive in Edinburgh: a grey stone castle on a high rock above the old town; it is drizzling.
+
+## Edinburgh (62 pictures)
+
+- `public/art/edinburgh/1-1.jpg` — phrase — Edinburgh 1 vocab «Давно не виделись!»
+  - Draw: Jamie, a tall red-haired young man in a knitted jumper, hugs Tom at the door of a stone house.
+- `public/art/edinburgh/1-2.jpg` — phrase — Edinburgh 1 vocab «Сколько лет, сколько зим!»
+  - Draw: Tom and Jamie laugh and shake hands warmly.
+- `public/art/edinburgh/1-3.jpg` — phrase — Edinburgh 1 vocab «Как жизнь?»
+  - Draw: Jamie leans on the door frame with a friendly grin.
+- `public/art/edinburgh/1-4.jpg` — phrase — Edinburgh 1 vocab «Что нового?»
+  - Draw: Jamie pours tea and looks at Tom with curiosity.
+- `public/art/edinburgh/1-5.jpg` — phrase — Edinburgh 1 vocab «Ничего особенного.»
+  - Draw: Jamie shrugs and smiles.
+- `public/art/edinburgh/1-6.jpg` — phrase — Edinburgh 1 vocab «Всё по-старому.»
+  - Draw: Jamie's cosy, slightly messy room with a guitar and books — nothing has changed.
+- `public/art/edinburgh/1-7.jpg` — phrase — Edinburgh 1 vocab «Знакомься, это Мурзик!»
+  - Draw: Tom introduces Murzik to Jamie; Murzik waves a paw.
+- `public/art/edinburgh/reward-1.jpg` — reward — Edinburgh 1 reward «Камин»
+  - Draw: A small stone fireplace with a crackling fire in Murzik's room in an old Edinburgh house. Rain runs down the window.
+- `public/art/edinburgh/2-1.jpg` — phrase — Edinburgh 2 vocab «То дождь, то солнце.»
+  - Draw: A sky half full of rain clouds and half bright with sun, with a rainbow between.
+- `public/art/edinburgh/2-2.jpg` — phrase — Edinburgh 2 vocab «Какой сильный ветер!»
+  - Draw: Murzik holds on to a lamp post while the wind blows his scarf straight out.
+- `public/art/edinburgh/2-3.jpg` — phrase — Edinburgh 2 vocab «плащ»
+  - Draw: A yellow raincoat with a hood hanging by the door.
+- `public/art/edinburgh/2-4.jpg` — phrase — Edinburgh 2 vocab «Надень плащ!»
+  - Draw: Jamie hands Murzik a small yellow raincoat.
+- `public/art/edinburgh/2-5.jpg` — phrase — Edinburgh 2 vocab «Здесь всегда так?»
+  - Draw: Murzik looks up at the changing sky with a puzzled face.
+- `public/art/edinburgh/2-6b.jpg` — phrase — Edinburgh 2 vocab «Иногда идёт снег.»
+  - Draw: Snowflakes fall over the grey stone houses of Edinburgh.
+- `public/art/edinburgh/2-7.jpg` — phrase — Edinburgh 2 vocab «Зато какая красота!»
+  - Draw: A view of Edinburgh's old town and castle on the rock after rain, with a rainbow.
+- `public/art/edinburgh/reward-2.jpg` — reward — Edinburgh 2 reward «Резиновые сапоги»
+  - Draw: A small pair of bright yellow rain boots stands by the fireplace, drying, next to the yellow raincoat.
+- `public/art/edinburgh/3-1.jpg` — phrase — Edinburgh 3 vocab «Что на завтрак?»
+  - Draw: Murzik sniffs the air in a cosy kitchen with a big stove.
+- `public/art/edinburgh/3-2.jpg` — phrase — Edinburgh 3 vocab «овсянка»
+  - Draw: A bowl of warm porridge with honey and berries.
+- `public/art/edinburgh/3-3.jpg` — phrase — Edinburgh 3 vocab «яичница»
+  - Draw: Two fried eggs in a pan.
+- `public/art/edinburgh/3-4.jpg` — phrase — Edinburgh 3 vocab «Приятного аппетита!»
+  - Draw: Jamie puts plates on the table with a big smile.
+- `public/art/edinburgh/3-5.jpg` — phrase — Edinburgh 3 vocab «Добавки?»
+  - Draw: Jamie holds a pot of porridge over Murzik's empty bowl.
+- `public/art/edinburgh/3-6.jpg` — phrase — Edinburgh 3 vocab «Очень сытно!»
+  - Draw: Murzik leans back in his chair, patting his round tummy.
+- `public/art/edinburgh/3-7.jpg` — phrase — Edinburgh 3 vocab «Можно рецепт?»
+  - Draw: Murzik holds his sketchbook and pencil, ready to write.
+- `public/art/edinburgh/reward-3.jpg` — reward — Edinburgh 3 reward «Кружка»
+  - Draw: A big green mug with a little thistle painted on it, full of hot cocoa, stands on the windowsill.
+- `public/art/edinburgh/4-1.jpg` — phrase — Edinburgh 4 vocab «Как дойти до замка?»
+  - Draw: Tom asks a passer-by on a steep cobbled street, pointing up.
+- `public/art/edinburgh/4-2.jpg` — phrase — Edinburgh 4 vocab «Это наверху.»
+  - Draw: A grey stone castle on top of a high dark rock.
+- `public/art/edinburgh/4-3.jpg` — phrase — Edinburgh 4 vocab «Идти минут десять.»
+  - Draw: A little clock face with an arrow going around ten minutes.
+- `public/art/edinburgh/4-4.jpg` — phrase — Edinburgh 4 vocab «лестница»
+  - Draw: Long narrow stone stairs going steeply up between old houses.
+- `public/art/edinburgh/4-5.jpg` — phrase — Edinburgh 4 vocab «Я устал. / Я устала.»
+  - Draw: Murzik sits down on a step, out of breath.
+- `public/art/edinburgh/4-6.jpg` — phrase — Edinburgh 4 vocab «Мы почти пришли!»
+  - Draw: Tom points at the castle gate just a few steps away.
+- `public/art/edinburgh/4-7.jpg` — phrase — Edinburgh 4 vocab «Какой вид!»
+  - Draw: From the castle wall: the whole city, the sea and the hills.
+- `public/art/edinburgh/reward-4.jpg` — reward — Edinburgh 4 reward «Подзорная труба»
+  - Draw: Murzik looks through a small brass telescope out of his window towards the castle on the rock.
+- `public/art/edinburgh/5-1.jpg` — phrase — Edinburgh 5 vocab «Что сегодня вечером?»
+  - Draw: Murzik looks at a colourful street full of festival lights and people.
+- `public/art/edinburgh/5-2.jpg` — phrase — Edinburgh 5 vocab «фестиваль»
+  - Draw: A busy street at night with musicians, jugglers and lights.
+- `public/art/edinburgh/5-3.jpg` — phrase — Edinburgh 5 vocab «волынка»
+  - Draw: A man in a kilt plays the bagpipes on the street.
+- `public/art/edinburgh/5-4.jpg` — phrase — Edinburgh 5 vocab «Пойдём послушаем!»
+  - Draw: Murzik pulls Tom by the hand towards the music.
+- `public/art/edinburgh/5-5.jpg` — phrase — Edinburgh 5 vocab «Как громко!»
+  - Draw: Murzik covers his ears but laughs.
+- `public/art/edinburgh/5-6.jpg` — phrase — Edinburgh 5 vocab «Мне нравится эта мелодия.»
+  - Draw: Murzik sways happily with his eyes closed; musical notes float around.
+- `public/art/edinburgh/5-7.jpg` — phrase — Edinburgh 5 vocab «Ещё раз, пожалуйста!»
+  - Draw: The crowd claps; Murzik jumps up and down.
+- `public/art/edinburgh/reward-5.jpg` — reward — Edinburgh 5 reward «Волынка»
+  - Draw: Murzik puffs his cheeks blowing into a tiny tartan toy bagpipe; Tom covers his ears and laughs.
+- `public/art/edinburgh/6-1.jpg` — phrase — Edinburgh 6 vocab «Простите…»
+  - Draw: Murzik steps carefully towards a figure under a street lamp on a misty night.
+- `public/art/edinburgh/6-2.jpg` — phrase — Edinburgh 6 vocab «Мы знакомы?»
+  - Draw: Murzik looks up with a hopeful, questioning face.
+- `public/art/edinburgh/6-3.jpg` — phrase — Edinburgh 6 vocab «Ты внук Аси?»
+  - Draw: A kind old white cat in a grey hat bends down and looks warmly at Murzik.
+- `public/art/edinburgh/6-4.jpg` — phrase — Edinburgh 6 vocab «Откуда вы знаете?»
+  - Draw: Murzik's eyes go wide with surprise.
+- `public/art/edinburgh/6-5.jpg` — phrase — Edinburgh 6 vocab «Подождите!»
+  - Draw: Murzik reaches out a paw as the old cat turns away.
+- `public/art/edinburgh/6-6.jpg` — phrase — Edinburgh 6 vocab «Не уходите!»
+  - Draw: Murzik runs after the old cat into the mist.
+- `public/art/edinburgh/6-7.jpg` — phrase — Edinburgh 6 vocab «Он исчез!»
+  - Draw: Murzik stands alone under the street lamp in the mist. Only a grey feather lies on the stones.
+- `public/art/edinburgh/reward-6.jpg` — reward — Edinburgh 6 reward «Кепка»
+  - Draw: Murzik tries on a small grey tweed cap in front of the mirror, thinking hard about the cat in the hat.
+- `public/art/edinburgh/7-1.jpg` — phrase — Edinburgh 7 vocab «Экзамен сдан!»
+  - Draw: Murzik holds up a certificate with a big gold star (no words on it).
+- `public/art/edinburgh/7-2.jpg` — phrase — Edinburgh 7 vocab «Молодец!»
+  - Draw: Tom gives Murzik a big high five.
+- `public/art/edinburgh/7-3.jpg` — phrase — Edinburgh 7 vocab «Уровень A1 пройден!»
+  - Draw: A path of fourteen little city icons ends at a gold flag.
+- `public/art/edinburgh/7-4.jpg` — phrase — Edinburgh 7 vocab «Это было нелегко.»
+  - Draw: Murzik wipes his forehead with a relieved smile.
+- `public/art/edinburgh/7-5.jpg` — phrase — Edinburgh 7 vocab «Что дальше?»
+  - Draw: Murzik looks at a road that splits into many paths towards new cities.
+- `public/art/edinburgh/7-6.jpg` — phrase — Edinburgh 7 vocab «Новый уровень!»
+  - Draw: A door opens onto a bright new landscape.
+- `public/art/edinburgh/7-7.jpg` — phrase — Edinburgh 7 vocab «До встречи на A2!»
+  - Draw: Murzik and Tom wave goodbye with their suitcases.
+- `public/art/edinburgh/reward-7.jpg` — reward — Edinburgh 7 reward «Чертополох»
+  - Draw: Murzik pins a small silver and purple thistle brooch onto his rust-orange scarf.
+- `public/art/edinburgh/departure.jpg` — scene — Edinburgh departure; Edinburgh farewell 4
+  - Draw: Jamie waves goodbye to Murzik and Tom at Edinburgh's railway station. Murzik wears a thistle brooch on his scarf.
+- `public/art/edinburgh/finale-1.jpg` — scene — Edinburgh farewell 1
+  - Draw: Murzik stands in his cosy Edinburgh room: a stone fireplace, yellow rain boots, a big green mug, a brass telescope, toy bagpipes and a grey tweed cap. He wears the thistle brooch on his scarf.
+- `public/art/edinburgh/finale-2.jpg` — scene — Edinburgh farewell 2
+  - Draw: Murzik and Tom stand on the castle wall at sunset with their arms in the air. Behind them, a long path with fourteen little city flags.
+- `public/art/edinburgh/suitcase.jpg` — scene — Edinburgh farewell 3
+  - Draw: Murzik's open suitcase: the bowl, the teapot, the fan, the family photo, the alarm clock, the clogs, the music box, the puppet, the tile, the postcard, the luggage tag, the mermaid, the travel diary and the thistle. In the pocket: Asya's postcards and a small note signed «Л.».
+- `public/art/edinburgh/finale-5.jpg` — scene — Edinburgh farewell 5
+  - Draw: A small plane flies south over the sea, from Scotland towards France.
+- `public/art/lyon/arrival.jpg` — scene — Edinburgh farewell 6
+  - Draw: Murzik and Tom arrive in Lyon, where two rivers meet, with colourful houses on the hill and an old basilica at the top.
