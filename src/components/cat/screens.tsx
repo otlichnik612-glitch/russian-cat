@@ -21,13 +21,14 @@ import {
 import { prologue } from "@/lib/course/prologue";
 import { seenFinales, useProgress } from "@/lib/course/progress";
 import type { Lesson } from "@/lib/course/types";
+import { useIdentity } from "@/lib/identity/client";
 import { devToolsEnabled } from "./dev";
 import { Button, Card, Illustration, Meter, Picture, PlayButton, Ru, RussianLine } from "./ui";
 
 export function Splash() {
   return (
     <main className="flex min-h-dvh flex-col items-center justify-center gap-2 px-6 text-center">
-      <p className="font-display text-4xl">Russian Cat</p>
+      <p className="font-display text-4xl">Talky Kitty</p>
       <p lang="ru" className="font-sans text-2xl font-bold">
         Русский Кот
       </p>
@@ -46,7 +47,7 @@ export function Opening({ onContinue }: { onContinue: () => void }) {
     const page = prologue.find;
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 py-6">
-        <p className="font-display text-xl">Russian Cat</p>
+        <p className="font-display text-xl">Talky Kitty</p>
         <p lang="ru" className="font-sans text-lg font-bold">
           Русский Кот
         </p>
@@ -119,6 +120,7 @@ export function Home({
   onOpening,
   onDev,
   onLanguages,
+  onAccount,
 }: {
   onLesson: (id: string) => void;
   onJourney: () => void;
@@ -128,7 +130,9 @@ export function Home({
   onOpening: () => void;
   onDev: () => void;
   onLanguages: () => void;
+  onAccount: () => void;
 }) {
+  const signedIn = useIdentity((state) => state.status === "signed-in");
   const completed = useProgress((state) => state.completedLessonIds);
   const ceremonySeen = useProgress((state) => state.ceremonySeen);
   const finalesSeen = useProgress((state) => state.finalesSeen);
@@ -156,7 +160,7 @@ export function Home({
       <header className="flex items-center gap-4">
         <img src={images.murzik} alt="" className="size-16 rounded-full object-cover" />
         <div>
-          <h1 className="font-display text-3xl">Russian Cat</h1>
+          <h1 className="font-display text-3xl">Talky Kitty</h1>
           <p lang="ru" className="font-sans text-lg font-bold">
             Русский Кот
           </p>
@@ -276,6 +280,9 @@ export function Home({
         </Button>
       </Card>
       <div className="grid gap-3">
+        <Button variant="ghost" onClick={onAccount}>
+          {signedIn ? "Your account" : "Save progress"}
+        </Button>
         <Button variant="ghost" onClick={onJourney}>
           See the journey
         </Button>

@@ -15,6 +15,11 @@ type ProgressState = {
   /** The learner's own language and the course they chose. Empty for progress saved before languages existed. */
   nativeLang: NativeLang | null;
   targetLang: TargetLang | null;
+  /** When progress was last reset (ms). Saved progress from before that moment is not merged back. 0 = never. */
+  resetAt: number;
+  /** The welcome and sign-in screens were passed (signed in or "Not now"). Stays on this device only. */
+  welcomeDone: boolean;
+  setWelcomeDone: () => void;
   setLanguages: (nativeLang: NativeLang, targetLang: TargetLang) => void;
   setSeenIntro: () => void;
   completeLesson: (id: string) => void;
@@ -31,6 +36,8 @@ const empty = {
   draft: null as Draft | null,
   nativeLang: null as NativeLang | null,
   targetLang: null as TargetLang | null,
+  resetAt: 0,
+  welcomeDone: false,
 };
 
 export const useProgress = create<ProgressState>()(
@@ -38,6 +45,7 @@ export const useProgress = create<ProgressState>()(
     (set, get) => ({
       ...empty,
       setSeenIntro: () => set({ seenIntro: true }),
+      setWelcomeDone: () => set({ welcomeDone: true }),
       setLanguages: (nativeLang, targetLang) => set({ nativeLang, targetLang }),
       completeLesson: (id) => {
         const cur = get().completedLessonIds;
@@ -52,7 +60,7 @@ export const useProgress = create<ProgressState>()(
         const cur = get().finalesSeen ?? [];
         if (!cur.includes(cityId)) set({ finalesSeen: [...cur, cityId] });
       },
-      reset: () => set({ ...empty }),
+      reset: () => set({ ...empty, resetAt: Date.now(), welcomeDone: get().welcomeDone }),
     }),
     { name: "russian-cat-progress", skipHydration: true },
   ),

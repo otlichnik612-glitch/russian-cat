@@ -43,3 +43,18 @@ npm run build
 ```
 
 Then open the app, finish a lesson and check that the new pictures appear.
+
+## Название и текст ссылки
+
+- Название приложения — **Talky Kitty** (вкладка браузера, надпись на экранах, имя на экране «Домой»).
+- Текст предпросмотра ссылки задаётся в `src/lib/og/site.json`: `ogTitle` — «Talky Kitty», `description` — «Learn languages by traveling with a talking cat!» (описание), `url` — https://talkykitty.com, `type` — website. Не переписывай эти поля и не добавляй теги `og:` вручную в `__root.tsx`: платформа всё равно их удаляет и строит заново из `site.json`.
+- Картинку предпросмотра (`public/og.jpg`) не меняй.
+
+## Вход и сохранение прогресса (Netlify Identity + Neon)
+
+- Первый запуск: экран «Hi! My name is Murzik!» → экран «Sign in to save your progress.» (Google, почта, «Not now») → выбор языков → пролог → Париж. Код: `src/components/cat/welcome.tsx`, тексты: `src/lib/course/welcome.ts`.
+- Нужны две новые картинки: `public/art/welcome/1.jpg` (Мурзик машет лапой) и `public/art/welcome/2.jpg` (Мурзик печатает на ноутбуке). Описания — в `docs/grok-image-notes.md`, раздел Welcome.
+- Вход делает **Netlify Identity** (`src/lib/identity/`), а не встроенный Better Auth шаблона. Не включай Better Auth, не добавляй его таблицы и не меняй `VITE_AUTH_ENABLED` ради входа.
+- Прогресс и выбор языка сохраняются в Neon через `DATABASE_URL` из настроек Netlify. Таблицы описаны в `migrations/0002_talky_kitty.sql` и создаются сами при сборке. Не вписывай строку подключения в код.
+- В предпросмотре Grok Identity нет: кнопки входа говорят, что вход работает на talkykitty.com, а «Not now» ведёт дальше. Это нормально.
+- Проверка после публикации: https://talkykitty.com/api/health.

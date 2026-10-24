@@ -7721,6 +7721,24 @@
     "alt": "Murzik and Tom arrive in Lyon, where two rivers meet, with colourful houses on the hill and an old basilica at the top."
   },
   {
+    "file": "public/art/welcome/1.jpg",
+    "kind": "scene",
+    "usedIn": [
+      "Welcome hello"
+    ],
+    "draw": "Murzik, a ginger kitten in a scarf, stands on cream paper and waves one paw at you with a big, friendly smile. His suitcase stands beside him.",
+    "alt": "Murzik, a ginger kitten in a scarf, stands on cream paper and waves one paw at you with a big, friendly smile. His suitcase stands beside him."
+  },
+  {
+    "file": "public/art/welcome/2.jpg",
+    "kind": "scene",
+    "usedIn": [
+      "Welcome signIn"
+    ],
+    "draw": "Murzik sits on a chair at a small wooden desk and types on a little laptop with both paws, tongue peeking out in concentration. His tail is curled around the chair leg.",
+    "alt": "Murzik sits on a chair at a small wooden desk and types on a little laptop with both paws, tongue peeking out in concentration. His tail is curled around the chair leg."
+  },
+  {
     "file": "public/art/prologue/1.jpg",
     "kind": "scene",
     "usedIn": [

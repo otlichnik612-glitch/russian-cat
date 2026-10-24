@@ -27,7 +27,7 @@ export function LanguagePicker({
     const page = languageScreens.native;
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 bg-paper px-5 py-6">
-        <p className="font-display text-xl">Polycat</p>
+        <p className="font-display text-xl">Talky Kitty</p>
         <Illustration src={page.image} a11y={page.a11y} />
         <h1 ref={heading} tabIndex={-1} className="flex flex-col gap-1">
           <span lang="ru" className="font-sans text-3xl font-bold">

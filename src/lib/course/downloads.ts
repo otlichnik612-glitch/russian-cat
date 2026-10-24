@@ -245,7 +245,7 @@ export async function downloadFlashcards(lesson: Lesson) {
       pdf.setFont("DejaVu", "normal");
       pdf.setFontSize(9);
       pdf.setTextColor(28, 23, 18);
-      const header = `Russian Cat  ·  Lesson ${lesson.number} flashcards  ·  Cut on the dashed line  ·  Fold on the center line`;
+      const header = `Talky Kitty  ·  Lesson ${lesson.number} flashcards  ·  Cut on the dashed line  ·  Fold on the center line`;
       pdf.text(pdf.splitTextToSize(header, 186) as string[], margin, 8);
     }
   });

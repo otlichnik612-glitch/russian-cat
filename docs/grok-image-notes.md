@@ -27,6 +27,15 @@ Every picture below is new. Draw exactly what the note says, save it as a JPEG a
 - Phrase pictures (`kind: phrase`) and rewards: square, 1408 × 1408. Scenes (`kind: scene`): portrait, 1152 × 1728.
 - Show the meaning clearly: the right number of things, the right direction of arrows, the right action and emotion.
 
+## Welcome (2 pictures)
+
+The very first two screens, before the language choice. Same style as everything else. No words or letters in the pictures.
+
+- `public/art/welcome/1.jpg` — scene — Welcome hello
+  - Draw: Murzik, a ginger kitten in a scarf, stands on cream paper and waves one paw at you with a big, friendly smile. His suitcase stands beside him.
+- `public/art/welcome/2.jpg` — scene — Welcome sign-in
+  - Draw: Murzik sits on a chair at a small wooden desk and types on a little laptop with both paws, tongue peeking out in concentration. His tail is curled around the chair leg. The laptop screen shows only soft light, no text.
+
 ## Languages (2 pictures)
 
 The two very first screens (choose your language, choose a course). No flags, no words, no letters in these pictures.

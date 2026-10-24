@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Russian Cat";
+const APP_NAME = "Talky Kitty";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -13,8 +13,7 @@ export const Route = createRootRoute({
       { title: APP_NAME },
       {
         name: "description",
-        content:
-          "Learn Russian from A1 to C1 with Murzik and Tom. A story course through Paris and beyond.",
+        content: "Learn languages by traveling with a talking cat!",
       },
       { name: "theme-color", content: "#f6f0e6" },
     ],

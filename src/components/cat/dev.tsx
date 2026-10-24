@@ -38,6 +38,7 @@ function progressUpTo(cityIndex: number, lessonsDone: number) {
     ceremonySeen: false,
     finalesSeen: before.map((c) => c.id),
     draft: null,
+    resetAt: Date.now(),
   });
 }
 
@@ -45,10 +46,13 @@ export function DevPanel({
   onBack,
   onLesson,
   onFinale,
+  onWelcome,
 }: {
   onBack: () => void;
   onLesson: (lessonId: string) => void;
   onFinale: (cityId: string) => void;
+  /** Shows the hello and sign-in screens again (progress is not changed). */
+  onWelcome: () => void;
 }) {
   const [status, setStatus] = useState("");
   const heading = useRef<HTMLHeadingElement>(null);
@@ -70,6 +74,9 @@ export function DevPanel({
       <p role="status" aria-live="polite" className="font-bold text-garden">
         {status}
       </p>
+      <Button variant="ghost" onClick={onWelcome}>
+        Show the welcome and sign-in screens
+      </Button>
       {readyCities.map((city, cityIndex) => (
         <section key={city.id} className="flex flex-col gap-3 rounded-3xl border border-line bg-card p-4">
           <h2 className="font-display text-2xl">
