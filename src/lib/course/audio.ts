@@ -11,8 +11,8 @@ export type VoiceId = SpeakerId;
 
 /** Which Grok voice records each character. Change a line here to change a voice. */
 export const voiceCast: Record<VoiceId, { grok: string; character: string }> = {
-  murzik: { grok: "ara", character: "Murzik — a cheerful, curious young kitten; also reads the phrase cards and tasks" },
-  tom: { grok: "leo", character: "Tom — a friendly young Englishman of about 25" },
+  murzik: { grok: "Ara", character: "Murzik — a cheerful, curious young kitten; also reads the phrase cards and tasks" },
+  tom: { grok: "Leo (male)", character: "Tom — a friendly young Englishman of about 25" },
   neighbour: { grok: "another female voice", character: "Madame Dubois — a kind elderly lady" },
   officer: { grok: "another male voice", character: "Passport officer — a polite, calm man" },
   passerby: { grok: "another female voice", character: "Passer-by — a friendly woman" },
@@ -40,13 +40,6 @@ export const voiceCast: Record<VoiceId, { grok: string; character: string }> = {
 
 /** The voice for anything that is not a dialogue line. */
 export const NARRATOR: VoiceId = "murzik";
-
-/** Grok voices that actually speak in the app. Ara is the high female voice. Leo is the male voice. */
-export function grokVoiceId(voice: VoiceId): "ara" | "leo" | null {
-  if (voice === "murzik") return "ara";
-  if (voice === "tom") return "leo";
-  return null;
-}
 
 function normalise(text: string): string {
   return text.normalize("NFC").replace(/\s+/g, " ").trim();
