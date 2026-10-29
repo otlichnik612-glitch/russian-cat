@@ -1,7 +1,7 @@
 import { Volume2 } from "lucide-react";
 import { forwardRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
-import { hasCyrillic } from "@/lib/course/make";
+import { course, isTarget, stopLabel, ui } from "@/lib/course/active";
 import type { VoiceId } from "@/lib/course/audio";
 import { useSpeech } from "@/lib/course/speech";
 
@@ -27,7 +27,7 @@ export const Button = forwardRef<
 
 export function Ru({ children, className }: { children: string; className?: string }) {
   return (
-    <span lang="ru" className={cn("font-sans font-bold", className)}>
+    <span lang={course.htmlLang} className={cn("font-sans font-bold", className)}>
       {children}
     </span>
   );
@@ -37,7 +37,7 @@ export function PlayButton({
   id,
   text,
   label,
-  lang = "ru-RU",
+  lang,
   voice,
 }: {
   id: string;
@@ -53,12 +53,12 @@ export function PlayButton({
     <button
       type="button"
       className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-full bg-garden px-4 text-base font-bold text-on-garden"
-      aria-label={on ? label.replace(/^Play/, "Stop") : label}
+      aria-label={on ? stopLabel(label) : label}
       aria-pressed={on}
-      onClick={() => (on ? stop() : play(id, text, lang, voice))}
+      onClick={() => (on ? stop() : play(id, text, lang ?? course.speechLang, voice))}
     >
       <Volume2 aria-hidden className="size-5" />
-      <span aria-hidden>{on ? "Stop" : "Play"}</span>
+      <span aria-hidden>{on ? ui.stop : ui.listen}</span>
     </button>
   );
 }
@@ -100,7 +100,7 @@ export function RussianLine({ text, id, label }: { text: string; id: string; lab
       <p className="text-3xl">
         <Ru>{text}</Ru>
       </p>
-      {hasCyrillic(text) ? <PlayButton id={id} text={text} label={label} /> : null}
+      {isTarget(text) ? <PlayButton id={id} text={text} label={label} /> : null}
     </div>
   );
 }

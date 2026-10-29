@@ -10,6 +10,7 @@ import {
   signUpWithEmail,
   useIdentity,
 } from "@/lib/identity/client";
+import { ui } from "@/lib/course/active";
 import { useProgress } from "@/lib/course/progress";
 import { welcomeScreens } from "@/lib/course/welcome";
 import { useSyncStatus, type SyncStatus } from "@/lib/sync/use-progress-sync";
@@ -375,7 +376,15 @@ export function AccountScreen({ onBack }: { onBack: () => void }) {
   const status = useSyncStatus((state) => state.status);
   const heading = useHeadingFocus(identity.status);
 
-  if (identity.status !== "signed-in") return <SignInScreen onDone={onBack} laterLabel="Back" />;
+  if (identity.status !== "signed-in")
+    return (
+      <>
+        <SignInScreen onDone={onBack} laterLabel="Back" />
+        <div className="mx-auto w-full max-w-lg px-5 pb-8">
+          <ResetButton onDone={onBack} />
+        </div>
+      </>
+    );
 
   return (
     <Page>
@@ -396,6 +405,26 @@ export function AccountScreen({ onBack }: { onBack: () => void }) {
         Sign out
       </Button>
       <p className="text-muted">After you sign out, your lessons stay on this phone too.</p>
+      <ResetButton onDone={onBack} />
     </Page>
+  );
+}
+
+/** Start the active course again. Kept at the bottom of the account screen so it is not pressed by chance. */
+function ResetButton({ onDone }: { onDone: () => void }) {
+  const reset = useProgress((state) => state.reset);
+  return (
+    <Button
+      variant="quiet"
+      className="mt-6 self-center"
+      onClick={() => {
+        if (window.confirm(ui.resetConfirm)) {
+          reset();
+          onDone();
+        }
+      }}
+    >
+      {ui.resetProgress}
+    </Button>
   );
 }

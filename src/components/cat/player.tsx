@@ -1,56 +1,107 @@
 import { useEffect, useId, useState } from "react";
 import { ChevronLeft } from "lucide-react";
-import { cityName } from "@/lib/course/curriculum";
-import { downloadFlashcards, downloadLessonDoc } from "@/lib/course/downloads";
-import { speakers } from "@/lib/course/speakers";
+import { cityName, speakerName, ui } from "@/lib/course/active";
 import { useProgress } from "@/lib/course/progress";
 import { useSpeech } from "@/lib/course/speech";
-import type { Activity, Lesson, Skill } from "@/lib/course/types";
+import type { Activity, Lesson, Skill, VocabItem } from "@/lib/course/types";
+import { seededShuffle } from "@/lib/course/make";
 import { ActivityCard } from "./activities";
 import { Button, Picture, PlayButton, Ru } from "./ui";
 
 type Frame =
   | { type: "goals" }
-  | { type: "vocab" }
+  | { type: "word"; item: VocabItem; index: number; total: number; checks: Activity[] }
   | { type: "letters" }
   | { type: "dialogue" }
   | { type: "grammar" }
   | { type: "single"; kicker: string; title: string; items: Activity[]; listenFirst?: boolean }
   | { type: "stack"; kicker: string; title: string; intro?: string; items: Activity[] };
 
-const skillLabels: Record<Skill, string> = {
-  words: "Words",
-  listening: "Listening",
-  grammar: "Grammar",
-  letters: "Letters",
-  speaking: "Speaking",
-  review: "Review · earlier lessons",
-};
+const skillLabel = (skill: Skill) => ui.skill[skill];
 
-const numberWords = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+/**
+ * New words come in small groups. Each word: see and hear it (card), recognise it by ear
+ * (target → own language), then recall it (own language → target). After every two words,
+ * a short mixed check of the words met so far (up to four).
+ */
+function wordFrames(lesson: Lesson): Frame[] {
+  const vocab = lesson.vocab;
+  const frames: Frame[] = [];
+  const others = (item: VocabItem) => vocab.filter((other) => other.id !== item.id);
+  vocab.forEach((item, index) => {
+    const pool = seededShuffle(others(item), `${item.id}-pool`);
+    const distract = pool.slice(0, 2);
+    const checks: Activity[] = [];
+    if (distract.length >= 1) {
+      checks.push({
+        kind: "choice",
+        id: `${item.id}-hear`,
+        prompt: ui.whatDidYouHear,
+        audio: item.ru,
+        skill: "listening",
+        options: seededShuffle([item, ...distract], `${item.id}-hear`).map((o) => ({ label: o.en, correct: o.id === item.id })),
+      });
+      checks.push({
+        kind: "choice",
+        id: `${item.id}-say`,
+        prompt: ui.howDoYouSay(item.en),
+        skill: "words",
+        options: seededShuffle([item, ...distract], `${item.id}-say`).map((o) => ({ label: o.ru, correct: o.id === item.id })),
+      });
+    }
+    frames.push({ type: "word", item, index, total: vocab.length, checks });
+    const met = index + 1;
+    const groupEnd = met % 2 === 0 || met === vocab.length;
+    if (groupEnd && met >= 2) {
+      const recent = vocab.slice(Math.max(0, met - 4), met);
+      frames.push({
+        type: "single",
+        kicker: ui.vocabFocus,
+        title: ui.mixedCheck,
+        items: [
+          {
+            kind: "match",
+            id: `${lesson.id}-mix-${met}`,
+            prompt: ui.matchPairs,
+            skill: "words",
+            pairs: recent.map((w) => ({ left: w.ru, right: w.en })),
+          },
+        ],
+      });
+    }
+  });
+  return frames;
+}
 
 function framesOf(lesson: Lesson): Frame[] {
-  const frames: Frame[] = [{ type: "goals" }, { type: "vocab" }];
+  const frames: Frame[] = [{ type: "goals" }, ...wordFrames(lesson)];
   if (lesson.letters?.length) frames.push({ type: "letters" });
   frames.push(
     {
       type: "single",
-      kicker: "Listen first",
-      title: "Listen to the dialogue",
+      kicker: ui.listenFirstKicker,
+      title: ui.listenFirstTitle,
       items: [lesson.dialogue.gist],
       listenFirst: true,
     },
     { type: "dialogue" },
     { type: "grammar" },
-    { type: "single", kicker: "Practice", title: "Your turn", items: lesson.tasks },
+    { type: "single", kicker: ui.practice, title: ui.yourTurn, items: lesson.tasks },
   );
   return frames;
 }
 
+/** How many screens a frame has: a word frame is its card plus its checks. */
+function stepsOf(frame: Frame | undefined) {
+  if (!frame) return 1;
+  if (frame.type === "single") return frame.items.length;
+  if (frame.type === "word") return 1 + frame.checks.length;
+  return 1;
+}
+
 function isAtEnd(frame: Frame, frameIndex: number, total: number, sub: number) {
   if (frameIndex < total - 1) return false;
-  if (frame.type === "single") return sub >= frame.items.length - 1;
-  return true;
+  return sub >= stepsOf(frame) - 1;
 }
 
 export function LessonPlayer({
@@ -71,7 +122,6 @@ export function LessonPlayer({
   const [solved, setSolved] = useState<Record<string, boolean>>({});
   const [slot, setSlot] = useState<{ label: string; disabled: boolean; onPress: () => void } | null>(null);
   const [note, setNote] = useState("");
-  const [busy, setBusy] = useState("");
   const titleId = useId();
   const frame = frames[Math.min(frameIndex, frames.length - 1)] ?? frames[0]!;
 
@@ -79,13 +129,18 @@ export function LessonPlayer({
     setDraft({ lessonId: lesson.id, frame: frameIndex, sub });
   }, [frameIndex, lesson.id, setDraft, sub]);
 
-  const single = frame.type === "single" ? frame.items[Math.min(sub, frame.items.length - 1)] : null;
+  const single =
+    frame.type === "single"
+      ? frame.items[Math.min(sub, frame.items.length - 1)]
+      : frame.type === "word" && sub > 0
+        ? (frame.checks[sub - 1] ?? null)
+        : null;
   const stackDone = frame.type === "stack" && frame.items.every((item) => solved[item.id]);
   const singleDone = single ? Boolean(solved[single.id]) : false;
-  const canContinue = frame.type === "single" ? singleDone : frame.type === "stack" ? stackDone : true;
+  const canContinue = single ? singleDone : frame.type === "stack" ? stackDone : true;
 
   const goNext = () => {
-    if (frame.type === "single" && sub < frame.items.length - 1) {
+    if (sub < stepsOf(frame) - 1) {
       setSub((value) => value + 1);
       return;
     }
@@ -99,56 +154,45 @@ export function LessonPlayer({
   };
 
   const goBack = () => {
-    if (frame.type === "single" && sub > 0) {
+    if (sub > 0) {
       setSub((value) => value - 1);
       return;
     }
     if (frameIndex === 0) {
-      if (window.confirm("Leave this lesson? Your place is saved.")) onExit();
+      if (window.confirm(ui.leaveConfirm)) onExit();
       return;
     }
     const prev = frames[frameIndex - 1];
     setFrameIndex((value) => value - 1);
-    setSub(prev?.type === "single" ? prev.items.length - 1 : 0);
-  };
-
-  const download = async (kind: "lesson" | "cards") => {
-    setBusy(kind === "lesson" ? "Preparing the lesson document." : "Preparing the flashcards.");
-    try {
-      if (kind === "lesson") await downloadLessonDoc(lesson);
-      else await downloadFlashcards(lesson);
-      setBusy(kind === "lesson" ? "Lesson download started." : "Flashcards download started.");
-    } catch {
-      setBusy("The download did not finish. Try again.");
-    }
+    setSub(stepsOf(prev) - 1);
   };
 
   const kicker =
     frame.type === "goals"
-      ? `${lesson.level} · ${cityName(lesson.cityId)} · Lesson ${lesson.number} of 7`
-      : frame.type === "vocab"
-        ? "Vocabulary Focus"
+      ? ui.lessonOf(lesson.level, cityName(lesson.cityId), lesson.number, 7)
+      : frame.type === "word"
+        ? ui.vocabFocus
         : frame.type === "dialogue"
-          ? "Dialogue"
+          ? ui.dialogue
           : frame.type === "grammar"
-            ? "Grammar Focus"
+            ? ui.grammarFocus
             : frame.type === "letters"
-              ? "Russian letters"
+              ? ui.letters
               : frame.type === "single" && single?.skill && !frame.listenFirst
-                ? skillLabels[single.skill]
+                ? skillLabel(single.skill)
                 : frame.kicker;
 
   const title =
     frame.type === "goals"
       ? lesson.title
-      : frame.type === "vocab"
-        ? `${numberWords[lesson.vocab.length] ?? lesson.vocab.length} new phrases`
+      : frame.type === "word"
+        ? ui.wordOf(frame.index + 1, frame.total)
         : frame.type === "dialogue"
           ? lesson.dialogue.title
           : frame.type === "grammar"
-            ? "How it works"
+            ? ui.howItWorks
             : frame.type === "letters"
-              ? "New letters"
+              ? ui.newLetters
               : frame.title;
 
   return (
@@ -159,11 +203,11 @@ export function LessonPlayer({
             type="button"
             className="inline-flex min-h-12 min-w-12 items-center justify-center rounded-full"
             onClick={goBack}
-            aria-label="Back"
+            aria-label={ui.back}
           >
             <ChevronLeft aria-hidden />
           </button>
-          <p className="flex-1 text-base font-bold">Lesson {lesson.number} of 7</p>
+          <p className="flex-1 text-base font-bold">{ui.lessonOfShort(lesson.number)}</p>
           <p className="tabular-nums text-muted">
             {frameIndex + 1} / {frames.length}
           </p>
@@ -174,21 +218,10 @@ export function LessonPlayer({
           aria-valuemin={1}
           aria-valuemax={frames.length}
           aria-valuenow={frameIndex + 1}
-          aria-label="Lesson progress"
+          aria-label={ui.lessonProgress}
         >
           <div className="h-full bg-terra" style={{ width: `${((frameIndex + 1) / frames.length) * 100}%` }} />
         </div>
-        <details className="mt-2">
-          <summary className="min-h-12 text-base font-bold text-garden">Downloads</summary>
-          <div className="flex flex-col gap-2 pb-2">
-            <Button variant="ghost" className="min-h-12 text-base" onClick={() => void download("lesson")}>
-              Download the lesson
-            </Button>
-            <Button variant="ghost" className="min-h-12 text-base" onClick={() => void download("cards")}>
-              Download flashcards
-            </Button>
-          </div>
-        </details>
       </header>
       <main id="lesson-main" className="flex flex-1 flex-col gap-5 px-5 py-5 pb-36">
         <p className="text-base font-bold text-garden">{kicker}</p>
@@ -196,16 +229,18 @@ export function LessonPlayer({
           {title}
         </h1>
         {frame.type === "goals" ? <Goals lesson={lesson} /> : null}
-        {frame.type === "vocab" ? <Vocab lesson={lesson} /> : null}
+        {frame.type === "word" && sub === 0 ? (
+          <WordCard item={frame.item} note={frame.index === 0 ? lesson.vocabNote : undefined} />
+        ) : null}
         {frame.type === "dialogue" ? <Dialogue lesson={lesson} /> : null}
         {frame.type === "grammar" ? <Grammar lesson={lesson} /> : null}
         {frame.type === "letters" ? <Letters lesson={lesson} /> : null}
         {frame.type === "single" && frame.listenFirst ? <ListenFirst lesson={lesson} /> : null}
-        {frame.type === "single" && single ? (
+        {single ? (
           <div className="rise" key={single.id}>
-            {frame.items.length > 1 ? (
+            {frame.type === "single" && frame.items.length > 1 ? (
               <p className="mb-3 text-muted">
-                Exercise {sub + 1} of {frame.items.length}
+                {ui.exerciseOf(sub + 1, frame.items.length)}
               </p>
             ) : null}
             <ActivityCard
@@ -213,7 +248,7 @@ export function LessonPlayer({
               solved={Boolean(solved[single.id])}
               onSolved={() => {
                 setSolved((cur) => ({ ...cur, [single.id]: true }));
-                setNote("Correct.");
+                setNote(ui.correctNote);
               }}
               onSlot={setSlot}
             />
@@ -225,14 +260,14 @@ export function LessonPlayer({
             {frame.items.map((item, index) => (
               <article key={item.id} className="rounded-3xl border border-line bg-card p-4">
                 <p className="mb-3 text-muted">
-                  {index + 1} of {frame.items.length}
+                  {ui.nOf(index + 1, frame.items.length)}
                 </p>
                 <ActivityCard
                   activity={item}
                   solved={Boolean(solved[item.id])}
                   onSolved={() => {
                     setSolved((cur) => ({ ...cur, [item.id]: true }));
-                    setNote("Practiced.");
+                    setNote(ui.practicedNote);
                   }}
                 />
               </article>
@@ -243,7 +278,7 @@ export function LessonPlayer({
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-paper">
         <div className="safe-bottom mx-auto w-full max-w-lg px-5 py-3">
           <p role="status" className="sr-only">
-            {note} {busy}
+            {note}
           </p>
           {slot && !canContinue ? (
             <Button disabled={slot.disabled} onClick={slot.onPress}>
@@ -251,11 +286,11 @@ export function LessonPlayer({
             </Button>
           ) : (
             <Button disabled={!canContinue} onClick={goNext}>
-              {isAtEnd(frame, frameIndex, frames.length, sub) ? "Finish lesson" : "Continue"}
+              {isAtEnd(frame, frameIndex, frames.length, sub) ? ui.finishLesson : ui.continue}
             </Button>
           )}
           {frame.type === "stack" && !stackDone ? (
-            <p className="mt-2 text-center text-muted">Say each line, then continue.</p>
+            <p className="mt-2 text-center text-muted">{ui.sayEachLine}</p>
           ) : null}
         </div>
       </div>
@@ -266,7 +301,7 @@ export function LessonPlayer({
 function Goals({ lesson }: { lesson: Lesson }) {
   return (
     <div className="flex flex-col gap-4">
-      <p>By the end of this lesson, you should be able to:</p>
+      <p>{ui.goalsIntro}</p>
       <ul className="flex flex-col gap-2">
         {lesson.goals.map((goal) => (
           <li key={goal} className="rounded-2xl bg-card px-4 py-3">
@@ -278,11 +313,12 @@ function Goals({ lesson }: { lesson: Lesson }) {
   );
 }
 
-function Vocab({ lesson }: { lesson: Lesson }) {
+/** One new word: picture, text, translation and its sound. The checks for it follow on the next screens. */
+function WordCard({ item, note }: { item: VocabItem; note?: string }) {
   return (
     <div className="flex flex-col gap-5">
-      {lesson.vocabNote ? <p className="rounded-3xl bg-paper-deep p-4">{lesson.vocabNote}</p> : null}
-      {lesson.vocab.map((item) => (
+      {note ? <p className="rounded-3xl bg-paper-deep p-4">{note}</p> : null}
+      {[item].map((item) => (
         <article key={item.id} className="flex flex-col gap-3 rounded-3xl border border-line bg-card p-4">
           <Picture src={item.image} className="aspect-square w-full rounded-2xl object-cover" />
           <h2 className="text-4xl">
@@ -307,14 +343,14 @@ function ListenFirst({ lesson }: { lesson: Lesson }) {
   const allId = `${lesson.id}-first`;
   return (
     <div className="flex flex-col gap-3 rounded-3xl bg-paper-deep p-4">
-      <p>Listen without the text first. Then answer the question. You will see the text next.</p>
+      <p>{ui.listenFirstText}</p>
       <Button
-        aria-label={playing === allId ? "Stop the dialogue" : "Play the dialogue"}
+        aria-label={playing === allId ? ui.stopDialogue : ui.playDialogue}
         onClick={() =>
           playing === allId ? stop() : playAll(lesson.dialogue.lines.map((line) => ({ id: allId, text: line.ru, voice: line.speaker })))
         }
       >
-        {playing === allId ? "Stop" : "Play the dialogue"}
+        {playing === allId ? ui.stop : ui.playDialogue}
       </Button>
     </div>
   );
@@ -323,11 +359,11 @@ function ListenFirst({ lesson }: { lesson: Lesson }) {
 function Letters({ lesson }: { lesson: Lesson }) {
   return (
     <div className="flex flex-col gap-4">
-      <p>Russian uses the Cyrillic alphabet. Here are the letters from today's phrases.</p>
+      <p>{ui.lettersIntro}</p>
       {(lesson.letters ?? []).map((card) => (
         <article key={card.letter} className="flex flex-col gap-2 rounded-3xl border border-line bg-card p-4">
-          <p className="text-6xl font-bold" lang="ru">
-            {card.letter}
+          <p className="text-6xl font-bold">
+            <Ru>{card.letter}</Ru>
           </p>
           <p className="text-xl">{card.sound}</p>
           {card.trap ? <p className="font-bold text-terra">{card.trap}</p> : null}
@@ -337,7 +373,7 @@ function Letters({ lesson }: { lesson: Lesson }) {
             </p>
             <p className="text-muted">{card.exampleEn}</p>
           </div>
-          <PlayButton id={`${lesson.id}-letter-${card.letter}`} text={card.example} label={`Play ${card.example}`} />
+          <PlayButton id={`${lesson.id}-letter-${card.letter}`} text={card.example} label={`${ui.play} ${card.example}`} />
         </article>
       ))}
     </div>
@@ -352,16 +388,15 @@ function Dialogue({ lesson }: { lesson: Lesson }) {
     <div className="flex flex-col gap-4">
       <Button
         variant="ghost"
-        aria-label={playing === allId ? "Stop the dialogue" : "Play the entire dialogue"}
+        aria-label={playing === allId ? ui.stopDialogue : ui.playEntireDialogue}
         onClick={() => (playing === allId ? stop() : playAll(lines.map((line) => ({ id: allId, text: line.ru, voice: line.speaker }))))}
       >
-        {playing === allId ? "Stop" : "Play all"}
+        {playing === allId ? ui.stop : ui.playAll}
       </Button>
       {lesson.dialogue.note ? <p className="text-muted">{lesson.dialogue.note}</p> : null}
       <ol className="flex flex-col gap-3">
         {lines.map((line, index) => {
-          const name = speakers[line.speaker].en;
-          const ruName = speakers[line.speaker].ru;
+          const { name, target: ruName } = speakerName(line.speaker);
           const mine = line.speaker === "murzik";
           return (
             <li key={`${line.ru}-${index}`} className={mine ? "pl-6" : "pr-6"}>
@@ -375,7 +410,7 @@ function Dialogue({ lesson }: { lesson: Lesson }) {
                   {name}: {line.en}
                 </p>
                 <div className="mt-3">
-                  <PlayButton id={`${lesson.id}-line-${index}`} text={line.ru} label={`Play ${name}: ${line.ru}`} voice={line.speaker} />
+                  <PlayButton id={`${lesson.id}-line-${index}`} text={line.ru} label={`${ui.play} ${name}: ${line.ru}`} voice={line.speaker} />
                 </div>
               </div>
             </li>
@@ -402,7 +437,7 @@ function Grammar({ lesson }: { lesson: Lesson }) {
               </p>
               <p className="text-muted">{example.en}</p>
               <div className="mt-3">
-                <PlayButton id={`${lesson.id}-${example.ru}`} text={example.ru} label={`Play ${example.ru}`} />
+                <PlayButton id={`${lesson.id}-${example.ru}`} text={example.ru} label={`${ui.play} ${example.ru}`} />
               </div>
             </div>
           ))}

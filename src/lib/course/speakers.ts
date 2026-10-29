@@ -1,7 +1,7 @@
 import type { SpeakerId } from "./types";
 
 /** Display names for everyone who speaks in a dialogue. */
-export const speakers: Record<SpeakerId, { en: string; ru: string }> = {
+export const speakers: Partial<Record<SpeakerId, { en: string; ru: string }>> = {
   tom: { en: "Tom", ru: "Том" },
   murzik: { en: "Murzik", ru: "Мурзик" },
   neighbour: { en: "Madame Dubois", ru: "Мадам Дюбуа" },

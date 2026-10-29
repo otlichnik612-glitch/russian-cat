@@ -30,14 +30,15 @@ import {
   edinburgh6,
   edinburgh7,
 } from "./lessons/edinburgh";
-import type { CityPlan, CityStory, Lesson, LevelId, LevelPlan } from "./types";
+import type { CityPlan, CityStory, Lesson, LevelPlan } from "./types";
 
 /**
  * Add a city by giving it 7 lessons and a story. Each lesson teaches
  * exactly 7 new phrases. The player, downloads, rewards and
  * progress all read this data. Do not add placeholder lessons.
  */
-export const LESSONS_PER_CITY = 7;
+import { LESSONS_PER_CITY, makeCourse } from "./model";
+export { LESSONS_PER_CITY };
 
 export const parisLessons: Lesson[] = [
   lesson1,
@@ -96,8 +97,8 @@ export const edinburghLessons: Lesson[] = [
 
 const parisStory: CityStory = {
   home: {
-    name: "Murzik's Paris apartment",
-    nameRu: "Квартира в Париже",
+    name: "Murzik's apartment in Paris",
+    nameRu: "Квартира Мурзика в Париже",
     image: images.apartment,
     a11y: "Murzik's Paris apartment is still almost empty, with a tall window and afternoon light.",
   },
@@ -1149,121 +1150,27 @@ export const levels: LevelPlan[] = [
   { id: "C1", title: "C1", subtitle: "Natural, advanced Russian", cities: fromTuples(c1) },
 ];
 
-export const allPlannedLessons = levels.reduce(
-  (sum, level) => sum + level.cities.length * LESSONS_PER_CITY,
-  0,
-);
+/** The Russian course (for English speakers). Helpers come from the shared course model. */
+export const russianCourse = makeCourse(levels);
 
-/** Cities that already have lessons, in story order. */
-export const readyCities: CityPlan[] = levels
-  .flatMap((level) => level.cities)
-  .filter((c) => c.lessons.length > 0);
-
-/** Every written lesson, in the order a learner meets them. */
-export const courseLessons: Lesson[] = readyCities.flatMap((c) => c.lessons);
-
-{
-  const seen = new Set<string>();
-  for (const lesson of courseLessons) {
-    if (lesson.vocab.length !== 7) throw new Error(`${lesson.id} must teach exactly 7 phrases`);
-    const ids = [
-      lesson.id,
-      ...lesson.vocab.map((item) => item.id),
-      lesson.dialogue.gist.id,
-      ...lesson.tasks.map((activity) => activity.id),
-    ];
-    for (const id of ids) {
-      if (seen.has(id)) throw new Error(`Duplicate id ${id}`);
-      seen.add(id);
-    }
-  }
-  for (const c of readyCities) {
-    if (c.lessons.length !== LESSONS_PER_CITY)
-      throw new Error(`${c.id} must have ${LESSONS_PER_CITY} lessons`);
-    if (!c.story) throw new Error(`${c.id} needs a story`);
-    if (!c.lessons.some((lesson) => lesson.reward.itemId === c.story?.keepsakeId))
-      throw new Error(`${c.id}: keepsake ${c.story.keepsakeId} is not one of its rewards`);
-  }
-}
-
-export function getLesson(id: string): Lesson | undefined {
-  return courseLessons.find((lesson) => lesson.id === id);
-}
-
-export function getCity(id: string): CityPlan | undefined {
-  return levels.flatMap((level) => level.cities).find((c) => c.id === id);
-}
-
-export function cityName(id: string): string {
-  return getCity(id)?.name ?? id;
-}
-
-export function lessonsInLevel(level: LevelId) {
-  return (
-    levels
-      .find((item) => item.id === level)
-      ?.cities.reduce((sum, c) => sum + c.lessons.length, 0) ?? 0
-  );
-}
-
-export function plannedInLevel(level: LevelId) {
-  const found = levels.find((item) => item.id === level);
-  return (found?.cities.length ?? 0) * LESSONS_PER_CITY;
-}
-
-export function earnedRewards(completedIds: string[]) {
-  return courseLessons
-    .filter((lesson) => completedIds.includes(lesson.id))
-    .map((lesson) => lesson.reward);
-}
-
-export function learnedVocab(completedIds: string[]) {
-  return courseLessons
-    .filter((lesson) => completedIds.includes(lesson.id))
-    .flatMap((lesson) => lesson.vocab);
-}
-
-/** Rewards earned in one city: the things in Murzik's home there. */
-export function cityRewards(c: CityPlan, completedIds: string[]) {
-  return c.lessons.filter((lesson) => completedIds.includes(lesson.id)).map((lesson) => lesson.reward);
-}
-
-/** Favourite things Murzik took with him from finished cities. */
-export function keepsakes(completedIds: string[]) {
-  return completedCities(completedIds).flatMap((c) =>
-    c.lessons.map((lesson) => lesson.reward).filter((reward) => reward.itemId === c.story?.keepsakeId),
-  );
-}
-
-/** The city Murzik lives in now: where the next lesson is, or the last city reached. */
-export function homeCity(completedIds: string[]) {
-  const next = nextLesson(completedIds);
-  return (next ? getCity(next.cityId) : readyCities[readyCities.length - 1]) ?? readyCities[0]!;
-}
-
-export function cityComplete(c: CityPlan, completedIds: string[]) {
-  return c.lessons.length > 0 && c.lessons.every((lesson) => completedIds.includes(lesson.id));
-}
-
-export function completedCities(completedIds: string[]) {
-  return readyCities.filter((c) => cityComplete(c, completedIds));
-}
-
-/** The first lesson not yet done, across all cities. Lessons open one after another. */
-export function nextLesson(completedIds: string[]) {
-  return courseLessons.find((lesson) => !completedIds.includes(lesson.id)) ?? null;
-}
-
-/** A finished city whose farewell story the learner has not seen yet. */
-export function pendingFinale(completedIds: string[], finalesSeen: string[]) {
-  return (
-    readyCities.find((c) => cityComplete(c, completedIds) && !finalesSeen.includes(c.id)) ?? null
-  );
-}
-
-/** The planned city after the given one, if any. */
-export function cityAfter(id: string): CityPlan | null {
-  const all = levels.flatMap((level) => level.cities);
-  const index = all.findIndex((c) => c.id === id);
-  return index >= 0 ? (all[index + 1] ?? null) : null;
-}
+// The names below keep older imports working; the app itself reads the active course from ./active.
+export const {
+  allPlannedLessons,
+  readyCities,
+  courseLessons,
+  getLesson,
+  getCity,
+  cityName,
+  lessonsInLevel,
+  plannedInLevel,
+  earnedRewards,
+  learnedVocab,
+  cityRewards,
+  keepsakes,
+  homeCity,
+  cityComplete,
+  completedCities,
+  nextLesson,
+  pendingFinale,
+  cityAfter,
+} = russianCourse;

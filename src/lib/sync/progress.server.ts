@@ -9,17 +9,15 @@ import type { SaveResult } from "./progress.functions";
 
 type SaveData = {
   nativeLang: "en" | "ru" | null;
-  targetLang: "ru" | "tr" | null;
-  course: "ru" | "tr";
+  targetLang: "ru" | "tr" | "en" | "pt" | null;
+  course: "ru" | "tr" | "en" | "pt";
   progress: unknown;
 };
 
 const native = (v: unknown) => (v === "en" || v === "ru" ? v : null);
-const target = (v: unknown) => (v === "ru" || v === "tr" ? v : null);
+const target = (v: unknown) => (v === "ru" || v === "tr" || v === "en" || v === "pt" ? v : null);
 
 export async function saveProgressForUser(sql: Sql, userId: string, data: SaveData): Promise<SaveResult> {
-  const course = data.course;
-
   // Language choice: a value from this device wins; an empty one keeps what the account has.
   const settings = await sql<{ native_language: string | null; target_language: string | null }>`
     insert into user_settings (user_id, native_language, target_language)
@@ -29,6 +27,9 @@ export async function saveProgressForUser(sql: Sql, userId: string, data: SaveDa
       target_language = coalesce(excluded.target_language, user_settings.target_language),
       updated_at = now()
     returning native_language, target_language`;
+
+  // The course is the account's chosen language (a device that has not chosen yet gets that course).
+  const course = target(settings[0]?.target_language) ?? data.course;
 
   // What the account already has for this course.
   const stateRows = await sql<{

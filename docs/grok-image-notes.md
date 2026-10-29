@@ -45,6 +45,17 @@ The two very first screens (choose your language, choose a course). No flags, no
 - `public/art/languages/2.jpg` — scene — Languages target
   - Draw: Murzik on cream paper with dotted travel lines between little cities. He happily balances a small globe on one paw like a ball, eyes shining, scarf fluttering. His suitcase stands at his feet.
 
+## Language buttons (3 pictures)
+
+Small round pictures on the language buttons. **These are the only pictures in the whole app that may show flags:** the American and British flags for English and the Turkish flag for Turkish. Russian has **no flag**. Square 1408 × 1408, but keep everything inside the central circle: the app shows them as small round badges. No words or letters.
+
+- `public/art/languages/en.jpg` — reward — Language button English
+  - Draw: Murzik stands between a small American flag and a small British flag on little poles. He holds a paper takeaway coffee cup in one paw and happily waves with the other, like a tourist in New York. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
+- `public/art/languages/ru.jpg` — reward — Language button Russian
+  - Draw: Murzik sits next to a shiny brass samovar with a cup of tea, smiling. Beside him stand three colourful matryoshka dolls of different sizes. No flag. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
+- `public/art/languages/tr.jpg` — reward — Language button Turkish
+  - Draw: Murzik stands proudly, chest out, next to a Turkish flag on a small pole. In one paw he holds a tulip-shaped glass of tea, in the other a round sesame simit. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
+
 ## Prologue (3 pictures)
 
 The three opening screens. Grandma Asya must NOT appear in any picture — only her handwriting and the little painted ginger cat on her postcard.
@@ -1807,3 +1818,5162 @@ The three opening screens. Grandma Asya must NOT appear in any picture — only 
   - Draw: A small plane flies south over the sea, from Scotland towards France.
 - `public/art/lyon/arrival.jpg` — scene — Edinburgh farewell 6
   - Draw: Murzik and Tom arrive in Lyon, where two rivers meet, with colourful houses on the hill and an old basilica at the top.
+
+# Turkish course
+
+The second course, «Мурзик в Турции»: Turkish for Russian speakers. The story starts in Paris (an old postcard with an İstanbul stamp); the lessons start in Kadıköy, on the Asian side of İstanbul, at Ayşe Teyze's coffee shop, and go on through Turkey. All pictures go to `public/art/tr/<city>/`. The `draw` notes for this course are written in Russian — draw exactly what they say.
+
+## Style and cast for the Turkish course
+
+- Same storybook style, same **Murzik** and same **Tom** as in the first course.
+- **No flags anywhere.** No words or letters in the pictures (numbers on price tags, clocks with hands, and the PTT sign on the post office are fine). Mosques and other holy places are drawn respectfully, from outside, calm and beautiful.
+- **Grandma Asya is never shown** — only her handwriting and the small painted ginger cat on her postcards. In an old photo her face cannot be seen.
+- **Talking cats are only Murzik's family, Asya and Lev.** Everyone else is a human. Ordinary cats (Pamuk in Trabzon, Boncuk in Van) are normal animals on four legs, not dressed.
+- **Ayşe Teyze** (Kadıköy): a kind Turkish lady of about 65 with a soft headscarf, a long cardigan and an apron; she runs the little coffee shop below Murzik's room. **The taxi driver** (İstanbul 1): a chatty older man with a grey moustache. **Kemal Bey** (İstanbul): an elderly man with a white moustache and a waistcoat. **Simitçi**: an old street seller with a tray of simits. **Zeynep Hanım** (Bursa): a lively woman of about 50 with a market basket.
+- **Murzik's family in İzmir (cats, same style as Murzik):** **Aunt Leyla** — a ginger cat with a warm smile and an apron, Asya's daughter; **Uncle Mehmet** — a calm grey cat with a moustache who loves tea; **Tarçın** — a plump, lazy, cheerful cinnamon-coloured cousin of about 12; **Minnoş** — a tiny 5-year-old ginger kitten who loves drawing.
+- **Selin** (Pamukkale): a girl of about 16 with a ponytail. **Ali Kaptan** (Bodrum): a sunburnt captain with a white beard and a cap. **Hasan Usta** (Antalya): an old musician with a saz. **Doktor Zehra** (Konya): a calm woman of about 50 in a white coat. **Deniz** (Kapadokya): a cheerful student. **The potter**: a kind man with clay on his hands.
+- **Nur Nine** (Ankara): Asya's younger sister — an elderly white Angora cat with long fluffy fur, a shawl and reading glasses.
+- **Trabzon**: the receptionist — a polite young woman in a navy uniform; the post-office clerk; **Pamuk** — a plump grey hotel cat (an ordinary cat). **Van**: **Gülsüm Teyze** — a warm woman of about 60 who runs a breakfast house; **Boncuk** — a white Van cat with one blue and one green eye who swims (an ordinary cat). **Gaziantep**: **Elif** — a girl of 10 with two braids; her grandfather — a coppersmith in a leather apron. **Mardin**: **Can** — Tom's photographer friend, about 30, with a beard and a camera.
+- **Lev**, the white cat in a hat, looks exactly as in the first course: kind, warm and gentle, never scary. Until Mardin he is only seen from far away; in Mardin 6 he finally speaks to Murzik on a moonlit terrace.
+- Phrase pictures and rewards: square, 1408 × 1408. Scenes: portrait, 1152 × 1728.
+
+## Turkish course — Prologue (Paris) (2 pictures)
+
+- `public/art/tr/prologue/2.jpg` — scene — TR Prologue postcard
+  - Draw: Старая открытка крупно: на одной стороне вид Стамбула — паромы, чайки и купола над морем; на другой несколько строчек от руки, маленькая рыжая кошка в углу и турецкая марка со штемпелем. Обратного адреса нет.
+- `public/art/tr/prologue/3.jpg` — scene — TR Prologue journey
+  - Draw: Мурзик с чемоданом у самолёта. За иллюминаторами вдали — Стамбул: море, паромы и купола.
+
+## Turkish course — Kadıköy (22 pictures)
+
+- `public/art/tr/kadikoy/l1-2.jpg` — phrase — TR Кадыкёй 1 vocab «Selam!»
+  - Draw: Мурзик весело машет Тому из окна.
+- `public/art/tr/kadikoy/l1-6.jpg` — phrase — TR Кадыкёй 1 vocab «Memnun oldum.»
+  - Draw: Мурзик и Том знакомятся на набережной Кадыкёя, за ними паромы и чайки.
+- `public/art/tr/kadikoy/kase.jpg` — reward — TR Кадыкёй 1 reward «Kâse»
+  - Draw: Мурзик в своей новой комнате над кофейней радостно обнимает новую миску с бирюзовым турецким узором. Рядом улыбается Том.
+- `public/art/tr/kadikoy/minder.jpg` — reward — TR Кадыкёй 2 reward «Minder»
+  - Draw: Мурзик уютно устроился на большой подушке с турецким узором прямо на полу у окна.
+- `public/art/tr/kadikoy/l3-2.jpg` — phrase — TR Кадыкёй 3 vocab «Sağ ol!»
+  - Draw: Мурзик весело показывает Тому большой палец.
+- `public/art/tr/kadikoy/l3-4.jpg` — phrase — TR Кадыкёй 3 vocab «Lütfen.»
+  - Draw: Мурзик вежливо складывает лапки и показывает на чашку чая.
+- `public/art/tr/kadikoy/l3-6.jpg` — phrase — TR Кадыкёй 3 vocab «Pardon!»
+  - Draw: Мурзик вежливо поднимает лапу, чтобы пройти мимо пожилой дамы в узких дверях кофейни.
+- `public/art/tr/kadikoy/raf.jpg` — reward — TR Кадыкёй 3 reward «Raf»
+  - Draw: На стене у Мурзика висит маленькая резная деревянная полочка с узором. Мурзик ставит на неё свою миску.
+- `public/art/tr/kadikoy/l4-3.jpg` — phrase — TR Кадыкёй 4 vocab «Tekrar eder misiniz?»
+  - Draw: Мурзик вежливо прикладывает лапу к уху, пока говорит Айше-тейзе.
+- `public/art/tr/kadikoy/kilim.jpg` — reward — TR Кадыкёй 4 reward «Kilim»
+  - Draw: На полу в комнате Мурзика лежит яркий ковёр-килим с красно-синим узором. Мурзик катается по нему от радости.
+- `public/art/tr/kadikoy/l5-5.jpg` — phrase — TR Кадыкёй 5 vocab «Paris'te yaşıyorum.»
+  - Draw: Мурзик показывает Тому фотографию своей парижской квартиры: в окне видна Эйфелева башня.
+- `public/art/tr/kadikoy/sehpa.jpg` — reward — TR Кадыкёй 5 reward «Sehpa»
+  - Draw: Низкий резной деревянный столик стоит на килиме. На нём две чашки чая. Мурзик и Том сидят рядом на подушках.
+- `public/art/tr/kadikoy/masa.jpg` — reward — TR Кадыкёй 6 reward «Masa»
+  - Draw: У окна стоит небольшой старинный стол с перламутровым узором. Ящик выдвинут, Мурзик держит в лапах старую открытку.
+- `public/art/tr/kadikoy/l7-2.jpg` — phrase — TR Кадыкёй 7 vocab «Güle güle!»
+  - Draw: Айше-тейзе машет рукой из дверей кофейни.
+- `public/art/tr/kadikoy/l7-3.jpg` — phrase — TR Кадыкёй 7 vocab «Görüşürüz!»
+  - Draw: Мурзик и Том машут друг другу с двух сторон улицы.
+- `public/art/tr/kadikoy/l7-5.jpg` — phrase — TR Кадыкёй 7 vocab «İyi günler!»
+  - Draw: Солнечным утром Айше-тейзе улыбается и машет Мурзику.
+- `public/art/tr/kadikoy/l7-7.jpg` — phrase — TR Кадыкёй 7 vocab «İyi yolculuklar!»
+  - Draw: Айше-тейзе машет платком, а Мурзик несёт маленький чемодан.
+- `public/art/tr/kadikoy/cezve.jpg` — reward — TR Кадыкёй 7 reward «Cezve»; TR Кадыкёй farewell 2
+  - Draw: Мурзик держит в лапах маленькую медную джезву с длинной ручкой. Айше-тейзе улыбается в дверях кофейни.
+- `public/art/tr/kadikoy/arrival.jpg` — scene — TR Кадыкёй welcome
+  - Draw: Мурзик с чемоданом на пристани Кадыкёя, на азиатском берегу Стамбула. Белые паромы, чайки, на берегу маленькие кофейни.
+- `public/art/tr/kadikoy/departure.jpg` — scene — TR Кадыкёй departure; TR Кадыкёй farewell 4
+  - Draw: Айше-тейзе машет на прощание у дверей кофейни, Мурзик и Том с чемоданами идут к пристани.
+- `public/art/tr/kadikoy/postcards.jpg` — scene — TR Кадыкёй farewell 1
+  - Draw: Крупно: лапы Мурзика держат две старые открытки с одним почерком и одной нарисованной рыжей кошечкой. На первой — вид Стамбула и турецкая марка, на второй — Галатская башня и разноцветные дома Балата. Слов не разобрать.
+- `public/art/tr/kadikoy/ferry.jpg` — scene — TR Кадыкёй farewell 5
+  - Draw: Белый паром плывёт через Босфор с азиатского берега на европейский. Мурзик и Том стоят на палубе, вокруг чайки.
+
+## Turkish course — İstanbul (60 pictures)
+
+- `public/art/tr/istanbul/arrival.jpg` — scene — TR Кадыкёй farewell 6; TR Стамбул welcome
+  - Draw: Мурзик и Том с чемоданами на набережной европейского берега. За ними Галатская башня, паромы на Босфоре и чайки.
+- `public/art/tr/istanbul/l1-1.jpg` — phrase — TR Стамбул 1 vocab «Taksi! — Buyurun.»
+  - Draw: Мурзик на пристани поднимает лапу, к нему подъезжает жёлтое такси.
+- `public/art/tr/istanbul/l1-2.jpg` — phrase — TR Стамбул 1 vocab «Balat'a, lütfen.»
+  - Draw: Мурзик показывает таксисту открытку с разноцветными домами.
+- `public/art/tr/istanbul/l1-3.jpg` — phrase — TR Стамбул 1 vocab «Bu sizin bavulunuz mu? — Evet, benim.»
+  - Draw: Таксист показывает на чемодан, Мурзик гордо кладёт на него лапу.
+- `public/art/tr/istanbul/l1-4.jpg` — phrase — TR Стамбул 1 vocab «Bu senin çantan mı?»
+  - Draw: Мурзик протягивает Тому его сумку с фотоаппаратом.
+- `public/art/tr/istanbul/l1-5.jpg` — phrase — TR Стамбул 1 vocab «köprü»
+  - Draw: Такси едет по длинному мосту над заливом, на мосту стоят рыбаки с удочками.
+- `public/art/tr/istanbul/l1-6.jpg` — phrase — TR Стамбул 1 vocab «Burada durun, lütfen.»
+  - Draw: Такси останавливается у разноцветного дома на крутой улочке.
+- `public/art/tr/istanbul/l1-7.jpg` — phrase — TR Стамбул 1 vocab «Hoş geldiniz! — Hoş bulduk!»
+  - Draw: Таксист с улыбкой машет из окна, Мурзик и Том стоят с чемоданами.
+- `public/art/tr/istanbul/harita.jpg` — reward — TR Стамбул 1 reward «Harita»
+  - Draw: Мурзик разворачивает большую карту Стамбула с Босфором и паромами. Том показывает пальцем на район Балат.
+- `public/art/tr/istanbul/l2-1.jpg` — phrase — TR Стамбул 2 vocab «bir, iki, üç, dört, beş»
+  - Draw: Мурзик загибает пальцы на лапе, считая до пяти.
+- `public/art/tr/istanbul/l2-2.jpg` — phrase — TR Стамбул 2 vocab «altı, yedi, sekiz, dokuz, on»
+  - Draw: Над Золотым Рогом летят десять чаек, у каждой маленькая цифра.
+- `public/art/tr/istanbul/l2-3.jpg` — phrase — TR Стамбул 2 vocab «on bir, on iki, on üç, on dört, on beş»
+  - Draw: На набережной выстроились пятнадцать белых паромов.
+- `public/art/tr/istanbul/l2-4.jpg` — phrase — TR Стамбул 2 vocab «on altı, on yedi, on sekiz, on dokuz, yirmi»
+  - Draw: На лотке у продавца ровно двадцать симитов.
+- `public/art/tr/istanbul/l2-5.jpg` — phrase — TR Стамбул 2 vocab «sıfır»
+  - Draw: Мурзик держит пустую корзинку и показывает лапой круглый ноль.
+- `public/art/tr/istanbul/l2-6.jpg` — phrase — TR Стамбул 2 vocab «Kaç tane?»
+  - Draw: Том показывает на стаю чаек и вопросительно разводит руками.
+- `public/art/tr/istanbul/l2-7.jpg` — phrase — TR Стамбул 2 vocab «numara»
+  - Draw: На разноцветном доме висит синяя табличка с номером девятнадцать.
+- `public/art/tr/istanbul/perde.jpg` — reward — TR Стамбул 2 reward «Perde»
+  - Draw: На окне комнаты в Балате висит лёгкая занавеска в голубой цветочек. За окном разноцветные дома.
+- `public/art/tr/istanbul/l3-1.jpg` — phrase — TR Стамбул 3 vocab «ev»
+  - Draw: Узкий разноцветный дом в Балате: жёлтый, с синими ставнями.
+- `public/art/tr/istanbul/l3-2.jpg` — phrase — TR Стамбул 3 vocab «oda»
+  - Draw: Маленькая светлая комната с деревянным полом.
+- `public/art/tr/istanbul/l3-3.jpg` — phrase — TR Стамбул 3 vocab «Burası senin odan.»
+  - Draw: Кемаль-бей, пожилой мужчина с усами, открывает дверь и с улыбкой показывает Мурзику комнату.
+- `public/art/tr/istanbul/l3-4.jpg` — phrase — TR Стамбул 3 vocab «anahtar»
+  - Draw: Кемаль-бей протягивает Мурзику старинный железный ключ.
+- `public/art/tr/istanbul/l3-5.jpg` — phrase — TR Стамбул 3 vocab «pencere»
+  - Draw: Большое окно, за ним крыши Балата и Золотой Рог.
+- `public/art/tr/istanbul/l3-6.jpg` — phrase — TR Стамбул 3 vocab «Banyo nerede?»
+  - Draw: Мурзик с полотенцем на плече вопросительно оглядывается в коридоре.
+- `public/art/tr/istanbul/l3-7.jpg` — phrase — TR Стамбул 3 vocab «Ne güzel!»
+  - Draw: Мурзик прижимает лапы к груди и восхищённо смотрит в окно.
+- `public/art/tr/istanbul/yatak.jpg` — reward — TR Стамбул 3 reward «Yatak»
+  - Draw: В комнате стоит небольшая кровать с вышитым покрывалом. Мурзик прыгает на неё от радости.
+- `public/art/tr/istanbul/l4-1.jpg` — phrase — TR Стамбул 4 vocab «vapur»
+  - Draw: Белый стамбульский паром плывёт по Босфору, за ним чайки.
+- `public/art/tr/istanbul/l4-2.jpg` — phrase — TR Стамбул 4 vocab «metro»
+  - Draw: Вход в метро с большой буквой M.
+- `public/art/tr/istanbul/l4-3.jpg` — phrase — TR Стамбул 4 vocab «tramvay»
+  - Draw: Старый красный трамвай едет по пешеходной улице.
+- `public/art/tr/istanbul/l4-4.jpg` — phrase — TR Стамбул 4 vocab «otobüs»
+  - Draw: Городской автобус подъезжает к остановке.
+- `public/art/tr/istanbul/l4-5.jpg` — phrase — TR Стамбул 4 vocab «Vapurla gidelim!»
+  - Draw: Мурзик радостно тянет Тома за рукав к причалу.
+- `public/art/tr/istanbul/l4-6.jpg` — phrase — TR Стамбул 4 vocab «Bir bilet, lütfen.»
+  - Draw: Мурзик протягивает монетку в окошко кассы.
+- `public/art/tr/istanbul/l4-7.jpg` — phrase — TR Стамбул 4 vocab «Durak nerede?»
+  - Draw: Том с картой в руках оглядывается на улице.
+- `public/art/tr/istanbul/vapur.jpg` — reward — TR Стамбул 4 reward «Vapur»
+  - Draw: На подоконнике стоит маленькая деревянная модель белого стамбульского парома.
+- `public/art/tr/istanbul/l5-1.jpg` — phrase — TR Стамбул 5 vocab «Hava nasıl?»
+  - Draw: Том смотрит на серое небо над Босфором.
+- `public/art/tr/istanbul/l5-2.jpg` — phrase — TR Стамбул 5 vocab «Yağmur yağıyor.»
+  - Draw: Над паромом льёт дождь, по палубе стучат капли.
+- `public/art/tr/istanbul/l5-3.jpg` — phrase — TR Стамбул 5 vocab «Hava güzel.»
+  - Draw: Солнечный день, синее небо над мечетями и паромами.
+- `public/art/tr/istanbul/l5-4.jpg` — phrase — TR Стамбул 5 vocab «Soğuk.»
+  - Draw: Мурзик дрожит и кутается в шарф.
+- `public/art/tr/istanbul/l5-5.jpg` — phrase — TR Стамбул 5 vocab «Sıcak.»
+  - Draw: Мурзик обмахивается лапой на ярком солнце.
+- `public/art/tr/istanbul/l5-6.jpg` — phrase — TR Стамбул 5 vocab «Rüzgâr var.»
+  - Draw: Ветер треплет шарф Мурзика и шляпы прохожих.
+- `public/art/tr/istanbul/l5-7.jpg` — phrase — TR Стамбул 5 vocab «Güneş açtı!»
+  - Draw: Из-за туч выходит солнце, над Босфором радуга.
+- `public/art/tr/istanbul/semsiye.jpg` — reward — TR Стамбул 5 reward «Şemsiye»
+  - Draw: Мурзик держит над собой маленький красный зонт. С краёв капает дождь, позади виден Босфор.
+- `public/art/tr/istanbul/l6-1.jpg` — phrase — TR Стамбул 6 vocab «Alo?»
+  - Draw: Мурзик держит у уха трубку старого телефона.
+- `public/art/tr/istanbul/l6-2.jpg` — phrase — TR Стамбул 6 vocab «Kim arıyor?»
+  - Draw: Мурзик с трубкой в лапе удивлённо поднимает брови.
+- `public/art/tr/istanbul/l6-3.jpg` — phrase — TR Стамбул 6 vocab «Benim, Tom.»
+  - Draw: Том говорит по мобильному на улице и машет рукой.
+- `public/art/tr/istanbul/l6-4.jpg` — phrase — TR Стамбул 6 vocab «Telefon numaran ne?»
+  - Draw: Том держит блокнот и ручку, готовый записать номер.
+- `public/art/tr/istanbul/l6-5.jpg` — phrase — TR Стамбул 6 vocab «Beni ara!»
+  - Draw: Мурзик показывает лапой жест «позвони мне», приложив её к уху.
+- `public/art/tr/istanbul/l6-6.jpg` — phrase — TR Стамбул 6 vocab «Şimdi müsait misin?»
+  - Draw: Том осторожно звонит и спрашивает с вежливой улыбкой.
+- `public/art/tr/istanbul/l6-7.jpg` — phrase — TR Стамбул 6 vocab «Sonra ararım.»
+  - Draw: Мурзик с полными лапами пакетов прижимает телефон плечом.
+- `public/art/tr/istanbul/telefon.jpg` — reward — TR Стамбул 6 reward «Telefon»
+  - Draw: На столике стоит старинный зелёный телефон с круглым диском. Мурзик снимает трубку.
+- `public/art/tr/istanbul/l7-1.jpg` — phrase — TR Стамбул 7 vocab «Galata Kulesi nerede?»
+  - Draw: Мурзик держит открытку с нарисованной башней и спрашивает прохожую.
+- `public/art/tr/istanbul/l7-2.jpg` — phrase — TR Стамбул 7 vocab «Düz gidin.»
+  - Draw: Прохожая показывает рукой прямо по узкой улочке.
+- `public/art/tr/istanbul/l7-3.jpg` — phrase — TR Стамбул 7 vocab «Sağa dönün.»
+  - Draw: Стрелка направо на старом указателе на углу улицы.
+- `public/art/tr/istanbul/l7-4.jpg` — phrase — TR Стамбул 7 vocab «Sola dönün.»
+  - Draw: Стрелка налево на старом указателе на углу улицы.
+- `public/art/tr/istanbul/l7-5.jpg` — phrase — TR Стамбул 7 vocab «Yakın mı?»
+  - Draw: Мурзик вопросительно смотрит на длинную лестницу вверх.
+- `public/art/tr/istanbul/l7-6.jpg` — phrase — TR Стамбул 7 vocab «Hayır, uzak.»
+  - Draw: Прохожий показывает куда-то очень далеко, за холмы.
+- `public/art/tr/istanbul/l7-7.jpg` — phrase — TR Стамбул 7 vocab «Burada!»
+  - Draw: Мурзик и Том стоят у подножия Галатской башни и радостно показывают на неё.
+- `public/art/tr/istanbul/bardak.jpg` — reward — TR Стамбул 7 reward «Çay bardakları»; TR Стамбул farewell 2
+  - Draw: На медном подносе стоят два стеклянных стаканчика в форме тюльпана с горячим красным чаем. За окном Галатская башня.
+- `public/art/tr/istanbul/departure.jpg` — scene — TR Стамбул departure; TR Стамбул farewell 4
+  - Draw: Мурзик и Том с чемоданами на пристани. У причала стоит быстрый паром, над ними кружат чайки.
+- `public/art/tr/istanbul/simitci.jpg` — scene — TR Стамбул farewell 1
+  - Draw: На палубе парома пожилой продавец с лотком симитов смотрит на открытку в лапах Мурзика и улыбается. Рядом стоит Том.
+- `public/art/tr/istanbul/to-bursa.jpg` — scene — TR Стамбул farewell 5
+  - Draw: Быстрый паром идёт по Мраморному морю из Стамбула в Бурсу. На палубе Мурзик и Том смотрят вперёд.
+
+## Turkish course — Bursa (60 pictures)
+
+- `public/art/tr/bursa/arrival.jpg` — scene — TR Стамбул farewell 6; TR Бурса welcome
+  - Draw: Мурзик и Том приехали в Бурсу. За ними зелёная гора Улудаг и старинные купола, вокруг деревья.
+- `public/art/tr/bursa/l1-1.jpg` — phrase — TR Бурса 1 vocab «Ne istersiniz?»
+  - Draw: Официант с подносом вежливо склоняется над столиком.
+- `public/art/tr/bursa/l1-2.jpg` — phrase — TR Бурса 1 vocab «Bir çay, lütfen.»
+  - Draw: Том показывает один палец, рядом стаканчик-тюльпан с чаем.
+- `public/art/tr/bursa/l1-3.jpg` — phrase — TR Бурса 1 vocab «Bir Türk kahvesi, lütfen.»
+  - Draw: Маленькая чашечка густого кофе с пенкой и стакан воды.
+- `public/art/tr/bursa/l1-4.jpg` — phrase — TR Бурса 1 vocab «Şekerli mi, şekersiz mi?»
+  - Draw: Официант держит в одной руке сахарницу, а другую разводит вопросительно.
+- `public/art/tr/bursa/l1-5.jpg` — phrase — TR Бурса 1 vocab «Az şekerli.»
+  - Draw: Мурзик показывает лапой крошечный кусочек сахара.
+- `public/art/tr/bursa/l1-6.jpg` — phrase — TR Бурса 1 vocab «Başka bir şey?»
+  - Draw: Официант с блокнотом ждёт, приподняв брови.
+- `public/art/tr/bursa/l1-7.jpg` — phrase — TR Бурса 1 vocab «Hesap, lütfen.»
+  - Draw: Том поднимает руку, будто пишет в воздухе, — просит счёт.
+- `public/art/tr/bursa/fincan.jpg` — reward — TR Бурса 1 reward «Fincan»
+  - Draw: Маленькая фарфоровая чашечка для турецкого кофе с красным узором и блюдцем. Рядом стакан воды и кусочек лукума.
+- `public/art/tr/bursa/l2-1.jpg` — phrase — TR Бурса 2 vocab «Menü var mı?»
+  - Draw: Том вопросительно показывает на пустой стол.
+- `public/art/tr/bursa/l2-2.jpg` — phrase — TR Бурса 2 vocab «Ne tavsiye edersiniz?»
+  - Draw: Мурзик с меню в лапах смотрит на хозяйку закусочной.
+- `public/art/tr/bursa/l2-3.jpg` — phrase — TR Бурса 2 vocab «Bir İskender, lütfen.»
+  - Draw: Тарелка искендера: мясо на хлебе с томатным соусом и йогуртом.
+- `public/art/tr/bursa/l2-4.jpg` — phrase — TR Бурса 2 vocab «Çok açım!»
+  - Draw: Мурзик держится за пустой животик, а в мечтах у него тарелка еды.
+- `public/art/tr/bursa/l2-5.jpg` — phrase — TR Бурса 2 vocab «Bir de ayran.»
+  - Draw: Высокий стакан белого айрана с пенкой.
+- `public/art/tr/bursa/l2-6.jpg` — phrase — TR Бурса 2 vocab «Vejetaryen yemek var mı?»
+  - Draw: Том показывает на картинку с овощами в меню.
+- `public/art/tr/bursa/l2-7.jpg` — phrase — TR Бурса 2 vocab «Bir dakika, lütfen.»
+  - Draw: Хозяйка закусочной поднимает палец: «Сейчас!»
+- `public/art/tr/bursa/tabak.jpg` — reward — TR Бурса 2 reward «Tabak»
+  - Draw: Большая керамическая тарелка с синими тюльпанами стоит на полке у Мурзика.
+- `public/art/tr/bursa/l3-1.jpg` — phrase — TR Бурса 3 vocab «pazar»
+  - Draw: Шумный рынок под тентами: горы овощей и фруктов.
+- `public/art/tr/bursa/l3-2.jpg` — phrase — TR Бурса 3 vocab «domates»
+  - Draw: Ящик красных блестящих помидоров.
+- `public/art/tr/bursa/l3-3.jpg` — phrase — TR Бурса 3 vocab «elma»
+  - Draw: Корзинка красных и зелёных яблок.
+- `public/art/tr/bursa/l3-4.jpg` — phrase — TR Бурса 3 vocab «ekmek»
+  - Draw: Круглый румяный хлеб на деревянной доске.
+- `public/art/tr/bursa/l3-5.jpg` — phrase — TR Бурса 3 vocab «peynir»
+  - Draw: Белый турецкий сыр кусками в миске.
+- `public/art/tr/bursa/l3-6.jpg` — phrase — TR Бурса 3 vocab «Bir kilo elma, lütfen.»
+  - Draw: Мурзик показывает на весы, где лежат яблоки.
+- `public/art/tr/bursa/l3-7.jpg` — phrase — TR Бурса 3 vocab «Taze mi?»
+  - Draw: Зейнеп-ханым придирчиво нюхает помидор.
+- `public/art/tr/bursa/sepet.jpg` — reward — TR Бурса 3 reward «Sepet»
+  - Draw: Мурзик несёт плетёную корзину, полную помидоров, яблок и хлеба. Рядом идёт Зейнеп-ханым.
+- `public/art/tr/bursa/l4-1.jpg` — phrase — TR Бурса 4 vocab «Ne kadar?»
+  - Draw: Мурзик держит коробку сладостей и вопросительно смотрит на продавца.
+- `public/art/tr/bursa/l4-2.jpg` — phrase — TR Бурса 4 vocab «yirmi, otuz, kırk, elli»
+  - Draw: На прилавке четыре ценника: 20, 30, 40 и 50.
+- `public/art/tr/bursa/l4-3.jpg` — phrase — TR Бурса 4 vocab «altmış, yetmiş, seksen, doksan, yüz»
+  - Draw: Пять ценников по порядку: 60, 70, 80, 90 и 100.
+- `public/art/tr/bursa/l4-4.jpg` — phrase — TR Бурса 4 vocab «lira»
+  - Draw: Несколько турецких монет и купюр на ладони.
+- `public/art/tr/bursa/l4-5.jpg` — phrase — TR Бурса 4 vocab «Çok pahalı!»
+  - Draw: Мурзик с ужасом смотрит на огромный ценник, уши торчком.
+- `public/art/tr/bursa/l4-6.jpg` — phrase — TR Бурса 4 vocab «Ucuz.»
+  - Draw: Мурзик довольно показывает на маленький ценник.
+- `public/art/tr/bursa/l4-7.jpg` — phrase — TR Бурса 4 vocab «İndirim var mı?»
+  - Draw: Том хитро улыбается продавцу и показывает пальцами «чуть-чуть».
+- `public/art/tr/bursa/kestane.jpg` — reward — TR Бурса 4 reward «Kestane şekeri»
+  - Draw: Красивая коробка с глазированными каштанами — сладостью Бурсы. Мурзик пробует один и жмурится от удовольствия.
+- `public/art/tr/bursa/l5-1.jpg` — phrase — TR Бурса 5 vocab «Kartla mı, nakit mi?»
+  - Draw: Кассир показывает на терминал и на ящик с деньгами.
+- `public/art/tr/bursa/l5-2.jpg` — phrase — TR Бурса 5 vocab «Kartla ödeyebilir miyim?»
+  - Draw: Мурзик протягивает банковскую карту и вопросительно смотрит.
+- `public/art/tr/bursa/l5-3.jpg` — phrase — TR Бурса 5 vocab «Nakit.»
+  - Draw: Том кладёт на прилавок купюры.
+- `public/art/tr/bursa/l5-4.jpg` — phrase — TR Бурса 5 vocab «fiş»
+  - Draw: Длинный бумажный чек выползает из кассы.
+- `public/art/tr/bursa/l5-5.jpg` — phrase — TR Бурса 5 vocab «para üstü»
+  - Draw: Кассир отсчитывает монетки в лапу Мурзика.
+- `public/art/tr/bursa/l5-6.jpg` — phrase — TR Бурса 5 vocab «Bozuk param yok.»
+  - Draw: Мурзик выворачивает пустой кошелёк, из него вылетает моль.
+- `public/art/tr/bursa/l5-7.jpg` — phrase — TR Бурса 5 vocab «Kasa nerede?»
+  - Draw: Мурзик с платком в лапах оглядывается в большом магазине.
+- `public/art/tr/bursa/esarp.jpg` — reward — TR Бурса 5 reward «İpek eşarp»; TR Бурса farewell 2
+  - Draw: Мурзик примеряет лёгкий шёлковый платок с узором из тюльпанов, рядом в зеркале отражается Том.
+- `public/art/tr/bursa/l6-1.jpg` — phrase — TR Бурса 6 vocab «Masaya buyurun!»
+  - Draw: Зейнеп-ханым ставит на стол большое блюдо и приглашающе машет рукой.
+- `public/art/tr/bursa/l6-2.jpg` — phrase — TR Бурса 6 vocab «Afiyet olsun!»
+  - Draw: За накрытым столом все улыбаются и берут ложки.
+- `public/art/tr/bursa/l6-3.jpg` — phrase — TR Бурса 6 vocab «Çok lezzetli!»
+  - Draw: Мурзик жмурится от удовольствия с полной ложкой.
+- `public/art/tr/bursa/l6-4.jpg` — phrase — TR Бурса 6 vocab «Eline sağlık!»
+  - Draw: Мурзик благодарно прикладывает лапу к груди и кланяется Зейнеп-ханым.
+- `public/art/tr/bursa/l6-5.jpg` — phrase — TR Бурса 6 vocab «Biraz daha ister misin?»
+  - Draw: Зейнеп-ханым держит половник над тарелкой Мурзика.
+- `public/art/tr/bursa/l6-6.jpg` — phrase — TR Бурса 6 vocab «Doydum, teşekkürler.»
+  - Draw: Мурзик откинулся на спинку стула и гладит круглый животик.
+- `public/art/tr/bursa/l6-7.jpg` — phrase — TR Бурса 6 vocab «tatlı»
+  - Draw: Блюдо с маленькими сладостями в сиропе.
+- `public/art/tr/bursa/tencere.jpg` — reward — TR Бурса 6 reward «Tencere»
+  - Draw: Блестящая медная кастрюля с крышкой стоит на плите. Мурзик видит в ней своё отражение.
+- `public/art/tr/bursa/l7-1.jpg` — phrase — TR Бурса 7 vocab «Önce soğanı doğra.»
+  - Draw: Мурзик в фартуке режет лук и плачет смешными слезинками.
+- `public/art/tr/bursa/l7-2.jpg` — phrase — TR Бурса 7 vocab «Domatesleri ekle.»
+  - Draw: Лапа Мурзика высыпает нарезанные помидоры в сковороду.
+- `public/art/tr/bursa/l7-3.jpg` — phrase — TR Бурса 7 vocab «Karıştır.»
+  - Draw: Мурзик мешает в сковороде деревянной ложкой.
+- `public/art/tr/bursa/l7-4.jpg` — phrase — TR Бурса 7 vocab «tuz»
+  - Draw: Маленькая солонка и щепотка соли.
+- `public/art/tr/bursa/l7-5.jpg` — phrase — TR Бурса 7 vocab «ocak»
+  - Draw: Газовая плита с голубым огоньком.
+- `public/art/tr/bursa/l7-6.jpg` — phrase — TR Бурса 7 vocab «Hazır!»
+  - Draw: Мурзик гордо поднимает сковороду с горячим менеменом.
+- `public/art/tr/bursa/l7-7.jpg` — phrase — TR Бурса 7 vocab «Tadına bak!»
+  - Draw: Мурзик протягивает Тому ложку: «Попробуй!»
+- `public/art/tr/bursa/onluk.jpg` — reward — TR Бурса 7 reward «Önlük»
+  - Draw: Мурзик в маленьком фартуке с вышитым тюльпаном стоит у плиты с деревянной ложкой.
+- `public/art/tr/bursa/departure.jpg` — scene — TR Бурса departure; TR Бурса farewell 4
+  - Draw: Мурзик и Том с чемоданами на автовокзале Бурсы, рядом междугородний автобус.
+- `public/art/tr/bursa/zeynep.jpg` — scene — TR Бурса farewell 1
+  - Draw: Зейнеп-ханым снимает со стены в чайной рисунок рыжей кошки и протягивает его Мурзику. Том стоит рядом.
+- `public/art/tr/bursa/road.jpg` — scene — TR Бурса farewell 5
+  - Draw: Автобус едет по дороге среди оливковых рощ к морю.
+
+## Turkish course — İzmir (60 pictures)
+
+- `public/art/tr/izmir/arrival.jpg` — scene — TR Бурса farewell 6; TR Измир welcome
+  - Draw: Мурзик и Том на набережной Кордон в Измире: пальмы, море и старая часовая башня с узорами.
+- `public/art/tr/izmir/l1-1.jpg` — phrase — TR Измир 1 vocab «Bu benim ailem.»
+  - Draw: Тётя Лейла обнимает за плечи мужа и двоих детей-котят на пороге дома.
+- `public/art/tr/izmir/l1-2.jpg` — phrase — TR Измир 1 vocab «annem»
+  - Draw: Мурзик держит маленькую фотографию мамы в рамке.
+- `public/art/tr/izmir/l1-3.jpg` — phrase — TR Измир 1 vocab «babam»
+  - Draw: Мурзик показывает фото папы — рыжего кота в очках.
+- `public/art/tr/izmir/l1-4.jpg` — phrase — TR Измир 1 vocab «kardeşim»
+  - Draw: Тарчын и Миннош стоят рядом и показывают друг на друга.
+- `public/art/tr/izmir/l1-5.jpg` — phrase — TR Измир 1 vocab «teyzem»
+  - Draw: Мурзик с радостью обнимает тётю Лейлу.
+- `public/art/tr/izmir/l1-6.jpg` — phrase — TR Измир 1 vocab «kuzenim»
+  - Draw: Мурзик, Тарчын и Миннош сидят рядком на диване.
+- `public/art/tr/izmir/l1-7.jpg` — phrase — TR Измир 1 vocab «anneannem»
+  - Draw: На столе лежит открытка бабушки Аси с нарисованной рыжей кошечкой.
+- `public/art/tr/izmir/saksi.jpg` — reward — TR Измир 1 reward «Saksı»
+  - Draw: На балконе с видом на море стоит горшок с ярко-розовой бугенвиллеей.
+- `public/art/tr/izmir/l2-1.jpg` — phrase — TR Измир 2 vocab «Kaç yaşındasın?»
+  - Draw: Миннош с любопытством смотрит на Мурзика снизу вверх.
+- `public/art/tr/izmir/l2-2.jpg` — phrase — TR Измир 2 vocab «Beş yaşındayım.»
+  - Draw: Миннош гордо показывает растопыренную лапку — пять пальчиков.
+- `public/art/tr/izmir/l2-3.jpg` — phrase — TR Измир 2 vocab «büyük»
+  - Draw: Тарчын стоит рядом с маленькой Миннош и важно выпячивает грудь.
+- `public/art/tr/izmir/l2-4.jpg` — phrase — TR Измир 2 vocab «küçük»
+  - Draw: Крошечная Миннош тянется на цыпочках рядом с братом.
+- `public/art/tr/izmir/l2-5.jpg` — phrase — TR Измир 2 vocab «genç»
+  - Draw: Том бодро прыгает через лужу.
+- `public/art/tr/izmir/l2-6.jpg` — phrase — TR Измир 2 vocab «yaşlı»
+  - Draw: Пожилой седой человек с тростью улыбается на скамейке у моря.
+- `public/art/tr/izmir/l2-7.jpg` — phrase — TR Измир 2 vocab «Kaç kardeşin var?»
+  - Draw: Том держит в руке три пальца и вопросительно смотрит на Мурзика.
+- `public/art/tr/izmir/resim.jpg` — reward — TR Измир 2 reward «Minnoş'un resmi»
+  - Draw: Детский рисунок фломастерами: рыжий котёнок, высокий человек в зелёном пальто и большое солнце.
+- `public/art/tr/izmir/l3-1.jpg` — phrase — TR Измир 3 vocab «Nasıl görünüyor?»
+  - Draw: Миннош с фломастером в лапе смотрит на Мурзика и ждёт описания.
+- `public/art/tr/izmir/l3-2.jpg` — phrase — TR Измир 3 vocab «uzun boylu»
+  - Draw: Высокий Том рядом с маленьким Мурзиком, мерный столбик с делениями.
+- `public/art/tr/izmir/l3-3.jpg` — phrase — TR Измир 3 vocab «kısa boylu»
+  - Draw: Тарчын стоит у того же столбика и не дотягивается до верхней отметки.
+- `public/art/tr/izmir/l3-4.jpg` — phrase — TR Измир 3 vocab «sarışın»
+  - Draw: Том с золотистыми волосами на солнце.
+- `public/art/tr/izmir/l3-5.jpg` — phrase — TR Измир 3 vocab «esmer»
+  - Draw: Темноволосая смуглая женщина улыбается на набережной.
+- `public/art/tr/izmir/l3-6.jpg` — phrase — TR Измир 3 vocab «Gözleri mavi.»
+  - Draw: Крупно голубые глаза Тома.
+- `public/art/tr/izmir/l3-7.jpg` — phrase — TR Измир 3 vocab «kıvırcık saçlı»
+  - Draw: Девочка с пышными кудряшками.
+- `public/art/tr/izmir/ayna.jpg` — reward — TR Измир 3 reward «Ayna»
+  - Draw: Круглое зеркало в синей мозаичной раме. Мурзик и Миннош корчат в нём рожицы.
+- `public/art/tr/izmir/l4-1.jpg` — phrase — TR Измир 4 vocab «Nasıl biri?»
+  - Draw: Том вопросительно показывает на Тарчына, спящего в гамаке.
+- `public/art/tr/izmir/l4-2.jpg` — phrase — TR Измир 4 vocab «neşeli»
+  - Draw: Миннош хохочет и кружится на месте.
+- `public/art/tr/izmir/l4-3.jpg` — phrase — TR Измир 4 vocab «tembel»
+  - Draw: Тарчын лениво свисает из гамака с недоеденным яблоком.
+- `public/art/tr/izmir/l4-4.jpg` — phrase — TR Измир 4 vocab «çalışkan»
+  - Draw: Миннош сосредоточенно рисует, вокруг гора готовых рисунков.
+- `public/art/tr/izmir/l4-5.jpg` — phrase — TR Измир 4 vocab «sakin»
+  - Draw: Дядя Мехмет неторопливо пьёт чай, глядя на море.
+- `public/art/tr/izmir/l4-6.jpg` — phrase — TR Измир 4 vocab «komik»
+  - Draw: Тарчын корчит смешную рожицу, все смеются.
+- `public/art/tr/izmir/l4-7.jpg` — phrase — TR Измир 4 vocab «Çok tatlı!»
+  - Draw: Тётя Лейла умилённо смотрит на спящую Миннош.
+- `public/art/tr/izmir/hamak.jpg` — reward — TR Измир 4 reward «Hamak»
+  - Draw: На террасе с видом на море висит полосатый гамак. В нём сладко спит Тарчын.
+- `public/art/tr/izmir/l5-1.jpg` — phrase — TR Измир 5 vocab «Ne iş yapıyorsun?»
+  - Draw: Том с блокнотом в руке спрашивает дядю Мехмета.
+- `public/art/tr/izmir/l5-2.jpg` — phrase — TR Измир 5 vocab «öğretmen»
+  - Draw: Тётя Лейла у школьной доски с указкой.
+- `public/art/tr/izmir/l5-3.jpg` — phrase — TR Измир 5 vocab «aşçı»
+  - Draw: Дядя Мехмет в белом колпаке у плиты.
+- `public/art/tr/izmir/l5-4.jpg` — phrase — TR Измир 5 vocab «ressam»
+  - Draw: Миннош у мольберта в берете, с кистью в лапе.
+- `public/art/tr/izmir/l5-5.jpg` — phrase — TR Измир 5 vocab «fotoğrafçı»
+  - Draw: Том с фотоаппаратом на шее снимает набережную.
+- `public/art/tr/izmir/l5-6.jpg` — phrase — TR Измир 5 vocab «doktor»
+  - Draw: Врач в белом халате со стетоскопом.
+- `public/art/tr/izmir/l5-7.jpg` — phrase — TR Измир 5 vocab «Öğrenciyim.»
+  - Draw: Тарчын с рюкзаком и книжками зевает у двери школы.
+- `public/art/tr/izmir/saat.jpg` — reward — TR Измир 5 reward «Saat»; TR Измир farewell 2
+  - Draw: Маленькие настольные часы — копия знаменитой часовой башни Измира, с узорами и арками.
+- `public/art/tr/izmir/l6-1.jpg` — phrase — TR Измир 6 vocab «arkadaş»
+  - Draw: Мурзик и Том идут по набережной, обняв друг друга за плечи.
+- `public/art/tr/izmir/l6-2.jpg` — phrase — TR Измир 6 vocab «Benim bir arkadaşım var.»
+  - Draw: Тарчын показывает фотографию на телефоне и улыбается.
+- `public/art/tr/izmir/l6-3.jpg` — phrase — TR Измир 6 vocab «en iyi arkadaşım»
+  - Draw: Мурзик и Том дают друг другу пять.
+- `public/art/tr/izmir/l6-4.jpg` — phrase — TR Измир 6 vocab «Onu tanıyor musun?»
+  - Draw: Тарчын показывает на девочку вдали и вопросительно смотрит на Мурзика.
+- `public/art/tr/izmir/l6-5.jpg` — phrase — TR Измир 6 vocab «Tanıştırayım: …»
+  - Draw: Том протягивает руку в сторону Мурзика, представляя его.
+- `public/art/tr/izmir/l6-6.jpg` — phrase — TR Измир 6 vocab «komşu»
+  - Draw: Соседка машет с соседнего балкона, увитого цветами.
+- `public/art/tr/izmir/l6-7.jpg` — phrase — TR Измир 6 vocab «birlikte»
+  - Draw: Мурзик, Том и Тарчын втроём едят мороженое на скамейке.
+- `public/art/tr/izmir/sezlong.jpg` — reward — TR Измир 6 reward «Şezlong»
+  - Draw: Полосатый шезлонг стоит на балконе с видом на море. На нём сидит Мурзик в солнечных очках.
+- `public/art/tr/izmir/l7-1.jpg` — phrase — TR Измир 7 vocab «Hepimiz buradayız!»
+  - Draw: Вся семья сидит за длинным столом на террасе.
+- `public/art/tr/izmir/l7-2.jpg` — phrase — TR Измир 7 vocab «Bu kim?»
+  - Draw: Миннош показывает лапкой на фотографию на стене.
+- `public/art/tr/izmir/l7-3.jpg` — phrase — TR Измир 7 vocab «Fotoğraf çekelim!»
+  - Draw: Том ставит фотоаппарат на штатив перед столом.
+- `public/art/tr/izmir/l7-4.jpg` — phrase — TR Измир 7 vocab «Gülümseyin!»
+  - Draw: Вся семья широко улыбается в объектив.
+- `public/art/tr/izmir/l7-5.jpg` — phrase — TR Измир 7 vocab «Aile çok önemli.»
+  - Draw: Дядя Мехмет обнимает всех за столом.
+- `public/art/tr/izmir/l7-6.jpg` — phrase — TR Измир 7 vocab «Seni özledim.»
+  - Draw: Тётя Лейла крепко обнимает Мурзика.
+- `public/art/tr/izmir/l7-7.jpg` — phrase — TR Измир 7 vocab «Sağlığınıza!»
+  - Draw: Все поднимают стаканчики с чаем и айраном.
+- `public/art/tr/izmir/aile-foto.jpg` — reward — TR Измир 7 reward «Aile fotoğrafı»
+  - Draw: Фото в рамке: вся семья за столом на террасе — тётя Лейла, дядя Мехмет, Тарчын, Миннош, Мурзик и Том. Все улыбаются.
+- `public/art/tr/izmir/departure.jpg` — scene — TR Измир departure; TR Измир farewell 4
+  - Draw: Вся семья провожает Мурзика и Тома на автовокзале: Миннош машет, Тарчын зевает, тётя Лейла вытирает слезу.
+- `public/art/tr/izmir/photo.jpg` — scene — TR Измир farewell 1
+  - Draw: После ужина тётя Лейла держит старую чёрно-белую фотографию молодой кошки с кисточкой — лица не разобрать. На столе открытка бабушки. Мурзик, Тарчын и Миннош смотрят на фото.
+- `public/art/tr/izmir/road.jpg` — scene — TR Измир farewell 5
+  - Draw: Автобус едет вглубь страны мимо полей хлопка.
+
+## Turkish course — Pamukkale (60 pictures)
+
+- `public/art/tr/pamukkale/arrival.jpg` — scene — TR Измир farewell 6; TR Памуккале welcome
+  - Draw: Мурзик и Том у подножия белоснежных террас Памуккале. В голубых водоёмах отражается небо.
+- `public/art/tr/pamukkale/l1-1.jpg` — phrase — TR Памуккале 1 vocab «Saat kaç?»
+  - Draw: Том смотрит на пустое запястье и вопросительно поднимает брови.
+- `public/art/tr/pamukkale/l1-2.jpg` — phrase — TR Памуккале 1 vocab «Saat üç.»
+  - Draw: Круглые часы на стене показывают ровно три.
+- `public/art/tr/pamukkale/l1-3.jpg` — phrase — TR Памуккале 1 vocab «Saat üç buçuk.»
+  - Draw: Часы показывают половину четвёртого: большая стрелка внизу.
+- `public/art/tr/pamukkale/l1-4.jpg` — phrase — TR Памуккале 1 vocab «sabah»
+  - Draw: Белые террасы в мягком утреннем свете, над ними встаёт солнце.
+- `public/art/tr/pamukkale/l1-5.jpg` — phrase — TR Памуккале 1 vocab «öğlen»
+  - Draw: Солнце в зените, короткие тени, Мурзик под зонтиком.
+- `public/art/tr/pamukkale/l1-6.jpg` — phrase — TR Памуккале 1 vocab «akşam»
+  - Draw: Розовое вечернее небо над белыми склонами.
+- `public/art/tr/pamukkale/l1-7.jpg` — phrase — TR Памуккале 1 vocab «gece»
+  - Draw: Звёздная ночь над гостевым домом, в окне горит свет.
+- `public/art/tr/pamukkale/calar-saat.jpg` — reward — TR Памуккале 1 reward «Çalar saat»
+  - Draw: Круглый жестяной будильник с двумя звонками стоит на тумбочке у кровати.
+- `public/art/tr/pamukkale/l2-1.jpg` — phrase — TR Памуккале 2 vocab «Bugün günlerden ne?»
+  - Draw: Мурзик стоит перед календарём и чешет затылок.
+- `public/art/tr/pamukkale/l2-2.jpg` — phrase — TR Памуккале 2 vocab «pazartesi, salı, çarşamba»
+  - Draw: Три листка календаря подряд.
+- `public/art/tr/pamukkale/l2-3.jpg` — phrase — TR Памуккале 2 vocab «perşembe, cuma»
+  - Draw: Ещё два листка календаря, на пятнице звёздочка.
+- `public/art/tr/pamukkale/l2-4.jpg` — phrase — TR Памуккале 2 vocab «cumartesi, pazar»
+  - Draw: Два последних листка, на них солнышки — выходные.
+- `public/art/tr/pamukkale/l2-5.jpg` — phrase — TR Памуккале 2 vocab «bugün»
+  - Draw: Мурзик показывает лапой на сегодняшний листок календаря.
+- `public/art/tr/pamukkale/l2-6.jpg` — phrase — TR Памуккале 2 vocab «yarın»
+  - Draw: Мурзик показывает на следующий листок.
+- `public/art/tr/pamukkale/l2-7.jpg` — phrase — TR Памуккале 2 vocab «dün»
+  - Draw: Мурзик оглядывается на вчерашний листок.
+- `public/art/tr/pamukkale/takvim.jpg` — reward — TR Памуккале 2 reward «Takvim»
+  - Draw: На стене висит календарь с фотографией белых террас. На четверге нарисован маленький котик.
+- `public/art/tr/pamukkale/l3-1.jpg` — phrase — TR Памуккале 3 vocab «Otobüs saat kaçta?»
+  - Draw: Мурзик у окошка кассы показывает на расписание.
+- `public/art/tr/pamukkale/l3-2.jpg` — phrase — TR Памуккале 3 vocab «Saat ikide.»
+  - Draw: Кассир показывает на часы со стрелками на двух.
+- `public/art/tr/pamukkale/l3-3.jpg` — phrase — TR Памуккале 3 vocab «Ne zaman?»
+  - Draw: Том вопросительно разводит руками у табло.
+- `public/art/tr/pamukkale/l3-4.jpg` — phrase — TR Памуккале 3 vocab «otogar»
+  - Draw: Большой автовокзал с рядами междугородних автобусов.
+- `public/art/tr/pamukkale/l3-5.jpg` — phrase — TR Памуккале 3 vocab «peron»
+  - Draw: Табличка с номером платформы 12, рядом стоит автобус.
+- `public/art/tr/pamukkale/l3-6.jpg` — phrase — TR Памуккале 3 vocab «Kaç dakika?»
+  - Draw: Мурзик держит песочные часы и вопросительно смотрит.
+- `public/art/tr/pamukkale/l3-7.jpg` — phrase — TR Памуккале 3 vocab «gidiş-dönüş»
+  - Draw: Два билета: стрелка туда и стрелка обратно.
+- `public/art/tr/pamukkale/canta.jpg` — reward — TR Памуккале 3 reward «Sırt çantası»
+  - Draw: Маленький оранжевый рюкзак с карманами и брелоком-котиком.
+- `public/art/tr/pamukkale/l4-1.jpg` — phrase — TR Памуккале 4 vocab «Geç kaldık!»
+  - Draw: Мурзик и Том бегут по улице, на часах уже девять.
+- `public/art/tr/pamukkale/l4-2.jpg` — phrase — TR Памуккале 4 vocab «Acele et!»
+  - Draw: Мурзик тянет Тома за рукав, Том на ходу натягивает ботинок.
+- `public/art/tr/pamukkale/l4-3.jpg` — phrase — TR Памуккале 4 vocab «erken»
+  - Draw: Раннее утро, солнце только встаёт, Мурзик зевает.
+- `public/art/tr/pamukkale/l4-4.jpg` — phrase — TR Памуккале 4 vocab «geç»
+  - Draw: Часы показывают далеко за девять, Мурзик хватается за голову.
+- `public/art/tr/pamukkale/l4-5.jpg` — phrase — TR Памуккале 4 vocab «Otobüs kaçtı!»
+  - Draw: Автобус уезжает, а Мурзик и Том машут ему вслед.
+- `public/art/tr/pamukkale/l4-6.jpg` — phrase — TR Памуккале 4 vocab «Sonraki otobüs ne zaman?»
+  - Draw: Том читает расписание на остановке.
+- `public/art/tr/pamukkale/l4-7.jpg` — phrase — TR Памуккале 4 vocab «Bekleyelim.»
+  - Draw: Мурзик и Том сидят на скамейке на остановке.
+- `public/art/tr/pamukkale/terlik.jpg` — reward — TR Памуккале 4 reward «Terlik»
+  - Draw: Пара мягких вышитых тапочек у кровати — крошечные, как раз на лапы Мурзика.
+- `public/art/tr/pamukkale/l5-1.jpg` — phrase — TR Памуккале 5 vocab «Gün batımını izleyelim mi?»
+  - Draw: Селин показывает на розовеющее небо над террасами.
+- `public/art/tr/pamukkale/l5-2.jpg` — phrase — TR Памуккале 5 vocab «Bu akşam ne yapıyorsun?»
+  - Draw: Селин заглядывает в дверь комнаты Мурзика.
+- `public/art/tr/pamukkale/l5-3.jpg` — phrase — TR Памуккале 5 vocab «Benimle gelir misin?»
+  - Draw: Селин протягивает руку, приглашая с собой.
+- `public/art/tr/pamukkale/l5-4.jpg` — phrase — TR Памуккале 5 vocab «Çok isterim!»
+  - Draw: Мурзик радостно подпрыгивает, хвост трубой.
+- `public/art/tr/pamukkale/l5-5.jpg` — phrase — TR Памуккале 5 vocab «Maalesef gelemem.»
+  - Draw: Том виновато разводит руками, показывая на гору фотографий.
+- `public/art/tr/pamukkale/l5-6.jpg` — phrase — TR Памуккале 5 vocab «Başka zaman.»
+  - Draw: Том дружески машет рукой и улыбается.
+- `public/art/tr/pamukkale/l5-7.jpg` — phrase — TR Памуккале 5 vocab «Nerede buluşalım?»
+  - Draw: Мурзик с картой в лапах смотрит на Селин.
+- `public/art/tr/pamukkale/afis.jpg` — reward — TR Памуккале 5 reward «Afiş»
+  - Draw: На стене афиша вечернего концерта на террасах: белые склоны в розовом закатном свете.
+- `public/art/tr/pamukkale/l6-1.jpg` — phrase — TR Памуккале 6 vocab «Dün neredeydiniz?»
+  - Draw: Селин с удивлением смотрит на загорелых Мурзика и Тома.
+- `public/art/tr/pamukkale/l6-2.jpg` — phrase — TR Памуккале 6 vocab «Termal havuzdaydık.»
+  - Draw: Мурзик и Том плавают в античном бассейне среди упавших колонн.
+- `public/art/tr/pamukkale/l6-3.jpg` — phrase — TR Памуккале 6 vocab «Evdeydik.»
+  - Draw: Мурзик и Том сидят дома на диване с чаем.
+- `public/art/tr/pamukkale/l6-4.jpg` — phrase — TR Памуккале 6 vocab «Hava nasıldı?»
+  - Draw: Селин показывает на небо и вопросительно поднимает брови.
+- `public/art/tr/pamukkale/l6-5.jpg` — phrase — TR Памуккале 6 vocab «Çok güzeldi!»
+  - Draw: Мурзик мечтательно прикрывает глаза, вспоминая белые террасы.
+- `public/art/tr/pamukkale/l6-6.jpg` — phrase — TR Памуккале 6 vocab «Kalabalıktı.»
+  - Draw: Толпа туристов с фотоаппаратами на террасах.
+- `public/art/tr/pamukkale/l6-7.jpg` — phrase — TR Памуккале 6 vocab «Su sıcaktı.»
+  - Draw: От голубой воды бассейна поднимается лёгкий пар.
+- `public/art/tr/pamukkale/bornoz.jpg` — reward — TR Памуккале 6 reward «Bornoz»
+  - Draw: Белый пушистый халат с капюшоном висит на крючке. Мурзик утонул в нём — видны только уши.
+- `public/art/tr/pamukkale/l7-1.jpg` — phrase — TR Памуккале 7 vocab «Hafta sonu ne yapacaksın?»
+  - Draw: Селин с любопытством смотрит на Мурзика.
+- `public/art/tr/pamukkale/l7-2.jpg` — phrase — TR Памуккале 7 vocab «Pazar günü Bodrum'a gideceğiz.»
+  - Draw: Том показывает на карте синюю бухту у моря.
+- `public/art/tr/pamukkale/l7-3.jpg` — phrase — TR Памуккале 7 vocab «Fotoğraf çekeceğim.»
+  - Draw: Том поднимает фотоаппарат к глазам.
+- `public/art/tr/pamukkale/l7-4.jpg` — phrase — TR Памуккале 7 vocab «Dinleneceğim.»
+  - Draw: Мурзик лежит на шезлонге с книжкой.
+- `public/art/tr/pamukkale/l7-5.jpg` — phrase — TR Памуккале 7 vocab «Belki yüzeceğiz.»
+  - Draw: Мурзик в маске для плавания мечтательно смотрит на воду.
+- `public/art/tr/pamukkale/l7-6.jpg` — phrase — TR Памуккале 7 vocab «hafta sonu»
+  - Draw: Два листка календаря с солнышками.
+- `public/art/tr/pamukkale/l7-7.jpg` — phrase — TR Памуккале 7 vocab «Planın ne?»
+  - Draw: Мурзик держит блокнот с нарисованными планами.
+- `public/art/tr/pamukkale/pestamal.jpg` — reward — TR Памуккале 7 reward «Peştamal»; TR Памуккале farewell 2
+  - Draw: Тонкое полосатое хлопковое полотенце-пештамал сложено на кровати. Оно из Денизли — края знаменитого хлопка.
+- `public/art/tr/pamukkale/departure.jpg` — scene — TR Памуккале departure; TR Памуккале farewell 4
+  - Draw: Мурзик и Том с чемоданами садятся в автобус, позади белые террасы.
+- `public/art/tr/pamukkale/lev.jpg` — scene — TR Памуккале farewell 1
+  - Draw: Вечерний концерт на белых террасах в розовом свете заката. Вдали в толпе стоит старый белый кот в шляпе и смотрит в сторону Мурзика. Мурзик его не видит.
+- `public/art/tr/pamukkale/road.jpg` — scene — TR Памуккале farewell 5
+  - Draw: Автобус спускается с гор к синему Эгейскому морю.
+
+## Turkish course — Bodrum (60 pictures)
+
+- `public/art/tr/bodrum/arrival.jpg` — scene — TR Памуккале farewell 6; TR Бодрум welcome
+  - Draw: Мурзик и Том на набережной Бодрума: белые домики, старая крепость и деревянные лодки в синей бухте.
+- `public/art/tr/bodrum/l1-1.jpg` — phrase — TR Бодрум 1 vocab «yürüyerek»
+  - Draw: Мурзик бодро шагает по белой улочке с синими дверями.
+- `public/art/tr/bodrum/l1-2.jpg` — phrase — TR Бодрум 1 vocab «bisiklet»
+  - Draw: Голубой велосипед с корзинкой у белой стены.
+- `public/art/tr/bodrum/l1-3.jpg` — phrase — TR Бодрум 1 vocab «taksi»
+  - Draw: Жёлтое такси на набережной.
+- `public/art/tr/bodrum/l1-4.jpg` — phrase — TR Бодрум 1 vocab «tekne»
+  - Draw: Деревянная лодка покачивается в синей бухте.
+- `public/art/tr/bodrum/l1-5.jpg` — phrase — TR Бодрум 1 vocab «Yürüyorum.»
+  - Draw: Мурзик идёт, размахивая лапами, с рюкзачком за спиной.
+- `public/art/tr/bodrum/l1-6.jpg` — phrase — TR Бодрум 1 vocab «Bisiklete biniyorum.»
+  - Draw: Том едет на велосипеде, его зелёное пальто развевается.
+- `public/art/tr/bodrum/l1-7.jpg` — phrase — TR Бодрум 1 vocab «Ne kadar sürer?»
+  - Draw: Мурзик держит песочные часы и вопросительно смотрит.
+- `public/art/tr/bodrum/bisiklet.jpg` — reward — TR Бодрум 1 reward «Bisiklet»
+  - Draw: Маленький голубой велосипед с корзинкой стоит на причале у гулета.
+- `public/art/tr/bodrum/l2-1.jpg` — phrase — TR Бодрум 2 vocab «kiralamak»
+  - Draw: Вывеска проката: ряды велосипедов и скутеров.
+- `public/art/tr/bodrum/l2-2.jpg` — phrase — TR Бодрум 2 vocab «Bir bisiklet kiralamak istiyorum.»
+  - Draw: Том стоит у стойки проката и показывает на велосипед.
+- `public/art/tr/bodrum/l2-3.jpg` — phrase — TR Бодрум 2 vocab «Kaç saatliğine?»
+  - Draw: Продавец в прокате держит часы и вопросительно смотрит.
+- `public/art/tr/bodrum/l2-4.jpg` — phrase — TR Бодрум 2 vocab «Bir günlüğüne.»
+  - Draw: Том показывает один палец и солнышко на календаре.
+- `public/art/tr/bodrum/l2-5.jpg` — phrase — TR Бодрум 2 vocab «Saat ikiden beşe kadar.»
+  - Draw: Двое часов: на одних два, на других пять, между ними стрелка.
+- `public/art/tr/bodrum/l2-6.jpg` — phrase — TR Бодрум 2 vocab «kask»
+  - Draw: Мурзик в великоватом синем шлеме.
+- `public/art/tr/bodrum/l2-7.jpg` — phrase — TR Бодрум 2 vocab «depozito»
+  - Draw: Том кладёт на стойку паспорт и деньги.
+- `public/art/tr/bodrum/kum-saati.jpg` — reward — TR Бодрум 2 reward «Kum saati»
+  - Draw: Песочные часы с голубым песком стоят на полке в каюте.
+- `public/art/tr/bodrum/l3-1.jpg` — phrase — TR Бодрум 3 vocab «Nereye gidiyorsun?»
+  - Draw: Тарчын с чемоданчиком стоит на причале и машет.
+- `public/art/tr/bodrum/l3-2.jpg` — phrase — TR Бодрум 3 vocab «Plaja gidiyorum.»
+  - Draw: Мурзик с полотенцем и зонтиком шагает к морю.
+- `public/art/tr/bodrum/l3-3.jpg` — phrase — TR Бодрум 3 vocab «kaleye»
+  - Draw: Дорожка ведёт вверх к старой каменной крепости над бухтой.
+- `public/art/tr/bodrum/l3-4.jpg` — phrase — TR Бодрум 3 vocab «limana»
+  - Draw: Указатель со стрелкой к порту с лодками.
+- `public/art/tr/bodrum/l3-5.jpg` — phrase — TR Бодрум 3 vocab «denize»
+  - Draw: Мурзик с разбегу прыгает в синюю воду.
+- `public/art/tr/bodrum/l3-6.jpg` — phrase — TR Бодрум 3 vocab «Hadi, denize girelim!»
+  - Draw: Мурзик в надувном круге тянет Тарчына к воде.
+- `public/art/tr/bodrum/l3-7.jpg` — phrase — TR Бодрум 3 vocab «Geliyorum!»
+  - Draw: Тарчын нехотя поднимается с шезлонга.
+- `public/art/tr/bodrum/can-simidi.jpg` — reward — TR Бодрум 3 reward «Can simidi»
+  - Draw: Красно-белый спасательный круг висит на стене каюты.
+- `public/art/tr/bodrum/l4-1.jpg` — phrase — TR Бодрум 4 vocab «müze»
+  - Draw: Ворота старой крепости, над ними флажки с якорями.
+- `public/art/tr/bodrum/l4-2.jpg` — phrase — TR Бодрум 4 vocab «Giriş ne kadar?»
+  - Draw: Том у кассы музея показывает на табличку с ценами.
+- `public/art/tr/bodrum/l4-3.jpg` — phrase — TR Бодрум 4 vocab «Fotoğraf çekebilir miyim?»
+  - Draw: Том вежливо показывает на свой фотоаппарат.
+- `public/art/tr/bodrum/l4-4.jpg` — phrase — TR Бодрум 4 vocab «Yasak.»
+  - Draw: Знак: перечёркнутая вспышка фотоаппарата.
+- `public/art/tr/bodrum/l4-5.jpg` — phrase — TR Бодрум 4 vocab «Dokunmak yasak!»
+  - Draw: Знак: перечёркнутая ладонь у старинной амфоры.
+- `public/art/tr/bodrum/l4-6.jpg` — phrase — TR Бодрум 4 vocab «Açık mı?»
+  - Draw: Мурзик заглядывает в приоткрытые деревянные ворота.
+- `public/art/tr/bodrum/l4-7.jpg` — phrase — TR Бодрум 4 vocab «eski»
+  - Draw: Древний деревянный корабль под стеклом в музее.
+- `public/art/tr/bodrum/tablo.jpg` — reward — TR Бодрум 4 reward «Tablo»
+  - Draw: Маленькая картина маслом: белые домики Бодрума, синие двери и лодки в бухте.
+- `public/art/tr/bodrum/l5-1.jpg` — phrase — TR Бодрум 5 vocab «Haritada gösterir misiniz?»
+  - Draw: Том разворачивает морскую карту перед капитаном Али.
+- `public/art/tr/bodrum/l5-2.jpg` — phrase — TR Бодрум 5 vocab «şurada»
+  - Draw: Капитан показывает пальцем на соседнюю бухту.
+- `public/art/tr/bodrum/l5-3.jpg` — phrase — TR Бодрум 5 vocab «orada»
+  - Draw: Капитан показывает на остров на горизонте.
+- `public/art/tr/bodrum/l5-4.jpg` — phrase — TR Бодрум 5 vocab «koy»
+  - Draw: Маленькая бирюзовая бухта среди сосен.
+- `public/art/tr/bodrum/l5-5.jpg` — phrase — TR Бодрум 5 vocab «ada»
+  - Draw: Скалистый остров посреди синего моря.
+- `public/art/tr/bodrum/l5-6.jpg` — phrase — TR Бодрум 5 vocab «Buradan ne kadar uzak?»
+  - Draw: Мурзик меряет лапой расстояние на карте.
+- `public/art/tr/bodrum/l5-7.jpg` — phrase — TR Бодрум 5 vocab «Burada dalabilir miyiz?»
+  - Draw: Мурзик в маске стоит на борту и показывает на воду.
+- `public/art/tr/bodrum/maske.jpg` — reward — TR Бодрум 5 reward «Maske»
+  - Draw: Мурзик в маске и с трубкой высовывается из воды, вокруг плавают рыбки.
+- `public/art/tr/bodrum/l6-1.jpg` — phrase — TR Бодрум 6 vocab «Kaybolduk!»
+  - Draw: Мурзик и Тарчын растерянно стоят среди одинаковых белых улочек ночью.
+- `public/art/tr/bodrum/l6-2.jpg` — phrase — TR Бодрум 6 vocab «Yardım eder misiniz?»
+  - Draw: Мурзик вежливо машет кому-то в темноте.
+- `public/art/tr/bodrum/l6-3.jpg` — phrase — TR Бодрум 6 vocab «Liman hangi tarafta?»
+  - Draw: Мурзик поворачивается то вправо, то влево на перекрёстке.
+- `public/art/tr/bodrum/l6-4.jpg` — phrase — TR Бодрум 6 vocab «Bu sokak çıkmaz.»
+  - Draw: Белая улочка упирается в стену с синей дверью.
+- `public/art/tr/bodrum/l6-5.jpg` — phrase — TR Бодрум 6 vocab «Geri dönelim.»
+  - Draw: Тарчын разворачивается и тянет Мурзика назад.
+- `public/art/tr/bodrum/l6-6.jpg` — phrase — TR Бодрум 6 vocab «Onu takip edelim!»
+  - Draw: Мурзик показывает на тень кота в шляпе впереди.
+- `public/art/tr/bodrum/l6-7.jpg` — phrase — TR Бодрум 6 vocab «Kurtulduk!»
+  - Draw: Мурзик и Тарчын радостно выбегают к огням порта.
+- `public/art/tr/bodrum/nazar.jpg` — reward — TR Бодрум 6 reward «Nazar boncuğu»; TR Бодрум farewell 2
+  - Draw: Синий стеклянный «глазик»-назар висит над дверью каюты и блестит на солнце.
+- `public/art/tr/bodrum/l7-1.jpg` — phrase — TR Бодрум 7 vocab «Çok eğlenceliydi!»
+  - Draw: Мурзик, Том и Тарчын хохочут на палубе гулета.
+- `public/art/tr/bodrum/l7-2.jpg` — phrase — TR Бодрум 7 vocab «Seni özleyeceğim.»
+  - Draw: Мурзик обнимает Тарчына на причале.
+- `public/art/tr/bodrum/l7-3.jpg` — phrase — TR Бодрум 7 vocab «Bir daha gel!»
+  - Draw: Капитан Али машет с гулета и улыбается.
+- `public/art/tr/bodrum/l7-4.jpg` — phrase — TR Бодрум 7 vocab «Balık tutalım!»
+  - Draw: Мурзик закидывает удочку с борта.
+- `public/art/tr/bodrum/l7-5.jpg` — phrase — TR Бодрум 7 vocab «Ne güzel bir akşam!»
+  - Draw: Закат над бухтой, в воде отражаются огни крепости.
+- `public/art/tr/bodrum/l7-6.jpg` — phrase — TR Бодрум 7 vocab «İyi ki geldik.»
+  - Draw: Мурзик и Том сидят на палубе и смотрят на закат.
+- `public/art/tr/bodrum/l7-7.jpg` — phrase — TR Бодрум 7 vocab «Görüşmek üzere!»
+  - Draw: Тарчын с рюкзаком машет с трапа автобуса.
+- `public/art/tr/bodrum/olta.jpg` — reward — TR Бодрум 7 reward «Olta»
+  - Draw: Деревянная удочка с красным поплавком прислонена к борту гулета на закате.
+- `public/art/tr/bodrum/departure.jpg` — scene — TR Бодрум departure; TR Бодрум farewell 4
+  - Draw: Мурзик и Том с чемоданами на причале. Капитан Али машет с гулета, Тарчын с рюкзаком зевает.
+- `public/art/tr/bodrum/alley.jpg` — scene — TR Бодрум farewell 1
+  - Draw: Ночная белая улочка Бодрума. Вдали, в свете фонаря, силуэт кота в шляпе.
+- `public/art/tr/bodrum/road.jpg` — scene — TR Бодрум farewell 5
+  - Draw: Автобус едет на восток по горной дороге вдоль моря.
+
+## Turkish course — Antalya (60 pictures)
+
+- `public/art/tr/antalya/arrival.jpg` — scene — TR Бодрум farewell 6; TR Анталья welcome
+  - Draw: Мурзик и Том у старинных ворот Адриана в Анталье. За ними узкие улочки Калеичи и апельсиновые деревья.
+- `public/art/tr/antalya/l1-1.jpg` — phrase — TR Анталья 1 vocab «Boş zamanında ne yapıyorsun?»
+  - Draw: Том сидит во дворике под апельсиновым деревом и с интересом смотрит на Мурзика.
+- `public/art/tr/antalya/l1-2.jpg` — phrase — TR Анталья 1 vocab «Yüzmeyi seviyorum.»
+  - Draw: Мурзик плывёт в прозрачном море у скал.
+- `public/art/tr/antalya/l1-3.jpg` — phrase — TR Анталья 1 vocab «Resim yapmayı seviyorum.»
+  - Draw: Мурзик рисует апельсиновое дерево в альбоме.
+- `public/art/tr/antalya/l1-4.jpg` — phrase — TR Анталья 1 vocab «Kitap okumayı seviyorum.»
+  - Draw: Том читает книгу в плетёном кресле.
+- `public/art/tr/antalya/l1-5.jpg` — phrase — TR Анталья 1 vocab «Müzik dinlemeyi seviyorum.»
+  - Draw: Мурзик в наушниках покачивает головой в такт.
+- `public/art/tr/antalya/l1-6.jpg` — phrase — TR Анталья 1 vocab «Dans etmeyi sevmiyorum.»
+  - Draw: Том неуклюже пытается танцевать и смущённо машет руками.
+- `public/art/tr/antalya/l1-7.jpg` — phrase — TR Анталья 1 vocab «Ne yapmayı seviyorsun?»
+  - Draw: Мурзик с альбомом в лапах вопросительно смотрит на Тома.
+- `public/art/tr/antalya/sandalye.jpg` — reward — TR Анталья 1 reward «Hasır sandalye»
+  - Draw: Плетёный стул стоит во дворике под апельсиновым деревом, на нём альбом и карандаши.
+- `public/art/tr/antalya/l2-1.jpg` — phrase — TR Анталья 2 vocab «saz»
+  - Draw: Деревянный саз с длинным грифом прислонён к каменной стене.
+- `public/art/tr/antalya/l2-2.jpg` — phrase — TR Анталья 2 vocab «Saz çalabiliyor musun?»
+  - Draw: Пожилой музыкант протягивает Мурзику саз.
+- `public/art/tr/antalya/l2-3.jpg` — phrase — TR Анталья 2 vocab «Evet, çalabiliyorum.»
+  - Draw: Хасан-уста уверенно перебирает струны.
+- `public/art/tr/antalya/l2-4.jpg` — phrase — TR Анталья 2 vocab «Hayır, çalamıyorum.»
+  - Draw: Мурзик держит саз вверх ногами и смущённо улыбается.
+- `public/art/tr/antalya/l2-5.jpg` — phrase — TR Анталья 2 vocab «Biraz şarkı söyleyebiliyorum.»
+  - Draw: Мурзик поёт, закрыв глаза, у него над головой ноты.
+- `public/art/tr/antalya/l2-6.jpg` — phrase — TR Анталья 2 vocab «Öğretir misiniz?»
+  - Draw: Том с надеждой складывает руки перед Хасаном-устой.
+- `public/art/tr/antalya/l2-7.jpg` — phrase — TR Анталья 2 vocab «şarkı»
+  - Draw: Из окна дома вылетают нарисованные ноты.
+- `public/art/tr/antalya/radyo.jpg` — reward — TR Анталья 2 reward «Radyo»
+  - Draw: Деревянный ламповый радиоприёмник с круглыми ручками. Из него льётся музыка.
+- `public/art/tr/antalya/l3-1.jpg` — phrase — TR Анталья 3 vocab «Spor yapıyor musun?»
+  - Draw: Том в спортивной форме делает зарядку на пляже.
+- `public/art/tr/antalya/l3-2.jpg` — phrase — TR Анталья 3 vocab «her gün»
+  - Draw: Семь листков календаря, на каждом нарисован пловец.
+- `public/art/tr/antalya/l3-3.jpg` — phrase — TR Анталья 3 vocab «bazen»
+  - Draw: На календаре только два-три пловца в разные дни.
+- `public/art/tr/antalya/l3-4.jpg` — phrase — TR Анталья 3 vocab «hiç»
+  - Draw: Пустой календарь и Мурзик, спящий на шезлонге.
+- `public/art/tr/antalya/l3-5.jpg` — phrase — TR Анталья 3 vocab «Haftada iki kez yüzüyorum.»
+  - Draw: Мурзик показывает два пальца на фоне моря.
+- `public/art/tr/antalya/l3-6.jpg` — phrase — TR Анталья 3 vocab «futbol»
+  - Draw: Мальчишки гоняют мяч на пляже.
+- `public/art/tr/antalya/l3-7.jpg` — phrase — TR Анталья 3 vocab «koşmak»
+  - Draw: Том бежит по набережной под пальмами.
+- `public/art/tr/antalya/top.jpg` — reward — TR Анталья 3 reward «Top»
+  - Draw: Полосатый пляжный мяч лежит в тени апельсинового дерева.
+- `public/art/tr/antalya/l4-1.jpg` — phrase — TR Анталья 4 vocab «antik tiyatro»
+  - Draw: Огромный каменный античный театр с рядами ступеней полукругом.
+- `public/art/tr/antalya/l4-2.jpg` — phrase — TR Анталья 4 vocab «konser»
+  - Draw: На древней сцене оркестр, зрители на каменных ступенях.
+- `public/art/tr/antalya/l4-3.jpg` — phrase — TR Анталья 4 vocab «sahne»
+  - Draw: Освещённая сцена с колоннами в вечернем свете.
+- `public/art/tr/antalya/l4-4.jpg` — phrase — TR Анталья 4 vocab «Beğendin mi?»
+  - Draw: Том после концерта с улыбкой спрашивает Мурзика.
+- `public/art/tr/antalya/l4-5.jpg` — phrase — TR Анталья 4 vocab «Çok beğendim!»
+  - Draw: Мурзик сияет и хлопает в ладоши.
+- `public/art/tr/antalya/l4-6.jpg` — phrase — TR Анталья 4 vocab «Hiç beğenmedim.»
+  - Draw: Том морщится и машет рукой.
+- `public/art/tr/antalya/l4-7.jpg` — phrase — TR Анталья 4 vocab «Harika!»
+  - Draw: Над театром взлетает салют.
+- `public/art/tr/antalya/notalar.jpg` — reward — TR Анталья 4 reward «Notalar»
+  - Draw: Пожелтевшие листы с нотами, перевязанные лентой. В уголке верхнего листа нарисован крошечный рыжий котик.
+- `public/art/tr/antalya/l5-1.jpg` — phrase — TR Анталья 5 vocab «Onu tanıyordum.»
+  - Draw: Хасан-уста задумчиво смотрит на старую открытку в лапах Мурзика.
+- `public/art/tr/antalya/l5-2.jpg` — phrase — TR Анталья 5 vocab «çok eskiden»
+  - Draw: Старая выцветшая фотография того же дворика с апельсиновым деревом.
+- `public/art/tr/antalya/l5-3.jpg` — phrase — TR Анталья 5 vocab «Burada resim yapardı.»
+  - Draw: Под апельсиновым деревом стоит старый мольберт.
+- `public/art/tr/antalya/l5-4.jpg` — phrase — TR Анталья 5 vocab «Ben saz çalardım.»
+  - Draw: Молодой музыкант играет на сазе в том же дворике — давняя картинка в рамке.
+- `public/art/tr/antalya/l5-5.jpg` — phrase — TR Анталья 5 vocab «Bu şarkının adı «Asya».»
+  - Draw: Хасан-уста показывает на ноты, на первом листе написано одно имя.
+- `public/art/tr/antalya/l5-6.jpg` — phrase — TR Анталья 5 vocab «Bir mektup bekliyordu.»
+  - Draw: Пустой почтовый ящик на старой двери.
+- `public/art/tr/antalya/l5-7.jpg` — phrase — TR Анталья 5 vocab «Gelmedi.»
+  - Draw: Хасан-уста грустно качает головой.
+- `public/art/tr/antalya/portakal.jpg` — reward — TR Анталья 5 reward «Portakal sepeti»
+  - Draw: Плетёная корзинка, полная апельсинов с листиками, стоит на подоконнике.
+- `public/art/tr/antalya/l6-1.jpg` — phrase — TR Анталья 6 vocab «Ne yapıyorsunuz?»
+  - Draw: Том заглядывает в освещённый фонарём дворик.
+- `public/art/tr/antalya/l6-2.jpg` — phrase — TR Анталья 6 vocab «Tavla oynuyoruz.»
+  - Draw: Хасан-уста и Мурзик склонились над доской для нардов.
+- `public/art/tr/antalya/l6-3.jpg` — phrase — TR Анталья 6 vocab «Çay içiyorum.»
+  - Draw: Мурзик держит стаканчик-тюльпан обеими лапами.
+- `public/art/tr/antalya/l6-4.jpg` — phrase — TR Анталья 6 vocab «Kitap okuyor.»
+  - Draw: Том читает книгу под фонарём.
+- `public/art/tr/antalya/l6-5.jpg` — phrase — TR Анталья 6 vocab «Sıra sende!»
+  - Draw: Хасан-уста протягивает Мурзику кубики.
+- `public/art/tr/antalya/l6-6.jpg` — phrase — TR Анталья 6 vocab «Kim kazandı?»
+  - Draw: Том с любопытством смотрит на доску.
+- `public/art/tr/antalya/l6-7.jpg` — phrase — TR Анталья 6 vocab «sakin bir akşam»
+  - Draw: Дворик ночью: фонарь, апельсиновое дерево, звёзды.
+- `public/art/tr/antalya/tavla.jpg` — reward — TR Анталья 6 reward «Tavla»
+  - Draw: Деревянная доска для нардов с перламутровым узором, рядом два кубика.
+- `public/art/tr/antalya/l7-1.jpg` — phrase — TR Анталья 7 vocab «Konser nasıldı?»
+  - Draw: Том после концерта убирает фотоаппарат и спрашивает Мурзика.
+- `public/art/tr/antalya/l7-2.jpg` — phrase — TR Анталья 7 vocab «Çok duygusaldı.»
+  - Draw: Мурзик вытирает слезинку, слушая музыку.
+- `public/art/tr/antalya/l7-3.jpg` — phrase — TR Анталья 7 vocab «Alkışlayalım!»
+  - Draw: Зрители во дворике аплодируют музыканту.
+- `public/art/tr/antalya/l7-4.jpg` — phrase — TR Анталья 7 vocab «Bravo!»
+  - Draw: Мурзик вскакивает и хлопает высоко подняв лапы.
+- `public/art/tr/antalya/l7-5.jpg` — phrase — TR Анталья 7 vocab «Bir şarkı daha!»
+  - Draw: Зрители поднимают по одному пальцу: «Ещё одну!»
+- `public/art/tr/antalya/l7-6.jpg` — phrase — TR Анталья 7 vocab «Bu senin için.»
+  - Draw: Хасан-уста протягивает Мурзику маленький саз.
+- `public/art/tr/antalya/l7-7.jpg` — phrase — TR Анталья 7 vocab «Hiç unutmayacağım.»
+  - Draw: Мурзик прижимает саз к груди и смотрит на Хасана-усту.
+- `public/art/tr/antalya/baglama.jpg` — reward — TR Анталья 7 reward «Bağlama»; TR Анталья farewell 2
+  - Draw: Маленький саз с длинным грифом и корпусом из светлого дерева. На корпусе вырезана крошечная кошка.
+- `public/art/tr/antalya/departure.jpg` — scene — TR Анталья departure; TR Анталья farewell 4
+  - Draw: Мурзик и Том с чемоданами и маленьким сазом у автовокзала. Вдали горы со снежными вершинами.
+- `public/art/tr/antalya/window.jpg` — scene — TR Анталья farewell 1
+  - Draw: Вечер. Мурзик тихонько играет на маленьком сазе у окна. Во дворике, в тени апельсинового дерева, стоит белый кот в шляпе и слушает.
+- `public/art/tr/antalya/road.jpg` — scene — TR Анталья farewell 5
+  - Draw: Автобус поднимается через заснеженные горы на высокое плоскогорье.
+
+## Turkish course — Konya (60 pictures)
+
+- `public/art/tr/konya/arrival.jpg` — scene — TR Анталья farewell 6; TR Конья welcome
+  - Draw: Мурзик и Том в Конье у бирюзового купола. Холодно, идёт лёгкий снег.
+- `public/art/tr/konya/l1-1.jpg` — phrase — TR Конья 1 vocab «Hava çok soğuk.»
+  - Draw: Мурзик дрожит на заснеженной улице, изо рта идёт пар.
+- `public/art/tr/konya/l1-2.jpg` — phrase — TR Конья 1 vocab «Kalın bir mont lazım.»
+  - Draw: Том показывает на толстую куртку в витрине.
+- `public/art/tr/konya/l1-3.jpg` — phrase — TR Конья 1 vocab «atkı»
+  - Draw: Длинный вязаный шарф.
+- `public/art/tr/konya/l1-4.jpg` — phrase — TR Конья 1 vocab «bere»
+  - Draw: Вязаная шапка с помпоном.
+- `public/art/tr/konya/l1-5.jpg` — phrase — TR Конья 1 vocab «eldiven»
+  - Draw: Пара тёплых перчаток.
+- `public/art/tr/konya/l1-6.jpg` — phrase — TR Конья 1 vocab «kazak»
+  - Draw: Толстый свитер с узором.
+- `public/art/tr/konya/l1-7.jpg` — phrase — TR Конья 1 vocab «botlar»
+  - Draw: Пара тёплых ботинок на меху.
+- `public/art/tr/konya/corap.jpg` — reward — TR Конья 1 reward «Yün çorap»
+  - Draw: Пара толстых шерстяных носков с узором, крошечные — как раз для лап Мурзика.
+- `public/art/tr/konya/l2-1.jpg` — phrase — TR Конья 2 vocab «Ne renk?»
+  - Draw: Том держит в руке шарф и вопросительно смотрит.
+- `public/art/tr/konya/l2-2.jpg` — phrase — TR Конья 2 vocab «kırmızı»
+  - Draw: Красный шарф.
+- `public/art/tr/konya/l2-3.jpg` — phrase — TR Конья 2 vocab «mavi»
+  - Draw: Синяя шапка.
+- `public/art/tr/konya/l2-4.jpg` — phrase — TR Конья 2 vocab «yeşil»
+  - Draw: Зелёное пальто Тома.
+- `public/art/tr/konya/l2-5.jpg` — phrase — TR Конья 2 vocab «sarı»
+  - Draw: Жёлтые перчатки.
+- `public/art/tr/konya/l2-6.jpg` — phrase — TR Конья 2 vocab «siyah, beyaz»
+  - Draw: Чёрная и белая перчатки рядом.
+- `public/art/tr/konya/l2-7.jpg` — phrase — TR Конья 2 vocab «turuncu»
+  - Draw: Мурзик в своём рыжем шарфе на фоне снега.
+- `public/art/tr/konya/dolap.jpg` — reward — TR Конья 2 reward «Dolap»
+  - Draw: Небольшой деревянный шкаф, расписанный бирюзовыми и красными цветами. На дверце висит оранжевый шарф.
+- `public/art/tr/konya/l3-1.jpg` — phrase — TR Конья 3 vocab «Deneyebilir miyim?»
+  - Draw: Том держит свитер и смотрит на продавца.
+- `public/art/tr/konya/l3-2.jpg` — phrase — TR Конья 3 vocab «Kabin nerede?»
+  - Draw: Том оглядывается в магазине, вдали кабинка со шторкой.
+- `public/art/tr/konya/l3-3.jpg` — phrase — TR Конья 3 vocab «Yakıştı mı?»
+  - Draw: Том в новом свитере поворачивается перед зеркалом.
+- `public/art/tr/konya/l3-4.jpg` — phrase — TR Конья 3 vocab «Çok yakıştı!»
+  - Draw: Мурзик показывает большой палец, глаза сияют.
+- `public/art/tr/konya/l3-5.jpg` — phrase — TR Конья 3 vocab «Biraz büyük.»
+  - Draw: Рукава свитера свисают ниже пальцев Тома.
+- `public/art/tr/konya/l3-6.jpg` — phrase — TR Конья 3 vocab «Daha küçük var mı?»
+  - Draw: Том показывает продавцу пальцами «поменьше».
+- `public/art/tr/konya/l3-7.jpg` — phrase — TR Конья 3 vocab «Hangi beden?»
+  - Draw: Продавец держит три свитера разных размеров.
+- `public/art/tr/konya/aski.jpg` — reward — TR Конья 3 reward «Askı»
+  - Draw: Деревянная вешалка-стойка у двери. На ней новый свитер Тома, шарф и шапка Мурзика.
+- `public/art/tr/konya/l4-1.jpg` — phrase — TR Конья 4 vocab «Kendimi iyi hissetmiyorum.»
+  - Draw: Мурзик лежит в кровати, бледный, уши опущены.
+- `public/art/tr/konya/l4-2.jpg` — phrase — TR Конья 4 vocab «Başım ağrıyor.»
+  - Draw: Мурзик держится лапами за голову, над ним звёздочки.
+- `public/art/tr/konya/l4-3.jpg` — phrase — TR Конья 4 vocab «Boğazım ağrıyor.»
+  - Draw: Мурзик держится за горло, вокруг шеи шарф.
+- `public/art/tr/konya/l4-4.jpg` — phrase — TR Конья 4 vocab «Ateşim var.»
+  - Draw: Градусник во рту у Мурзика, щёки красные.
+- `public/art/tr/konya/l4-5.jpg` — phrase — TR Конья 4 vocab «Öksürüyorum.»
+  - Draw: Мурзик кашляет в лапу.
+- `public/art/tr/konya/l4-6.jpg` — phrase — TR Конья 4 vocab «Burnum akıyor.»
+  - Draw: Мурзик с красным носом держит платок.
+- `public/art/tr/konya/l4-7.jpg` — phrase — TR Конья 4 vocab «Neren ağrıyor?»
+  - Draw: Том заботливо склоняется над кроватью Мурзика.
+- `public/art/tr/konya/termofor.jpg` — reward — TR Конья 4 reward «Sıcak su torbası»
+  - Draw: Мурзик лежит в постели под одеялом и обнимает тёплую грелку в вязаном чехле.
+- `public/art/tr/konya/l5-1.jpg` — phrase — TR Конья 5 vocab «Randevum var.»
+  - Draw: Том у стойки регистрации в поликлинике.
+- `public/art/tr/konya/l5-2.jpg` — phrase — TR Конья 5 vocab «Oturun, lütfen.»
+  - Draw: Доктор Зехра, спокойная женщина лет пятидесяти в белом халате, показывает на стул.
+- `public/art/tr/konya/l5-3.jpg` — phrase — TR Конья 5 vocab «Ağzınızı açın.»
+  - Draw: Мурзик широко открывает рот, доктор светит фонариком.
+- `public/art/tr/konya/l5-4.jpg` — phrase — TR Конья 5 vocab «Derin nefes alın.»
+  - Draw: Доктор слушает Мурзика стетоскопом.
+- `public/art/tr/konya/l5-5.jpg` — phrase — TR Конья 5 vocab «Grip olmuşsunuz.»
+  - Draw: Доктор Зехра что-то записывает в карточку.
+- `public/art/tr/konya/l5-6.jpg` — phrase — TR Конья 5 vocab «Dinlenin.»
+  - Draw: Мурзик под одеялом с книжкой.
+- `public/art/tr/konya/l5-7.jpg` — phrase — TR Конья 5 vocab «Bol su için.»
+  - Draw: Стакан воды и графин у кровати.
+- `public/art/tr/konya/gece-lambasi.jpg` — reward — TR Конья 5 reward «Gece lambası»
+  - Draw: Маленький ночник в форме полумесяца мягко светится жёлтым светом у кровати.
+- `public/art/tr/konya/l6-1.jpg` — phrase — TR Конья 6 vocab «eczane»
+  - Draw: Вывеска аптеки с красной буквой E.
+- `public/art/tr/konya/l6-2.jpg` — phrase — TR Конья 6 vocab «ilaç»
+  - Draw: Коробочки с лекарствами на полке.
+- `public/art/tr/konya/l6-3.jpg` — phrase — TR Конья 6 vocab «reçete»
+  - Draw: Том протягивает фармацевту листок с рецептом.
+- `public/art/tr/konya/l6-4.jpg` — phrase — TR Конья 6 vocab «Günde iki kez.»
+  - Draw: Две таблетки рядом с солнцем и луной.
+- `public/art/tr/konya/l6-5.jpg` — phrase — TR Конья 6 vocab «Yemekten sonra.»
+  - Draw: Пустая тарелка, а рядом таблетка.
+- `public/art/tr/konya/l6-6.jpg` — phrase — TR Конья 6 vocab «ağrı kesici»
+  - Draw: Маленькая коробочка таблеток с нарисованной молнией боли, перечёркнутой.
+- `public/art/tr/konya/l6-7.jpg` — phrase — TR Конья 6 vocab «Geçmiş olsun!»
+  - Draw: Фармацевт с улыбкой протягивает пакет с лекарствами.
+- `public/art/tr/konya/ihlamur.jpg` — reward — TR Конья 6 reward «Ihlamur»
+  - Draw: Стеклянная банка с сушёными цветками липы и стаканчик горячего чая с мёдом.
+- `public/art/tr/konya/l7-1.jpg` — phrase — TR Конья 7 vocab «Daha iyiyim.»
+  - Draw: Мурзик сидит в кровати, улыбается, щёки уже не красные.
+- `public/art/tr/konya/l7-2.jpg` — phrase — TR Конья 7 vocab «Nasılsın şimdi?»
+  - Draw: Доктор Зехра заглядывает в дверь с улыбкой.
+- `public/art/tr/konya/l7-3.jpg` — phrase — TR Конья 7 vocab «Artık ateşim yok.»
+  - Draw: Мурзик показывает градусник с нормальной температурой.
+- `public/art/tr/konya/l7-4.jpg` — phrase — TR Конья 7 vocab «sağlıklı»
+  - Draw: Мурзик бодро делает зарядку у окна.
+- `public/art/tr/konya/l7-5.jpg` — phrase — TR Конья 7 vocab «Neyse ki!»
+  - Draw: Том облегчённо выдыхает и улыбается.
+- `public/art/tr/konya/l7-6.jpg` — phrase — TR Конья 7 vocab «Bir e-posta geldi!»
+  - Draw: На экране ноутбука конверт с крылышками.
+- `public/art/tr/konya/l7-7.jpg` — phrase — TR Конья 7 vocab «Bir iş teklifi aldım!»
+  - Draw: Том подпрыгивает с ноутбуком в руках.
+- `public/art/tr/konya/lamba.jpg` — reward — TR Конья 7 reward «Mozaik lamba»; TR Конья farewell 2
+  - Draw: Подвесная лампа из разноцветной стеклянной мозаики светится бирюзовыми, красными и жёлтыми огоньками.
+- `public/art/tr/konya/departure.jpg` — scene — TR Конья departure; TR Конья farewell 4
+  - Draw: Мурзик и Том в тёплых шапках и шарфах садятся в автобус.
+- `public/art/tr/konya/dome.jpg` — scene — TR Конья farewell 1
+  - Draw: Мурзик и Том в шарфах стоят у бирюзового купола под лёгким снегом. Рядом доктор Зехра смотрит на открытку. Вдали у ворот — силуэт белого кота в шляпе.
+- `public/art/tr/konya/road.jpg` — scene — TR Конья farewell 5
+  - Draw: Автобус едет по заснеженной равнине к далёким горам.
+
+## Turkish course — Kapadokya (60 pictures)
+
+- `public/art/tr/kapadokya/arrival.jpg` — scene — TR Конья farewell 6; TR Каппадокия welcome
+  - Draw: Мурзик и Том на рассвете среди «каменных грибов» Каппадокии. В небе десятки разноцветных воздушных шаров.
+- `public/art/tr/kapadokya/l1-1.jpg` — phrase — TR Каппадокия 1 vocab «Nerede çalışıyorsun?»
+  - Draw: Дениз за стойкой пещерной гостиницы с любопытством смотрит на Тома.
+- `public/art/tr/kapadokya/l1-2.jpg` — phrase — TR Каппадокия 1 vocab «Bir otelde çalışıyorum.»
+  - Draw: Дениз, весёлая студентка, выдаёт ключи за стойкой.
+- `public/art/tr/kapadokya/l1-3.jpg` — phrase — TR Каппадокия 1 vocab «Evden çalışıyorum.»
+  - Draw: Том с ноутбуком сидит на кровати в пещерном номере.
+- `public/art/tr/kapadokya/l1-4.jpg` — phrase — TR Каппадокия 1 vocab «iş»
+  - Draw: Портфель и чашка кофе на столе.
+- `public/art/tr/kapadokya/l1-5.jpg` — phrase — TR Каппадокия 1 vocab «ofis»
+  - Draw: Светлый офис со столами и компьютерами.
+- `public/art/tr/kapadokya/l1-6.jpg` — phrase — TR Каппадокия 1 vocab «Çalışmıyorum.»
+  - Draw: Мурзик лениво лежит в гамаке, разводит лапами.
+- `public/art/tr/kapadokya/l1-7.jpg` — phrase — TR Каппадокия 1 vocab «çömlekçi»
+  - Draw: Пожилой гончар лепит кувшин на гончарном круге.
+- `public/art/tr/kapadokya/masa-lambasi.jpg` — reward — TR Каппадокия 1 reward «Masa lambası»
+  - Draw: Настольная лампа с тканевым абажуром стоит в каменной нише пещерного номера.
+- `public/art/tr/kapadokya/l2-1.jpg` — phrase — TR Каппадокия 2 vocab «Öğrenci misin?»
+  - Draw: Мурзик с любопытством смотрит на стопку учебников Дениз.
+- `public/art/tr/kapadokya/l2-2.jpg` — phrase — TR Каппадокия 2 vocab «Üniversitede okuyorum.»
+  - Draw: Дениз с рюкзаком у здания университета.
+- `public/art/tr/kapadokya/l2-3.jpg` — phrase — TR Каппадокия 2 vocab «Ne okuyorsun?»
+  - Draw: Том показывает на учебник Дениз.
+- `public/art/tr/kapadokya/l2-4.jpg` — phrase — TR Каппадокия 2 vocab «Turizm okuyorum.»
+  - Draw: Учебник с картой мира и самолётиком на обложке.
+- `public/art/tr/kapadokya/l2-5.jpg` — phrase — TR Каппадокия 2 vocab «Türkçe öğreniyorum.»
+  - Draw: Мурзик пишет турецкие слова в тетрадке.
+- `public/art/tr/kapadokya/l2-6.jpg` — phrase — TR Каппадокия 2 vocab «ders»
+  - Draw: Аудитория, преподаватель у доски.
+- `public/art/tr/kapadokya/l2-7.jpg` — phrase — TR Каппадокия 2 vocab «sınav»
+  - Draw: Дениз волнуется над экзаменационным листом.
+- `public/art/tr/kapadokya/defter.jpg` — reward — TR Каппадокия 2 reward «Defter»
+  - Draw: Тетрадь в обложке с узором из воздушных шаров. На первой странице написаны турецкие слова.
+- `public/art/tr/kapadokya/l3-1.jpg` — phrase — TR Каппадокия 3 vocab «Saat altıda kalkıyorum.»
+  - Draw: Гончар потягивается у окна, за окном рассвет и часы на шести.
+- `public/art/tr/kapadokya/l3-2.jpg` — phrase — TR Каппадокия 3 vocab «İşe saat yedide başlıyorum.»
+  - Draw: Гончар садится за гончарный круг, часы на семи.
+- `public/art/tr/kapadokya/l3-3.jpg` — phrase — TR Каппадокия 3 vocab «Öğlen yemek yiyorum.»
+  - Draw: Гончар ест лепёшку с сыром у мастерской.
+- `public/art/tr/kapadokya/l3-4.jpg` — phrase — TR Каппадокия 3 vocab «Saat beşte bitiriyorum.»
+  - Draw: Гончар вытирает руки, часы на пяти.
+- `public/art/tr/kapadokya/l3-5.jpg` — phrase — TR Каппадокия 3 vocab «Akşam dinleniyorum.»
+  - Draw: Гончар сидит с чаем на скамейке у реки.
+- `public/art/tr/kapadokya/l3-6.jpg` — phrase — TR Каппадокия 3 vocab «her sabah»
+  - Draw: Семь маленьких солнышек над горизонтом.
+- `public/art/tr/kapadokya/l3-7.jpg` — phrase — TR Каппадокия 3 vocab «Çok yoğun bir gün.»
+  - Draw: Гончар окружён десятками новых кувшинов.
+- `public/art/tr/kapadokya/kalemlik.jpg` — reward — TR Каппадокия 3 reward «Kalemlik»
+  - Draw: Глиняный стаканчик ручной работы с карандашами и кисточками.
+- `public/art/tr/kapadokya/l4-1.jpg` — phrase — TR Каппадокия 4 vocab «iş görüşmesi»
+  - Draw: Том в рубашке сидит перед ноутбуком с видеозвонком.
+- `public/art/tr/kapadokya/l4-2.jpg` — phrase — TR Каппадокия 4 vocab «Neden bu işi istiyorsunuz?»
+  - Draw: На экране ноутбука строгая, но доброжелательная женщина-редактор.
+- `public/art/tr/kapadokya/l4-3.jpg` — phrase — TR Каппадокия 4 vocab «Çünkü fotoğraf çekmeyi seviyorum.»
+  - Draw: Том увлечённо показывает в камеру свой фотоаппарат.
+- `public/art/tr/kapadokya/l4-4.jpg` — phrase — TR Каппадокия 4 vocab «Deneyiminiz var mı?»
+  - Draw: Редактор листает на экране папку со снимками Тома.
+- `public/art/tr/kapadokya/l4-5.jpg` — phrase — TR Каппадокия 4 vocab «Üç yıldır fotoğrafçıyım.»
+  - Draw: Три фотоальбома стопкой рядом с Томом.
+- `public/art/tr/kapadokya/l4-6.jpg` — phrase — TR Каппадокия 4 vocab «Ne zaman başlayabilirsiniz?»
+  - Draw: Редактор с улыбкой смотрит на календарь.
+- `public/art/tr/kapadokya/l4-7.jpg` — phrase — TR Каппадокия 4 vocab «Hemen!»
+  - Draw: Том вскакивает со стула с горящими глазами.
+- `public/art/tr/kapadokya/sandik.jpg` — reward — TR Каппадокия 4 reward «Sandık»
+  - Draw: Деревянный сундук с резьбой и железными уголками стоит в нише пещерного номера.
+- `public/art/tr/kapadokya/l5-1.jpg` — phrase — TR Каппадокия 5 vocab «Bir haberim var!»
+  - Draw: Том вбегает в номер, размахивая телефоном.
+- `public/art/tr/kapadokya/l5-2.jpg` — phrase — TR Каппадокия 5 vocab «İyi haber!»
+  - Draw: Над Томом сияет нарисованное солнышко.
+- `public/art/tr/kapadokya/l5-3.jpg` — phrase — TR Каппадокия 5 vocab «İşe alındım!»
+  - Draw: Том подпрыгивает от радости, Мурзик хлопает в ладоши.
+- `public/art/tr/kapadokya/l5-4.jpg` — phrase — TR Каппадокия 5 vocab «Pazartesiden itibaren»
+  - Draw: Календарь, понедельник обведён красным.
+- `public/art/tr/kapadokya/l5-5.jpg` — phrase — TR Каппадокия 5 vocab «Tebrikler!»
+  - Draw: Дениз и Мурзик обнимают Тома.
+- `public/art/tr/kapadokya/l5-6.jpg` — phrase — TR Каппадокия 5 vocab «Çok sevindim!»
+  - Draw: Мурзик кружится от счастья.
+- `public/art/tr/kapadokya/l5-7.jpg` — phrase — TR Каппадокия 5 vocab «Başarılar!»
+  - Draw: Дениз показывает Тому большой палец.
+- `public/art/tr/kapadokya/balon.jpg` — reward — TR Каппадокия 5 reward «Balon»
+  - Draw: Под потолком пещерного номера висит игрушечный воздушный шар с полосатой корзинкой.
+- `public/art/tr/kapadokya/l6-1.jpg` — phrase — TR Каппадокия 6 vocab «İlk günüm!»
+  - Draw: Том на рассвете с фотоаппаратом у огромного шара.
+- `public/art/tr/kapadokya/l6-2.jpg` — phrase — TR Каппадокия 6 vocab «Heyecanlıyım.»
+  - Draw: Том нервно поправляет ремень фотоаппарата.
+- `public/art/tr/kapadokya/l6-3.jpg` — phrase — TR Каппадокия 6 vocab «Bu bizim balonumuz.»
+  - Draw: Пилот показывает на полосатый шар.
+- `public/art/tr/kapadokya/l6-4.jpg` — phrase — TR Каппадокия 6 vocab «Sıkı tutunun!»
+  - Draw: Мурзик и Том вцепились в край корзины.
+- `public/art/tr/kapadokya/l6-5.jpg` — phrase — TR Каппадокия 6 vocab «Yükseliyoruz!»
+  - Draw: Шар отрывается от земли, внизу машут люди.
+- `public/art/tr/kapadokya/l6-6.jpg` — phrase — TR Каппадокия 6 vocab «Manzara harika!»
+  - Draw: Внизу «каменные грибы» и долины в розовом рассвете.
+- `public/art/tr/kapadokya/l6-7.jpg` — phrase — TR Каппадокия 6 vocab «peri bacaları»
+  - Draw: Высокие скалы-«грибы» с маленькими окошками.
+- `public/art/tr/kapadokya/fotograf-makinesi.jpg` — reward — TR Каппадокия 6 reward «Fotoğraf makinesi»
+  - Draw: Старый плёночный фотоаппарат Тома в кожаном чехле — теперь он у Мурзика.
+- `public/art/tr/kapadokya/l7-1.jpg` — phrase — TR Каппадокия 7 vocab «Kutlayalım!»
+  - Draw: Во дворе мастерской накрыт стол, висят фонарики.
+- `public/art/tr/kapadokya/l7-2.jpg` — phrase — TR Каппадокия 7 vocab «Başarına!»
+  - Draw: Все поднимают стаканы с айраном и соком.
+- `public/art/tr/kapadokya/l7-3.jpg` — phrase — TR Каппадокия 7 vocab «Sağlığına!»
+  - Draw: Гончар поднимает стаканчик чая.
+- `public/art/tr/kapadokya/l7-4.jpg` — phrase — TR Каппадокия 7 vocab «Gurur duyuyorum.»
+  - Draw: Мурзик гордо смотрит на Тома, грудь колесом.
+- `public/art/tr/kapadokya/l7-5.jpg` — phrase — TR Каппадокия 7 vocab «Her şey için teşekkürler.»
+  - Draw: Том обнимает Дениз и гончара.
+- `public/art/tr/kapadokya/l7-6.jpg` — phrase — TR Каппадокия 7 vocab «hatıra»
+  - Draw: На полке стоят глиняные кувшинчики-сувениры.
+- `public/art/tr/kapadokya/l7-7.jpg` — phrase — TR Каппадокия 7 vocab «Kim bilir?»
+  - Draw: Том хитро подмигивает и прячет за спиной конверт.
+- `public/art/tr/kapadokya/testi.jpg` — reward — TR Каппадокия 7 reward «Testi»; TR Каппадокия farewell 2
+  - Draw: Красный глиняный кувшин из Аваноса с узором из воздушных шаров.
+- `public/art/tr/kapadokya/departure.jpg` — scene — TR Каппадокия departure; TR Каппадокия farewell 4
+  - Draw: Мурзик и Том с чемоданами у пещерной гостиницы. Дениз машет им рукой.
+- `public/art/tr/kapadokya/magazine.jpg` — scene — TR Каппадокия farewell 1
+  - Draw: Свежий номер журнала о путешествиях: на обложке рыжий котёнок на фоне воздушных шаров. Мурзик и Том смотрят на него с восторгом.
+- `public/art/tr/kapadokya/train.jpg` — scene — TR Каппадокия farewell 5
+  - Draw: Поезд идёт по весенней степи к столице.
+
+## Turkish course — Ankara (60 pictures)
+
+- `public/art/tr/ankara/arrival.jpg` — scene — TR Каппадокия farewell 6; TR Анкара welcome
+  - Draw: Мурзик и Том у старой крепости Анкары на холме. Внизу большой город. Тёплый весенний день.
+- `public/art/tr/ankara/l1-1.jpg` — phrase — TR Анкара 1 vocab «ocak, şubat, mart»
+  - Draw: Три листка календаря: снег, снег и первые подснежники.
+- `public/art/tr/ankara/l1-2.jpg` — phrase — TR Анкара 1 vocab «nisan, mayıs, haziran»
+  - Draw: Три листка календаря: тюльпаны, сирень, солнце.
+- `public/art/tr/ankara/l1-3.jpg` — phrase — TR Анкара 1 vocab «temmuz, ağustos, eylül»
+  - Draw: Три листка календаря: море, арбуз, первые жёлтые листья.
+- `public/art/tr/ankara/l1-4.jpg` — phrase — TR Анкара 1 vocab «ekim, kasım, aralık»
+  - Draw: Три листка календаря: листопад, дождь, снеговик.
+- `public/art/tr/ankara/l1-5.jpg` — phrase — TR Анкара 1 vocab «Hangi aydayız?»
+  - Draw: Мурзик стоит перед календарём, приподняв бровь.
+- `public/art/tr/ankara/l1-6.jpg` — phrase — TR Анкара 1 vocab «mayısta»
+  - Draw: Цветущая сирень у окна.
+- `public/art/tr/ankara/l1-7.jpg` — phrase — TR Анкара 1 vocab «ilkbahar»
+  - Draw: Весенний парк, цветут деревья.
+- `public/art/tr/ankara/vazo.jpg` — reward — TR Анкара 1 reward «Vazo»
+  - Draw: Белая ваза с весенними тюльпанами стоит на подоконнике в доме бабушки Нур.
+- `public/art/tr/ankara/l2-1.jpg` — phrase — TR Анкара 2 vocab «Bugün ayın kaçı?»
+  - Draw: Том украдкой смотрит на календарь, прикрывая его рукой.
+- `public/art/tr/ankara/l2-2.jpg` — phrase — TR Анкара 2 vocab «Bugün iki Mayıs.»
+  - Draw: На листке календаря крупная цифра два.
+- `public/art/tr/ankara/l2-3.jpg` — phrase — TR Анкара 2 vocab «birinci, ikinci, üçüncü»
+  - Draw: Три котёнка на пьедестале: первое, второе и третье место.
+- `public/art/tr/ankara/l2-4.jpg` — phrase — TR Анкара 2 vocab «tarih»
+  - Draw: Ручка подчёркивает дату на письме.
+- `public/art/tr/ankara/l2-5.jpg` — phrase — TR Анкара 2 vocab «üç gün sonra»
+  - Draw: Три листка календаря, на третьем нарисован торт.
+- `public/art/tr/ankara/l2-6.jpg` — phrase — TR Анкара 2 vocab «geçen hafta»
+  - Draw: Стрелка на календаре показывает назад.
+- `public/art/tr/ankara/l2-7.jpg` — phrase — TR Анкара 2 vocab «gelecek hafta»
+  - Draw: Стрелка на календаре показывает вперёд.
+- `public/art/tr/ankara/cerceve.jpg` — reward — TR Анкара 2 reward «Çerçeve»
+  - Draw: Серебряная рамка для фотографии, пока пустая, стоит на комоде.
+- `public/art/tr/ankara/l3-1.jpg` — phrase — TR Анкара 3 vocab «Doğum günün ne zaman?»
+  - Draw: Бабушка Нур с улыбкой спрашивает Мурзика за чаем.
+- `public/art/tr/ankara/l3-2.jpg` — phrase — TR Анкара 3 vocab «Doğum günüm beş Mayıs'ta.»
+  - Draw: Мурзик показывает на календаре пятое мая.
+- `public/art/tr/ankara/l3-3.jpg` — phrase — TR Анкара 3 vocab «Kaç yaşına giriyorsun?»
+  - Draw: Бабушка Нур с любопытством наклоняется к Мурзику.
+- `public/art/tr/ankara/l3-4.jpg` — phrase — TR Анкара 3 vocab «Yedi yaşına giriyorum.»
+  - Draw: Мурзик гордо показывает семь пальцев на двух лапах.
+- `public/art/tr/ankara/l3-5.jpg` — phrase — TR Анкара 3 vocab «parti»
+  - Draw: Комната с гирляндами и шариками.
+- `public/art/tr/ankara/l3-6.jpg` — phrase — TR Анкара 3 vocab «davet»
+  - Draw: Красивая открытка-приглашение с шариками.
+- `public/art/tr/ankara/l3-7.jpg` — phrase — TR Анкара 3 vocab «Gelir misin?»
+  - Draw: Том протягивает соседу приглашение.
+- `public/art/tr/ankara/kitap.jpg` — reward — TR Анкара 3 reward «Kitap»
+  - Draw: Старая книга турецких сказок с рисунками на полях. На форзаце от руки написаны два имени.
+- `public/art/tr/ankara/l4-1.jpg` — phrase — TR Анкара 4 vocab «Ona ne alalım?»
+  - Draw: Том и бабушка Нур шепчутся на кухне.
+- `public/art/tr/ankara/l4-2.jpg` — phrase — TR Анкара 4 vocab «hediye»
+  - Draw: Коробка в цветной бумаге с бантом.
+- `public/art/tr/ankara/l4-3.jpg` — phrase — TR Анкара 4 vocab «Ona bir resim defteri alalım.»
+  - Draw: Том показывает на альбом в витрине магазина.
+- `public/art/tr/ankara/l4-4.jpg` — phrase — TR Анкара 4 vocab «Ne dersin?»
+  - Draw: Том вопросительно смотрит на бабушку Нур.
+- `public/art/tr/ankara/l4-5.jpg` — phrase — TR Анкара 4 vocab «İyi fikir!»
+  - Draw: Над головой бабушки Нур загорается лампочка.
+- `public/art/tr/ankara/l4-6.jpg` — phrase — TR Анкара 4 vocab «Sürpriz!»
+  - Draw: Из коробки выпрыгивают конфетти.
+- `public/art/tr/ankara/l4-7.jpg` — phrase — TR Анкара 4 vocab «Ona söyleme!»
+  - Draw: Бабушка Нур прикладывает палец к губам.
+- `public/art/tr/ankara/balonlar.jpg` — reward — TR Анкара 4 reward «Balonlar»
+  - Draw: Связка разноцветных воздушных шариков привязана к спинке стула.
+- `public/art/tr/ankara/l5-1.jpg` — phrase — TR Анкара 5 vocab «Doğum günün kutlu olsun!»
+  - Draw: Бабушка Нур протягивает Мурзику подарок с бантом.
+- `public/art/tr/ankara/l5-2.jpg` — phrase — TR Анкара 5 vocab «İyi ki doğdun!»
+  - Draw: Том и бабушка Нур выпрыгивают из-за двери с хлопушками.
+- `public/art/tr/ankara/l5-3.jpg` — phrase — TR Анкара 5 vocab «Hediyeni aç!»
+  - Draw: Мурзик развязывает бант на коробке.
+- `public/art/tr/ankara/l5-4.jpg` — phrase — TR Анкара 5 vocab «Ne güzel bir sürpriz!»
+  - Draw: Мурзик прижимает лапы к щекам от восторга.
+- `public/art/tr/ankara/l5-5.jpg` — phrase — TR Анкара 5 vocab «Ne kadar güzel!»
+  - Draw: Мурзик держит новый альбом и сияет.
+- `public/art/tr/ankara/l5-6.jpg` — phrase — TR Анкара 5 vocab «Kaç yaşına girdin?»
+  - Draw: Бабушка Нур ласково гладит Мурзика по голове.
+- `public/art/tr/ankara/l5-7.jpg` — phrase — TR Анкара 5 vocab «Seni seviyoruz!»
+  - Draw: Том и бабушка Нур обнимают Мурзика с двух сторон.
+- `public/art/tr/ankara/resim-defteri.jpg` — reward — TR Анкара 5 reward «Resim defteri»
+  - Draw: Большой альбом для рисования и коробка акварели. На обложке Том нарисовал рыжего котёнка.
+- `public/art/tr/ankara/l6-1.jpg` — phrase — TR Анкара 6 vocab «pasta»
+  - Draw: Шоколадный торт со свечками на столе.
+- `public/art/tr/ankara/l6-2.jpg` — phrase — TR Анкара 6 vocab «Mumları üfle!»
+  - Draw: Мурзик надувает щёки над свечками.
+- `public/art/tr/ankara/l6-3.jpg` — phrase — TR Анкара 6 vocab «Bir dilek tut!»
+  - Draw: Мурзик зажмурился и сложил лапки.
+- `public/art/tr/ankara/l6-4.jpg` — phrase — TR Анкара 6 vocab «Sana sağlık ve mutluluk dilerim.»
+  - Draw: Бабушка Нур поднимает стаканчик чая.
+- `public/art/tr/ankara/l6-5.jpg` — phrase — TR Анкара 6 vocab «Nice yıllara!»
+  - Draw: Все за столом поднимают стаканы.
+- `public/art/tr/ankara/l6-6.jpg` — phrase — TR Анкара 6 vocab «Bir dilim daha?»
+  - Draw: Том держит нож над тортом.
+- `public/art/tr/ankara/l6-7.jpg` — phrase — TR Анкара 6 vocab «Dileğin ne?»
+  - Draw: Бабушка Нур с любопытством наклоняется к Мурзику.
+- `public/art/tr/ankara/mum.jpg` — reward — TR Анкара 6 reward «Mum»
+  - Draw: Маленькая свечка в форме котика с цифрой семь на боку стоит на кусочке торта.
+- `public/art/tr/ankara/l7-1.jpg` — phrase — TR Анкара 7 vocab «Kim gönderdi?»
+  - Draw: Мурзик держит открытку и растерянно оглядывается.
+- `public/art/tr/ankara/l7-2.jpg` — phrase — TR Анкара 7 vocab «Nereden geldi?»
+  - Draw: Том рассматривает марку на открытке через лупу.
+- `public/art/tr/ankara/l7-3.jpg` — phrase — TR Анкара 7 vocab «Ne yazıyor?»
+  - Draw: Бабушка Нур надевает очки.
+- `public/art/tr/ankara/l7-4.jpg` — phrase — TR Анкара 7 vocab «Neden adres yok?»
+  - Draw: Крупно: пустое место для обратного адреса на открытке.
+- `public/art/tr/ankara/l7-5.jpg` — phrase — TR Анкара 7 vocab «Hangi şehirden?»
+  - Draw: Синяя марка с видом зелёных гор у моря и круглый почтовый штемпель.
+- `public/art/tr/ankara/l7-6.jpg` — phrase — TR Анкара 7 vocab «torunum»
+  - Draw: В углу открытки нарисована маленькая рыжая кошечка.
+- `public/art/tr/ankara/l7-7.jpg` — phrase — TR Анкара 7 vocab «Bu onun yazısı!»
+  - Draw: Бабушка Нур прижимает открытку к груди, на глазах слёзы.
+- `public/art/tr/ankara/battaniye.jpg` — reward — TR Анкара 7 reward «Battaniye»; TR Анкара farewell 2
+  - Draw: Белый пушистый плед из ангорской шерсти сложен на кресле.
+- `public/art/tr/ankara/departure.jpg` — scene — TR Анкара departure; TR Анкара farewell 4
+  - Draw: Бабушка Нур, белая ангорская кошка в шали, провожает Мурзика и Тома в аэропорту и машет белым платком.
+- `public/art/tr/ankara/postcard.jpg` — scene — TR Анкара farewell 1
+  - Draw: Крупно: открытка с маленькой рыжей кошечкой в углу и синей маркой с видом зелёных гор у моря, на ней круглый почтовый штемпель. Обратного адреса нет. Открытку держит белая лапа бабушки Нур.
+- `public/art/tr/ankara/flight.jpg` — scene — TR Анкара farewell 5
+  - Draw: Самолёт летит на север над горами к Чёрному морю.
+
+## Turkish course — Trabzon (60 pictures)
+
+- `public/art/tr/trabzon/arrival.jpg` — scene — TR Анкара farewell 6; TR Трабзон welcome
+  - Draw: Мурзик и Том в Трабзоне: зелёные горы, чайные плантации на склонах, серое Чёрное море. Моросит дождь.
+- `public/art/tr/trabzon/l1-1.jpg` — phrase — TR Трабзон 1 vocab «Rezervasyonum var.»
+  - Draw: Том у стойки администратора, с него капает дождевая вода.
+- `public/art/tr/trabzon/l1-2.jpg` — phrase — TR Трабзон 1 vocab «iki gece»
+  - Draw: Две луны над Чёрным морем.
+- `public/art/tr/trabzon/l1-3.jpg` — phrase — TR Трабзон 1 vocab «iki kişilik oda»
+  - Draw: Номер с двумя кроватями и окном на море.
+- `public/art/tr/trabzon/l1-4.jpg` — phrase — TR Трабзон 1 vocab «Anahtarınız burada.»
+  - Draw: Старинный ключ с деревянным брелоком, на нём номер 305.
+- `public/art/tr/trabzon/l1-5.jpg` — phrase — TR Трабзон 1 vocab «Kahvaltı dahil mi?»
+  - Draw: Том показывает на картинку с чаем и булочками.
+- `public/art/tr/trabzon/l1-6.jpg` — phrase — TR Трабзон 1 vocab «Oda kaçıncı katta?»
+  - Draw: Мурзик смотрит вверх на лестницу.
+- `public/art/tr/trabzon/l1-7.jpg` — phrase — TR Трабзон 1 vocab «asansör»
+  - Draw: Старый лифт с решётчатой дверью.
+- `public/art/tr/trabzon/yagmurluk.jpg` — reward — TR Трабзон 1 reward «Yağmurluk»
+  - Draw: Маленький ярко-жёлтый дождевик с капюшоном висит на крючке у двери номера.
+- `public/art/tr/trabzon/l2-1.jpg` — phrase — TR Трабзон 2 vocab «Işık yanmıyor.»
+  - Draw: Мурзик в тёмном номере щёлкает выключателем.
+- `public/art/tr/trabzon/l2-2.jpg` — phrase — TR Трабзон 2 vocab «Klima çalışmıyor.»
+  - Draw: Том стучит по пульту кондиционера.
+- `public/art/tr/trabzon/l2-3.jpg` — phrase — TR Трабзон 2 vocab «Sıcak su yok.»
+  - Draw: Мурзик вздрагивает под холодным душем.
+- `public/art/tr/trabzon/l2-4.jpg` — phrase — TR Трабзон 2 vocab «Televizyon bozuk.»
+  - Draw: На экране телевизора только серая рябь.
+- `public/art/tr/trabzon/l2-5.jpg` — phrase — TR Трабзон 2 vocab «Yardım edebilir misiniz?»
+  - Draw: Том звонит по телефону в номере.
+- `public/art/tr/trabzon/l2-6.jpg` — phrase — TR Трабзон 2 vocab «Hemen geliyorum.»
+  - Draw: Администратор с ящиком инструментов спешит по коридору.
+- `public/art/tr/trabzon/l2-7.jpg` — phrase — TR Трабзон 2 vocab «Oldu!»
+  - Draw: В номере снова горит свет.
+- `public/art/tr/trabzon/el-feneri.jpg` — reward — TR Трабзон 2 reward «El feneri»
+  - Draw: Маленький металлический фонарик светит тёплым лучом на стену номера.
+- `public/art/tr/trabzon/l3-1.jpg` — phrase — TR Трабзон 3 vocab «Bir havlu daha alabilir miyim?»
+  - Draw: Мурзик выглядывает из-за двери, завёрнутый в крошечное полотенце.
+- `public/art/tr/trabzon/l3-2.jpg` — phrase — TR Трабзон 3 vocab «yastık»
+  - Draw: Мягкая белая подушка.
+- `public/art/tr/trabzon/l3-3.jpg` — phrase — TR Трабзон 3 vocab «Wi-Fi şifresi ne?»
+  - Draw: Том с ноутбуком у стойки.
+- `public/art/tr/trabzon/l3-4.jpg` — phrase — TR Трабзон 3 vocab «Ben denizi görmek istiyorum.»
+  - Draw: Мурзик прижался носом к окну, за окном туман.
+- `public/art/tr/trabzon/l3-5.jpg` — phrase — TR Трабзон 3 vocab «Çay içmek istiyorum.»
+  - Draw: Тюльпановидный стаканчик чая на блюдце.
+- `public/art/tr/trabzon/l3-6.jpg` — phrase — TR Трабзон 3 vocab «Tabii, buyurun.»
+  - Draw: Администратор протягивает стопку полотенец.
+- `public/art/tr/trabzon/l3-7.jpg` — phrase — TR Трабзон 3 vocab «Uzungöl»
+  - Draw: Озеро в зелёных горах, у воды деревянная мечеть, над водой туман.
+- `public/art/tr/trabzon/findik.jpg` — reward — TR Трабзон 3 reward «Fındık»
+  - Draw: Стеклянная банка с жареным фундуком, на крышке завязана зелёная ленточка.
+- `public/art/tr/trabzon/l4-1.jpg` — phrase — TR Трабзон 4 vocab «Bavulum kayboldu!»
+  - Draw: Мурзик стоит посреди пустого номера, лапы у щёк.
+- `public/art/tr/trabzon/l4-2.jpg` — phrase — TR Трабзон 4 vocab «Burada bıraktım.»
+  - Draw: Мурзик показывает на пустое место у кровати.
+- `public/art/tr/trabzon/l4-3.jpg` — phrase — TR Трабзон 4 vocab «Rengi ne?»
+  - Draw: Администратор держит блокнот и ручку.
+- `public/art/tr/trabzon/l4-4.jpg` — phrase — TR Трабзон 4 vocab «Kırmızı, küçük.»
+  - Draw: Рисунок маленького красного чемоданчика.
+- `public/art/tr/trabzon/l4-5.jpg` — phrase — TR Трабзон 4 vocab «İçinde ne var?»
+  - Draw: Схема: чемодан, а в нём открытки и игрушки.
+- `public/art/tr/trabzon/l4-6.jpg` — phrase — TR Трабзон 4 vocab «Bulamıyorum.»
+  - Draw: Мурзик заглядывает под кровать.
+- `public/art/tr/trabzon/l4-7.jpg` — phrase — TR Трабзон 4 vocab «Endişelenme!»
+  - Draw: Том кладёт руку Мурзику на плечо.
+- `public/art/tr/trabzon/bavul-etiketi.jpg` — reward — TR Трабзон 4 reward «Bavul etiketi»
+  - Draw: Кожаная бирка для чемодана в форме кошачьей головы, внутри карточка с надписью «Murzik».
+- `public/art/tr/trabzon/l5-1.jpg` — phrase — TR Трабзон 5 vocab «postane»
+  - Draw: Здание почты с жёлтой вывеской PTT.
+- `public/art/tr/trabzon/l5-2.jpg` — phrase — TR Трабзон 5 vocab «pul»
+  - Draw: Марка с видом зелёных гор у моря.
+- `public/art/tr/trabzon/l5-3.jpg` — phrase — TR Трабзон 5 vocab «zarf»
+  - Draw: Белый конверт.
+- `public/art/tr/trabzon/l5-4.jpg` — phrase — TR Трабзон 5 vocab «Mektup göndermek istiyorum.»
+  - Draw: Мурзик протягивает письмо в окошко.
+- `public/art/tr/trabzon/l5-5.jpg` — phrase — TR Трабзон 5 vocab «Bu kartpostalı kim gönderdi?»
+  - Draw: Мурзик кладёт открытку на стойку.
+- `public/art/tr/trabzon/l5-6.jpg` — phrase — TR Трабзон 5 vocab «Hatırlamıyorum.»
+  - Draw: Служащий почты разводит руками.
+- `public/art/tr/trabzon/l5-7.jpg` — phrase — TR Трабзон 5 vocab «Her gün çok mektup geliyor.»
+  - Draw: За стойкой горы писем и посылок.
+- `public/art/tr/trabzon/pul-albumu.jpg` — reward — TR Трабзон 5 reward «Pul albümü»
+  - Draw: Зелёный альбом для марок, в нём уже три марки: Стамбул, Каппадокия и Трабзон.
+- `public/art/tr/trabzon/l6-1.jpg` — phrase — TR Трабзон 6 vocab «Bavulun bulundu!»
+  - Draw: Администратор бежит по коридору и машет рукой.
+- `public/art/tr/trabzon/l6-2.jpg` — phrase — TR Трабзон 6 vocab «çamaşırhanede»
+  - Draw: Прачечная: стиральные машины, стопки белья.
+- `public/art/tr/trabzon/l6-3.jpg` — phrase — TR Трабзон 6 vocab «Üstünde bir kedi uyuyor.»
+  - Draw: На красном чемодане свернулась толстая серая кошка.
+- `public/art/tr/trabzon/l6-4.jpg` — phrase — TR Трабзон 6 vocab «Ne kadar tatlı!»
+  - Draw: Мурзик умилённо смотрит на спящую кошку.
+- `public/art/tr/trabzon/l6-5.jpg` — phrase — TR Трабзон 6 vocab «Hiçbir şey eksik değil.»
+  - Draw: Мурзик пересчитывает открытки в чемодане.
+- `public/art/tr/trabzon/l6-6.jpg` — phrase — TR Трабзон 6 vocab «Kimse almadı.»
+  - Draw: Администратор смеётся и пожимает плечами.
+- `public/art/tr/trabzon/l6-7.jpg` — phrase — TR Трабзон 6 vocab «Çok şükür!»
+  - Draw: Мурзик обнимает свой чемодан.
+- `public/art/tr/trabzon/kemence.jpg` — reward — TR Трабзон 6 reward «Kemençe»
+  - Draw: Маленькая деревянная кеманча — узкая скрипочка с тремя струнами и смычком.
+- `public/art/tr/trabzon/l7-1.jpg` — phrase — TR Трабзон 7 vocab «Çıkış yapmak istiyorum.»
+  - Draw: Том с чемоданами у стойки.
+- `public/art/tr/trabzon/l7-2.jpg` — phrase — TR Трабзон 7 vocab «Hesabı alabilir miyim?»
+  - Draw: Администратор протягивает Тому счёт.
+- `public/art/tr/trabzon/l7-3.jpg` — phrase — TR Трабзон 7 vocab «Taksi çağırabilir misiniz?»
+  - Draw: У входа в гостиницу останавливается жёлтое такси.
+- `public/art/tr/trabzon/l7-4.jpg` — phrase — TR Трабзон 7 vocab «Havalimanına gidiyoruz.»
+  - Draw: Табличка со значком самолёта.
+- `public/art/tr/trabzon/l7-5.jpg` — phrase — TR Трабзон 7 vocab «Her şey çok güzeldi.»
+  - Draw: Мурзик показывает лапкой «класс».
+- `public/art/tr/trabzon/l7-6.jpg` — phrase — TR Трабзон 7 vocab «Yine bekleriz!»
+  - Draw: Администратор машет у дверей.
+- `public/art/tr/trabzon/l7-7.jpg` — phrase — TR Трабзон 7 vocab «Yolunuz açık olsun!»
+  - Draw: Такси уезжает по мокрой дороге вдоль моря.
+- `public/art/tr/trabzon/caydanlik.jpg` — reward — TR Трабзон 7 reward «Çaydanlık»; TR Трабзон farewell 2
+  - Draw: Маленький двойной турецкий чайник: внизу кипяток, сверху заварка. На боку нарисованы чайные листья.
+- `public/art/tr/trabzon/departure.jpg` — scene — TR Трабзон departure; TR Трабзон farewell 4
+  - Draw: Администратор гостиницы машет на прощание у дверей, на ступеньках сидит серая кошка Памук.
+- `public/art/tr/trabzon/umbrella.jpg` — scene — TR Трабзон farewell 1
+  - Draw: Мокрая набережная Трабзона. Мурзик в жёлтом дождевике идёт к такси. Вдали, у фонаря, под чёрным зонтом стоит белый кот в шляпе и смотрит ему вслед. Мурзик его не замечает.
+- `public/art/tr/trabzon/flight.jpg` — scene — TR Трабзон farewell 5
+  - Draw: Самолёт летит на восток над заснеженными горами.
+
+## Turkish course — Van (60 pictures)
+
+- `public/art/tr/van/arrival.jpg` — scene — TR Трабзон farewell 6; TR Ван welcome
+  - Draw: Мурзик и Том на берегу огромного синего озера Ван. Вдали заснеженная гора. Солнечно.
+- `public/art/tr/van/l1-1.jpg` — phrase — TR Ван 1 vocab «Şehirde bir kale var.»
+  - Draw: Древняя крепость на высокой скале у озера.
+- `public/art/tr/van/l1-2.jpg` — phrase — TR Ван 1 vocab «kahvaltı evi»
+  - Draw: Уютное кафе с длинными столами, уставленными тарелочками.
+- `public/art/tr/van/l1-3.jpg` — phrase — TR Ван 1 vocab «Burada müze var mı?»
+  - Draw: Том держит карту города и оглядывается.
+- `public/art/tr/van/l1-4.jpg` — phrase — TR Ван 1 vocab «Evet, var.»
+  - Draw: Гюльсум-тейзе кивает и показывает рукой.
+- `public/art/tr/van/l1-5.jpg` — phrase — TR Ван 1 vocab «Hayır, yok.»
+  - Draw: Гюльсум-тейзе качает головой.
+- `public/art/tr/van/l1-6.jpg` — phrase — TR Ван 1 vocab «çarşı»
+  - Draw: Крытые торговые ряды с лавочками.
+- `public/art/tr/van/l1-7.jpg` — phrase — TR Ван 1 vocab «iskele»
+  - Draw: Деревянная пристань, у неё лодка.
+- `public/art/tr/van/puf.jpg` — reward — TR Ван 1 reward «Puf»
+  - Draw: Круглый мягкий пуф, обтянутый ковровой тканью с красно-синим узором.
+- `public/art/tr/van/l2-1.jpg` — phrase — TR Ван 2 vocab «Kale nerede?»
+  - Draw: Мурзик стоит на перекрёстке с картой.
+- `public/art/tr/van/l2-2.jpg` — phrase — TR Ван 2 vocab «gölün yanında»
+  - Draw: Крепость, а рядом — синяя гладь озера.
+- `public/art/tr/van/l2-3.jpg` — phrase — TR Ван 2 vocab «parkın karşısında»
+  - Draw: Кафе через дорогу от парка.
+- `public/art/tr/van/l2-4.jpg` — phrase — TR Ван 2 vocab «banka ile postane arasında»
+  - Draw: Маленький магазинчик между банком и почтой.
+- `public/art/tr/van/l2-5.jpg` — phrase — TR Ван 2 vocab «Uzak mı?»
+  - Draw: Мурзик смотрит на длинную дорогу.
+- `public/art/tr/van/l2-6.jpg` — phrase — TR Ван 2 vocab «Yürüyerek on dakika.»
+  - Draw: Следы лапок на дорожке и часы.
+- `public/art/tr/van/l2-7.jpg` — phrase — TR Ван 2 vocab «Sağ olun!»
+  - Draw: Мурзик кланяется прохожей.
+- `public/art/tr/van/yastik.jpg` — reward — TR Ван 2 reward «Yastık»
+  - Draw: Маленькая подушка с вышитым белым котом, у которого один глаз голубой, а другой зелёный.
+- `public/art/tr/van/l3-1.jpg` — phrase — TR Ван 3 vocab «Van kedisi»
+  - Draw: Белоснежная пушистая кошка сидит на пристани.
+- `public/art/tr/van/l3-2.jpg` — phrase — TR Ван 3 vocab «Bir gözü mavi, bir gözü yeşil.»
+  - Draw: Крупно: морда кошки, один глаз голубой, другой зелёный.
+- `public/art/tr/van/l3-3.jpg` — phrase — TR Ван 3 vocab «Yüzmeyi seviyor.»
+  - Draw: Белая кошка плывёт у пристани, вытянув шею.
+- `public/art/tr/van/l3-4.jpg` — phrase — TR Ван 3 vocab «sessiz»
+  - Draw: Тихая улица, на скамейке дремлет старик.
+- `public/art/tr/van/l3-5.jpg` — phrase — TR Ван 3 vocab «kalabalık»
+  - Draw: Людный базар, много покупателей.
+- `public/art/tr/van/l3-6.jpg` — phrase — TR Ван 3 vocab «biraz soğuk»
+  - Draw: Мурзик поёживается на ветру у озера.
+- `public/art/tr/van/l3-7.jpg` — phrase — TR Ван 3 vocab «hiç sıcak değil»
+  - Draw: Ледяная вода у берега, Мурзик трогает её лапкой.
+- `public/art/tr/van/oyuncak-kedi.jpg` — reward — TR Ван 3 reward «Oyuncak kedi»
+  - Draw: Мягкая игрушка — белая кошечка с бусинками-глазами: одна голубая, другая зелёная.
+- `public/art/tr/van/l4-1.jpg` — phrase — TR Ван 4 vocab «Sevgili Murzik,»
+  - Draw: Конверт с турецкой маркой, внутри письмо на голубой бумаге.
+- `public/art/tr/van/l4-2.jpg` — phrase — TR Ван 4 vocab «Umarım iyisindir.»
+  - Draw: Начало письма аккуратным почерком.
+- `public/art/tr/van/l4-3.jpg` — phrase — TR Ван 4 vocab «Kafeye yaşlı bir kedi geldi.»
+  - Draw: Рисунок на полях письма: кот у двери кафе.
+- `public/art/tr/van/l4-4.jpg` — phrase — TR Ван 4 vocab «Başında bir şapka vardı.»
+  - Draw: Рисунок на полях: шляпа.
+- `public/art/tr/van/l4-5.jpg` — phrase — TR Ван 4 vocab ««Asya'yı tanıyorum» dedi.»
+  - Draw: Мурзик читает письмо, широко раскрыв глаза.
+- `public/art/tr/van/l4-6.jpg` — phrase — TR Ван 4 vocab «Seni sordu.»
+  - Draw: Мурзик смотрит на Тома поверх письма.
+- `public/art/tr/van/l4-7.jpg` — phrase — TR Ван 4 vocab «Sevgiler, Ayşe Teyze»
+  - Draw: Подпись внизу письма и нарисованный стаканчик чая.
+- `public/art/tr/van/mektup-kagidi.jpg` — reward — TR Ван 4 reward «Mektup kâğıdı»
+  - Draw: Стопка голубой бумаги для писем с тонкой рамкой из цветочков, рядом конверты.
+- `public/art/tr/van/l5-1.jpg` — phrase — TR Ван 5 vocab «Sevgili Ayşe Teyze,»
+  - Draw: Мурзик начинает письмо, высунув кончик языка.
+- `public/art/tr/van/l5-2.jpg` — phrase — TR Ван 5 vocab «Ben iyiyim.»
+  - Draw: Мурзик рисует на полях улыбку.
+- `public/art/tr/van/l5-3.jpg` — phrase — TR Ван 5 vocab «Şimdi Van'dayım.»
+  - Draw: Мурзик рисует озеро и гору.
+- `public/art/tr/van/l5-4.jpg` — phrase — TR Ван 5 vocab «Burası çok güzel.»
+  - Draw: Вид из окна на синее озеро.
+- `public/art/tr/van/l5-5.jpg` — phrase — TR Ван 5 vocab «Sizi çok özledim.»
+  - Draw: Мурзик прижимает лапку к сердцу.
+- `public/art/tr/van/l5-6.jpg` — phrase — TR Ван 5 vocab «Mektubunuz için teşekkür ederim.»
+  - Draw: Мурзик бережно складывает письмо Айше-тейзе.
+- `public/art/tr/van/l5-7.jpg` — phrase — TR Ван 5 vocab «Ellerinizden öperim.»
+  - Draw: Мурзик дописывает последнюю строчку и ставит подпись-лапку.
+- `public/art/tr/van/dolma-kalem.jpg` — reward — TR Ван 5 reward «Dolma kalem»
+  - Draw: Старинная перьевая ручка тёмно-синего цвета с золотым пером лежит на голубом письме.
+- `public/art/tr/van/l6-1.jpg` — phrase — TR Ван 6 vocab «Postane açık mı?»
+  - Draw: Мурзик с письмом спешит по улице.
+- `public/art/tr/van/l6-2.jpg` — phrase — TR Ван 6 vocab «Saat beşe kadar açık.»
+  - Draw: Табличка с часами работы на двери почты.
+- `public/art/tr/van/l6-3.jpg` — phrase — TR Ван 6 vocab «kapalı»
+  - Draw: Табличка KAPALI на двери магазина.
+- `public/art/tr/van/l6-4.jpg` — phrase — TR Ван 6 vocab «Pazartesi kapalı.»
+  - Draw: Календарь, понедельник перечёркнут.
+- `public/art/tr/van/l6-5.jpg` — phrase — TR Ван 6 vocab «Saat kaçta açılıyor?»
+  - Draw: Мурзик стоит перед закрытой дверью музея.
+- `public/art/tr/van/l6-6.jpg` — phrase — TR Ван 6 vocab «akşama kadar»
+  - Draw: Солнце опускается к озеру.
+- `public/art/tr/van/l6-7.jpg` — phrase — TR Ван 6 vocab «Yetiştik!»
+  - Draw: Мурзик и Том вбегают в дверь почты за пять минут до закрытия.
+- `public/art/tr/van/kar-kuresi.jpg` — reward — TR Ван 6 reward «Kar küresi»
+  - Draw: Стеклянный снежный шар: внутри крепость на скале и синее озеро, а вокруг кружится снег.
+- `public/art/tr/van/l7-1.jpg` — phrase — TR Ван 7 vocab «Ben bugün rehberim!»
+  - Draw: Мурзик в кепке с флажком-лапкой, за ним Том.
+- `public/art/tr/van/l7-2.jpg` — phrase — TR Ван 7 vocab «Burası Van Kalesi.»
+  - Draw: Мурзик показывает лапкой на крепость.
+- `public/art/tr/van/l7-3.jpg` — phrase — TR Ван 7 vocab «Çok eski ve çok ünlü.»
+  - Draw: Древние камни крепостной стены.
+- `public/art/tr/van/l7-4.jpg` — phrase — TR Ван 7 vocab «Şurası bizim kahvaltı evimiz.»
+  - Draw: Вдали у озера — домик Гюльсум-тейзе.
+- `public/art/tr/van/l7-5.jpg` — phrase — TR Ван 7 vocab «Soru var mı?»
+  - Draw: Мурзик поворачивается к Тому, подняв лапку.
+- `public/art/tr/van/l7-6.jpg` — phrase — TR Ван 7 vocab «otlu peynir»
+  - Draw: Кусок белого сыра с зелёными травами.
+- `public/art/tr/van/l7-7.jpg` — phrase — TR Ван 7 vocab «Harika bir rehbersin!»
+  - Draw: Том аплодирует, Мурзик кланяется.
+- `public/art/tr/van/kahvalti-tabagi.jpg` — reward — TR Ван 7 reward «Kahvaltı tabağı»; TR Ван farewell 2
+  - Draw: Большая расписная тарелка с маленькими круглыми ячейками для сыра, мёда, оливок и варенья.
+- `public/art/tr/van/departure.jpg` — scene — TR Ван departure; TR Ван farewell 4
+  - Draw: Гюльсум-тейзе машет на прощание у дома завтраков, рядом сидит мокрая белая кошка Бончук.
+- `public/art/tr/van/letter.jpg` — scene — TR Ван farewell 1
+  - Draw: Вечер. Мурзик сидит на пуфе у окна и смотрит на тёмное озеро. Над ним, как облачка, воспоминания: белые террасы, ночная улочка, апельсиновый дворик, бирюзовый купол под снегом. В каждом — маленький белый кот в шляпе.
+- `public/art/tr/van/road.jpg` — scene — TR Ван farewell 5
+  - Draw: Автобус едет на юго-запад по горной дороге, внизу сверкает озеро.
+
+## Turkish course — Gaziantep (60 pictures)
+
+- `public/art/tr/gaziantep/arrival.jpg` — scene — TR Ван farewell 6; TR Газиантеп welcome
+  - Draw: Мурзик и Том в Газиантепе на медном базаре: блестящие медные кувшины и подносы, мастер стучит молоточком.
+- `public/art/tr/gaziantep/l1-1.jpg` — phrase — TR Газиантеп 1 vocab «Dün ne yaptın?»
+  - Draw: Элиф с косичками сидит на ступеньках медной лавки.
+- `public/art/tr/gaziantep/l1-2.jpg` — phrase — TR Газиантеп 1 vocab «Çarşıya gittim.»
+  - Draw: Мурзик идёт по медному базару с корзинкой.
+- `public/art/tr/gaziantep/l1-3.jpg` — phrase — TR Газиантеп 1 vocab «Baklava yedim.»
+  - Draw: Мурзик с крошками пахлавы на усах.
+- `public/art/tr/gaziantep/l1-4.jpg` — phrase — TR Газиантеп 1 vocab «Ne aldın?»
+  - Draw: Элиф заглядывает в корзинку Мурзика.
+- `public/art/tr/gaziantep/l1-5.jpg` — phrase — TR Газиантеп 1 vocab «Hiçbir şey yapmadım.»
+  - Draw: Том лежит на диване с закрытыми глазами.
+- `public/art/tr/gaziantep/l1-6.jpg` — phrase — TR Газиантеп 1 vocab «dün akşam»
+  - Draw: Вечерний базар, горят фонари.
+- `public/art/tr/gaziantep/l1-7.jpg` — phrase — TR Газиантеп 1 vocab «bütün gün»
+  - Draw: Часы, стрелки бегут по кругу от утра до вечера.
+- `public/art/tr/gaziantep/pul-biber.jpg` — reward — TR Газиантеп 1 reward «Pul biber»
+  - Draw: Холщовый мешочек с хлопьями красного перца, завязанный бечёвкой.
+- `public/art/tr/gaziantep/l2-1.jpg` — phrase — TR Газиантеп 2 vocab «Neredeydin?»
+  - Draw: Элиф стоит, уперев руки в бока.
+- `public/art/tr/gaziantep/l2-2.jpg` — phrase — TR Газиантеп 2 vocab «Müzedeydim.»
+  - Draw: Мурзик перед огромной древней мозаикой.
+- `public/art/tr/gaziantep/l2-3.jpg` — phrase — TR Газиантеп 2 vocab «Kiminle?»
+  - Draw: Элиф с любопытством наклоняет голову.
+- `public/art/tr/gaziantep/l2-4.jpg` — phrase — TR Газиантеп 2 vocab «Tom'la gittik.»
+  - Draw: Мурзик и Том идут рядом по старой улице.
+- `public/art/tr/gaziantep/l2-5.jpg` — phrase — TR Газиантеп 2 vocab «Siz ne gördünüz?»
+  - Draw: Элиф садится рядом, готовая слушать.
+- `public/art/tr/gaziantep/l2-6.jpg` — phrase — TR Газиантеп 2 vocab «Çingene Kızı»
+  - Draw: Знаменитая мозаика: лицо девочки с большими грустными глазами.
+- `public/art/tr/gaziantep/l2-7.jpg` — phrase — TR Газиантеп 2 vocab «Seni bekledim!»
+  - Draw: Элиф показывает на часы.
+- `public/art/tr/gaziantep/masa-ortusu.jpg` — reward — TR Газиантеп 2 reward «Masa örtüsü»
+  - Draw: Белая скатерть с вышитыми по краю гранатами и фисташковыми веточками.
+- `public/art/tr/gaziantep/l3-1.jpg` — phrase — TR Газиантеп 3 vocab «Önce Paris'teydim.»
+  - Draw: Воспоминание: Мурзик на крыше в Париже, вдали Эйфелева башня.
+- `public/art/tr/gaziantep/l3-2.jpg` — phrase — TR Газиантеп 3 vocab «Birden bir kartpostal geldi.»
+  - Draw: Открытка влетает в окно, Мурзик ловит её лапами.
+- `public/art/tr/gaziantep/l3-3.jpg` — phrase — TR Газиантеп 3 vocab «Sonra İstanbul'a geldim.»
+  - Draw: Воспоминание: паром на Босфоре, чайки.
+- `public/art/tr/gaziantep/l3-4.jpg` — phrase — TR Газиантеп 3 vocab «Orada Tom'la tanıştım.»
+  - Draw: Воспоминание: Том с фотоаппаратом протягивает Мурзику руку на набережной Кадыкёя.
+- `public/art/tr/gaziantep/l3-5.jpg` — phrase — TR Газиантеп 3 vocab «Sonunda buraya geldik.»
+  - Draw: Мурзик и Элиф сидят на ступеньках медной лавки.
+- `public/art/tr/gaziantep/l3-6.jpg` — phrase — TR Газиантеп 3 vocab «büyükannem»
+  - Draw: Старая открытка с подписью «Asya».
+- `public/art/tr/gaziantep/l3-7.jpg` — phrase — TR Газиантеп 3 vocab «Vay be!»
+  - Draw: Элиф широко раскрыла глаза и рот.
+- `public/art/tr/gaziantep/fistik.jpg` — reward — TR Газиантеп 3 reward «Fıstık»
+  - Draw: Полотняный мешочек с ярко-зелёными фисташками.
+- `public/art/tr/gaziantep/l4-1.jpg` — phrase — TR Газиантеп 4 vocab «Ne hissettin?»
+  - Draw: Элиф подпирает щёку кулачком и слушает.
+- `public/art/tr/gaziantep/l4-2.jpg` — phrase — TR Газиантеп 4 vocab «Çok şaşırdım.»
+  - Draw: Воспоминание: Мурзик с открыткой, глаза-блюдца.
+- `public/art/tr/gaziantep/l4-3.jpg` — phrase — TR Газиантеп 4 vocab «Çok mutlu oldum.»
+  - Draw: Воспоминание: Мурзик прыгает от радости.
+- `public/art/tr/gaziantep/l4-4.jpg` — phrase — TR Газиантеп 4 vocab «Biraz korktum.»
+  - Draw: Воспоминание: Мурзик у самолёта, ушки прижаты.
+- `public/art/tr/gaziantep/l4-5.jpg` — phrase — TR Газиантеп 4 vocab «Üzüldüm.»
+  - Draw: Воспоминание: Мурзик один у окна под дождём.
+- `public/art/tr/gaziantep/l4-6.jpg` — phrase — TR Газиантеп 4 vocab «Heyecanlandım.»
+  - Draw: Воспоминание: Мурзик с чемоданом на пороге.
+- `public/art/tr/gaziantep/l4-7.jpg` — phrase — TR Газиантеп 4 vocab «Çok cesursun!»
+  - Draw: Элиф с восхищением смотрит на Мурзика.
+- `public/art/tr/gaziantep/elifin-resmi.jpg` — reward — TR Газиантеп 4 reward «Elif'in resmi»
+  - Draw: Детский рисунок цветными карандашами: рыжий котёнок с чемоданом идёт по дорожке из открыток, впереди — силуэт кошки.
+- `public/art/tr/gaziantep/l5-1.jpg` — phrase — TR Газиантеп 5 vocab «Büyükanneni buldun mu?»
+  - Draw: Элиф осторожно трогает Мурзика за лапку.
+- `public/art/tr/gaziantep/l5-2.jpg` — phrase — TR Газиантеп 5 vocab «Henüz bulmadım.»
+  - Draw: Мурзик смотрит вдаль, на закат над базаром.
+- `public/art/tr/gaziantep/l5-3.jpg` — phrase — TR Газиантеп 5 vocab «Zaten biliyorum.»
+  - Draw: Элиф машет рукой: «Знаю-знаю!»
+- `public/art/tr/gaziantep/l5-4.jpg` — phrase — TR Газиантеп 5 vocab «Ödevin bitti mi?»
+  - Draw: Дедушка-медник заглядывает в тетрадь Элиф.
+- `public/art/tr/gaziantep/l5-5.jpg` — phrase — TR Газиантеп 5 vocab «Henüz bitmedi.»
+  - Draw: В тетради Элиф ещё много пустых строчек.
+- `public/art/tr/gaziantep/l5-6.jpg` — phrase — TR Газиантеп 5 vocab «Zaten yedim.»
+  - Draw: Мурзик гладит круглый животик.
+- `public/art/tr/gaziantep/l5-7.jpg` — phrase — TR Газиантеп 5 vocab «Hikâye henüz bitmedi!»
+  - Draw: Мурзик решительно сжимает лапку.
+- `public/art/tr/gaziantep/gezi-gunlugu.jpg` — reward — TR Газиантеп 5 reward «Gezi günlüğü»
+  - Draw: Толстый дневник в кожаной обложке с тиснёным компасом, внутри чистые страницы.
+- `public/art/tr/gaziantep/l6-1.jpg` — phrase — TR Газиантеп 6 vocab «Hatırlıyor musun?»
+  - Draw: Том держит на экране фотоаппарата снимок с моря.
+- `public/art/tr/gaziantep/l6-2.jpg` — phrase — TR Газиантеп 6 vocab «Bu fotoğrafı İzmir'de çektim.»
+  - Draw: Снимок набережной Измира на закате.
+- `public/art/tr/gaziantep/l6-3.jpg` — phrase — TR Газиантеп 6 vocab «Bak, yine o!»
+  - Draw: Элиф тычет пальчиком в уголок снимка.
+- `public/art/tr/gaziantep/l6-4.jpg` — phrase — TR Газиантеп 6 vocab «Her fotoğrafta var!»
+  - Draw: Веер снимков на столе, на каждом крошечный белый кот в шляпе.
+- `public/art/tr/gaziantep/l6-5.jpg` — phrase — TR Газиантеп 6 vocab «Hiç fark etmedim.»
+  - Draw: Том хватается за голову.
+- `public/art/tr/gaziantep/l6-6.jpg` — phrase — TR Газиантеп 6 vocab «Bu tesadüf değil.»
+  - Draw: Мурзик серьёзно смотрит на снимки.
+- `public/art/tr/gaziantep/l6-7.jpg` — phrase — TR Газиантеп 6 vocab «Bizi takip ediyor.»
+  - Draw: Тень кота в шляпе на стене.
+- `public/art/tr/gaziantep/fotograf-albumu.jpg` — reward — TR Газиантеп 6 reward «Fotoğraf albümü»
+  - Draw: Большой фотоальбом с картонными страницами, в нём снимки из всех турецких городов.
+- `public/art/tr/gaziantep/l7-1.jpg` — phrase — TR Газиантеп 7 vocab «Şimdiye kadar on üç şehir gördüm.»
+  - Draw: Карта Турции, на ней флажки-лапки по всем городам.
+- `public/art/tr/gaziantep/l7-2.jpg` — phrase — TR Газиантеп 7 vocab «En çok hangi şehri sevdin?»
+  - Draw: Дедушка Элиф в кожаном фартуке спрашивает у Мурзика.
+- `public/art/tr/gaziantep/l7-3.jpg` — phrase — TR Газиантеп 7 vocab «Hepsini sevdim!»
+  - Draw: Мурзик раскидывает лапы, как будто обнимает весь мир.
+- `public/art/tr/gaziantep/l7-4.jpg` — phrase — TR Газиантеп 7 vocab «yolculuk»
+  - Draw: Чемодан Мурзика, весь в наклейках городов.
+- `public/art/tr/gaziantep/l7-5.jpg` — phrase — TR Газиантеп 7 vocab «Çok şey öğrendim.»
+  - Draw: Мурзик листает свой дневник путешествий.
+- `public/art/tr/gaziantep/l7-6.jpg` — phrase — TR Газиантеп 7 vocab «bakır tepsi»
+  - Draw: Сияющий медный поднос с узором из гранатов.
+- `public/art/tr/gaziantep/l7-7.jpg` — phrase — TR Газиантеп 7 vocab «Yolun açık olsun!»
+  - Draw: Дедушка Элиф кладёт ладонь на голову Мурзику.
+- `public/art/tr/gaziantep/bakir-tepsi.jpg` — reward — TR Газиантеп 7 reward «Bakır tepsi»; TR Газиантеп farewell 2
+  - Draw: Сияющий медный поднос ручной работы. По краю отчеканены гранаты, а в центре — маленький рыжий котёнок.
+- `public/art/tr/gaziantep/departure.jpg` — scene — TR Газиантеп departure; TR Газиантеп farewell 4
+  - Draw: Элиф и её дедушка в кожаном фартуке машут на прощание у медной лавки.
+- `public/art/tr/gaziantep/photos.jpg` — scene — TR Газиантеп farewell 1
+  - Draw: Ночь. Мурзик сидит над раскрытым фотоальбомом. На каждом снимке в уголке — белый кот в шляпе. На последней странице пустое место.
+- `public/art/tr/gaziantep/road.jpg` — scene — TR Газиантеп farewell 5
+  - Draw: Автобус едет на восток по жёлтой равнине к городу на горе.
+
+## Turkish course — Mardin (62 pictures)
+
+- `public/art/tr/mardin/arrival.jpg` — scene — TR Газиантеп farewell 6; TR Мардин welcome
+  - Draw: Мурзик и Том перед Мардином: медовые каменные дома ступенями поднимаются по склону горы, внизу бескрайняя равнина.
+- `public/art/tr/mardin/l1-1.jpg` — phrase — TR Мардин 1 vocab «Görüşmeyeli çok oldu!»
+  - Draw: Том и его друг Джан крепко обнимаются на автовокзале.
+- `public/art/tr/mardin/l1-2.jpg` — phrase — TR Мардин 1 vocab «Uzun zamandır görüşmedik.»
+  - Draw: Джан с фотоаппаратом на шее хлопает Тома по плечу.
+- `public/art/tr/mardin/l1-3.jpg` — phrase — TR Мардин 1 vocab «Tanıştırayım: bu Murzik.»
+  - Draw: Том показывает на Мурзика, Мурзик машет лапкой.
+- `public/art/tr/mardin/l1-4.jpg` — phrase — TR Мардин 1 vocab «Nasıl gidiyor?»
+  - Draw: Джан улыбается, прищурившись на солнце.
+- `public/art/tr/mardin/l1-5.jpg` — phrase — TR Мардин 1 vocab «Her şey yolunda.»
+  - Draw: Том показывает большой палец.
+- `public/art/tr/mardin/l1-6.jpg` — phrase — TR Мардин 1 vocab «Hâlâ fotoğrafçı mısın?»
+  - Draw: Том кивает на фотоаппарат Джана.
+- `public/art/tr/mardin/l1-7.jpg` — phrase — TR Мардин 1 vocab «eski arkadaş»
+  - Draw: Старая фотография: юные Том и Джан с фотоаппаратами.
+- `public/art/tr/mardin/kupa.jpg` — reward — TR Мардин 1 reward «Kupa»
+  - Draw: Большая керамическая кружка, на ней нарисован рыжий котёнок с фотоаппаратом.
+- `public/art/tr/mardin/l2-1.jpg` — phrase — TR Мардин 2 vocab «Gündüz sıcak, gece serin.»
+  - Draw: Половина картинки — солнце, половина — луна над каменным городом.
+- `public/art/tr/mardin/l2-2.jpg` — phrase — TR Мардин 2 vocab «Rüzgâr esiyor.»
+  - Draw: Шарф Мурзика развевается на ветру.
+- `public/art/tr/mardin/l2-3.jpg` — phrase — TR Мардин 2 vocab «Yarın hava nasıl olacak?»
+  - Draw: Том смотрит на телефоне прогноз.
+- `public/art/tr/mardin/l2-4.jpg` — phrase — TR Мардин 2 vocab «Bulutlu olacak.»
+  - Draw: Облака над равниной.
+- `public/art/tr/mardin/l2-5.jpg` — phrase — TR Мардин 2 vocab «Ceketini al!»
+  - Draw: Джан протягивает Мурзику маленькую курточку.
+- `public/art/tr/mardin/l2-6.jpg` — phrase — TR Мардин 2 vocab «ova»
+  - Draw: Бескрайняя жёлтая равнина до горизонта.
+- `public/art/tr/mardin/l2-7.jpg` — phrase — TR Мардин 2 vocab «Güneş batıyor.»
+  - Draw: Красное солнце опускается за равнину.
+- `public/art/tr/mardin/durbun.jpg` — reward — TR Мардин 2 reward «Dürbün»
+  - Draw: Маленькая латунная подзорная труба на треноге у окна с видом на равнину.
+- `public/art/tr/mardin/l3-1.jpg` — phrase — TR Мардин 3 vocab «Mardin kahvaltısı»
+  - Draw: Каменная терраса, стол уставлен тарелочками с сыром, зеленью и пастами.
+- `public/art/tr/mardin/l3-2.jpg` — phrase — TR Мардин 3 vocab «Bir menengiç kahvesi, lütfen.»
+  - Draw: Чашечка густого светлого кофе с пенкой.
+- `public/art/tr/mardin/l3-3.jpg` — phrase — TR Мардин 3 vocab «Bu acı mı?»
+  - Draw: Мурзик с подозрением нюхает красную пасту.
+- `public/art/tr/mardin/l3-4.jpg` — phrase — TR Мардин 3 vocab «Biraz acı.»
+  - Draw: Мурзик пробует, у него краснеют уши.
+- `public/art/tr/mardin/l3-5.jpg` — phrase — TR Мардин 3 vocab «Doydum!»
+  - Draw: Мурзик откинулся на спинку стула и гладит животик.
+- `public/art/tr/mardin/l3-6.jpg` — phrase — TR Мардин 3 vocab «Zeytini sevmiyorum.»
+  - Draw: Мурзик отодвигает лапой тарелочку с оливками.
+- `public/art/tr/mardin/l3-7.jpg` — phrase — TR Мардин 3 vocab «Bugün ben ısmarlıyorum!»
+  - Draw: Джан забирает у официанта счёт.
+- `public/art/tr/mardin/menengic-kahvesi.jpg` — reward — TR Мардин 3 reward «Menengiç kahvesi»
+  - Draw: Маленькая жестяная банка с узором, внутри молотые зёрна дикой фисташки.
+- `public/art/tr/mardin/l4-1.jpg` — phrase — TR Мардин 4 vocab «Merdivenlerden yukarı çık.»
+  - Draw: Узкая каменная лестница между медовыми домами.
+- `public/art/tr/mardin/l4-2.jpg` — phrase — TR Мардин 4 vocab «aşağı»
+  - Draw: Мурзик смотрит вниз с высокой лестницы.
+- `public/art/tr/mardin/l4-3.jpg` — phrase — TR Мардин 4 vocab «dar sokak»
+  - Draw: Улочка такая узкая, что ослик еле проходит.
+- `public/art/tr/mardin/l4-4.jpg` — phrase — TR Мардин 4 vocab «Bu sabun kaç lira?»
+  - Draw: Лавочка с горками зелёного мыла.
+- `public/art/tr/mardin/l4-5.jpg` — phrase — TR Мардин 4 vocab «Biraz pahalı.»
+  - Draw: Мурзик заглядывает в свой кошелёк.
+- `public/art/tr/mardin/l4-6.jpg` — phrase — TR Мардин 4 vocab «Son fiyat ne?»
+  - Draw: Мурзик хитро улыбается продавцу.
+- `public/art/tr/mardin/l4-7.jpg` — phrase — TR Мардин 4 vocab «Tamam, alıyorum!»
+  - Draw: Мурзик протягивает монетки.
+- `public/art/tr/mardin/sabun.jpg` — reward — TR Мардин 4 reward «Sabun»
+  - Draw: Брусок зелёного мыла с выдавленным узором, завёрнутый в бумагу и перевязанный ниткой.
+- `public/art/tr/mardin/l5-1.jpg` — phrase — TR Мардин 5 vocab «Müzik çalıyor!»
+  - Draw: На площади играют барабан и зурна.
+- `public/art/tr/mardin/l5-2.jpg` — phrase — TR Мардин 5 vocab «şenlik»
+  - Draw: Площадь, увешанная фонариками.
+- `public/art/tr/mardin/l5-3.jpg` — phrase — TR Мардин 5 vocab «Hadi, gel!»
+  - Draw: Девушка из хоровода протягивает Мурзику руку.
+- `public/art/tr/mardin/l5-4.jpg` — phrase — TR Мардин 5 vocab «Dans edelim!»
+  - Draw: Мурзик и Том в хороводе.
+- `public/art/tr/mardin/l5-5.jpg` — phrase — TR Мардин 5 vocab «İyi bayramlar!»
+  - Draw: Соседи обмениваются конфетами.
+- `public/art/tr/mardin/l5-6.jpg` — phrase — TR Мардин 5 vocab «Size de!»
+  - Draw: Старик-сосед кланяется в ответ.
+- `public/art/tr/mardin/l5-7.jpg` — phrase — TR Мардин 5 vocab «Ne kadar eğlenceli!»
+  - Draw: Мурзик кружится, раскинув лапы.
+- `public/art/tr/mardin/telkari-kutu.jpg` — reward — TR Мардин 5 reward «Telkari kutu»
+  - Draw: Крошечная шкатулка из тонкой серебряной проволоки, сплетённой в кружево.
+- `public/art/tr/mardin/l6-1.jpg` — phrase — TR Мардин 6 vocab «Affedersiniz… Tanışıyor muyuz?»
+  - Draw: На террасе в лунном свете сидит старый белый кот в шляпе.
+- `public/art/tr/mardin/l6-2.jpg` — phrase — TR Мардин 6 vocab «Asya'nın torunu musun?»
+  - Draw: Кот в шляпе медленно поворачивает голову.
+- `public/art/tr/mardin/l6-3.jpg` — phrase — TR Мардин 6 vocab «Ona çok benziyorsun.»
+  - Draw: Глаза кота в шляпе тепло светятся.
+- `public/art/tr/mardin/l6-4.jpg` — phrase — TR Мардин 6 vocab «Yakında görüşeceğiz.»
+  - Draw: Кот в шляпе встаёт и приподнимает шляпу.
+- `public/art/tr/mardin/l6-5.jpg` — phrase — TR Мардин 6 vocab «Bekleyin! Gitmeyin!»
+  - Draw: Мурзик тянет лапу, но на террасе уже пусто.
+- `public/art/tr/mardin/l6-6.jpg` — phrase — TR Мардин 6 vocab «Bir not bıraktı.»
+  - Draw: На тахте лежит сложенный листок.
+- `public/art/tr/mardin/l6-7.jpg` — phrase — TR Мардин 6 vocab «Ben de onu arıyorum.»
+  - Draw: Крупно: записка аккуратным старинным почерком.
+- `public/art/tr/mardin/sedir.jpg` — reward — TR Мардин 6 reward «Sedir»
+  - Draw: Низкая тахта у окна, покрытая ковром, с вышитыми подушками. На ней лежит белая шерстинка.
+- `public/art/tr/mardin/l7-1.jpg` — phrase — TR Мардин 7 vocab «A1 sınavı»
+  - Draw: Мурзик за столом с карандашом, на листе крупно: A1.
+- `public/art/tr/mardin/l7-2.jpg` — phrase — TR Мардин 7 vocab «Seninle gurur duyuyoruz!»
+  - Draw: Том и Джан аплодируют.
+- `public/art/tr/mardin/l7-3.jpg` — phrase — TR Мардин 7 vocab «Başardın!»
+  - Draw: Мурзик поднимает над головой лист с большой пятёркой.
+- `public/art/tr/mardin/l7-4.jpg` — phrase — TR Мардин 7 vocab «A1 seviyesi bitti.»
+  - Draw: Карта Турции, все города отмечены лапками.
+- `public/art/tr/mardin/l7-5.jpg` — phrase — TR Мардин 7 vocab «Notta ne yazıyor?»
+  - Draw: Мурзик разворачивает записку.
+- `public/art/tr/mardin/l7-6.jpg` — phrase — TR Мардин 7 vocab «Safranbolu»
+  - Draw: Старый город с белыми деревянными домами в зелёной долине.
+- `public/art/tr/mardin/l7-7.jpg` — phrase — TR Мардин 7 vocab «Yeni bir yolculuk başlıyor!»
+  - Draw: Мурзик с чемоданом на пороге, впереди дорога.
+- `public/art/tr/mardin/fener.jpg` — reward — TR Мардин 7 reward «Fener»
+  - Draw: Кованый медный фонарь с цветными стёклышками. Внутри горит свечка, на стенах — разноцветные узоры.
+- `public/art/tr/mardin/departure.jpg` — scene — TR Мардин departure; TR Мардин farewell 4
+  - Draw: Джан с фотоаппаратом машет на прощание на автовокзале Мардина.
+- `public/art/tr/mardin/finale-1.jpg` — scene — TR Мардин farewell 1
+  - Draw: Мурзик стоит в своей мардинской комнате: тахта с подушками, подзорная труба у окна, кружка с котом, серебряная шкатулочка. В лапах — кованый фонарь с цветными стёклами.
+- `public/art/tr/mardin/finale-2.jpg` — scene — TR Мардин farewell 2
+  - Draw: Мурзик и Том на террасе на закате подняли руки вверх. За ними — длинная дорога с четырнадцатью маленькими лапками-отметками.
+- `public/art/tr/mardin/suitcase.jpg` — scene — TR Мардин farewell 3
+  - Draw: Раскрытый чемодан Мурзика: медная джезва, стаканчики-тюльпаны, шёлковый платок, часы, хлопковое полотенце, назар, маленький саз, мозаичная лампа, глиняный кувшин, белый плед, двойной чайник, тарелка для завтрака, медный поднос и кованый фонарь. В серебряной шкатулочке — открытки бабушки Аси и записка с подписью «L.».
+- `public/art/tr/mardin/flight.jpg` — scene — TR Мардин farewell 5
+  - Draw: Самолёт летит на северо-запад через всю Турцию.
+
+## Turkish course — Safranbolu (1 pictures)
+
+- `public/art/tr/safranbolu/arrival.jpg` — scene — TR Мардин farewell 6
+  - Draw: Мурзик и Том в Сафранболу: белые деревянные дома с тёмными балками в зелёной долине, мощёные улочки.
+
+# English course
+
+The third course, «Мурзик и кафе»: English for Russian speakers. Tom takes Murzik from Paris to London, to his grandmother Mrs Hope, who once had a little café behind a blue door. Her old recipe book is missing pages; Murzik collects them in 14 English-speaking cities and, at the end, opens the café again. All pictures go to `public/art/en/<city>/`. The `draw` notes for this course are written in Russian — draw exactly what they say.
+
+## Style and cast for the English course
+
+- Same storybook style, same **Murzik** and same **Tom** as in the other courses.
+- **No flags.** No words or letters in the pictures (numbers on clocks, calendars and price tags are fine). Recipe pages show only a drawing of the dish and a few lines of unreadable handwriting.
+- **Only Murzik is a talking cat.** Everyone else is a human. Other animals (Biscuit the dog, koalas, a bear, a whale, kookaburras) are ordinary animals.
+- **Hope's Café** (London): a tiny old café with a **blue door**, a brass bell over the door and a table by the window. In the prologue and at the start it is closed and dusty; in the final pictures it is open, warm and full of friends.
+- **Mrs Hope** (London): Tom's grandmother, about 75, small and lively, silver hair in a bun, a little hat, a cardigan and an apron; a retired pastry cook. In old photos she is a young woman in an apron.
+- **Priya** (Oxford): a cheerful student of about 20 with a long dark braid and a backpack. **Mrs Green** (Bath): a round, rosy baker with flour on her apron.
+- **The MacDonalds** (Edinburgh): Fiona (short hair, kind), Ian (tall, red hair and beard), the ten-year-old twins Rory and Isla (freckles, red hair), Granny Morag (glasses, knitting) and her small shaggy dog Biscuit.
+- **Seán** (Dublin): a young barista with curly dark hair who plays the fiddle. **Marcus** (New York): a big, smiling diner cook in a white apron. **Rosie**: his chatty neighbour with curly hair, a nurse.
+- **Emily** (Boston): a student in a yellow jacket who works in a clothes shop. **Tony** (Chicago): a jolly taxi driver with a yellow taxi. **Bernadette** (New Orleans): a warm jazz singer in a bright headscarf.
+- **Daniel** (San Francisco): a café owner of about 40, glasses, apron, once a programmer. **Dr Lee** (Vancouver): a calm doctor; **Sam**, her son, a forest ranger. **The Chens** (Toronto): Michael, Lucy and Grandma May.
+- **Chloe** (Sydney): a sunny surfer who bakes pies. **Grace** (Wellington): Mrs Hope's oldest friend, about 75, white curls and a bright jumper.
+- Phrase pictures and rewards: square, 1408 × 1408. Scenes: portrait, 1152 × 1728.
+
+## English course — Prologue (Paris) (3 pictures)
+
+- `public/art/en/prologue/1.jpg` — scene — EN Prologue find
+  - Draw: Утро в Париже. Том сидит у Мурзика на кухне и показывает ему старую фотографию: маленькое кафе с синей дверью и цветами в окнах.
+- `public/art/en/prologue/2.jpg` — scene — EN Prologue postcard
+  - Draw: Старая фотография крупно: маленькое кафе с синей дверью, у входа улыбается молодая женщина в фартуке. Вывеску не разобрать.
+- `public/art/en/prologue/3.jpg` — scene — EN Prologue journey
+  - Draw: Мурзик и Том с чемоданами в поезде. За окном утреннее море, впереди Лондон.
+
+## English course — London (63 pictures)
+
+- `public/art/en/london/l1-1.jpg` — phrase — EN Лондон 1 vocab «Hello!»
+  - Draw: Мурзик на вокзале улыбается и машет лапой.
+- `public/art/en/london/l1-2.jpg` — phrase — EN Лондон 1 vocab «Hi!»
+  - Draw: Мурзик весело машет Тому.
+- `public/art/en/london/l1-3.jpg` — phrase — EN Лондон 1 vocab «What's your name?»
+  - Draw: Пожилая дама в шляпке с любопытством наклоняется к Мурзику.
+- `public/art/en/london/l1-4.jpg` — phrase — EN Лондон 1 vocab «My name is Murzik.»
+  - Draw: Мурзик прикладывает лапу к груди и гордо называет своё имя.
+- `public/art/en/london/l1-5.jpg` — phrase — EN Лондон 1 vocab «I'm Tom.»
+  - Draw: Том показывает на себя и улыбается.
+- `public/art/en/london/l1-6.jpg` — phrase — EN Лондон 1 vocab «Nice to meet you.»
+  - Draw: Мурзик и пожилая дама пожимают друг другу руку и лапу.
+- `public/art/en/london/l1-7.jpg` — phrase — EN Лондон 1 vocab «Nice to meet you too.»
+  - Draw: Дама в шляпке тепло улыбается в ответ.
+- `public/art/en/london/cup.jpg` — reward — EN Лондон 1 reward «Cup and saucer»
+  - Draw: Мурзик в своей новой комнате держит фарфоровую чашку с блюдцем в мелкий голубой цветочек.
+- `public/art/en/london/l2-1.jpg` — phrase — EN Лондон 2 vocab «Good morning!»
+  - Draw: Миссис Хоуп в фартуке открывает окно, светит утреннее солнце.
+- `public/art/en/london/l2-2.jpg` — phrase — EN Лондон 2 vocab «How are you?»
+  - Draw: Миссис Хоуп ласково смотрит на Мурзика поверх очков.
+- `public/art/en/london/l2-3.jpg` — phrase — EN Лондон 2 vocab «I'm fine, thanks.»
+  - Draw: Мурзик спокойно улыбается и показывает большой палец.
+- `public/art/en/london/l2-4.jpg` — phrase — EN Лондон 2 vocab «I'm great!»
+  - Draw: Мурзик подпрыгивает от радости, подняв обе лапы.
+- `public/art/en/london/l2-5.jpg` — phrase — EN Лондон 2 vocab «Not bad.»
+  - Draw: Том пожимает плечами и улыбается.
+- `public/art/en/london/l2-6.jpg` — phrase — EN Лондон 2 vocab «So-so.»
+  - Draw: Том, сонный и растрёпанный, покачивает рукой туда-сюда.
+- `public/art/en/london/l2-7.jpg` — phrase — EN Лондон 2 vocab «And you?»
+  - Draw: Мурзик дружелюбно показывает лапой на миссис Хоуп.
+- `public/art/en/london/cushion.jpg` — reward — EN Лондон 2 reward «Cushion»
+  - Draw: Мурзик уютно устроился в кресле на мягкой вязаной подушке в красно-белую клетку.
+- `public/art/en/london/l3-1.jpg` — phrase — EN Лондон 3 vocab «Thank you!»
+  - Draw: Мурзик держит маленькую коробку с подарком и благодарно улыбается Тому.
+- `public/art/en/london/l3-2.jpg` — phrase — EN Лондон 3 vocab «Thanks!»
+  - Draw: Мурзик весело показывает Тому большой палец.
+- `public/art/en/london/l3-3.jpg` — phrase — EN Лондон 3 vocab «You're welcome.»
+  - Draw: Том тепло улыбается и делает скромный жест рукой.
+- `public/art/en/london/l3-4.jpg` — phrase — EN Лондон 3 vocab «Tea, please.»
+  - Draw: Мурзик вежливо протягивает чашку.
+- `public/art/en/london/l3-5.jpg` — phrase — EN Лондон 3 vocab «Sorry!»
+  - Draw: Том случайно наступил Мурзику на хвост и виновато поднимает ногу.
+- `public/art/en/london/l3-6.jpg` — phrase — EN Лондон 3 vocab «Excuse me.»
+  - Draw: Мурзик вежливо поднимает лапу, чтобы пройти мимо дамы в узком коридоре.
+- `public/art/en/london/l3-7.jpg` — phrase — EN Лондон 3 vocab «That's OK.»
+  - Draw: Мурзик улыбается и добродушно машет хвостом: всё в порядке.
+- `public/art/en/london/jam.jpg` — reward — EN Лондон 3 reward «Jam»
+  - Draw: На полке стоит стеклянная банка клубничного джема с крышкой в красно-белую клетку.
+- `public/art/en/london/l4-1.jpg` — phrase — EN Лондон 4 vocab «I don't understand.»
+  - Draw: Мурзик чешет за ухом с растерянной мордочкой, над ним знак вопроса.
+- `public/art/en/london/l4-2.jpg` — phrase — EN Лондон 4 vocab «Can you repeat that, please?»
+  - Draw: Мурзик прикладывает лапу к уху.
+- `public/art/en/london/l4-3.jpg` — phrase — EN Лондон 4 vocab «Slowly, please.»
+  - Draw: Мурзик мягким жестом показывает «помедленнее». Рядом ползёт улитка.
+- `public/art/en/london/l4-4.jpg` — phrase — EN Лондон 4 vocab «How do you spell it?»
+  - Draw: Мурзик держит блокнот и карандаш, готовый записывать.
+- `public/art/en/london/l4-5.jpg` — phrase — EN Лондон 4 vocab «What does it mean?»
+  - Draw: Мурзик показывает на незнакомое слово в газете.
+- `public/art/en/london/l4-6.jpg` — phrase — EN Лондон 4 vocab «How do you say it in English?»
+  - Draw: Мурзик держит в лапах чайник и вопросительно смотрит.
+- `public/art/en/london/l4-7.jpg` — phrase — EN Лондон 4 vocab «I don't know.»
+  - Draw: Том разводит руками с забавной растерянной улыбкой.
+- `public/art/en/london/towel.jpg` — reward — EN Лондон 4 reward «Tea towel»
+  - Draw: На крючке висит льняное кухонное полотенце с нарисованным чайником и сконами.
+- `public/art/en/london/l5-1.jpg` — phrase — EN Лондон 5 vocab «one, two, three»
+  - Draw: Три ступеньки лестницы, на каждой сидит по котёнку-игрушке.
+- `public/art/en/london/l5-2.jpg` — phrase — EN Лондон 5 vocab «four, five, six»
+  - Draw: Шесть чашек выстроились в ряд на полке.
+- `public/art/en/london/l5-3.jpg` — phrase — EN Лондон 5 vocab «seven, eight»
+  - Draw: Восемь сконов на тарелке.
+- `public/art/en/london/l5-4.jpg` — phrase — EN Лондон 5 vocab «nine, ten»
+  - Draw: Мурзик показывает десять пальцев на двух лапах.
+- `public/art/en/london/l5-5.jpg` — phrase — EN Лондон 5 vocab «zero»
+  - Draw: Пустая тарелка — ни одного скона.
+- `public/art/en/london/l5-6.jpg` — phrase — EN Лондон 5 vocab «How many?»
+  - Draw: Миссис Хоуп показывает на тарелку со сконами и вопросительно поднимает брови.
+- `public/art/en/london/l5-7.jpg` — phrase — EN Лондон 5 vocab «What's your phone number?»
+  - Draw: Том держит телефон и готов записывать.
+- `public/art/en/london/clock.jpg` — reward — EN Лондон 5 reward «Alarm clock»
+  - Draw: На тумбочке стоит круглый красный будильник с двумя звонками сверху.
+- `public/art/en/london/l6-1.jpg` — phrase — EN Лондон 6 vocab «Yes, please.»
+  - Draw: Мурзик радостно кивает и протягивает лапы.
+- `public/art/en/london/l6-2.jpg` — phrase — EN Лондон 6 vocab «No, thank you.»
+  - Draw: Мурзик вежливо поднимает лапу и с улыбкой отказывается.
+- `public/art/en/london/l6-3.jpg` — phrase — EN Лондон 6 vocab «Of course!»
+  - Draw: Мурзик горячо кивает, хвост трубой.
+- `public/art/en/london/l6-4.jpg` — phrase — EN Лондон 6 vocab «Maybe.»
+  - Draw: Мурзик постукивает лапой по подбородку.
+- `public/art/en/london/l6-5.jpg` — phrase — EN Лондон 6 vocab «Let's go!»
+  - Draw: Мурзик и Том дают друг другу пять.
+- `public/art/en/london/l6-6.jpg` — phrase — EN Лондон 6 vocab «Is it your café? — Yes, it is.»
+  - Draw: Миссис Хоуп стоит у старой синей двери и кивает.
+- `public/art/en/london/l6-7.jpg` — phrase — EN Лондон 6 vocab «It's closed.»
+  - Draw: На синей двери висит табличка, окна в пыли.
+- `public/art/en/london/recipe-book.jpg` — reward — EN Лондон 6 reward «Recipe book»
+  - Draw: Толстая старая книга рецептов в потёртой синей обложке. Между страницами видны пустые места, где листы вырваны.
+- `public/art/en/london/l7-1.jpg` — phrase — EN Лондон 7 vocab «Goodbye!»
+  - Draw: Мурзик вежливо машет миссис Хоуп у двери.
+- `public/art/en/london/l7-2.jpg` — phrase — EN Лондон 7 vocab «Bye!»
+  - Draw: Мурзик весело машет Тому с другой стороны улицы.
+- `public/art/en/london/l7-3.jpg` — phrase — EN Лондон 7 vocab «See you soon!»
+  - Draw: Миссис Хоуп обнимает Мурзика на прощание.
+- `public/art/en/london/l7-4.jpg` — phrase — EN Лондон 7 vocab «See you tomorrow!»
+  - Draw: Вечером соседский мальчик машет с улицы. В небе месяц.
+- `public/art/en/london/l7-5.jpg` — phrase — EN Лондон 7 vocab «Have a nice day!»
+  - Draw: Солнечным утром почтальон улыбается и машет Мурзику.
+- `public/art/en/london/l7-6.jpg` — phrase — EN Лондон 7 vocab «You too!»
+  - Draw: Мурзик с широкой улыбкой машет в ответ.
+- `public/art/en/london/l7-7.jpg` — phrase — EN Лондон 7 vocab «Have a good trip!»
+  - Draw: Миссис Хоуп машет платком, а Мурзик несёт маленький чемодан.
+- `public/art/en/london/bell.jpg` — reward — EN Лондон 7 reward «Café bell»; EN Лондон farewell 2
+  - Draw: Мурзик держит в лапах старый латунный колокольчик на изогнутом крючке — такие вешают над дверью кафе.
+- `public/art/en/london/arrival.jpg` — scene — EN Лондон welcome
+  - Draw: Мурзик и Том выходят с чемоданами из поезда на большом лондонском вокзале со стеклянной крышей. Их встречает пожилая дама в шляпке и машет рукой.
+- `public/art/en/london/departure.jpg` — scene — EN Лондон departure; EN Лондон farewell 4
+  - Draw: Миссис Хоуп машет на прощание у синей двери своего старого кафе.
+- `public/art/en/london/book.jpg` — scene — EN Лондон farewell 1
+  - Draw: Крупно: раскрытая старая книга рецептов. На первой странице рецепт сконов и аккуратная приписка от руки на полях. Дальше видны пустые места от вырванных страниц.
+- `public/art/en/london/train.jpg` — scene — EN Лондон farewell 5
+  - Draw: Красный поезд едет по зелёным английским полям.
+- `public/art/en/london/key.jpg` — scene — EN Веллингтон farewell 4
+  - Draw: Миссис Хоуп у синей двери своего старого кафе протягивает Мурзику старинный ключ. Том стоит рядом с фотоаппаратом.
+- `public/art/en/london/opening.jpg` — scene — EN Веллингтон farewell 5
+  - Draw: Кафе за синей дверью снова открыто: колокольчик над дверью, неоновая чашка в окне, часы на стене, клетчатый плед на кресле. Внутри Прия, миссис Грин, семья Макдональд, Шон со скрипкой, Маркус, Рози, Эмили, Тони, Бернадетт, Дэниел, доктор Ли и Сэм, семья Чен, Хлоя и Грейс. Миссис Хоуп сидит за столиком у окна.
+- `public/art/en/london/opening-hope.jpg` — scene — EN Веллингтон farewell 6
+  - Draw: Миссис Хоуп сидит за столиком у окна с чашкой чая, улыбается и вытирает слезу. Мурзик в фартуке ставит перед ней тарелку со сконами.
+
+## English course — Oxford (60 pictures)
+
+- `public/art/en/oxford/arrival.jpg` — scene — EN Лондон farewell 6; EN Оксфорд welcome
+  - Draw: Мурзик и Том в Оксфорде: старинные каменные здания с башенками, студенты на велосипедах.
+- `public/art/en/oxford/l1-1.jpg` — phrase — EN Оксфорд 1 vocab «Where are you from?»
+  - Draw: Девушка с рюкзаком и длинной косой с любопытством смотрит на Мурзика.
+- `public/art/en/oxford/l1-2.jpg` — phrase — EN Оксфорд 1 vocab «I'm from Russia.»
+  - Draw: Мурзик показывает на маленький глобус.
+- `public/art/en/oxford/l1-3.jpg` — phrase — EN Оксфорд 1 vocab «Tom is from England.»
+  - Draw: Том стоит под старинной каменной аркой и машет.
+- `public/art/en/oxford/l1-4.jpg` — phrase — EN Оксфорд 1 vocab «He's from London.»
+  - Draw: Мурзик показывает лапой на Тома.
+- `public/art/en/oxford/l1-5.jpg` — phrase — EN Оксфорд 1 vocab «She's from Oxford.»
+  - Draw: Мурзик показывает лапой на девушку с косой.
+- `public/art/en/oxford/l1-6.jpg` — phrase — EN Оксфорд 1 vocab «Her family is from India.»
+  - Draw: Фотография большой весёлой семьи на фоне цветущего сада.
+- `public/art/en/oxford/l1-7.jpg` — phrase — EN Оксфорд 1 vocab «Welcome to Oxford!»
+  - Draw: Девушка с косой раскидывает руки у ворот старого колледжа.
+- `public/art/en/oxford/lamp.jpg` — reward — EN Оксфорд 1 reward «Desk lamp»
+  - Draw: На письменном столе стоит старая зелёная лампа с латунной ножкой. Она мягко светит на раскрытую книгу.
+- `public/art/en/oxford/l2-1.jpg` — phrase — EN Оксфорд 2 vocab «I'm Russian.»
+  - Draw: Мурзик гордо стоит с матрёшкой в лапах.
+- `public/art/en/oxford/l2-2.jpg` — phrase — EN Оксфорд 2 vocab «Tom is English.»
+  - Draw: Том с чашкой чая и зонтом под мышкой.
+- `public/art/en/oxford/l2-3.jpg` — phrase — EN Оксфорд 2 vocab «Hiroshi is Japanese.»
+  - Draw: Студент в очках вежливо кланяется.
+- `public/art/en/oxford/l2-4.jpg` — phrase — EN Оксфорд 2 vocab «Ana is Spanish.»
+  - Draw: Девушка с тёмными кудрями смеётся и машет.
+- `public/art/en/oxford/l2-5.jpg` — phrase — EN Оксфорд 2 vocab «I speak Russian.»
+  - Draw: Мурзик говорит, у него над головой облачко с буквами А, Б, В.
+- `public/art/en/oxford/l2-6.jpg` — phrase — EN Оксфорд 2 vocab «Do you speak English?»
+  - Draw: Прия с улыбкой наклоняется к Мурзику.
+- `public/art/en/oxford/l2-7.jpg` — phrase — EN Оксфорд 2 vocab «A little.»
+  - Draw: Мурзик показывает маленький зазор между лапками и смущённо улыбается.
+- `public/art/en/oxford/map.jpg` — reward — EN Оксфорд 2 reward «World map»
+  - Draw: На стене висит большая старая карта мира. Друзья Прии воткнули маленькие булавки в свои страны.
+- `public/art/en/oxford/l3-1.jpg` — phrase — EN Оксфорд 3 vocab «We're friends.»
+  - Draw: Мурзик и Том стоят в обнимку.
+- `public/art/en/oxford/l3-2.jpg` — phrase — EN Оксфорд 3 vocab «They're students.»
+  - Draw: Группа студентов в мантиях у старинного здания.
+- `public/art/en/oxford/l3-3.jpg` — phrase — EN Оксфорд 3 vocab «Are they your friends?»
+  - Draw: Мурзик показывает на компанию студентов на лужайке.
+- `public/art/en/oxford/l3-4.jpg` — phrase — EN Оксфорд 3 vocab «Yes, they are.»
+  - Draw: Прия кивает и машет друзьям.
+- `public/art/en/oxford/l3-5.jpg` — phrase — EN Оксфорд 3 vocab «This is my college.»
+  - Draw: Прия показывает на ворота старинного колледжа с башенкой.
+- `public/art/en/oxford/l3-6.jpg` — phrase — EN Оксфорд 3 vocab «It's very old.»
+  - Draw: Старинные каменные стены, покрытые плющом.
+- `public/art/en/oxford/l3-7.jpg` — phrase — EN Оксфорд 3 vocab «You're lucky!»
+  - Draw: Мурзик восхищённо смотрит на башни колледжа.
+- `public/art/en/oxford/scarf.jpg` — reward — EN Оксфорд 3 reward «College scarf»
+  - Draw: Длинный вязаный шарф в тёмно-синюю и жёлтую полоску висит на спинке стула.
+- `public/art/en/oxford/l4-1.jpg` — phrase — EN Оксфорд 4 vocab «eleven, twelve»
+  - Draw: Двенадцать уток плывут по реке.
+- `public/art/en/oxford/l4-2.jpg` — phrase — EN Оксфорд 4 vocab «thirteen, fourteen, fifteen»
+  - Draw: Пятнадцать лодок у причала.
+- `public/art/en/oxford/l4-3.jpg` — phrase — EN Оксфорд 4 vocab «sixteen, seventeen»
+  - Draw: Семнадцать велосипедов у стены колледжа.
+- `public/art/en/oxford/l4-4.jpg` — phrase — EN Оксфорд 4 vocab «eighteen, nineteen, twenty»
+  - Draw: Двадцать свечей на торте.
+- `public/art/en/oxford/l4-5.jpg` — phrase — EN Оксфорд 4 vocab «How old are you?»
+  - Draw: Мурзик с любопытством смотрит на Прию.
+- `public/art/en/oxford/l4-6.jpg` — phrase — EN Оксфорд 4 vocab «I'm twenty.»
+  - Draw: Прия показывает два раза по десять пальцев.
+- `public/art/en/oxford/l4-7.jpg` — phrase — EN Оксфорд 4 vocab «He's twenty-five.»
+  - Draw: Мурзик показывает лапой на Тома.
+- `public/art/en/oxford/bike-bell.jpg` — reward — EN Оксфорд 4 reward «Bike bell»
+  - Draw: Маленький блестящий велосипедный звонок лежит на подоконнике.
+- `public/art/en/oxford/l5-1.jpg` — phrase — EN Оксфорд 5 vocab «Where is the library?»
+  - Draw: Мурзик стоит на перекрёстке со стопкой книг.
+- `public/art/en/oxford/l5-2.jpg` — phrase — EN Оксфорд 5 vocab «Is it far?»
+  - Draw: Мурзик смотрит вдаль на длинную улицу.
+- `public/art/en/oxford/l5-3.jpg` — phrase — EN Оксфорд 5 vocab «It isn't far.»
+  - Draw: Прохожая показывает рукой на соседнюю улицу.
+- `public/art/en/oxford/l5-4.jpg` — phrase — EN Оксфорд 5 vocab «It's near.»
+  - Draw: Круглое здание с куполом совсем рядом.
+- `public/art/en/oxford/l5-5.jpg` — phrase — EN Оксфорд 5 vocab «It's over there.»
+  - Draw: Прохожая показывает пальцем на здание за углом.
+- `public/art/en/oxford/l5-6.jpg` — phrase — EN Оксфорд 5 vocab «I'm not a student.»
+  - Draw: Мурзик качает головой у входа, где охранник проверяет студенческие билеты.
+- `public/art/en/oxford/l5-7.jpg` — phrase — EN Оксфорд 5 vocab «They aren't open today.»
+  - Draw: На двери табличка с перечёркнутым солнцем.
+- `public/art/en/oxford/books.jpg` — reward — EN Оксфорд 5 reward «Old books»
+  - Draw: На полке стоит стопка старых книг в кожаных переплётах, сверху маленькая книжка английских стихов.
+- `public/art/en/oxford/l6-1.jpg` — phrase — EN Оксфорд 6 vocab «I'm a student.»
+  - Draw: Прия с рюкзаком и стопкой тетрадей.
+- `public/art/en/oxford/l6-2.jpg` — phrase — EN Оксфорд 6 vocab «Tom is a photographer.»
+  - Draw: Том фотографирует башни колледжа.
+- `public/art/en/oxford/l6-3.jpg` — phrase — EN Оксфорд 6 vocab «She's a teacher.»
+  - Draw: Женщина в очках у доски с мелом.
+- `public/art/en/oxford/l6-4.jpg` — phrase — EN Оксфорд 6 vocab «Mrs Hope was a cook.»
+  - Draw: Старая фотография: молодая миссис Хоуп в белом колпаке у плиты.
+- `public/art/en/oxford/l6-5.jpg` — phrase — EN Оксфорд 6 vocab «What's your job?»
+  - Draw: Прия с любопытством наклоняется к Мурзику.
+- `public/art/en/oxford/l6-6.jpg` — phrase — EN Оксфорд 6 vocab «I want to be a cook.»
+  - Draw: Мурзик в маленьком поварском колпаке мечтательно улыбается.
+- `public/art/en/oxford/l6-7.jpg` — phrase — EN Оксфорд 6 vocab «Good idea!»
+  - Draw: Прия хлопает в ладоши.
+- `public/art/en/oxford/marmalade.jpg` — reward — EN Оксфорд 6 reward «Marmalade»
+  - Draw: Стеклянная банка густого оранжевого апельсинового джема с полосками корочки, на крышке клетчатая ткань.
+- `public/art/en/oxford/l7-1.jpg` — phrase — EN Оксфорд 7 vocab «Tell me about yourself.»
+  - Draw: Прия садится напротив Мурзика с чашкой чая.
+- `public/art/en/oxford/l7-2.jpg` — phrase — EN Оксфорд 7 vocab «I'm six and I'm from Russia.»
+  - Draw: Мурзик показывает шесть пальцев и маленький глобус.
+- `public/art/en/oxford/l7-3.jpg` — phrase — EN Оксфорд 7 vocab «Where is the next page?»
+  - Draw: Мурзик листает книгу рецептов с пустыми местами.
+- `public/art/en/oxford/l7-4.jpg` — phrase — EN Оксфорд 7 vocab «It's in Bath.»
+  - Draw: Прия показывает на карте маленький город к западу от Лондона.
+- `public/art/en/oxford/l7-5.jpg` — phrase — EN Оксфорд 7 vocab «Come back soon!»
+  - Draw: Прия машет с перрона.
+- `public/art/en/oxford/l7-6.jpg` — phrase — EN Оксфорд 7 vocab «We'll miss you.»
+  - Draw: Друзья Прии грустно машут.
+- `public/art/en/oxford/l7-7.jpg` — phrase — EN Оксфорд 7 vocab «Take care!»
+  - Draw: Прия обнимает Мурзика на прощание.
+- `public/art/en/oxford/teapot.jpg` — reward — EN Оксфорд 7 reward «Teapot»; EN Оксфорд farewell 2
+  - Draw: Пузатый фарфоровый заварочный чайник в мелкие розовые цветочки с золотой каёмкой.
+- `public/art/en/oxford/departure.jpg` — scene — EN Оксфорд departure; EN Оксфорд farewell 4
+  - Draw: Прия и её друзья машут на прощание на оксфордском вокзале.
+- `public/art/en/oxford/page.jpg` — scene — EN Оксфорд farewell 1
+  - Draw: Крупно: вторая страница книги рецептов, рецепт апельсинового джема. На полях записка от руки.
+- `public/art/en/oxford/train.jpg` — scene — EN Оксфорд farewell 5
+  - Draw: Поезд едет на запад мимо зелёных холмов и маленьких деревень.
+
+## English course — Bath (60 pictures)
+
+- `public/art/en/bath/arrival.jpg` — scene — EN Оксфорд farewell 6; EN Бат welcome
+  - Draw: Мурзик и Том в Бате: дома из медового камня полукругом, старинные римские бани, над ними пар.
+- `public/art/en/bath/l1-1.jpg` — phrase — EN Бат 1 vocab «What's this?»
+  - Draw: Мурзик держит в лапах круглую пышную булочку.
+- `public/art/en/bath/l1-2.jpg` — phrase — EN Бат 1 vocab «It's a bun.»
+  - Draw: Большая пышная булочка на деревянной доске.
+- `public/art/en/bath/l1-3.jpg` — phrase — EN Бат 1 vocab «This is a cake.»
+  - Draw: Миссис Грин держит в руках торт с ягодами.
+- `public/art/en/bath/l1-4.jpg` — phrase — EN Бат 1 vocab «That is a pie.»
+  - Draw: Мурзик показывает лапой на пирог на дальней полке.
+- `public/art/en/bath/l1-5.jpg` — phrase — EN Бат 1 vocab «an apple»
+  - Draw: Красное блестящее яблоко.
+- `public/art/en/bath/l1-6.jpg` — phrase — EN Бат 1 vocab «an egg»
+  - Draw: Одно белое яйцо в маленькой подставке.
+- `public/art/en/bath/l1-7.jpg` — phrase — EN Бат 1 vocab «What's that?»
+  - Draw: Мурзик показывает на огромную булку в витрине.
+- `public/art/en/bath/jug.jpg` — reward — EN Бат 1 reward «Milk jug»
+  - Draw: Маленький белый фарфоровый молочник в форме коровы стоит на подоконнике.
+- `public/art/en/bath/l2-1.jpg` — phrase — EN Бат 2 vocab «two cups»
+  - Draw: Две чашки стоят рядом на блюдцах.
+- `public/art/en/bath/l2-2.jpg` — phrase — EN Бат 2 vocab «three glasses»
+  - Draw: Три стеклянных стакана с водой.
+- `public/art/en/bath/l2-3.jpg` — phrase — EN Бат 2 vocab «These are plates.»
+  - Draw: Мурзик держит стопку тарелок.
+- `public/art/en/bath/l2-4.jpg` — phrase — EN Бат 2 vocab «Those are spoons.»
+  - Draw: Мурзик показывает на ложки в дальней банке.
+- `public/art/en/bath/l2-5.jpg` — phrase — EN Бат 2 vocab «children»
+  - Draw: Двое детей прижались носами к витрине пекарни.
+- `public/art/en/bath/l2-6.jpg` — phrase — EN Бат 2 vocab «people»
+  - Draw: У пекарни очередь из людей.
+- `public/art/en/bath/l2-7.jpg` — phrase — EN Бат 2 vocab «How many people?»
+  - Draw: Миссис Грин выглядывает в окно на очередь.
+- `public/art/en/bath/vase.jpg` — reward — EN Бат 2 reward «Vase»
+  - Draw: Голубая стеклянная ваза с букетом садовых цветов стоит на столе.
+- `public/art/en/bath/l3-1.jpg` — phrase — EN Бат 3 vocab «thirty, forty»
+  - Draw: Сорок булочек на больших противнях.
+- `public/art/en/bath/l3-2.jpg` — phrase — EN Бат 3 vocab «fifty, sixty»
+  - Draw: Шестьдесят печений в больших банках.
+- `public/art/en/bath/l3-3.jpg` — phrase — EN Бат 3 vocab «seventy, eighty, ninety»
+  - Draw: Старушка с тортом, на торте свечка в виде цифры 90.
+- `public/art/en/bath/l3-4.jpg` — phrase — EN Бат 3 vocab «a hundred»
+  - Draw: Огромная гора из ста булочек.
+- `public/art/en/bath/l3-5.jpg` — phrase — EN Бат 3 vocab «twenty-one»
+  - Draw: Двадцать одна свеча на торте.
+- `public/art/en/bath/l3-6.jpg` — phrase — EN Бат 3 vocab «thirteen or thirty?»
+  - Draw: Две таблички: 13 и 30, Мурзик растерянно смотрит на обе.
+- `public/art/en/bath/l3-7.jpg` — phrase — EN Бат 3 vocab «It's ninety-nine.»
+  - Draw: Мурзик показывает на ценник с числом 99.
+- `public/art/en/bath/candle.jpg` — reward — EN Бат 3 reward «Candle»
+  - Draw: Высокая кремовая свеча в старинном латунном подсвечнике горит на столе.
+- `public/art/en/bath/l4-1.jpg` — phrase — EN Бат 4 vocab «How much is it?»
+  - Draw: Покупательница показывает на булочку в витрине.
+- `public/art/en/bath/l4-2.jpg` — phrase — EN Бат 4 vocab «It's two pounds.»
+  - Draw: Ценник: £2.
+- `public/art/en/bath/l4-3.jpg` — phrase — EN Бат 4 vocab «three pounds fifty»
+  - Draw: Ценник: £3.50.
+- `public/art/en/bath/l4-4.jpg` — phrase — EN Бат 4 vocab «Here you are.»
+  - Draw: Мурзик протягивает покупательнице пакет с булочкой.
+- `public/art/en/bath/l4-5.jpg` — phrase — EN Бат 4 vocab «Your change.»
+  - Draw: Мурзик кладёт монеты в ладонь покупательницы.
+- `public/art/en/bath/l4-6.jpg` — phrase — EN Бат 4 vocab «It's expensive.»
+  - Draw: Покупательница поднимает брови, глядя на ценник у торта.
+- `public/art/en/bath/l4-7.jpg` — phrase — EN Бат 4 vocab «It's cheap.»
+  - Draw: Маленькое печенье с ценником 50p.
+- `public/art/en/bath/basket.jpg` — reward — EN Бат 4 reward «Basket»
+  - Draw: Плетёная корзинка с клетчатой салфеткой внутри стоит у двери.
+- `public/art/en/bath/l5-1.jpg` — phrase — EN Бат 5 vocab «Can I have six apples, please?»
+  - Draw: Мурзик с корзинкой у прилавка с яблоками.
+- `public/art/en/bath/l5-2.jpg` — phrase — EN Бат 5 vocab «a kilo of carrots»
+  - Draw: На весах лежит морковь, стрелка показывает 1 кг.
+- `public/art/en/bath/l5-3.jpg` — phrase — EN Бат 5 vocab «Anything else?»
+  - Draw: Продавщица в фартуке вопросительно улыбается.
+- `public/art/en/bath/l5-4.jpg` — phrase — EN Бат 5 vocab «That's all, thanks.»
+  - Draw: Мурзик довольно похлопывает по полной корзинке.
+- `public/art/en/bath/l5-5.jpg` — phrase — EN Бат 5 vocab «They're fresh.»
+  - Draw: Блестящие яблоки с листиками.
+- `public/art/en/bath/l5-6.jpg` — phrase — EN Бат 5 vocab «a bag»
+  - Draw: Продавщица протягивает бумажный пакет.
+- `public/art/en/bath/l5-7.jpg` — phrase — EN Бат 5 vocab «a bunch of flowers»
+  - Draw: Ведро с букетами тюльпанов.
+- `public/art/en/bath/plate.jpg` — reward — EN Бат 5 reward «Plate»
+  - Draw: Большое круглое фарфоровое блюдо с голубым рисунком: мостик, домик и деревья.
+- `public/art/en/bath/l6-1.jpg` — phrase — EN Бат 6 vocab «It's an old city.»
+  - Draw: Улица из домов медового цвета.
+- `public/art/en/bath/l6-2.jpg` — phrase — EN Бат 6 vocab «The water is hot.»
+  - Draw: Над зелёной водой римских бань поднимается пар.
+- `public/art/en/bath/l6-3.jpg` — phrase — EN Бат 6 vocab «It's very beautiful.»
+  - Draw: Колонны вокруг бассейна, отражения в воде.
+- `public/art/en/bath/l6-4.jpg` — phrase — EN Бат 6 vocab «a big house»
+  - Draw: Большой дом с колоннами.
+- `public/art/en/bath/l6-5.jpg` — phrase — EN Бат 6 vocab «a small shop»
+  - Draw: Крошечный магазинчик с одной витриной.
+- `public/art/en/bath/l6-6.jpg` — phrase — EN Бат 6 vocab «new or old?»
+  - Draw: Новенький велосипед рядом со старым ржавым.
+- `public/art/en/bath/l6-7.jpg` — phrase — EN Бат 6 vocab «two thousand years»
+  - Draw: Старинная римская монета на ладони.
+- `public/art/en/bath/rug.jpg` — reward — EN Бат 6 reward «Rug»
+  - Draw: Круглый вязаный половик из разноцветных полосок лежит у кровати.
+- `public/art/en/bath/l7-1.jpg` — phrase — EN Бат 7 vocab «I'm looking for something.»
+  - Draw: Миссис Грин роется в старом шкафу.
+- `public/art/en/bath/l7-2.jpg` — phrase — EN Бат 7 vocab «Here it is!»
+  - Draw: Миссис Грин поднимает над головой сложенный листок.
+- `public/art/en/bath/l7-3.jpg` — phrase — EN Бат 7 vocab «the recipe for Bath buns»
+  - Draw: Пожелтевшая страница с рисунком булочки.
+- `public/art/en/bath/l7-4.jpg` — phrase — EN Бат 7 vocab «a cake stand»
+  - Draw: Трёхъярусная фарфоровая подставка с пирожными.
+- `public/art/en/bath/l7-5.jpg` — phrase — EN Бат 7 vocab «It's for you.»
+  - Draw: Миссис Грин протягивает Мурзику подарок.
+- `public/art/en/bath/l7-6.jpg` — phrase — EN Бат 7 vocab «You're very kind.»
+  - Draw: Мурзик прижимает лапку к сердцу.
+- `public/art/en/bath/l7-7.jpg` — phrase — EN Бат 7 vocab «Where to next?»
+  - Draw: Том разворачивает карту Британии.
+- `public/art/en/bath/cake-stand.jpg` — reward — EN Бат 7 reward «Cake stand»; EN Бат farewell 2
+  - Draw: Трёхъярусная фарфоровая подставка для пирожных с золотой ручкой сверху, на ярусах розовые цветочки.
+- `public/art/en/bath/departure.jpg` — scene — EN Бат departure; EN Бат farewell 4
+  - Draw: Миссис Грин в муке машет на прощание у дверей пекарни.
+- `public/art/en/bath/page.jpg` — scene — EN Бат farewell 1
+  - Draw: Крупно: третья страница книги рецептов, рецепт батских булочек. На полях записка от руки.
+- `public/art/en/bath/train.jpg` — scene — EN Бат farewell 5
+  - Draw: Поезд едет на север, за окном холмы, овцы и серое море.
+
+## English course — Edinburgh (60 pictures)
+
+- `public/art/en/edinburgh/arrival.jpg` — scene — EN Бат farewell 6; EN Эдинбург welcome
+  - Draw: Мурзик и Том в Эдинбурге: серый замок на высокой скале над старым городом. Ветер и мелкий дождь.
+- `public/art/en/edinburgh/l1-1.jpg` — phrase — EN Эдинбург 1 vocab «This is my family.»
+  - Draw: Большая семья стоит у дверей серого каменного дома.
+- `public/art/en/edinburgh/l1-2.jpg` — phrase — EN Эдинбург 1 vocab «my mum and dad»
+  - Draw: Мама с короткой стрижкой и рыжий бородатый папа обнимаются.
+- `public/art/en/edinburgh/l1-3.jpg` — phrase — EN Эдинбург 1 vocab «my brother»
+  - Draw: Мальчик лет десяти с веснушками корчит смешную рожицу.
+- `public/art/en/edinburgh/l1-4.jpg` — phrase — EN Эдинбург 1 vocab «my sister»
+  - Draw: Девочка с рыжими косичками и книгой в руках.
+- `public/art/en/edinburgh/l1-5.jpg` — phrase — EN Эдинбург 1 vocab «They're twins.»
+  - Draw: Мальчик и девочка одного роста с одинаковыми веснушками.
+- `public/art/en/edinburgh/l1-6.jpg` — phrase — EN Эдинбург 1 vocab «my granny»
+  - Draw: Пожилая женщина в очках вяжет у камина.
+- `public/art/en/edinburgh/l1-7.jpg` — phrase — EN Эдинбург 1 vocab «my parents»
+  - Draw: Мама и папа машут с крыльца.
+- `public/art/en/edinburgh/hot-water-bottle.jpg` — reward — EN Эдинбург 1 reward «Hot-water bottle»
+  - Draw: Резиновая грелка в вязаном чехле в красно-зелёную клетку лежит на подушке.
+- `public/art/en/edinburgh/l2-1.jpg` — phrase — EN Эдинбург 2 vocab «Have you got a brother?»
+  - Draw: Рори с любопытством наклоняется к Мурзику через стол.
+- `public/art/en/edinburgh/l2-2.jpg` — phrase — EN Эдинбург 2 vocab «No, I haven't.»
+  - Draw: Мурзик качает головой.
+- `public/art/en/edinburgh/l2-3.jpg` — phrase — EN Эдинбург 2 vocab «I've got two cousins.»
+  - Draw: Фотография: два серых кота-подростка, полосатый и пятнистый.
+- `public/art/en/edinburgh/l2-4.jpg` — phrase — EN Эдинбург 2 vocab «Have you got a pet?»
+  - Draw: Айла держит на руках морскую свинку.
+- `public/art/en/edinburgh/l2-5.jpg` — phrase — EN Эдинбург 2 vocab «Yes, I have. I've got a guinea pig.»
+  - Draw: Рыжая морская свинка жуёт морковку.
+- `public/art/en/edinburgh/l2-6.jpg` — phrase — EN Эдинбург 2 vocab «She's got a dog.»
+  - Draw: Бабушка с маленькой лохматой собачкой на коленях.
+- `public/art/en/edinburgh/l2-7.jpg` — phrase — EN Эдинбург 2 vocab «We haven't got a car.»
+  - Draw: Вся семья едет по улице на велосипедах.
+- `public/art/en/edinburgh/heather.jpg` — reward — EN Эдинбург 2 reward «Heather»
+  - Draw: Маленький глиняный горшок с кустиком лилового вереска стоит на подоконнике.
+- `public/art/en/edinburgh/l3-1.jpg` — phrase — EN Эдинбург 3 vocab «His name is Rory.»
+  - Draw: Айла показывает на брата, который висит вниз головой на дереве.
+- `public/art/en/edinburgh/l3-2.jpg` — phrase — EN Эдинбург 3 vocab «Her name is Isla.»
+  - Draw: Рори показывает на сестру с книгой.
+- `public/art/en/edinburgh/l3-3.jpg` — phrase — EN Эдинбург 3 vocab «Her dog is called Biscuit.»
+  - Draw: Маленькая лохматая собачка с бантиком.
+- `public/art/en/edinburgh/l3-4.jpg` — phrase — EN Эдинбург 3 vocab «What's her name?»
+  - Draw: Мурзик шёпотом спрашивает Тома про бабушку.
+- `public/art/en/edinburgh/l3-5.jpg` — phrase — EN Эдинбург 3 vocab «Her name is Morag.»
+  - Draw: Бабушка в очках машет из кресла.
+- `public/art/en/edinburgh/l3-6.jpg` — phrase — EN Эдинбург 3 vocab «Our house is old.»
+  - Draw: Серый каменный дом с острой крышей и трубами.
+- `public/art/en/edinburgh/l3-7.jpg` — phrase — EN Эдинбург 3 vocab «Their garden is big.»
+  - Draw: Сад за домом: яблони, качели, клумбы.
+- `public/art/en/edinburgh/photo.jpg` — reward — EN Эдинбург 3 reward «Family photo»
+  - Draw: В деревянной рамке фотография: вся семья Макдональд, бабушка с собачкой, Мурзик и Том у дверей дома.
+- `public/art/en/edinburgh/l4-1.jpg` — phrase — EN Эдинбург 4 vocab «Whose is this?»
+  - Draw: Рори держит в руках фотоаппарат и оглядывается.
+- `public/art/en/edinburgh/l4-2.jpg` — phrase — EN Эдинбург 4 vocab «It's Tom's camera.»
+  - Draw: Фотоаппарат Тома на ремешке.
+- `public/art/en/edinburgh/l4-3.jpg` — phrase — EN Эдинбург 4 vocab «It's mine!»
+  - Draw: Том забирает фотоаппарат и смеётся.
+- `public/art/en/edinburgh/l4-4.jpg` — phrase — EN Эдинбург 4 vocab «Is it yours?»
+  - Draw: Айла протягивает Мурзику шарф.
+- `public/art/en/edinburgh/l4-5.jpg` — phrase — EN Эдинбург 4 vocab «Isla's book»
+  - Draw: Толстая книга о драконах с закладкой.
+- `public/art/en/edinburgh/l4-6.jpg` — phrase — EN Эдинбург 4 vocab «Granny's glasses»
+  - Draw: Очки лежат на вязанье.
+- `public/art/en/edinburgh/l4-7.jpg` — phrase — EN Эдинбург 4 vocab «the children's room»
+  - Draw: Комната с двумя кроватями, игрушками и книгами.
+- `public/art/en/edinburgh/tray.jpg` — reward — EN Эдинбург 4 reward «Wooden tray»
+  - Draw: Старый деревянный поднос с ручками, на нём чашка чая и тарелка песочного печенья.
+- `public/art/en/edinburgh/l5-1.jpg` — phrase — EN Эдинбург 5 vocab «He's tall.»
+  - Draw: Иэн стоит у двери и почти касается головой притолоки.
+- `public/art/en/edinburgh/l5-2.jpg` — phrase — EN Эдинбург 5 vocab «She's short.»
+  - Draw: Бабушка Мораг встаёт на цыпочки, чтобы достать до полки.
+- `public/art/en/edinburgh/l5-3.jpg` — phrase — EN Эдинбург 5 vocab «He's got red hair.»
+  - Draw: Портрет рыжего бородатого Иэна, нарисованный карандашами.
+- `public/art/en/edinburgh/l5-4.jpg` — phrase — EN Эдинбург 5 vocab «She's got blue eyes.»
+  - Draw: Портрет Фионы с большими голубыми глазами.
+- `public/art/en/edinburgh/l5-5.jpg` — phrase — EN Эдинбург 5 vocab «She's kind.»
+  - Draw: Бабушка Мораг укрывает спящего Бискита пледом.
+- `public/art/en/edinburgh/l5-6.jpg` — phrase — EN Эдинбург 5 vocab «He's funny.»
+  - Draw: Рори в огромных папиных ботинках изображает великана.
+- `public/art/en/edinburgh/l5-7.jpg` — phrase — EN Эдинбург 5 vocab «What does he look like?»
+  - Draw: Айла держит лист бумаги и карандаш, готовая рисовать.
+- `public/art/en/edinburgh/socks.jpg` — reward — EN Эдинбург 5 reward «Woolly socks»
+  - Draw: Маленькие шерстяные носки в зелёную и синюю полоску висят на спинке стула.
+- `public/art/en/edinburgh/l6-1.jpg` — phrase — EN Эдинбург 6 vocab «Where is the bathroom?»
+  - Draw: Мурзик в пижаме стоит в тёмном коридоре со свечой.
+- `public/art/en/edinburgh/l6-2.jpg` — phrase — EN Эдинбург 6 vocab «It's upstairs.»
+  - Draw: Стрелка вверх по деревянной лестнице.
+- `public/art/en/edinburgh/l6-3.jpg` — phrase — EN Эдинбург 6 vocab «the kitchen»
+  - Draw: Тёплая кухня с плитой и сушёными травами.
+- `public/art/en/edinburgh/l6-4.jpg` — phrase — EN Эдинбург 6 vocab «the living room»
+  - Draw: Гостиная с камином и большим диваном.
+- `public/art/en/edinburgh/l6-5.jpg` — phrase — EN Эдинбург 6 vocab «my bedroom»
+  - Draw: Маленькая спальня Мурзика с грелкой на кровати.
+- `public/art/en/edinburgh/l6-6.jpg` — phrase — EN Эдинбург 6 vocab «It's downstairs.»
+  - Draw: Стрелка вниз по лестнице.
+- `public/art/en/edinburgh/l6-7.jpg` — phrase — EN Эдинбург 6 vocab «next to the kitchen»
+  - Draw: Маленькая дверь рядом с кухонной.
+- `public/art/en/edinburgh/shortbread.jpg` — reward — EN Эдинбург 6 reward «Shortbread tin»
+  - Draw: Круглая жестяная коробка в клетку, внутри пальчики песочного печенья.
+- `public/art/en/edinburgh/l7-1.jpg` — phrase — EN Эдинбург 7 vocab «I've got something for you.»
+  - Draw: Бабушка Мораг достаёт из сундука свёрток.
+- `public/art/en/edinburgh/l7-2.jpg` — phrase — EN Эдинбург 7 vocab «It's from your book.»
+  - Draw: Сложенная пожелтевшая страница в руках бабушки.
+- `public/art/en/edinburgh/l7-3.jpg` — phrase — EN Эдинбург 7 vocab «Mrs Hope is my old friend.»
+  - Draw: Старая фотография: две молодые девушки смеются у моря.
+- `public/art/en/edinburgh/l7-4.jpg` — phrase — EN Эдинбург 7 vocab «a tartan blanket»
+  - Draw: Тёплый шерстяной плед в красно-зелёную клетку.
+- `public/art/en/edinburgh/l7-5.jpg` — phrase — EN Эдинбург 7 vocab «You're part of our family now.»
+  - Draw: Вся семья обнимает Мурзика.
+- `public/art/en/edinburgh/l7-6.jpg` — phrase — EN Эдинбург 7 vocab «Don't forget us!»
+  - Draw: Айла протягивает Мурзику свой рисунок.
+- `public/art/en/edinburgh/l7-7.jpg` — phrase — EN Эдинбург 7 vocab «Write to us!»
+  - Draw: Рори машет конвертом.
+- `public/art/en/edinburgh/tartan.jpg` — reward — EN Эдинбург 7 reward «Tartan blanket»; EN Эдинбург farewell 2
+  - Draw: Тёплый шерстяной плед в красно-зелёную шотландскую клетку сложен на кресле.
+- `public/art/en/edinburgh/departure.jpg` — scene — EN Эдинбург departure; EN Эдинбург farewell 4
+  - Draw: Вся семья Макдональд машет на прощание на вокзале, бабушка Мораг держит на руках собачку Бискит.
+- `public/art/en/edinburgh/page.jpg` — scene — EN Эдинбург farewell 1
+  - Draw: Крупно: четвёртая страница книги рецептов, рецепт песочного печенья. На полях записка от руки.
+- `public/art/en/edinburgh/ferry.jpg` — scene — EN Эдинбург farewell 5
+  - Draw: Большой паром плывёт через серое Ирландское море, над ним чайки.
+
+## English course — Dublin (59 pictures)
+
+- `public/art/en/dublin/arrival.jpg` — scene — EN Эдинбург farewell 6; EN Дублин welcome
+  - Draw: Мурзик и Том в Дублине: разноцветные двери домов, мост над рекой, где-то играет скрипка.
+- `public/art/en/dublin/l1-1.jpg` — phrase — EN Дублин 1 vocab «What time is it?»
+  - Draw: Мурзик смотрит на большие часы над дверью кафе.
+- `public/art/en/dublin/l1-2.jpg` — phrase — EN Дублин 1 vocab «It's seven o'clock.»
+  - Draw: Часы: короткая стрелка на семи, длинная на двенадцати.
+- `public/art/en/dublin/l1-3.jpg` — phrase — EN Дублин 1 vocab «It's half past eight.»
+  - Draw: Часы: длинная стрелка на шести, короткая между восемью и девятью.
+- `public/art/en/dublin/l1-4.jpg` — phrase — EN Дублин 1 vocab «It's quarter past nine.»
+  - Draw: Часы: длинная стрелка на трёх.
+- `public/art/en/dublin/l1-5.jpg` — phrase — EN Дублин 1 vocab «It's quarter to ten.»
+  - Draw: Часы: длинная стрелка на девяти.
+- `public/art/en/dublin/l1-6.jpg` — phrase — EN Дублин 1 vocab «It's early.»
+  - Draw: За окном темно, Мурзик зевает.
+- `public/art/en/dublin/l1-7.jpg` — phrase — EN Дублин 1 vocab «We're late!»
+  - Draw: Том бежит по улице, на ходу надевая куртку.
+- `public/art/en/dublin/hourglass.jpg` — reward — EN Дублин 1 reward «Hourglass»
+  - Draw: Песочные часы в деревянной рамке, золотой песок сыплется вниз.
+- `public/art/en/dublin/l2-1.jpg` — phrase — EN Дублин 2 vocab «I get up at seven.»
+  - Draw: Мурзик потягивается в кровати, будильник показывает семь.
+- `public/art/en/dublin/l2-2.jpg` — phrase — EN Дублин 2 vocab «I have breakfast.»
+  - Draw: Мурзик ест тост с джемом и пьёт чай.
+- `public/art/en/dublin/l2-3.jpg` — phrase — EN Дублин 2 vocab «I go to work.»
+  - Draw: Шон с рюкзаком и футляром для скрипки идёт по улице.
+- `public/art/en/dublin/l2-4.jpg` — phrase — EN Дублин 2 vocab «We have lunch at one.»
+  - Draw: Шон и Мурзик едят суп за маленьким столиком.
+- `public/art/en/dublin/l2-5.jpg` — phrase — EN Дублин 2 vocab «I go home.»
+  - Draw: Вечер, Мурзик идёт по мосту к дому.
+- `public/art/en/dublin/l2-6.jpg` — phrase — EN Дублин 2 vocab «We have dinner at eight.»
+  - Draw: Шон, Том и Мурзик ужинают при свечах.
+- `public/art/en/dublin/l2-7.jpg` — phrase — EN Дублин 2 vocab «I go to bed at ten.»
+  - Draw: Мурзик в пижаме забирается под одеяло.
+- `public/art/en/dublin/bread-basket.jpg` — reward — EN Дублин 2 reward «Bread basket»
+  - Draw: Плетёная корзинка с льняной салфеткой, в ней ломтики тёмного ирландского хлеба.
+- `public/art/en/dublin/l3-1.jpg` — phrase — EN Дублин 3 vocab «Monday, Tuesday, Wednesday»
+  - Draw: Три листка календаря подряд.
+- `public/art/en/dublin/l3-2.jpg` — phrase — EN Дублин 3 vocab «Thursday, Friday»
+  - Draw: На листке пятницы нарисована скрипка.
+- `public/art/en/dublin/l3-3.jpg` — phrase — EN Дублин 3 vocab «Saturday, Sunday»
+  - Draw: На листках выходных нарисовано солнце.
+- `public/art/en/dublin/l3-4.jpg` — phrase — EN Дублин 3 vocab «on Friday»
+  - Draw: Календарь, пятница обведена красным.
+- `public/art/en/dublin/l3-5.jpg` — phrase — EN Дублин 3 vocab «today»
+  - Draw: Мурзик показывает на сегодняшний листок календаря.
+- `public/art/en/dublin/l3-6.jpg` — phrase — EN Дублин 3 vocab «tomorrow»
+  - Draw: Стрелка от сегодняшнего листка к следующему.
+- `public/art/en/dublin/l3-7.jpg` — phrase — EN Дублин 3 vocab «at the weekend»
+  - Draw: Мурзик и Том гуляют у моря.
+- `public/art/en/dublin/calendar.jpg` — reward — EN Дублин 3 reward «Calendar»
+  - Draw: Настенный календарь с фотографиями ирландских зелёных холмов. Пятница обведена красным.
+- `public/art/en/dublin/l4-1.jpg` — phrase — EN Дублин 4 vocab «I live in Dublin.»
+  - Draw: Шон стоит на мосту над рекой.
+- `public/art/en/dublin/l4-2.jpg` — phrase — EN Дублин 4 vocab «I work in a café.»
+  - Draw: Шон за стойкой варит кофе.
+- `public/art/en/dublin/l4-3.jpg` — phrase — EN Дублин 4 vocab «Do you live here?»
+  - Draw: Мурзик показывает на окна над кафе.
+- `public/art/en/dublin/l4-4.jpg` — phrase — EN Дублин 4 vocab «Yes, I do.»
+  - Draw: Шон кивает.
+- `public/art/en/dublin/l4-5.jpg` — phrase — EN Дублин 4 vocab «No, I don't.»
+  - Draw: Шон качает головой и улыбается.
+- `public/art/en/dublin/l4-6.jpg` — phrase — EN Дублин 4 vocab «I don't work on Sunday.»
+  - Draw: Шон в воскресенье играет на скрипке в парке.
+- `public/art/en/dublin/l4-7.jpg` — phrase — EN Дублин 4 vocab «We play music.»
+  - Draw: Шон со скрипкой и девушка с гитарой играют вместе.
+- `public/art/en/dublin/rug.jpg` — reward — EN Дублин 4 reward «Knitted rug»
+  - Draw: Толстый вязаный коврик из белой и серой шерсти с узором-косичками лежит у кровати.
+- `public/art/en/dublin/l5-1.jpg` — phrase — EN Дублин 5 vocab «every morning»
+  - Draw: Шон бежит вдоль моря на рассвете.
+- `public/art/en/dublin/l5-2.jpg` — phrase — EN Дублин 5 vocab «in the afternoon»
+  - Draw: Солнечный день, люди пьют кофе на улице.
+- `public/art/en/dublin/l5-3.jpg` — phrase — EN Дублин 5 vocab «in the evening»
+  - Draw: Вечерний Дублин, горят фонари.
+- `public/art/en/dublin/l5-4.jpg` — phrase — EN Дублин 5 vocab «What do you do in the morning?»
+  - Draw: Мурзик с любопытством смотрит на Шона.
+- `public/art/en/dublin/l5-5.jpg` — phrase — EN Дублин 5 vocab «I go for a run.»
+  - Draw: Шон в кроссовках бежит по набережной.
+- `public/art/en/dublin/l5-6.jpg` — phrase — EN Дублин 5 vocab «I read the news.»
+  - Draw: Том читает новости в телефоне за чашкой кофе.
+- `public/art/en/dublin/l5-7.jpg` — phrase — EN Дублин 5 vocab «I drink coffee every day.»
+  - Draw: Шон с большой чашкой кофе.
+- `public/art/en/dublin/radio.jpg` — reward — EN Дублин 5 reward «Old radio»
+  - Draw: Старое деревянное радио с круглыми ручками стоит на тумбочке.
+- `public/art/en/dublin/l6-1.jpg` — phrase — EN Дублин 6 vocab «Come in!»
+  - Draw: Шон открывает дверь, внутри полно людей и музыки.
+- `public/art/en/dublin/l6-2.jpg` — phrase — EN Дублин 6 vocab «Sit down, please.»
+  - Draw: Шон показывает на свободный стул у окна.
+- `public/art/en/dublin/l6-3.jpg` — phrase — EN Дублин 6 vocab «I play the guitar.»
+  - Draw: Девушка с гитарой улыбается.
+- `public/art/en/dublin/l6-4.jpg` — phrase — EN Дублин 6 vocab «Do you sing?»
+  - Draw: Шон протягивает Мурзику микрофон.
+- `public/art/en/dublin/l6-5.jpg` — phrase — EN Дублин 6 vocab «We start at eight.»
+  - Draw: Часы показывают восемь, музыканты берут инструменты.
+- `public/art/en/dublin/l6-6.jpg` — phrase — EN Дублин 6 vocab «Let's dance!»
+  - Draw: Люди танцуют между столиками.
+- `public/art/en/dublin/l6-7.jpg` — phrase — EN Дублин 6 vocab «What a great night!»
+  - Draw: Мурзик сияет, сидя на стойке с маленьким бубном.
+- `public/art/en/dublin/fiddle.jpg` — reward — EN Дублин 6 reward «Little fiddle»
+  - Draw: Маленькая игрушечная скрипка со смычком висит на стене на гвоздике.
+- `public/art/en/dublin/l7-1.jpg` — phrase — EN Дублин 7 vocab «This is for you.»
+  - Draw: Шон протягивает Мурзику сложенную страницу.
+- `public/art/en/dublin/l7-2.jpg` — phrase — EN Дублин 7 vocab «soda bread»
+  - Draw: Круглая буханка с крестом сверху.
+- `public/art/en/dublin/l7-3.jpg` — phrase — EN Дублин 7 vocab «My gran knows Mrs Hope.»
+  - Draw: Старая фотография: две девушки на ступеньках кафе.
+- `public/art/en/dublin/l7-4.jpg` — phrase — EN Дублин 7 vocab «clay mugs»
+  - Draw: Четыре глиняные кружки разного цвета.
+- `public/art/en/dublin/l7-5.jpg` — phrase — EN Дублин 7 vocab «We're flying to New York.»
+  - Draw: Том показывает два билета на самолёт.
+- `public/art/en/dublin/l7-6.jpg` — phrase — EN Дублин 7 vocab «Safe travels!»
+  - Draw: Шон машет у дверей кафе.
+- `public/art/en/dublin/l7-7.jpg` — phrase — EN Дублин 7 vocab «I'll miss Dublin.»
+  - Draw: Мурзик грустно смотрит на мост над рекой.
+- `public/art/en/dublin/mugs.jpg` — reward — EN Дублин 7 reward «Clay mugs»; EN Дублин farewell 2
+  - Draw: Четыре глиняные кружки ручной работы — зелёная, синяя, кремовая и коричневая.
+- `public/art/en/dublin/departure.jpg` — scene — EN Дублин departure; EN Дублин farewell 4
+  - Draw: Шон со скрипкой машет на прощание у дверей кафе.
+- `public/art/en/dublin/page.jpg` — scene — EN Дублин farewell 1
+  - Draw: Крупно: пятая страница книги рецептов, рецепт содового хлеба. На полях записка от руки.
+
+## English course — New York (60 pictures)
+
+- `public/art/en/newyork/arrival.jpg` — scene — EN Дублин farewell 6; EN Нью-Йорк welcome
+  - Draw: Мурзик и Том в Нью-Йорке: огромные дома до неба, жёлтые такси, шум улиц.
+- `public/art/en/newyork/l1-1.jpg` — phrase — EN Нью-Йорк 1 vocab «Marcus works in a diner.»
+  - Draw: Большой улыбчивый повар в белом фартуке у плиты.
+- `public/art/en/newyork/l1-2.jpg` — phrase — EN Нью-Йорк 1 vocab «He lives in Manhattan.»
+  - Draw: Высокие дома Манхэттена за окном.
+- `public/art/en/newyork/l1-3.jpg` — phrase — EN Нью-Йорк 1 vocab «Rosie lives in Brooklyn.»
+  - Draw: Весёлая женщина с кудрями машет с крыльца кирпичного дома.
+- `public/art/en/newyork/l1-4.jpg` — phrase — EN Нью-Йорк 1 vocab «She goes to work by subway.»
+  - Draw: Рози в вагоне метро с газетой.
+- `public/art/en/newyork/l1-5.jpg` — phrase — EN Нью-Йорк 1 vocab «He has a big family.»
+  - Draw: Фотография: Маркус и много детей вокруг.
+- `public/art/en/newyork/l1-6.jpg` — phrase — EN Нью-Йорк 1 vocab «She watches TV in the evening.»
+  - Draw: Рози с попкорном перед телевизором.
+- `public/art/en/newyork/l1-7.jpg` — phrase — EN Нью-Йорк 1 vocab «He cooks every day.»
+  - Draw: Маркус ловко переворачивает блины на сковороде.
+- `public/art/en/newyork/stool.jpg` — reward — EN Нью-Йорк 1 reward «Bar stool»
+  - Draw: Высокий табурет с круглым красным сиденьем и блестящей ножкой стоит у окна.
+- `public/art/en/newyork/l2-1.jpg` — phrase — EN Нью-Йорк 2 vocab «Does he work here?»
+  - Draw: Мурзик шёпотом спрашивает про официанта в бейсболке.
+- `public/art/en/newyork/l2-2.jpg` — phrase — EN Нью-Йорк 2 vocab «Yes, he does.»
+  - Draw: Маркус кивает.
+- `public/art/en/newyork/l2-3.jpg` — phrase — EN Нью-Йорк 2 vocab «No, she doesn't.»
+  - Draw: Рози качает головой.
+- `public/art/en/newyork/l2-4.jpg` — phrase — EN Нью-Йорк 2 vocab «Does she like coffee?»
+  - Draw: Мурзик держит две чашки и смотрит на Рози.
+- `public/art/en/newyork/l2-5.jpg` — phrase — EN Нью-Йорк 2 vocab «She doesn't drink coffee.»
+  - Draw: Рози отодвигает чашку кофе и берёт чай.
+- `public/art/en/newyork/l2-6.jpg` — phrase — EN Нью-Йорк 2 vocab «He doesn't speak Russian.»
+  - Draw: Маркус разводит руками, над ним вопросительный знак.
+- `public/art/en/newyork/l2-7.jpg` — phrase — EN Нью-Йорк 2 vocab «What does she do?»
+  - Draw: Мурзик с любопытством смотрит на Рози.
+- `public/art/en/newyork/waffle-iron.jpg` — reward — EN Нью-Йорк 2 reward «Waffle iron»
+  - Draw: Старая чугунная вафельница с длинными ручками, рядом тарелка с золотистыми вафлями.
+- `public/art/en/newyork/l3-1.jpg` — phrase — EN Нью-Йорк 3 vocab «What would you like?»
+  - Draw: Мурзик за стойкой с блокнотом и карандашом.
+- `public/art/en/newyork/l3-2.jpg` — phrase — EN Нью-Йорк 3 vocab «I'd like a bagel, please.»
+  - Draw: Покупатель показывает на бейгл с кунжутом.
+- `public/art/en/newyork/l3-3.jpg` — phrase — EN Нью-Йорк 3 vocab «Would you like a drink?»
+  - Draw: Мурзик показывает на кофейник и кувшин с соком.
+- `public/art/en/newyork/l3-4.jpg` — phrase — EN Нью-Йорк 3 vocab «An orange juice, please.»
+  - Draw: Высокий стакан апельсинового сока.
+- `public/art/en/newyork/l3-5.jpg` — phrase — EN Нью-Йорк 3 vocab «For here or to go?»
+  - Draw: Мурзик держит тарелку в одной лапе и бумажный пакет в другой.
+- `public/art/en/newyork/l3-6.jpg` — phrase — EN Нью-Йорк 3 vocab «To go, please.»
+  - Draw: Покупатель забирает бумажный пакет и стаканчик.
+- `public/art/en/newyork/l3-7.jpg` — phrase — EN Нью-Йорк 3 vocab «Coming right up!»
+  - Draw: Маркус уже кладёт бейгл в тостер.
+- `public/art/en/newyork/cookie-jar.jpg` — reward — EN Нью-Йорк 3 reward «Cookie jar»
+  - Draw: Большая стеклянная банка с крышкой, полная круглого печенья с шоколадной крошкой.
+- `public/art/en/newyork/l4-1.jpg` — phrase — EN Нью-Йорк 4 vocab «some milk»
+  - Draw: Маркус наливает немного молока в миску.
+- `public/art/en/newyork/l4-2.jpg` — phrase — EN Нью-Йорк 4 vocab «Have we got any sugar?»
+  - Draw: Маркус заглядывает в пустую сахарницу.
+- `public/art/en/newyork/l4-3.jpg` — phrase — EN Нью-Йорк 4 vocab «We haven't got any eggs.»
+  - Draw: Пустая коробка из-под яиц.
+- `public/art/en/newyork/l4-4.jpg` — phrase — EN Нью-Йорк 4 vocab «some flour»
+  - Draw: Мурзик весь в муке, мука летит облаком.
+- `public/art/en/newyork/l4-5.jpg` — phrase — EN Нью-Йорк 4 vocab «Can you buy some eggs?»
+  - Draw: Маркус протягивает Мурзику пакет и деньги.
+- `public/art/en/newyork/l4-6.jpg` — phrase — EN Нью-Йорк 4 vocab «a bottle of milk»
+  - Draw: Стеклянная бутылка молока.
+- `public/art/en/newyork/l4-7.jpg` — phrase — EN Нью-Йорк 4 vocab «a box of eggs»
+  - Draw: Коробка с десятком яиц.
+- `public/art/en/newyork/napkin-holder.jpg` — reward — EN Нью-Йорк 4 reward «Napkin holder»
+  - Draw: Блестящая металлическая салфетница, как в американских закусочных, полная белых салфеток.
+- `public/art/en/newyork/l5-1.jpg` — phrase — EN Нью-Йорк 5 vocab «pancakes with syrup»
+  - Draw: Стопка пышных блинов, политых кленовым сиропом.
+- `public/art/en/newyork/l5-2.jpg` — phrase — EN Нью-Йорк 5 vocab «eggs and bacon»
+  - Draw: Тарелка с яичницей и полосками бекона.
+- `public/art/en/newyork/l5-3.jpg` — phrase — EN Нью-Йорк 5 vocab «a burger and fries»
+  - Draw: Высокий бургер и гора картошки фри.
+- `public/art/en/newyork/l5-4.jpg` — phrase — EN Нью-Йорк 5 vocab «a salad»
+  - Draw: Миска зелёного салата с помидорами.
+- `public/art/en/newyork/l5-5.jpg` — phrase — EN Нью-Йорк 5 vocab «It's huge!»
+  - Draw: Мурзик выглядывает из-за огромного бургера.
+- `public/art/en/newyork/l5-6.jpg` — phrase — EN Нью-Йорк 5 vocab «It's delicious!»
+  - Draw: Мурзик зажмурился от удовольствия.
+- `public/art/en/newyork/l5-7.jpg` — phrase — EN Нью-Йорк 5 vocab «I'm full.»
+  - Draw: Мурзик откинулся на спинку стула и гладит круглый живот.
+- `public/art/en/newyork/register.jpg` — reward — EN Нью-Йорк 5 reward «Cash register»
+  - Draw: Старинная игрушечная касса-копилка с кнопками и выдвижным ящичком для монет.
+- `public/art/en/newyork/l6-1.jpg` — phrase — EN Нью-Йорк 6 vocab «I like pizza.»
+  - Draw: Мурзик с куском пиццы, сыр тянется.
+- `public/art/en/newyork/l6-2.jpg` — phrase — EN Нью-Йорк 6 vocab «I love chocolate!»
+  - Draw: Мурзик обнимает плитку шоколада.
+- `public/art/en/newyork/l6-3.jpg` — phrase — EN Нью-Йорк 6 vocab «I don't like onions.»
+  - Draw: Мурзик морщится и отодвигает лук на край тарелки.
+- `public/art/en/newyork/l6-4.jpg` — phrase — EN Нью-Йорк 6 vocab «She likes hot dogs.»
+  - Draw: Рози с хот-догом у тележки на улице.
+- `public/art/en/newyork/l6-5.jpg` — phrase — EN Нью-Йорк 6 vocab «He doesn't like hot dogs.»
+  - Draw: Маркус качает головой, глядя на хот-дог.
+- `public/art/en/newyork/l6-6.jpg` — phrase — EN Нью-Йорк 6 vocab «Do you like cheesecake?»
+  - Draw: Кусок нью-йоркского чизкейка с клубникой.
+- `public/art/en/newyork/l6-7.jpg` — phrase — EN Нью-Йорк 6 vocab «I hate mushrooms.»
+  - Draw: Том с ужасом смотрит на тарелку грибов.
+- `public/art/en/newyork/poster.jpg` — reward — EN Нью-Йорк 6 reward «Bridge poster»
+  - Draw: Большой плакат с Бруклинским мостом на закате висит на стене над кроватью.
+- `public/art/en/newyork/l7-1.jpg` — phrase — EN Нью-Йорк 7 vocab «This is yours.»
+  - Draw: Маркус протягивает Мурзику конверт.
+- `public/art/en/newyork/l7-2.jpg` — phrase — EN Нью-Йорк 7 vocab «the recipe for cheesecake»
+  - Draw: Страница с рисунком чизкейка.
+- `public/art/en/newyork/l7-3.jpg` — phrase — EN Нью-Йорк 7 vocab «She sends me a card every year.»
+  - Draw: Стопка старых открыток из Лондона.
+- `public/art/en/newyork/l7-4.jpg` — phrase — EN Нью-Йорк 7 vocab «a neon sign»
+  - Draw: Неоновая вывеска в виде чашки кофе с паром.
+- `public/art/en/newyork/l7-5.jpg` — phrase — EN Нью-Йорк 7 vocab «It's from my diner.»
+  - Draw: Маркус снимает вывеску с окна.
+- `public/art/en/newyork/l7-6.jpg` — phrase — EN Нью-Йорк 7 vocab «Good luck!»
+  - Draw: Маркус и Рози машут у дверей закусочной.
+- `public/art/en/newyork/l7-7.jpg` — phrase — EN Нью-Йорк 7 vocab «Keep in touch!»
+  - Draw: Рози показывает телефон и подмигивает.
+- `public/art/en/newyork/neon.jpg` — reward — EN Нью-Йорк 7 reward «Neon sign»; EN Нью-Йорк farewell 2
+  - Draw: Неоновая вывеска в виде чашки кофе с завитками пара светится тёплым розово-оранжевым светом.
+- `public/art/en/newyork/departure.jpg` — scene — EN Нью-Йорк departure; EN Нью-Йорк farewell 4
+  - Draw: Маркус в фартуке и Рози машут на прощание у дверей закусочной.
+- `public/art/en/newyork/page.jpg` — scene — EN Нью-Йорк farewell 1
+  - Draw: Крупно: шестая страница книги рецептов, рецепт чизкейка. На полях записка от руки.
+- `public/art/en/newyork/train.jpg` — scene — EN Нью-Йорк farewell 5
+  - Draw: Поезд едет на север вдоль моря, за окном осенние деревья.
+
+## English course — Boston (60 pictures)
+
+- `public/art/en/boston/arrival.jpg` — scene — EN Нью-Йорк farewell 6; EN Бостон welcome
+  - Draw: Мурзик и Том в Бостоне: старые кирпичные дома, жёлтые и красные осенние листья, идёт дождь.
+- `public/art/en/boston/l1-1.jpg` — phrase — EN Бостон 1 vocab «What's the weather like?»
+  - Draw: Мурзик выглядывает в окно, прижав нос к стеклу.
+- `public/art/en/boston/l1-2.jpg` — phrase — EN Бостон 1 vocab «It's raining.»
+  - Draw: Капли дождя стекают по окну.
+- `public/art/en/boston/l1-3.jpg` — phrase — EN Бостон 1 vocab «It's sunny.»
+  - Draw: Яркое солнце над кирпичными домами.
+- `public/art/en/boston/l1-4.jpg` — phrase — EN Бостон 1 vocab «It's cold.»
+  - Draw: Мурзик дрожит, кутаясь в шарф.
+- `public/art/en/boston/l1-5.jpg` — phrase — EN Бостон 1 vocab «It's windy.»
+  - Draw: Ветер срывает с деревьев жёлтые листья.
+- `public/art/en/boston/l1-6.jpg` — phrase — EN Бостон 1 vocab «It's cloudy.»
+  - Draw: Серые облака над гаванью.
+- `public/art/en/boston/l1-7.jpg` — phrase — EN Бостон 1 vocab «It's warm today.»
+  - Draw: Люди сидят в парке на скамейках без курток.
+- `public/art/en/boston/umbrella.jpg` — reward — EN Бостон 1 reward «Umbrella»
+  - Draw: Большой тёмно-зелёный зонт-трость с деревянной ручкой стоит у двери.
+- `public/art/en/boston/l2-1.jpg` — phrase — EN Бостон 2 vocab «I'm wearing a scarf.»
+  - Draw: Мурзик в своём рыжем вязаном шарфе.
+- `public/art/en/boston/l2-2.jpg` — phrase — EN Бостон 2 vocab «a coat»
+  - Draw: Длинное шерстяное пальто на вешалке.
+- `public/art/en/boston/l2-3.jpg` — phrase — EN Бостон 2 vocab «a jacket»
+  - Draw: Тёплая куртка с капюшоном.
+- `public/art/en/boston/l2-4.jpg` — phrase — EN Бостон 2 vocab «boots»
+  - Draw: Пара тёплых ботинок у двери.
+- `public/art/en/boston/l2-5.jpg` — phrase — EN Бостон 2 vocab «a hat»
+  - Draw: Вязаная шапка с помпоном.
+- `public/art/en/boston/l2-6.jpg` — phrase — EN Бостон 2 vocab «a T-shirt and jeans»
+  - Draw: Эмили в футболке и джинсах.
+- `public/art/en/boston/l2-7.jpg` — phrase — EN Бостон 2 vocab «Tom is wearing a green coat.»
+  - Draw: Том в своём длинном зелёном пальто.
+- `public/art/en/boston/cap.jpg` — reward — EN Бостон 2 reward «Baseball cap»
+  - Draw: Маленькая синяя бейсболка с прорезями для кошачьих ушей висит на крючке.
+- `public/art/en/boston/l3-1.jpg` — phrase — EN Бостон 3 vocab «red and blue»
+  - Draw: Красная и синяя куртки рядом.
+- `public/art/en/boston/l3-2.jpg` — phrase — EN Бостон 3 vocab «green and yellow»
+  - Draw: Зелёная и жёлтая шапки.
+- `public/art/en/boston/l3-3.jpg` — phrase — EN Бостон 3 vocab «black and white»
+  - Draw: Чёрные и белые носки.
+- `public/art/en/boston/l3-4.jpg` — phrase — EN Бостон 3 vocab «brown and grey»
+  - Draw: Коричневые ботинки и серое пальто.
+- `public/art/en/boston/l3-5.jpg` — phrase — EN Бостон 3 vocab «pink and orange»
+  - Draw: Розовый и оранжевый шарфы.
+- `public/art/en/boston/l3-6.jpg` — phrase — EN Бостон 3 vocab «What colour is it?»
+  - Draw: Эмили держит свитер и вопросительно смотрит.
+- `public/art/en/boston/l3-7.jpg` — phrase — EN Бостон 3 vocab «It's dark blue.»
+  - Draw: Тёмно-синий свитер.
+- `public/art/en/boston/wellies.jpg` — reward — EN Бостон 3 reward «Rain boots»
+  - Draw: Маленькие жёлтые резиновые сапожки стоят на коврике у двери.
+- `public/art/en/boston/l4-1.jpg` — phrase — EN Бостон 4 vocab «Can I help you?»
+  - Draw: Мурзик в бейсболке встречает покупателя у двери.
+- `public/art/en/boston/l4-2.jpg` — phrase — EN Бостон 4 vocab «I'm looking for a jacket.»
+  - Draw: Покупатель разглядывает куртки на вешалках.
+- `public/art/en/boston/l4-3.jpg` — phrase — EN Бостон 4 vocab «What size?»
+  - Draw: Мурзик держит две куртки — маленькую и большую.
+- `public/art/en/boston/l4-4.jpg` — phrase — EN Бостон 4 vocab «Medium, please.»
+  - Draw: Ярлык с буквой M.
+- `public/art/en/boston/l4-5.jpg` — phrase — EN Бостон 4 vocab «Can I try it on?»
+  - Draw: Покупатель держит куртку перед зеркалом.
+- `public/art/en/boston/l4-6.jpg` — phrase — EN Бостон 4 vocab «The fitting room is over there.»
+  - Draw: Мурзик показывает на занавеску примерочной.
+- `public/art/en/boston/l4-7.jpg` — phrase — EN Бостон 4 vocab «Just looking, thanks.»
+  - Draw: Женщина вежливо улыбается и рассматривает шарфы.
+- `public/art/en/boston/thermos.jpg` — reward — EN Бостон 4 reward «Thermos»
+  - Draw: Красный металлический термос с чашкой-крышкой, из чашки идёт пар.
+- `public/art/en/boston/l5-1.jpg` — phrase — EN Бостон 5 vocab «It's too big.»
+  - Draw: Том тонет в огромной куртке, рукава свисают.
+- `public/art/en/boston/l5-2.jpg` — phrase — EN Бостон 5 vocab «It's too small.»
+  - Draw: Том в крошечной куртке, она не застёгивается.
+- `public/art/en/boston/l5-3.jpg` — phrase — EN Бостон 5 vocab «Have you got it in blue?»
+  - Draw: Том держит зелёную куртку и показывает на синюю на полке.
+- `public/art/en/boston/l5-4.jpg` — phrase — EN Бостон 5 vocab «Have you got a bigger size?»
+  - Draw: Эмили ищет на вешалке другой размер.
+- `public/art/en/boston/l5-5.jpg` — phrase — EN Бостон 5 vocab «It fits!»
+  - Draw: Том в куртке, которая сидит идеально.
+- `public/art/en/boston/l5-6.jpg` — phrase — EN Бостон 5 vocab «It looks great on you!»
+  - Draw: Мурзик показывает Тому большой палец.
+- `public/art/en/boston/l5-7.jpg` — phrase — EN Бостон 5 vocab «I'll take it.»
+  - Draw: Том протягивает куртку к кассе.
+- `public/art/en/boston/donuts.jpg` — reward — EN Бостон 5 reward «Box of donuts»
+  - Draw: Открытая коробка с шестью пончиками в разноцветной глазури и посыпке.
+- `public/art/en/boston/l6-1.jpg` — phrase — EN Бостон 6 vocab «Emily usually works on Saturday.»
+  - Draw: Эмили за кассой магазина, на календаре суббота.
+- `public/art/en/boston/l6-2.jpg` — phrase — EN Бостон 6 vocab «Today she's studying.»
+  - Draw: Эмили в библиотеке среди стопок книг.
+- `public/art/en/boston/l6-3.jpg` — phrase — EN Бостон 6 vocab «What are you doing?»
+  - Draw: Мурзик заглядывает через плечо Эмили.
+- `public/art/en/boston/l6-4.jpg` — phrase — EN Бостон 6 vocab «I'm writing an essay.»
+  - Draw: Эмили печатает на ноутбуке.
+- `public/art/en/boston/l6-5.jpg` — phrase — EN Бостон 6 vocab «Tom is taking photos.»
+  - Draw: Том с фотоаппаратом у старой гавани.
+- `public/art/en/boston/l6-6.jpg` — phrase — EN Бостон 6 vocab «I'm not working today.»
+  - Draw: Мурзик в сапожках прыгает по лужам.
+- `public/art/en/boston/l6-7.jpg` — phrase — EN Бостон 6 vocab «Are you having fun?»
+  - Draw: Эмили смеётся, глядя на мокрого Мурзика.
+- `public/art/en/boston/doormat.jpg` — reward — EN Бостон 6 reward «Doormat»
+  - Draw: Плетёный коврик у двери с отпечатками мокрых кошачьих лапок.
+- `public/art/en/boston/l7-1.jpg` — phrase — EN Бостон 7 vocab «Wait a minute!»
+  - Draw: Эмили бежит за Мурзиком по улице.
+- `public/art/en/boston/l7-2.jpg` — phrase — EN Бостон 7 vocab «Boston cream pie»
+  - Draw: Торт с кремом внутри и шоколадом сверху.
+- `public/art/en/boston/l7-3.jpg` — phrase — EN Бостон 7 vocab «My grandma was a cook.»
+  - Draw: Старая фотография: женщина в колпаке у торта.
+- `public/art/en/boston/l7-4.jpg` — phrase — EN Бостон 7 vocab «a coat stand»
+  - Draw: Деревянная вешалка-стойка с крючками.
+- `public/art/en/boston/l7-5.jpg` — phrase — EN Бостон 7 vocab «Your guests need it.»
+  - Draw: На вешалке висят мокрые пальто и зонты.
+- `public/art/en/boston/l7-6.jpg` — phrase — EN Бостон 7 vocab «It's getting colder.»
+  - Draw: Первые снежинки над гаванью.
+- `public/art/en/boston/l7-7.jpg` — phrase — EN Бостон 7 vocab «Take your umbrella!»
+  - Draw: Эмили протягивает Мурзику зелёный зонт.
+- `public/art/en/boston/coat-stand.jpg` — reward — EN Бостон 7 reward «Coat stand»; EN Бостон farewell 2
+  - Draw: Высокая деревянная вешалка-стойка с изогнутыми крючками, на ней висят рыжий шарф Мурзика и бейсболка.
+- `public/art/en/boston/departure.jpg` — scene — EN Бостон departure; EN Бостон farewell 4
+  - Draw: Эмили в жёлтой куртке машет на прощание у дверей магазина одежды.
+- `public/art/en/boston/page.jpg` — scene — EN Бостон farewell 1
+  - Draw: Крупно: седьмая страница книги рецептов, рецепт бостонского кремового торта. На полях записка от руки.
+- `public/art/en/boston/train.jpg` — scene — EN Бостон farewell 5
+  - Draw: Поезд едет на запад через леса и поля.
+
+## English course — Chicago (60 pictures)
+
+- `public/art/en/chicago/arrival.jpg` — scene — EN Бостон farewell 6; EN Чикаго welcome
+  - Draw: Мурзик и Том в Чикаго: высокие стеклянные дома у огромного синего озера, ветер развевает шарф Мурзика.
+- `public/art/en/chicago/l1-1.jpg` — phrase — EN Чикаго 1 vocab «There's a park near here.»
+  - Draw: Большой зелёный парк у озера.
+- `public/art/en/chicago/l1-2.jpg` — phrase — EN Чикаго 1 vocab «There are two cafés.»
+  - Draw: Два маленьких кафе на одной улице.
+- `public/art/en/chicago/l1-3.jpg` — phrase — EN Чикаго 1 vocab «Is there a bank near here?»
+  - Draw: Мурзик с кошельком оглядывается на улице.
+- `public/art/en/chicago/l1-4.jpg` — phrase — EN Чикаго 1 vocab «Yes, there is.»
+  - Draw: Таксист кивает и показывает рукой.
+- `public/art/en/chicago/l1-5.jpg` — phrase — EN Чикаго 1 vocab «There isn't a subway here.»
+  - Draw: Улица без входа в метро, только автобусная остановка.
+- `public/art/en/chicago/l1-6.jpg` — phrase — EN Чикаго 1 vocab «Are there any shops?»
+  - Draw: Мурзик смотрит на длинную улицу.
+- `public/art/en/chicago/l1-7.jpg` — phrase — EN Чикаго 1 vocab «There's a big lake.»
+  - Draw: Огромное синее озеро, как море.
+- `public/art/en/chicago/city-map.jpg` — reward — EN Чикаго 1 reward «City map»
+  - Draw: Большая карта Чикаго висит на стене. Озеро Мичиган синее, парки зелёные, красным кружком обведён дом Мурзика.
+- `public/art/en/chicago/l2-1.jpg` — phrase — EN Чикаго 2 vocab «Where is the station?»
+  - Draw: Мурзик с чемоданом стоит на перекрёстке.
+- `public/art/en/chicago/l2-2.jpg` — phrase — EN Чикаго 2 vocab «It's next to the bank.»
+  - Draw: Вокзал и банк стоят рядом.
+- `public/art/en/chicago/l2-3.jpg` — phrase — EN Чикаго 2 vocab «It's opposite the park.»
+  - Draw: Вокзал через дорогу от парка.
+- `public/art/en/chicago/l2-4.jpg` — phrase — EN Чикаго 2 vocab «between the hotel and the museum»
+  - Draw: Маленький магазин между большим отелем и музеем.
+- `public/art/en/chicago/l2-5.jpg` — phrase — EN Чикаго 2 vocab «behind the church»
+  - Draw: Дом за старой церковью.
+- `public/art/en/chicago/l2-6.jpg` — phrase — EN Чикаго 2 vocab «in front of the hotel»
+  - Draw: Такси стоит перед отелем.
+- `public/art/en/chicago/l2-7.jpg` — phrase — EN Чикаго 2 vocab «on the corner»
+  - Draw: Маленькое кафе на углу двух улиц.
+- `public/art/en/chicago/pass.jpg` — reward — EN Чикаго 2 reward «Travel card»
+  - Draw: Синяя пластиковая карточка-проездной на шнурке висит на крючке у двери.
+- `public/art/en/chicago/l3-1.jpg` — phrase — EN Чикаго 3 vocab «Go straight on.»
+  - Draw: Стрелка прямо по длинной улице.
+- `public/art/en/chicago/l3-2.jpg` — phrase — EN Чикаго 3 vocab «Turn left.»
+  - Draw: Стрелка поворачивает налево.
+- `public/art/en/chicago/l3-3.jpg` — phrase — EN Чикаго 3 vocab «Turn right.»
+  - Draw: Стрелка поворачивает направо.
+- `public/art/en/chicago/l3-4.jpg` — phrase — EN Чикаго 3 vocab «Cross the street.»
+  - Draw: Мурзик переходит улицу по зебре.
+- `public/art/en/chicago/l3-5.jpg` — phrase — EN Чикаго 3 vocab «It's on your left.»
+  - Draw: Пиццерия слева от Мурзика.
+- `public/art/en/chicago/l3-6.jpg` — phrase — EN Чикаго 3 vocab «It's on your right.»
+  - Draw: Парк справа от Мурзика.
+- `public/art/en/chicago/l3-7.jpg` — phrase — EN Чикаго 3 vocab «at the traffic lights»
+  - Draw: Светофор на перекрёстке, горит зелёный.
+- `public/art/en/chicago/lake-mug.jpg` — reward — EN Чикаго 3 reward «Lake mug»
+  - Draw: Большая белая кружка с нарисованным синим озером и маленьким парусником.
+- `public/art/en/chicago/l4-1.jpg` — phrase — EN Чикаго 4 vocab «by bus»
+  - Draw: Красный автобус у остановки.
+- `public/art/en/chicago/l4-2.jpg` — phrase — EN Чикаго 4 vocab «by train»
+  - Draw: Надземный поезд мчится по эстакаде между домами.
+- `public/art/en/chicago/l4-3.jpg` — phrase — EN Чикаго 4 vocab «by taxi»
+  - Draw: Жёлтое такси Тони.
+- `public/art/en/chicago/l4-4.jpg` — phrase — EN Чикаго 4 vocab «by bike»
+  - Draw: Мурзик на маленьком велосипеде вдоль озера.
+- `public/art/en/chicago/l4-5.jpg` — phrase — EN Чикаго 4 vocab «on foot»
+  - Draw: Следы лапок на дорожке.
+- `public/art/en/chicago/l4-6.jpg` — phrase — EN Чикаго 4 vocab «How do you get to work?»
+  - Draw: Мурзик с любопытством спрашивает Тони.
+- `public/art/en/chicago/l4-7.jpg` — phrase — EN Чикаго 4 vocab «It takes twenty minutes.»
+  - Draw: Часы, стрелка проходит двадцать минут.
+- `public/art/en/chicago/shelf.jpg` — reward — EN Чикаго 4 reward «Shelf»
+  - Draw: Простая деревянная полка из старой доски, на ней кружка, проездной и камешки с пляжа.
+- `public/art/en/chicago/l5-1.jpg` — phrase — EN Чикаго 5 vocab «Where are my keys?»
+  - Draw: Мурзик растерянно стоит посреди комнаты, вокруг всё перевёрнуто.
+- `public/art/en/chicago/l5-2.jpg` — phrase — EN Чикаго 5 vocab «They're on the table.»
+  - Draw: Ключи лежат на столе.
+- `public/art/en/chicago/l5-3.jpg` — phrase — EN Чикаго 5 vocab «It's in the bag.»
+  - Draw: Телефон выглядывает из сумки.
+- `public/art/en/chicago/l5-4.jpg` — phrase — EN Чикаго 5 vocab «under the bed»
+  - Draw: Под кроватью лежит потерянный носок.
+- `public/art/en/chicago/l5-5.jpg` — phrase — EN Чикаго 5 vocab «on the shelf»
+  - Draw: На полке стоит кружка.
+- `public/art/en/chicago/l5-6.jpg` — phrase — EN Чикаго 5 vocab «in my pocket»
+  - Draw: Из кармана пальто торчат ключи.
+- `public/art/en/chicago/l5-7.jpg` — phrase — EN Чикаго 5 vocab «Here they are!»
+  - Draw: Мурзик радостно поднимает ключи.
+- `public/art/en/chicago/key-holder.jpg` — reward — EN Чикаго 5 reward «Key holder»
+  - Draw: Маленькая деревянная ключница в форме домика с крючками висит у двери, на одном крючке ключи Мурзика.
+- `public/art/en/chicago/l6-1.jpg` — phrase — EN Чикаго 6 vocab «How about pizza?»
+  - Draw: Тони держит над головой огромную коробку пиццы.
+- `public/art/en/chicago/l6-2.jpg` — phrase — EN Чикаго 6 vocab «I'm hungry!»
+  - Draw: Живот Мурзика громко урчит.
+- `public/art/en/chicago/l6-3.jpg` — phrase — EN Чикаго 6 vocab «It smells good!»
+  - Draw: Мурзик принюхивается к пицце, глаза закрыты.
+- `public/art/en/chicago/l6-4.jpg` — phrase — EN Чикаго 6 vocab «a slice of pizza»
+  - Draw: Толстый кусок чикагской пиццы, сыр тянется.
+- `public/art/en/chicago/l6-5.jpg` — phrase — EN Чикаго 6 vocab «Help yourself!»
+  - Draw: Тони широко улыбается и пододвигает тарелку.
+- `public/art/en/chicago/l6-6.jpg` — phrase — EN Чикаго 6 vocab «It's very thick!»
+  - Draw: Пицца высокая, как пирог.
+- `public/art/en/chicago/l6-7.jpg` — phrase — EN Чикаго 6 vocab «Can I have another slice?»
+  - Draw: Мурзик протягивает пустую тарелку.
+- `public/art/en/chicago/plant.jpg` — reward — EN Чикаго 6 reward «Green plant»
+  - Draw: Высокое зелёное растение с большими листьями в белом горшке стоит у окна.
+- `public/art/en/chicago/l7-1.jpg` — phrase — EN Чикаго 7 vocab «There's something in the glove box.»
+  - Draw: Тони открывает бардачок такси.
+- `public/art/en/chicago/l7-2.jpg` — phrase — EN Чикаго 7 vocab «the recipe for deep-dish pizza»
+  - Draw: Страница с рисунком высокой пиццы.
+- `public/art/en/chicago/l7-3.jpg` — phrase — EN Чикаго 7 vocab «a pizza pan»
+  - Draw: Глубокая круглая чугунная форма для пиццы.
+- `public/art/en/chicago/l7-4.jpg` — phrase — EN Чикаго 7 vocab «We're going south.»
+  - Draw: Том показывает на карте стрелку вниз, к югу.
+- `public/art/en/chicago/l7-5.jpg` — phrase — EN Чикаго 7 vocab «Drive safely!»
+  - Draw: Мурзик машет Тони у вокзала.
+- `public/art/en/chicago/l7-6.jpg` — phrase — EN Чикаго 7 vocab «Thanks for everything!»
+  - Draw: Мурзик обнимает Тони.
+- `public/art/en/chicago/l7-7.jpg` — phrase — EN Чикаго 7 vocab «Have fun in New Orleans!»
+  - Draw: Тони машет из окна такси.
+- `public/art/en/chicago/pizza-pan.jpg` — reward — EN Чикаго 7 reward «Pizza pan»; EN Чикаго farewell 2
+  - Draw: Глубокая круглая чугунная форма для пиццы, тёмная от многих лет готовки.
+- `public/art/en/chicago/departure.jpg` — scene — EN Чикаго departure; EN Чикаго farewell 4
+  - Draw: Тони машет из окна жёлтого такси у вокзала.
+- `public/art/en/chicago/page.jpg` — scene — EN Чикаго farewell 1
+  - Draw: Крупно: восьмая страница книги рецептов, рецепт чикагской пиццы. На полях записка от руки.
+- `public/art/en/chicago/train.jpg` — scene — EN Чикаго farewell 5
+  - Draw: Поезд едет на юг вдоль широкой реки, становится всё теплее.
+
+## English course — New Orleans (59 pictures)
+
+- `public/art/en/neworleans/arrival.jpg` — scene — EN Чикаго farewell 6; EN Новый Орлеан welcome
+  - Draw: Мурзик и Том в Новом Орлеане: старые дома с коваными балконами, цветы, на улице играет духовой оркестр.
+- `public/art/en/neworleans/l1-1.jpg` — phrase — EN Новый Орлеан 1 vocab «What kind of music do you like?»
+  - Draw: Женщина в ярком платке с микрофоном улыбается Мурзику.
+- `public/art/en/neworleans/l1-2.jpg` — phrase — EN Новый Орлеан 1 vocab «I like jazz.»
+  - Draw: Духовой оркестр играет на улице.
+- `public/art/en/neworleans/l1-3.jpg` — phrase — EN Новый Орлеан 1 vocab «I love rock music!»
+  - Draw: Мурзик с игрушечной гитарой прыгает на кровати.
+- `public/art/en/neworleans/l1-4.jpg` — phrase — EN Новый Орлеан 1 vocab «classical music»
+  - Draw: Скрипачи в чёрных костюмах на сцене.
+- `public/art/en/neworleans/l1-5.jpg` — phrase — EN Новый Орлеан 1 vocab «Who's your favourite singer?»
+  - Draw: Мурзик держит воображаемый микрофон.
+- `public/art/en/neworleans/l1-6.jpg` — phrase — EN Новый Орлеан 1 vocab «She sings in a band.»
+  - Draw: Певица и четыре музыканта на маленькой сцене.
+- `public/art/en/neworleans/l1-7.jpg` — phrase — EN Новый Орлеан 1 vocab «It's my favourite song.»
+  - Draw: Мурзик закрыл глаза и покачивается под музыку.
+- `public/art/en/neworleans/rocking-chair.jpg` — reward — EN Новый Орлеан 1 reward «Rocking chair»
+  - Draw: Белое деревянное кресло-качалка стоит на веранде с коваными перилами.
+- `public/art/en/neworleans/l2-1.jpg` — phrase — EN Новый Орлеан 2 vocab «What do you like doing?»
+  - Draw: Бернадетт сидит в кресле с чашкой и смотрит на Мурзика.
+- `public/art/en/neworleans/l2-2.jpg` — phrase — EN Новый Орлеан 2 vocab «I love dancing.»
+  - Draw: Мурзик кружится в танце.
+- `public/art/en/neworleans/l2-3.jpg` — phrase — EN Новый Орлеан 2 vocab «I like reading.»
+  - Draw: Том читает книгу на веранде.
+- `public/art/en/neworleans/l2-4.jpg` — phrase — EN Новый Орлеан 2 vocab «I like cooking.»
+  - Draw: Мурзик в фартуке мешает что-то в кастрюле.
+- `public/art/en/neworleans/l2-5.jpg` — phrase — EN Новый Орлеан 2 vocab «I don't like swimming.»
+  - Draw: Мурзик с ужасом смотрит на бассейн.
+- `public/art/en/neworleans/l2-6.jpg` — phrase — EN Новый Орлеан 2 vocab «I hate getting up early.»
+  - Draw: Том с подушкой на голове, будильник звенит.
+- `public/art/en/neworleans/l2-7.jpg` — phrase — EN Новый Орлеан 2 vocab «She loves singing.»
+  - Draw: Бернадетт поёт, поливая цветы.
+- `public/art/en/neworleans/record.jpg` — reward — EN Новый Орлеан 2 reward «Jazz record»
+  - Draw: Старая виниловая пластинка в картонном конверте с рисунком трубы и луны.
+- `public/art/en/neworleans/l3-1.jpg` — phrase — EN Новый Орлеан 3 vocab «I always sing in the morning.»
+  - Draw: Бернадетт поёт у открытого окна, солнце встаёт.
+- `public/art/en/neworleans/l3-2.jpg` — phrase — EN Новый Орлеан 3 vocab «I usually get up at nine.»
+  - Draw: Будильник на девяти, Бернадетт потягивается.
+- `public/art/en/neworleans/l3-3.jpg` — phrase — EN Новый Орлеан 3 vocab «We often go to the river.»
+  - Draw: Мурзик и Бернадетт на набережной широкой реки.
+- `public/art/en/neworleans/l3-4.jpg` — phrase — EN Новый Орлеан 3 vocab «I sometimes cook gumbo.»
+  - Draw: Большая кастрюля густого супа.
+- `public/art/en/neworleans/l3-5.jpg` — phrase — EN Новый Орлеан 3 vocab «I never drink coffee at night.»
+  - Draw: Перечёркнутая чашка кофе под луной.
+- `public/art/en/neworleans/l3-6.jpg` — phrase — EN Новый Орлеан 3 vocab «How often do you sing?»
+  - Draw: Мурзик с блокнотом берёт интервью.
+- `public/art/en/neworleans/l3-7.jpg` — phrase — EN Новый Орлеан 3 vocab «Tom is always late!»
+  - Draw: Том бежит, на ходу застёгивая рубашку.
+- `public/art/en/neworleans/sieve.jpg` — reward — EN Новый Орлеан 3 reward «Sugar sieve»
+  - Draw: Маленькое металлическое ситечко с ручкой, под ним снежок сахарной пудры.
+- `public/art/en/neworleans/l4-1.jpg` — phrase — EN Новый Орлеан 4 vocab «What do you do at the weekend?»
+  - Draw: Мурзик и Бернадетт на веранде в субботнее утро.
+- `public/art/en/neworleans/l4-2.jpg` — phrase — EN Новый Орлеан 4 vocab «I meet my friends.»
+  - Draw: Бернадетт обнимается с подругами на улице.
+- `public/art/en/neworleans/l4-3.jpg` — phrase — EN Новый Орлеан 4 vocab «We go to the cinema.»
+  - Draw: Мурзик и Том с попкорном в кинотеатре.
+- `public/art/en/neworleans/l4-4.jpg` — phrase — EN Новый Орлеан 4 vocab «She goes shopping.»
+  - Draw: Бернадетт с пакетами покупок.
+- `public/art/en/neworleans/l4-5.jpg` — phrase — EN Новый Орлеан 4 vocab «I watch films at home.»
+  - Draw: Том под пледом смотрит фильм.
+- `public/art/en/neworleans/l4-6.jpg` — phrase — EN Новый Орлеан 4 vocab «I just relax.»
+  - Draw: Мурзик дремлет в кресле-качалке.
+- `public/art/en/neworleans/l4-7.jpg` — phrase — EN Новый Орлеан 4 vocab «We go to the market.»
+  - Draw: Пёстрый рынок с фруктами и специями.
+- `public/art/en/neworleans/iron-table.jpg` — reward — EN Новый Орлеан 4 reward «Iron table»
+  - Draw: Маленький круглый столик с кованым узором из завитков стоит на веранде.
+- `public/art/en/neworleans/l5-1.jpg` — phrase — EN Новый Орлеан 5 vocab «Two tickets, please.»
+  - Draw: Мурзик протягивает деньги в окошко кассы.
+- `public/art/en/neworleans/l5-2.jpg` — phrase — EN Новый Орлеан 5 vocab «What time does it start?»
+  - Draw: Мурзик смотрит на афишу у входа в клуб.
+- `public/art/en/neworleans/l5-3.jpg` — phrase — EN Новый Орлеан 5 vocab «It starts at nine.»
+  - Draw: Часы над сценой показывают девять.
+- `public/art/en/neworleans/l5-4.jpg` — phrase — EN Новый Орлеан 5 vocab «in the front row»
+  - Draw: Мурзик и Том сидят прямо у сцены.
+- `public/art/en/neworleans/l5-5.jpg` — phrase — EN Новый Орлеан 5 vocab «She's amazing!»
+  - Draw: Бернадетт поёт в лучах прожектора.
+- `public/art/en/neworleans/l5-6.jpg` — phrase — EN Новый Орлеан 5 vocab «Everybody is clapping.»
+  - Draw: Зрители хлопают стоя.
+- `public/art/en/neworleans/l5-7.jpg` — phrase — EN Новый Орлеан 5 vocab «When does it finish?»
+  - Draw: Том шёпотом спрашивает, глядя на часы.
+- `public/art/en/neworleans/lanterns.jpg` — reward — EN Новый Орлеан 5 reward «Lanterns»
+  - Draw: Гирлянда маленьких бумажных фонариков разных цветов висит над верандой и мягко светится.
+- `public/art/en/neworleans/l6-1.jpg` — phrase — EN Новый Орлеан 6 vocab «Would you like to come?»
+  - Draw: Мурзик стоит у соседской двери с тарелкой бенье.
+- `public/art/en/neworleans/l6-2.jpg` — phrase — EN Новый Орлеан 6 vocab «I'd love to!»
+  - Draw: Соседка радостно хлопает в ладоши.
+- `public/art/en/neworleans/l6-3.jpg` — phrase — EN Новый Орлеан 6 vocab «Sorry, I can't.»
+  - Draw: Сосед с чемоданом виновато разводит руками.
+- `public/art/en/neworleans/l6-4.jpg` — phrase — EN Новый Орлеан 6 vocab «I'm busy today.»
+  - Draw: Мужчина в форме спешит на работу.
+- `public/art/en/neworleans/l6-5.jpg` — phrase — EN Новый Орлеан 6 vocab «Maybe next time.»
+  - Draw: Сосед машет и улыбается.
+- `public/art/en/neworleans/l6-6.jpg` — phrase — EN Новый Орлеан 6 vocab «beignets with sugar»
+  - Draw: Горка пышных квадратных пончиков в сахарной пудре.
+- `public/art/en/neworleans/l6-7.jpg` — phrase — EN Новый Орлеан 6 vocab «Everybody is welcome!»
+  - Draw: На веранде собрались соседи, все в сахарной пудре.
+- `public/art/en/neworleans/fan.jpg` — reward — EN Новый Орлеан 6 reward «Fan»
+  - Draw: Раскрытый бумажный веер с нарисованными магнолиями лежит на кованом столике.
+- `public/art/en/neworleans/l7-1.jpg` — phrase — EN Новый Орлеан 7 vocab «I've got something for your book.»
+  - Draw: Бернадетт достаёт из шкатулки сложенную страницу.
+- `public/art/en/neworleans/l7-2.jpg` — phrase — EN Новый Орлеан 7 vocab «the recipe for beignets»
+  - Draw: Страница с рисунком бенье в пудре.
+- `public/art/en/neworleans/l7-3.jpg` — phrase — EN Новый Орлеан 7 vocab «a record player»
+  - Draw: Старый проигрыватель в чемоданчике, на нём пластинка.
+- `public/art/en/neworleans/l7-4.jpg` — phrase — EN Новый Орлеан 7 vocab «Music makes people happy.»
+  - Draw: Люди на улице танцуют под оркестр.
+- `public/art/en/neworleans/l7-5.jpg` — phrase — EN Новый Орлеан 7 vocab «We're flying to San Francisco.»
+  - Draw: Том показывает на карте западное побережье.
+- `public/art/en/neworleans/l7-6.jpg` — phrase — EN Новый Орлеан 7 vocab «Don't stop singing!»
+  - Draw: Мурзик машет Бернадетт с веранды.
+- `public/art/en/neworleans/l7-7.jpg` — phrase — EN Новый Орлеан 7 vocab «See you later, alligator!»
+  - Draw: Бернадетт смеётся и машет платком.
+- `public/art/en/neworleans/record-player.jpg` — reward — EN Новый Орлеан 7 reward «Record player»; EN Новый Орлеан farewell 2
+  - Draw: Старый проигрыватель в красном чемоданчике, на нём крутится джазовая пластинка.
+- `public/art/en/neworleans/departure.jpg` — scene — EN Новый Орлеан departure; EN Новый Орлеан farewell 4
+  - Draw: Бернадетт в ярком платке машет на прощание с веранды под фонариками.
+- `public/art/en/neworleans/page.jpg` — scene — EN Новый Орлеан farewell 1
+  - Draw: Крупно: девятая страница книги рецептов, рецепт бенье. На полях записка от руки, страница чуть присыпана сахарной пудрой.
+
+## English course — San Francisco (60 pictures)
+
+- `public/art/en/sanfrancisco/arrival.jpg` — scene — EN Новый Орлеан farewell 6; EN Сан-Франциско welcome
+  - Draw: Мурзик и Том в Сан-Франциско: красный мост в тумане, крутые улицы, старый трамвайчик едет в гору.
+- `public/art/en/sanfrancisco/l1-1.jpg` — phrase — EN Сан-Франциско 1 vocab «What do you do?»
+  - Draw: Мурзик с чашкой кофе спрашивает хозяина кофейни.
+- `public/art/en/sanfrancisco/l1-2.jpg` — phrase — EN Сан-Франциско 1 vocab «I was a programmer.»
+  - Draw: Старое фото: Дэниел за компьютером с тремя мониторами.
+- `public/art/en/sanfrancisco/l1-3.jpg` — phrase — EN Сан-Франциско 1 vocab «Now I'm a barista.»
+  - Draw: Дэниел в фартуке рисует сердечко на кофе.
+- `public/art/en/sanfrancisco/l1-4.jpg` — phrase — EN Сан-Франциско 1 vocab «She's a doctor.»
+  - Draw: Женщина в белом халате со стетоскопом.
+- `public/art/en/sanfrancisco/l1-5.jpg` — phrase — EN Сан-Франциско 1 vocab «He's an engineer.»
+  - Draw: Мужчина в каске смотрит на чертёж большого моста.
+- `public/art/en/sanfrancisco/l1-6.jpg` — phrase — EN Сан-Франциско 1 vocab «I work in an office.»
+  - Draw: Светлый офис с компьютерами.
+- `public/art/en/sanfrancisco/l1-7.jpg` — phrase — EN Сан-Франциско 1 vocab «I work from home.»
+  - Draw: Женщина с ноутбуком на диване, рядом кошка.
+- `public/art/en/sanfrancisco/grinder.jpg` — reward — EN Сан-Франциско 1 reward «Coffee grinder»
+  - Draw: Старинная деревянная кофемолка с медной ручкой и маленьким ящичком внизу.
+- `public/art/en/sanfrancisco/l2-1.jpg` — phrase — EN Сан-Франциско 2 vocab «Can you make coffee?»
+  - Draw: Дэниел показывает на большую кофемашину.
+- `public/art/en/sanfrancisco/l2-2.jpg` — phrase — EN Сан-Франциско 2 vocab «Yes, I can.»
+  - Draw: Мурзик уверенно кивает.
+- `public/art/en/sanfrancisco/l2-3.jpg` — phrase — EN Сан-Франциско 2 vocab «No, I can't.»
+  - Draw: Мурзик смущённо качает головой.
+- `public/art/en/sanfrancisco/l2-4.jpg` — phrase — EN Сан-Франциско 2 vocab «I can cook.»
+  - Draw: Мурзик в колпаке переворачивает блинчик.
+- `public/art/en/sanfrancisco/l2-5.jpg` — phrase — EN Сан-Франциско 2 vocab «I can't drive.»
+  - Draw: Мурзик за рулём игрушечной машинки разводит лапами.
+- `public/art/en/sanfrancisco/l2-6.jpg` — phrase — EN Сан-Франциско 2 vocab «She can speak three languages.»
+  - Draw: Девушка, над ней облачка со словами на трёх языках.
+- `public/art/en/sanfrancisco/l2-7.jpg` — phrase — EN Сан-Франциско 2 vocab «I can draw a heart.»
+  - Draw: На пенке капучино нарисовано сердечко.
+- `public/art/en/sanfrancisco/beans.jpg` — reward — EN Сан-Франциско 2 reward «Coffee beans»
+  - Draw: Холщовый мешочек, полный блестящих тёмных кофейных зёрен, перевязан бечёвкой.
+- `public/art/en/sanfrancisco/l3-1.jpg` — phrase — EN Сан-Франциско 3 vocab «Can you help me?»
+  - Draw: Дэниел держит огромную коробку с чашками.
+- `public/art/en/sanfrancisco/l3-2.jpg` — phrase — EN Сан-Франциско 3 vocab «Sure!»
+  - Draw: Мурзик подбегает и подхватывает коробку снизу.
+- `public/art/en/sanfrancisco/l3-3.jpg` — phrase — EN Сан-Франциско 3 vocab «Can I sit here?»
+  - Draw: Посетитель показывает на свободный стул у окна.
+- `public/art/en/sanfrancisco/l3-4.jpg` — phrase — EN Сан-Франциско 3 vocab «Can you open the window?»
+  - Draw: Мурзик тянется к окну на цыпочках.
+- `public/art/en/sanfrancisco/l3-5.jpg` — phrase — EN Сан-Франциско 3 vocab «Can I use your phone?»
+  - Draw: Девушка показывает на телефон Тома.
+- `public/art/en/sanfrancisco/l3-6.jpg` — phrase — EN Сан-Франциско 3 vocab «Sorry, you can't.»
+  - Draw: Табличка «не входить» на двери кухни.
+- `public/art/en/sanfrancisco/l3-7.jpg` — phrase — EN Сан-Франциско 3 vocab «No problem!»
+  - Draw: Мурзик показывает большой палец.
+- `public/art/en/sanfrancisco/ficus.jpg` — reward — EN Сан-Франциско 3 reward «Ficus»
+  - Draw: Большой фикус с блестящими листьями в деревянной кадке стоит в углу.
+- `public/art/en/sanfrancisco/l4-1.jpg` — phrase — EN Сан-Франциско 4 vocab «Here's your apron.»
+  - Draw: Дэниел протягивает Мурзику маленький зелёный фартук.
+- `public/art/en/sanfrancisco/l4-2.jpg` — phrase — EN Сан-Франциско 4 vocab «Wash the cups, please.»
+  - Draw: Мурзик у раковины с горой чашек.
+- `public/art/en/sanfrancisco/l4-3.jpg` — phrase — EN Сан-Франциско 4 vocab «Be careful! It's hot!»
+  - Draw: Из кофемашины идёт пар.
+- `public/art/en/sanfrancisco/l4-4.jpg` — phrase — EN Сан-Франциско 4 vocab «Don't worry!»
+  - Draw: Дэниел добродушно хлопает Мурзика по плечу.
+- `public/art/en/sanfrancisco/l4-5.jpg` — phrase — EN Сан-Франциско 4 vocab «a customer»
+  - Draw: Женщина с ноутбуком заходит в кофейню.
+- `public/art/en/sanfrancisco/l4-6.jpg` — phrase — EN Сан-Франциско 4 vocab «the coffee machine»
+  - Draw: Большая блестящая кофемашина с рычагами.
+- `public/art/en/sanfrancisco/l4-7.jpg` — phrase — EN Сан-Франциско 4 vocab «Smile and say hello.»
+  - Draw: Мурзик широко улыбается посетителю.
+- `public/art/en/sanfrancisco/apron.jpg` — reward — EN Сан-Франциско 4 reward «Apron»
+  - Draw: Маленький тёмно-зелёный фартук с кармашком висит на крючке, из кармашка торчит карандаш.
+- `public/art/en/sanfrancisco/l5-1.jpg` — phrase — EN Сан-Франциско 5 vocab «I'm busy right now.»
+  - Draw: Мурзик держит по чашке в каждой лапе, ещё одна на голове.
+- `public/art/en/sanfrancisco/l5-2.jpg` — phrase — EN Сан-Франциско 5 vocab «I'm tired.»
+  - Draw: Мурзик сидит на ступеньке, уши опущены.
+- `public/art/en/sanfrancisco/l5-3.jpg` — phrase — EN Сан-Франциско 5 vocab «Let's take a break.»
+  - Draw: Дэниел ставит на стол две чашки и тарелку печенья.
+- `public/art/en/sanfrancisco/l5-4.jpg` — phrase — EN Сан-Франциско 5 vocab «Good job!»
+  - Draw: Дэниел показывает Мурзику большой палец.
+- `public/art/en/sanfrancisco/l5-5.jpg` — phrase — EN Сан-Франциско 5 vocab «What time do you finish?»
+  - Draw: Том заглядывает в кофейню.
+- `public/art/en/sanfrancisco/l5-6.jpg` — phrase — EN Сан-Франциско 5 vocab «I finish at four.»
+  - Draw: Часы на стене показывают почти четыре.
+- `public/art/en/sanfrancisco/l5-7.jpg` — phrase — EN Сан-Франциско 5 vocab «I love my job!»
+  - Draw: Мурзик в фартуке сияет за стойкой.
+- `public/art/en/sanfrancisco/cable-car.jpg` — reward — EN Сан-Франциско 5 reward «Cable car postcard»
+  - Draw: Открытка: старый красно-коричневый трамвайчик едет в крутую гору, вдали синий залив.
+- `public/art/en/sanfrancisco/l6-1.jpg` — phrase — EN Сан-Франциско 6 vocab «What does Tom do?»
+  - Draw: Мурзик показывает на Тома с фотоаппаратом.
+- `public/art/en/sanfrancisco/l6-2.jpg` — phrase — EN Сан-Франциско 6 vocab «He takes photos for a magazine.»
+  - Draw: Обложка журнала с фотографией красного моста.
+- `public/art/en/sanfrancisco/l6-3.jpg` — phrase — EN Сан-Франциско 6 vocab «He travels a lot.»
+  - Draw: Чемодан Тома весь в наклейках городов.
+- `public/art/en/sanfrancisco/l6-4.jpg` — phrase — EN Сан-Франциско 6 vocab «Does he like his job?»
+  - Draw: Дэниел с любопытством смотрит на Тома.
+- `public/art/en/sanfrancisco/l6-5.jpg` — phrase — EN Сан-Франциско 6 vocab «I study at university.»
+  - Draw: Студентка с рюкзаком у старого университета.
+- `public/art/en/sanfrancisco/l6-6.jpg` — phrase — EN Сан-Франциско 6 vocab «What do you study?»
+  - Draw: Дэниел наклоняется к студентке за стойкой.
+- `public/art/en/sanfrancisco/l6-7.jpg` — phrase — EN Сан-Франциско 6 vocab «It's my dream.»
+  - Draw: Мурзик в фартуке мечтательно смотрит вдаль.
+- `public/art/en/sanfrancisco/guest-books.jpg` — reward — EN Сан-Франциско 6 reward «Guest bookshelf»
+  - Draw: Маленькая полка, на ней разноцветные книги, оставленные посетителями кофейни.
+- `public/art/en/sanfrancisco/l7-1.jpg` — phrase — EN Сан-Франциско 7 vocab «Come here!»
+  - Draw: Дэниел машет Мурзику из-за стойки.
+- `public/art/en/sanfrancisco/l7-2.jpg` — phrase — EN Сан-Франциско 7 vocab «the recipe for sourdough bread»
+  - Draw: Страница с рисунком круглого хлеба с хрустящей корочкой.
+- `public/art/en/sanfrancisco/l7-3.jpg` — phrase — EN Сан-Франциско 7 vocab «an espresso machine»
+  - Draw: Маленькая блестящая кофемашина с двумя рычагами.
+- `public/art/en/sanfrancisco/l7-4.jpg` — phrase — EN Сан-Франциско 7 vocab «You can make great coffee now.»
+  - Draw: Мурзик гордо держит чашку с сердечком на пенке.
+- `public/art/en/sanfrancisco/l7-5.jpg` — phrase — EN Сан-Франциско 7 vocab «We're going to Canada.»
+  - Draw: Том показывает на карте север.
+- `public/art/en/sanfrancisco/l7-6.jpg` — phrase — EN Сан-Франциско 7 vocab «I'm proud of you!»
+  - Draw: Дэниел обнимает Мурзика.
+- `public/art/en/sanfrancisco/l7-7.jpg` — phrase — EN Сан-Франциско 7 vocab «Take care, buddy!»
+  - Draw: Дэниел машет у дверей кофейни в тумане.
+- `public/art/en/sanfrancisco/espresso.jpg` — reward — EN Сан-Франциско 7 reward «Espresso machine»; EN Сан-Франциско farewell 2
+  - Draw: Маленькая блестящая кофемашина для эспрессо с двумя рычагами и медными деталями.
+- `public/art/en/sanfrancisco/departure.jpg` — scene — EN Сан-Франциско departure; EN Сан-Франциско farewell 4
+  - Draw: Дэниел в фартуке машет на прощание у дверей кофейни, вокруг клубится туман.
+- `public/art/en/sanfrancisco/page.jpg` — scene — EN Сан-Франциско farewell 1
+  - Draw: Крупно: десятая страница книги рецептов, рецепт хлеба на закваске. На полях записка от руки.
+- `public/art/en/sanfrancisco/train.jpg` — scene — EN Сан-Франциско farewell 5
+  - Draw: Поезд едет на север вдоль побережья, за окном леса и горы.
+
+## English course — Vancouver (60 pictures)
+
+- `public/art/en/vancouver/arrival.jpg` — scene — EN Сан-Франциско farewell 6; EN Ванкувер welcome
+  - Draw: Мурзик и Том в Ванкувере: высокие ели, заснеженные горы над морем, стеклянные дома у воды.
+- `public/art/en/vancouver/l1-1.jpg` — phrase — EN Ванкувер 1 vocab «What's the matter?»
+  - Draw: Женщина в белом халате с тревогой наклоняется к Мурзику.
+- `public/art/en/vancouver/l1-2.jpg` — phrase — EN Ванкувер 1 vocab «I don't feel well.»
+  - Draw: Мурзик лежит под пледом, уши опущены.
+- `public/art/en/vancouver/l1-3.jpg` — phrase — EN Ванкувер 1 vocab «my head»
+  - Draw: Мурзик держится лапами за голову.
+- `public/art/en/vancouver/l1-4.jpg` — phrase — EN Ванкувер 1 vocab «my stomach»
+  - Draw: Мурзик держится за живот.
+- `public/art/en/vancouver/l1-5.jpg` — phrase — EN Ванкувер 1 vocab «my back»
+  - Draw: Том держится за спину и кривится.
+- `public/art/en/vancouver/l1-6.jpg` — phrase — EN Ванкувер 1 vocab «my arm and my leg»
+  - Draw: Схема: котик, стрелки к лапке и к ножке.
+- `public/art/en/vancouver/l1-7.jpg` — phrase — EN Ванкувер 1 vocab «my throat»
+  - Draw: Мурзик показывает на горло, у него шарф.
+- `public/art/en/vancouver/first-aid.jpg` — reward — EN Ванкувер 1 reward «First-aid kit»
+  - Draw: Маленькая белая аптечка с зелёным листочком на крышке висит на стене.
+- `public/art/en/vancouver/l2-1.jpg` — phrase — EN Ванкувер 2 vocab «I have a headache.»
+  - Draw: Мурзик с мокрым полотенцем на лбу.
+- `public/art/en/vancouver/l2-2.jpg` — phrase — EN Ванкувер 2 vocab «I have a cold.»
+  - Draw: Мурзик чихает в платок, нос красный.
+- `public/art/en/vancouver/l2-3.jpg` — phrase — EN Ванкувер 2 vocab «I have a sore throat.»
+  - Draw: Мурзик пьёт тёплый чай с мёдом.
+- `public/art/en/vancouver/l2-4.jpg` — phrase — EN Ванкувер 2 vocab «I have a temperature.»
+  - Draw: Градусник показывает 38.
+- `public/art/en/vancouver/l2-5.jpg` — phrase — EN Ванкувер 2 vocab «I have a cough.»
+  - Draw: Мурзик кашляет в лапку.
+- `public/art/en/vancouver/l2-6.jpg` — phrase — EN Ванкувер 2 vocab «My back hurts.»
+  - Draw: Том осторожно садится, держась за спину.
+- `public/art/en/vancouver/l2-7.jpg` — phrase — EN Ванкувер 2 vocab «It's not serious.»
+  - Draw: Доктор Ли с улыбкой убирает стетоскоп.
+- `public/art/en/vancouver/cocoa.jpg` — reward — EN Ванкувер 2 reward «Mug of cocoa»
+  - Draw: Большая кружка горячего какао с маршмеллоу сверху, от неё идёт пар.
+- `public/art/en/vancouver/l3-1.jpg` — phrase — EN Ванкувер 3 vocab «You should rest.»
+  - Draw: Доктор Ли поправляет Мурзику подушку.
+- `public/art/en/vancouver/l3-2.jpg` — phrase — EN Ванкувер 3 vocab «You should stay in bed.»
+  - Draw: Мурзик в кровати с книжкой.
+- `public/art/en/vancouver/l3-3.jpg` — phrase — EN Ванкувер 3 vocab «You should drink lots of water.»
+  - Draw: Большой стакан воды с лимоном.
+- `public/art/en/vancouver/l3-4.jpg` — phrase — EN Ванкувер 3 vocab «You shouldn't go out today.»
+  - Draw: За окном дождь и ветер.
+- `public/art/en/vancouver/l3-5.jpg` — phrase — EN Ванкувер 3 vocab «What should I do?»
+  - Draw: Мурзик растерянно смотрит на доктора.
+- `public/art/en/vancouver/l3-6.jpg` — phrase — EN Ванкувер 3 vocab «You should see a doctor.»
+  - Draw: Табличка с красным крестом на двери клиники.
+- `public/art/en/vancouver/l3-7.jpg` — phrase — EN Ванкувер 3 vocab «Get well soon!»
+  - Draw: Сэм машет Мурзику с порога.
+- `public/art/en/vancouver/cones.jpg` — reward — EN Ванкувер 3 reward «Pine cones»
+  - Draw: Стеклянная ваза, полная больших еловых шишек, стоит на подоконнике.
+- `public/art/en/vancouver/l4-1.jpg` — phrase — EN Ванкувер 4 vocab «Can I have something for a sore throat?»
+  - Draw: Мурзик у прилавка аптеки.
+- `public/art/en/vancouver/l4-2.jpg` — phrase — EN Ванкувер 4 vocab «Try these lozenges.»
+  - Draw: Фармацевт протягивает коробочку пастилок.
+- `public/art/en/vancouver/l4-3.jpg` — phrase — EN Ванкувер 4 vocab «cough syrup»
+  - Draw: Бутылочка красного сиропа с ложечкой.
+- `public/art/en/vancouver/l4-4.jpg` — phrase — EN Ванкувер 4 vocab «Take one tablet twice a day.»
+  - Draw: Две таблетки и солнце с луной: утром и вечером.
+- `public/art/en/vancouver/l4-5.jpg` — phrase — EN Ванкувер 4 vocab «after meals»
+  - Draw: Тарелка и таблетка рядом.
+- `public/art/en/vancouver/l4-6.jpg` — phrase — EN Ванкувер 4 vocab «Do I need a prescription?»
+  - Draw: Мурзик показывает на листок с подписью врача.
+- `public/art/en/vancouver/l4-7.jpg` — phrase — EN Ванкувер 4 vocab «I feel better.»
+  - Draw: Мурзик улыбается и потягивается.
+- `public/art/en/vancouver/torch.jpg` — reward — EN Ванкувер 4 reward «Torch»
+  - Draw: Зелёный походный фонарик на ремешке висит на крючке у двери.
+- `public/art/en/vancouver/l5-1.jpg` — phrase — EN Ванкувер 5 vocab «tall trees»
+  - Draw: Огромные ели до самого неба.
+- `public/art/en/vancouver/l5-2.jpg` — phrase — EN Ванкувер 5 vocab «mountains»
+  - Draw: Заснеженные вершины над лесом.
+- `public/art/en/vancouver/l5-3.jpg` — phrase — EN Ванкувер 5 vocab «a river»
+  - Draw: Быстрая прозрачная река среди камней.
+- `public/art/en/vancouver/l5-4.jpg` — phrase — EN Ванкувер 5 vocab «Look! A bear!»
+  - Draw: Вдали у реки бурый медведь ловит рыбу.
+- `public/art/en/vancouver/l5-5.jpg` — phrase — EN Ванкувер 5 vocab «Be quiet!»
+  - Draw: Сэм прикладывает палец к губам.
+- `public/art/en/vancouver/l5-6.jpg` — phrase — EN Ванкувер 5 vocab «Don't feed the animals.»
+  - Draw: Белка тянется к орешку в лапе Мурзика.
+- `public/art/en/vancouver/l5-7.jpg` — phrase — EN Ванкувер 5 vocab «Keep to the path.»
+  - Draw: Деревянная тропа петляет между елями.
+- `public/art/en/vancouver/bird-feeder.jpg` — reward — EN Ванкувер 5 reward «Bird feeder»
+  - Draw: Деревянная кормушка-домик с семечками висит за окном, на ней сидит синица.
+- `public/art/en/vancouver/l6-1.jpg` — phrase — EN Ванкувер 6 vocab «The water is too cold.»
+  - Draw: Мурзик трогает воду лапой и отдёргивает её.
+- `public/art/en/vancouver/l6-2.jpg` — phrase — EN Ванкувер 6 vocab «It's too cold to swim.»
+  - Draw: Горное озеро, у берега льдинки.
+- `public/art/en/vancouver/l6-3.jpg` — phrase — EN Ванкувер 6 vocab «Is it warm enough?»
+  - Draw: Сэм протягивает Мурзику тёплую куртку.
+- `public/art/en/vancouver/l6-4.jpg` — phrase — EN Ванкувер 6 vocab «We haven't got enough time.»
+  - Draw: Солнце садится за горы, Том смотрит на часы.
+- `public/art/en/vancouver/l6-5.jpg` — phrase — EN Ванкувер 6 vocab «It's too far to walk.»
+  - Draw: Длинная дорога уходит в горы.
+- `public/art/en/vancouver/l6-6.jpg` — phrase — EN Ванкувер 6 vocab «Let's take the car.»
+  - Draw: Старый пикап Сэма у дома.
+- `public/art/en/vancouver/l6-7.jpg` — phrase — EN Ванкувер 6 vocab «It's perfect!»
+  - Draw: Мурзик и Том у костра на берегу озера.
+- `public/art/en/vancouver/moose.jpg` — reward — EN Ванкувер 6 reward «Wooden moose»
+  - Draw: Маленькая вырезанная из дерева фигурка лося с большими рогами стоит на полке.
+- `public/art/en/vancouver/l7-1.jpg` — phrase — EN Ванкувер 7 vocab «It was in my drawer.»
+  - Draw: Доктор Ли достаёт из комода пожелтевший конверт.
+- `public/art/en/vancouver/l7-2.jpg` — phrase — EN Ванкувер 7 vocab «the recipe for maple pie»
+  - Draw: Страница с рисунком пирога и кленового листа.
+- `public/art/en/vancouver/l7-3.jpg` — phrase — EN Ванкувер 7 vocab «a bottle of maple syrup»
+  - Draw: Стеклянная бутылочка в форме кленового листа с золотым сиропом.
+- `public/art/en/vancouver/l7-4.jpg` — phrase — EN Ванкувер 7 vocab «Look after yourself.»
+  - Draw: Доктор Ли поправляет Мурзику шарф.
+- `public/art/en/vancouver/l7-5.jpg` — phrase — EN Ванкувер 7 vocab «Don't forget your medicine.»
+  - Draw: Бутылочка сиропа в боковом кармане чемодана.
+- `public/art/en/vancouver/l7-6.jpg` — phrase — EN Ванкувер 7 vocab «Toronto is in the east.»
+  - Draw: Сэм показывает на карте Канады стрелку на восток.
+- `public/art/en/vancouver/l7-7.jpg` — phrase — EN Ванкувер 7 vocab «Come back in summer!»
+  - Draw: Сэм машет у старого пикапа.
+- `public/art/en/vancouver/maple-syrup.jpg` — reward — EN Ванкувер 7 reward «Maple syrup»; EN Ванкувер farewell 2
+  - Draw: Стеклянная бутылочка в форме кленового листа, полная золотого кленового сиропа, с маленькой пробкой.
+- `public/art/en/vancouver/departure.jpg` — scene — EN Ванкувер departure; EN Ванкувер farewell 4
+  - Draw: Доктор Ли и Сэм машут на прощание у деревянного дома, рядом старый пикап.
+- `public/art/en/vancouver/page.jpg` — scene — EN Ванкувер farewell 1
+  - Draw: Крупно: одиннадцатая страница книги рецептов, рецепт кленового пирога. На полях записка от руки.
+- `public/art/en/vancouver/train.jpg` — scene — EN Ванкувер farewell 5
+  - Draw: Длинный поезд едет на восток через горы и бескрайние прерии Канады.
+
+## English course — Toronto (59 pictures)
+
+- `public/art/en/toronto/arrival.jpg` — scene — EN Ванкувер farewell 6; EN Торонто welcome
+  - Draw: Мурзик и Том в Торонто: высокая башня над озером, разноцветные дома, весенние цветы.
+- `public/art/en/toronto/l1-1.jpg` — phrase — EN Торонто 1 vocab «January, February, March»
+  - Draw: Три листка календаря: снег, снег и первые подснежники.
+- `public/art/en/toronto/l1-2.jpg` — phrase — EN Торонто 1 vocab «April, May, June»
+  - Draw: Три листка календаря: дождик, тюльпаны, солнце.
+- `public/art/en/toronto/l1-3.jpg` — phrase — EN Торонто 1 vocab «July, August, September»
+  - Draw: Три листка календаря: озеро, арбуз, первые жёлтые листья.
+- `public/art/en/toronto/l1-4.jpg` — phrase — EN Торонто 1 vocab «October, November, December»
+  - Draw: Три листка календаря: кленовые листья, дождь, снеговик.
+- `public/art/en/toronto/l1-5.jpg` — phrase — EN Торонто 1 vocab «in May»
+  - Draw: Цветущие тюльпаны у озера.
+- `public/art/en/toronto/l1-6.jpg` — phrase — EN Торонто 1 vocab «spring and summer»
+  - Draw: Половина картинки — весенние цветы, половина — летний пляж.
+- `public/art/en/toronto/l1-7.jpg` — phrase — EN Торонто 1 vocab «autumn and winter»
+  - Draw: Половина картинки — кленовые листья, половина — снег.
+- `public/art/en/toronto/tulips.jpg` — reward — EN Торонто 1 reward «Tulips»
+  - Draw: Белая ваза с букетом красных и жёлтых тюльпанов стоит на подоконнике.
+- `public/art/en/toronto/l2-1.jpg` — phrase — EN Торонто 2 vocab «What's the date today?»
+  - Draw: Бабушка Мэй надевает очки и смотрит на календарь.
+- `public/art/en/toronto/l2-2.jpg` — phrase — EN Торонто 2 vocab «It's the second of May.»
+  - Draw: Листок календаря с цифрой 2.
+- `public/art/en/toronto/l2-3.jpg` — phrase — EN Торонто 2 vocab «first, second, third»
+  - Draw: Три котёнка на пьедестале: первое, второе и третье место.
+- `public/art/en/toronto/l2-4.jpg` — phrase — EN Торонто 2 vocab «fourth, fifth, sixth»
+  - Draw: Ряд стульев, на спинках таблички 4, 5, 6.
+- `public/art/en/toronto/l2-5.jpg` — phrase — EN Торонто 2 vocab «the fifth of May»
+  - Draw: Листок календаря, пятое мая обведено сердечком.
+- `public/art/en/toronto/l2-6.jpg` — phrase — EN Торонто 2 vocab «in three days»
+  - Draw: Три листка календаря, на третьем нарисован торт.
+- `public/art/en/toronto/l2-7.jpg` — phrase — EN Торонто 2 vocab «next week»
+  - Draw: Стрелка на календаре показывает вперёд.
+- `public/art/en/toronto/frame.jpg` — reward — EN Торонто 2 reward «Photo frame»
+  - Draw: Серебряная рамка для фотографии, пока пустая, стоит на комоде.
+- `public/art/en/toronto/l3-1.jpg` — phrase — EN Торонто 3 vocab «When's your birthday?»
+  - Draw: Бабушка Мэй с улыбкой спрашивает Мурзика за чаем.
+- `public/art/en/toronto/l3-2.jpg` — phrase — EN Торонто 3 vocab «My birthday is on the fifth of May.»
+  - Draw: Мурзик показывает на календаре пятое мая.
+- `public/art/en/toronto/l3-3.jpg` — phrase — EN Торонто 3 vocab «How old are you going to be?»
+  - Draw: Бабушка Мэй с любопытством наклоняется к Мурзику.
+- `public/art/en/toronto/l3-4.jpg` — phrase — EN Торонто 3 vocab «I'm going to be seven.»
+  - Draw: Мурзик гордо показывает семь пальцев на двух лапах.
+- `public/art/en/toronto/l3-5.jpg` — phrase — EN Торонто 3 vocab «a party»
+  - Draw: Комната с гирляндами и шариками.
+- `public/art/en/toronto/l3-6.jpg` — phrase — EN Торонто 3 vocab «an invitation»
+  - Draw: Красивая открытка-приглашение с шариками.
+- `public/art/en/toronto/l3-7.jpg` — phrase — EN Торонто 3 vocab «Can you come?»
+  - Draw: Том протягивает соседу приглашение.
+- `public/art/en/toronto/party-hats.jpg` — reward — EN Торонто 3 reward «Party hats»
+  - Draw: Стопка бумажных праздничных колпаков в горошек и полоску, с резинками и помпонами.
+- `public/art/en/toronto/l4-1.jpg` — phrase — EN Торонто 4 vocab «What are you going to do?»
+  - Draw: Том и Майкл шепчутся на кухне.
+- `public/art/en/toronto/l4-2.jpg` — phrase — EN Торонто 4 vocab «I'm going to bake a cake.»
+  - Draw: Люси достаёт муку и яйца.
+- `public/art/en/toronto/l4-3.jpg` — phrase — EN Торонто 4 vocab «We're going to have a party.»
+  - Draw: Майкл рисует на доске план праздника.
+- `public/art/en/toronto/l4-4.jpg` — phrase — EN Торонто 4 vocab «He's going to buy a present.»
+  - Draw: Том смотрит на витрину магазина.
+- `public/art/en/toronto/l4-5.jpg` — phrase — EN Торонто 4 vocab «We're going to invite our friends.»
+  - Draw: Стопка приглашений и конверты.
+- `public/art/en/toronto/l4-6.jpg` — phrase — EN Торонто 4 vocab «Don't tell him!»
+  - Draw: Бабушка Мэй прикладывает палец к губам.
+- `public/art/en/toronto/l4-7.jpg` — phrase — EN Торонто 4 vocab «It's a surprise!»
+  - Draw: Из коробки выпрыгивают конфетти.
+- `public/art/en/toronto/balloons.jpg` — reward — EN Торонто 4 reward «Balloons»
+  - Draw: Связка разноцветных воздушных шариков привязана к спинке стула.
+- `public/art/en/toronto/l5-1.jpg` — phrase — EN Торонто 5 vocab «Surprise! Happy birthday!»
+  - Draw: Все выпрыгивают из-за стойки кафе с хлопушками.
+- `public/art/en/toronto/l5-2.jpg` — phrase — EN Торонто 5 vocab «Here's your present.»
+  - Draw: Том протягивает Мурзику коробку с бантом.
+- `public/art/en/toronto/l5-3.jpg` — phrase — EN Торонто 5 vocab «Open it!»
+  - Draw: Мурзик развязывает бант.
+- `public/art/en/toronto/l5-4.jpg` — phrase — EN Торонто 5 vocab «What a lovely surprise!»
+  - Draw: Мурзик прижимает лапы к щекам от восторга.
+- `public/art/en/toronto/l5-5.jpg` — phrase — EN Торонто 5 vocab «Thank you so much!»
+  - Draw: Мурзик обнимает Тома.
+- `public/art/en/toronto/l5-6.jpg` — phrase — EN Торонто 5 vocab «How old are you now?»
+  - Draw: Бабушка Мэй ласково гладит Мурзика по голове.
+- `public/art/en/toronto/l5-7.jpg` — phrase — EN Торонто 5 vocab «We love you!»
+  - Draw: Вся семья Чен и Том обнимают Мурзика.
+- `public/art/en/toronto/sketchbook.jpg` — reward — EN Торонто 5 reward «Sketchbook»
+  - Draw: Большой альбом для рисования и коробка акварели. На обложке Том нарисовал рыжего котёнка в фартуке.
+- `public/art/en/toronto/l6-1.jpg` — phrase — EN Торонто 6 vocab «Make a wish!»
+  - Draw: Мурзик зажмурился и сложил лапки над тортом.
+- `public/art/en/toronto/l6-2.jpg` — phrase — EN Торонто 6 vocab «Blow out the candles!»
+  - Draw: Мурзик надувает щёки над семью свечками.
+- `public/art/en/toronto/l6-3.jpg` — phrase — EN Торонто 6 vocab «What's your wish?»
+  - Draw: Бабушка Мэй с любопытством наклоняется к Мурзику.
+- `public/art/en/toronto/l6-4.jpg` — phrase — EN Торонто 6 vocab «It's a secret!»
+  - Draw: Мурзик прижимает лапку к губам.
+- `public/art/en/toronto/l6-5.jpg` — phrase — EN Торонто 6 vocab «Have a very happy year!»
+  - Draw: Бабушка Мэй поднимает чашку чая.
+- `public/art/en/toronto/l6-6.jpg` — phrase — EN Торонто 6 vocab «Best wishes!»
+  - Draw: Открытка с подписью и сердечком.
+- `public/art/en/toronto/l6-7.jpg` — phrase — EN Торонто 6 vocab «Cheers!»
+  - Draw: Все поднимают стаканы с лимонадом.
+- `public/art/en/toronto/seven-candle.jpg` — reward — EN Торонто 6 reward «Number candle»
+  - Draw: Маленькая голубая свеча в форме цифры семь стоит на кусочке шоколадного торта.
+- `public/art/en/toronto/l7-1.jpg` — phrase — EN Торонто 7 vocab «the old recipe box»
+  - Draw: Деревянная коробка с карточками рецептов на полке кафе.
+- `public/art/en/toronto/l7-2.jpg` — phrase — EN Торонто 7 vocab «the recipe for butter tarts»
+  - Draw: Страница с рисунком маленьких тарталеток с карамелью.
+- `public/art/en/toronto/l7-3.jpg` — phrase — EN Торонто 7 vocab «a tablecloth»
+  - Draw: Белая скатерть с вышитыми красными кленовыми листьями.
+- `public/art/en/toronto/l7-4.jpg` — phrase — EN Торонто 7 vocab «I made it many years ago.»
+  - Draw: Бабушка Мэй гладит вышивку.
+- `public/art/en/toronto/l7-5.jpg` — phrase — EN Торонто 7 vocab «We're going to fly to Australia.»
+  - Draw: Том показывает на глобусе другую сторону земли.
+- `public/art/en/toronto/l7-6.jpg` — phrase — EN Торонто 7 vocab «It's autumn there now!»
+  - Draw: Половина глобуса — весна, другая половина — осень.
+- `public/art/en/toronto/l7-7.jpg` — phrase — EN Торонто 7 vocab «Have a wonderful trip!»
+  - Draw: Семья Чен машет у дверей кафе.
+- `public/art/en/toronto/tablecloth.jpg` — reward — EN Торонто 7 reward «Tablecloth»; EN Торонто farewell 2
+  - Draw: Белая льняная скатерть с вышитыми по краю красными кленовыми листьями.
+- `public/art/en/toronto/departure.jpg` — scene — EN Торонто departure; EN Торонто farewell 4
+  - Draw: Семья Чен — Майкл, Люси и бабушка Мэй — машет на прощание у дверей кафе.
+- `public/art/en/toronto/page.jpg` — scene — EN Торонто farewell 1
+  - Draw: Крупно: двенадцатая страница книги рецептов, рецепт масляных тарталеток. На полях записка от руки.
+
+## English course — Sydney (59 pictures)
+
+- `public/art/en/sydney/arrival.jpg` — scene — EN Торонто farewell 6; EN Сидней welcome
+  - Draw: Мурзик и Том в Сиднее: белое здание оперы, похожее на паруса, синяя гавань, большой мост.
+- `public/art/en/sydney/l1-1.jpg` — phrase — EN Сидней 1 vocab «Where were you yesterday?»
+  - Draw: Девушка с доской для сёрфинга машет Мурзику.
+- `public/art/en/sydney/l1-2.jpg` — phrase — EN Сидней 1 vocab «I was at the beach.»
+  - Draw: Мурзик в соломенной шляпе на золотом песке.
+- `public/art/en/sydney/l1-3.jpg` — phrase — EN Сидней 1 vocab «It was warm and sunny.»
+  - Draw: Светит солнце, Мурзик в соломенной шляпе жмурится.
+- `public/art/en/sydney/l1-4.jpg` — phrase — EN Сидней 1 vocab «We were tired.»
+  - Draw: Мурзик и Том спят в шезлонгах.
+- `public/art/en/sydney/l1-5.jpg` — phrase — EN Сидней 1 vocab «The flight was long.»
+  - Draw: Мурзик зевает у иллюминатора самолёта.
+- `public/art/en/sydney/l1-6.jpg` — phrase — EN Сидней 1 vocab «It wasn't cold.»
+  - Draw: Термометр на солнце показывает двадцать пять.
+- `public/art/en/sydney/l1-7.jpg` — phrase — EN Сидней 1 vocab «Were you in the water?»
+  - Draw: Хлоя мокрая, с доской под мышкой.
+- `public/art/en/sydney/deckchair.jpg` — reward — EN Сидней 1 reward «Deckchair»
+  - Draw: Деревянный шезлонг с полосатой тканью в синюю и белую полоску стоит у окна с видом на море.
+- `public/art/en/sydney/l2-1.jpg` — phrase — EN Сидней 2 vocab «We visited the Opera House.»
+  - Draw: Мурзик и Том перед белым зданием оперы, похожим на паруса.
+- `public/art/en/sydney/l2-2.jpg` — phrase — EN Сидней 2 vocab «I walked to the harbour.»
+  - Draw: Мурзик идёт по набережной к гавани.
+- `public/art/en/sydney/l2-3.jpg` — phrase — EN Сидней 2 vocab «Tom watched the surfers.»
+  - Draw: Том на песке смотрит на волны с сёрфингистами.
+- `public/art/en/sydney/l2-4.jpg` — phrase — EN Сидней 2 vocab «We stayed there all day.»
+  - Draw: Солнце садится над гаванью.
+- `public/art/en/sydney/l2-5.jpg` — phrase — EN Сидней 2 vocab «I liked the koalas.»
+  - Draw: Коала обнимает ветку эвкалипта.
+- `public/art/en/sydney/l2-6.jpg` — phrase — EN Сидней 2 vocab «last week»
+  - Draw: Стрелка на календаре показывает назад на неделю.
+- `public/art/en/sydney/l2-7.jpg` — phrase — EN Сидней 2 vocab «two days ago»
+  - Draw: Два листка календаря назад.
+- `public/art/en/sydney/shells.jpg` — reward — EN Сидней 2 reward «Shells»
+  - Draw: Стеклянная банка с розовыми, белыми и полосатыми ракушками стоит на подоконнике.
+- `public/art/en/sydney/l3-1.jpg` — phrase — EN Сидней 3 vocab «Did you sleep well?»
+  - Draw: Хлоя с чашкой кофе на кухне смотрит на сонного Тома.
+- `public/art/en/sydney/l3-2.jpg` — phrase — EN Сидней 3 vocab «Yes, I did.»
+  - Draw: Мурзик бодро потягивается.
+- `public/art/en/sydney/l3-3.jpg` — phrase — EN Сидней 3 vocab «No, I didn't.»
+  - Draw: Том с кругами под глазами.
+- `public/art/en/sydney/l3-4.jpg` — phrase — EN Сидней 3 vocab «I didn't sleep at all.»
+  - Draw: Том ночью у окна, за окном луна.
+- `public/art/en/sydney/l3-5.jpg` — phrase — EN Сидней 3 vocab «Did you hear the birds?»
+  - Draw: На ветке сидит большая смеющаяся птица кукабарра.
+- `public/art/en/sydney/l3-6.jpg` — phrase — EN Сидней 3 vocab «They laughed all night!»
+  - Draw: Две кукабарры на ветке широко раскрыли клювы.
+- `public/art/en/sydney/l3-7.jpg` — phrase — EN Сидней 3 vocab «Did you have breakfast?»
+  - Draw: На столе тосты с пастой и чай.
+- `public/art/en/sydney/surfboard.jpg` — reward — EN Сидней 3 reward «Little surfboard»
+  - Draw: Маленькая доска для сёрфинга, расписанная волнами и солнцем, стоит у стены.
+- `public/art/en/sydney/l4-1.jpg` — phrase — EN Сидней 4 vocab «I went to the beach.»
+  - Draw: Мурзик бежит по песку к морю.
+- `public/art/en/sydney/l4-2.jpg` — phrase — EN Сидней 4 vocab «We had a picnic.»
+  - Draw: Плед на траве, корзина с едой, вид на гавань.
+- `public/art/en/sydney/l4-3.jpg` — phrase — EN Сидней 4 vocab «I saw a whale!»
+  - Draw: Из воды показывается огромный хвост кита.
+- `public/art/en/sydney/l4-4.jpg` — phrase — EN Сидней 4 vocab «Chloe made pies.»
+  - Draw: Хлоя достаёт из духовки румяные пирожки.
+- `public/art/en/sydney/l4-5.jpg` — phrase — EN Сидней 4 vocab «We ate a lot.»
+  - Draw: Пустые тарелки и крошки на пледе.
+- `public/art/en/sydney/l4-6.jpg` — phrase — EN Сидней 4 vocab «I got up at six.»
+  - Draw: Будильник на шести, за окном рассвет.
+- `public/art/en/sydney/l4-7.jpg` — phrase — EN Сидней 4 vocab «My friends came too.»
+  - Draw: К пледу подходят друзья Хлои с досками.
+- `public/art/en/sydney/picnic-basket.jpg` — reward — EN Сидней 4 reward «Picnic basket»
+  - Draw: Большая плетёная корзина для пикника с клетчатой подкладкой, внутри тарелки и чашки на ремешках.
+- `public/art/en/sydney/l5-1.jpg` — phrase — EN Сидней 5 vocab «First, I got up.»
+  - Draw: Мурзик выбирается из кровати.
+- `public/art/en/sydney/l5-2.jpg` — phrase — EN Сидней 5 vocab «Then I had a shower.»
+  - Draw: Мурзик неохотно стоит под душем, шерсть торчит.
+- `public/art/en/sydney/l5-3.jpg` — phrase — EN Сидней 5 vocab «After that, we went to the market.»
+  - Draw: Мурзик и Хлоя на рынке с фруктами.
+- `public/art/en/sydney/l5-4.jpg` — phrase — EN Сидней 5 vocab «Finally, we came home.»
+  - Draw: Мурзик с пакетами у двери дома.
+- `public/art/en/sydney/l5-5.jpg` — phrase — EN Сидней 5 vocab «It was a great day.»
+  - Draw: Мурзик пишет в дневнике и улыбается.
+- `public/art/en/sydney/l5-6.jpg` — phrase — EN Сидней 5 vocab «my diary»
+  - Draw: Толстый дневник путешествий с наклейками городов.
+- `public/art/en/sydney/l5-7.jpg` — phrase — EN Сидней 5 vocab «I wrote in my diary.»
+  - Draw: Мурзик пишет перьевой ручкой.
+- `public/art/en/sydney/beach-towel.jpg` — reward — EN Сидней 5 reward «Beach towel»
+  - Draw: Большое пляжное полотенце в жёлтую и голубую полоску сушится на перилах балкона.
+- `public/art/en/sydney/l6-1.jpg` — phrase — EN Сидней 6 vocab «I started in London.»
+  - Draw: Воспоминание: вокзал в Лондоне, миссис Хоуп машет.
+- `public/art/en/sydney/l6-2.jpg` — phrase — EN Сидней 6 vocab «I met lots of people.»
+  - Draw: Коллаж: Прия, семья Макдональд, Шон, Маркус…
+- `public/art/en/sydney/l6-3.jpg` — phrase — EN Сидней 6 vocab «I learned to make coffee.»
+  - Draw: Воспоминание: Мурзик рисует сердечко на кофе в Сан-Франциско.
+- `public/art/en/sydney/l6-4.jpg` — phrase — EN Сидней 6 vocab «I found twelve pages.»
+  - Draw: Книга рецептов, страницы вклеены одна за другой.
+- `public/art/en/sydney/l6-5.jpg` — phrase — EN Сидней 6 vocab «Tom took a thousand photos.»
+  - Draw: Гора фотографий на столе.
+- `public/art/en/sydney/l6-6.jpg` — phrase — EN Сидней 6 vocab «What did you like best?»
+  - Draw: Хлоя подпирает щёку рукой и слушает.
+- `public/art/en/sydney/l6-7.jpg` — phrase — EN Сидней 6 vocab «I liked the people best.»
+  - Draw: Мурзик прижимает лапку к сердцу.
+- `public/art/en/sydney/boomerang.jpg` — reward — EN Сидней 6 reward «Boomerang»
+  - Draw: Деревянный бумеранг, расписанный точками и узорами, висит на стене.
+- `public/art/en/sydney/l7-1.jpg` — phrase — EN Сидней 7 vocab «the most important thing»
+  - Draw: Хлоя открывает духовку, оттуда пахнет пирогами.
+- `public/art/en/sydney/l7-2.jpg` — phrase — EN Сидней 7 vocab «the recipe for meat pies»
+  - Draw: Страница с рисунком румяного пирожка.
+- `public/art/en/sydney/l7-3.jpg` — phrase — EN Сидней 7 vocab «a sun umbrella»
+  - Draw: Большой полосатый зонт от солнца для террасы.
+- `public/art/en/sydney/l7-4.jpg` — phrase — EN Сидней 7 vocab «for your terrace»
+  - Draw: Столик под зонтом на маленькой террасе кафе.
+- `public/art/en/sydney/l7-5.jpg` — phrase — EN Сидней 7 vocab «The last page is in New Zealand.»
+  - Draw: Хлоя показывает на карте острова рядом с Австралией.
+- `public/art/en/sydney/l7-6.jpg` — phrase — EN Сидней 7 vocab «We had a great time.»
+  - Draw: Мурзик и Том машут Хлое на пляже.
+- `public/art/en/sydney/l7-7.jpg` — phrase — EN Сидней 7 vocab «Catch you later!»
+  - Draw: Хлоя на доске машет с волны.
+- `public/art/en/sydney/parasol.jpg` — reward — EN Сидней 7 reward «Sun umbrella»; EN Сидней farewell 2
+  - Draw: Большой сложенный зонт от солнца в жёлтую и белую полоску с деревянной ручкой.
+- `public/art/en/sydney/departure.jpg` — scene — EN Сидней departure; EN Сидней farewell 4
+  - Draw: Хлоя с доской для сёрфинга машет на прощание на пляже.
+- `public/art/en/sydney/page.jpg` — scene — EN Сидней farewell 1
+  - Draw: Крупно: тринадцатая страница книги рецептов, рецепт пирожков с мясом. На полях записка от руки.
+
+## English course — Wellington (60 pictures)
+
+- `public/art/en/wellington/arrival.jpg` — scene — EN Сидней farewell 6; EN Веллингтон welcome
+  - Draw: Мурзик и Том в Веллингтоне: разноцветные деревянные дома на зелёных холмах над гаванью, сильный ветер.
+- `public/art/en/wellington/l1-1.jpg` — phrase — EN Веллингтон 1 vocab «You must be Murzik!»
+  - Draw: Пожилая женщина с седыми кудрями и в ярком свитере открывает дверь.
+- `public/art/en/wellington/l1-2.jpg` — phrase — EN Веллингтон 1 vocab «I've heard a lot about you.»
+  - Draw: Грейс держит письмо с лондонской маркой.
+- `public/art/en/wellington/l1-3.jpg` — phrase — EN Веллингтон 1 vocab «Mrs Hope is my best friend.»
+  - Draw: Старая фотография: две молодые девушки в фартуках смеются.
+- `public/art/en/wellington/l1-4.jpg` — phrase — EN Веллингтон 1 vocab «We met fifty years ago.»
+  - Draw: Пожелтевшая фотография у моря.
+- `public/art/en/wellington/l1-5.jpg` — phrase — EN Веллингтон 1 vocab «I live by the sea.»
+  - Draw: Деревянный домик на холме над гаванью.
+- `public/art/en/wellington/l1-6.jpg` — phrase — EN Веллингтон 1 vocab «I've got three grandchildren.»
+  - Draw: Фотографии трёх улыбающихся детей на холодильнике.
+- `public/art/en/wellington/l1-7.jpg` — phrase — EN Веллингтон 1 vocab «Come in and sit down!»
+  - Draw: Грейс показывает на диван с вязаными подушками.
+- `public/art/en/wellington/chair-cushions.jpg` — reward — EN Веллингтон 1 reward «Chair cushions»
+  - Draw: Стопка вязаных подушек для стульев всех цветов радуги лежит на кресле.
+- `public/art/en/wellington/l2-1.jpg` — phrase — EN Веллингтон 2 vocab «It's so windy today!»
+  - Draw: Шарф Мурзика развевается, сам он держится за фонарный столб.
+- `public/art/en/wellington/l2-2.jpg` — phrase — EN Веллингтон 2 vocab «Hold on to your hat!»
+  - Draw: Бейсболка Мурзика улетает в небо.
+- `public/art/en/wellington/l2-3.jpg` — phrase — EN Веллингтон 2 vocab «What are you wearing?»
+  - Draw: Грейс оглядывает Мурзика в дверях.
+- `public/art/en/wellington/l2-4.jpg` — phrase — EN Веллингтон 2 vocab «You should take a warm jacket.»
+  - Draw: Грейс протягивает Мурзику куртку.
+- `public/art/en/wellington/l2-5.jpg` — phrase — EN Веллингтон 2 vocab «It's raining and it's sunny!»
+  - Draw: Над гаванью радуга, идёт солнечный дождик.
+- `public/art/en/wellington/l2-6.jpg` — phrase — EN Веллингтон 2 vocab «Four seasons in one day.»
+  - Draw: Небо разделено на четыре части: солнце, дождь, ветер, облака.
+- `public/art/en/wellington/l2-7.jpg` — phrase — EN Веллингтон 2 vocab «Look, a rainbow!»
+  - Draw: Яркая радуга над холмами и гаванью.
+- `public/art/en/wellington/windmill.jpg` — reward — EN Веллингтон 2 reward «Windmill»
+  - Draw: Разноцветная бумажная вертушка на палочке быстро крутится на ветру у окна.
+- `public/art/en/wellington/l3-1.jpg` — phrase — EN Веллингтон 3 vocab «I'd like a flat white, please.»
+  - Draw: Чашка кофе с бархатной молочной пенкой.
+- `public/art/en/wellington/l3-2.jpg` — phrase — EN Веллингтон 3 vocab «Have you got any cake?»
+  - Draw: Мурзик заглядывает в витрину с пирожными.
+- `public/art/en/wellington/l3-3.jpg` — phrase — EN Веллингтон 3 vocab «We've got pavlova.»
+  - Draw: Белый торт-безе со сливками и ягодами.
+- `public/art/en/wellington/l3-4.jpg` — phrase — EN Веллингтон 3 vocab «Can I have a slice, please?»
+  - Draw: Грейс отрезает кусок павловы.
+- `public/art/en/wellington/l3-5.jpg` — phrase — EN Веллингтон 3 vocab «I don't like coffee very much.»
+  - Draw: Том отодвигает кофе и берёт чай.
+- `public/art/en/wellington/l3-6.jpg` — phrase — EN Веллингтон 3 vocab «This is my café.»
+  - Draw: Маленькое уютное кафе с видом на гавань.
+- `public/art/en/wellington/l3-7.jpg` — phrase — EN Веллингтон 3 vocab «It's just like Hope's Café.»
+  - Draw: Кафе Грейс: синяя дверь, колокольчик, столик у окна.
+- `public/art/en/wellington/chalkboard.jpg` — reward — EN Веллингтон 3 reward «Chalkboard»
+  - Draw: Маленькая грифельная доска в деревянной рамке, на ней мелом нарисованы чашка и торт.
+- `public/art/en/wellington/l4-1.jpg` — phrase — EN Веллингтон 4 vocab «How do we get to the top?»
+  - Draw: Мурзик смотрит на крутой холм над городом.
+- `public/art/en/wellington/l4-2.jpg` — phrase — EN Веллингтон 4 vocab «by cable car»
+  - Draw: Красный вагончик фуникулёра едет в гору.
+- `public/art/en/wellington/l4-3.jpg` — phrase — EN Веллингтон 4 vocab «It takes five minutes.»
+  - Draw: Часы и вагончик на полпути вверх.
+- `public/art/en/wellington/l4-4.jpg` — phrase — EN Веллингтон 4 vocab «There's a beautiful garden at the top.»
+  - Draw: Ботанический сад с цветами и тропинками.
+- `public/art/en/wellington/l4-5.jpg` — phrase — EN Веллингтон 4 vocab «There are lots of flowers.»
+  - Draw: Розовые и белые розы на клумбах.
+- `public/art/en/wellington/l4-6.jpg` — phrase — EN Веллингтон 4 vocab «next to the old tree»
+  - Draw: Скамейка рядом с огромным старым деревом.
+- `public/art/en/wellington/l4-7.jpg` — phrase — EN Веллингтон 4 vocab «You can see the whole city!»
+  - Draw: Вид сверху на гавань, дома и корабли.
+- `public/art/en/wellington/hill-photo.jpg` — reward — EN Веллингтон 4 reward «Photo from the hill»
+  - Draw: Фотография в рамке: Мурзик, Том и Грейс на скамейке под старым деревом, за ними гавань.
+- `public/art/en/wellington/l5-1.jpg` — phrase — EN Веллингтон 5 vocab «We were young cooks.»
+  - Draw: Старое фото: две девушки в белых колпаках на кухне.
+- `public/art/en/wellington/l5-2.jpg` — phrase — EN Веллингтон 5 vocab «We worked in a big hotel.»
+  - Draw: Старинная кухня большого отеля, много поваров.
+- `public/art/en/wellington/l5-3.jpg` — phrase — EN Веллингтон 5 vocab «She opened a little café.»
+  - Draw: Молодая миссис Хоуп у новой синей двери.
+- `public/art/en/wellington/l5-4.jpg` — phrase — EN Веллингтон 5 vocab «Tom's grandfather died.»
+  - Draw: Фотография улыбающегося мужчины в рамке и цветок рядом.
+- `public/art/en/wellington/l5-5.jpg` — phrase — EN Веллингтон 5 vocab «She was very sad and alone.»
+  - Draw: Миссис Хоуп одна за столиком в пустом кафе, за окном дождь.
+- `public/art/en/wellington/l5-6.jpg` — phrase — EN Веллингтон 5 vocab «She closed the café.»
+  - Draw: Синяя дверь с табличкой, окна в пыли.
+- `public/art/en/wellington/l5-7.jpg` — phrase — EN Веллингтон 5 vocab «She sent the pages to her friends.»
+  - Draw: Конверты с марками разных стран.
+- `public/art/en/wellington/old-photo.jpg` — reward — EN Веллингтон 5 reward «Old photo»
+  - Draw: Чёрно-белая фотография: две молодые девушки в фартуках смеются у синей двери маленького кафе.
+- `public/art/en/wellington/l6-1.jpg` — phrase — EN Веллингтон 6 vocab «There's no recipe.»
+  - Draw: Последняя страница: только несколько строчек от руки.
+- `public/art/en/wellington/l6-2.jpg` — phrase — EN Веллингтон 6 vocab «Name it yourself.»
+  - Draw: Крупно: строчка аккуратным почерком.
+- `public/art/en/wellington/l6-3.jpg` — phrase — EN Веллингтон 6 vocab «Every café is like its owner.»
+  - Draw: Мурзик задумчиво смотрит на страницу.
+- `public/art/en/wellington/l6-4.jpg` — phrase — EN Веллингтон 6 vocab «I'm going to open a café.»
+  - Draw: Мурзик в фартуке у синей двери.
+- `public/art/en/wellington/l6-5.jpg` — phrase — EN Веллингтон 6 vocab «What are you going to call it?»
+  - Draw: Грейс с любопытством наклоняется к Мурзику.
+- `public/art/en/wellington/l6-6.jpg` — phrase — EN Веллингтон 6 vocab «I don't know yet.»
+  - Draw: Мурзик пожимает плечами и улыбается.
+- `public/art/en/wellington/l6-7.jpg` — phrase — EN Веллингтон 6 vocab «Let's go home!»
+  - Draw: Мурзик и Том обнимаются с книгой в лапах.
+- `public/art/en/wellington/fern.jpg` — reward — EN Веллингтон 6 reward «Fern»
+  - Draw: Пышный зелёный папоротник в глиняном горшке стоит на полу у окна.
+- `public/art/en/wellington/l7-1.jpg` — phrase — EN Веллингтон 7 vocab «the A1 exam»
+  - Draw: Мурзик за столом с карандашом, на листе крупно: A1.
+- `public/art/en/wellington/l7-2.jpg` — phrase — EN Веллингтон 7 vocab «Congratulations!»
+  - Draw: Том и Грейс аплодируют.
+- `public/art/en/wellington/l7-3.jpg` — phrase — EN Веллингтон 7 vocab «You passed!»
+  - Draw: Мурзик поднимает над головой лист с большой звездой.
+- `public/art/en/wellington/l7-4.jpg` — phrase — EN Веллингтон 7 vocab «We're proud of you!»
+  - Draw: Грейс обнимает Мурзика.
+- `public/art/en/wellington/l7-5.jpg` — phrase — EN Веллингтон 7 vocab «an old clock»
+  - Draw: Большие старые настенные часы в деревянном корпусе.
+- `public/art/en/wellington/l7-6.jpg` — phrase — EN Веллингтон 7 vocab «It's from Hope's Café.»
+  - Draw: Грейс снимает часы со стены.
+- `public/art/en/wellington/l7-7.jpg` — phrase — EN Веллингтон 7 vocab «It's time to go home.»
+  - Draw: Часы показывают ровно двенадцать, рядом стоит собранный чемодан.
+- `public/art/en/wellington/old-clock.jpg` — reward — EN Веллингтон 7 reward «Old clock»
+  - Draw: Большие старинные настенные часы в деревянном корпусе с маятником. Маятник снова качается.
+- `public/art/en/wellington/departure.jpg` — scene — EN Веллингтон departure
+  - Draw: Грейс в ярком свитере машет на прощание в аэропорту, ветер развевает её кудри.
+- `public/art/en/wellington/book.jpg` — scene — EN Веллингтон farewell 1
+  - Draw: Крупно: книга рецептов миссис Хоуп. Все страницы на месте, между ними старая фотография двух девушек у синей двери.
+- `public/art/en/wellington/suitcase.jpg` — scene — EN Веллингтон farewell 2
+  - Draw: Раскрытый чемодан Мурзика: колокольчик, чайник в цветочек, подставка для пирожных, клетчатый плед, глиняные кружки, неоновая вывеска-чашка, вешалка, форма для пиццы, проигрыватель, кофемашина, кленовый сироп, скатерть, зонт от солнца и старые часы.
+
+# Portuguese course
+
+The fourth course, «Мурзик и попугай» / “Murzik and the Parrot”: Brazilian Portuguese, for Russian speakers and for English speakers. Both versions use the same pictures. Murzik's Paris neighbour Dona Lúcia takes him to Rio for her 80th birthday. Her parrot Pipoca escapes into the drum case of the touring band Maré Alta; Murzik and her granddaughter Bia follow the tour across 14 Brazilian cities, a day behind each time, and bring him back for the party. All pictures go to `public/art/pt/<city>/`. The `draw` notes for this course are written in English — draw exactly what they say.
+
+## Style and cast for the Portuguese course
+
+- Same storybook style and same **Murzik** as in the other courses. Tom is not in this course.
+- **No flags** (the only exception is the small flag on the language button `public/art/languages/pt.jpg`, already described there). No words or letters in the pictures (numbers on clocks, calendars, price tags and the “80” candles are fine). Posters show only drawings — a drum, notes, a map with dots.
+- **Only Murzik is a talking cat.** Everyone else is a human. **Pipoca** is an ordinary parrot who repeats phrases: small, bright green with a yellow head — always the same bird. Other animals (caimans, capybaras, jaguars, dolphins, monkeys) are ordinary animals.
+- **Dona Lúcia**: Bia's grandmother, about 80, cheerful, a little absent-minded, flowery dresses. In old photos she is a young woman in a flowery dress. At the party she wears a shawl with parrots on it.
+- **Bia**: a cheerful young student from Rio with curly dark hair; Murzik's companion in every city. Same look in every picture.
+- **Cláudia**: Bia's mother, warm and busy. **Léo**: Bia's brother, about 10, mad about football. **Marcos**: Bia's father (São Paulo). **Rafael**: Bia's cousin (Brasília).
+- **Maré Alta**: a jolly band with an old, colourful tour bus. **Zeca** is the singer, **Tiago** the drummer with a big drum and its hard black case (Pipoca hides in it).
+- City helpers: Seu Antônio (café, Paraty), Dona Neide (bakery cashier, São Paulo), Gabriel (hostel, Curitiba), Caio (surfer, 16, Florianópolis), Juliana (guide, Iguaçu), Seu Benedito (Pantanal cowboy), Dona Marta (guide, Ouro Preto), Dona Celeste (acarajé cook, Salvador) with grandchildren Davi and Ana, Lia (frevo dancer, Olinda), Dr Paulo (Fortaleza), Seu Raimundo (river-boat captain, Manaus) and João, a boy of about 8 on the boat.
+- In lesson 7 of every city there is a photo of Pipoca with that city's helper; all these photos end up in one green album.
+- Phrase pictures and rewards: square, 1408 × 1408. Scenes: portrait, 1152 × 1728.
+
+## Portuguese course — Prologue (Paris) (3 pictures)
+
+- `public/art/pt/prologue/1.jpg` — scene — PT Prologue find
+  - Draw: Morning in Paris. On the next balcony a green parrot with a yellow head sits in a cage, shouting something. Murzik leans out of his window, laughing.
+- `public/art/pt/prologue/2.jpg` — scene — PT Prologue postcard
+  - Draw: Close-up: a bright invitation with palm trees and musical notes. Dona Lúcia, a cheerful old lady in a flowery dress, hands it to Murzik.
+- `public/art/pt/prologue/3.jpg` — scene — PT Prologue journey
+  - Draw: Murzik and Dona Lúcia on the plane. Pipoca's cage is on Dona Lúcia's lap. Through the window: the sea and the green hills of Rio.
+
+## Portuguese course — Bia (intro picture) (1 pictures)
+
+- `public/art/pt/bia.jpg` — reward — PT intro (Bia)
+  - Draw: Bia, a cheerful young Brazilian student from Rio with curly dark hair, waving with a smile. Square picture, the same Bia as in all the Portuguese course pictures.
+
+## Portuguese course — Rio de Janeiro (62 pictures)
+
+- `public/art/pt/rio/l1-1.jpg` — phrase — PT Rio de Janeiro 1 vocab «Oi!»
+  - Draw: Murzik at the airport, smiling and waving a paw.
+- `public/art/pt/rio/l1-2.jpg` — phrase — PT Rio de Janeiro 1 vocab «Bom dia!»
+  - Draw: Morning sun over the sea; Murzik has a big stretch.
+- `public/art/pt/rio/l1-3.jpg` — phrase — PT Rio de Janeiro 1 vocab «Qual é o seu nome?»
+  - Draw: A girl with curly hair leans towards Murzik with a curious smile.
+- `public/art/pt/rio/l1-4.jpg` — phrase — PT Rio de Janeiro 1 vocab «Meu nome é Murzik.»
+  - Draw: Murzik puts a paw on his chest and proudly says his name.
+- `public/art/pt/rio/l1-5.jpg` — phrase — PT Rio de Janeiro 1 vocab «Eu sou a Bia.»
+  - Draw: Bia, a cheerful student with curly hair, points to herself.
+- `public/art/pt/rio/l1-6.jpg` — phrase — PT Rio de Janeiro 1 vocab «Muito prazer!»
+  - Draw: Murzik and Bia shake paw and hand.
+- `public/art/pt/rio/l1-7.jpg` — phrase — PT Rio de Janeiro 1 vocab «Bem-vindo!»
+  - Draw: Bia opens her arms wide; behind her, the hills and the sea of Rio.
+- `public/art/pt/rio/hammock.jpg` — reward — PT Rio de Janeiro 1 reward «Rede»
+  - Draw: A striped hammock — red, yellow and green — hangs by the window in Murzik's room.
+- `public/art/pt/rio/l2-1.jpg` — phrase — PT Rio de Janeiro 2 vocab «Tudo bem?»
+  - Draw: Bia's mum, holding a cup of coffee, smiles kindly at Murzik.
+- `public/art/pt/rio/l2-2.jpg` — phrase — PT Rio de Janeiro 2 vocab «Tudo ótimo!»
+  - Draw: Murzik jumps for joy with both paws in the air.
+- `public/art/pt/rio/l2-3.jpg` — phrase — PT Rio de Janeiro 2 vocab «Mais ou menos.»
+  - Draw: A sleepy boy in pyjamas waggles his hand: so-so.
+- `public/art/pt/rio/l2-4.jpg` — phrase — PT Rio de Janeiro 2 vocab «Obrigado! / Obrigada!»
+  - Draw: Murzik presses his paws to his chest gratefully; Bia smiles beside him.
+- `public/art/pt/rio/l2-5.jpg` — phrase — PT Rio de Janeiro 2 vocab «De nada.»
+  - Draw: Bia gives a modest little wave: no problem.
+- `public/art/pt/rio/l2-6.jpg` — phrase — PT Rio de Janeiro 2 vocab «Desculpa!»
+  - Draw: Murzik has knocked a glass of juice and flattens his ears, embarrassed.
+- `public/art/pt/rio/l2-7.jpg` — phrase — PT Rio de Janeiro 2 vocab «Com licença.»
+  - Draw: Murzik politely squeezes past people in a narrow hallway.
+- `public/art/pt/rio/fan.jpg` — reward — PT Rio de Janeiro 2 reward «Ventilador»
+  - Draw: A small white fan stands on the bedside table. Its breeze ruffles Murzik's whiskers.
+- `public/art/pt/rio/l3-1.jpg` — phrase — PT Rio de Janeiro 3 vocab «Esta é a minha mãe.»
+  - Draw: Bia points to a photo: a smiling woman in an apron.
+- `public/art/pt/rio/l3-2.jpg` — phrase — PT Rio de Janeiro 3 vocab «Este é o meu irmão.»
+  - Draw: In the photo, a boy in a T-shirt with a football under his arm.
+- `public/art/pt/rio/l3-3.jpg` — phrase — PT Rio de Janeiro 3 vocab «a minha avó»
+  - Draw: In the photo, a young Dona Lúcia in a flowery dress.
+- `public/art/pt/rio/l3-4.jpg` — phrase — PT Rio de Janeiro 3 vocab «o meu pai»
+  - Draw: In the photo, a man with a moustache in a work suit.
+- `public/art/pt/rio/l3-5.jpg` — phrase — PT Rio de Janeiro 3 vocab «Você tem irmãos?»
+  - Draw: Bia looks at Murzik with interest.
+- `public/art/pt/rio/l3-6.jpg` — phrase — PT Rio de Janeiro 3 vocab «Eu tenho uma irmã.»
+  - Draw: Murzik shows a photo of a little ginger kitten holding a paintbrush.
+- `public/art/pt/rio/l3-7.jpg` — phrase — PT Rio de Janeiro 3 vocab «Que família grande!»
+  - Draw: A wall covered with family photos.
+- `public/art/pt/rio/frame.jpg` — reward — PT Rio de Janeiro 3 reward «Porta-retrato»
+  - Draw: A wooden frame stands on the shelf with a photo of Dona Lúcia's whole family — and Murzik in the middle.
+- `public/art/pt/rio/l4-1.jpg` — phrase — PT Rio de Janeiro 4 vocab «De onde você é?»
+  - Draw: A juice seller behind a counter full of fruit looks at Murzik with interest.
+- `public/art/pt/rio/l4-2.jpg` — phrase — PT Rio de Janeiro 4 vocab «Eu sou da Rússia.»
+  - Draw: Murzik points to a little globe.
+- `public/art/pt/rio/l4-3.jpg` — phrase — PT Rio de Janeiro 4 vocab «Eu moro em Paris.»
+  - Draw: Murzik shows a postcard of the Eiffel Tower.
+- `public/art/pt/rio/l4-4.jpg` — phrase — PT Rio de Janeiro 4 vocab «Você fala português?»
+  - Draw: The seller raises his eyebrows in surprise.
+- `public/art/pt/rio/l4-5.jpg` — phrase — PT Rio de Janeiro 4 vocab «Falo um pouco.»
+  - Draw: Murzik shows with his paws: just a tiny bit.
+- `public/art/pt/rio/l4-6.jpg` — phrase — PT Rio de Janeiro 4 vocab «Não entendo.»
+  - Draw: Murzik scratches behind his ear, puzzled; a question mark floats above him.
+- `public/art/pt/rio/l4-7.jpg` — phrase — PT Rio de Janeiro 4 vocab «Mais devagar, por favor.»
+  - Draw: Murzik gently signals “slow down”. A tortoise crawls past.
+- `public/art/pt/rio/flipflops.jpg` — reward — PT Rio de Janeiro 4 reward «Chinelos»
+  - Draw: Tiny green-and-yellow flip-flops stand by the door — just the right size for Murzik's paws.
+- `public/art/pt/rio/l5-1.jpg` — phrase — PT Rio de Janeiro 5 vocab «um, dois, três»
+  - Draw: Three footballs on the grass.
+- `public/art/pt/rio/l5-2.jpg` — phrase — PT Rio de Janeiro 5 vocab «quatro, cinco, seis»
+  - Draw: Six coconuts in a row on a stall.
+- `public/art/pt/rio/l5-3.jpg` — phrase — PT Rio de Janeiro 5 vocab «sete, oito»
+  - Draw: Eight little pastries on a plate.
+- `public/art/pt/rio/l5-4.jpg` — phrase — PT Rio de Janeiro 5 vocab «nove, dez»
+  - Draw: Murzik holds up ten fingers on two paws.
+- `public/art/pt/rio/l5-5.jpg` — phrase — PT Rio de Janeiro 5 vocab «zero»
+  - Draw: An empty plate — not a single pastry left.
+- `public/art/pt/rio/l5-6.jpg` — phrase — PT Rio de Janeiro 5 vocab «Quantos anos você tem?»
+  - Draw: Léo looks at Murzik curiously.
+- `public/art/pt/rio/l5-7.jpg` — phrase — PT Rio de Janeiro 5 vocab «Eu tenho seis anos.»
+  - Draw: Murzik proudly holds up six fingers.
+- `public/art/pt/rio/ball.jpg` — reward — PT Rio de Janeiro 5 reward «Bola»
+  - Draw: An old, scuffed black-and-white football lies under the hammock.
+- `public/art/pt/rio/l6-1.jpg` — phrase — PT Rio de Janeiro 6 vocab «Aqui é a cozinha.»
+  - Draw: A bright kitchen with blue tiles and a coffee pot on the stove.
+- `public/art/pt/rio/l6-2.jpg` — phrase — PT Rio de Janeiro 6 vocab «O banheiro é ali.»
+  - Draw: Dona Lúcia points to a door at the end of the hallway.
+- `public/art/pt/rio/l6-3.jpg` — phrase — PT Rio de Janeiro 6 vocab «a sala»
+  - Draw: A living room with a sofa, a guitar on the wall and an old record player.
+- `public/art/pt/rio/l6-4.jpg` — phrase — PT Rio de Janeiro 6 vocab «O quarto é pequeno.»
+  - Draw: A small bedroom with a hammock by the window.
+- `public/art/pt/rio/l6-5.jpg` — phrase — PT Rio de Janeiro 6 vocab «Tem uma varanda!»
+  - Draw: Murzik runs out onto a balcony full of flowers.
+- `public/art/pt/rio/l6-6.jpg` — phrase — PT Rio de Janeiro 6 vocab «Que bonito!»
+  - Draw: From the balcony you can see the sea and green hills.
+- `public/art/pt/rio/l6-7.jpg` — phrase — PT Rio de Janeiro 6 vocab «Fique à vontade.»
+  - Draw: Dona Lúcia opens her arms in welcome.
+- `public/art/pt/rio/fern.jpg` — reward — PT Rio de Janeiro 6 reward «Samambaia»
+  - Draw: A lush green fern grows in a clay pot on the balcony.
+- `public/art/pt/rio/l7-1.jpg` — phrase — PT Rio de Janeiro 7 vocab «Boa tarde!»
+  - Draw: A sunny afternoon on the beach, people under umbrellas.
+- `public/art/pt/rio/l7-2.jpg` — phrase — PT Rio de Janeiro 7 vocab «Boa noite!»
+  - Draw: The beach at night: stage lights and the moon over the sea.
+- `public/art/pt/rio/l7-3.jpg` — phrase — PT Rio de Janeiro 7 vocab «Tchau!»
+  - Draw: Murzik gives a cheerful wave.
+- `public/art/pt/rio/l7-4.jpg` — phrase — PT Rio de Janeiro 7 vocab «Até amanhã!»
+  - Draw: Léo in his pyjamas waves from the doorway.
+- `public/art/pt/rio/l7-5.jpg` — phrase — PT Rio de Janeiro 7 vocab «Cadê o Pipoca?»
+  - Draw: An empty cage with its door open. Murzik looks around, worried.
+- `public/art/pt/rio/l7-6.jpg` — phrase — PT Rio de Janeiro 7 vocab «Ele sumiu!»
+  - Draw: Dona Lúcia throws up her hands in dismay.
+- `public/art/pt/rio/l7-7.jpg` — phrase — PT Rio de Janeiro 7 vocab «Vamos atrás dele!»
+  - Draw: Murzik and Bia run down a street at night.
+- `public/art/pt/rio/album.jpg` — reward — PT Rio de Janeiro 7 reward «Álbum»; PT Rio de Janeiro farewell 2
+  - Draw: An album with a green cover and a drawing of a parrot. On the first page: a photo of Pipoca on Copacabana beach.
+- `public/art/pt/rio/arrival.jpg` — scene — PT Rio de Janeiro welcome
+  - Draw: Murzik and Dona Lúcia, carrying Pipoca's cage, come out into the arrivals hall. A girl with curly hair waves at them happily.
+- `public/art/pt/rio/departure.jpg` — scene — PT Rio de Janeiro departure; PT Rio de Janeiro farewell 4
+  - Draw: Night at the bus station. Dona Lúcia, Cláudia and Léo wave to Murzik and Bia as they get on a bus.
+- `public/art/pt/rio/poster.jpg` — scene — PT Rio de Janeiro farewell 1
+  - Draw: Night, a lamp post by the beach. On it, a bright band poster with a drawn map of Brazil and dots for the cities. Bia reads it by the light of her phone.
+- `public/art/pt/rio/bus.jpg` — scene — PT Rio de Janeiro farewell 5
+  - Draw: A bus drives along a road by the green coast.
+- `public/art/pt/rio/party.jpg` — scene — PT Belém farewell 3
+  - Draw: Dona Lúcia's courtyard at night: fairy lights, the musicians playing samba, Murzik dancing with Dona Lúcia. Pipoca sits on the drum.
+- `public/art/pt/rio/video.jpg` — scene — PT Belém farewell 4
+  - Draw: Léo holding his phone; on the screen, a video of Pipoca on the microphone at the Belém concert.
+
+## Portuguese course — Paraty (59 pictures)
+
+- `public/art/pt/paraty/arrival.jpg` — scene — PT Rio de Janeiro farewell 6; PT Paraty welcome
+  - Draw: Murzik and Bia in Paraty: white houses with colourful doors, a cobbled street, boats at the pier.
+- `public/art/pt/paraty/l1-1.jpg` — phrase — PT Paraty 1 vocab «Tem um quarto?»
+  - Draw: Murzik stands at the wooden reception desk with his suitcase.
+- `public/art/pt/paraty/l1-2.jpg` — phrase — PT Paraty 1 vocab «Para duas pessoas.»
+  - Draw: Murzik and Bia stand side by side, holding up two fingers.
+- `public/art/pt/paraty/l1-3.jpg` — phrase — PT Paraty 1 vocab «Quantas noites?»
+  - Draw: The receptionist, notebook in hand, looks over her glasses.
+- `public/art/pt/paraty/l1-4.jpg` — phrase — PT Paraty 1 vocab «Duas noites.»
+  - Draw: Two little cardboard moons on the desk.
+- `public/art/pt/paraty/l1-5.jpg` — phrase — PT Paraty 1 vocab «O quarto é o número doze.»
+  - Draw: A blue door with the number 12 on it.
+- `public/art/pt/paraty/l1-6.jpg` — phrase — PT Paraty 1 vocab «Aqui está a chave.»
+  - Draw: The receptionist hands over an old key with a wooden tag.
+- `public/art/pt/paraty/l1-7.jpg` — phrase — PT Paraty 1 vocab «Que pena!»
+  - Draw: Bia's shoulders drop in disappointment.
+- `public/art/pt/paraty/lantern.jpg` — reward — PT Paraty 1 reward «Lampião»
+  - Draw: An old wrought-iron lantern with a candle inside stands on the windowsill.
+- `public/art/pt/paraty/l2-1.jpg` — phrase — PT Paraty 2 vocab «Eu queria um café, por favor.»
+  - Draw: Murzik politely raises a paw at the counter.
+- `public/art/pt/paraty/l2-2.jpg` — phrase — PT Paraty 2 vocab «um pão de queijo»
+  - Draw: A basket of little golden cheese breads.
+- `public/art/pt/paraty/l2-3.jpg` — phrase — PT Paraty 2 vocab «Com açúcar?»
+  - Draw: The old café owner holds up a sugar bowl.
+- `public/art/pt/paraty/l2-4.jpg` — phrase — PT Paraty 2 vocab «Sem açúcar.»
+  - Draw: Murzik shakes his head and pushes the sugar bowl away.
+- `public/art/pt/paraty/l2-5.jpg` — phrase — PT Paraty 2 vocab «Mais alguma coisa?»
+  - Draw: The café owner, pencil behind his ear, leans over the counter.
+- `public/art/pt/paraty/l2-6.jpg` — phrase — PT Paraty 2 vocab «Só isso, obrigado.»
+  - Draw: Murzik happily signals: that's enough.
+- `public/art/pt/paraty/l2-7.jpg` — phrase — PT Paraty 2 vocab «Aqui está.»
+  - Draw: The owner puts a small cup of coffee on the counter.
+- `public/art/pt/paraty/cup.jpg` — reward — PT Paraty 2 reward «Xícara»
+  - Draw: A small white coffee cup with a blue rim, on its saucer.
+- `public/art/pt/paraty/l3-1.jpg` — phrase — PT Paraty 3 vocab «A conta, por favor.»
+  - Draw: Murzik mimes writing in the air.
+- `public/art/pt/paraty/l3-2.jpg` — phrase — PT Paraty 3 vocab «Quanto é?»
+  - Draw: Murzik peeks into his wallet.
+- `public/art/pt/paraty/l3-3.jpg` — phrase — PT Paraty 3 vocab «São vinte reais.»
+  - Draw: A receipt with the number 20 on a saucer.
+- `public/art/pt/paraty/l3-4.jpg` — phrase — PT Paraty 3 vocab «trinta, quarenta, cinquenta»
+  - Draw: Three stacks of coins: thirty, forty, fifty.
+- `public/art/pt/paraty/l3-5.jpg` — phrase — PT Paraty 3 vocab «cem»
+  - Draw: A hundred-real note with a grouper fish on it.
+- `public/art/pt/paraty/l3-6.jpg` — phrase — PT Paraty 3 vocab «Pode ser no cartão?»
+  - Draw: Murzik holds out a bank card.
+- `public/art/pt/paraty/l3-7.jpg` — phrase — PT Paraty 3 vocab «Em dinheiro.»
+  - Draw: Bia puts some banknotes on the counter.
+- `public/art/pt/paraty/wallet.jpg` — reward — PT Paraty 3 reward «Porta-moedas»
+  - Draw: A small fabric purse decorated with little shells.
+- `public/art/pt/paraty/l4-1.jpg` — phrase — PT Paraty 4 vocab «Quem é ele?»
+  - Draw: Murzik points to a photo on the café wall.
+- `public/art/pt/paraty/l4-2.jpg` — phrase — PT Paraty 4 vocab «Ele é o cantor.»
+  - Draw: In the photo, a singer with a microphone grins widely.
+- `public/art/pt/paraty/l4-3.jpg` — phrase — PT Paraty 4 vocab «Ela é estudante.»
+  - Draw: Bia with a backpack and notebooks.
+- `public/art/pt/paraty/l4-4.jpg` — phrase — PT Paraty 4 vocab «Nós somos amigos.»
+  - Draw: Murzik and Bia with their arms round each other's shoulders.
+- `public/art/pt/paraty/l4-5.jpg` — phrase — PT Paraty 4 vocab «Eles são músicos.»
+  - Draw: A band on stage: a singer, a drummer, a guitarist.
+- `public/art/pt/paraty/l4-6.jpg` — phrase — PT Paraty 4 vocab «Ele é muito simpático.»
+  - Draw: Seu Antônio laughs good-naturedly.
+- `public/art/pt/paraty/l4-7.jpg` — phrase — PT Paraty 4 vocab «Eles são divertidos.»
+  - Draw: The musicians fool around on their bus.
+- `public/art/pt/paraty/boat.jpg` — reward — PT Paraty 4 reward «Barquinho»
+  - Draw: A small wooden boat painted yellow, blue and red.
+- `public/art/pt/paraty/l5-1.jpg` — phrase — PT Paraty 5 vocab «o barco»
+  - Draw: A brightly painted wooden boat at the pier.
+- `public/art/pt/paraty/l5-2.jpg` — phrase — PT Paraty 5 vocab «Tem muitas ilhas.»
+  - Draw: A bay dotted with little green islands.
+- `public/art/pt/paraty/l5-3.jpg` — phrase — PT Paraty 5 vocab «as praias»
+  - Draw: Little white-sand beaches between the rocks.
+- `public/art/pt/paraty/l5-4.jpg` — phrase — PT Paraty 5 vocab «Olha os peixes!»
+  - Draw: Murzik leans over the side; colourful fish swim below.
+- `public/art/pt/paraty/l5-5.jpg` — phrase — PT Paraty 5 vocab «Que água azul!»
+  - Draw: Clear turquoise water.
+- `public/art/pt/paraty/l5-6.jpg` — phrase — PT Paraty 5 vocab «Eu não sei nadar.»
+  - Draw: Murzik in a rubber ring smiles sheepishly.
+- `public/art/pt/paraty/l5-7.jpg` — phrase — PT Paraty 5 vocab «Poucas pessoas.»
+  - Draw: An almost empty beach: just two people under an umbrella.
+- `public/art/pt/paraty/shells.jpg` — reward — PT Paraty 5 reward «Conchas»
+  - Draw: A glass jar full of tiny pink and white shells.
+- `public/art/pt/paraty/l6-1.jpg` — phrase — PT Paraty 6 vocab «arroz e feijão»
+  - Draw: A plate of white rice and dark beans.
+- `public/art/pt/paraty/l6-2.jpg` — phrase — PT Paraty 6 vocab «o peixe frito»
+  - Draw: Golden fried fish with lemon.
+- `public/art/pt/paraty/l6-3.jpg` — phrase — PT Paraty 6 vocab «uma salada»
+  - Draw: A bowl of salad with tomatoes.
+- `public/art/pt/paraty/l6-4.jpg` — phrase — PT Paraty 6 vocab «Uma água, por favor.»
+  - Draw: Murzik holds out an empty glass.
+- `public/art/pt/paraty/l6-5.jpg` — phrase — PT Paraty 6 vocab «Peixe ou frango?»
+  - Draw: Seu Antônio holds two plates: one with fish, one with chicken.
+- `public/art/pt/paraty/l6-6.jpg` — phrase — PT Paraty 6 vocab «Eu não como carne.»
+  - Draw: Bia politely turns down a plate of meat.
+- `public/art/pt/paraty/l6-7.jpg` — phrase — PT Paraty 6 vocab «Que gostoso!»
+  - Draw: Murzik licks his lips blissfully.
+- `public/art/pt/paraty/hat.jpg` — reward — PT Paraty 6 reward «Chapéu de palha»
+  - Draw: A small straw hat with a blue ribbon hangs on a hook.
+- `public/art/pt/paraty/l7-1.jpg` — phrase — PT Paraty 7 vocab «Mais um café!»
+  - Draw: A green parrot on the café counter raises a foot like a customer.
+- `public/art/pt/paraty/l7-2.jpg` — phrase — PT Paraty 7 vocab «O papagaio!»
+  - Draw: Murzik excitedly points at a photo of a parrot on a phone.
+- `public/art/pt/paraty/l7-3.jpg` — phrase — PT Paraty 7 vocab «Ele disse…»
+  - Draw: Seu Antônio does a funny impression of the parrot.
+- `public/art/pt/paraty/l7-4.jpg` — phrase — PT Paraty 7 vocab «Eles estão em São Paulo.»
+  - Draw: A map with a line from Paraty to a big city.
+- `public/art/pt/paraty/l7-5.jpg` — phrase — PT Paraty 7 vocab «Foi um prazer!»
+  - Draw: Seu Antônio shakes Murzik's paw.
+- `public/art/pt/paraty/l7-6.jpg` — phrase — PT Paraty 7 vocab «Volte sempre!»
+  - Draw: The café owner waves at the door.
+- `public/art/pt/paraty/l7-7.jpg` — phrase — PT Paraty 7 vocab «Até a próxima!»
+  - Draw: Murzik and Bia wave from the bus stop with their suitcases.
+- `public/art/pt/paraty/photo.jpg` — reward — PT Paraty 7 reward «Foto do Pipoca no café»; PT Paraty farewell 1
+  - Draw: A photo: a green parrot perched on the coffee machine in a little café, with Seu Antônio laughing beside him.
+- `public/art/pt/paraty/departure.jpg` — scene — PT Paraty departure; PT Paraty farewell 3
+  - Draw: Seu Antônio waves at the door of his café.
+- `public/art/pt/paraty/bus.jpg` — scene — PT Paraty farewell 4
+  - Draw: A bus climbs a mountain road through the rainforest.
+
+## Portuguese course — São Paulo (59 pictures)
+
+- `public/art/pt/saopaulo/arrival.jpg` — scene — PT Paraty farewell 5; PT São Paulo welcome
+  - Draw: Murzik and Bia on a wide São Paulo avenue among skyscrapers, with people hurrying all around.
+- `public/art/pt/saopaulo/l1-1.jpg` — phrase — PT São Paulo 1 vocab «Onde fica o metrô?»
+  - Draw: Murzik stands with his suitcase in the middle of a huge station.
+- `public/art/pt/saopaulo/l1-2.jpg` — phrase — PT São Paulo 1 vocab «Um bilhete, por favor.»
+  - Draw: Murzik passes money through the ticket window.
+- `public/art/pt/saopaulo/l1-3.jpg` — phrase — PT São Paulo 1 vocab «Este trem vai para a Sé?»
+  - Draw: Murzik points at a metro train and looks questioningly at a passenger.
+- `public/art/pt/saopaulo/l1-4.jpg` — phrase — PT São Paulo 1 vocab «Sim, vai.»
+  - Draw: The passenger nods and smiles.
+- `public/art/pt/saopaulo/l1-5.jpg` — phrase — PT São Paulo 1 vocab «Estou perdido.»
+  - Draw: Murzik, confused, turns the metro map upside down.
+- `public/art/pt/saopaulo/l1-6.jpg` — phrase — PT São Paulo 1 vocab «É longe?»
+  - Draw: Murzik looks down a very, very long street.
+- `public/art/pt/saopaulo/l1-7.jpg` — phrase — PT São Paulo 1 vocab «Não, é perto.»
+  - Draw: A passer-by shows with her fingers: just a little way.
+- `public/art/pt/saopaulo/metro-card.jpg` — reward — PT São Paulo 1 reward «Bilhete do metrô»
+  - Draw: A little blue São Paulo metro ticket lies on the table.
+- `public/art/pt/saopaulo/l2-1.jpg` — phrase — PT São Paulo 2 vocab «Quanto custa?»
+  - Draw: Murzik points at a roll in the shop window.
+- `public/art/pt/saopaulo/l2-2.jpg` — phrase — PT São Paulo 2 vocab «Custa um real.»
+  - Draw: A price tag with the number 1 above the rolls.
+- `public/art/pt/saopaulo/l2-3.jpg` — phrase — PT São Paulo 2 vocab «Quanto custam os bolos?»
+  - Draw: A display of little colourful cakes.
+- `public/art/pt/saopaulo/l2-4.jpg` — phrase — PT São Paulo 2 vocab «É caro!»
+  - Draw: Murzik stares in horror at a big cake with its price tag.
+- `public/art/pt/saopaulo/l2-5.jpg` — phrase — PT São Paulo 2 vocab «É barato.»
+  - Draw: Murzik happily holds a bag of bread rolls.
+- `public/art/pt/saopaulo/l2-6.jpg` — phrase — PT São Paulo 2 vocab «Eu vou levar dois.»
+  - Draw: Murzik holds up two fingers to the cashier.
+- `public/art/pt/saopaulo/l2-7.jpg` — phrase — PT São Paulo 2 vocab «Aqui está o troco.»
+  - Draw: An older cashier in glasses hands over some coins.
+- `public/art/pt/saopaulo/mug.jpg` — reward — PT São Paulo 2 reward «Caneca»
+  - Draw: A white mug with a little bread roll and a cup of coffee painted on it.
+- `public/art/pt/saopaulo/l3-1.jpg` — phrase — PT São Paulo 3 vocab «Posso ajudar?»
+  - Draw: A shop assistant leans towards Murzik with a friendly smile.
+- `public/art/pt/saopaulo/l3-2.jpg` — phrase — PT São Paulo 3 vocab «Só estou olhando.»
+  - Draw: Murzik browses the shelves with interest.
+- `public/art/pt/saopaulo/l3-3.jpg` — phrase — PT São Paulo 3 vocab «Estou procurando um presente.»
+  - Draw: Murzik holds an empty gift box with a bow.
+- `public/art/pt/saopaulo/l3-4.jpg` — phrase — PT São Paulo 3 vocab «Para quem?»
+  - Draw: The assistant raises her eyebrows questioningly.
+- `public/art/pt/saopaulo/l3-5.jpg` — phrase — PT São Paulo 3 vocab «Para a minha avó.»
+  - Draw: Bia shows a photo of Dona Lúcia on her phone.
+- `public/art/pt/saopaulo/l3-6.jpg` — phrase — PT São Paulo 3 vocab «Esta aqui?»
+  - Draw: The assistant holds up a pretty bag.
+- `public/art/pt/saopaulo/l3-7.jpg` — phrase — PT São Paulo 3 vocab «Não, aquele ali.»
+  - Draw: Murzik points to a high shelf with a shawl covered in painted parrots.
+- `public/art/pt/saopaulo/gift-box.jpg` — reward — PT São Paulo 3 reward «Caixa de presente»
+  - Draw: A box wrapped in green paper with a yellow bow. A parrot-patterned shawl peeks out from under the lid.
+- `public/art/pt/saopaulo/l4-1.jpg` — phrase — PT São Paulo 4 vocab «Eu trabalho muito.»
+  - Draw: Marcos, with a laptop and a pile of papers, smiles wearily.
+- `public/art/pt/saopaulo/l4-2.jpg` — phrase — PT São Paulo 4 vocab «Você estuda?»
+  - Draw: Marcos looks at Murzik with interest.
+- `public/art/pt/saopaulo/l4-3.jpg` — phrase — PT São Paulo 4 vocab «Eu estudo português.»
+  - Draw: Murzik bent over a textbook, surrounded by word cards.
+- `public/art/pt/saopaulo/l4-4.jpg` — phrase — PT São Paulo 4 vocab «Nós moramos aqui.»
+  - Draw: The window of a fifteenth-floor flat, with the city lights beyond.
+- `public/art/pt/saopaulo/l4-5.jpg` — phrase — PT São Paulo 4 vocab «Ela fala muito!»
+  - Draw: Bia chatters away, waving her hands.
+- `public/art/pt/saopaulo/l4-6.jpg` — phrase — PT São Paulo 4 vocab «Você toca violão?»
+  - Draw: An old guitar hangs on the wall.
+- `public/art/pt/saopaulo/l4-7.jpg` — phrase — PT São Paulo 4 vocab «Eles cantam juntos.»
+  - Draw: Marcos plays the guitar while Bia and Murzik sing.
+- `public/art/pt/saopaulo/pick.jpg` — reward — PT São Paulo 4 reward «Palheta»
+  - Draw: A small yellow guitar pick on the windowsill.
+- `public/art/pt/saopaulo/l5-1.jpg` — phrase — PT São Paulo 5 vocab «Tem muita gente!»
+  - Draw: A wide avenue full of people.
+- `public/art/pt/saopaulo/l5-2.jpg` — phrase — PT São Paulo 5 vocab «o prédio alto»
+  - Draw: Murzik tips his head right back to look up at a skyscraper.
+- `public/art/pt/saopaulo/l5-3.jpg` — phrase — PT São Paulo 5 vocab «o museu»
+  - Draw: A red museum building raised on four pillars.
+- `public/art/pt/saopaulo/l5-4.jpg` — phrase — PT São Paulo 5 vocab «o parque»
+  - Draw: A big green park with a lake.
+- `public/art/pt/saopaulo/l5-5.jpg` — phrase — PT São Paulo 5 vocab «Está aberto.»
+  - Draw: A sign with an open door and a green dot.
+- `public/art/pt/saopaulo/l5-6.jpg` — phrase — PT São Paulo 5 vocab «Está fechado.»
+  - Draw: A sign with a closed door and a red dot.
+- `public/art/pt/saopaulo/l5-7.jpg` — phrase — PT São Paulo 5 vocab «Vamos a pé?»
+  - Draw: Murzik points at his paws, then at the road.
+- `public/art/pt/saopaulo/umbrella.jpg` — reward — PT São Paulo 5 reward «Guarda-chuva»
+  - Draw: A small blue folding umbrella, still dripping, stands by the door.
+- `public/art/pt/saopaulo/l6-1.jpg` — phrase — PT São Paulo 6 vocab «Eu adoro pizza!»
+  - Draw: Murzik gazes at a huge pizza with shining eyes.
+- `public/art/pt/saopaulo/l6-2.jpg` — phrase — PT São Paulo 6 vocab «Qual sabor?»
+  - Draw: A waiter with a notepad stands by the table.
+- `public/art/pt/saopaulo/l6-3.jpg` — phrase — PT São Paulo 6 vocab «De queijo, por favor.»
+  - Draw: A pizza with stretchy, melted cheese.
+- `public/art/pt/saopaulo/l6-4.jpg` — phrase — PT São Paulo 6 vocab «Cuidado, está quente!»
+  - Draw: Steam rises from the pizza; Murzik blows on his slice.
+- `public/art/pt/saopaulo/l6-5.jpg` — phrase — PT São Paulo 6 vocab «Mais um pedaço?»
+  - Draw: Marcos offers Murzik another slice.
+- `public/art/pt/saopaulo/l6-6.jpg` — phrase — PT São Paulo 6 vocab «Estou cheio!»
+  - Draw: Murzik leans back in his chair and pats his round tummy.
+- `public/art/pt/saopaulo/l6-7.jpg` — phrase — PT São Paulo 6 vocab «Estava ótimo!»
+  - Draw: An empty pizza box and three happy faces.
+- `public/art/pt/saopaulo/apron.jpg` — reward — PT São Paulo 6 reward «Avental»
+  - Draw: A small red apron with a pizza printed on it hangs on a hook.
+- `public/art/pt/saopaulo/l7-1.jpg` — phrase — PT São Paulo 7 vocab «Ele estava no caixa.»
+  - Draw: A green parrot perches on the cash register at the bakery.
+- `public/art/pt/saopaulo/l7-2.jpg` — phrase — PT São Paulo 7 vocab «Ele repete tudo!»
+  - Draw: Dona Neide laughs, hand over her mouth.
+- `public/art/pt/saopaulo/l7-3.jpg` — phrase — PT São Paulo 7 vocab «Eles foram para Curitiba.»
+  - Draw: A map with an arrow from São Paulo heading south.
+- `public/art/pt/saopaulo/l7-4.jpg` — phrase — PT São Paulo 7 vocab «Lá faz frio.»
+  - Draw: A little picture: a city under a grey sky, people in scarves.
+- `public/art/pt/saopaulo/l7-5.jpg` — phrase — PT São Paulo 7 vocab «Leve um casaco!»
+  - Draw: Marcos hands Murzik a warm little jacket.
+- `public/art/pt/saopaulo/l7-6.jpg` — phrase — PT São Paulo 7 vocab «Boa sorte!»
+  - Draw: Marcos gives two thumbs up.
+- `public/art/pt/saopaulo/l7-7.jpg` — phrase — PT São Paulo 7 vocab «Um beijo para a vovó!»
+  - Draw: Marcos hugs Bia goodbye.
+- `public/art/pt/saopaulo/photo.jpg` — reward — PT São Paulo 7 reward «Foto do Pipoca na padaria»; PT São Paulo farewell 1
+  - Draw: A photo: the green parrot sitting on the bakery till, with Dona Neide laughing next to him.
+- `public/art/pt/saopaulo/departure.jpg` — scene — PT São Paulo departure; PT São Paulo farewell 3
+  - Draw: Marcos and Dona Neide wave at the bakery door.
+- `public/art/pt/saopaulo/bus.jpg` — scene — PT São Paulo farewell 4
+  - Draw: A night bus heads south, rain on the windows.
+
+## Portuguese course — Curitiba (59 pictures)
+
+- `public/art/pt/curitiba/arrival.jpg` — scene — PT São Paulo farewell 5; PT Curitiba welcome
+  - Draw: Morning in Curitiba: grey sky, people in coats and scarves, a huge glass greenhouse in a park.
+- `public/art/pt/curitiba/l1-1.jpg` — phrase — PT Curitiba 1 vocab «Como está o tempo?»
+  - Draw: Murzik peers out of the window at a grey sky.
+- `public/art/pt/curitiba/l1-2.jpg` — phrase — PT Curitiba 1 vocab «Está frio.»
+  - Draw: Murzik shivers, hugging himself.
+- `public/art/pt/curitiba/l1-3.jpg` — phrase — PT Curitiba 1 vocab «Faz calor.»
+  - Draw: Murzik on a beach, fanning himself with a palm leaf.
+- `public/art/pt/curitiba/l1-4.jpg` — phrase — PT Curitiba 1 vocab «Está chovendo.»
+  - Draw: Raindrops patter against the window.
+- `public/art/pt/curitiba/l1-5.jpg` — phrase — PT Curitiba 1 vocab «Está nublado.»
+  - Draw: Heavy grey clouds over the city.
+- `public/art/pt/curitiba/l1-6.jpg` — phrase — PT Curitiba 1 vocab «Faz sol.»
+  - Draw: The sun peeks out from behind the clouds.
+- `public/art/pt/curitiba/l1-7.jpg` — phrase — PT Curitiba 1 vocab «Hoje faz dez graus.»
+  - Draw: A street thermometer shows 10 °C.
+- `public/art/pt/curitiba/blanket.jpg` — reward — PT Curitiba 1 reward «Cobertor»
+  - Draw: A thick checked wool blanket on the top bunk.
+- `public/art/pt/curitiba/l2-1.jpg` — phrase — PT Curitiba 2 vocab «o casaco»
+  - Draw: A warm blue coat hangs on a peg.
+- `public/art/pt/curitiba/l2-2.jpg` — phrase — PT Curitiba 2 vocab «o cachecol»
+  - Draw: A long striped scarf.
+- `public/art/pt/curitiba/l2-3.jpg` — phrase — PT Curitiba 2 vocab «o gorro»
+  - Draw: A knitted hat with a bobble.
+- `public/art/pt/curitiba/l2-4.jpg` — phrase — PT Curitiba 2 vocab «as luvas»
+  - Draw: A pair of small knitted gloves.
+- `public/art/pt/curitiba/l2-5.jpg` — phrase — PT Curitiba 2 vocab «Eu preciso de uma blusa.»
+  - Draw: Murzik, in just a T-shirt, huddles outside a shop window.
+- `public/art/pt/curitiba/l2-6.jpg` — phrase — PT Curitiba 2 vocab «Vista o casaco!»
+  - Draw: Bia sternly holds out a coat to Murzik.
+- `public/art/pt/curitiba/l2-7.jpg` — phrase — PT Curitiba 2 vocab «Que roupa bonita!»
+  - Draw: Murzik shows off in front of the mirror in his hat and scarf.
+- `public/art/pt/curitiba/beanie.jpg` — reward — PT Curitiba 2 reward «Gorro»
+  - Draw: A yellow knitted hat with a green bobble lies on the pillow.
+- `public/art/pt/curitiba/l3-1.jpg` — phrase — PT Curitiba 3 vocab «Qual é a sua cor favorita?»
+  - Draw: Bia stands by a rack of jumpers in every colour.
+- `public/art/pt/curitiba/l3-2.jpg` — phrase — PT Curitiba 3 vocab «azul»
+  - Draw: A blue jumper.
+- `public/art/pt/curitiba/l3-3.jpg` — phrase — PT Curitiba 3 vocab «vermelho, vermelha»
+  - Draw: A red jumper and a red hat.
+- `public/art/pt/curitiba/l3-4.jpg` — phrase — PT Curitiba 3 vocab «verde e amarelo»
+  - Draw: A green-and-yellow scarf.
+- `public/art/pt/curitiba/l3-5.jpg` — phrase — PT Curitiba 3 vocab «Tem em preto?»
+  - Draw: Bia holds up a white jumper and looks questioningly at the assistant.
+- `public/art/pt/curitiba/l3-6.jpg` — phrase — PT Curitiba 3 vocab «Fica bem em você!»
+  - Draw: Murzik gives Bia a thumbs up at the mirror.
+- `public/art/pt/curitiba/l3-7.jpg` — phrase — PT Curitiba 3 vocab «Eu prefiro a branca.»
+  - Draw: Bia hugs a white jumper to herself.
+- `public/art/pt/curitiba/pencils.jpg` — reward — PT Curitiba 3 reward «Lápis de cor»
+  - Draw: A cup of coloured pencils on the table by the bed.
+- `public/art/pt/curitiba/l4-1.jpg` — phrase — PT Curitiba 4 vocab «Estou com frio.»
+  - Draw: Murzik's teeth chatter as he huddles in his scarf.
+- `public/art/pt/curitiba/l4-2.jpg` — phrase — PT Curitiba 4 vocab «Estou bem.»
+  - Draw: Murzik, in his warm coat, smiles calmly.
+- `public/art/pt/curitiba/l4-3.jpg` — phrase — PT Curitiba 4 vocab «Você está cansado?»
+  - Draw: Bia looks with concern at Murzik, who's yawning.
+- `public/art/pt/curitiba/l4-4.jpg` — phrase — PT Curitiba 4 vocab «Ela está feliz.»
+  - Draw: Bia beams, holding her phone.
+- `public/art/pt/curitiba/l4-5.jpg` — phrase — PT Curitiba 4 vocab «Onde vocês estão?»
+  - Draw: Dona Lúcia's face on a video call.
+- `public/art/pt/curitiba/l4-6.jpg` — phrase — PT Curitiba 4 vocab «Nós estamos em Curitiba.»
+  - Draw: Murzik and Bia wave at the phone camera.
+- `public/art/pt/curitiba/l4-7.jpg` — phrase — PT Curitiba 4 vocab «Eles estão ocupados.»
+  - Draw: On a poster the musicians are busy rehearsing.
+- `public/art/pt/curitiba/slippers.jpg` — reward — PT Curitiba 4 reward «Pantufas»
+  - Draw: Fluffy slippers shaped like little parrots stand by the bed.
+- `public/art/pt/curitiba/l5-1.jpg` — phrase — PT Curitiba 5 vocab «o jardim»
+  - Draw: A neat garden with tidy flower beds.
+- `public/art/pt/curitiba/l5-2.jpg` — phrase — PT Curitiba 5 vocab «as flores»
+  - Draw: A flower bed full of colourful flowers.
+- `public/art/pt/curitiba/l5-3.jpg` — phrase — PT Curitiba 5 vocab «a árvore»
+  - Draw: A tall araucaria with umbrella-shaped branches.
+- `public/art/pt/curitiba/l5-4.jpg` — phrase — PT Curitiba 5 vocab «Que cheiro bom!»
+  - Draw: Murzik sniffs a flower with his eyes closed.
+- `public/art/pt/curitiba/l5-5.jpg` — phrase — PT Curitiba 5 vocab «Tira uma foto de mim?»
+  - Draw: Murzik hands Bia his phone and poses in front of the glasshouse.
+- `public/art/pt/curitiba/l5-6.jpg` — phrase — PT Curitiba 5 vocab «Sorria!»
+  - Draw: Bia holds up the phone, laughing.
+- `public/art/pt/curitiba/l5-7.jpg` — phrase — PT Curitiba 5 vocab «Ficou ótima!»
+  - Draw: On the phone screen: a lovely photo of Murzik by the glasshouse.
+- `public/art/pt/curitiba/postcard.jpg` — reward — PT Curitiba 5 reward «Cartão-postal»
+  - Draw: A postcard of the botanical garden's glass greenhouse, propped against the lamp.
+- `public/art/pt/curitiba/l6-1.jpg` — phrase — PT Curitiba 6 vocab «Aceita um chá?»
+  - Draw: Gabriel holds up a teapot.
+- `public/art/pt/curitiba/l6-2.jpg` — phrase — PT Curitiba 6 vocab «Aceito, obrigado!»
+  - Draw: Murzik happily holds out his mug.
+- `public/art/pt/curitiba/l6-3.jpg` — phrase — PT Curitiba 6 vocab «Está quentinho.»
+  - Draw: Murzik warms his paws on a hot mug.
+- `public/art/pt/curitiba/l6-4.jpg` — phrase — PT Curitiba 6 vocab «Só um pouquinho.»
+  - Draw: Murzik holds two fingers a tiny bit apart.
+- `public/art/pt/curitiba/l6-5.jpg` — phrase — PT Curitiba 6 vocab «Estou com fome.»
+  - Draw: Murzik's tummy rumbles loudly.
+- `public/art/pt/curitiba/l6-6.jpg` — phrase — PT Curitiba 6 vocab «Estou com sede.»
+  - Draw: Murzik looks at an empty glass.
+- `public/art/pt/curitiba/l6-7.jpg` — phrase — PT Curitiba 6 vocab «o pinhão»
+  - Draw: A bowl of boiled araucaria pine nuts that look like big chestnuts.
+- `public/art/pt/curitiba/thermos.jpg` — reward — PT Curitiba 6 reward «Garrafa térmica»
+  - Draw: A small red thermos flask on the windowsill.
+- `public/art/pt/curitiba/l7-1.jpg` — phrase — PT Curitiba 7 vocab «Que frio!»
+  - Draw: The green parrot sits fluffed up under a blanket.
+- `public/art/pt/curitiba/l7-2.jpg` — phrase — PT Curitiba 7 vocab «Ele estava embaixo do cobertor.»
+  - Draw: A green tail sticks out from under a checked blanket.
+- `public/art/pt/curitiba/l7-3.jpg` — phrase — PT Curitiba 7 vocab «Eles foram para Florianópolis.»
+  - Draw: A map: an arrow from Curitiba to an island by the sea.
+- `public/art/pt/curitiba/l7-4.jpg` — phrase — PT Curitiba 7 vocab «Lá faz calor!»
+  - Draw: A little picture: a sunny beach and palm trees.
+- `public/art/pt/curitiba/l7-5.jpg` — phrase — PT Curitiba 7 vocab «Obrigado por tudo!»
+  - Draw: Murzik gives Gabriel a hug.
+- `public/art/pt/curitiba/l7-6.jpg` — phrase — PT Curitiba 7 vocab «Manda notícias!»
+  - Draw: Gabriel points at his phone.
+- `public/art/pt/curitiba/l7-7.jpg` — phrase — PT Curitiba 7 vocab «Até mais!»
+  - Draw: Murzik and Bia wave as they walk off with their backpacks.
+- `public/art/pt/curitiba/photo.jpg` — reward — PT Curitiba 7 reward «Foto do Pipoca no hostel»; PT Curitiba farewell 1
+  - Draw: A photo: the green parrot peeking out from under a checked blanket, wearing a tiny knitted hat.
+- `public/art/pt/curitiba/departure.jpg` — scene — PT Curitiba departure; PT Curitiba farewell 3
+  - Draw: Gabriel waves at the hostel door.
+- `public/art/pt/curitiba/bus.jpg` — scene — PT Curitiba farewell 4
+  - Draw: The bus winds down a mountain road; the sea comes into view ahead.
+
+## Portuguese course — Florianópolis (59 pictures)
+
+- `public/art/pt/floripa/arrival.jpg` — scene — PT Curitiba farewell 5; PT Florianópolis welcome
+  - Draw: Murzik takes off his hat and scarf: ahead, a long bridge to an island, the blue sea and sunshine.
+- `public/art/pt/floripa/l1-1.jpg` — phrase — PT Florianópolis 1 vocab «Que praia linda!»
+  - Draw: A long white beach, blue sea and green hills.
+- `public/art/pt/floripa/l1-2.jpg` — phrase — PT Florianópolis 1 vocab «o mar»
+  - Draw: Murzik stands right at the water's edge, a wave lapping his paws.
+- `public/art/pt/floripa/l1-3.jpg` — phrase — PT Florianópolis 1 vocab «a areia»
+  - Draw: Murzik pours sand from one paw to the other.
+- `public/art/pt/floripa/l1-4.jpg` — phrase — PT Florianópolis 1 vocab «Passa o protetor!»
+  - Draw: Bia hands Murzik a tube of sun cream.
+- `public/art/pt/floripa/l1-5.jpg` — phrase — PT Florianópolis 1 vocab «Cuidado com o sol!»
+  - Draw: The sun blazes over the beach; Murzik hides under an umbrella.
+- `public/art/pt/floripa/l1-6.jpg` — phrase — PT Florianópolis 1 vocab «Vamos entrar na água?»
+  - Draw: Bia pulls Murzik by the paw towards the sea.
+- `public/art/pt/floripa/l1-7.jpg` — phrase — PT Florianópolis 1 vocab «A água está gelada!»
+  - Draw: Murzik leaps out of the water, fur standing on end.
+- `public/art/pt/floripa/towel.jpg` — reward — PT Florianópolis 1 reward «Toalha de praia»
+  - Draw: A striped beach towel dries on the cabin's railing.
+- `public/art/pt/floripa/l2-1.jpg` — phrase — PT Florianópolis 2 vocab «Eu gosto de praia.»
+  - Draw: Murzik lies blissfully on a towel under an umbrella.
+- `public/art/pt/floripa/l2-2.jpg` — phrase — PT Florianópolis 2 vocab «Você gosta de surfar?»
+  - Draw: A suntanned teenage boy with a surfboard.
+- `public/art/pt/floripa/l2-3.jpg` — phrase — PT Florianópolis 2 vocab «Eu não gosto de areia no pelo.»
+  - Draw: Murzik shakes the sand out of his fur in disgust.
+- `public/art/pt/floripa/l2-4.jpg` — phrase — PT Florianópolis 2 vocab «Eu gosto muito!»
+  - Draw: Murzik nods enthusiastically.
+- `public/art/pt/floripa/l2-5.jpg` — phrase — PT Florianópolis 2 vocab «Eu adoro o mar.»
+  - Draw: Bia listens to the waves with her eyes closed.
+- `public/art/pt/floripa/l2-6.jpg` — phrase — PT Florianópolis 2 vocab «Do que você gosta?»
+  - Draw: The boy with the surfboard looks at Murzik curiously.
+- `public/art/pt/floripa/l2-7.jpg` — phrase — PT Florianópolis 2 vocab «Eu não gosto nada!»
+  - Draw: Murzik screws up his face at a splash of salty water.
+- `public/art/pt/floripa/sunscreen.jpg` — reward — PT Florianópolis 2 reward «Protetor solar»
+  - Draw: A yellow tube of sun cream with a little sun on it stands on the shelf.
+- `public/art/pt/floripa/l3-1.jpg` — phrase — PT Florianópolis 3 vocab «Você sabe surfar?»
+  - Draw: Caio holds two surfboards, a big one and a small one.
+- `public/art/pt/floripa/l3-2.jpg` — phrase — PT Florianópolis 3 vocab «Eu sei um pouco.»
+  - Draw: Bia stands confidently on a board on the sand.
+- `public/art/pt/floripa/l3-3.jpg` — phrase — PT Florianópolis 3 vocab «Fica em pé!»
+  - Draw: Murzik wobbles to his feet on a board on a small wave.
+- `public/art/pt/floripa/l3-4.jpg` — phrase — PT Florianópolis 3 vocab «Cuidado com a onda!»
+  - Draw: A wave rolls up behind Murzik.
+- `public/art/pt/floripa/l3-5.jpg` — phrase — PT Florianópolis 3 vocab «Eu caí!»
+  - Draw: Murzik splashes into the water; only his tail sticks out.
+- `public/art/pt/floripa/l3-6.jpg` — phrase — PT Florianópolis 3 vocab «De novo!»
+  - Draw: Murzik climbs back onto the board.
+- `public/art/pt/floripa/l3-7.jpg` — phrase — PT Florianópolis 3 vocab «Muito bem!»
+  - Draw: Caio claps as Murzik rides the board.
+- `public/art/pt/floripa/surfboard.jpg` — reward — PT Florianópolis 3 reward «Prancha»
+  - Draw: A small yellow surfboard leans against the wall of the cabin.
+- `public/art/pt/floripa/l4-1.jpg` — phrase — PT Florianópolis 4 vocab «Vamos jogar futebol?»
+  - Draw: Caio holds a ball under his arm and waves to Murzik.
+- `public/art/pt/floripa/l4-2.jpg` — phrase — PT Florianópolis 4 vocab «Passa a bola!»
+  - Draw: Murzik runs across the sand, paw in the air, shouting.
+- `public/art/pt/floripa/l4-3.jpg` — phrase — PT Florianópolis 4 vocab «Chuta!»
+  - Draw: Murzik kicks the ball as hard as he can.
+- `public/art/pt/floripa/l4-4.jpg` — phrase — PT Florianópolis 4 vocab «o time azul»
+  - Draw: Kids in blue shirts hug each other.
+- `public/art/pt/floripa/l4-5.jpg` — phrase — PT Florianópolis 4 vocab «Quem ganhou?»
+  - Draw: Bia holding a referee's whistle.
+- `public/art/pt/floripa/l4-6.jpg` — phrase — PT Florianópolis 4 vocab «Nós ganhamos!»
+  - Draw: Murzik and Caio jump for joy.
+- `public/art/pt/floripa/l4-7.jpg` — phrase — PT Florianópolis 4 vocab «Empate!»
+  - Draw: The score written in the sand: 2–2.
+- `public/art/pt/floripa/sunglasses.jpg` — reward — PT Florianópolis 4 reward «Óculos de sol»
+  - Draw: A small pair of green sunglasses lies on the table.
+- `public/art/pt/floripa/l5-1.jpg` — phrase — PT Florianópolis 5 vocab «Eu sempre nado de manhã.»
+  - Draw: Caio dives into a wave at sunrise.
+- `public/art/pt/floripa/l5-2.jpg` — phrase — PT Florianópolis 5 vocab «Às vezes eu surfo à tarde.»
+  - Draw: Caio riding a big wave on his board.
+- `public/art/pt/floripa/l5-3.jpg` — phrase — PT Florianópolis 5 vocab «Eu nunca acordo cedo.»
+  - Draw: Bia sleeps with a pillow over her head as the alarm rings.
+- `public/art/pt/floripa/l5-4.jpg` — phrase — PT Florianópolis 5 vocab «todo dia»
+  - Draw: A calendar with a little sun drawn on every day.
+- `public/art/pt/floripa/l5-5.jpg` — phrase — PT Florianópolis 5 vocab «à noite»
+  - Draw: The beach under the moon.
+- `public/art/pt/floripa/l5-6.jpg` — phrase — PT Florianópolis 5 vocab «O que você faz de manhã?»
+  - Draw: Bia interviews Caio with a notebook.
+- `public/art/pt/floripa/l5-7.jpg` — phrase — PT Florianópolis 5 vocab «Eu tomo café na praia.»
+  - Draw: Caio sits on the sand with a cup and a banana.
+- `public/art/pt/floripa/bucket.jpg` — reward — PT Florianópolis 5 reward «Balde e pá»
+  - Draw: A red bucket and a yellow spade, full of sand, stand by the doorstep.
+- `public/art/pt/floripa/l6-1.jpg` — phrase — PT Florianópolis 6 vocab «o pôr do sol»
+  - Draw: An orange sun sets over the lagoon.
+- `public/art/pt/floripa/l6-2.jpg` — phrase — PT Florianópolis 6 vocab «Que céu bonito!»
+  - Draw: A pink and orange sky over the water.
+- `public/art/pt/floripa/l6-3.jpg` — phrase — PT Florianópolis 6 vocab «Está ventando.»
+  - Draw: The wind ruffles Murzik's fur and ears.
+- `public/art/pt/floripa/l6-4.jpg` — phrase — PT Florianópolis 6 vocab «Vamos sentar aqui?»
+  - Draw: Bia points to a big flat rock by the water.
+- `public/art/pt/floripa/l6-5.jpg` — phrase — PT Florianópolis 6 vocab «Eu amo este lugar.»
+  - Draw: Murzik gazes dreamily at the water.
+- `public/art/pt/floripa/l6-6.jpg` — phrase — PT Florianópolis 6 vocab «Um açaí, por favor.»
+  - Draw: A bowl of dark purple açaí with banana and granola.
+- `public/art/pt/floripa/l6-7.jpg` — phrase — PT Florianópolis 6 vocab «Olha as estrelas!»
+  - Draw: A night sky full of stars.
+- `public/art/pt/floripa/coconut.jpg` — reward — PT Florianópolis 6 reward «Copo de coco»
+  - Draw: Half a coconut shell, polished till it shines, sits on the windowsill like a cup.
+- `public/art/pt/floripa/l7-1.jpg` — phrase — PT Florianópolis 7 vocab «Que gol!»
+  - Draw: The green parrot perches on the crossbar of a beach goal, flapping his wings.
+- `public/art/pt/floripa/l7-2.jpg` — phrase — PT Florianópolis 7 vocab «Ele gritou…»
+  - Draw: Caio cups his hands like a megaphone, imitating the parrot.
+- `public/art/pt/floripa/l7-3.jpg` — phrase — PT Florianópolis 7 vocab «em cima da trave»
+  - Draw: An empty football goal on the beach.
+- `public/art/pt/floripa/l7-4.jpg` — phrase — PT Florianópolis 7 vocab «Eles foram para Foz do Iguaçu.»
+  - Draw: A map: a long arrow inland, towards the waterfalls.
+- `public/art/pt/floripa/l7-5.jpg` — phrase — PT Florianópolis 7 vocab «as cataratas»
+  - Draw: A little picture: huge waterfalls in green jungle.
+- `public/art/pt/floripa/l7-6.jpg` — phrase — PT Florianópolis 7 vocab «Valeu, Caio!»
+  - Draw: Murzik and Caio bump fist and paw.
+- `public/art/pt/floripa/l7-7.jpg` — phrase — PT Florianópolis 7 vocab «Vou sentir saudade!»
+  - Draw: Murzik takes one last look at the beach.
+- `public/art/pt/floripa/photo.jpg` — reward — PT Florianópolis 7 reward «Foto do Pipoca no gol»; PT Florianópolis farewell 1
+  - Draw: A photo: the green parrot on the crossbar of a beach goal, with kids and a ball looking up at him.
+- `public/art/pt/floripa/departure.jpg` — scene — PT Florianópolis departure; PT Florianópolis farewell 3
+  - Draw: Caio waves from the beach, surfboard under his arm.
+- `public/art/pt/floripa/plane.jpg` — scene — PT Florianópolis farewell 4
+  - Draw: A small plane flies over green forests and rivers.
+
+## Portuguese course — Foz do Iguaçu (59 pictures)
+
+- `public/art/pt/foz/arrival.jpg` — scene — PT Florianópolis farewell 5; PT Iguaçu welcome
+  - Draw: Murzik and Bia on a viewing platform facing dozens of huge waterfalls in the jungle, a rainbow over the spray.
+- `public/art/pt/foz/l1-1.jpg` — phrase — PT Iguaçu 1 vocab «a cachoeira»
+  - Draw: A tall waterfall pours off a green cliff.
+- `public/art/pt/foz/l1-2.jpg` — phrase — PT Iguaçu 1 vocab «Que barulho!»
+  - Draw: Murzik covers his ears beside a thundering waterfall.
+- `public/art/pt/foz/l1-3.jpg` — phrase — PT Iguaçu 1 vocab «o arco-íris»
+  - Draw: A bright rainbow arches over the spray.
+- `public/art/pt/foz/l1-4.jpg` — phrase — PT Iguaçu 1 vocab «Olha lá embaixo!»
+  - Draw: Murzik leans over the railing, pointing down at the churning water.
+- `public/art/pt/foz/l1-5.jpg` — phrase — PT Iguaçu 1 vocab «a capa de chuva»
+  - Draw: Murzik in a yellow poncho that reaches his paws.
+- `public/art/pt/foz/l1-6.jpg` — phrase — PT Iguaçu 1 vocab «Estou todo molhado!»
+  - Draw: A dripping-wet Murzik, water running off his ears.
+- `public/art/pt/foz/l1-7.jpg` — phrase — PT Iguaçu 1 vocab «lá em cima»
+  - Draw: Bia points to the top of the waterfall.
+- `public/art/pt/foz/poncho.jpg` — reward — PT Iguaçu 1 reward «Capa de chuva»
+  - Draw: A little yellow hooded poncho dries on a hook.
+- `public/art/pt/foz/l2-1.jpg` — phrase — PT Iguaçu 2 vocab «Posso tirar uma foto?»
+  - Draw: Murzik, phone in paw, looks questioningly at the guide.
+- `public/art/pt/foz/l2-2.jpg` — phrase — PT Iguaçu 2 vocab «Pode, sim.»
+  - Draw: Juliana nods and smiles.
+- `public/art/pt/foz/l2-3.jpg` — phrase — PT Iguaçu 2 vocab «Não pode.»
+  - Draw: Juliana wags her finger sternly.
+- `public/art/pt/foz/l2-4.jpg` — phrase — PT Iguaçu 2 vocab «É proibido dar comida aos animais.»
+  - Draw: A sign: a crossed-out hand holding a banana, and a little animal with a striped tail.
+- `public/art/pt/foz/l2-5.jpg` — phrase — PT Iguaçu 2 vocab «Pode entrar.»
+  - Draw: An open gate to a jungle trail.
+- `public/art/pt/foz/l2-6.jpg` — phrase — PT Iguaçu 2 vocab «Onde posso comprar água?»
+  - Draw: Murzik holds up an empty bottle.
+- `public/art/pt/foz/l2-7.jpg` — phrase — PT Iguaçu 2 vocab «Você pode me ajudar?»
+  - Draw: Murzik tugs at a backpack strap caught in some branches.
+- `public/art/pt/foz/binoculars.jpg` — reward — PT Iguaçu 2 reward «Binóculo»
+  - Draw: A small green pair of binoculars on a strap lies on the bed.
+- `public/art/pt/foz/l3-1.jpg` — phrase — PT Iguaçu 3 vocab «O que vocês querem fazer?»
+  - Draw: Juliana spreads a map of the park on the table.
+- `public/art/pt/foz/l3-2.jpg` — phrase — PT Iguaçu 3 vocab «Eu quero ver os pássaros.»
+  - Draw: Murzik looks at a bright toucan through his binoculars.
+- `public/art/pt/foz/l3-3.jpg` — phrase — PT Iguaçu 3 vocab «Você quer andar de barco?»
+  - Draw: An inflatable boat at the foot of the falls.
+- `public/art/pt/foz/l3-4.jpg` — phrase — PT Iguaçu 3 vocab «Quero sim!»
+  - Draw: Bia raises her hand excitedly.
+- `public/art/pt/foz/l3-5.jpg` — phrase — PT Iguaçu 3 vocab «Eu não quero ficar molhado de novo!»
+  - Draw: Murzik hides behind Bia in horror.
+- `public/art/pt/foz/l3-6.jpg` — phrase — PT Iguaçu 3 vocab «Nós queremos ir agora.»
+  - Draw: Murzik and Bia at the door in hats, with backpacks.
+- `public/art/pt/foz/l3-7.jpg` — phrase — PT Iguaçu 3 vocab «Não, obrigado. Não quero.»
+  - Draw: Murzik waves a paw politely: no thanks.
+- `public/art/pt/foz/toucan.jpg` — reward — PT Iguaçu 3 reward «Tucano de pelúcia»
+  - Draw: A soft toy toucan with a huge orange beak sits on the pillow.
+- `public/art/pt/foz/l4-1.jpg` — phrase — PT Iguaçu 4 vocab «Você come banana?»
+  - Draw: Bia offers Murzik a banana.
+- `public/art/pt/foz/l4-2.jpg` — phrase — PT Iguaçu 4 vocab «Eu bebo muita água.»
+  - Draw: Murzik drinks from a big bottle.
+- `public/art/pt/foz/l4-3.jpg` — phrase — PT Iguaçu 4 vocab «Nós comemos aqui.»
+  - Draw: A picnic blanket with food on the grass by the river.
+- `public/art/pt/foz/l4-4.jpg` — phrase — PT Iguaçu 4 vocab «um sanduíche»
+  - Draw: A big cheese and tomato sandwich.
+- `public/art/pt/foz/l4-5.jpg` — phrase — PT Iguaçu 4 vocab «Os quatis comem frutas.»
+  - Draw: Two coatis with striped tails nibble a mango.
+- `public/art/pt/foz/l4-6.jpg` — phrase — PT Iguaçu 4 vocab «Ele comeu tudo!»
+  - Draw: A coati sits on the empty picnic blanket, looking very pleased.
+- `public/art/pt/foz/l4-7.jpg` — phrase — PT Iguaçu 4 vocab «Que fome!»
+  - Draw: Murzik stares sadly at an empty plate.
+- `public/art/pt/foz/bottle.jpg` — reward — PT Iguaçu 4 reward «Garrafinha»
+  - Draw: A blue metal water bottle with a picture of a coati on it.
+- `public/art/pt/foz/l5-1.jpg` — phrase — PT Iguaçu 5 vocab «O barco parte agora!»
+  - Draw: A captain in a cap waves from an inflatable boat.
+- `public/art/pt/foz/l5-2.jpg` — phrase — PT Iguaçu 5 vocab «Segura firme!»
+  - Draw: Murzik clings to the rope on the side of the boat.
+- `public/art/pt/foz/l5-3.jpg` — phrase — PT Iguaçu 5 vocab «Nós subimos o rio.»
+  - Draw: The boat races upstream towards the falls.
+- `public/art/pt/foz/l5-4.jpg` — phrase — PT Iguaçu 5 vocab «Abre a mochila!»
+  - Draw: Bia opens her backpack and pulls out the rain ponchos.
+- `public/art/pt/foz/l5-5.jpg` — phrase — PT Iguaçu 5 vocab «Eu sinto a água no rosto!»
+  - Draw: Spray flies into Murzik's face.
+- `public/art/pt/foz/l5-6.jpg` — phrase — PT Iguaçu 5 vocab «Eles dormem no barco.»
+  - Draw: On the way back, two tourists doze in the boat.
+- `public/art/pt/foz/l5-7.jpg` — phrase — PT Iguaçu 5 vocab «Foi incrível!»
+  - Draw: A soaked but very happy Murzik on the jetty.
+- `public/art/pt/foz/map.jpg` — reward — PT Iguaçu 5 reward «Mapa do parque»
+  - Draw: A hand-drawn map of the park with waterfalls, trails and little toucans hangs on the wall.
+- `public/art/pt/foz/l6-1.jpg` — phrase — PT Iguaçu 6 vocab «Ali é a Argentina.»
+  - Draw: Juliana points to the opposite bank of the river.
+- `public/art/pt/foz/l6-2.jpg` — phrase — PT Iguaçu 6 vocab «E ali é o Paraguai.»
+  - Draw: The third riverbank, with rooftops.
+- `public/art/pt/foz/l6-3.jpg` — phrase — PT Iguaçu 6 vocab «a fronteira»
+  - Draw: A stone pillar painted in three different colours.
+- `public/art/pt/foz/l6-4.jpg` — phrase — PT Iguaçu 6 vocab «Lá eles falam espanhol.»
+  - Draw: People and shop signs on the far bank.
+- `public/art/pt/foz/l6-5.jpg` — phrase — PT Iguaçu 6 vocab «Aqui nós falamos português.»
+  - Draw: Bia proudly puts her hand on her heart.
+- `public/art/pt/foz/l6-6.jpg` — phrase — PT Iguaçu 6 vocab «Você fala espanhol?»
+  - Draw: Juliana looks at Murzik with interest.
+- `public/art/pt/foz/l6-7.jpg` — phrase — PT Iguaçu 6 vocab «Que país grande!»
+  - Draw: Murzik spreads his paws wide in front of a huge map of Brazil.
+- `public/art/pt/foz/notebook.jpg` — reward — PT Iguaçu 6 reward «Caderno de viagem»
+  - Draw: A notebook with a world-map cover; inside, tickets are stuck in and the route is drawn.
+- `public/art/pt/foz/l7-1.jpg` — phrase — PT Iguaçu 7 vocab «Que lindo!»
+  - Draw: The green parrot on the railing of a viewpoint, with the falls and a rainbow behind him.
+- `public/art/pt/foz/l7-2.jpg` — phrase — PT Iguaçu 7 vocab «o mirante»
+  - Draw: A wooden platform over a drop, looking out over the falls.
+- `public/art/pt/foz/l7-3.jpg` — phrase — PT Iguaçu 7 vocab «Ele estava olhando as cataratas.»
+  - Draw: The parrot tilts his head, spellbound by the water.
+- `public/art/pt/foz/l7-4.jpg` — phrase — PT Iguaçu 7 vocab «Eles foram para o Pantanal.»
+  - Draw: A map: an arrow pointing north-west to huge wetlands.
+- `public/art/pt/foz/l7-5.jpg` — phrase — PT Iguaçu 7 vocab «Lá tem jacarés!»
+  - Draw: A little picture: a caiman dozing by the water.
+- `public/art/pt/foz/l7-6.jpg` — phrase — PT Iguaçu 7 vocab «Tenham cuidado!»
+  - Draw: Juliana raises a finger like a strict teacher.
+- `public/art/pt/foz/l7-7.jpg` — phrase — PT Iguaçu 7 vocab «Até breve!»
+  - Draw: Murzik and Bia wave as they board a small plane.
+- `public/art/pt/foz/photo.jpg` — reward — PT Iguaçu 7 reward «Foto do Pipoca nas cataratas»; PT Iguaçu farewell 1
+  - Draw: A photo: the green parrot on the viewpoint railing, with the waterfalls and a rainbow behind him.
+- `public/art/pt/foz/departure.jpg` — scene — PT Iguaçu departure; PT Iguaçu farewell 3
+  - Draw: Juliana waves at the park gates.
+- `public/art/pt/foz/plane.jpg` — scene — PT Iguaçu farewell 4
+  - Draw: A small plane over endless plains full of lakes and rivers.
+
+## Portuguese course — Pantanal (59 pictures)
+
+- `public/art/pt/pantanal/arrival.jpg` — scene — PT Iguaçu farewell 5; PT Pantanal welcome
+  - Draw: A wooden house on stilts in the middle of green plains and lakes. White egrets fly over the water; a caiman suns itself on the bank.
+- `public/art/pt/pantanal/l1-1.jpg` — phrase — PT Pantanal 1 vocab «Que animal é esse?»
+  - Draw: Murzik, holding his binoculars, points at something in the grass.
+- `public/art/pt/pantanal/l1-2.jpg` — phrase — PT Pantanal 1 vocab «É uma capivara.»
+  - Draw: A big, calm capybara sits by the water.
+- `public/art/pt/pantanal/l1-3.jpg` — phrase — PT Pantanal 1 vocab «o jacaré»
+  - Draw: A caiman lies on the bank with its mouth open.
+- `public/art/pt/pantanal/l1-4.jpg` — phrase — PT Pantanal 1 vocab «a arara-azul»
+  - Draw: A bright blue macaw on a branch.
+- `public/art/pt/pantanal/l1-5.jpg` — phrase — PT Pantanal 1 vocab «a onça-pintada»
+  - Draw: A spotted jaguar rests in the shade of a tree.
+- `public/art/pt/pantanal/l1-6.jpg` — phrase — PT Pantanal 1 vocab «o tuiuiú»
+  - Draw: A huge stork with a black neck and a red collar.
+- `public/art/pt/pantanal/l1-7.jpg` — phrase — PT Pantanal 1 vocab «os pássaros»
+  - Draw: A flock of white egrets flies over the water.
+- `public/art/pt/pantanal/net.jpg` — reward — PT Pantanal 1 reward «Mosquiteiro»
+  - Draw: A white mosquito net hangs over the bed like a little tent.
+- `public/art/pt/pantanal/l2-1.jpg` — phrase — PT Pantanal 2 vocab «A capivara é grande.»
+  - Draw: Murzik next to a capybara — it's three times his size.
+- `public/art/pt/pantanal/l2-2.jpg` — phrase — PT Pantanal 2 vocab «O passarinho é pequeno.»
+  - Draw: A tiny bird perches on Murzik's paw.
+- `public/art/pt/pantanal/l2-3.jpg` — phrase — PT Pantanal 2 vocab «Ele é perigoso?»
+  - Draw: Murzik peers nervously at a caiman from behind a tree.
+- `public/art/pt/pantanal/l2-4.jpg` — phrase — PT Pantanal 2 vocab «Não, ele é calmo.»
+  - Draw: A caiman lies motionless in the sun with a bird sitting on its back.
+- `public/art/pt/pantanal/l2-5.jpg` — phrase — PT Pantanal 2 vocab «As araras são coloridas.»
+  - Draw: Red, blue and yellow macaws on a branch.
+- `public/art/pt/pantanal/l2-6.jpg` — phrase — PT Pantanal 2 vocab «Ela é muito rápida!»
+  - Draw: A lizard darts across a rock like lightning.
+- `public/art/pt/pantanal/l2-7.jpg` — phrase — PT Pantanal 2 vocab «Os jacarés são lentos.»
+  - Draw: A caiman lazily crawls towards the water.
+- `public/art/pt/pantanal/boots.jpg` — reward — PT Pantanal 2 reward «Botas de borracha»
+  - Draw: A pair of small green rubber boots, caked in mud, stands by the door.
+- `public/art/pt/pantanal/l3-1.jpg` — phrase — PT Pantanal 3 vocab «Ele está dormindo.»
+  - Draw: A caiman lies with its eyes closed.
+- `public/art/pt/pantanal/l3-2.jpg` — phrase — PT Pantanal 3 vocab «Estou com medo!»
+  - Draw: Murzik hides behind Seu Benedito's legs.
+- `public/art/pt/pantanal/l3-3.jpg` — phrase — PT Pantanal 3 vocab «O rio está cheio.»
+  - Draw: The river has burst its banks; trees stand in the water.
+- `public/art/pt/pantanal/l3-4.jpg` — phrase — PT Pantanal 3 vocab «Eu sou curioso.»
+  - Draw: Murzik bends curiously over a burrow.
+- `public/art/pt/pantanal/l3-5.jpg` — phrase — PT Pantanal 3 vocab «Ele está acordado!»
+  - Draw: The caiman has opened one eye.
+- `public/art/pt/pantanal/l3-6.jpg` — phrase — PT Pantanal 3 vocab «Calma, não tem perigo.»
+  - Draw: Seu Benedito calmly raises his hand.
+- `public/art/pt/pantanal/l3-7.jpg` — phrase — PT Pantanal 3 vocab «Ufa! Que alívio!»
+  - Draw: Murzik wipes his brow with a paw.
+- `public/art/pt/pantanal/horn.jpg` — reward — PT Pantanal 3 reward «Berrante»
+  - Draw: A long horn with a leather strap hangs on the wall.
+- `public/art/pt/pantanal/l4-1.jpg` — phrase — PT Pantanal 4 vocab «o cavalo»
+  - Draw: A bay horse with a white star on its forehead.
+- `public/art/pt/pantanal/l4-2.jpg` — phrase — PT Pantanal 4 vocab «a vaca»
+  - Draw: A white cow with big horns in a field.
+- `public/art/pt/pantanal/l4-3.jpg` — phrase — PT Pantanal 4 vocab «Vamos andar a cavalo?»
+  - Draw: Seu Benedito holds two horses by their bridles.
+- `public/art/pt/pantanal/l4-4.jpg` — phrase — PT Pantanal 4 vocab «Eu nunca andei a cavalo.»
+  - Draw: Murzik looks up, bewildered, at an enormous horse.
+- `public/art/pt/pantanal/l4-5.jpg` — phrase — PT Pantanal 4 vocab «Sobe aqui!»
+  - Draw: Seu Benedito lifts Murzik into the saddle.
+- `public/art/pt/pantanal/l4-6.jpg` — phrase — PT Pantanal 4 vocab «Segura as rédeas!»
+  - Draw: Murzik in the saddle, gripping the reins.
+- `public/art/pt/pantanal/l4-7.jpg` — phrase — PT Pantanal 4 vocab «Devagar, cavalinho!»
+  - Draw: The horse walks slowly as Murzik strokes its neck.
+- `public/art/pt/pantanal/jaguar.jpg` — reward — PT Pantanal 4 reward «Onça de madeira»
+  - Draw: A small carved jaguar figure with painted spots stands on the shelf.
+- `public/art/pt/pantanal/l5-1.jpg` — phrase — PT Pantanal 5 vocab «Vamos pescar?»
+  - Draw: Seu Benedito with a fishing rod over his shoulder.
+- `public/art/pt/pantanal/l5-2.jpg` — phrase — PT Pantanal 5 vocab «a vara de pescar»
+  - Draw: Murzik holds a little bamboo fishing rod.
+- `public/art/pt/pantanal/l5-3.jpg` — phrase — PT Pantanal 5 vocab «a piranha»
+  - Draw: A silvery little fish with sharp teeth.
+- `public/art/pt/pantanal/l5-4.jpg` — phrase — PT Pantanal 5 vocab «Peguei um peixe!»
+  - Draw: Murzik holds up a wriggling fish on his line.
+- `public/art/pt/pantanal/l5-5.jpg` — phrase — PT Pantanal 5 vocab «Ela tem dentes grandes!»
+  - Draw: Close-up: a piranha with its mouth open.
+- `public/art/pt/pantanal/l5-6.jpg` — phrase — PT Pantanal 5 vocab «Joga de volta!»
+  - Draw: Murzik gently lets the fish go in the river.
+- `public/art/pt/pantanal/l5-7.jpg` — phrase — PT Pantanal 5 vocab «Que sorte!»
+  - Draw: Bia pats Murzik on the shoulder.
+- `public/art/pt/pantanal/rod.jpg` — reward — PT Pantanal 5 reward «Vara de pescar»
+  - Draw: A little bamboo fishing rod with a red float stands in the corner.
+- `public/art/pt/pantanal/l6-1.jpg` — phrase — PT Pantanal 6 vocab «Que barulho é esse?»
+  - Draw: Murzik pricks up his ears in the dark.
+- `public/art/pt/pantanal/l6-2.jpg` — phrase — PT Pantanal 6 vocab «Não tem nada.»
+  - Draw: Bia shines a torch at the empty grass.
+- `public/art/pt/pantanal/l6-3.jpg` — phrase — PT Pantanal 6 vocab «É só um sapo.»
+  - Draw: A little green frog sits on a leaf, croaking.
+- `public/art/pt/pantanal/l6-4.jpg` — phrase — PT Pantanal 6 vocab «Não tem ninguém.»
+  - Draw: The empty ranch veranda under the moon.
+- `public/art/pt/pantanal/l6-5.jpg` — phrase — PT Pantanal 6 vocab «Os olhos brilham no escuro.»
+  - Draw: Dozens of red dots glow in the dark by the water.
+- `public/art/pt/pantanal/l6-6.jpg` — phrase — PT Pantanal 6 vocab «Vamos dormir?»
+  - Draw: Bia yawns and points towards the house.
+- `public/art/pt/pantanal/l6-7.jpg` — phrase — PT Pantanal 6 vocab «Durma bem!»
+  - Draw: Under the mosquito net, Murzik hugs his toy toucan.
+- `public/art/pt/pantanal/terere.jpg` — reward — PT Pantanal 6 reward «Guampa de tereré»
+  - Draw: A cup made from horn with a metal straw stands on the windowsill.
+- `public/art/pt/pantanal/l7-1.jpg` — phrase — PT Pantanal 7 vocab «Olha o jacaré!»
+  - Draw: The green parrot shrieks and flaps on the bow of a boat.
+- `public/art/pt/pantanal/l7-2.jpg` — phrase — PT Pantanal 7 vocab «Ele avisou todo mundo.»
+  - Draw: The musicians in the boat look round in alarm.
+- `public/art/pt/pantanal/l7-3.jpg` — phrase — PT Pantanal 7 vocab «Ele salvou o Zeca!»
+  - Draw: The band's singer jumps back from the water as a caiman swims away.
+- `public/art/pt/pantanal/l7-4.jpg` — phrase — PT Pantanal 7 vocab «Eles foram para Brasília.»
+  - Draw: A map: an arrow to a plane-shaped city in the very middle of the country.
+- `public/art/pt/pantanal/l7-5.jpg` — phrase — PT Pantanal 7 vocab «a capital»
+  - Draw: A little picture: unusual white buildings.
+- `public/art/pt/pantanal/l7-6.jpg` — phrase — PT Pantanal 7 vocab «Que aventura!»
+  - Draw: Murzik in his boots, with his fishing rod and horn, waves goodbye.
+- `public/art/pt/pantanal/l7-7.jpg` — phrase — PT Pantanal 7 vocab «Vão com cuidado!»
+  - Draw: Seu Benedito waves his hat at the ranch gate.
+- `public/art/pt/pantanal/photo.jpg` — reward — PT Pantanal 7 reward «Foto do Pipoca herói»; PT Pantanal farewell 1
+  - Draw: A photo: the green parrot sits proudly on the band singer's shoulder, with the river and a distant caiman behind them.
+- `public/art/pt/pantanal/departure.jpg` — scene — PT Pantanal departure; PT Pantanal farewell 3
+  - Draw: Seu Benedito waves his hat at the ranch gate.
+- `public/art/pt/pantanal/plane.jpg` — scene — PT Pantanal farewell 4
+  - Draw: A plane flies over red earth and neat fields.
+
+## Portuguese course — Brasília (59 pictures)
+
+- `public/art/pt/brasilia/arrival.jpg` — scene — PT Pantanal farewell 5; PT Brasília welcome
+  - Draw: A wide square with strikingly shaped white buildings: two tall towers and domes like upturned bowls.
+- `public/art/pt/brasilia/l1-1.jpg` — phrase — PT Brasília 1 vocab «O que você faz?»
+  - Draw: Murzik looks curiously at a young man in a shirt and tie.
+- `public/art/pt/brasilia/l1-2.jpg` — phrase — PT Brasília 1 vocab «Eu sou professor.»
+  - Draw: A teacher with chalk at the blackboard.
+- `public/art/pt/brasilia/l1-3.jpg` — phrase — PT Brasília 1 vocab «Ela é médica.»
+  - Draw: A woman doctor in a white coat with a stethoscope.
+- `public/art/pt/brasilia/l1-4.jpg` — phrase — PT Brasília 1 vocab «Ele é engenheiro.»
+  - Draw: An engineer in a hard hat studies some plans.
+- `public/art/pt/brasilia/l1-5.jpg` — phrase — PT Brasília 1 vocab «Eu trabalho num escritório.»
+  - Draw: Rafael at his computer in a big office.
+- `public/art/pt/brasilia/l1-6.jpg` — phrase — PT Brasília 1 vocab «Eu quero ser jornalista.»
+  - Draw: Bia with a microphone and a notebook.
+- `public/art/pt/brasilia/l1-7.jpg` — phrase — PT Brasília 1 vocab «Você gosta do seu trabalho?»
+  - Draw: Murzik holds an imaginary microphone up to Rafael.
+- `public/art/pt/brasilia/badge.jpg` — reward — PT Brasília 1 reward «Crachá»
+  - Draw: A badge on a blue lanyard with Murzik's photo lies on the desk.
+- `public/art/pt/brasilia/l2-1.jpg` — phrase — PT Brasília 2 vocab «Que horas são?»
+  - Draw: Murzik points at his bare wrist.
+- `public/art/pt/brasilia/l2-2.jpg` — phrase — PT Brasília 2 vocab «É uma hora.»
+  - Draw: A clock showing one o'clock.
+- `public/art/pt/brasilia/l2-3.jpg` — phrase — PT Brasília 2 vocab «São duas horas.»
+  - Draw: A clock showing two o'clock.
+- `public/art/pt/brasilia/l2-4.jpg` — phrase — PT Brasília 2 vocab «São três e meia.»
+  - Draw: A clock showing half past three.
+- `public/art/pt/brasilia/l2-5.jpg` — phrase — PT Brasília 2 vocab «meio-dia»
+  - Draw: The sun directly overhead; Murzik's shadow is tiny.
+- `public/art/pt/brasilia/l2-6.jpg` — phrase — PT Brasília 2 vocab «meia-noite»
+  - Draw: A night sky and a clock at twelve.
+- `public/art/pt/brasilia/l2-7.jpg` — phrase — PT Brasília 2 vocab «Já é tarde!»
+  - Draw: Rafael grabs his briefcase in a panic.
+- `public/art/pt/brasilia/clock.jpg` — reward — PT Brasília 2 reward «Relógio de parede»
+  - Draw: A round wall clock shaped like an aeroplane hangs on the wall.
+- `public/art/pt/brasilia/l3-1.jpg` — phrase — PT Brasília 3 vocab «A que horas você acorda?»
+  - Draw: Murzik interviews Rafael with a notebook.
+- `public/art/pt/brasilia/l3-2.jpg` — phrase — PT Brasília 3 vocab «Eu acordo às seis.»
+  - Draw: An alarm clock rings; it's still dark outside.
+- `public/art/pt/brasilia/l3-3.jpg` — phrase — PT Brasília 3 vocab «Eu almoço ao meio-dia.»
+  - Draw: Rafael eats rice and beans at his desk.
+- `public/art/pt/brasilia/l3-4.jpg` — phrase — PT Brasília 3 vocab «A reunião é às nove.»
+  - Draw: People in suits sit at a long table.
+- `public/art/pt/brasilia/l3-5.jpg` — phrase — PT Brasília 3 vocab «Eu saio do trabalho às seis.»
+  - Draw: Rafael walks out of the ministry building at sunset.
+- `public/art/pt/brasilia/l3-6.jpg` — phrase — PT Brasília 3 vocab «Eu janto às oito.»
+  - Draw: Dinner on the table; the clock shows eight.
+- `public/art/pt/brasilia/l3-7.jpg` — phrase — PT Brasília 3 vocab «Eu durmo às onze.»
+  - Draw: Rafael asleep, hugging his briefcase.
+- `public/art/pt/brasilia/planner.jpg` — reward — PT Brasília 3 reward «Agenda»
+  - Draw: A small blue planner with a timetable inside, full of times and little drawings.
+- `public/art/pt/brasilia/l4-1.jpg` — phrase — PT Brasília 4 vocab «Que dia é hoje?»
+  - Draw: Murzik looks at a big wall calendar.
+- `public/art/pt/brasilia/l4-2.jpg` — phrase — PT Brasília 4 vocab «Hoje é sexta-feira.»
+  - Draw: Friday is circled on the calendar.
+- `public/art/pt/brasilia/l4-3.jpg` — phrase — PT Brasília 4 vocab «segunda, terça, quarta»
+  - Draw: Three calendar pages: Monday, Tuesday, Wednesday.
+- `public/art/pt/brasilia/l4-4.jpg` — phrase — PT Brasília 4 vocab «quinta e sexta»
+  - Draw: Two calendar pages: Thursday and Friday.
+- `public/art/pt/brasilia/l4-5.jpg` — phrase — PT Brasília 4 vocab «sábado e domingo»
+  - Draw: A sunny weekend: a hammock and a ball.
+- `public/art/pt/brasilia/l4-6.jpg` — phrase — PT Brasília 4 vocab «de segunda a sexta»
+  - Draw: Five working days shaded grey on the calendar.
+- `public/art/pt/brasilia/l4-7.jpg` — phrase — PT Brasília 4 vocab «no fim de semana»
+  - Draw: Rafael in shorts and a cap riding a bike.
+- `public/art/pt/brasilia/calendar.jpg` — reward — PT Brasília 4 reward «Calendário»
+  - Draw: A wall calendar with photos of Brazil; one day is circled with a red heart.
+- `public/art/pt/brasilia/l5-1.jpg` — phrase — PT Brasília 5 vocab «Primeiro eu tomo banho.»
+  - Draw: Murzik in the shower, covered in foam, with a rubber duck.
+- `public/art/pt/brasilia/l5-2.jpg` — phrase — PT Brasília 5 vocab «Eu escovo os dentes.»
+  - Draw: Murzik brushes his teeth with a tiny toothbrush.
+- `public/art/pt/brasilia/l5-3.jpg` — phrase — PT Brasília 5 vocab «Eu me visto.»
+  - Draw: Murzik pulls a T-shirt over his head.
+- `public/art/pt/brasilia/l5-4.jpg` — phrase — PT Brasília 5 vocab «Depois eu tomo café.»
+  - Draw: Murzik eats bread and drinks milky coffee.
+- `public/art/pt/brasilia/l5-5.jpg` — phrase — PT Brasília 5 vocab «Eu pego o ônibus.»
+  - Draw: Rafael runs for a bus that's pulling away.
+- `public/art/pt/brasilia/l5-6.jpg` — phrase — PT Brasília 5 vocab «No fim, eu descanso.»
+  - Draw: Murzik lies on the sofa with a book.
+- `public/art/pt/brasilia/l5-7.jpg` — phrase — PT Brasília 5 vocab «Que correria!»
+  - Draw: Rafael runs with his briefcase, a sandwich and his phone all at once.
+- `public/art/pt/brasilia/toothbrush.jpg` — reward — PT Brasília 5 reward «Escova de dentes»
+  - Draw: In the bathroom, a little toothbrush with a parrot-shaped handle stands in a green cup.
+- `public/art/pt/brasilia/l6-1.jpg` — phrase — PT Brasília 6 vocab «Brasília parece um avião.»
+  - Draw: A map of Brasília from above: a plane-shaped city.
+- `public/art/pt/brasilia/l6-2.jpg` — phrase — PT Brasília 6 vocab «o Congresso»
+  - Draw: Two tall white towers and two domes, one facing up, one facing down.
+- `public/art/pt/brasilia/l6-3.jpg` — phrase — PT Brasília 6 vocab «a catedral»
+  - Draw: A cathedral like a crown of curved white columns.
+- `public/art/pt/brasilia/l6-4.jpg` — phrase — PT Brasília 6 vocab «É muito moderno.»
+  - Draw: Murzik gazes in admiration at the white buildings.
+- `public/art/pt/brasilia/l6-5.jpg` — phrase — PT Brasília 6 vocab «Quem fez isso?»
+  - Draw: Murzik points at an unusual building.
+- `public/art/pt/brasilia/l6-6.jpg` — phrase — PT Brasília 6 vocab «Brasília é mais nova do que o Rio.»
+  - Draw: Two pictures side by side: old Rio and new Brasília.
+- `public/art/pt/brasilia/l6-7.jpg` — phrase — PT Brasília 6 vocab «O Rio é maior.»
+  - Draw: A big circle and a small circle on a map.
+- `public/art/pt/brasilia/model.jpg` — reward — PT Brasília 6 reward «Maquete do Congresso»
+  - Draw: A small white model stands on the shelf: two little towers and two domes.
+- `public/art/pt/brasilia/l7-1.jpg` — phrase — PT Brasília 7 vocab «Estou atrasado!»
+  - Draw: The green parrot flaps his wings on top of a departures board.
+- `public/art/pt/brasilia/l7-2.jpg` — phrase — PT Brasília 7 vocab «na rodoviária»
+  - Draw: A huge bus station with people running with bags.
+- `public/art/pt/brasilia/l7-3.jpg` — phrase — PT Brasília 7 vocab «toda hora»
+  - Draw: Rafael checks his watch, and again, and again.
+- `public/art/pt/brasilia/l7-4.jpg` — phrase — PT Brasília 7 vocab «Ele imitou o Rafael!»
+  - Draw: Rafael and the parrot clutch their heads in exactly the same way.
+- `public/art/pt/brasilia/l7-5.jpg` — phrase — PT Brasília 7 vocab «Eles foram para Ouro Preto.»
+  - Draw: A map: an arrow to an old town in the hills.
+- `public/art/pt/brasilia/l7-6.jpg` — phrase — PT Brasília 7 vocab «Corre!»
+  - Draw: Murzik and Bia run for the bus with their suitcases.
+- `public/art/pt/brasilia/l7-7.jpg` — phrase — PT Brasília 7 vocab «Não se atrase!»
+  - Draw: Rafael wags a finger, smiling.
+- `public/art/pt/brasilia/photo.jpg` — reward — PT Brasília 7 reward «Foto do Pipoca na rodoviária»; PT Brasília farewell 1
+  - Draw: A photo: the green parrot on top of the departures board, with passengers laughing below.
+- `public/art/pt/brasilia/departure.jpg` — scene — PT Brasília departure; PT Brasília farewell 3
+  - Draw: Rafael waves from the bus station platform.
+- `public/art/pt/brasilia/bus.jpg` — scene — PT Brasília farewell 4
+  - Draw: A night bus travels along a winding road through the hills.
+
+## Portuguese course — Ouro Preto (59 pictures)
+
+- `public/art/pt/ouropreto/arrival.jpg` — scene — PT Brasília farewell 5; PT Ouro Preto welcome
+  - Draw: An old town on the hills: white houses with colourful windows, steep cobbled streets going up and down, churches with little towers.
+- `public/art/pt/ouropreto/l1-1.jpg` — phrase — PT Ouro Preto 1 vocab «Onde fica a igreja?»
+  - Draw: Murzik stands with a map where some old streets cross.
+- `public/art/pt/ouropreto/l1-2.jpg` — phrase — PT Ouro Preto 1 vocab «Fica na praça.»
+  - Draw: An old square with a fountain and a two-towered church above it.
+- `public/art/pt/ouropreto/l1-3.jpg` — phrase — PT Ouro Preto 1 vocab «Vire à direita.»
+  - Draw: An arrow pointing right on an old stone wall.
+- `public/art/pt/ouropreto/l1-4.jpg` — phrase — PT Ouro Preto 1 vocab «Vire à esquerda.»
+  - Draw: An arrow pointing left on an old stone wall.
+- `public/art/pt/ouropreto/l1-5.jpg` — phrase — PT Ouro Preto 1 vocab «É a primeira rua.»
+  - Draw: An elderly woman points to the first turning.
+- `public/art/pt/ouropreto/l1-6.jpg` — phrase — PT Ouro Preto 1 vocab «Fica perto do museu.»
+  - Draw: A church with a white museum building next to it.
+- `public/art/pt/ouropreto/l1-7.jpg` — phrase — PT Ouro Preto 1 vocab «Obrigado pela ajuda!»
+  - Draw: Murzik bows gratefully to the elderly lady.
+- `public/art/pt/ouropreto/key.jpg` — reward — PT Ouro Preto 1 reward «Chave antiga»
+  - Draw: A big old wrought-iron key hangs on a nail by the door.
+- `public/art/pt/ouropreto/l2-1.jpg` — phrase — PT Ouro Preto 2 vocab «Aonde você vai?»
+  - Draw: Dona Marta with a basket meets Murzik at the door.
+- `public/art/pt/ouropreto/l2-2.jpg` — phrase — PT Ouro Preto 2 vocab «Eu vou à igreja.»
+  - Draw: Murzik points to a church on the hill.
+- `public/art/pt/ouropreto/l2-3.jpg` — phrase — PT Ouro Preto 2 vocab «Nós vamos ao museu.»
+  - Draw: Murzik and Bia walk towards a white building with columns.
+- `public/art/pt/ouropreto/l2-4.jpg` — phrase — PT Ouro Preto 2 vocab «Ela vai para casa.»
+  - Draw: Dona Marta climbs the street towards her house with her basket.
+- `public/art/pt/ouropreto/l2-5.jpg` — phrase — PT Ouro Preto 2 vocab «Eles vão ao mercado.»
+  - Draw: Two children run towards the market stalls.
+- `public/art/pt/ouropreto/l2-6.jpg` — phrase — PT Ouro Preto 2 vocab «Para onde vamos agora?»
+  - Draw: Murzik and Bia stand at a fork in the road with a map.
+- `public/art/pt/ouropreto/l2-7.jpg` — phrase — PT Ouro Preto 2 vocab «Já vou!»
+  - Draw: Murzik runs out of the door, pulling on a boot.
+- `public/art/pt/ouropreto/angel.jpg` — reward — PT Ouro Preto 2 reward «Anjinho de madeira»
+  - Draw: A small carved angel with golden wings stands on the shelf.
+- `public/art/pt/ouropreto/l3-1.jpg` — phrase — PT Ouro Preto 3 vocab «Que ladeira!»
+  - Draw: Murzik looks up at a very steep cobbled street.
+- `public/art/pt/ouropreto/l3-2.jpg` — phrase — PT Ouro Preto 3 vocab «Sobe a rua.»
+  - Draw: An arrow pointing up a steep street.
+- `public/art/pt/ouropreto/l3-3.jpg` — phrase — PT Ouro Preto 3 vocab «Desce a escada.»
+  - Draw: Old stone steps leading down.
+- `public/art/pt/ouropreto/l3-4.jpg` — phrase — PT Ouro Preto 3 vocab «Estou morto de cansaço.»
+  - Draw: Murzik lies on the steps with his tongue hanging out.
+- `public/art/pt/ouropreto/l3-5.jpg` — phrase — PT Ouro Preto 3 vocab «Vamos parar um pouco?»
+  - Draw: Bia sits down on a stone bench.
+- `public/art/pt/ouropreto/l3-6.jpg` — phrase — PT Ouro Preto 3 vocab «Falta pouco!»
+  - Draw: Dona Marta waves cheerfully from the top.
+- `public/art/pt/ouropreto/l3-7.jpg` — phrase — PT Ouro Preto 3 vocab «Que vista!»
+  - Draw: From the top of the hill: rooftops, churches and mountains.
+- `public/art/pt/ouropreto/stone.jpg` — reward — PT Ouro Preto 3 reward «Pedrinha»
+  - Draw: A smooth dark stone with golden flecks lies on the windowsill.
+- `public/art/pt/ouropreto/l4-1.jpg` — phrase — PT Ouro Preto 4 vocab «Esta igreja é muito antiga.»
+  - Draw: An old church with stones darkened by time.
+- `public/art/pt/ouropreto/l4-2.jpg` — phrase — PT Ouro Preto 4 vocab «Ela tem trezentos anos.»
+  - Draw: Old numbers carved into the church wall.
+- `public/art/pt/ouropreto/l4-3.jpg` — phrase — PT Ouro Preto 4 vocab «duzentos, trezentos, quatrocentos»
+  - Draw: Three little bags of coins: 200, 300, 400.
+- `public/art/pt/ouropreto/l4-4.jpg` — phrase — PT Ouro Preto 4 vocab «quinhentos, mil»
+  - Draw: A huge heap of coins with a 1000 sign.
+- `public/art/pt/ouropreto/l4-5.jpg` — phrase — PT Ouro Preto 4 vocab «o ouro»
+  - Draw: Gold nuggets in an old prospector's pan.
+- `public/art/pt/ouropreto/l4-6.jpg` — phrase — PT Ouro Preto 4 vocab «Antigamente aqui tinha ouro.»
+  - Draw: An old picture: people panning for gold in a river.
+- `public/art/pt/ouropreto/l4-7.jpg` — phrase — PT Ouro Preto 4 vocab «Que história!»
+  - Draw: Murzik listens to Dona Marta, open-mouthed.
+- `public/art/pt/ouropreto/bell.jpg` — reward — PT Ouro Preto 4 reward «Sininho»
+  - Draw: A small brass bell hangs on a ribbon by the window.
+- `public/art/pt/ouropreto/l5-1.jpg` — phrase — PT Ouro Preto 5 vocab «O cardápio, por favor.»
+  - Draw: Murzik reaches out a paw to the waiter.
+- `public/art/pt/ouropreto/l5-2.jpg` — phrase — PT Ouro Preto 5 vocab «O que você recomenda?»
+  - Draw: Murzik studies the menu, puzzled.
+- `public/art/pt/ouropreto/l5-3.jpg` — phrase — PT Ouro Preto 5 vocab «Eu vou querer o frango.»
+  - Draw: Murzik points at a picture of chicken on the menu.
+- `public/art/pt/ouropreto/l5-4.jpg` — phrase — PT Ouro Preto 5 vocab «a panela de pedra»
+  - Draw: A hot stone pot of food on a wooden table.
+- `public/art/pt/ouropreto/l5-5.jpg` — phrase — PT Ouro Preto 5 vocab «Está delicioso!»
+  - Draw: Murzik closes his eyes in delight.
+- `public/art/pt/ouropreto/l5-6.jpg` — phrase — PT Ouro Preto 5 vocab «E de sobremesa?»
+  - Draw: The waiter with a tray of desserts.
+- `public/art/pt/ouropreto/l5-7.jpg` — phrase — PT Ouro Preto 5 vocab «doce de leite com queijo»
+  - Draw: A little plate of caramel and a slice of white cheese.
+- `public/art/pt/ouropreto/pot.jpg` — reward — PT Ouro Preto 5 reward «Panelinha de pedra»
+  - Draw: A small grey soapstone pot with a lid stands on the shelf.
+- `public/art/pt/ouropreto/l6-1.jpg` — phrase — PT Ouro Preto 6 vocab «Posso ver aquela pedra?»
+  - Draw: Murzik points to a display of colourful stones.
+- `public/art/pt/ouropreto/l6-2.jpg` — phrase — PT Ouro Preto 6 vocab «Qual é mais bonita?»
+  - Draw: Bia holds two stones: a golden one and a pink one.
+- `public/art/pt/ouropreto/l6-3.jpg` — phrase — PT Ouro Preto 6 vocab «Esta é mais barata.»
+  - Draw: The seller shows them a small pink stone.
+- `public/art/pt/ouropreto/l6-4.jpg` — phrase — PT Ouro Preto 6 vocab «Faz um desconto?»
+  - Draw: Murzik gives the seller a sly smile.
+- `public/art/pt/ouropreto/l6-5.jpg` — phrase — PT Ouro Preto 6 vocab «Eu levo esta.»
+  - Draw: Murzik puts the golden stone on the counter.
+- `public/art/pt/ouropreto/l6-6.jpg` — phrase — PT Ouro Preto 6 vocab «É para presente.»
+  - Draw: Murzik shows a photo of Dona Lúcia.
+- `public/art/pt/ouropreto/l6-7.jpg` — phrase — PT Ouro Preto 6 vocab «Pode embrulhar?»
+  - Draw: The seller wraps a little box in paper with a bow.
+- `public/art/pt/ouropreto/topaz.jpg` — reward — PT Ouro Preto 6 reward «Topázio»
+  - Draw: A golden topaz sparkles on velvet in a small open box.
+- `public/art/pt/ouropreto/l7-1.jpg` — phrase — PT Ouro Preto 7 vocab «Siga em frente!»
+  - Draw: The green parrot sits on an old signpost in the square, pointing ahead with his wing.
+- `public/art/pt/ouropreto/l7-2.jpg` — phrase — PT Ouro Preto 7 vocab «Ele ensinou o caminho.»
+  - Draw: Tourists with maps listen to the parrot.
+- `public/art/pt/ouropreto/l7-3.jpg` — phrase — PT Ouro Preto 7 vocab «os turistas»
+  - Draw: A group of tourists with cameras in the square.
+- `public/art/pt/ouropreto/l7-4.jpg` — phrase — PT Ouro Preto 7 vocab «Eles foram para Salvador.»
+  - Draw: A map: an arrow north, to a city by the sea.
+- `public/art/pt/ouropreto/l7-5.jpg` — phrase — PT Ouro Preto 7 vocab «a Bahia»
+  - Draw: A little picture: colourful houses on a hill above the sea.
+- `public/art/pt/ouropreto/l7-6.jpg` — phrase — PT Ouro Preto 7 vocab «Vocês vão gostar!»
+  - Draw: Dona Marta smiles dreamily.
+- `public/art/pt/ouropreto/l7-7.jpg` — phrase — PT Ouro Preto 7 vocab «Voltem logo!»
+  - Draw: Dona Marta waves at the door of her old house.
+- `public/art/pt/ouropreto/photo.jpg` — reward — PT Ouro Preto 7 reward «Foto do Pipoca na placa»; PT Ouro Preto farewell 1
+  - Draw: A photo: the green parrot on an old wooden signpost, surrounded by laughing tourists with maps.
+- `public/art/pt/ouropreto/departure.jpg` — scene — PT Ouro Preto departure; PT Ouro Preto farewell 3
+  - Draw: Dona Marta waves at the door of her old house.
+- `public/art/pt/ouropreto/bus.jpg` — scene — PT Ouro Preto farewell 4
+  - Draw: A bus heads north as dawn breaks over the hills.
+
+## Portuguese course — Salvador (59 pictures)
+
+- `public/art/pt/salvador/arrival.jpg` — scene — PT Ouro Preto farewell 5; PT Salvador welcome
+  - Draw: The old Pelourinho square: pink, yellow and blue houses, a cobbled street and drummers in bright T-shirts.
+- `public/art/pt/salvador/l1-1.jpg` — phrase — PT Salvador 1 vocab «Eu quero um quilo de manga.»
+  - Draw: Murzik points to a pile of ripe mangoes.
+- `public/art/pt/salvador/l1-2.jpg` — phrase — PT Salvador 1 vocab «meio quilo de tomate»
+  - Draw: A bag of tomatoes on the scales, the needle at 0.5.
+- `public/art/pt/salvador/l1-3.jpg` — phrase — PT Salvador 1 vocab «uma dúzia de bananas»
+  - Draw: A big bunch of twelve bananas.
+- `public/art/pt/salvador/l1-4.jpg` — phrase — PT Salvador 1 vocab «Quanto é o quilo?»
+  - Draw: A stallholder in a bright headscarf behind a fruit stall.
+- `public/art/pt/salvador/l1-5.jpg` — phrase — PT Salvador 1 vocab «Esta manga está madura?»
+  - Draw: Murzik carefully sniffs a mango.
+- `public/art/pt/salvador/l1-6.jpg` — phrase — PT Salvador 1 vocab «Que fruta é essa?»
+  - Draw: Murzik stares in surprise at a huge spiky jackfruit.
+- `public/art/pt/salvador/l1-7.jpg` — phrase — PT Salvador 1 vocab «Pode escolher!»
+  - Draw: The stallholder waves a hand over the whole stall.
+- `public/art/pt/salvador/basket.jpg` — reward — PT Salvador 1 reward «Cesta de frutas»
+  - Draw: A woven basket of mangoes, bananas and a small pineapple sits on the table.
+- `public/art/pt/salvador/l2-1.jpg` — phrase — PT Salvador 2 vocab «Você prefere manga ou abacaxi?»
+  - Draw: Bia holds a mango in one hand and a pineapple in the other.
+- `public/art/pt/salvador/l2-2.jpg` — phrase — PT Salvador 2 vocab «Eu prefiro manga.»
+  - Draw: Murzik reaches a paw towards the mango.
+- `public/art/pt/salvador/l2-3.jpg` — phrase — PT Salvador 2 vocab «Qual você prefere?»
+  - Draw: Two glasses of juice: one orange, one pink.
+- `public/art/pt/salvador/l2-4.jpg` — phrase — PT Salvador 2 vocab «Eu gosto mais de suco de caju.»
+  - Draw: Bia happily sips a pinkish juice through a straw.
+- `public/art/pt/salvador/l2-5.jpg` — phrase — PT Salvador 2 vocab «Tanto faz.»
+  - Draw: Murzik shrugs and smiles.
+- `public/art/pt/salvador/l2-6.jpg` — phrase — PT Salvador 2 vocab «Os dois!»
+  - Draw: Murzik grabs both glasses at once.
+- `public/art/pt/salvador/l2-7.jpg` — phrase — PT Salvador 2 vocab «Nenhum dos dois.»
+  - Draw: Murzik shakes his head at a plate of chillies.
+- `public/art/pt/salvador/cocada.jpg` — reward — PT Salvador 2 reward «Cocada»
+  - Draw: A little box of coconut sweets — white and brown squares.
+- `public/art/pt/salvador/l3-1.jpg` — phrase — PT Salvador 3 vocab «Um acarajé, por favor.»
+  - Draw: A woman in a white lace dress and turban fries fritters.
+- `public/art/pt/salvador/l3-2.jpg` — phrase — PT Salvador 3 vocab «Com pimenta ou sem?»
+  - Draw: The baiana holds a spoon over a bowl of red chilli.
+- `public/art/pt/salvador/l3-3.jpg` — phrase — PT Salvador 3 vocab «Pouca pimenta, por favor.»
+  - Draw: Murzik shows a tiny amount with his fingers.
+- `public/art/pt/salvador/l3-4.jpg` — phrase — PT Salvador 3 vocab «Está muito apimentado!»
+  - Draw: Murzik's face is bright red, steam puffing from his ears.
+- `public/art/pt/salvador/l3-5.jpg` — phrase — PT Salvador 3 vocab «Me dá uma água?»
+  - Draw: Murzik reaches desperately for a bottle of water.
+- `public/art/pt/salvador/l3-6.jpg` — phrase — PT Salvador 3 vocab «Quanto fica?»
+  - Draw: Murzik takes out his shell purse.
+- `public/art/pt/salvador/l3-7.jpg` — phrase — PT Salvador 3 vocab «Pode ficar com o troco.»
+  - Draw: Murzik smiles and pushes the coins back.
+- `public/art/pt/salvador/ribbon.jpg` — reward — PT Salvador 3 reward «Fitinha»
+  - Draw: A thin yellow ribbon is tied around Murzik's paw.
+- `public/art/pt/salvador/l4-1.jpg` — phrase — PT Salvador 4 vocab «Você quer jogar capoeira?»
+  - Draw: A capoeira teacher in white trousers holds out a hand to Murzik.
+- `public/art/pt/salvador/l4-2.jpg` — phrase — PT Salvador 4 vocab «a roda»
+  - Draw: People stand in a circle clapping, with two players in the middle.
+- `public/art/pt/salvador/l4-3.jpg` — phrase — PT Salvador 4 vocab «o berimbau»
+  - Draw: A musician plays a bow-shaped instrument with a gourd.
+- `public/art/pt/salvador/l4-4.jpg` — phrase — PT Salvador 4 vocab «Bate palmas!»
+  - Draw: Bia claps in the circle.
+- `public/art/pt/salvador/l4-5.jpg` — phrase — PT Salvador 4 vocab «Abaixa!»
+  - Draw: Murzik nimbly ducks as a leg sweeps over him.
+- `public/art/pt/salvador/l4-6.jpg` — phrase — PT Salvador 4 vocab «A gente canta junto.»
+  - Draw: The whole circle sings, arms raised.
+- `public/art/pt/salvador/l4-7.jpg` — phrase — PT Salvador 4 vocab «Que energia!»
+  - Draw: Murzik leaps about in the circle, thrilled.
+- `public/art/pt/salvador/berimbau.jpg` — reward — PT Salvador 4 reward «Berimbau»
+  - Draw: A little berimbau leans against the wall: a wooden bow with one string and a gourd.
+- `public/art/pt/salvador/l5-1.jpg` — phrase — PT Salvador 5 vocab «Esta é a neta dela.»
+  - Draw: A girl with plaits helps Dona Celeste shape the fritters.
+- `public/art/pt/salvador/l5-2.jpg` — phrase — PT Salvador 5 vocab «O neto dela toca tambor.»
+  - Draw: A boy taps a small drum next to the stall.
+- `public/art/pt/salvador/l5-3.jpg` — phrase — PT Salvador 5 vocab «os netos»
+  - Draw: Two children hug their grandmother in her white dress.
+- `public/art/pt/salvador/l5-4.jpg` — phrase — PT Salvador 5 vocab «Eles ajudam a avó.»
+  - Draw: The children lay out napkins and count coins.
+- `public/art/pt/salvador/l5-5.jpg` — phrase — PT Salvador 5 vocab «A receita é da família.»
+  - Draw: An old handwritten recipe notebook.
+- `public/art/pt/salvador/l5-6.jpg` — phrase — PT Salvador 5 vocab «É segredo!»
+  - Draw: Dona Celeste puts a finger to her lips and winks.
+- `public/art/pt/salvador/l5-7.jpg` — phrase — PT Salvador 5 vocab «Qual é o nome dele?»
+  - Draw: Murzik points at the boy with the drum.
+- `public/art/pt/salvador/drum.jpg` — reward — PT Salvador 5 reward «Tamborzinho»
+  - Draw: A small drum painted green, yellow and red stands on the floor.
+- `public/art/pt/salvador/l6-1.jpg` — phrase — PT Salvador 6 vocab «Que ritmo!»
+  - Draw: Twenty drummers in bright T-shirts play in the square.
+- `public/art/pt/salvador/l6-2.jpg` — phrase — PT Salvador 6 vocab «Eu quero aprender.»
+  - Draw: Murzik watches the drummers, eyes shining.
+- `public/art/pt/salvador/l6-3.jpg` — phrase — PT Salvador 6 vocab «Ensina para mim?»
+  - Draw: Murzik tugs at Davi's sleeve.
+- `public/art/pt/salvador/l6-4.jpg` — phrase — PT Salvador 6 vocab «Assim?»
+  - Draw: Murzik taps a drum hesitantly with a stick.
+- `public/art/pt/salvador/l6-5.jpg` — phrase — PT Salvador 6 vocab «Isso mesmo!»
+  - Draw: Davi gives Murzik a thumbs up.
+- `public/art/pt/salvador/l6-6.jpg` — phrase — PT Salvador 6 vocab «Mais alto!»
+  - Draw: Davi signals: harder!
+- `public/art/pt/salvador/l6-7.jpg` — phrase — PT Salvador 6 vocab «O tambor é pesado.»
+  - Draw: Murzik tries to lift an enormous drum.
+- `public/art/pt/salvador/pandeiro.jpg` — reward — PT Salvador 6 reward «Pandeiro»
+  - Draw: A small pandeiro tambourine with metal jingles hangs on the wall.
+- `public/art/pt/salvador/l7-1.jpg` — phrase — PT Salvador 7 vocab «Tá uma delícia!»
+  - Draw: The green parrot, crumbs on his beak, sits on the edge of the acarajé stall.
+- `public/art/pt/salvador/l7-2.jpg` — phrase — PT Salvador 7 vocab «Ele comeu um acarajé inteiro!»
+  - Draw: An empty plate next to a very satisfied parrot.
+- `public/art/pt/salvador/l7-3.jpg` — phrase — PT Salvador 7 vocab «sem pimenta, claro»
+  - Draw: Dona Celeste laughs and waves her hand.
+- `public/art/pt/salvador/l7-4.jpg` — phrase — PT Salvador 7 vocab «Eles foram para Olinda.»
+  - Draw: A map: an arrow north along the coast.
+- `public/art/pt/salvador/l7-5.jpg` — phrase — PT Salvador 7 vocab «o Carnaval»
+  - Draw: A little picture: giant puppets and dancers with umbrellas.
+- `public/art/pt/salvador/l7-6.jpg` — phrase — PT Salvador 7 vocab «Fica mais um pouco!»
+  - Draw: Ana holds on to Murzik's paw.
+- `public/art/pt/salvador/l7-7.jpg` — phrase — PT Salvador 7 vocab «Que pena que vocês vão embora!»
+  - Draw: Dona Celeste hugs Bia and Murzik.
+- `public/art/pt/salvador/photo.jpg` — reward — PT Salvador 7 reward «Foto do Pipoca com acarajé»; PT Salvador farewell 1
+  - Draw: A photo: the green parrot on the edge of the stall holding a piece of acarajé in his claw, with Ana and Davi laughing beside him.
+- `public/art/pt/salvador/departure.jpg` — scene — PT Salvador departure; PT Salvador farewell 3
+  - Draw: Dona Celeste and her grandchildren wave from the stall.
+- `public/art/pt/salvador/plane.jpg` — scene — PT Salvador farewell 4
+  - Draw: A plane flies over a long palm-fringed beach.
+
+## Portuguese course — Recife and Olinda (59 pictures)
+
+- `public/art/pt/olinda/arrival.jpg` — scene — PT Salvador farewell 5; PT Olinda welcome
+  - Draw: An old hilltop town above the sea: colourful little houses, churches and giant Carnival puppets in the street.
+- `public/art/pt/olinda/l1-1.jpg` — phrase — PT Olinda 1 vocab «No meu tempo livre eu leio.»
+  - Draw: Murzik reads a book in a hammock.
+- `public/art/pt/olinda/l1-2.jpg` — phrase — PT Olinda 1 vocab «Eu vejo filmes.»
+  - Draw: Murzik with popcorn in front of the TV.
+- `public/art/pt/olinda/l1-3.jpg` — phrase — PT Olinda 1 vocab «Eu saio com os amigos.»
+  - Draw: A group of friends laughing in the street in the evening.
+- `public/art/pt/olinda/l1-4.jpg` — phrase — PT Olinda 1 vocab «Eu fico em casa.»
+  - Draw: Murzik in pyjamas under a blanket with a mug.
+- `public/art/pt/olinda/l1-5.jpg` — phrase — PT Olinda 1 vocab «Eu faço esporte.»
+  - Draw: Murzik jogging in trainers and a headband.
+- `public/art/pt/olinda/l1-6.jpg` — phrase — PT Olinda 1 vocab «Você tem tempo livre?»
+  - Draw: A young woman with braids and a flowery skirt looks at Murzik with interest.
+- `public/art/pt/olinda/l1-7.jpg` — phrase — PT Olinda 1 vocab «Eu danço frevo!»
+  - Draw: The young woman leaps in the air holding a small colourful umbrella.
+- `public/art/pt/olinda/painting.jpg` — reward — PT Olinda 1 reward «Quadro de Olinda»
+  - Draw: A small bright painting hangs on the wall: Olinda's colourful houses and the sea.
+- `public/art/pt/olinda/l2-1.jpg` — phrase — PT Olinda 2 vocab «Esta é a sombrinha.»
+  - Draw: A little rainbow-striped umbrella.
+- `public/art/pt/olinda/l2-2.jpg` — phrase — PT Olinda 2 vocab «Pula!»
+  - Draw: Lia jumps high with her umbrella.
+- `public/art/pt/olinda/l2-3.jpg` — phrase — PT Olinda 2 vocab «Mexe as pernas!»
+  - Draw: Murzik moves his legs very fast.
+- `public/art/pt/olinda/l2-4.jpg` — phrase — PT Olinda 2 vocab «É difícil!»
+  - Draw: Murzik gets his legs in a tangle.
+- `public/art/pt/olinda/l2-5.jpg` — phrase — PT Olinda 2 vocab «Não, é fácil!»
+  - Draw: Lia twirls easily on one foot.
+- `public/art/pt/olinda/l2-6.jpg` — phrase — PT Olinda 2 vocab «Mais rápido!»
+  - Draw: The musicians play faster and faster; Murzik tries to keep up.
+- `public/art/pt/olinda/l2-7.jpg` — phrase — PT Olinda 2 vocab «Você dança muito bem!»
+  - Draw: Lia applauds Murzik.
+- `public/art/pt/olinda/sombrinha.jpg` — reward — PT Olinda 2 reward «Sombrinha de frevo»
+  - Draw: A small open rainbow-striped umbrella stands in the corner.
+- `public/art/pt/olinda/l3-1.jpg` — phrase — PT Olinda 3 vocab «Você quer ir ao show?»
+  - Draw: Lia points to a concert poster on the wall.
+- `public/art/pt/olinda/l3-2.jpg` — phrase — PT Olinda 3 vocab «Topa?»
+  - Draw: Lia winks, holding out two tickets.
+- `public/art/pt/olinda/l3-3.jpg` — phrase — PT Olinda 3 vocab «Topo!»
+  - Draw: Murzik grabs a ticket happily.
+- `public/art/pt/olinda/l3-4.jpg` — phrase — PT Olinda 3 vocab «Hoje não posso.»
+  - Draw: Bia points at her laptop with an apologetic smile.
+- `public/art/pt/olinda/l3-5.jpg` — phrase — PT Olinda 3 vocab «Fica para a próxima.»
+  - Draw: Lia nods understandingly.
+- `public/art/pt/olinda/l3-6.jpg` — phrase — PT Olinda 3 vocab «A que horas começa?»
+  - Draw: Murzik looks at his aeroplane clock.
+- `public/art/pt/olinda/l3-7.jpg` — phrase — PT Olinda 3 vocab «Começa às nove.»
+  - Draw: The poster shows a clock at nine.
+- `public/art/pt/olinda/ticket.jpg` — reward — PT Olinda 3 reward «Ingresso»
+  - Draw: A bright frevo concert ticket with a little umbrella on it is pinned to the mirror.
+- `public/art/pt/olinda/l4-1.jpg` — phrase — PT Olinda 4 vocab «O que você vai fazer amanhã?»
+  - Draw: Bia with her notebook at breakfast.
+- `public/art/pt/olinda/l4-2.jpg` — phrase — PT Olinda 4 vocab «Amanhã eu vou visitar Recife.»
+  - Draw: Murzik points on the map to a big city next to Olinda.
+- `public/art/pt/olinda/l4-3.jpg` — phrase — PT Olinda 4 vocab «Ela vai escrever.»
+  - Draw: Bia types on her laptop.
+- `public/art/pt/olinda/l4-4.jpg` — phrase — PT Olinda 4 vocab «Eu não vou trabalhar.»
+  - Draw: Murzik closes the laptop and puts on his straw hat.
+- `public/art/pt/olinda/l4-5.jpg` — phrase — PT Olinda 4 vocab «Vai chover amanhã?»
+  - Draw: Murzik looks at a little cloud outside the window.
+- `public/art/pt/olinda/l4-6.jpg` — phrase — PT Olinda 4 vocab «Não, vai fazer sol.»
+  - Draw: A weather app on the phone shows a sun.
+- `public/art/pt/olinda/l4-7.jpg` — phrase — PT Olinda 4 vocab «Vamos ver.»
+  - Draw: Lia shrugs and smiles.
+- `public/art/pt/olinda/mask.jpg` — reward — PT Olinda 4 reward «Máscara de carnaval»
+  - Draw: A bright Carnival mask with feathers and sequins hangs on the wall.
+- `public/art/pt/olinda/l5-1.jpg` — phrase — PT Olinda 5 vocab «Recife tem muitas pontes.»
+  - Draw: A river crossed by several bridges, with old buildings around it.
+- `public/art/pt/olinda/l5-2.jpg` — phrase — PT Olinda 5 vocab «a ponte»
+  - Draw: Murzik stands on an old iron bridge.
+- `public/art/pt/olinda/l5-3.jpg` — phrase — PT Olinda 5 vocab «Parece Veneza!»
+  - Draw: Boats on the river between old houses.
+- `public/art/pt/olinda/l5-4.jpg` — phrase — PT Olinda 5 vocab «Tem tubarão!»
+  - Draw: A sign on the beach: a shark silhouette in a triangle.
+- `public/art/pt/olinda/l5-5.jpg` — phrase — PT Olinda 5 vocab «É perigoso nadar aqui.»
+  - Draw: A lifeguard on a tower points to the sign.
+- `public/art/pt/olinda/l5-6.jpg` — phrase — PT Olinda 5 vocab «Vamos tomar um sorvete?»
+  - Draw: Lia points to an ice-cream cart.
+- `public/art/pt/olinda/l5-7.jpg` — phrase — PT Olinda 5 vocab «Eu quero de coco.»
+  - Draw: Murzik holds a cone of white ice cream.
+- `public/art/pt/olinda/cake.jpg` — reward — PT Olinda 5 reward «Bolo de rolo»
+  - Draw: A thin many-layered Swiss roll with guava filling on a plate.
+- `public/art/pt/olinda/l6-1.jpg` — phrase — PT Olinda 6 vocab «Você pinta?»
+  - Draw: Murzik peeks into a studio full of paintings.
+- `public/art/pt/olinda/l6-2.jpg` — phrase — PT Olinda 6 vocab «Que quadro bonito!»
+  - Draw: A large painting of colourful houses and Carnival puppets.
+- `public/art/pt/olinda/l6-3.jpg` — phrase — PT Olinda 6 vocab «Quem pintou?»
+  - Draw: Murzik points at the painting.
+- `public/art/pt/olinda/l6-4.jpg` — phrase — PT Olinda 6 vocab «Eu pintei.»
+  - Draw: An old painter with a brush behind his ear smiles modestly.
+- `public/art/pt/olinda/l6-5.jpg` — phrase — PT Olinda 6 vocab «As cores são vivas.»
+  - Draw: Pots of bright paint on a table.
+- `public/art/pt/olinda/l6-6.jpg` — phrase — PT Olinda 6 vocab «É feito à mão.»
+  - Draw: The painter decorates a small wooden figure.
+- `public/art/pt/olinda/l6-7.jpg` — phrase — PT Olinda 6 vocab «Posso tentar?»
+  - Draw: Murzik holds a paintbrush, a dab of paint on his nose.
+- `public/art/pt/olinda/puppet.jpg` — reward — PT Olinda 6 reward «Boneco de Olinda»
+  - Draw: A small painted wooden puppet with a big head — like the Carnival giants — stands on the shelf.
+- `public/art/pt/olinda/l7-1.jpg` — phrase — PT Olinda 7 vocab «Vamos dançar!»
+  - Draw: The green parrot perches on a little frevo umbrella, flapping his wings.
+- `public/art/pt/olinda/l7-2.jpg` — phrase — PT Olinda 7 vocab «Ele dançou com a gente.»
+  - Draw: The parrot bobs about in a circle of frevo dancers.
+- `public/art/pt/olinda/l7-3.jpg` — phrase — PT Olinda 7 vocab «Todo mundo dançou!»
+  - Draw: The whole street dances with umbrellas.
+- `public/art/pt/olinda/l7-4.jpg` — phrase — PT Olinda 7 vocab «Eles foram para Fortaleza.»
+  - Draw: A map: an arrow north along the coast.
+- `public/art/pt/olinda/l7-5.jpg` — phrase — PT Olinda 7 vocab «o Ceará»
+  - Draw: A little picture: dunes, palm trees and sailing boats.
+- `public/art/pt/olinda/l7-6.jpg` — phrase — PT Olinda 7 vocab «Leva a sombrinha!»
+  - Draw: Lia holds out a frevo umbrella to Murzik.
+- `public/art/pt/olinda/l7-7.jpg` — phrase — PT Olinda 7 vocab «Foi muito bom!»
+  - Draw: Murzik and Lia hug goodbye.
+- `public/art/pt/olinda/photo.jpg` — reward — PT Olinda 7 reward «Foto do Pipoca no frevo»; PT Olinda farewell 1
+  - Draw: A photo: the green parrot perched on a rainbow frevo umbrella, surrounded by dancers in bright costumes.
+- `public/art/pt/olinda/departure.jpg` — scene — PT Olinda departure; PT Olinda farewell 3
+  - Draw: Lia waves her frevo umbrella at the bus stop.
+- `public/art/pt/olinda/bus.jpg` — scene — PT Olinda farewell 4
+  - Draw: A bus drives along the coast past palm trees and dunes.
+
+## Portuguese course — Fortaleza (59 pictures)
+
+- `public/art/pt/fortaleza/arrival.jpg` — scene — PT Olinda farewell 5; PT Fortaleza welcome
+  - Draw: A long city beach under a blazing sun, the white sails of fishing boats and tall buildings along the seafront.
+- `public/art/pt/fortaleza/l1-1.jpg` — phrase — PT Fortaleza 1 vocab «O que você tem?»
+  - Draw: Bia looks anxiously at a pale-looking Murzik.
+- `public/art/pt/fortaleza/l1-2.jpg` — phrase — PT Fortaleza 1 vocab «Estou com dor de cabeça.»
+  - Draw: Murzik holds his head in his paws.
+- `public/art/pt/fortaleza/l1-3.jpg` — phrase — PT Fortaleza 1 vocab «Estou com dor de barriga.»
+  - Draw: Murzik clutches his tummy.
+- `public/art/pt/fortaleza/l1-4.jpg` — phrase — PT Fortaleza 1 vocab «Dói aqui.»
+  - Draw: Murzik points to his shoulder.
+- `public/art/pt/fortaleza/l1-5.jpg` — phrase — PT Fortaleza 1 vocab «Estou com febre.»
+  - Draw: A thermometer showing 38 °C.
+- `public/art/pt/fortaleza/l1-6.jpg` — phrase — PT Fortaleza 1 vocab «Estou doente.»
+  - Draw: Murzik lies in bed under a sheet, tissues beside him.
+- `public/art/pt/fortaleza/l1-7.jpg` — phrase — PT Fortaleza 1 vocab «Melhoras!»
+  - Draw: Bia brings Murzik a glass of water and smiles.
+- `public/art/pt/fortaleza/icepack.jpg` — reward — PT Fortaleza 1 reward «Bolsa de gelo»
+  - Draw: A blue cloud-shaped ice pack lies on the bedside table.
+- `public/art/pt/fortaleza/l2-1.jpg` — phrase — PT Fortaleza 2 vocab «a cabeça e o braço»
+  - Draw: Murzik points to his head and his arm.
+- `public/art/pt/fortaleza/l2-2.jpg` — phrase — PT Fortaleza 2 vocab «a mão»
+  - Draw: Murzik's open paw.
+- `public/art/pt/fortaleza/l2-3.jpg` — phrase — PT Fortaleza 2 vocab «a perna e o pé»
+  - Draw: Murzik stands on one leg and points to his foot.
+- `public/art/pt/fortaleza/l2-4.jpg` — phrase — PT Fortaleza 2 vocab «a barriga»
+  - Draw: Murzik pats his round tummy.
+- `public/art/pt/fortaleza/l2-5.jpg` — phrase — PT Fortaleza 2 vocab «as costas»
+  - Draw: Murzik holds his back like a little old man.
+- `public/art/pt/fortaleza/l2-6.jpg` — phrase — PT Fortaleza 2 vocab «Doem os pés.»
+  - Draw: Murzik takes off his boots; his feet are red.
+- `public/art/pt/fortaleza/l2-7.jpg` — phrase — PT Fortaleza 2 vocab «Onde dói?»
+  - Draw: A doctor in a white coat looks kindly at Murzik.
+- `public/art/pt/fortaleza/fan.jpg` — reward — PT Fortaleza 2 reward «Leque»
+  - Draw: An open straw fan painted with sailing boats lies on the bed.
+- `public/art/pt/fortaleza/l3-1.jpg` — phrase — PT Fortaleza 3 vocab «Abra a boca.»
+  - Draw: Murzik opens his mouth wide as the doctor shines a little light.
+- `public/art/pt/fortaleza/l3-2.jpg` — phrase — PT Fortaleza 3 vocab «É grave?»
+  - Draw: Murzik looks at the doctor, worried.
+- `public/art/pt/fortaleza/l3-3.jpg` — phrase — PT Fortaleza 3 vocab «Não é grave.»
+  - Draw: The doctor smiles reassuringly.
+- `public/art/pt/fortaleza/l3-4.jpg` — phrase — PT Fortaleza 3 vocab «Tome este remédio.»
+  - Draw: The doctor hands over a small bottle.
+- `public/art/pt/fortaleza/l3-5.jpg` — phrase — PT Fortaleza 3 vocab «Três vezes por dia.»
+  - Draw: Three circles on a note: morning, afternoon, evening.
+- `public/art/pt/fortaleza/l3-6.jpg` — phrase — PT Fortaleza 3 vocab «Beba muita água.»
+  - Draw: A big bottle of water next to Murzik.
+- `public/art/pt/fortaleza/l3-7.jpg` — phrase — PT Fortaleza 3 vocab «Descanse e fique na sombra.»
+  - Draw: Murzik lies in a hammock under a palm tree.
+- `public/art/pt/fortaleza/firstaid.jpg` — reward — PT Fortaleza 3 reward «Kit de primeiros socorros»
+  - Draw: A small white box with a red cross on the shelf.
+- `public/art/pt/fortaleza/l4-1.jpg` — phrase — PT Fortaleza 4 vocab «Eu preciso de um remédio para dor de cabeça.»
+  - Draw: Bia at the pharmacy counter.
+- `public/art/pt/fortaleza/l4-2.jpg` — phrase — PT Fortaleza 4 vocab «Precisa de receita?»
+  - Draw: Bia holds the doctor's note.
+- `public/art/pt/fortaleza/l4-3.jpg` — phrase — PT Fortaleza 4 vocab «Não precisa.»
+  - Draw: The pharmacist shakes her head.
+- `public/art/pt/fortaleza/l4-4.jpg` — phrase — PT Fortaleza 4 vocab «Quantos comprimidos?»
+  - Draw: Tablets in the palm of a hand.
+- `public/art/pt/fortaleza/l4-5.jpg` — phrase — PT Fortaleza 4 vocab «um por dia»
+  - Draw: One tablet and a little sun.
+- `public/art/pt/fortaleza/l4-6.jpg` — phrase — PT Fortaleza 4 vocab «um curativo»
+  - Draw: A star-shaped plaster.
+- `public/art/pt/fortaleza/l4-7.jpg` — phrase — PT Fortaleza 4 vocab «Melhorou?»
+  - Draw: Bia asks Murzik in his hammock, with concern.
+- `public/art/pt/fortaleza/sandbottle.jpg` — reward — PT Fortaleza 4 reward «Garrafinha de areia»
+  - Draw: A small glass bottle filled with layers of coloured sand that form a picture of dunes and a boat.
+- `public/art/pt/fortaleza/l5-1.jpg` — phrase — PT Fortaleza 5 vocab «Ontem eu fiquei na praia.»
+  - Draw: Yesterday: Murzik on the beach under a blazing sun.
+- `public/art/pt/fortaleza/l5-2.jpg` — phrase — PT Fortaleza 5 vocab «Eu tomei muito sol.»
+  - Draw: Murzik sunbathing with paws outstretched, no umbrella.
+- `public/art/pt/fortaleza/l5-3.jpg` — phrase — PT Fortaleza 5 vocab «Eu não passei protetor.»
+  - Draw: The tube of sun cream lies unopened in the bag.
+- `public/art/pt/fortaleza/l5-4.jpg` — phrase — PT Fortaleza 5 vocab «Eu esqueci!»
+  - Draw: Murzik slaps his forehead with a paw.
+- `public/art/pt/fortaleza/l5-5.jpg` — phrase — PT Fortaleza 5 vocab «Você comprou água?»
+  - Draw: Bia holds up an empty bottle.
+- `public/art/pt/fortaleza/l5-6.jpg` — phrase — PT Fortaleza 5 vocab «Nós andamos muito.»
+  - Draw: Two sets of footprints along a long beach.
+- `public/art/pt/fortaleza/l5-7.jpg` — phrase — PT Fortaleza 5 vocab «Eles chegaram ontem.»
+  - Draw: Tourists with suitcases at the hostel entrance.
+- `public/art/pt/fortaleza/sunhat.jpg` — reward — PT Fortaleza 5 reward «Chapéu de sol»
+  - Draw: A white wide-brimmed sun hat hangs on a hook.
+- `public/art/pt/fortaleza/l6-1.jpg` — phrase — PT Fortaleza 6 vocab «Nós comemos peixe.»
+  - Draw: A plate of fried fish and rice on a table by the sea.
+- `public/art/pt/fortaleza/l6-2.jpg` — phrase — PT Fortaleza 6 vocab «Eu bebi água de coco.»
+  - Draw: Murzik sips through a straw straight from a green coconut.
+- `public/art/pt/fortaleza/l6-3.jpg` — phrase — PT Fortaleza 6 vocab «Você dormiu bem?»
+  - Draw: Bia peeks into the room in the morning.
+- `public/art/pt/fortaleza/l6-4.jpg` — phrase — PT Fortaleza 6 vocab «Eu dormi mal.»
+  - Draw: A rumpled Murzik with rings under his eyes.
+- `public/art/pt/fortaleza/l6-5.jpg` — phrase — PT Fortaleza 6 vocab «Ele abriu a janela.»
+  - Draw: Murzik throws open the window, letting in the sea breeze.
+- `public/art/pt/fortaleza/l6-6.jpg` — phrase — PT Fortaleza 6 vocab «Eles saíram cedo.»
+  - Draw: Fishermen push their rafts out to sea at dawn.
+- `public/art/pt/fortaleza/l6-7.jpg` — phrase — PT Fortaleza 6 vocab «Eu vi as jangadas.»
+  - Draw: White triangular sails on the horizon.
+- `public/art/pt/fortaleza/jangada.jpg` — reward — PT Fortaleza 6 reward «Jangadinha»
+  - Draw: A small wooden raft with a white triangular sail stands on the shelf.
+- `public/art/pt/fortaleza/l7-1.jpg` — phrase — PT Fortaleza 7 vocab «Estou com calor!»
+  - Draw: The green parrot sits beak open in front of a fan.
+- `public/art/pt/fortaleza/l7-2.jpg` — phrase — PT Fortaleza 7 vocab «Ele tomou sol demais.»
+  - Draw: The parrot on the roof of a bus under the blazing sun.
+- `public/art/pt/fortaleza/l7-3.jpg` — phrase — PT Fortaleza 7 vocab «Eu dei água para ele.»
+  - Draw: Dr Paulo gives the parrot water from a little spoon.
+- `public/art/pt/fortaleza/l7-4.jpg` — phrase — PT Fortaleza 7 vocab «Agora ele está bem.»
+  - Draw: A lively parrot flapping his wings.
+- `public/art/pt/fortaleza/l7-5.jpg` — phrase — PT Fortaleza 7 vocab «Eles foram para Manaus.»
+  - Draw: A map: an arrow far to the west, into the green Amazon forest.
+- `public/art/pt/fortaleza/l7-6.jpg` — phrase — PT Fortaleza 7 vocab «a floresta amazônica»
+  - Draw: A little picture: endless green forest and a wide river.
+- `public/art/pt/fortaleza/l7-7.jpg` — phrase — PT Fortaleza 7 vocab «Cuide-se!»
+  - Draw: Dr Paulo shakes Murzik's paw at the door.
+- `public/art/pt/fortaleza/photo.jpg` — reward — PT Fortaleza 7 reward «Foto do Pipoca no consultório»; PT Fortaleza farewell 1
+  - Draw: A photo: the green parrot in the doctor's office in front of a fan, feathers ruffled, with Dr Paulo smiling beside him.
+- `public/art/pt/fortaleza/departure.jpg` — scene — PT Fortaleza departure; PT Fortaleza farewell 3
+  - Draw: Dr Paulo waves from the door of his surgery.
+- `public/art/pt/fortaleza/plane.jpg` — scene — PT Fortaleza farewell 4
+  - Draw: A plane flies over endless green forest and a winding river.
+
+## Portuguese course — Manaus (59 pictures)
+
+- `public/art/pt/manaus/arrival.jpg` — scene — PT Fortaleza farewell 5; PT Manaus welcome
+  - Draw: A wide dark river; on the bank a city and an old opera house with a colourful dome. White two-deck riverboats at the quay.
+- `public/art/pt/manaus/l1-1.jpg` — phrase — PT Manaus 1 vocab «Uma passagem para Belém, por favor.»
+  - Draw: Murzik at the ticket office in the river port.
+- `public/art/pt/manaus/l1-2.jpg` — phrase — PT Manaus 1 vocab «Quando sai o barco?»
+  - Draw: A white two-deck riverboat at the quay.
+- `public/art/pt/manaus/l1-3.jpg` — phrase — PT Manaus 1 vocab «O barco sai amanhã cedo.»
+  - Draw: A timetable: a rising sun and a clock at six.
+- `public/art/pt/manaus/l1-4.jpg` — phrase — PT Manaus 1 vocab «Quanto tempo dura a viagem?»
+  - Draw: Murzik counts the days on his fingers.
+- `public/art/pt/manaus/l1-5.jpg` — phrase — PT Manaus 1 vocab «Dura cinco dias.»
+  - Draw: A calendar with five days marked.
+- `public/art/pt/manaus/l1-6.jpg` — phrase — PT Manaus 1 vocab «Ida e volta?»
+  - Draw: Two arrows: there and back.
+- `public/art/pt/manaus/l1-7.jpg` — phrase — PT Manaus 1 vocab «Só ida.»
+  - Draw: One arrow pointing forward.
+- `public/art/pt/manaus/compass.jpg` — reward — PT Manaus 1 reward «Bússola»
+  - Draw: An old brass compass with a hinged lid lies on the little table.
+- `public/art/pt/manaus/l2-1.jpg` — phrase — PT Manaus 2 vocab «Onde eu penduro a rede?»
+  - Draw: Murzik holds a rolled-up hammock on a deck full of hammocks.
+- `public/art/pt/manaus/l2-2.jpg` — phrase — PT Manaus 2 vocab «Pode pendurar aqui.»
+  - Draw: An old captain in a peaked cap points to a free spot.
+- `public/art/pt/manaus/l2-3.jpg` — phrase — PT Manaus 2 vocab «ao lado da Bia»
+  - Draw: Two hammocks side by side: Murzik's and Bia's.
+- `public/art/pt/manaus/l2-4.jpg` — phrase — PT Manaus 2 vocab «entre duas famílias»
+  - Draw: Murzik and Bia's hammocks between two big families.
+- `public/art/pt/manaus/l2-5.jpg` — phrase — PT Manaus 2 vocab «Bom dia, vizinho!»
+  - Draw: A boy in the next hammock waves to Murzik.
+- `public/art/pt/manaus/l2-6.jpg` — phrase — PT Manaus 2 vocab «Que vento bom!»
+  - Draw: Murzik stands at the rail, the breeze ruffling his whiskers.
+- `public/art/pt/manaus/l2-7.jpg` — phrase — PT Manaus 2 vocab «O barco está partindo!»
+  - Draw: The boat pulls away from the quay, its horn sounding.
+- `public/art/pt/manaus/hammock.jpg` — reward — PT Manaus 2 reward «Rede de barco»
+  - Draw: A bright blue fringed hammock hangs on the deck.
+- `public/art/pt/manaus/l3-1.jpg` — phrase — PT Manaus 3 vocab «O rio é escuro.»
+  - Draw: The dark, almost black water of the Rio Negro.
+- `public/art/pt/manaus/l3-2.jpg` — phrase — PT Manaus 3 vocab «O outro rio é claro.»
+  - Draw: The light, sandy-coloured water of the Solimões.
+- `public/art/pt/manaus/l3-3.jpg` — phrase — PT Manaus 3 vocab «As águas não se misturam.»
+  - Draw: Dark and light water flow side by side with a clear line between them.
+- `public/art/pt/manaus/l3-4.jpg` — phrase — PT Manaus 3 vocab «Por quê?»
+  - Draw: Murzik tilts his head questioningly.
+- `public/art/pt/manaus/l3-5.jpg` — phrase — PT Manaus 3 vocab «Porque a água é diferente.»
+  - Draw: The captain holds up two glasses: one of dark water, one of light.
+- `public/art/pt/manaus/l3-6.jpg` — phrase — PT Manaus 3 vocab «Que incrível!»
+  - Draw: Murzik leans over the rail in amazement.
+- `public/art/pt/manaus/l3-7.jpg` — phrase — PT Manaus 3 vocab «Olha os botos!»
+  - Draw: Pink dolphins leap out of the water.
+- `public/art/pt/manaus/jar.jpg` — reward — PT Manaus 3 reward «Potinhos de água»
+  - Draw: Two small jars stand side by side on the shelf: one of dark water and one of light.
+- `public/art/pt/manaus/l4-1.jpg` — phrase — PT Manaus 4 vocab «Eu fui ao Rio.»
+  - Draw: Murzik points to Rio on the map.
+- `public/art/pt/manaus/l4-2.jpg` — phrase — PT Manaus 4 vocab «Nós fomos a muitas cidades.»
+  - Draw: A map of Brazil covered in dots and arrows.
+- `public/art/pt/manaus/l4-3.jpg` — phrase — PT Manaus 4 vocab «Eu fiz muitos amigos.»
+  - Draw: The album lies open: photos of Murzik with Caio, Juliana, Dona Marta.
+- `public/art/pt/manaus/l4-4.jpg` — phrase — PT Manaus 4 vocab «Eu tive um problema.»
+  - Draw: A sunburnt Murzik with an ice pack on his head.
+- `public/art/pt/manaus/l4-5.jpg` — phrase — PT Manaus 4 vocab «Onde você foi?»
+  - Draw: The boy from the next hammock listens to Murzik eagerly.
+- `public/art/pt/manaus/l4-6.jpg` — phrase — PT Manaus 4 vocab «O que vocês fizeram?»
+  - Draw: Passengers gather round the hammocks.
+- `public/art/pt/manaus/l4-7.jpg` — phrase — PT Manaus 4 vocab «Foi uma aventura!»
+  - Draw: Murzik spreads his paws wide.
+- `public/art/pt/manaus/guarana.jpg` — reward — PT Manaus 4 reward «Guaraná»
+  - Draw: A small bottle of guaraná stands on the shelf, next to a red berry with a little black “eye”.
+- `public/art/pt/manaus/l5-1.jpg` — phrase — PT Manaus 5 vocab «Você já foi à ópera?»
+  - Draw: Murzik and Bia in front of a pink theatre with a colourful dome.
+- `public/art/pt/manaus/l5-2.jpg` — phrase — PT Manaus 5 vocab «Eu nunca fui.»
+  - Draw: Murzik shakes his head shyly.
+- `public/art/pt/manaus/l5-3.jpg` — phrase — PT Manaus 5 vocab «Tem uma ópera hoje à noite.»
+  - Draw: An opera poster at the theatre entrance.
+- `public/art/pt/manaus/l5-4.jpg` — phrase — PT Manaus 5 vocab «Que luxo!»
+  - Draw: A golden auditorium with red seats and a huge chandelier.
+- `public/art/pt/manaus/l5-5.jpg` — phrase — PT Manaus 5 vocab «Silêncio, por favor.»
+  - Draw: An usher puts a finger to her lips.
+- `public/art/pt/manaus/l5-6.jpg` — phrase — PT Manaus 5 vocab «Bravo!»
+  - Draw: The audience applauds a singer on stage.
+- `public/art/pt/manaus/l5-7.jpg` — phrase — PT Manaus 5 vocab «Eu já vi muitas coisas.»
+  - Draw: Murzik thoughtfully leafs through his photo album.
+- `public/art/pt/manaus/opera-ticket.jpg` — reward — PT Manaus 5 reward «Ingresso da ópera»
+  - Draw: An old-fashioned golden ticket with a drawing of the theatre's dome.
+- `public/art/pt/manaus/l6-1.jpg` — phrase — PT Manaus 6 vocab «Não toque nisso!»
+  - Draw: The captain stops Murzik's paw just short of a brightly coloured caterpillar.
+- `public/art/pt/manaus/l6-2.jpg` — phrase — PT Manaus 6 vocab «É venenoso?»
+  - Draw: Murzik looks at the caterpillar in alarm.
+- `public/art/pt/manaus/l6-3.jpg` — phrase — PT Manaus 6 vocab «Não coma essa fruta!»
+  - Draw: The captain pulls Murzik's paw away from an unknown berry.
+- `public/art/pt/manaus/l6-4.jpg` — phrase — PT Manaus 6 vocab «Escuta os macacos!»
+  - Draw: Howler monkeys shout from a treetop.
+- `public/art/pt/manaus/l6-5.jpg` — phrase — PT Manaus 6 vocab «Que árvore enorme!»
+  - Draw: Murzik at the foot of a giant tree whose roots are taller than he is.
+- `public/art/pt/manaus/l6-6.jpg` — phrase — PT Manaus 6 vocab «Estou com medo de cobra.»
+  - Draw: Murzik hides behind Bia; a snake hangs from a branch.
+- `public/art/pt/manaus/l6-7.jpg` — phrase — PT Manaus 6 vocab «Não se preocupe.»
+  - Draw: The captain calmly puts a hand on Murzik's shoulder.
+- `public/art/pt/manaus/lily.jpg` — reward — PT Manaus 6 reward «Flor de vitória-régia»
+  - Draw: A pressed white-and-pink flower from a giant Amazon water lily, in a frame.
+- `public/art/pt/manaus/l7-1.jpg` — phrase — PT Manaus 7 vocab «Boa viagem!»
+  - Draw: The green parrot on the riverboat's rail waves a wing at passengers on the quay.
+- `public/art/pt/manaus/l7-2.jpg` — phrase — PT Manaus 7 vocab «Ele viajou no meu barco.»
+  - Draw: The captain points proudly at his boat.
+- `public/art/pt/manaus/l7-3.jpg` — phrase — PT Manaus 7 vocab «Ele falava com todo mundo.»
+  - Draw: The parrot chats with passengers in their hammocks.
+- `public/art/pt/manaus/l7-4.jpg` — phrase — PT Manaus 7 vocab «Eles foram para Belém.»
+  - Draw: A map: the river meets the ocean, with a city on the shore.
+- `public/art/pt/manaus/l7-5.jpg` — phrase — PT Manaus 7 vocab «O último show é no sábado!»
+  - Draw: A poster with a ribbon and a big date on the calendar.
+- `public/art/pt/manaus/l7-6.jpg` — phrase — PT Manaus 7 vocab «Vocês vão chegar a tempo!»
+  - Draw: The captain at the wheel, the boat at full speed.
+- `public/art/pt/manaus/l7-7.jpg` — phrase — PT Manaus 7 vocab «Muito obrigada, capitão!»
+  - Draw: Bia hugs the captain on the quay.
+- `public/art/pt/manaus/photo.jpg` — reward — PT Manaus 7 reward «Foto do Pipoca no barco»; PT Manaus farewell 1
+  - Draw: A photo: the green parrot on the rail of a riverboat, with the wide river and forest behind, and the captain in his cap beside him.
+- `public/art/pt/manaus/departure.jpg` — scene — PT Manaus departure; PT Manaus farewell 3
+  - Draw: Captain Raimundo waves from the bridge of his boat.
+- `public/art/pt/manaus/boat.jpg` — scene — PT Manaus farewell 4
+  - Draw: The riverboat sails down the wide river at sunset.
+
+## Portuguese course — Belém (59 pictures)
+
+- `public/art/pt/belem/arrival.jpg` — scene — PT Manaus farewell 5; PT Belém welcome
+  - Draw: A port city at the mouth of the river: an old market with blue turrets, boats and birds over the water. On a wall: a poster for the Maré Alta concert.
+- `public/art/pt/belem/l1-1.jpg` — phrase — PT Belém 1 vocab «Olha o cartaz!»
+  - Draw: A bright Maré Alta poster on a wall by the port.
+- `public/art/pt/belem/l1-2.jpg` — phrase — PT Belém 1 vocab «Onde é o show?»
+  - Draw: Murzik runs a finger along the poster.
+- `public/art/pt/belem/l1-3.jpg` — phrase — PT Belém 1 vocab «É na praça, perto do rio.»
+  - Draw: A square by the river where a stage is being built.
+- `public/art/pt/belem/l1-4.jpg` — phrase — PT Belém 1 vocab «Quando é o show?»
+  - Draw: Bia checks the calendar on her phone.
+- `public/art/pt/belem/l1-5.jpg` — phrase — PT Belém 1 vocab «É amanhã, no sábado.»
+  - Draw: A calendar: Friday, and Saturday circled next to it.
+- `public/art/pt/belem/l1-6.jpg` — phrase — PT Belém 1 vocab «A que horas começa o show?»
+  - Draw: Murzik taps his watch.
+- `public/art/pt/belem/l1-7.jpg` — phrase — PT Belém 1 vocab «Começa às nove da noite.»
+  - Draw: A clock at nine, with stars outside the window.
+- `public/art/pt/belem/poster.jpg` — reward — PT Belém 1 reward «Cartaz do show»
+  - Draw: A bright Maré Alta poster with a drum and musical notes hangs on the wall.
+- `public/art/pt/belem/l2-1.jpg` — phrase — PT Belém 2 vocab «Eu queria um açaí, por favor.»
+  - Draw: Murzik at a stall of dark purple açaí.
+- `public/art/pt/belem/l2-2.jpg` — phrase — PT Belém 2 vocab «Com açúcar ou sem açúcar?»
+  - Draw: The stallholder holds up a sugar bowl.
+- `public/art/pt/belem/l2-3.jpg` — phrase — PT Belém 2 vocab «Sem açúcar, por favor.»
+  - Draw: Murzik waves a paw: no sugar.
+- `public/art/pt/belem/l2-4.jpg` — phrase — PT Belém 2 vocab «Quanto custa o quilo de peixe?»
+  - Draw: An enormous fish lies on ice.
+- `public/art/pt/belem/l2-5.jpg` — phrase — PT Belém 2 vocab «Custa trinta reais.»
+  - Draw: A price sign: R$ 30.
+- `public/art/pt/belem/l2-6.jpg` — phrase — PT Belém 2 vocab «Eu prefiro o açaí com farinha.»
+  - Draw: A bowl of açaí sprinkled with yellow cassava flour.
+- `public/art/pt/belem/l2-7.jpg` — phrase — PT Belém 2 vocab «É diferente, mas é bom!»
+  - Draw: Murzik, with purple whiskers, licks his lips.
+- `public/art/pt/belem/cuia.jpg` — reward — PT Belém 2 reward «Cuia»
+  - Draw: A round black gourd bowl painted with white flowers stands on the table.
+- `public/art/pt/belem/l3-1.jpg` — phrase — PT Belém 3 vocab «Vai chover.»
+  - Draw: Dark clouds gather over the market.
+- `public/art/pt/belem/l3-2.jpg` — phrase — PT Belém 3 vocab «Está chovendo muito!»
+  - Draw: A wall of rain; Murzik shelters under an awning.
+- `public/art/pt/belem/l3-3.jpg` — phrase — PT Belém 3 vocab «Chove todo dia à tarde.»
+  - Draw: The guesthouse owner calmly drinks coffee under the awning.
+- `public/art/pt/belem/l3-4.jpg` — phrase — PT Belém 3 vocab «Está quente e úmido.»
+  - Draw: Murzik, his fur damp and flat, fans himself.
+- `public/art/pt/belem/l3-5.jpg` — phrase — PT Belém 3 vocab «Depois da chuva»
+  - Draw: The sun comes out; the wet streets glisten.
+- `public/art/pt/belem/l3-6.jpg` — phrase — PT Belém 3 vocab «Antes do show»
+  - Draw: A clock next to the poster.
+- `public/art/pt/belem/l3-7.jpg` — phrase — PT Belém 3 vocab «Já parou!»
+  - Draw: Murzik steps out from under the awning; a rainbow over the river.
+- `public/art/pt/belem/raincoat.jpg` — reward — PT Belém 3 reward «Capa de chuva»
+  - Draw: A yellow hooded raincoat hangs on a hook, dripping.
+- `public/art/pt/belem/l4-1.jpg` — phrase — PT Belém 4 vocab «Alô? Quem fala?»
+  - Draw: Dona Lúcia, in her glasses, holds the phone to her ear.
+- `public/art/pt/belem/l4-2.jpg` — phrase — PT Belém 4 vocab «Sou eu, vovó! A Bia!»
+  - Draw: Bia shouts happily into the phone.
+- `public/art/pt/belem/l4-3.jpg` — phrase — PT Belém 4 vocab «Como foi a viagem?»
+  - Draw: Lúcia raises her eyebrows in surprise.
+- `public/art/pt/belem/l4-4.jpg` — phrase — PT Belém 4 vocab «Nós estamos em Belém.»
+  - Draw: Murzik leans close to the phone by a window overlooking the river.
+- `public/art/pt/belem/l4-5.jpg` — phrase — PT Belém 4 vocab «Nós viajamos pelo Brasil todo!»
+  - Draw: Murzik holds up the album of Pipoca photos.
+- `public/art/pt/belem/l4-6.jpg` — phrase — PT Belém 4 vocab «Estou com saudade!»
+  - Draw: Lúcia presses a hand to her heart.
+- `public/art/pt/belem/l4-7.jpg` — phrase — PT Belém 4 vocab «Até domingo!»
+  - Draw: Bia waves and smiles, the phone at her ear.
+- `public/art/pt/belem/candles.jpg` — reward — PT Belém 4 reward «Velas de aniversário»
+  - Draw: Two number candles in a little box: an eight and a zero.
+- `public/art/pt/belem/l5-1.jpg` — phrase — PT Belém 5 vocab «Como a gente chega na praça?»
+  - Draw: Murzik and Bia ask a taxi driver the way.
+- `public/art/pt/belem/l5-2.jpg` — phrase — PT Belém 5 vocab «Vocês podem ir a pé.»
+  - Draw: The driver points along the riverfront.
+- `public/art/pt/belem/l5-3.jpg` — phrase — PT Belém 5 vocab «Siga em frente e vire à esquerda.»
+  - Draw: Arrows on the wet pavement: straight on, then left.
+- `public/art/pt/belem/l5-4.jpg` — phrase — PT Belém 5 vocab «Que fila enorme!»
+  - Draw: A long queue at the entrance to the square.
+- `public/art/pt/belem/l5-5.jpg` — phrase — PT Belém 5 vocab «Dois ingressos, por favor.»
+  - Draw: Murzik passes money through the ticket window.
+- `public/art/pt/belem/l5-6.jpg` — phrase — PT Belém 5 vocab «São quarenta reais.»
+  - Draw: The cashier holds up four fingers.
+- `public/art/pt/belem/l5-7.jpg` — phrase — PT Belém 5 vocab «Está lotado!»
+  - Draw: The square is crammed with people; lights above the stage.
+- `public/art/pt/belem/wristband.jpg` — reward — PT Belém 5 reward «Pulseira do show»
+  - Draw: A blue fabric wristband printed with “Maré Alta — Belém”.
+- `public/art/pt/belem/l6-1.jpg` — phrase — PT Belém 6 vocab «Bom dia, Murzik!»
+  - Draw: A green parrot bursts out of the drum and lands on the microphone.
+- `public/art/pt/belem/l6-2.jpg` — phrase — PT Belém 6 vocab «É o Pipoca!»
+  - Draw: Murzik and Bia jump up and down in the crowd.
+- `public/art/pt/belem/l6-3.jpg` — phrase — PT Belém 6 vocab «Ele viajou no case do tambor!»
+  - Draw: Tiago opens the empty drum case — feathers and crumbs inside.
+- `public/art/pt/belem/l6-4.jpg` — phrase — PT Belém 6 vocab «Vocês conhecem esse papagaio?»
+  - Draw: Zeca, the singer, looks out at the crowd in surprise, microphone in hand.
+- `public/art/pt/belem/l6-5.jpg` — phrase — PT Belém 6 vocab «Ele é nosso! Ele é da Dona Lúcia!»
+  - Draw: Murzik waves his paws from the stage.
+- `public/art/pt/belem/l6-6.jpg` — phrase — PT Belém 6 vocab «Nós procuramos vocês em todo o Brasil!»
+  - Draw: Bia unfolds the old poster from Rio.
+- `public/art/pt/belem/l6-7.jpg` — phrase — PT Belém 6 vocab «Inacreditável!»
+  - Draw: The musicians laugh and the crowd applauds.
+- `public/art/pt/belem/drumstick.jpg` — reward — PT Belém 6 reward «Baqueta»
+  - Draw: A wooden drumstick signed by all the Maré Alta musicians.
+- `public/art/pt/belem/l7-1.jpg` — phrase — PT Belém 7 vocab «Parabéns, Dona Lúcia!»
+  - Draw: Pipoca flies into the room and lands on Dona Lúcia's shoulder.
+- `public/art/pt/belem/l7-2.jpg` — phrase — PT Belém 7 vocab «Pipoca! Você voltou!»
+  - Draw: Dona Lúcia weeps for joy and strokes the parrot.
+- `public/art/pt/belem/l7-3.jpg` — phrase — PT Belém 7 vocab «Este presente é para a senhora.»
+  - Draw: Murzik holds out a box in green paper.
+- `public/art/pt/belem/l7-4.jpg` — phrase — PT Belém 7 vocab «Que lindo! Muito obrigada!»
+  - Draw: Lúcia wraps the parrot shawl round her shoulders.
+- `public/art/pt/belem/l7-5.jpg` — phrase — PT Belém 7 vocab «É o álbum do Pipoca.»
+  - Draw: Lúcia leafs through the album: Pipoca in every city.
+- `public/art/pt/belem/l7-6.jpg` — phrase — PT Belém 7 vocab «Felicidades!»
+  - Draw: Everyone raises glasses of juice by a cake with “80” candles.
+- `public/art/pt/belem/l7-7.jpg` — phrase — PT Belém 7 vocab «Vamos sambar!»
+  - Draw: Murzik dances the samba for the first time, with Dona Lúcia.
+- `public/art/pt/belem/photo.jpg` — reward — PT Belém 7 reward «Foto da festa»; PT Belém farewell 1
+  - Draw: A photo: Dona Lúcia in her parrot shawl, with Pipoca on her shoulder. Around her: Bia, Cláudia, Léo, Murzik and the Maré Alta musicians. On the table, a cake with “80” candles.
+- `public/art/pt/belem/departure.jpg` — scene — PT Belém departure
+  - Draw: Murzik, Bia and the musicians board a plane with their instruments. Pipoca is on Murzik's shoulder.
+- `public/art/pt/belem/suitcase.jpg` — scene — PT Belém farewell 2
+  - Draw: Murzik's open suitcase: the album, the compass, the jars of river water, the opera ticket, the gourd bowl, the yellow raincoat, the signed drumstick and many more things from the journey.

@@ -4,6 +4,16 @@ import type { NativeLang, TargetLang } from "./languages";
 
 export type Draft = { lessonId: string; frame: number; sub: number };
 
+/** Progress in one course. The store holds the active course's progress; the others wait in `stash`. */
+export type CourseSnapshot = {
+  seenIntro: boolean;
+  completedLessonIds: string[];
+  ceremonySeen: boolean;
+  finalesSeen: string[];
+  draft: Draft | null;
+  resetAt: number;
+};
+
 type ProgressState = {
   seenIntro: boolean;
   completedLessonIds: string[];
@@ -19,6 +29,8 @@ type ProgressState = {
   resetAt: number;
   /** The welcome and sign-in screens were passed (signed in or "Not now"). Stays on this device only. */
   welcomeDone: boolean;
+  /** Progress of the courses that are not active now, by course (target language). */
+  stash: Partial<Record<TargetLang, CourseSnapshot>>;
   setWelcomeDone: () => void;
   setLanguages: (nativeLang: NativeLang, targetLang: TargetLang) => void;
   setSeenIntro: () => void;
@@ -26,6 +38,15 @@ type ProgressState = {
   setDraft: (draft: Draft | null) => void;
   setFinaleSeen: (cityId: string) => void;
   reset: () => void;
+};
+
+const emptyCourse: CourseSnapshot = {
+  seenIntro: false,
+  completedLessonIds: [],
+  ceremonySeen: false,
+  finalesSeen: [],
+  draft: null,
+  resetAt: 0,
 };
 
 const empty = {
@@ -38,6 +59,7 @@ const empty = {
   targetLang: null as TargetLang | null,
   resetAt: 0,
   welcomeDone: false,
+  stash: {} as Partial<Record<TargetLang, CourseSnapshot>>,
 };
 
 export const useProgress = create<ProgressState>()(
@@ -46,7 +68,24 @@ export const useProgress = create<ProgressState>()(
       ...empty,
       setSeenIntro: () => set({ seenIntro: true }),
       setWelcomeDone: () => set({ welcomeDone: true }),
-      setLanguages: (nativeLang, targetLang) => set({ nativeLang, targetLang }),
+      // Switching course keeps the old course's progress in the stash and brings back the new one's.
+      setLanguages: (nativeLang, targetLang) => {
+        const s = get();
+        const current = s.targetLang ?? "ru";
+        if (current === targetLang) return set({ nativeLang, targetLang });
+        const snapshot: CourseSnapshot = {
+          seenIntro: s.seenIntro,
+          completedLessonIds: s.completedLessonIds,
+          ceremonySeen: s.ceremonySeen,
+          finalesSeen: s.finalesSeen,
+          draft: s.draft,
+          resetAt: s.resetAt,
+        };
+        const stash = { ...s.stash, [current]: snapshot };
+        const restored = stash[targetLang] ?? emptyCourse;
+        delete stash[targetLang];
+        set({ nativeLang, targetLang, stash, ...restored });
+      },
       completeLesson: (id) => {
         const cur = get().completedLessonIds;
         if (cur.includes(id)) {
@@ -60,7 +99,18 @@ export const useProgress = create<ProgressState>()(
         const cur = get().finalesSeen ?? [];
         if (!cur.includes(cityId)) set({ finalesSeen: [...cur, cityId] });
       },
-      reset: () => set({ ...empty, resetAt: Date.now(), welcomeDone: get().welcomeDone }),
+      // Resets the active course only; the chosen languages and other courses stay.
+      reset: () => {
+        const s = get();
+        set({
+          ...empty,
+          resetAt: Date.now(),
+          welcomeDone: s.welcomeDone,
+          nativeLang: s.nativeLang,
+          targetLang: s.targetLang,
+          stash: s.stash,
+        });
+      },
     }),
     { name: "russian-cat-progress", skipHydration: true },
   ),

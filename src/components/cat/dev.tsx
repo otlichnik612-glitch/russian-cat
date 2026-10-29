@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { readyCities } from "@/lib/course/curriculum";
+import { readyCities } from "@/lib/course/active";
 import { useProgress } from "@/lib/course/progress";
 import { Button } from "./ui";
 

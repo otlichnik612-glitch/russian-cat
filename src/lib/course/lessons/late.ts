@@ -15,13 +15,13 @@ export const lesson4: Lesson = {
   vocabNote:
     "These phrases keep any conversation going. Повтори is for a friend; add -те for вы: Повторите — just like Извини → Извините.",
   vocab: [
-    v("l4-1", "Я не понимаю.", "I don't understand.", "Tom scratches his head with a puzzled face. A question mark floats above him.", "Play Я не понимаю", pic("paris/l4-1"), "ya ne ponimayu."),
-    v("l4-2", "Повтори, пожалуйста.", "Say it again, please.", "Tom leans towards Murzik and cups a hand behind his ear.", "Play Повтори, пожалуйста", pic("paris/l4-3"), "povtori, pozhaluysta."),
-    v("l4-3", "Повторите, пожалуйста.", "Could you repeat, please? (polite)", "Murzik politely cups a paw behind his ear while Madame Dubois speaks.", "Play Повторите, пожалуйста", pic("paris/l4-4"), "povtorite, pozhaluysta."),
-    v("l4-4", "Медленнее, пожалуйста.", "More slowly, please.", "Tom makes a gentle “slow down” gesture with both hands. A small snail sits on the table.", "Play Медленнее, пожалуйста", pic("paris/l4-5"), "medlenneye, pozhaluysta."),
-    v("l4-5", "Как по-русски…?", "How do you say … in Russian?", "Tom holds up a cup and looks at Murzik with a questioning face.", "Play Как по-русски", pic("paris/l4-8"), "kak po-russki…?"),
-    v("l4-6", "Что значит…?", "What does … mean?", "Tom holds an open notebook with one word underlined and looks puzzled.", "Play Что значит", pic("paris/l4-9"), "chto znachit…?"),
-    v("l4-7", "Я не знаю.", "I don't know.", "Murzik shrugs with both paws open and a funny, confused face.", "Play Я не знаю", pic("paris/l4-10"), "ya ne znayu."),
+    v("l4-1", "Я не понимаю.", "I don't understand.", "Tom scratches his head with a puzzled face. A question mark floats above him.", "Listen to Я не понимаю", pic("paris/l4-1"), "ya ne ponimayu."),
+    v("l4-2", "Повтори, пожалуйста.", "Say it again, please.", "Tom leans towards Murzik and cups a hand behind his ear.", "Listen to Повтори, пожалуйста", pic("paris/l4-3"), "povtori, pozhaluysta."),
+    v("l4-3", "Повторите, пожалуйста.", "Could you repeat, please? (polite)", "Murzik politely cups a paw behind his ear while Madame Dubois speaks.", "Listen to Повторите, пожалуйста", pic("paris/l4-4"), "povtorite, pozhaluysta."),
+    v("l4-4", "Медленнее, пожалуйста.", "More slowly, please.", "Tom makes a gentle “slow down” gesture with both hands. A small snail sits on the table.", "Listen to Медленнее, пожалуйста", pic("paris/l4-5"), "medlenneye, pozhaluysta."),
+    v("l4-5", "Как по-русски…?", "How do you say … in Russian?", "Tom holds up a cup and looks at Murzik with a questioning face.", "Listen to Как по-русски", pic("paris/l4-8"), "kak po-russki…?"),
+    v("l4-6", "Что значит…?", "What does … mean?", "Tom holds an open notebook with one word underlined and looks puzzled.", "Listen to Что значит", pic("paris/l4-9"), "chto znachit…?"),
+    v("l4-7", "Я не знаю.", "I don't know.", "Murzik shrugs with both paws open and a funny, confused face.", "Listen to Я не знаю", pic("paris/l4-10"), "ya ne znayu."),
   ],
   letters: [
     letter("Л л", "“l” as in “lamp”", "Медленнее", "More slowly"),
@@ -113,13 +113,13 @@ export const lesson5: Lesson = {
   vocabNote:
     "City names change a little after из (from) and в (in): Москва → из Москвы, Париж → в Париже. Learn them as whole phrases for now.",
   vocab: [
-    v("l5-1", "Откуда ты?", "Where are you from?", "Tom and Murzik sit at the kitchen table with cups of tea. Tom asks a question with a curious face.", "Play Откуда ты", pic("paris/l5-1"), "otkuda ty?"),
-    v("l5-2", "Я из Москвы.", "I'm from Moscow.", "Murzik holds a postcard of Moscow's Red Square with colourful domes.", "Play Я из Москвы", pic("paris/l5-2"), "ya iz Moskvy."),
-    v("l5-3", "Я из Лондона.", "I'm from London.", "Tom holds a postcard of London with Big Ben and a red bus.", "Play Я из Лондона", pic("paris/l5-3"), "ya iz Londona."),
-    v("l5-4", "Где ты живёшь?", "Where do you live?", "Tom points at a small map of Europe on the wall with a questioning look.", "Play Где ты живёшь", pic("paris/l5-4"), "gde ty zhivyosh?"),
-    v("l5-5", "Я живу в Париже.", "I live in Paris.", "Murzik stands at his window. The Eiffel Tower is visible outside.", "Play Я живу в Париже", pic("paris/l5-5"), "ya zhivu v Parizhe."),
-    v("l5-6", "Ты говоришь по-русски?", "Do you speak Russian?", "Murzik looks at Tom with raised eyebrows and an encouraging smile.", "Play Ты говоришь по-русски", pic("paris/l5-6"), "ty govorish' po-russki?"),
-    v("l5-7", "Да, немного.", "Yes, a little.", "Tom shows a tiny gap between his thumb and finger and smiles shyly.", "Play Да, немного", pic("paris/l5-7"), "da, nemnogo."),
+    v("l5-1", "Откуда ты?", "Where are you from?", "Tom and Murzik sit at the kitchen table with cups of tea. Tom asks a question with a curious face.", "Listen to Откуда ты", pic("paris/l5-1"), "otkuda ty?"),
+    v("l5-2", "Я из Москвы.", "I'm from Moscow.", "Murzik holds a postcard of Moscow's Red Square with colourful domes.", "Listen to Я из Москвы", pic("paris/l5-2"), "ya iz Moskvy."),
+    v("l5-3", "Я из Лондона.", "I'm from London.", "Tom holds a postcard of London with Big Ben and a red bus.", "Listen to Я из Лондона", pic("paris/l5-3"), "ya iz Londona."),
+    v("l5-4", "Где ты живёшь?", "Where do you live?", "Tom points at a small map of Europe on the wall with a questioning look.", "Listen to Где ты живёшь", pic("paris/l5-4"), "gde ty zhivyosh?"),
+    v("l5-5", "Я живу в Париже.", "I live in Paris.", "Murzik stands at his window. The Eiffel Tower is visible outside.", "Listen to Я живу в Париже", pic("paris/l5-5"), "ya zhivu v Parizhe."),
+    v("l5-6", "Ты говоришь по-русски?", "Do you speak Russian?", "Murzik looks at Tom with raised eyebrows and an encouraging smile.", "Listen to Ты говоришь по-русски", pic("paris/l5-6"), "ty govorish' po-russki?"),
+    v("l5-7", "Да, немного.", "Yes, a little.", "Tom shows a tiny gap between his thumb and finger and smiles shyly.", "Listen to Да, немного", pic("paris/l5-7"), "da, nemnogo."),
   ],
   letters: [
     letter("Г г", "“g” as in “go”", "Ты говоришь по-русски?", "Do you speak Russian?"),
@@ -202,13 +202,13 @@ export const lesson6: Lesson = {
   vocabNote:
     "Russians often answer with the verb, not only with yes or no: Хочешь? — Хочу! (Do you want some? — I do!)",
   vocab: [
-    v("l6-1", "Хочешь чай?", "Would you like some tea?", "Tom holds a teapot over a cup and looks at Murzik.", "Play Хочешь чай", pic("paris/l6-2"), "khochesh' chay?"),
-    v("l6-2", "Да, хочу.", "Yes, I'd like some.", "Murzik nods eagerly and holds out his cup with both paws.", "Play Да, хочу", pic("paris/l6-3"), "da, khochu."),
-    v("l6-3", "Нет, спасибо.", "No, thank you.", "Murzik raises a paw politely and smiles, saying no kindly.", "Play Нет, спасибо", pic("paris/l6-5"), "net, spasibo."),
-    v("l6-4", "Конечно!", "Of course!", "Murzik nods with great enthusiasm, his tail high in the air.", "Play Конечно", pic("paris/l6-6"), "konechno!"),
-    v("l6-5", "Может быть.", "Maybe.", "Murzik taps his chin with a paw, thinking, with one eyebrow raised.", "Play Может быть", pic("paris/l6-7"), "mozhet byt'."),
-    v("l6-6", "Давай!", "Let's! / Sure!", "Murzik and Tom give each other a high five.", "Play Давай", pic("paris/l6-8"), "davay!"),
-    v("l6-7", "Пойдём гулять?", "Shall we go for a walk?", "Tom stands at the door in his coat and points outside, inviting Murzik.", "Play Пойдём гулять", pic("paris/l6-9"), "poydyom gulyat'?"),
+    v("l6-1", "Хочешь чай?", "Would you like some tea?", "Tom holds a teapot over a cup and looks at Murzik.", "Listen to Хочешь чай", pic("paris/l6-2"), "khochesh' chay?"),
+    v("l6-2", "Да, хочу.", "Yes, I'd like some.", "Murzik nods eagerly and holds out his cup with both paws.", "Listen to Да, хочу", pic("paris/l6-3"), "da, khochu."),
+    v("l6-3", "Нет, спасибо.", "No, thank you.", "Murzik raises a paw politely and smiles, saying no kindly.", "Listen to Нет, спасибо", pic("paris/l6-5"), "net, spasibo."),
+    v("l6-4", "Конечно!", "Of course!", "Murzik nods with great enthusiasm, his tail high in the air.", "Listen to Конечно", pic("paris/l6-6"), "konechno!"),
+    v("l6-5", "Может быть.", "Maybe.", "Murzik taps his chin with a paw, thinking, with one eyebrow raised.", "Listen to Может быть", pic("paris/l6-7"), "mozhet byt'."),
+    v("l6-6", "Давай!", "Let's! / Sure!", "Murzik and Tom give each other a high five.", "Listen to Давай", pic("paris/l6-8"), "davay!"),
+    v("l6-7", "Пойдём гулять?", "Shall we go for a walk?", "Tom stands at the door in his coat and points outside, inviting Murzik.", "Listen to Пойдём гулять", pic("paris/l6-9"), "poydyom gulyat'?"),
   ],
   letters: [
     letter("Х х", "“ch” as in Scottish “loch”", "Хочешь чай?", "Would you like some tea?", "Looks like English X, but sounds like a soft H."),
@@ -295,13 +295,13 @@ export const lesson7: Lesson = {
   vocabNote:
     "Пока! is for friends. До свидания! is polite and safe with anyone. Wishes such as Хорошего дня! are fixed phrases: learn them whole.",
   vocab: [
-    v("l7-1", "Пока!", "Bye!", "Murzik waves goodbye to Tom at the door with a cheerful smile.", "Play Пока", pic("paris/l7-1"), "poka!"),
-    v("l7-2", "До свидания!", "Goodbye! (polite)", "Murzik waves goodbye to Madame Dubois on the staircase, standing up straight.", "Play До свидания", pic("paris/l7-2"), "do svidaniya!"),
-    v("l7-3", "До завтра!", "See you tomorrow!", "Tom waves from the street in the evening. A crescent moon is in the sky.", "Play До завтра", pic("paris/l7-3"), "do zavtra!"),
-    v("l7-4", "Мне пора.", "I have to go.", "Tom looks at his wristwatch and puts on his coat in a hurry.", "Play Мне пора", pic("paris/l7-5"), "mne pora."),
-    v("l7-5", "Хорошего дня!", "Have a good day!", "Madame Dubois smiles and waves to Murzik on a sunny morning.", "Play Хорошего дня", pic("paris/l7-6"), "khoroshego dnya!"),
-    v("l7-6", "И тебе!", "You too!", "Murzik waves back to Tom with a big smile.", "Play И тебе", pic("paris/l7-7"), "i tebe!"),
-    v("l7-7", "Счастливого пути!", "Have a good trip!", "Madame Dubois waves a handkerchief as Murzik carries his small suitcase.", "Play Счастливого пути", pic("paris/l7-9"), "schastlivogo puti!"),
+    v("l7-1", "Пока!", "Bye!", "Murzik waves goodbye to Tom at the door with a cheerful smile.", "Listen to Пока", pic("paris/l7-1"), "poka!"),
+    v("l7-2", "До свидания!", "Goodbye! (polite)", "Murzik waves goodbye to Madame Dubois on the staircase, standing up straight.", "Listen to До свидания", pic("paris/l7-2"), "do svidaniya!"),
+    v("l7-3", "До завтра!", "See you tomorrow!", "Tom waves from the street in the evening. A crescent moon is in the sky.", "Listen to До завтра", pic("paris/l7-3"), "do zavtra!"),
+    v("l7-4", "Мне пора.", "I have to go.", "Tom looks at his wristwatch and puts on his coat in a hurry.", "Listen to Мне пора", pic("paris/l7-5"), "mne pora."),
+    v("l7-5", "Хорошего дня!", "Have a good day!", "Madame Dubois smiles and waves to Murzik on a sunny morning.", "Listen to Хорошего дня", pic("paris/l7-6"), "khoroshego dnya!"),
+    v("l7-6", "И тебе!", "You too!", "Murzik waves back to Tom with a big smile.", "Listen to И тебе", pic("paris/l7-7"), "i tebe!"),
+    v("l7-7", "Счастливого пути!", "Have a good trip!", "Madame Dubois waves a handkerchief as Murzik carries his small suitcase.", "Listen to Счастливого пути", pic("paris/l7-9"), "schastlivogo puti!"),
   ],
   letters: [
     letter("Ф ф", "“f” as in “fun”", "Кофе", "Coffee"),

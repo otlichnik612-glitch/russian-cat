@@ -1,7 +1,69 @@
-import { cityName } from "./curriculum";
+import { cityName, course, speakerName } from "./active";
 import { seededShuffle } from "./make";
-import { speakers } from "./speakers";
 import type { Activity, Lesson, ScriptLine } from "./types";
+
+/** Texts of the printed lesson and flashcards, in the learner's own language. */
+const sheetText = {
+  en: {
+    listenOrRead: "Listen (or read):",
+    selectAll: "Select all that apply.",
+    trueFalse: "True / False",
+    arrange: "Arrange these lines:",
+    options: "Options:",
+    letters: "Letters:",
+    writeWord: "Write the word: ______",
+    colA: "Column A",
+    colB: "Column B",
+    sayAloud: "Say your answer aloud.",
+    model: "Model:",
+    lesson: (n: number, title: string) => `Lesson ${n} — ${title}`,
+    about: (m: number) => `About ${m} minutes`,
+    studentCopy: "Student copy. Answers are not included.",
+    goal: "Lesson goal",
+    vocab: "Vocabulary Focus",
+    note: "Note",
+    newLetters: "New letters",
+    dialogue: (t: string) => `Dialogue: ${t}`,
+    grammar: "Grammar Focus",
+    practice: "Practice",
+    front: "FRONT",
+    fold: "fold",
+    back: "BACK",
+    cardsHeader: (n: number) => `Talky Kitty  ·  Lesson ${n} flashcards  ·  Cut on the dashed line  ·  Fold on the center line`,
+    file: "Talky-Kitty-Lesson",
+    cardsFile: "Flashcards",
+  },
+  ru: {
+    listenOrRead: "Послушай (или прочитай):",
+    selectAll: "Выбери все подходящие ответы.",
+    trueFalse: "Правда / Неправда",
+    arrange: "Расставь строки по порядку:",
+    options: "Варианты:",
+    letters: "Буквы:",
+    writeWord: "Напиши слово: ______",
+    colA: "Столбец А",
+    colB: "Столбец Б",
+    sayAloud: "Ответь вслух.",
+    model: "Пример:",
+    lesson: (n: number, title: string) => `Урок ${n} — ${title}`,
+    about: (m: number) => `Около ${m} минут`,
+    studentCopy: "Для ученика. Ответов здесь нет.",
+    goal: "Цели урока",
+    vocab: "Новые слова",
+    note: "Заметка",
+    newLetters: "Новые буквы",
+    dialogue: (t: string) => `Диалог: ${t}`,
+    grammar: "Грамматика",
+    practice: "Практика",
+    front: "ЛИЦО",
+    fold: "сгиб",
+    back: "ОБОРОТ",
+    cardsHeader: (n: number) => `Talky Kitty  ·  Карточки урока ${n}  ·  Разрежь по пунктиру  ·  Согни по средней линии`,
+    file: "Talky-Kitty-Turkish-Lesson",
+    cardsFile: "Cards",
+  },
+};
+const t = () => sheetText[course.uiLang];
 
 function saveBlob(blob: Blob, filename: string) {
   const url = URL.createObjectURL(blob);
@@ -24,20 +86,20 @@ function slug(title: string) {
 function activityText(activity: Activity): string[] {
   const lines: string[] = [activity.prompt];
   if (activity.help) lines.push(activity.help);
-  if (activity.audio) lines.push(`Listen (or read): ${activity.audio}`);
+  if (activity.audio) lines.push(`${t().listenOrRead} ${activity.audio}`);
   switch (activity.kind) {
     case "choice":
     case "multi":
-      if (activity.kind === "multi") lines.push("Select all that apply.");
+      if (activity.kind === "multi") lines.push(t().selectAll);
       activity.options.forEach((option, index) => {
         lines.push(`${String.fromCharCode(65 + index)}. ${option.label}`);
       });
       break;
     case "truefalse":
-      lines.push(activity.statement, "True / False");
+      lines.push(activity.statement, t().trueFalse);
       break;
     case "order":
-      lines.push("Arrange these lines:");
+      lines.push(t().arrange);
       seededShuffle(activity.items, `${activity.id}-sheet`).forEach((item) => lines.push(`• ${item}`));
       break;
     case "fill":
@@ -46,21 +108,21 @@ function activityText(activity: Activity): string[] {
           ? `${activity.before}_${activity.after}`
           : `${activity.before} ______ ${activity.after}`.trim().replace(/ ([.,!?»])/g, "$1"),
       );
-      lines.push(`Options: ${activity.options.join(" · ")}`);
+      lines.push(`${t().options} ${activity.options.join(" · ")}`);
       break;
     case "build":
       lines.push(seededShuffle(activity.words, `${activity.id}-sheet`).join(" / "));
       break;
     case "spell":
       lines.push(
-        `Letters: ${seededShuffle([...Array.from(activity.word), ...(activity.extra ?? [])], `${activity.id}-sheet`).join(" ")}`,
-        "Write the word: ______",
+        `${t().letters} ${seededShuffle([...Array.from(activity.word), ...(activity.extra ?? [])], `${activity.id}-sheet`).join(" ")}`,
+        t().writeWord,
       );
       break;
     case "match": {
-      lines.push("Column A");
+      lines.push(t().colA);
       activity.pairs.forEach((pair) => lines.push(`• ${pair.left}`));
-      lines.push("Column B");
+      lines.push(t().colB);
       seededShuffle(
         activity.pairs.map((pair) => pair.right),
         `${activity.id}-sheet`,
@@ -68,7 +130,7 @@ function activityText(activity: Activity): string[] {
       break;
     }
     case "speak":
-      lines.push("Say your answer aloud.", `Model: ${activity.model}`, activity.modelEn);
+      lines.push(t().sayAloud, `${t().model} ${activity.model}`, activity.modelEn);
       break;
     case "script":
       activity.lines.forEach((scriptLine) => lines.push(scriptLineText(scriptLine)));
@@ -89,25 +151,22 @@ export async function downloadLessonDoc(lesson: Lesson) {
   const blocks: string[][] = [];
   const push = (heading: string, body: string[]) => blocks.push([heading, ...body]);
 
-  push(`Lesson ${lesson.number} — ${lesson.title}`, [
-    lesson.level,
-    cityName(lesson.cityId),
-    `About ${lesson.minutes} minutes`,
-    "Student copy. Answers are not included.",
-  ]);
-  push("Lesson goal", lesson.goals.map((goal) => `• ${goal}`));
+  const text = t();
+  const title = text.lesson(lesson.number, lesson.title);
+  push(title, [lesson.level, cityName(lesson.cityId), text.about(lesson.minutes), text.studentCopy]);
+  push(text.goal, lesson.goals.map((goal) => `• ${goal}`));
   push(
-    "Vocabulary Focus",
+    text.vocab,
     lesson.vocab.flatMap((item, index) => [
       `${index + 1}. ${item.ru}${item.translit ? `  (${item.translit})` : ""}`,
       item.en,
       "",
     ]),
   );
-  if (lesson.vocabNote) push("Note", [lesson.vocabNote]);
+  if (lesson.vocabNote) push(text.note, [lesson.vocabNote]);
   if (lesson.letters?.length) {
     push(
-      "New letters",
+      text.newLetters,
       lesson.letters.flatMap((card) => [
         `${card.letter} — ${card.sound}`,
         `${card.example} (${card.exampleEn})`,
@@ -116,10 +175,9 @@ export async function downloadLessonDoc(lesson: Lesson) {
       ]),
     );
   }
-  push(`Dialogue: ${lesson.dialogue.title}`, [
+  push(text.dialogue(lesson.dialogue.title), [
     ...lesson.dialogue.lines.flatMap((line) => {
-      const name = speakers[line.speaker].en;
-      const ruName = speakers[line.speaker].ru;
+      const { name, target: ruName } = speakerName(line.speaker);
       return [`${ruName}: ${line.ru}`, `${name}: ${line.en}`];
     }),
     ...(lesson.dialogue.note ? ["", lesson.dialogue.note] : []),
@@ -127,7 +185,7 @@ export async function downloadLessonDoc(lesson: Lesson) {
     ...activityText(lesson.dialogue.gist),
   ]);
   push(
-    "Grammar Focus",
+    text.grammar,
     lesson.grammar.flatMap((section) => [
       section.title,
       ...section.paragraphs,
@@ -136,13 +194,13 @@ export async function downloadLessonDoc(lesson: Lesson) {
     ]),
   );
   push(
-    "Practice",
+    text.practice,
     lesson.tasks.flatMap((item, index) => [`${index + 1}.`, ...activityText(item), ""]),
   );
 
   const children = blocks.flatMap(([heading, ...body]) => [
     new Paragraph({
-      heading: heading.startsWith("Lesson ") ? HeadingLevel.HEADING_1 : HeadingLevel.HEADING_2,
+      heading: heading === title ? HeadingLevel.HEADING_1 : HeadingLevel.HEADING_2,
       spacing: { before: 280, after: 120 },
       children: [new TextRun(heading)],
     }),
@@ -157,7 +215,7 @@ export async function downloadLessonDoc(lesson: Lesson) {
 
   const doc = new Document({ sections: [{ children }] });
   const blob = await Packer.toBlob(doc);
-  saveBlob(blob, `Russian-Cat-Lesson-${lesson.number}-${slug(lesson.title)}.docx`);
+  saveBlob(blob, `${text.file}-${lesson.number}${slug(lesson.title) ? `-${slug(lesson.title)}` : ""}.docx`);
 }
 
 function bufferToBase64(buffer: ArrayBuffer) {
@@ -219,9 +277,9 @@ export async function downloadFlashcards(lesson: Lesson) {
     pdf.setFont("DejaVu", "normal");
     pdf.setFontSize(8);
     pdf.setTextColor(92, 83, 72);
-    pdf.text("FRONT", x + 3, y + 5);
-    pdf.text("fold", x + cardW / 2 - 4, mid - 1.5);
-    pdf.text("BACK", x + 3, mid + 5);
+    pdf.text(t().front, x + 3, y + 5);
+    pdf.text(t().fold, x + cardW / 2 - 4, mid - 1.5);
+    pdf.text(t().back, x + 3, mid + 5);
 
     const picture = images[index];
     if (picture) {
@@ -245,10 +303,10 @@ export async function downloadFlashcards(lesson: Lesson) {
       pdf.setFont("DejaVu", "normal");
       pdf.setFontSize(9);
       pdf.setTextColor(28, 23, 18);
-      const header = `Talky Kitty  ·  Lesson ${lesson.number} flashcards  ·  Cut on the dashed line  ·  Fold on the center line`;
+      const header = t().cardsHeader(lesson.number);
       pdf.text(pdf.splitTextToSize(header, 186) as string[], margin, 8);
     }
   });
 
-  pdf.save(`Russian-Cat-Lesson-${lesson.number}-Flashcards.pdf`);
+  pdf.save(`${t().file}-${lesson.number}-${t().cardsFile}.pdf`);
 }

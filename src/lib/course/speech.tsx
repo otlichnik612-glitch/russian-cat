@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { audioKey, audioUrl, NARRATOR, type VoiceId } from "./audio";
 import { recordedAudio } from "./audio-recorded";
+import { course } from "./active";
 
 type SpeechValue = {
   playing: string | null;
@@ -118,13 +119,13 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
     setPlaying(null);
   }, []);
 
-  const play = useCallback((id: string, text: string, lang = "ru-RU", voice: VoiceId = NARRATOR) => {
+  const play = useCallback((id: string, text: string, lang?: string, voice: VoiceId = NARRATOR) => {
     const my = ++token;
     stopFile();
     cancelVoice();
     setPlaying(id);
     void (async () => {
-      await say(text, lang, voice, () => my === token);
+      await say(text, lang ?? course.speechLang, voice, () => my === token);
       if (my === token) setPlaying(null);
     })();
   }, []);
@@ -137,7 +138,7 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
       for (const line of lines) {
         if (my !== token) return;
         setPlaying(line.id);
-        await say(line.text, line.lang ?? "ru-RU", line.voice ?? NARRATOR, () => my === token);
+        await say(line.text, line.lang ?? course.speechLang, line.voice ?? NARRATOR, () => my === token);
       }
       if (my === token) setPlaying(null);
     })();

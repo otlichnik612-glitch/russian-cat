@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { courseOptions, languageScreens, nativeOptions, type NativeLang, type TargetLang } from "@/lib/course/languages";
-import { Button, Illustration } from "./ui";
+import { courseReady } from "@/lib/course/active";
+import { courseOptions, languageBadges, languageScreens, nativeOptions, type NativeLang, type TargetLang } from "@/lib/course/languages";
+import { Button, Illustration, Picture } from "./ui";
 
 /**
  * The first screens of the app: the learner picks their own language, then the language to learn.
@@ -37,7 +38,13 @@ export function LanguagePicker({
         </h1>
         <div className="grid gap-3">
           {nativeOptions.map((option) => (
-            <Button key={option.id} aria-label={option.a11y} onClick={() => setNative(option.id)}>
+            <Button
+              key={option.id}
+              aria-label={`${option.a11y}. ${languageBadges[option.id].say}`}
+              className="justify-start gap-4 py-2 pl-2"
+              onClick={() => setNative(option.id)}
+            >
+              <Badge id={option.id} />
               {option.label}
             </Button>
           ))}
@@ -57,17 +64,22 @@ export function LanguagePicker({
         <span className="font-display text-3xl">{page.titleEn}</span>
       </h1>
       <div className="grid gap-3">
-        {courseOptions[native as NativeLang].map((option) => (
-          <Button
-            key={option.id}
-            variant={option.ready ? "primary" : "ghost"}
-            aria-label={option.a11y}
-            onClick={() => (option.ready ? onChosen(native, option.id) : setSoon(true))}
-          >
-            {option.label}
-            {option.ready ? "" : " — скоро · coming soon"}
-          </Button>
-        ))}
+        {courseOptions[native as NativeLang].map((option) => {
+          const ready = option.ready && courseReady(option.id, native);
+          return (
+            <Button
+              key={option.id}
+              variant={ready ? "primary" : "ghost"}
+              aria-label={`${option.a11y}. ${languageBadges[option.id].say}${ready ? "" : ". Скоро · Coming soon"}`}
+              className="justify-start gap-4 py-2 pl-2"
+              onClick={() => (ready ? onChosen(native, option.id) : setSoon(true))}
+            >
+              <Badge id={option.id} faded={!ready} />
+              {option.label}
+              {ready ? "" : " — скоро · coming soon"}
+            </Button>
+          );
+        })}
       </div>
       <p role="status" aria-live="polite" className="font-bold text-garden">
         {soon ? (
@@ -80,5 +92,15 @@ export function LanguagePicker({
         Назад · Back
       </Button>
     </main>
+  );
+}
+
+/** The small picture of Murzik on a language button. Hidden from VoiceOver: the button label already says it. */
+function Badge({ id, faded }: { id: NativeLang | TargetLang; faded?: boolean }) {
+  return (
+    <Picture
+      src={languageBadges[id].image}
+      className={`size-14 shrink-0 rounded-full bg-paper-deep object-cover${faded ? " opacity-50" : ""}`}
+    />
   );
 }

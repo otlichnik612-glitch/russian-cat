@@ -15,13 +15,13 @@ export const lesson1: Lesson = {
   vocabNote:
     "Привет! is for friends and children. Здравствуйте! is the polite hello for adults you do not know. When in doubt, say Здравствуйте!",
   vocab: [
-    v("l1-1", "Привет!", "Hi!", "Murzik is smiling and waving hello with his paw.", "Play Привет", img.murzik, "privet!"),
-    v("l1-2", "Здравствуйте!", "Hello! (polite)", "Murzik stands up straight with his paws together and gives a small polite bow to an elderly lady.", "Play Здравствуйте", pic("paris/l1-2"), "zdravstvuyte!"),
-    v("l1-3", "Как тебя зовут?", "What's your name?", "Tom bends down towards Murzik with a friendly, curious face, as if asking a question.", "Play Как тебя зовут", pic("paris/l1-4"), "kak tebya zovut?"),
-    v("l1-4", "Меня зовут…", "My name is…", "Murzik puts a paw on his chest and proudly says his name.", "Play Меня зовут", pic("paris/l1-5"), "menya zovut…"),
-    v("l1-5", "А тебя?", "And you? (your name?)", "Murzik points a paw at Tom with a questioning look.", "Play А тебя", pic("paris/l1-6"), "a tebya?"),
-    v("l1-6", "Очень приятно.", "Nice to meet you.", "Murzik and Tom greet each other in a Paris garden with the Eiffel Tower behind them.", "Play Очень приятно", img.greet, "ochen' priyatno."),
-    v("l1-7", "Мне тоже.", "Me too.", "Murzik nods happily and puts a paw on his chest, smiling back at Tom.", "Play Мне тоже", pic("paris/l1-8"), "mne tozhe."),
+    v("l1-1", "Привет!", "Hi!", "Murzik is smiling and waving hello with his paw.", "Listen to Привет", img.murzik, "privet!"),
+    v("l1-2", "Здравствуйте!", "Hello! (polite)", "Murzik stands up straight with his paws together and gives a small polite bow to an elderly lady.", "Listen to Здравствуйте", pic("paris/l1-2"), "zdravstvuyte!"),
+    v("l1-3", "Как тебя зовут?", "What's your name?", "Tom bends down towards Murzik with a friendly, curious face, as if asking a question.", "Listen to Как тебя зовут", pic("paris/l1-4"), "kak tebya zovut?"),
+    v("l1-4", "Меня зовут…", "My name is…", "Murzik puts a paw on his chest and proudly says his name.", "Listen to Меня зовут", pic("paris/l1-5"), "menya zovut…"),
+    v("l1-5", "А тебя?", "And you? (your name?)", "Murzik points a paw at Tom with a questioning look.", "Listen to А тебя", pic("paris/l1-6"), "a tebya?"),
+    v("l1-6", "Очень приятно.", "Nice to meet you.", "Murzik and Tom greet each other in a Paris garden with the Eiffel Tower behind them.", "Listen to Очень приятно", img.greet, "ochen' priyatno."),
+    v("l1-7", "Мне тоже.", "Me too.", "Murzik nods happily and puts a paw on his chest, smiling back at Tom.", "Listen to Мне тоже", pic("paris/l1-8"), "mne tozhe."),
   ],
   letters: [
     letter("А а", "“a” as in “father”", "А тебя?", "And you?"),
@@ -119,13 +119,13 @@ export const lesson2: Lesson = {
   vocabNote:
     "Russians often answer Нормально (OK). It is a normal, honest answer, not a sad one.",
   vocab: [
-    v("l2-1", "Как дела?", "How are you?", "Tom waves at Murzik in the doorway with a warm, curious smile.", "Play Как дела", pic("paris/l2-1"), "kak dela?"),
-    v("l2-2", "Хорошо, спасибо.", "Fine, thanks.", "Murzik smiles calmly and shows a thumbs-up with his paw.", "Play Хорошо, спасибо", pic("paris/l2-3"), "khorosho, spasibo."),
-    v("l2-3", "Отлично!", "Great!", "Murzik jumps for joy with both paws in the air.", "Play Отлично", pic("paris/l2-4"), "otlichno!"),
-    v("l2-4", "Нормально.", "OK. / Not bad.", "Murzik shrugs with a relaxed, neutral face.", "Play Нормально", pic("paris/l2-5"), "normal'no."),
-    v("l2-5", "Так себе.", "So-so.", "Murzik tilts his paw from side to side with a doubtful face.", "Play Так себе", pic("paris/l2-6"), "tak sebe."),
-    v("l2-6", "Плохо.", "Bad.", "Murzik sits under a small grey rain cloud with drooping ears.", "Play Плохо", pic("paris/l2-7"), "plokho."),
-    v("l2-7", "А у тебя?", "And you? (how are you?)", "Murzik points a paw back at Tom with a friendly questioning look.", "Play А у тебя", pic("paris/l2-8"), "a u tebya?"),
+    v("l2-1", "Как дела?", "How are you?", "Tom waves at Murzik in the doorway with a warm, curious smile.", "Listen to Как дела", pic("paris/l2-1"), "kak dela?"),
+    v("l2-2", "Хорошо, спасибо.", "Fine, thanks.", "Murzik smiles calmly and shows a thumbs-up with his paw.", "Listen to Хорошо, спасибо", pic("paris/l2-3"), "khorosho, spasibo."),
+    v("l2-3", "Отлично!", "Great!", "Murzik jumps for joy with both paws in the air.", "Listen to Отлично", pic("paris/l2-4"), "otlichno!"),
+    v("l2-4", "Нормально.", "OK. / Not bad.", "Murzik shrugs with a relaxed, neutral face.", "Listen to Нормально", pic("paris/l2-5"), "normal'no."),
+    v("l2-5", "Так себе.", "So-so.", "Murzik tilts his paw from side to side with a doubtful face.", "Listen to Так себе", pic("paris/l2-6"), "tak sebe."),
+    v("l2-6", "Плохо.", "Bad.", "Murzik sits under a small grey rain cloud with drooping ears.", "Listen to Плохо", pic("paris/l2-7"), "plokho."),
+    v("l2-7", "А у тебя?", "And you? (how are you?)", "Murzik points a paw back at Tom with a friendly questioning look.", "Listen to А у тебя", pic("paris/l2-8"), "a u tebya?"),
   ],
   letters: [
     letter("Р р", "a rolled “r”", "Привет", "Hi", "Looks like English P, but sounds like R!"),
@@ -211,13 +211,13 @@ export const lesson3: Lesson = {
   vocabNote:
     "Пожалуйста is a busy word: “please”, “you're welcome” (the answer to Спасибо) and, with Вот, “Here you are”. Не за что also answers Спасибо.",
   vocab: [
-    v("l3-1", "Спасибо!", "Thank you!", "Murzik holds a small gift box and smiles at Tom gratefully.", "Play Спасибо", pic("paris/l3-1"), "spasibo!"),
-    v("l3-2", "Спасибо большое!", "Thank you very much!", "Murzik hugs a gift box with shining eyes and a very big smile.", "Play Спасибо большое", pic("paris/l3-2"), "spasibo bol'shoye!"),
-    v("l3-3", "Пожалуйста.", "You're welcome. / Please.", "Tom smiles warmly and makes a small modest gesture with his hand.", "Play Пожалуйста", pic("paris/l3-3"), "pozhaluysta."),
-    v("l3-4", "Вот, пожалуйста.", "Here you are.", "Tom holds out a small gift box to Murzik with both hands.", "Play Вот, пожалуйста", pic("paris/l3-5"), "vot, pozhaluysta."),
-    v("l3-5", "Извини!", "Sorry! (to a friend)", "Tom has stepped on Murzik's tail by accident and lifts his foot, looking sorry.", "Play Извини", pic("paris/l3-6"), "izvini!"),
-    v("l3-6", "Извините!", "Sorry! / Excuse me! (polite)", "Murzik politely raises a paw to get the attention of Madame Dubois on the staircase.", "Play Извините", pic("paris/l3-7"), "izvinite!"),
-    v("l3-7", "Ничего страшного.", "It's nothing. / No problem.", "Murzik smiles and waves his tail kindly, showing everything is fine.", "Play Ничего страшного", pic("paris/l3-8"), "nichego strashnogo."),
+    v("l3-1", "Спасибо!", "Thank you!", "Murzik holds a small gift box and smiles at Tom gratefully.", "Listen to Спасибо", pic("paris/l3-1"), "spasibo!"),
+    v("l3-2", "Спасибо большое!", "Thank you very much!", "Murzik hugs a gift box with shining eyes and a very big smile.", "Listen to Спасибо большое", pic("paris/l3-2"), "spasibo bol'shoye!"),
+    v("l3-3", "Пожалуйста.", "You're welcome. / Please.", "Tom smiles warmly and makes a small modest gesture with his hand.", "Listen to Пожалуйста", pic("paris/l3-3"), "pozhaluysta."),
+    v("l3-4", "Вот, пожалуйста.", "Here you are.", "Tom holds out a small gift box to Murzik with both hands.", "Listen to Вот, пожалуйста", pic("paris/l3-5"), "vot, pozhaluysta."),
+    v("l3-5", "Извини!", "Sorry! (to a friend)", "Tom has stepped on Murzik's tail by accident and lifts his foot, looking sorry.", "Listen to Извини", pic("paris/l3-6"), "izvini!"),
+    v("l3-6", "Извините!", "Sorry! / Excuse me! (polite)", "Murzik politely raises a paw to get the attention of Madame Dubois on the staircase.", "Listen to Извините", pic("paris/l3-7"), "izvinite!"),
+    v("l3-7", "Ничего страшного.", "It's nothing. / No problem.", "Murzik smiles and waves his tail kindly, showing everything is fine.", "Listen to Ничего страшного", pic("paris/l3-8"), "nichego strashnogo."),
   ],
   letters: [
     letter("П п", "“p” as in “pen”", "Пожалуйста", "Please"),

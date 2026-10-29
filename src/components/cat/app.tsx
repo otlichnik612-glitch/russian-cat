@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { getLesson } from "@/lib/course/curriculum";
+import { getLesson, setActiveCourse } from "@/lib/course/active";
 import { useProgress } from "@/lib/course/progress";
 import { SpeechProvider } from "@/lib/course/speech";
 import { startIdentity, useIdentity } from "@/lib/identity/client";
@@ -32,6 +32,9 @@ export function RussianCatApp() {
   const setSeenIntro = useProgress((state) => state.setSeenIntro);
   const setLanguages = useProgress((state) => state.setLanguages);
   const nativeLang = useProgress((state) => state.nativeLang);
+  const targetLang = useProgress((state) => state.targetLang);
+  // The chosen course decides the lessons and the interface language. Set before children render.
+  setActiveCourse(targetLang, nativeLang);
   const recovering = useIdentity((state) => state.recovering);
   const screenName = useRef(screen.name);
   screenName.current = screen.name;

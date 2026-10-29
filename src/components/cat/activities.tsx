@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { hasCyrillic, seededShuffle } from "@/lib/course/make";
+import { course, isTarget, ui } from "@/lib/course/active";
+import { seededShuffle } from "@/lib/course/make";
 import type { Activity } from "@/lib/course/types";
 import { Button, Illustration, PlayButton, Ru } from "./ui";
 
@@ -21,21 +22,19 @@ export function ActivityCard({
       {activity.image ? (
         <Illustration src={activity.image} a11y={activity.imageA11y} ratio="aspect-square" />
       ) : null}
-      <h3 className="font-display text-2xl" lang={activity.promptLang}>
+      <h3 className="font-display text-2xl" lang={activity.promptLang ? course.htmlLang : undefined}>
         {activity.promptLang === "ru" ? <Ru>{activity.prompt}</Ru> : activity.prompt}
       </h3>
       {activity.help ? <p className="text-muted">{activity.help}</p> : null}
       {activity.audio ? (
         <div className="flex flex-col gap-2 rounded-3xl bg-paper-deep p-4">
-          <PlayButton id={`${activity.id}-audio`} text={activity.audio} label="Play the Russian" />
+          <PlayButton id={`${activity.id}-audio`} text={activity.audio} label={ui.playTarget} />
           {solved ? (
             <p className="text-xl">
-              <span className="text-muted">You heard: </span>
+              <span className="text-muted">{ui.youHeard}</span>
               <Ru>{activity.audio}</Ru>
             </p>
-          ) : (
-            <p className="text-muted">Listen. You can play it as many times as you like.</p>
-          )}
+          ) : null}
         </div>
       ) : null}
       <Body activity={activity} solved={solved} onSolved={onSolved} onSlot={onSlot} />
@@ -70,9 +69,9 @@ function Speak({
   const [open, setOpen] = useState(solved);
   return (
     <div className="flex flex-col gap-3">
-      <PlayButton id={`${activity.id}-q`} text={activity.prompt} label={`Play ${activity.prompt}`} />
+      <PlayButton id={`${activity.id}-q`} text={activity.prompt} label={`${ui.play} ${activity.prompt}`} />
       <Button variant="ghost" onClick={() => setOpen(true)} aria-expanded={open}>
-        {open ? "Model answer" : "Show model answer"}
+        {open ? ui.modelAnswer : ui.showModelAnswer}
       </Button>
       {open ? (
         <div className="rounded-3xl border border-line bg-paper-deep p-4">
@@ -81,7 +80,7 @@ function Speak({
           </p>
           <p className="mt-1 text-muted">{activity.modelEn}</p>
           <div className="mt-3">
-            <PlayButton id={`${activity.id}-m`} text={activity.model} label={`Play ${activity.model}`} />
+            <PlayButton id={`${activity.id}-m`} text={activity.model} label={`${ui.play} ${activity.model}`} />
           </div>
         </div>
       ) : null}
@@ -93,7 +92,7 @@ function Speak({
         }}
         aria-pressed={solved}
       >
-        {solved ? "Practiced" : "I said it aloud"}
+        {solved ? ui.practiced : ui.saidAloud}
       </Button>
     </div>
   );
@@ -195,7 +194,7 @@ function Graded({
       return;
     }
     onSlot({
-      label: status === "bad" ? "Try again" : "Check",
+      label: status === "bad" ? ui.tryAgain : ui.check,
       disabled: status === "bad" ? false : !ready,
       onPress: () => pressRef.current(),
     });
@@ -240,8 +239,8 @@ function Graded({
       ) : null}
       {activity.kind === "truefalse" ? (
         <div className="flex flex-col gap-3">
-          <p className="text-2xl" lang="ru">
-            {hasCyrillic(activity.statement) ? <Ru>{activity.statement}</Ru> : activity.statement}
+          <p className="text-2xl">
+            {isTarget(activity.statement) ? <Ru>{activity.statement}</Ru> : activity.statement}
           </p>
           <div className="grid grid-cols-2 gap-3">
             {[true, false].map((value) => (
@@ -255,7 +254,7 @@ function Graded({
                   if (status === "bad") setStatus("idle");
                 }}
               >
-                {value ? "True" : "False"}
+                {value ? ui.trueLabel : ui.falseLabel}
               </button>
             ))}
           </div>
@@ -297,21 +296,21 @@ function Graded({
         <div className="flex flex-col gap-3">
           <p
             className="min-h-16 rounded-2xl border border-line bg-card px-4 py-3 text-4xl tracking-wide"
-            lang="ru"
+            lang={course.htmlLang}
             aria-live="polite"
           >
-            {spelled.length ? <Ru>{spelled.map((index) => tiles[index]).join("")}</Ru> : <span className="text-muted text-lg">Tap the letters in order</span>}
+            {spelled.length ? <Ru>{spelled.map((index) => tiles[index]).join("")}</Ru> : <span className="text-muted text-lg">{ui.tapLetters}</span>}
           </p>
-          <div className="flex flex-wrap gap-2" role="group" aria-label="Letters">
+          <div className="flex flex-wrap gap-2" role="group" aria-label={ui.lettersGroup}>
             {tiles.map((tile, index) => {
               const used = spelled.includes(index);
               return (
                 <button
                   key={`${tile}-${index}`}
                   type="button"
-                  lang="ru"
+                  lang={course.htmlLang}
                   disabled={used || status === "good"}
-                  aria-label={`Letter ${tile}`}
+                  aria-label={ui.letterLabel(tile)}
                   className="min-h-14 min-w-14 rounded-2xl border border-line bg-card px-3 text-2xl font-bold disabled:opacity-35"
                   onClick={() => {
                     setSpelled((cur) => [...cur, index]);
@@ -333,7 +332,7 @@ function Graded({
                   if (status === "bad") setStatus("idle");
                 }}
               >
-                Undo
+                {ui.undo}
               </Button>
               <Button
                 variant="ghost"
@@ -343,11 +342,11 @@ function Graded({
                   if (status === "bad") setStatus("idle");
                 }}
               >
-                Clear
+                {ui.clear}
               </Button>
             </div>
           ) : (
-            <PlayButton id={`${activity.id}-word`} text={activity.word} label={`Play ${activity.word}`} />
+            <PlayButton id={`${activity.id}-word`} text={activity.word} label={`${ui.play} ${activity.word}`} />
           )}
         </div>
       ) : null}
@@ -366,7 +365,7 @@ function Graded({
                   if (status === "bad") setStatus("idle");
                 }}
               >
-                <option value="">Choose the meaning</option>
+                <option value="">{ui.chooseMeaning}</option>
                 {rights.map((right) => (
                   <option key={right} value={right}>
                     {right}
@@ -408,11 +407,11 @@ function Graded({
         </div>
       ) : null}
       <p role="status" className={status === "good" ? "font-bold text-garden" : "font-bold text-terra"}>
-        {status === "good" ? "Correct." : status === "bad" ? "Not yet. Try again." : ""}
+        {status === "good" ? ui.correct : status === "bad" ? ui.notYet : ""}
       </p>
       {!onSlot && status !== "good" ? (
         <Button disabled={status !== "bad" && !ready} onClick={() => pressRef.current()}>
-          {status === "bad" ? "Try again" : "Check"}
+          {status === "bad" ? ui.tryAgain : ui.check}
         </Button>
       ) : null}
     </div>
@@ -527,9 +526,9 @@ function ChoiceRow({
         className={`${className} flex-1`}
         onClick={onClick}
       >
-        {hasCyrillic(label) ? <Ru className="text-xl">{label}</Ru> : label}
+        {isTarget(label) ? <Ru className="text-xl">{label}</Ru> : label}
       </button>
-      {hasCyrillic(label) && !noAudio ? <PlayButton id={playId} text={label} label={`Play ${label}`} /> : null}
+      {isTarget(label) && !noAudio ? <PlayButton id={playId} text={label} label={`${ui.play} ${label}`} /> : null}
     </div>
   );
 }
@@ -551,13 +550,13 @@ function Arrange({ items, setItems }: { items: string[]; setItems: (items: strin
       {items.map((item, index) => (
         <li key={`${item}-${index}`} className="flex items-stretch gap-2">
           <div className="flex min-h-14 flex-1 items-center rounded-2xl border border-line bg-card px-4 text-lg">
-            {hasCyrillic(item) ? <Ru>{item}</Ru> : item}
+            {isTarget(item) ? <Ru>{item}</Ru> : item}
           </div>
-          <button type="button" className="min-h-14 min-w-14 rounded-2xl border border-line bg-card px-3 font-bold" aria-label={`Move up: ${item}`} onClick={() => move(index, -1)}>
-            Up
+          <button type="button" className="min-h-14 min-w-14 rounded-2xl border border-line bg-card px-3 font-bold" aria-label={ui.moveUp(item)} onClick={() => move(index, -1)}>
+            {ui.up}
           </button>
-          <button type="button" className="min-h-14 min-w-14 rounded-2xl border border-line bg-card px-3 font-bold" aria-label={`Move down: ${item}`} onClick={() => move(index, 1)}>
-            Down
+          <button type="button" className="min-h-14 min-w-14 rounded-2xl border border-line bg-card px-3 font-bold" aria-label={ui.moveDown(item)} onClick={() => move(index, 1)}>
+            {ui.down}
           </button>
         </li>
       ))}
