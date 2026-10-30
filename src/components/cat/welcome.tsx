@@ -12,18 +12,22 @@ import {
 } from "@/lib/identity/client";
 import { ui } from "@/lib/course/active";
 import { useProgress } from "@/lib/course/progress";
-import { welcomeScreens } from "@/lib/course/welcome";
+import { accountText, type AccountText } from "@/lib/course/welcome";
 import { useSyncStatus, type SyncStatus } from "@/lib/sync/use-progress-sync";
 import { Button, Card, Illustration } from "./ui";
 
 /**
- * The first two screens (hello, then sign in), the email sign-in, "forgot password",
+ * The sign-in screen (after the learner picked their own language), the email sign-in, "forgot password",
  * the new-password screen from a reset link, and the account screen opened from home.
- * All in English: the learner's own language is chosen only after this.
+ * All in the learner's own language (English until it is chosen).
  * Built for VoiceOver: focus moves to each heading, every field has a visible label, errors are announced.
  */
 
-const NOT_HERE = "Sign-in works on the published site, talkykitty.com. Here you can carry on without it.";
+/** Texts in the learner's own language. */
+function useText(): AccountText {
+  const native = useProgress((state) => state.nativeLang);
+  return accountText[native ?? "en"];
+}
 
 function useHeadingFocus(key: unknown) {
   const heading = useRef<HTMLHeadingElement>(null);
@@ -34,66 +38,49 @@ function useHeadingFocus(key: unknown) {
 }
 
 function Page({ children }: { children: ReactNode }) {
-  return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 bg-paper px-5 py-6">{children}</main>;
+  // `lang` lets VoiceOver read the texts with the voice of the learner's language.
+  const native = useProgress((state) => state.nativeLang);
+  return (
+    <main lang={native ?? "en"} className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 bg-paper px-5 py-6">
+      {children}
+    </main>
+  );
 }
 
 const inputClass = "min-h-14 rounded-2xl border border-line bg-card px-4 text-lg";
 
-/** Screen 1: Murzik says hello. */
-export function WelcomeHello({ onContinue }: { onContinue: () => void }) {
-  const page = welcomeScreens.hello;
-  const heading = useHeadingFocus(0);
-  return (
-    <Page>
-      <p className="font-display text-xl">Talky Kitty</p>
-      <Illustration src={page.image} a11y={page.a11y} />
-      <div className="flex flex-col gap-3">
-        <h1 ref={heading} tabIndex={-1} className="font-display text-5xl">
-          {page.title}
-        </h1>
-        <p className="text-xl">{page.text}</p>
-      </div>
-      <Button onClick={onContinue}>{page.button}</Button>
-    </Page>
-  );
-}
-
-/** Explain an Identity error in a short English sentence. */
-function explain(error: unknown, mode: "signin" | "signup" | "reset" | "password"): string {
+/** Explain an Identity error in a short sentence. */
+function explain(error: unknown, mode: "signin" | "signup" | "reset" | "password", t: AccountText): string {
   const message = error instanceof Error ? error.message.toLowerCase() : "";
   const status = error instanceof IdentityError ? error.status : 0;
-  if (message.includes("already been registered") || message.includes("already registered"))
-    return "This email already has an account. Choose “Sign in” instead.";
-  if (mode === "signin" && (message.includes("invalid") || status === 400 || status === 401))
-    return "Wrong email or password.";
-  if (message.includes("password") && (message.includes("short") || message.includes("least")))
-    return "That password is too short. Please use at least 8 characters.";
-  if (message.includes("email") && message.includes("invalid")) return "Please check the email address.";
-  if (mode === "reset" && status === 404) return "No account with this email.";
-  if (message.includes("signups not allowed") || message.includes("signup"))
-    return "New accounts can’t be created right now. Please try again later.";
-  if (status === 0 || status >= 500) return "Couldn’t connect. Check your internet and try again.";
-  return "That didn’t work. Please try again.";
+  if (message.includes("already been registered") || message.includes("already registered")) return t.errors.exists;
+  if (mode === "signin" && (message.includes("invalid") || status === 400 || status === 401)) return t.errors.wrong;
+  if (message.includes("password") && (message.includes("short") || message.includes("least"))) return t.errors.short;
+  if (message.includes("email") && message.includes("invalid")) return t.errors.badEmail;
+  if (mode === "reset" && status === 404) return t.errors.noAccount;
+  if (message.includes("signups not allowed") || message.includes("signup")) return t.errors.closed;
+  if (status === 0 || status >= 500) return t.errors.offline;
+  return t.errors.other;
 }
 
 /**
- * Screen 2 (and the "Save progress" screen from home): Murzik at his laptop.
+ * The sign-in screen (also "Save progress" from home): Murzik at his laptop says he'll help, then asks to sign in.
  * Google, email, or "Not now" / "Back". `onDone` runs once the learner is signed in or skips.
  */
 export function SignInScreen({
   onDone,
-  laterLabel = welcomeScreens.signIn.later,
+  laterLabel,
 }: {
   onDone: () => void;
   laterLabel?: string;
 }) {
+  const t = useText();
   const [step, setStep] = useState<"choose" | "email" | "forgot">("choose");
   const [notHere, setNotHere] = useState(false);
   const status = useIdentity((state) => state.status);
   const linkError = useIdentity((state) => state.linkError);
   const heading = useHeadingFocus(step);
   const setWelcomeDone = useProgress((state) => state.setWelcomeDone);
-  const page = welcomeScreens.signIn;
 
   // Signed in (email form, or back from Google): carry on.
   const wasSignedIn = useRef(status === "signed-in");
@@ -111,12 +98,13 @@ export function SignInScreen({
   const available = identityAvailable();
   return (
     <Page>
-      <Illustration src={page.image} a11y={page.a11y} />
-      <h1 ref={heading} tabIndex={-1} className="font-display text-4xl">
-        {page.title}
+      <Illustration src={t.image} a11y={t.a11y} />
+      <h1 ref={heading} tabIndex={-1} className="flex flex-col gap-2">
+        <span className="font-display text-4xl">{t.hello}</span>
+        <span className="text-2xl font-bold">{t.title}</span>
       </h1>
       <p role="alert" className="font-bold text-terra">
-        {linkError ? "Sign-in didn’t finish. Please try again." : notHere ? NOT_HERE : ""}
+        {linkError ? t.linkFailed : notHere ? t.notHere : ""}
       </p>
       <div className="grid gap-3">
         <Button
@@ -127,7 +115,7 @@ export function SignInScreen({
             signInWithGoogle();
           }}
         >
-          {page.google}
+          {t.google}
         </Button>
         <Button
           variant="ghost"
@@ -137,7 +125,7 @@ export function SignInScreen({
             setStep("email");
           }}
         >
-          {page.email}
+          {t.email}
         </Button>
         <Button
           variant="quiet"
@@ -147,7 +135,7 @@ export function SignInScreen({
             onDone();
           }}
         >
-          {laterLabel}
+          {laterLabel ?? t.later}
         </Button>
       </div>
     </Page>
@@ -161,11 +149,12 @@ function EmailSignIn({ onBack, onForgot }: { onBack: () => void; onForgot: () =>
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const heading = useHeadingFocus(mode);
+  const t = useText();
 
   const submit = async (event: FormEvent) => {
     event.preventDefault();
     if (mode === "signup" && password.length < 8) {
-      setError("That password is too short. Please use at least 8 characters.");
+      setError(t.errors.short);
       return;
     }
     setError("");
@@ -175,7 +164,7 @@ function EmailSignIn({ onBack, onForgot }: { onBack: () => void; onForgot: () =>
       if (mode === "signup") await signUpWithEmail(address, password);
       else await signInWithEmail(address, password);
     } catch (failure) {
-      setError(explain(failure, mode));
+      setError(explain(failure, mode, t));
     } finally {
       setBusy(false);
     }
@@ -184,14 +173,14 @@ function EmailSignIn({ onBack, onForgot }: { onBack: () => void; onForgot: () =>
   return (
     <Page>
       <button type="button" className="min-h-12 self-start font-bold text-garden" onClick={onBack}>
-        Back
+        {t.back}
       </button>
       <h1 ref={heading} tabIndex={-1} className="font-display text-4xl">
-        {mode === "signin" ? "Sign in with email" : "Create an account"}
+        {mode === "signin" ? t.signInEmail : t.createAccount}
       </h1>
       <form className="flex flex-col gap-4" onSubmit={(event) => void submit(event)} noValidate>
         <label className="flex flex-col gap-2">
-          <span className="font-bold">Email</span>
+          <span className="font-bold">{t.emailLabel}</span>
           <input
             type="email"
             inputMode="email"
@@ -205,7 +194,7 @@ function EmailSignIn({ onBack, onForgot }: { onBack: () => void; onForgot: () =>
           />
         </label>
         <label className="flex flex-col gap-2">
-          <span className="font-bold">Password</span>
+          <span className="font-bold">{t.passwordLabel}</span>
           <input
             type="password"
             autoComplete={mode === "signin" ? "current-password" : "new-password"}
@@ -214,13 +203,13 @@ function EmailSignIn({ onBack, onForgot }: { onBack: () => void; onForgot: () =>
             onChange={(event) => setPassword(event.target.value)}
             className={inputClass}
           />
-          {mode === "signup" ? <span className="text-muted">At least 8 characters</span> : null}
+          {mode === "signup" ? <span className="text-muted">{t.passwordHint}</span> : null}
         </label>
         <p role="alert" className="font-bold text-terra">
           {error}
         </p>
         <Button type="submit" disabled={busy || !email.trim() || !password}>
-          {busy ? "Please wait…" : mode === "signin" ? "Sign in" : "Create account"}
+          {busy ? t.wait : mode === "signin" ? t.signIn : t.create}
         </Button>
       </form>
       <div className="flex flex-col items-center gap-1">
@@ -231,11 +220,11 @@ function EmailSignIn({ onBack, onForgot }: { onBack: () => void; onForgot: () =>
             setMode(mode === "signin" ? "signup" : "signin");
           }}
         >
-          {mode === "signin" ? "New here? Create an account" : "Already have an account? Sign in"}
+          {mode === "signin" ? t.toSignUp : t.toSignIn}
         </Button>
         {mode === "signin" ? (
           <Button variant="quiet" onClick={onForgot}>
-            Forgot password?
+            {t.forgot}
           </Button>
         ) : null}
       </div>
@@ -249,6 +238,7 @@ function ForgotPassword({ onBack }: { onBack: () => void }) {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
   const heading = useHeadingFocus(sent);
+  const t = useText();
 
   const submit = async (event: FormEvent) => {
     event.preventDefault();
@@ -258,7 +248,7 @@ function ForgotPassword({ onBack }: { onBack: () => void }) {
       await sendPasswordReset(email.trim());
       setSent(true);
     } catch (failure) {
-      setError(explain(failure, "reset"));
+      setError(explain(failure, "reset", t));
     } finally {
       setBusy(false);
     }
@@ -267,18 +257,18 @@ function ForgotPassword({ onBack }: { onBack: () => void }) {
   return (
     <Page>
       <button type="button" className="min-h-12 self-start font-bold text-garden" onClick={onBack}>
-        Back
+        {t.back}
       </button>
       <h1 ref={heading} tabIndex={-1} className="font-display text-4xl">
-        {sent ? "Check your email" : "Forgot password?"}
+        {sent ? t.checkEmail : t.forgot}
       </h1>
       {sent ? (
-        <p className="text-xl">We sent you a link. Open it on this phone to choose a new password.</p>
+        <p className="text-xl">{t.linkSent}</p>
       ) : (
         <form className="flex flex-col gap-4" onSubmit={(event) => void submit(event)} noValidate>
-          <p>Enter your email and we’ll send you a link to choose a new password.</p>
+          <p>{t.forgotText}</p>
           <label className="flex flex-col gap-2">
-            <span className="font-bold">Email</span>
+            <span className="font-bold">{t.emailLabel}</span>
             <input
               type="email"
               inputMode="email"
@@ -295,7 +285,7 @@ function ForgotPassword({ onBack }: { onBack: () => void }) {
             {error}
           </p>
           <Button type="submit" disabled={busy || !email.trim()}>
-            {busy ? "Please wait…" : "Send the link"}
+            {busy ? t.wait : t.sendLink}
           </Button>
         </form>
       )}
@@ -310,11 +300,12 @@ export function NewPassword({ onDone }: { onDone: () => void }) {
   const [done, setDone] = useState(false);
   const [error, setError] = useState("");
   const heading = useHeadingFocus(done);
+  const t = useText();
 
   const submit = async (event: FormEvent) => {
     event.preventDefault();
     if (password.length < 8) {
-      setError("That password is too short. Please use at least 8 characters.");
+      setError(t.errors.short);
       return;
     }
     setError("");
@@ -323,7 +314,7 @@ export function NewPassword({ onDone }: { onDone: () => void }) {
       await setNewPassword(password);
       setDone(true);
     } catch (failure) {
-      setError(explain(failure, "password"));
+      setError(explain(failure, "password", t));
     } finally {
       setBusy(false);
     }
@@ -332,14 +323,14 @@ export function NewPassword({ onDone }: { onDone: () => void }) {
   return (
     <Page>
       <h1 ref={heading} tabIndex={-1} className="font-display text-4xl">
-        {done ? "Your new password is saved" : "Choose a new password"}
+        {done ? t.newPasswordSaved : t.newPasswordTitle}
       </h1>
       {done ? (
-        <Button onClick={onDone}>Continue</Button>
+        <Button onClick={onDone}>{t.continue}</Button>
       ) : (
         <form className="flex flex-col gap-4" onSubmit={(event) => void submit(event)} noValidate>
           <label className="flex flex-col gap-2">
-            <span className="font-bold">New password</span>
+            <span className="font-bold">{t.newPasswordLabel}</span>
             <input
               type="password"
               autoComplete="new-password"
@@ -348,13 +339,13 @@ export function NewPassword({ onDone }: { onDone: () => void }) {
               onChange={(event) => setPassword(event.target.value)}
               className={inputClass}
             />
-            <span className="text-muted">At least 8 characters</span>
+            <span className="text-muted">{t.passwordHint}</span>
           </label>
           <p role="alert" className="font-bold text-terra">
             {error}
           </p>
           <Button type="submit" disabled={busy || !password}>
-            {busy ? "Please wait…" : "Save the password"}
+            {busy ? t.wait : t.savePassword}
           </Button>
         </form>
       )}
@@ -362,24 +353,24 @@ export function NewPassword({ onDone }: { onDone: () => void }) {
   );
 }
 
-const statusText: Record<SyncStatus, string> = {
-  off: "",
-  local: "",
-  saving: "Saving…",
-  saved: "Your progress is saved to your account.",
-  error: "Couldn’t save right now. Your progress is safe on this phone, and I’ll try again soon.",
-};
+function statusText(status: SyncStatus, t: AccountText): string {
+  if (status === "saving") return t.saving;
+  if (status === "saved") return t.saved;
+  if (status === "error") return t.saveError;
+  return "";
+}
 
 /** From the home screen: the account when signed in, otherwise the sign-in screen. */
 export function AccountScreen({ onBack }: { onBack: () => void }) {
   const identity = useIdentity();
   const status = useSyncStatus((state) => state.status);
   const heading = useHeadingFocus(identity.status);
+  const t = useText();
 
   if (identity.status !== "signed-in")
     return (
       <>
-        <SignInScreen onDone={onBack} laterLabel="Back" />
+        <SignInScreen onDone={onBack} laterLabel={t.back} />
         <div className="mx-auto w-full max-w-lg px-5 pb-8">
           <ResetButton onDone={onBack} />
         </div>
@@ -389,22 +380,22 @@ export function AccountScreen({ onBack }: { onBack: () => void }) {
   return (
     <Page>
       <button type="button" className="min-h-12 self-start font-bold text-garden" onClick={onBack}>
-        Back
+        {t.back}
       </button>
       <h1 ref={heading} tabIndex={-1} className="font-display text-4xl">
-        Your account
+        {t.yourAccount}
       </h1>
       <Card className="flex flex-col gap-2">
         {identity.email ? <p className="break-all text-xl font-bold">{identity.email}</p> : null}
         <p role="status" aria-live="polite">
-          {statusText[status as SyncStatus]}
+          {statusText(status as SyncStatus, t)}
         </p>
       </Card>
-      <Button onClick={onBack}>Done</Button>
+      <Button onClick={onBack}>{t.done}</Button>
       <Button variant="ghost" onClick={() => void signOut()}>
-        Sign out
+        {t.signOut}
       </Button>
-      <p className="text-muted">After you sign out, your lessons stay on this phone too.</p>
+      <p className="text-muted">{t.afterSignOut}</p>
       <ResetButton onDone={onBack} />
     </Page>
   );

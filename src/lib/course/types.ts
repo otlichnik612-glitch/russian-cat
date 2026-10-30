@@ -106,7 +106,32 @@ export type SpeakerId =
   | "ana"
   | "mestre"
   | "pintor"
-  | "joao";
+  | "joao"
+  // Arabic course
+  | "karim"
+  | "amina"
+  | "fatima"
+  | "salma"
+  | "hana"
+  | "yusuf"
+  | "naser"
+  | "laila"
+  | "said"
+  | "host"
+  | "hostess"
+  | "potterAr"
+  | "weaver"
+  | "guide"
+  | "boatman"
+  | "sua"
+  | "director"
+  | "minho"
+  | "jiyeon"
+  | "makeup"
+  | "cameraman"
+  | "ajumma"
+  | "haenyeo"
+  | "bedouin";
 
 export type DialogueLine = {
   speaker: SpeakerId;

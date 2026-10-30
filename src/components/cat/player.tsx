@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from "react";
 import { ChevronLeft } from "lucide-react";
-import { cityName, speakerName, ui } from "@/lib/course/active";
+import { cityName, course, speakerName, ui } from "@/lib/course/active";
 import { useProgress } from "@/lib/course/progress";
 import { useSpeech } from "@/lib/course/speech";
 import type { Activity, Lesson, Skill, VocabItem } from "@/lib/course/types";
@@ -122,6 +122,12 @@ export function LessonPlayer({
   const [solved, setSolved] = useState<Record<string, boolean>>({});
   const [slot, setSlot] = useState<{ label: string; disabled: boolean; onPress: () => void } | null>(null);
   const [note, setNote] = useState("");
+  // "Correct." is only announced once: it must not stay on the screen as an extra element next to the main button.
+  useEffect(() => {
+    if (!note) return;
+    const timer = setTimeout(() => setNote(""), 1500);
+    return () => clearTimeout(timer);
+  }, [note]);
   const titleId = useId();
   const frame = frames[Math.min(frameIndex, frames.length - 1)] ?? frames[0]!;
 
@@ -324,7 +330,7 @@ function WordCard({ item, note }: { item: VocabItem; note?: string }) {
           <h2 className="text-4xl">
             <Ru>{item.ru}</Ru>
           </h2>
-          {item.translit ? (
+          {item.translit && !course.translit ? (
             <p className="-mt-2 text-lg text-muted" aria-hidden>
               {item.translit}
             </p>

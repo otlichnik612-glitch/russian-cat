@@ -3,6 +3,7 @@ import { course, isTarget, ui } from "@/lib/course/active";
 import { seededShuffle } from "@/lib/course/make";
 import type { Activity } from "@/lib/course/types";
 import { Button, Illustration, PlayButton, Ru } from "./ui";
+import { playChime } from "@/lib/course/chime";
 
 type Status = "idle" | "bad" | "good";
 
@@ -172,6 +173,7 @@ function Graded({
       blanks,
       spelled: spelled.map((index) => tiles[index] ?? "").join(""),
     });
+    playChime(ok ? "good" : "bad");
     if (ok) {
       setStatus("good");
       onSolved();
@@ -406,8 +408,9 @@ function Graded({
           )}
         </div>
       ) : null}
-      <p role="status" className={status === "good" ? "font-bold text-garden" : "font-bold text-terra"}>
-        {status === "good" ? ui.correct : status === "bad" ? ui.notYet : ""}
+      {/* Only "Not yet" is shown here. "Correct." is announced once by the lesson player and then disappears. */}
+      <p role="status" className="font-bold text-terra">
+        {status === "bad" ? ui.notYet : ""}
       </p>
       {!onSlot && status !== "good" ? (
         <Button disabled={status !== "bad" && !ready} onClick={() => pressRef.current()}>
@@ -528,7 +531,7 @@ function ChoiceRow({
       >
         {isTarget(label) ? <Ru className="text-xl">{label}</Ru> : label}
       </button>
-      {isTarget(label) && !noAudio ? <PlayButton id={playId} text={label} label={`${ui.play} ${label}`} /> : null}
+      {isTarget(label) && !noAudio ? <PlayButton id={playId} text={label} label={`${ui.play} ${label}`} noSlow /> : null}
     </div>
   );
 }

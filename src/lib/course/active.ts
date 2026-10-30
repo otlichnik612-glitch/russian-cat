@@ -7,6 +7,9 @@ import { englishCourseDef } from "./en";
 import { portugueseCourseDefs } from "./pt";
 import { turkishCourseDef } from "./tr";
 import { turkishCourseDefEn } from "./tr/en";
+import { arabicCourseDef } from "./ar";
+import { koreanCourseDef } from "./ko";
+import { koreanCourseDefEn } from "./ko/en";
 import type { SpeakerId } from "./types";
 import { uiText, type UiLang, type UiText } from "./ui-text";
 
@@ -18,7 +21,7 @@ import { uiText, type UiLang, type UiText } from "./ui-text";
  * For the Turkish course: `ru` = Turkish, `en` = Russian or English.
  */
 
-export type CourseId = "ru" | "tr" | "en" | "pt";
+export type CourseId = "ru" | "tr" | "en" | "pt" | "ar" | "ko";
 
 type Prologue = typeof russianPrologue;
 
@@ -41,6 +44,18 @@ export type CourseDef = {
   speakers: Partial<Record<SpeakerId, { name: string; target: string }>>;
   /** Interface texts that differ from course to course (for example, which letters are taught). */
   uiOverrides?: Partial<UiText>;
+  /** The language being learned is written right to left (Arabic). */
+  rtl?: boolean;
+  /** The transcription of a phrase in the language being learned, if the course has one (shown under the phrase). */
+  translit?: (text: string) => string | undefined;
+  /**
+   * The language addresses the learner differently for a man and a woman (Arabic “you”).
+   * The course asks once, after the intro; `female` is the same course with the female forms.
+   */
+  gender?: {
+    question: { title: string; text: string; male: string; female: string; change: string };
+    female: CourseDef;
+  };
 };
 
 const russianCourseDef: CourseDef = {
@@ -73,6 +88,8 @@ const registry: Record<CourseId, Partial<Record<UiLang, CourseDef>>> = {
   tr: { ru: turkishCourseDef, en: turkishCourseDefEn },
   en: { ru: englishCourseDef },
   pt: portugueseCourseDefs,
+  ar: { ru: arabicCourseDef },
+  ko: { ru: koreanCourseDef, en: koreanCourseDefEn },
 };
 
 /** The version of a course for this native language, or its only version. */
@@ -81,9 +98,18 @@ function pick(id: CourseId, native?: UiLang | null): CourseDef {
   return (native ? versions[native] : undefined) ?? Object.values(versions)[0]!;
 }
 
+/** Interface texts in a given language (for screens shown before or outside the active course). */
+export const uiFor = (lang: UiLang): UiText => uiText[lang];
+
+/** The version of a course for this native language, if it has lessons (for the "My courses" list). */
+export function courseDef(id: CourseId, native?: UiLang | null): CourseDef | null {
+  return courseReady(id, native) ? pick(id, native) : null;
+}
+
 /** True when a course has lessons the learner can open (for this native language, if given). */
-export function courseReady(id: CourseId, native?: UiLang | null): boolean {
-  const versions = registry[id];
+export function courseReady(id: string, native?: UiLang | null): boolean {
+  const versions = registry[id as CourseId];
+  if (!versions) return false;
   const def = native ? versions[native] : Object.values(versions)[0];
   return Boolean(def && def.model.readyCities.length > 0);
 }
@@ -97,8 +123,9 @@ export let courseLessons = course.model.courseLessons;
 export let allPlannedLessons = course.model.allPlannedLessons;
 
 /** Switch the whole app to a course. Safe to call on every render. */
-export function setActiveCourse(id: CourseId | null | undefined, native?: UiLang | null) {
-  const next = id && courseReady(id, native) ? pick(id, native) : russianCourseDef;
+export function setActiveCourse(id: string | null | undefined, native?: UiLang | null, gender?: "m" | "f" | null) {
+  const base = id && courseReady(id, native) ? pick(id as CourseId, native) : russianCourseDef;
+  const next = gender === "f" && base.gender ? base.gender.female : base;
   if (next === course) return;
   course = next;
   ui = { ...uiText[next.uiLang], ...next.uiOverrides };

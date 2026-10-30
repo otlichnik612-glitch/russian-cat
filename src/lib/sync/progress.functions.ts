@@ -14,8 +14,8 @@ const id = z.string().min(1).max(80);
 const saveInput = z.object({
   token: z.string().min(1).max(4096),
   nativeLang: z.enum(["en", "ru"]).nullable(),
-  targetLang: z.enum(["ru", "tr", "en", "pt"]).nullable(),
-  course: z.enum(["ru", "tr", "en", "pt"]),
+  targetLang: z.enum(["ru", "tr", "en", "pt", "ar", "zh", "ko"]).nullable(),
+  course: z.enum(["ru", "tr", "en", "pt", "ar", "zh", "ko"]),
   progress: z.object({
     seenIntro: z.boolean(),
     completedLessonIds: z.array(id).max(5000),
@@ -28,8 +28,10 @@ const saveInput = z.object({
 
 export type SaveResult = {
   nativeLang: "en" | "ru" | null;
-  targetLang: "ru" | "tr" | "en" | "pt" | null;
+  targetLang: "ru" | "tr" | "en" | "pt" | "ar" | "zh" | "ko" | null;
   progress: SyncedProgress;
+  /** Finished lessons of every course on the account, by course. */
+  courses: Partial<Record<"ru" | "tr" | "en" | "pt" | "ar" | "zh" | "ko", string[]>>;
 };
 
 export const saveMyProgress = createServerFn({ method: "POST" })

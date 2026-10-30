@@ -9,13 +9,13 @@ import type { SaveResult } from "./progress.functions";
 
 type SaveData = {
   nativeLang: "en" | "ru" | null;
-  targetLang: "ru" | "tr" | "en" | "pt" | null;
-  course: "ru" | "tr" | "en" | "pt";
+  targetLang: "ru" | "tr" | "en" | "pt" | "ar" | "zh" | "ko" | null;
+  course: "ru" | "tr" | "en" | "pt" | "ar" | "zh" | "ko";
   progress: unknown;
 };
 
 const native = (v: unknown) => (v === "en" || v === "ru" ? v : null);
-const target = (v: unknown) => (v === "ru" || v === "tr" || v === "en" || v === "pt" ? v : null);
+const target = (v: unknown) => (v === "ru" || v === "tr" || v === "en" || v === "pt" || v === "ar" || v === "zh" || v === "ko" ? v : null);
 
 export async function saveProgressForUser(sql: Sql, userId: string, data: SaveData): Promise<SaveResult> {
   // Language choice: a value from this device wins; an empty one keeps what the account has.
@@ -95,6 +95,15 @@ export async function saveProgressForUser(sql: Sql, userId: string, data: SaveDa
       reset_at = excluded.reset_at,
       updated_at = now()`;
 
+  // Every course the account has finished lessons in (for the "My courses" list on any device).
+  const all = await sql<{ language: string; lesson_id: string }>`
+    select language, lesson_id from user_progress where user_id = ${userId} and completed`;
+  const courses: SaveResult["courses"] = {};
+  for (const r of all) {
+    const id = target(r.language);
+    if (id) (courses[id] ??= []).push(r.lesson_id);
+  }
+
   const row = settings[0];
-  return { nativeLang: native(row?.native_language), targetLang: target(row?.target_language), progress: merged };
+  return { nativeLang: native(row?.native_language), targetLang: target(row?.target_language), progress: merged, courses };
 }

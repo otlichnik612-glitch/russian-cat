@@ -1,18 +1,25 @@
 import { useEffect, useRef, useState } from "react";
 import { readyCities } from "@/lib/course/active";
 import { useProgress } from "@/lib/course/progress";
+import { useDeveloper } from "@/lib/identity/developer";
 import { Button } from "./ui";
 
 /**
- * Developer panel for testing the course. Learners never need it.
- * While the course is being written it is always visible (DEV_TOOLS_VISIBLE).
- * Before launch, set DEV_TOOLS_VISIBLE to false: the panel then opens only from a link with ?dev=1.
+ * Developer panel for testing the course. Learners never see it: only a developer account
+ * (its email in the Netlify variable DEVELOPER_EMAILS) or a device opened once with ?dev=1.
  * Built for VoiceOver: one heading per city, plain buttons, and every action is announced.
  */
-export const DEV_TOOLS_VISIBLE = true;
 
-export function devToolsEnabled(): boolean {
-  if (DEV_TOOLS_VISIBLE) return true;
+/**
+ * Test access (beta): every lesson of every course is open to everyone, the home screen has
+ * "Previous lesson" / "Next lesson" and a "Beta" label. Progress is saved as usual.
+ * Before launch, set TEST_ACCESS to false: lessons open in order again and the label goes away.
+ */
+export const TEST_ACCESS = true;
+
+/** A developer: a developer account is signed in, or this device was opened once with ?dev=1. */
+export function developerMode(): boolean {
+  if (useDeveloper.getState().developer) return true;
   try {
     if (new URLSearchParams(window.location.search).get("dev") === "1") {
       window.localStorage.setItem("russian-cat-dev", "1");
@@ -22,6 +29,22 @@ export function devToolsEnabled(): boolean {
   } catch {
     return false;
   }
+}
+
+/** Re-renders when the developer check comes back from the server. */
+export function useDeveloperMode(): boolean {
+  useDeveloper((state) => state.developer);
+  return developerMode();
+}
+
+/** The developer panel button: developers only. */
+export function devToolsEnabled(): boolean {
+  return developerMode();
+}
+
+/** Every lesson and every course with lessons is open: test access, or a developer. */
+export function useAllOpen(): boolean {
+  return useDeveloperMode() || TEST_ACCESS;
 }
 
 /** Mark every city before `cityIndex` as finished (lessons and farewell), plus the first `lessonsDone` lessons of that city. */

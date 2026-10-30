@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { images } from "@/lib/course/art";
+import { images, pic } from "@/lib/course/art";
 import {
   cityAfter,
   completedCities,
@@ -19,10 +19,10 @@ import {
 } from "@/lib/course/active";
 import { downloadFlashcards, downloadLessonDoc } from "@/lib/course/downloads";
 import { LESSONS_PER_CITY } from "@/lib/course/model";
-import { seenFinales, useProgress } from "@/lib/course/progress";
+import { seenFinales, startedCourses, useProgress } from "@/lib/course/progress";
 import type { Lesson } from "@/lib/course/types";
 import { useIdentity } from "@/lib/identity/client";
-import { devToolsEnabled } from "./dev";
+import { devToolsEnabled, TEST_ACCESS, useAllOpen, useDeveloperMode } from "./dev";
 import { Button, Card, Illustration, Meter, Picture, PlayButton, Ru, RussianLine } from "./ui";
 
 export function Splash() {
@@ -119,6 +119,8 @@ export function Home({
   onDev,
   onLanguages,
   onAccount,
+  onGender,
+  onCourses,
 }: {
   onLesson: (id: string) => void;
   onJourney: () => void;
@@ -129,7 +131,16 @@ export function Home({
   onDev: () => void;
   onLanguages: () => void;
   onAccount: () => void;
+  /** Courses that address the learner as a man or a woman: change that choice. */
+  onGender?: () => void;
+  /** Learners with two or more courses: open "My courses". */
+  onCourses: () => void;
 }) {
+  useDeveloperMode();
+  // Test access (beta) or a developer: every city and lesson is open, and "Previous / Next lesson" move freely.
+  const allOpen = useAllOpen();
+  const [pickedId, setPickedId] = useState<string | null>(null);
+  const courseCount = useProgress((state) => startedCourses(state).length);
   const signedIn = useIdentity((state) => state.status === "signed-in");
   const completed = useProgress((state) => state.completedLessonIds);
   const ceremonySeen = useProgress((state) => state.ceremonySeen);
@@ -148,23 +159,42 @@ export function Home({
   const lastStory = readyCities[readyCities.length - 1]?.story;
   const arrival = lastStory?.finale[lastStory.finale.length - 1];
   const upcoming = cityAfter(readyCities[readyCities.length - 1]?.id ?? "");
-  const openCities = readyCities.filter(
-    (c) => c.id === current?.id || c.lessons.some((lesson) => completed.includes(lesson.id)),
-  );
+  const picked = pickedId ? (courseLessons.find((lesson) => lesson.id === pickedId) ?? null) : null;
+  const shown = picked ?? next;
+  const shownCity = shown ? getCity(shown.cityId) : undefined;
+  const shownIndex = shown ? courseLessons.findIndex((lesson) => lesson.id === shown.id) : courseLessons.length;
+  const go = (index: number) => {
+    const lesson = courseLessons[index];
+    if (lesson) setPickedId(lesson.id);
+  };
+  const openCities = allOpen
+    ? readyCities
+    : readyCities.filter((c) => c.id === current?.id || c.lessons.some((lesson) => completed.includes(lesson.id)));
 
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col gap-6 px-5 py-6">
+      {TEST_ACCESS ? (
+        <p className="-mb-3 flex items-center gap-2 self-start text-base font-bold text-muted">
+          <Picture src={pic("ui/beta")} className="size-10 shrink-0 rounded-full bg-paper-deep object-cover" />
+          {ui.beta}
+        </p>
+      ) : null}
       <header className="flex items-center gap-4">
         <img src={images.murzik} alt="" className="size-16 rounded-full object-cover" />
         <div>
           <h1 className="font-display text-3xl">Talky Kitty</h1>
-          <p lang="ru" className="font-sans text-lg font-bold">
+          <p lang={/[А-Яа-яЁё]/.test(course.title) ? "ru" : "en"} className="font-sans text-lg font-bold">
             {course.title}
           </p>
         </div>
       </header>
+      {courseCount >= 2 ? (
+        <Button variant="ghost" onClick={onCourses}>
+          {ui.myCourses}
+        </Button>
+      ) : null}
       <Card className="flex flex-col gap-4">
-        {finale?.story ? (
+        {!picked && finale?.story ? (
           <>
             <p className="text-base font-bold text-garden">
               {levelOf(finale.id)} · {ui.cityComplete(finale.name)}
@@ -178,25 +208,27 @@ export function Home({
             />
             <Button onClick={() => onFinale(finale.id)}>{ui.continue}</Button>
           </>
-        ) : next && current ? (
+        ) : shown && shownCity ? (
           <>
             <p className="text-base font-bold text-garden">
-              {ui.lessonOf(next.level, current.name, next.number, LESSONS_PER_CITY)}
+              {ui.lessonOf(shown.level, shownCity.name, shown.number, LESSONS_PER_CITY)}
             </p>
-            {next.number === 1 && current.story && current.id !== readyCities[0]?.id ? (
+            {shown.number === 1 && shownCity.story && shownCity.id !== readyCities[0]?.id ? (
               <>
                 <h2 className="text-4xl">
-                  <Ru>{current.story.welcomeRu}</Ru>
+                  <Ru>{shownCity.story.welcomeRu}</Ru>
                 </h2>
-                <p>{current.story.welcomeEn}</p>
-                <Illustration src={current.story.welcomeImage} a11y={current.story.welcomeA11y} />
+                <p>{shownCity.story.welcomeEn}</p>
+                <Illustration src={shownCity.story.welcomeImage} a11y={shownCity.story.welcomeA11y} />
               </>
             ) : null}
-            <h2 className="font-display text-4xl">{next.title}</h2>
-            <p>{ui.aboutMinutes(next.minutes)}</p>
-            <Button onClick={() => onLesson(next.id)}>
-              {draft?.lessonId === next.id
+            <h2 className="font-display text-4xl">{shown.title}</h2>
+            <p>{ui.aboutMinutes(shown.minutes)}</p>
+            <Button onClick={() => onLesson(shown.id)}>
+              {draft?.lessonId === shown.id
                 ? ui.continueLesson
+                : completed.includes(shown.id)
+                  ? ui.reviewThisLesson
                 : doneLessons === 0
                   ? ui.startLesson1
                   : ui.newLesson}
@@ -230,6 +262,25 @@ export function Home({
             </Button>
           </>
         )}
+        {allOpen && courseLessons.length > 1 ? (
+          <div className="grid grid-cols-2 gap-3">
+            {/* VoiceOver hears which lesson is shown now; focus stays on the button. */}
+            <p role="status" className="sr-only col-span-2">
+              {picked && shownCity ? `${ui.lessonOf(picked.level, shownCity.name, picked.number, LESSONS_PER_CITY)}. ${picked.title}` : ""}
+            </p>
+            <Button variant="ghost" disabled={shownIndex <= 0} onClick={() => go(shownIndex - 1)} className="px-3 disabled:opacity-45">
+              {ui.previousLesson}
+            </Button>
+            <Button
+              variant="ghost"
+              disabled={shownIndex >= courseLessons.length - 1}
+              onClick={() => go(shownIndex + 1)}
+              className="px-3 disabled:opacity-45"
+            >
+              {ui.followingLesson}
+            </Button>
+          </div>
+        ) : null}
       </Card>
       <Card className="flex flex-col gap-4">
         <h2 className="font-display text-2xl">{ui.yourProgress}</h2>
@@ -254,7 +305,7 @@ export function Home({
               key={lesson.id}
               lesson={lesson}
               state={
-                completed.includes(lesson.id) ? "done" : next?.id === lesson.id ? "now" : "locked"
+                completed.includes(lesson.id) ? "done" : next?.id === lesson.id || allOpen ? "now" : "locked"
               }
               onOpen={() => onLesson(lesson.id)}
             />
@@ -283,6 +334,12 @@ export function Home({
         <Button variant="quiet" onClick={onLanguages}>
           {ui.changeLanguage}
         </Button>
+        {course.translit ? <TranslitSwitch /> : null}
+        {course.gender && onGender ? (
+          <Button variant="quiet" onClick={onGender}>
+            {course.gender.question.change}
+          </Button>
+        ) : null}
       </div>
       {devToolsEnabled() ? (
         <Button variant="ghost" onClick={onDev}>
@@ -595,6 +652,64 @@ export function Finale({ cityId, onDone }: { cityId: string; onDone: () => void 
         </Card>
       ) : null}
       <Button onClick={() => (last ? finish() : setIndex(index + 1))}>{ui.continue}</Button>
+    </main>
+  );
+}
+
+/** “Show the transcription”: an on/off switch on the home screen of courses that have a transcription. */
+function TranslitSwitch() {
+  const show = useProgress((state) => state.showTranslit);
+  const setShow = useProgress((state) => state.setShowTranslit);
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={show}
+      className="inline-flex min-h-12 items-center gap-3 px-3 text-lg font-bold text-garden"
+      onClick={() => setShow(!show)}
+    >
+      <span
+        aria-hidden
+        className={`inline-flex h-7 w-12 items-center rounded-full p-1 ${show ? "justify-end bg-garden" : "justify-start bg-line"}`}
+      >
+        <span className="size-5 rounded-full bg-card" />
+      </span>
+      {ui.showTranslit}
+    </button>
+  );
+}
+
+/** Asked once, after the intro, in courses where the language says “you” differently to a man and a woman. */
+export function GenderScreen({ onDone }: { onDone: () => void }) {
+  const setGender = useProgress((state) => state.setLearnerGender);
+  const heading = useRef<HTMLHeadingElement>(null);
+  useEffect(() => heading.current?.focus(), []);
+  const q = course.gender?.question;
+  if (!q) return null;
+  return (
+    <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 bg-paper px-5 py-6">
+      <h1 ref={heading} tabIndex={-1} className="font-display text-3xl">
+        {q.title}
+      </h1>
+      <p className="text-xl">{q.text}</p>
+      <div className="grid gap-3">
+        <Button
+          onClick={() => {
+            setGender("m");
+            onDone();
+          }}
+        >
+          {q.male}
+        </Button>
+        <Button
+          onClick={() => {
+            setGender("f");
+            onDone();
+          }}
+        >
+          {q.female}
+        </Button>
+      </div>
     </main>
   );
 }

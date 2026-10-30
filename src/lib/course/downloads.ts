@@ -59,7 +59,7 @@ const sheetText = {
     fold: "сгиб",
     back: "ОБОРОТ",
     cardsHeader: (n: number) => `Talky Kitty  ·  Карточки урока ${n}  ·  Разрежь по пунктиру  ·  Согни по средней линии`,
-    file: "Talky-Kitty-Turkish-Lesson",
+    file: "Talky-Kitty-Lesson",
     cardsFile: "Cards",
   },
 };
@@ -73,7 +73,8 @@ function saveBlob(blob: Blob, filename: string) {
   document.body.appendChild(a);
   a.click();
   a.remove();
-  URL.revokeObjectURL(url);
+  // iPhone reads the file a moment after the tap, so the link must stay valid for a while.
+  setTimeout(() => URL.revokeObjectURL(url), 60_000);
 }
 
 function slug(title: string) {
@@ -308,5 +309,6 @@ export async function downloadFlashcards(lesson: Lesson) {
     }
   });
 
-  pdf.save(`${t().file}-${lesson.number}-${t().cardsFile}.pdf`);
+  // Not pdf.save(): on iPhone it opens an extra web page next to the download. Only the file is saved.
+  saveBlob(pdf.output("blob"), `${t().file}-${lesson.number}-${t().cardsFile}.pdf`);
 }

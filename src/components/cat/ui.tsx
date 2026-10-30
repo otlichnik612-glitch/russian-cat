@@ -2,7 +2,9 @@ import { Volume2 } from "lucide-react";
 import { forwardRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { course, isTarget, stopLabel, ui } from "@/lib/course/active";
+import { pic } from "@/lib/course/art";
 import type { VoiceId } from "@/lib/course/audio";
+import { useProgress } from "@/lib/course/progress";
 import { useSpeech } from "@/lib/course/speech";
 
 export const Button = forwardRef<
@@ -25,20 +27,41 @@ export const Button = forwardRef<
   );
 });
 
+/**
+ * A phrase in the language being learned, with its own `lang` (VoiceOver reads it with that voice)
+ * and, for right-to-left languages, `dir`. If the course has a transcription and it is switched on,
+ * it is shown on the next line, in the learner's own language.
+ */
 export function Ru({ children, className }: { children: string; className?: string }) {
-  return (
-    <span lang={course.htmlLang} className={cn("font-sans font-bold", className)}>
+  const show = useProgress((state) => state.showTranslit);
+  const translit = show ? course.translit?.(children) : undefined;
+  const phrase = (
+    <span lang={course.htmlLang} dir={course.rtl ? "rtl" : undefined} className={cn("font-sans font-bold", className)}>
       {children}
+    </span>
+  );
+  if (!translit) return phrase;
+  return (
+    <span className="inline-flex flex-col">
+      {phrase}
+      <span lang={course.uiLang} className="text-base font-normal text-muted">
+        {translit}
+      </span>
     </span>
   );
 }
 
+/**
+ * “Listen” and, next to it, “Slowly” (a sleepy Murzik): the same phrase at about 0.7 of the normal speed.
+ * VoiceOver reads the second one as the same label + “slowly”.
+ */
 export function PlayButton({
   id,
   text,
   label,
   lang,
   voice,
+  noSlow,
 }: {
   id: string;
   text: string;
@@ -46,22 +69,43 @@ export function PlayButton({
   lang?: string;
   /** Who says it. Leave empty for Murzik's narrator voice. */
   voice?: VoiceId;
+  /** No “Slowly” button (next to answer options, where there is no room for two). */
+  noSlow?: boolean;
 }) {
   const { playing, play, stop } = useSpeech();
   const on = playing === id;
+  const slowId = `${id}~slow`;
+  const slowOn = playing === slowId;
   return (
-    <button
-      type="button"
-      className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-full bg-garden px-4 text-base font-bold text-on-garden"
-      aria-label={on ? stopLabel(label) : label}
-      aria-pressed={on}
-      onClick={() => (on ? stop() : play(id, text, lang ?? course.speechLang, voice))}
-    >
-      <Volume2 aria-hidden className="size-5" />
-      <span aria-hidden>{on ? ui.stop : ui.listen}</span>
-    </button>
+    <span className="inline-flex shrink-0 items-center gap-2">
+      <button
+        type="button"
+        className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-full bg-garden px-4 text-base font-bold text-on-garden"
+        aria-label={on ? stopLabel(label) : label}
+        aria-pressed={on}
+        onClick={() => (on ? stop() : play(id, text, lang ?? course.speechLang, voice))}
+      >
+        <Volume2 aria-hidden className="size-5" />
+        <span aria-hidden>{on ? ui.stop : ui.listen}</span>
+      </button>
+      {noSlow ? null : (
+      <button
+        type="button"
+        className="inline-flex min-h-12 shrink-0 items-center gap-1 rounded-full border border-garden bg-card py-1 pr-3 pl-1 text-base font-bold text-garden"
+        aria-label={`${slowOn ? stopLabel(label) : label} — ${ui.slowLabel}`}
+        aria-pressed={slowOn}
+        onClick={() => (slowOn ? stop() : play(slowId, text, lang ?? course.speechLang, voice, true))}
+      >
+        <Picture src={SLOW_PICTURE} className="size-10 rounded-full object-cover" />
+        <span aria-hidden>{slowOn ? ui.stop : ui.slow}</span>
+      </button>
+      )}
+    </span>
   );
 }
+
+/** The sleepy Murzik on the “Slowly” button. */
+const SLOW_PICTURE = pic("ui/slow");
 
 export function Illustration({
   src,

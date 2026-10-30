@@ -45,9 +45,9 @@ The two very first screens (choose your language, choose a course). No flags, no
 - `public/art/languages/2.jpg` — scene — Languages target
   - Draw: Murzik on cream paper with dotted travel lines between little cities. He happily balances a small globe on one paw like a ball, eyes shining, scarf fluttering. His suitcase stands at his feet.
 
-## Language buttons (3 pictures)
+## Language buttons (7 pictures)
 
-Small round pictures on the language buttons. **These are the only pictures in the whole app that may show flags:** the American and British flags for English and the Turkish flag for Turkish. Russian has **no flag**. Square 1408 × 1408, but keep everything inside the central circle: the app shows them as small round badges. No words or letters.
+Small round pictures on the language buttons. **These are the only pictures in the whole app that may show flags:** the American and British flags for English, the Turkish flag for Turkish, the Chinese flag for Chinese, the South Korean flag for Korean and the French flag for French. Russian and Arabic have **no flag**. Arabic, Chinese and Korean are shown as “coming soon”, so their badges appear faded. Square 1408 × 1408, but keep everything inside the central circle: the app shows them as small round badges. No words or letters.
 
 - `public/art/languages/en.jpg` — reward — Language button English
   - Draw: Murzik stands between a small American flag and a small British flag on little poles. He holds a paper takeaway coffee cup in one paw and happily waves with the other, like a tourist in New York. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
@@ -55,6 +55,28 @@ Small round pictures on the language buttons. **These are the only pictures in t
   - Draw: Murzik sits next to a shiny brass samovar with a cup of tea, smiling. Beside him stand three colourful matryoshka dolls of different sizes. No flag. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
 - `public/art/languages/tr.jpg` — reward — Language button Turkish
   - Draw: Murzik stands proudly, chest out, next to a Turkish flag on a small pole. In one paw he holds a tulip-shaped glass of tea, in the other a round sesame simit. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
+- `public/art/languages/ar.jpg` — reward — Language button Arabic
+  - Draw: Murzik sits happily on a small, friendly camel with a colourful saddle blanket. Behind them rises a golden sand dune with a single palm tree. No flag (Arabic is spoken in many countries). Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
+- `public/art/languages/zh.jpg` — reward — Language button Chinese
+  - Draw: Murzik holds a round red paper lantern with a golden tassel, smiling, next to a small Chinese flag on a little pole. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
+- `public/art/languages/ko.jpg` — reward — Language button Korean
+  - Draw: Murzik holds a small film clapperboard (no writing on it), ready to snap it shut, like on a TV set, next to a small South Korean flag on a little pole. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
+- `public/art/languages/fr.jpg` — reward — Language button French (first screen, coming soon)
+  - Draw: Murzik sits at a small round Paris café table. On the table a little white plate with a golden croissant and a tiny cup of coffee. In one paw he holds a small French flag on a little stick, smiling. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge.
+
+## Button “Slowly” (1 picture)
+
+A tiny round icon on the second play button, “Slowly”: the phrase is played slower. Shown very small, so keep it simple and clear.
+
+- `public/art/ui/slow.jpg` — reward — Button Slowly (sleepy Murzik)
+  - Draw: Sleepy Murzik: only his head and front paws, eyes half closed, a big slow yawn, ears a little droopy, a tiny pillow under his chin. Calm and cute, not tired-sad. Square picture, cream background; keep everything inside the central circle, because the app shows it as a very small round icon on a button.
+
+## Beta label (1 picture)
+
+A small round picture next to the word “Beta” in the top left corner of the home screen, while the app is being tested.
+
+- `public/art/ui/beta.jpg` — reward — Beta label (Murzik mending something)
+  - Draw: Murzik sits on the floor with a thoughtful face, one paw on his chin, mending something: a small hammer in his other paw, a big metal nut lying next to him, a couple of screws scattered around. Calm and cute, a little puzzled, not stressed. No words, no letters. Square picture, cream background; keep everything inside the central circle, because the app shows it as a small round badge next to the word “Beta”.
 
 ## Prologue (3 pictures)
 
@@ -6977,3 +6999,2150 @@ The fourth course, «Мурзик и попугай» / “Murzik and the Parrot
   - Draw: Murzik, Bia and the musicians board a plane with their instruments. Pipoca is on Murzik's shoulder.
 - `public/art/pt/belem/suitcase.jpg` — scene — PT Belém farewell 2
   - Draw: Murzik's open suitcase: the album, the compass, the jars of river water, the opera ticket, the gourd bowl, the yellow raincoat, the signed drumstick and many more things from the journey.
+
+# Arabic course
+
+The fifth course, «Сюрприз для бабушки»: Arabic for Russian speakers. Murzik and Karim secretly gather the whole family from different countries for Grandma Fatima's 90th birthday in Abu Dhabi. The story starts in Paris; the lessons start in Marrakesh. All pictures go to `public/art/ar/<city>/`. The `draw` notes for this course are written in Russian — draw exactly what they say.
+
+## Style and cast for the Arabic course
+
+- Same storybook style and the same **Murzik** as in the other courses. Tom is **not** in this course.
+- **No flags. No words or letters** in the pictures, Arabic included (numbers on clocks and price tags are fine). Handwriting on the back of a photo or on a note is drawn as squiggles, not real letters.
+- **Only Murzik is a talking cat.** Everyone else is a human. Street cats are ordinary cats.
+- **Karim**: a tall, slim young man of about 20, dark curly hair, a kind smile, a checked shirt, always with a sketchbook. Murzik's companion in every city. Same look in every picture.
+- **Grandma Fatima**: about 90, a light headscarf, warm eyes. She appears in old photos and in the finale only (before that only her voice on the phone).
+- **The family who join along the way** (they stay in the pictures of the later cities): Aunt Amina (Morocco, plump and cheerful, colourful headscarf, always with bags of food), cousin Salma (Tunisia, a student with a guitar), cousin Hana (Cairo, a museum guide with glasses), Uncle Yusuf (Jordan, big moustache, drives an old minibus), cousin Naser with his wife Laila and baby Ali (Saudi Arabia), Great-uncle Said (Oman, white beard, white dishdasha).
+- Respectful and calm: mosques only from outside, modest clothes, no alcohol, no pork. No politics.
+- Phrase pictures and rewards: square, 1408 × 1408. Scenes: portrait, 1152 × 1728.
+
+## Arabic course — Prologue (Paris) (3 pictures)
+
+- `public/art/ar/prologue/1.jpg` — scene — AR Prologue find
+  - Draw: Утро в Париже. В дверях квартиры Мурзика стоит его сосед Карим — высокий юноша с альбомом для рисования. В руках у него старая фотография.
+- `public/art/ar/prologue/2.jpg` — scene — AR Prologue postcard
+  - Draw: Старая фотография крупно: пожилая женщина в светлом платке улыбается за большим столом, вокруг пустые стулья. На обороте несколько строк арабским почерком.
+- `public/art/ar/prologue/3.jpg` — scene — AR Prologue journey
+  - Draw: Мурзик и Карим с чемоданами у самолёта. За иллюминаторами вдали — красные стены Марракеша и горы.
+
+## Arabic course — Karim (intro) (1 pictures)
+
+- `public/art/ar/karim.jpg` — reward — AR intro (Karim)
+  - Draw: Карим — высокий худощавый юноша лет двадцати, тёмные вьющиеся волосы, добрая улыбка, клетчатая рубашка, под мышкой альбом для рисования. Машет рукой. Квадратная картинка, тот же Карим, что на всех картинках арабского курса.
+
+## Arabic course — Marrakesh (59 pictures)
+
+- `public/art/ar/marrakesh/l1-2.jpg` — phrase — AR Марракеш 1 vocab «أَهْلًا وَسَهْلًا»
+  - Draw: Хозяин риада широко распахивает резную деревянную дверь.
+- `public/art/ar/marrakesh/l1-3.jpg` — phrase — AR Марракеш 1 vocab «السَّلَامُ عَلَيْكُمْ»
+  - Draw: Карим прикладывает руку к сердцу и слегка кланяется хозяину риада.
+- `public/art/ar/marrakesh/l1-4.jpg` — phrase — AR Марракеш 1 vocab «وَعَلَيْكُمُ السَّلَام»
+  - Draw: Хозяин риада отвечает тем же жестом, рука у сердца.
+- `public/art/ar/marrakesh/l1-5.jpg` — phrase — AR Марракеш 1 vocab «صَبَاحُ الْخَيْر»
+  - Draw: Утро во дворике риада: солнце над апельсиновым деревом, Карим с чашкой чая.
+- `public/art/ar/marrakesh/l1-6.jpg` — phrase — AR Марракеш 1 vocab «صَبَاحُ النُّور»
+  - Draw: Мурзик сонно потягивается на подушке и улыбается.
+- `public/art/ar/marrakesh/l1-7.jpg` — phrase — AR Марракеш 1 vocab «أَنَا مُورْزِيك.»
+  - Draw: Мурзик гордо кладёт лапку себе на грудь.
+- `public/art/ar/marrakesh/wisada.jpg` — reward — AR Марракеш 1 reward «وِسَادَة»
+  - Draw: Круглая кожаная подушка-пуф с вышитым узором лежит в комнатке на крыше риада. Мурзик уже уселся на неё.
+- `public/art/ar/marrakesh/l2-1.jpg` — phrase — AR Марракеш 2 vocab «كَيْفَ حَالُكَ؟»
+  - Draw: Карим наклоняется к Мурзику и заботливо спрашивает.
+- `public/art/ar/marrakesh/l2-2.jpg` — phrase — AR Марракеш 2 vocab «بِخَيْر، الْحَمْدُ لِلَّه.»
+  - Draw: Мурзик улыбается и поднимает большой палец.
+- `public/art/ar/marrakesh/l2-3.jpg` — phrase — AR Марракеш 2 vocab «وَأَنْتَ؟»
+  - Draw: Мурзик показывает лапкой на Карима.
+- `public/art/ar/marrakesh/l2-4.jpg` — phrase — AR Марракеш 2 vocab «جَيِّدٌ جِدًّا.»
+  - Draw: Мурзик радостно подпрыгивает на подушке.
+- `public/art/ar/marrakesh/l2-5.jpg` — phrase — AR Марракеш 2 vocab «أَنَا تَعْبَان.»
+  - Draw: Карим зевает над чашкой чая.
+- `public/art/ar/marrakesh/l2-6.jpg` — phrase — AR Марракеш 2 vocab «لَا بَأْس.»
+  - Draw: Мурзик пожимает плечами и машет лапкой.
+- `public/art/ar/marrakesh/l2-7.jpg` — phrase — AR Марракеш 2 vocab «كَيْفَ الْحَال؟»
+  - Draw: Хозяин риада выходит во дворик и здоровается со всеми.
+- `public/art/ar/marrakesh/fanus.jpg` — reward — AR Марракеш 2 reward «فَانُوس»
+  - Draw: Резной медный фонарь висит под потолком комнатки, по стенам рассыпаются узоры из света.
+- `public/art/ar/marrakesh/l3-1.jpg` — phrase — AR Марракеш 3 vocab «مَا اسْمُكَ؟»
+  - Draw: Хозяин риада с любопытством наклоняется к Мурзику.
+- `public/art/ar/marrakesh/l3-2.jpg` — phrase — AR Марракеш 3 vocab «اِسْمِي كَرِيم.»
+  - Draw: Карим, высокий юноша с альбомом для рисования под мышкой, протягивает руку.
+- `public/art/ar/marrakesh/l3-3.jpg` — phrase — AR Марракеш 3 vocab «تَشَرَّفْنَا!»
+  - Draw: Хозяин риада и Карим пожимают руки.
+- `public/art/ar/marrakesh/l3-4.jpg` — phrase — AR Марракеш 3 vocab «أَنَا طَالِب.»
+  - Draw: Карим показывает альбом с набросками старых домов.
+- `public/art/ar/marrakesh/l3-5.jpg` — phrase — AR Марракеш 3 vocab «هَذَا مُورْزِيك.»
+  - Draw: Карим с улыбкой показывает на Мурзика.
+- `public/art/ar/marrakesh/l3-6.jpg` — phrase — AR Марракеш 3 vocab «أَنَا قِطّ.»
+  - Draw: Мурзик гордо распушает хвост.
+- `public/art/ar/marrakesh/l3-7.jpg` — phrase — AR Марракеш 3 vocab «وَأَنَا أَيْضًا.»
+  - Draw: Мурзик радостно поднимает лапку.
+- `public/art/ar/marrakesh/salla.jpg` — reward — AR Марракеш 3 reward «سَلَّة»
+  - Draw: Плетёная корзинка из пальмовых листьев с цветными узорами стоит у кровати, в ней клубок и альбом Карима.
+- `public/art/ar/marrakesh/l4-1.jpg` — phrase — AR Марракеш 4 vocab «شُكْرًا!»
+  - Draw: Мурзик прикладывает лапку к сердцу.
+- `public/art/ar/marrakesh/l4-2.jpg` — phrase — AR Марракеш 4 vocab «شُكْرًا جَزِيلًا!»
+  - Draw: Мурзик кланяется хозяину риада с чашкой в лапах.
+- `public/art/ar/marrakesh/l4-3.jpg` — phrase — AR Марракеш 4 vocab «عَفْوًا!»
+  - Draw: Хозяин риада добродушно машет рукой.
+- `public/art/ar/marrakesh/l4-4.jpg` — phrase — AR Марракеш 4 vocab «مِنْ فَضْلِكَ / مِنْ فَضْلِكِ»
+  - Draw: Карим протягивает пустой стакан и вежливо просит ещё.
+- `public/art/ar/marrakesh/l4-5.jpg` — phrase — AR Марракеш 4 vocab «آسِف!»
+  - Draw: Мурзик виновато прижимает уши: на скатерти лужица чая.
+- `public/art/ar/marrakesh/l4-6.jpg` — phrase — AR Марракеш 4 vocab «لَا مُشْكِلَة!»
+  - Draw: Хозяин риада вытирает стол и улыбается.
+- `public/art/ar/marrakesh/l4-7.jpg` — phrase — AR Марракеш 4 vocab «تَفَضَّلْ!»
+  - Draw: Хозяин риада протягивает поднос со стаканчиками чая.
+- `public/art/ar/marrakesh/kuus.jpg` — reward — AR Марракеш 4 reward «كُؤُوسُ الشَّاي»
+  - Draw: На подоконнике стоят четыре маленьких стаканчика из цветного стекла с золотым узором и серебряный чайничек.
+- `public/art/ar/marrakesh/l5-1.jpg` — phrase — AR Марракеш 5 vocab «نَعَم.»
+  - Draw: Мурзик кивает.
+- `public/art/ar/marrakesh/l5-2.jpg` — phrase — AR Марракеш 5 vocab «لَا.»
+  - Draw: Мурзик мотает головой.
+- `public/art/ar/marrakesh/l5-3.jpg` — phrase — AR Марракеш 5 vocab «لَا أَفْهَم.»
+  - Draw: Мурзик растерянно чешет за ухом посреди шумного рынка.
+- `public/art/ar/marrakesh/l5-4.jpg` — phrase — AR Марракеш 5 vocab «مَرَّةً أُخْرَى، مِنْ فَضْلِكَ.»
+  - Draw: Мурзик поднимает один палец: «ещё раз».
+- `public/art/ar/marrakesh/l5-5.jpg` — phrase — AR Марракеш 5 vocab «هَلْ تَتَكَلَّمُ الْعَرَبِيَّة؟»
+  - Draw: Продавец апельсинов с интересом смотрит на Мурзика.
+- `public/art/ar/marrakesh/l5-6.jpg` — phrase — AR Марракеш 5 vocab «نَعَم، قَلِيلًا.»
+  - Draw: Мурзик показывает двумя пальцами: «чуть-чуть».
+- `public/art/ar/marrakesh/l5-7.jpg` — phrase — AR Марракеш 5 vocab «رُبَّمَا.»
+  - Draw: Мурзик задумчиво смотрит на гору фиников.
+- `public/art/ar/marrakesh/sajjada.jpg` — reward — AR Марракеш 5 reward «سَجَّادَة»
+  - Draw: Маленький шерстяной коврик с красно-оранжевыми ромбами лежит на полу комнатки.
+- `public/art/ar/marrakesh/l6-1.jpg` — phrase — AR Марракеш 6 vocab «هَذِهِ عَمَّتِي أَمِينَة.»
+  - Draw: Карим обнимает за плечи улыбчивую женщину в цветном платке.
+- `public/art/ar/marrakesh/l6-2.jpg` — phrase — AR Марракеш 6 vocab «أَهْلًا يَا حَبِيبِي!»
+  - Draw: Тётя Амина целует Карима в обе щеки.
+- `public/art/ar/marrakesh/l6-3.jpg` — phrase — AR Марракеш 6 vocab «كُلْ!»
+  - Draw: Тётя Амина ставит перед Мурзиком полную тарелку.
+- `public/art/ar/marrakesh/l6-4.jpg` — phrase — AR Марракеш 6 vocab «لَذِيذ!»
+  - Draw: Мурзик облизывается, глаза довольно зажмурены.
+- `public/art/ar/marrakesh/l6-5.jpg` — phrase — AR Марракеш 6 vocab «هَذَا طَاجِين.»
+  - Draw: Глиняный тажин с высокой конической крышкой, из-под неё идёт пар.
+- `public/art/ar/marrakesh/l6-6.jpg` — phrase — AR Марракеш 6 vocab «سِرّ»
+  - Draw: Карим прижимает палец к губам: тсс!
+- `public/art/ar/marrakesh/l6-7.jpg` — phrase — AR Марракеш 6 vocab «لَا تَقُولُوا لِلْجَدَّة!»
+  - Draw: Карим, Мурзик и тётя Амина шепчутся, прижав пальцы к губам.
+- `public/art/ar/marrakesh/siniya.jpg` — reward — AR Марракеш 6 reward «صِينِيَّة»
+  - Draw: Круглый медный поднос с чеканным узором стоит на низком столике, на нём стаканчики для чая.
+- `public/art/ar/marrakesh/l7-1.jpg` — phrase — AR Марракеш 7 vocab «مَعَ السَّلَامَة!»
+  - Draw: Хозяин риада машет у резной двери.
+- `public/art/ar/marrakesh/l7-2.jpg` — phrase — AR Марракеш 7 vocab «إِلَى اللِّقَاء!»
+  - Draw: Мурзик машет хозяину обеими лапками.
+- `public/art/ar/marrakesh/l7-3.jpg` — phrase — AR Марракеш 7 vocab «تُصْبِحُ عَلَى خَيْر!»
+  - Draw: Ночь над Марракешем, на крыше риада горит фонарик.
+- `public/art/ar/marrakesh/l7-4.jpg` — phrase — AR Марракеш 7 vocab «هَيَّا بِنَا!»
+  - Draw: Тётя Амина решительно берёт сразу три сумки.
+- `public/art/ar/marrakesh/l7-5.jpg` — phrase — AR Марракеш 7 vocab «الْحَقِيبَةُ ثَقِيلَة!»
+  - Draw: Мурзик изо всех сил тянет огромный чемодан тёти Амины.
+- `public/art/ar/marrakesh/l7-6.jpg` — phrase — AR Марракеш 7 vocab «إِلَى فَاس!»
+  - Draw: Карим показывает на карте город Фес.
+- `public/art/ar/marrakesh/l7-7.jpg` — phrase — AR Марракеш 7 vocab «رِحْلَةً سَعِيدَة!»
+  - Draw: Хозяин риада желает доброй дороги, рука у сердца.
+- `public/art/ar/marrakesh/tajin.jpg` — reward — AR Марракеш 7 reward «طَاجِين»; AR Марракеш farewell 2
+  - Draw: Глиняный тажин с высокой конической крышкой, расписанный синими и жёлтыми цветами. Тётя Амина бережно заворачивает его в платок.
+- `public/art/ar/marrakesh/arrival.jpg` — scene — AR Марракеш welcome
+  - Draw: Мурзик и Карим с чемоданами на шумной площади Марракеша: апельсиновые деревья, красные стены, вдали снежные вершины гор.
+- `public/art/ar/marrakesh/departure.jpg` — scene — AR Марракеш departure; AR Марракеш farewell 4
+  - Draw: Хозяин риада машет у резной двери. Мурзик, Карим и тётя Амина с огромными сумками идут к такси.
+- `public/art/ar/marrakesh/phone.jpg` — scene — AR Марракеш farewell 1
+  - Draw: Вечер на крыше риада. Карим говорит по телефону и прикрывает трубку ладонью, рядом тётя Амина смеётся и прижимает палец к губам, Мурзик сидит на чемодане.
+- `public/art/ar/marrakesh/road.jpg` — scene — AR Марракеш farewell 5
+  - Draw: Поезд мчится на север мимо красной земли и оливковых рощ. В окне — Мурзик, Карим и тётя Амина с сумками.
+
+## Arabic course — Fes (60 pictures)
+
+- `public/art/ar/fes/arrival.jpg` — scene — AR Марракеш farewell 6; AR Фес welcome
+  - Draw: Мурзик, Карим и тётя Амина у синих ворот старого Феса, за воротами узкие улочки медины.
+- `public/art/ar/fes/l1-1.jpg` — phrase — AR Фес 1 vocab «مَا هَذَا؟»
+  - Draw: Мурзик показывает лапкой на огромные резные ворота.
+- `public/art/ar/fes/l1-2.jpg` — phrase — AR Фес 1 vocab «هَذَا بَاب.»
+  - Draw: Синие ворота старого Феса с узором из мозаики.
+- `public/art/ar/fes/l1-3.jpg` — phrase — AR Фес 1 vocab «هَذِهِ مَدِينَةٌ قَدِيمَة.»
+  - Draw: Вид сверху на тысячи крыш старого Феса.
+- `public/art/ar/fes/l1-4.jpg` — phrase — AR Фес 1 vocab «هَذَا زُقَاقٌ صَغِير.»
+  - Draw: Узкий переулок, по нему едва проходит ослик с поклажей.
+- `public/art/ar/fes/l1-5.jpg` — phrase — AR Фес 1 vocab «هَذِهِ نَافُورَة.»
+  - Draw: Старинный фонтан из мозаичной плитки, из него течёт вода.
+- `public/art/ar/fes/l1-6.jpg` — phrase — AR Фес 1 vocab «هَذَا جَمِيل!»
+  - Draw: Мурзик восхищённо смотрит на мозаику, прижав лапки к груди.
+- `public/art/ar/fes/l1-7.jpg` — phrase — AR Фес 1 vocab «لَا أَعْرِف.»
+  - Draw: Карим растерянно разводит руками над картой.
+- `public/art/ar/fes/tabaq.jpg` — reward — AR Фес 1 reward «طَبَق»
+  - Draw: Расписная керамическая тарелка с синим узором из цветов и завитков висит на белой стене.
+- `public/art/ar/fes/l2-1.jpg` — phrase — AR Фес 2 vocab «صِفْر، وَاحِد، اِثْنَان»
+  - Draw: Мурзик показывает пустую лапку, потом один палец, потом два.
+- `public/art/ar/fes/l2-2.jpg` — phrase — AR Фес 2 vocab «ثَلَاثَة، أَرْبَعَة، خَمْسَة»
+  - Draw: Три, четыре, пять стаканчиков чая в ряд на подносе.
+- `public/art/ar/fes/l2-3.jpg` — phrase — AR Фес 2 vocab «سِتَّة، سَبْعَة، ثَمَانِيَة»
+  - Draw: Восемь синих тарелок на стене мастерской.
+- `public/art/ar/fes/l2-4.jpg` — phrase — AR Фес 2 vocab «تِسْعَة، عَشَرَة»
+  - Draw: Десять чемоданов тёти Амины выстроились в ряд.
+- `public/art/ar/fes/l2-5.jpg` — phrase — AR Фес 2 vocab «كَمْ؟»
+  - Draw: Карим удивлённо пересчитывает чемоданы.
+- `public/art/ar/fes/l2-6.jpg` — phrase — AR Фес 2 vocab «٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩»
+  - Draw: Табличка с арабскими цифрами от нуля до девяти.
+- `public/art/ar/fes/l2-7.jpg` — phrase — AR Фес 2 vocab «رَقْمُ الْبَيْت»
+  - Draw: Синяя табличка с номером 7 на старой двери.
+- `public/art/ar/fes/niaal.jpg` — reward — AR Фес 2 reward «نِعَال»
+  - Draw: Маленькие жёлтые кожаные тапочки с загнутыми носами стоят у двери комнаты.
+- `public/art/ar/fes/l3-1.jpg` — phrase — AR Фес 3 vocab «مِنْ أَيْنَ أَنْتَ؟»
+  - Draw: Официант кафе с любопытством смотрит через стойку.
+- `public/art/ar/fes/l3-2.jpg` — phrase — AR Фес 3 vocab «أَنَا مِنْ بَارِيس.»
+  - Draw: Мурзик рисует в воздухе лапкой Эйфелеву башню.
+- `public/art/ar/fes/l3-3.jpg` — phrase — AR Фес 3 vocab «أَيْنَ؟»
+  - Draw: Тётя Амина оглядывается: где же Карим?
+- `public/art/ar/fes/l3-4.jpg` — phrase — AR Фес 3 vocab «الْمَغْرِب»
+  - Draw: Карта Марокко: горы, пустыня и море.
+- `public/art/ar/fes/l3-5.jpg` — phrase — AR Фес 3 vocab «فَرَنْسَا»
+  - Draw: Карта Франции с маленьким Парижем.
+- `public/art/ar/fes/l3-6.jpg` — phrase — AR Фес 3 vocab «أَبُوظَبْي»
+  - Draw: Белый город у моря, высокие башни и пальмы.
+- `public/art/ar/fes/l3-7.jpg` — phrase — AR Фес 3 vocab «عَائِلَتِي فِي كُلِّ مَكَان!»
+  - Draw: Карим раскрывает карту, на ней сердечками отмечены разные страны.
+- `public/art/ar/fes/raff.jpg` — reward — AR Фес 3 reward «رَفّ»
+  - Draw: Деревянная резная полка из кедра на стене, на ней синяя тарелка и альбом Карима.
+- `public/art/ar/fes/l4-1.jpg` — phrase — AR Фес 4 vocab «أَيْنَ تَسْكُنُ؟»
+  - Draw: Хозяйка дома наливает чай и с улыбкой спрашивает.
+- `public/art/ar/fes/l4-2.jpg` — phrase — AR Фес 4 vocab «أَسْكُنُ فِي بَارِيس.»
+  - Draw: Мурзик показывает на открытке парижские крыши.
+- `public/art/ar/fes/l4-3.jpg` — phrase — AR Фес 4 vocab «بَيْت»
+  - Draw: Старый дом в медине с зелёной черепицей.
+- `public/art/ar/fes/l4-4.jpg` — phrase — AR Фес 4 vocab «غُرْفَة»
+  - Draw: Маленькая комната с арочным окном.
+- `public/art/ar/fes/l4-5.jpg` — phrase — AR Фес 4 vocab «هُنَا»
+  - Draw: Мурзик стучит лапкой по полу: здесь!
+- `public/art/ar/fes/l4-6.jpg` — phrase — AR Фес 4 vocab «هُنَاكَ»
+  - Draw: Мурзик показывает вдаль, на горы.
+- `public/art/ar/fes/l4-7.jpg` — phrase — AR Фес 4 vocab «بَعِيد… قَرِيب»
+  - Draw: Мурзик разводит лапки широко, потом сводит их вместе.
+- `public/art/ar/fes/misbah.jpg` — reward — AR Фес 4 reward «مِصْبَاح»
+  - Draw: Медная настольная лампа с узорами-дырочками стоит на полке, свет ложится на стены звёздочками.
+- `public/art/ar/fes/l5-1.jpg` — phrase — AR Фес 5 vocab «آلُو؟»
+  - Draw: Карим берёт телефон, на экране «Бабушка».
+- `public/art/ar/fes/l5-2.jpg` — phrase — AR Фес 5 vocab «مَنْ يَتَكَلَّم؟»
+  - Draw: Бабушка Фатима у телефона прислушивается.
+- `public/art/ar/fes/l5-3.jpg` — phrase — AR Фес 5 vocab «أَيْنَ أَنْتَ الْآن؟»
+  - Draw: Бабушка Фатима у окна с телефоном, за окном Абу-Даби.
+- `public/art/ar/fes/l5-4.jpg` — phrase — AR Фес 5 vocab «أَنَا فِي الْبَيْت.»
+  - Draw: Карим прикрывает телефон рукой и подмигивает.
+- `public/art/ar/fes/l5-5.jpg` — phrase — AR Фес 5 vocab «مَاذَا تَفْعَل؟»
+  - Draw: Телефон с надписью «Бабушка» на экране, рядом смайлик.
+- `public/art/ar/fes/l5-6.jpg` — phrase — AR Фес 5 vocab «لَا شَيْء.»
+  - Draw: Карим невинно смотрит в потолок.
+- `public/art/ar/fes/l5-7.jpg` — phrase — AR Фес 5 vocab «سَأَتَّصِلُ بِكِ غَدًا.»
+  - Draw: Карим машет телефоном: до завтра!
+- `public/art/ar/fes/ibriq.jpg` — reward — AR Фес 5 reward «إِبْرِيق»
+  - Draw: Керамический кувшин с синим узором и тонким носиком стоит на подоконнике.
+- `public/art/ar/fes/l6-1.jpg` — phrase — AR Фес 6 vocab «هَذِهِ وَرْشَة.»
+  - Draw: Гончарная мастерская: круги, полки с кувшинами, печь.
+- `public/art/ar/fes/l6-2.jpg` — phrase — AR Фес 6 vocab «الْفَخَّارِيُّ يَعْمَل.»
+  - Draw: Седой гончар крутит гончарный круг, в руках растёт кувшин.
+- `public/art/ar/fes/l6-3.jpg` — phrase — AR Фес 6 vocab «اُنْظُرْ!»
+  - Draw: Гончар показывает на кувшин, который вырос у него в руках.
+- `public/art/ar/fes/l6-4.jpg` — phrase — AR Фес 6 vocab «هَذَا صَعْب.»
+  - Draw: У Мурзика глина разъезжается во все стороны.
+- `public/art/ar/fes/l6-5.jpg` — phrase — AR Фес 6 vocab «هَذَا سَهْل.»
+  - Draw: Гончар спокойно выводит ровный край кувшина.
+- `public/art/ar/fes/l6-6.jpg` — phrase — AR Фес 6 vocab «جَرِّبْ!»
+  - Draw: Гончар уступает место у круга.
+- `public/art/ar/fes/l6-7.jpg` — phrase — AR Фес 6 vocab «مُمْتَاز!»
+  - Draw: Карим аплодирует: у Мурзика получилась кривая, но целая мисочка.
+- `public/art/ar/fes/zellij.jpg` — reward — AR Фес 6 reward «زَلِيج»
+  - Draw: Квадратная плитка из мозаики — синие, зелёные и белые кусочки складываются в звезду. Она стоит на полке у кровати.
+- `public/art/ar/fes/l7-1.jpg` — phrase — AR Фес 7 vocab «مَدِينَةُ فَاس»
+  - Draw: Вечерний Фес с холма: тысячи крыш и минареты.
+- `public/art/ar/fes/l7-2.jpg` — phrase — AR Фес 7 vocab «أَزْرَق»
+  - Draw: Мурзик держит в лапах синий кусочек мозаики.
+- `public/art/ar/fes/l7-3.jpg` — phrase — AR Фес 7 vocab «مَزْهَرِيَّة»
+  - Draw: Высокая керамическая ваза с синими узорами на прилавке.
+- `public/art/ar/fes/l7-4.jpg` — phrase — AR Фес 7 vocab «هَدِيَّةٌ لِلْجَدَّة»
+  - Draw: Мурзик бережно держит свёрток с бантом.
+- `public/art/ar/fes/l7-5.jpg` — phrase — AR Фес 7 vocab «هَلْ أَنْتَ مُسْتَعِدّ؟»
+  - Draw: Тётя Амина стоит у двери с сумками.
+- `public/art/ar/fes/l7-6.jpg` — phrase — AR Фес 7 vocab «نَعَم، أَنَا مُسْتَعِدّ!»
+  - Draw: Рюкзак у двери собран и застёгнут.
+- `public/art/ar/fes/l7-7.jpg` — phrase — AR Фес 7 vocab «إِلَى شَفْشَاوَن!»
+  - Draw: Карим показывает на карте голубой город в горах.
+- `public/art/ar/fes/mazhariya.jpg` — reward — AR Фес 7 reward «مَزْهَرِيَّةٌ زَرْقَاء»; AR Фес farewell 2
+  - Draw: Высокая керамическая ваза с синими узорами, завёрнутая наполовину в мягкую ткань, стоит рядом с тажином в чемодане.
+- `public/art/ar/fes/departure.jpg` — scene — AR Фес departure; AR Фес farewell 4
+  - Draw: Хозяйка дома машет на прощание у старой двери с номером 7. Мурзик, Карим и тётя Амина с сумками идут к автобусу.
+- `public/art/ar/fes/roofs.jpg` — scene — AR Фес farewell 1
+  - Draw: Ночь. Мурзик сидит на крыше дома и смотрит на тёмные крыши Феса, над ними звёзды.
+- `public/art/ar/fes/road.jpg` — scene — AR Фес farewell 5
+  - Draw: Автобус поднимается по серпантину в зелёные горы Риф.
+
+## Arabic course — Chefchaouen (60 pictures)
+
+- `public/art/ar/chefchaouen/arrival.jpg` — scene — AR Фес farewell 6; AR Шефшауэн welcome
+  - Draw: Мурзик, Карим и тётя Амина на улочке Шефшауэна: все стены, ступеньки и двери голубые.
+- `public/art/ar/chefchaouen/l1-1.jpg` — phrase — AR Шефшауэн 1 vocab «الْمَدِينَةُ الزَّرْقَاء»
+  - Draw: Город на склоне горы: все дома, двери и ступеньки голубые.
+- `public/art/ar/chefchaouen/l1-2.jpg` — phrase — AR Шефшауэн 1 vocab «الْجُدْرَانُ زَرْقَاء.»
+  - Draw: Мурзик трогает лапкой голубую стену.
+- `public/art/ar/chefchaouen/l1-3.jpg` — phrase — AR Шефшауэн 1 vocab «جَبَل»
+  - Draw: Зелёные горы над голубым городом.
+- `public/art/ar/chefchaouen/l1-4.jpg` — phrase — AR Шефшауэн 1 vocab «الْجَوُّ بَارِد.»
+  - Draw: Мурзик кутается в шарф, изо рта идёт пар.
+- `public/art/ar/chefchaouen/l1-5.jpg` — phrase — AR Шефшауэн 1 vocab «دَرَج»
+  - Draw: Длинная голубая лестница вверх по склону.
+- `public/art/ar/chefchaouen/l1-6.jpg` — phrase — AR Шефшауэн 1 vocab «اِصْعَدْ!»
+  - Draw: Соседка машет рукой с верхней ступеньки.
+- `public/art/ar/chefchaouen/l1-7.jpg` — phrase — AR Шефшауэн 1 vocab «الْمَنْظَرُ رَائِع!»
+  - Draw: С крыши видно весь голубой город и горы.
+- `public/art/ar/chefchaouen/battaniya.jpg` — reward — AR Шефшауэн 1 reward «بَطَّانِيَّة»
+  - Draw: Толстое шерстяное одеяло в бело-голубую полоску лежит на кровати.
+- `public/art/ar/chefchaouen/l2-1.jpg` — phrase — AR Шефшауэн 2 vocab «أَحْمَر / حَمْرَاء»
+  - Draw: Моток красной шерсти сохнет на верёвке.
+- `public/art/ar/chefchaouen/l2-2.jpg` — phrase — AR Шефшауэн 2 vocab «أَبْيَض / بَيْضَاء»
+  - Draw: Белая шерсть в корзине, как облако.
+- `public/art/ar/chefchaouen/l2-3.jpg` — phrase — AR Шефшауэн 2 vocab «أَسْوَد / سَوْدَاء»
+  - Draw: Чёрная кошка спит на голубых ступеньках.
+- `public/art/ar/chefchaouen/l2-4.jpg` — phrase — AR Шефшауэн 2 vocab «أَخْضَر / خَضْرَاء»
+  - Draw: Зелёная шерсть и зелёные горы за ней.
+- `public/art/ar/chefchaouen/l2-5.jpg` — phrase — AR Шефшауэн 2 vocab «أَصْفَر / صَفْرَاء»
+  - Draw: Жёлтая шерсть на солнце.
+- `public/art/ar/chefchaouen/l2-6.jpg` — phrase — AR Шефшауэн 2 vocab «بُرْتُقَالِيّ»
+  - Draw: Мурзик рядом с оранжевой шерстью — один цвет с его хвостом.
+- `public/art/ar/chefchaouen/l2-7.jpg` — phrase — AR Шефшауэн 2 vocab «مَا لَوْنُهُ؟»
+  - Draw: Мурзик держит моток шерсти и вопросительно смотрит.
+- `public/art/ar/chefchaouen/asis.jpg` — reward — AR Шефшауэн 2 reward «أَصِيص»
+  - Draw: Голубой глиняный горшок с красной геранью висит на стене у двери.
+- `public/art/ar/chefchaouen/l3-1.jpg` — phrase — AR Шефшауэн 3 vocab «كَبِير / كَبِيرَة»
+  - Draw: Огромный чемодан тёти Амины не пролезает в дверь.
+- `public/art/ar/chefchaouen/l3-2.jpg` — phrase — AR Шефшауэн 3 vocab «صَغِير / صَغِيرَة»
+  - Draw: Крошечная голубая дверь, Мурзику — в самый раз.
+- `public/art/ar/chefchaouen/l3-3.jpg` — phrase — AR Шефшауэн 3 vocab «طَوِيل»
+  - Draw: Длинный шарф тянется по ступенькам.
+- `public/art/ar/chefchaouen/l3-4.jpg` — phrase — AR Шефшауэн 3 vocab «قَصِير»
+  - Draw: Мурзик рядом с высоким Каримом — совсем невысокий.
+- `public/art/ar/chefchaouen/l3-5.jpg` — phrase — AR Шефшауэн 3 vocab «جَدِيد»
+  - Draw: Новое блестящее зеркало в деревянной раме.
+- `public/art/ar/chefchaouen/l3-6.jpg` — phrase — AR Шефшауэн 3 vocab «نَظِيف»
+  - Draw: Чистая белая комната, пол блестит.
+- `public/art/ar/chefchaouen/l3-7.jpg` — phrase — AR Шефшауэн 3 vocab «هَذَا الْبَيْتُ صَغِيرٌ جِدًّا!»
+  - Draw: Тётя Амина с сумками застряла в маленькой двери.
+- `public/art/ar/chefchaouen/kursi.jpg` — reward — AR Шефшауэн 3 reward «كُرْسِيّ»
+  - Draw: Маленький деревянный стул, раскрашенный голубыми и белыми цветами, стоит у окна.
+- `public/art/ar/chefchaouen/l4-1.jpg` — phrase — AR Шефшауэн 4 vocab «هُوَ»
+  - Draw: Мурзик показывает лапкой на Карима.
+- `public/art/ar/chefchaouen/l4-2.jpg` — phrase — AR Шефшауэн 4 vocab «هِيَ»
+  - Draw: Мурзик показывает лапкой на тётю Амину.
+- `public/art/ar/chefchaouen/l4-3.jpg` — phrase — AR Шефшауэн 4 vocab «هُوَ طَالِب.»
+  - Draw: Карим рисует в альбоме.
+- `public/art/ar/chefchaouen/l4-4.jpg` — phrase — AR Шефшауэн 4 vocab «هِيَ نَسَّاجَة.»
+  - Draw: Соседка за ткацким станком.
+- `public/art/ar/chefchaouen/l4-5.jpg` — phrase — AR Шефшауэн 4 vocab «هِيَ لَطِيفَة.»
+  - Draw: Соседка угощает всех горячим хлебом.
+- `public/art/ar/chefchaouen/l4-6.jpg` — phrase — AR Шефшауэн 4 vocab «هُوَ مَشْغُول.»
+  - Draw: Карим уткнулся в план поездки с карандашом.
+- `public/art/ar/chefchaouen/l4-7.jpg` — phrase — AR Шефшауэн 4 vocab «نَحْنُ عَائِلَةٌ كَبِيرَة.»
+  - Draw: Карим, тётя Амина и Мурзик обнимаются для фото.
+- `public/art/ar/chefchaouen/mirat.jpg` — reward — AR Шефшауэн 4 reward «مِرْآة»
+  - Draw: Круглое зеркало в резной деревянной раме, выкрашенной в голубой цвет, висит на стене.
+- `public/art/ar/chefchaouen/l5-1.jpg` — phrase — AR Шефшауэн 5 vocab «الشَّمْس»
+  - Draw: Яркое солнце над голубыми крышами.
+- `public/art/ar/chefchaouen/l5-2.jpg` — phrase — AR Шефшауэн 5 vocab «الْقَمَر»
+  - Draw: Круглая луна над горами.
+- `public/art/ar/chefchaouen/l5-3.jpg` — phrase — AR Шефшауэн 5 vocab «الشَّارِع»
+  - Draw: Узкая голубая улица с горшками цветов.
+- `public/art/ar/chefchaouen/l5-4.jpg` — phrase — AR Шефшауэн 5 vocab «الْبَاب»
+  - Draw: Старая голубая дверь с медной ручкой.
+- `public/art/ar/chefchaouen/l5-5.jpg` — phrase — AR Шефшауэн 5 vocab «اللَّيْل»
+  - Draw: Ночное небо со звёздами.
+- `public/art/ar/chefchaouen/l5-6.jpg` — phrase — AR Шефшауэн 5 vocab «النَّهَار»
+  - Draw: Солнечный день, на улице дети.
+- `public/art/ar/chefchaouen/l5-7.jpg` — phrase — AR Шефшауэн 5 vocab «الشَّمْسُ وَالْقَمَر»
+  - Draw: Половина картинки — солнце, половина — луна.
+- `public/art/ar/chefchaouen/najma.jpg` — reward — AR Шефшауэн 5 reward «نَجْمَة»
+  - Draw: Над кроватью висит медная звёздочка с дырочками, внутри горит свечка, на потолке пляшут огоньки.
+- `public/art/ar/chefchaouen/l6-1.jpg` — phrase — AR Шефшауэн 6 vocab «أُرِيدُ شَالًا.»
+  - Draw: Мурзик показывает на длинный шарф на прилавке.
+- `public/art/ar/chefchaouen/l6-2.jpg` — phrase — AR Шефшауэн 6 vocab «قُمَاش»
+  - Draw: Рулоны цветной ткани до потолка.
+- `public/art/ar/chefchaouen/l6-3.jpg` — phrase — AR Шефшауэн 6 vocab «بِكَمْ هَذَا؟»
+  - Draw: Тётя Амина держит отрез красной ткани.
+- `public/art/ar/chefchaouen/l6-4.jpg` — phrase — AR Шефшауэн 6 vocab «غَالٍ!»
+  - Draw: Тётя Амина картинно хватается за сердце.
+- `public/art/ar/chefchaouen/l6-5.jpg` — phrase — AR Шефшауэн 6 vocab «رَخِيص»
+  - Draw: Продавец разводит руками: дешевле не бывает!
+- `public/art/ar/chefchaouen/l6-6.jpg` — phrase — AR Шефшауэн 6 vocab «خُذْهُ!»
+  - Draw: Продавец протягивает свёрток.
+- `public/art/ar/chefchaouen/l6-7.jpg` — phrase — AR Шефшауэн 6 vocab «مِنْ صُوف»
+  - Draw: Мягкий шерстяной шарф в руках у ткачихи.
+- `public/art/ar/chefchaouen/ghita.jpg` — reward — AR Шефшауэн 6 reward «غِطَاء»
+  - Draw: Красное покрывало с белым узором по краю застелено на кровати поверх полосатого одеяла.
+- `public/art/ar/chefchaouen/l7-1.jpg` — phrase — AR Шефшауэн 7 vocab «أَعْرِفُ فَاطِمَة!»
+  - Draw: Ткачиха удивлённо прижимает руки к щекам.
+- `public/art/ar/chefchaouen/l7-2.jpg` — phrase — AR Шефшауэн 7 vocab «كَانَتْ صَدِيقَتِي.»
+  - Draw: Старое фото: две молодые девушки смеются у ткацкого станка.
+- `public/art/ar/chefchaouen/l7-3.jpg` — phrase — AR Шефшауэн 7 vocab «شَالٌ أَزْرَق»
+  - Draw: Длинный синий шарф с белым узором.
+- `public/art/ar/chefchaouen/l7-4.jpg` — phrase — AR Шефшауэн 7 vocab «مِنْ يَدِي»
+  - Draw: Руки ткачихи на ткацком станке.
+- `public/art/ar/chefchaouen/l7-5.jpg` — phrase — AR Шефшауэн 7 vocab «سَلِّمْ عَلَيْهَا!»
+  - Draw: Ткачиха прикладывает руку к сердцу.
+- `public/art/ar/chefchaouen/l7-6.jpg` — phrase — AR Шефшауэн 7 vocab «بِكُلِّ سُرُور!»
+  - Draw: Мурзик кивает и прижимает свёрток к груди.
+- `public/art/ar/chefchaouen/l7-7.jpg` — phrase — AR Шефшауэн 7 vocab «إِلَى تُونِس!»
+  - Draw: Карим показывает билеты на самолёт.
+- `public/art/ar/chefchaouen/shal.jpg` — reward — AR Шефшауэн 7 reward «شَالٌ أَزْرَق»; AR Шефшауэн farewell 2
+  - Draw: Длинный синий шерстяной шарф с белым узором аккуратно сложен в чемодане рядом с тажином и вазой.
+- `public/art/ar/chefchaouen/departure.jpg` — scene — AR Шефшауэн departure; AR Шефшауэн farewell 4
+  - Draw: Ткачиха и её сын Умар машут на прощание с голубой лестницы.
+- `public/art/ar/chefchaouen/photo.jpg` — scene — AR Шефшауэн farewell 1
+  - Draw: Вечер. Ткачиха показывает Мурзику и Кариму старую фотографию: две молодые девушки смеются у ткацкого станка.
+- `public/art/ar/chefchaouen/flight.jpg` — scene — AR Шефшауэн farewell 5
+  - Draw: Самолёт летит на восток вдоль берега Средиземного моря.
+
+## Arabic course — Tunis (60 pictures)
+
+- `public/art/ar/tunis/arrival.jpg` — scene — AR Шефшауэн farewell 6; AR Тунис welcome
+  - Draw: Мурзик, Карим и тётя Амина на белой улочке старого Туниса с синими дверями. Навстречу бежит девушка с гитарой за спиной.
+- `public/art/ar/tunis/l1-1.jpg` — phrase — AR Тунис 1 vocab «هَذِهِ سَلْمَى.»
+  - Draw: Девушка с гитарой за спиной бежит навстречу по белой улочке.
+- `public/art/ar/tunis/l1-2.jpg` — phrase — AR Тунис 1 vocab «بِنْتُ عَمَّتِي»
+  - Draw: Карим обнимает Сальму за плечи.
+- `public/art/ar/tunis/l1-3.jpg` — phrase — AR Тунис 1 vocab «اِبْنَتِي»
+  - Draw: Тётя Амина крепко обнимает Сальму.
+- `public/art/ar/tunis/l1-4.jpg` — phrase — AR Тунис 1 vocab «أُمِّي»
+  - Draw: Сальма бежит к тёте Амине с распахнутыми руками.
+- `public/art/ar/tunis/l1-5.jpg` — phrase — AR Тунис 1 vocab «أَخِي»
+  - Draw: Мальчик и девочка на старой фотографии держатся за руки.
+- `public/art/ar/tunis/l1-6.jpg` — phrase — AR Тунис 1 vocab «أُخْتِي»
+  - Draw: Две сестры смеются на фотографии.
+- `public/art/ar/tunis/l1-7.jpg` — phrase — AR Тунис 1 vocab «اِشْتَقْتُ إِلَيْكِ!»
+  - Draw: Тётя Амина вытирает слёзы радости.
+- `public/art/ar/tunis/kilim.jpg` — reward — AR Тунис 1 reward «كِلِيم»
+  - Draw: На белом полу лежит тканый ковёр-килим с красными, синими и жёлтыми ромбами.
+- `public/art/ar/tunis/l2-1.jpg` — phrase — AR Тунис 2 vocab «حَقِيبَتِي»
+  - Draw: Мурзик обнимает свой маленький оранжевый чемодан.
+- `public/art/ar/tunis/l2-2.jpg` — phrase — AR Тунис 2 vocab «حَقِيبَتُكَ»
+  - Draw: Карим протягивает чемодан.
+- `public/art/ar/tunis/l2-3.jpg` — phrase — AR Тунис 2 vocab «هَاتِفِي»
+  - Draw: Сальма снимает всё на свой телефон.
+- `public/art/ar/tunis/l2-4.jpg` — phrase — AR Тунис 2 vocab «كِتَابِي»
+  - Draw: Карим листает свою книгу.
+- `public/art/ar/tunis/l2-5.jpg` — phrase — AR Тунис 2 vocab «مِفْتَاح»
+  - Draw: Большой старый ключ на кольце.
+- `public/art/ar/tunis/l2-6.jpg` — phrase — AR Тунис 2 vocab «هَذَا لِي.»
+  - Draw: Мурзик хватает свой рюкзачок.
+- `public/art/ar/tunis/l2-7.jpg` — phrase — AR Тунис 2 vocab «لِمَنْ هَذَا؟»
+  - Draw: Карим держит над головой чей-то носок.
+- `public/art/ar/tunis/shamadan.jpg` — reward — AR Тунис 2 reward «شَمْعَدَان»
+  - Draw: Высокий медный подсвечник с резным узором стоит на подоконнике, в нём горит белая свеча.
+- `public/art/ar/tunis/l3-1.jpg` — phrase — AR Тунис 3 vocab «عِنْدِي غِيتَار.»
+  - Draw: Сальма гордо поднимает гитару.
+- `public/art/ar/tunis/l3-2.jpg` — phrase — AR Тунис 3 vocab «هَلْ عِنْدَكَ وَقْت؟»
+  - Draw: Сальма заглядывает в комнату.
+- `public/art/ar/tunis/l3-3.jpg` — phrase — AR Тунис 3 vocab «لَيْسَ عِنْدِي غِيتَار.»
+  - Draw: Мурзик разводит пустыми лапками.
+- `public/art/ar/tunis/l3-4.jpg` — phrase — AR Тунис 3 vocab «عِنْدِي سِرّ!»
+  - Draw: Мурзик таинственно прикладывает лапку к губам.
+- `public/art/ar/tunis/l3-5.jpg` — phrase — AR Тунис 3 vocab «فِكْرَة»
+  - Draw: Над головой Сальмы загорается лампочка.
+- `public/art/ar/tunis/l3-6.jpg` — phrase — AR Тунис 3 vocab «عِنْدِي فِكْرَة!»
+  - Draw: Сальма щёлкает пальцами.
+- `public/art/ar/tunis/l3-7.jpg` — phrase — AR Тунис 3 vocab «وَقْت»
+  - Draw: Большие часы на старой башне.
+- `public/art/ar/tunis/hamil.jpg` — reward — AR Тунис 3 reward «حَامِلُ الْغِيتَار»
+  - Draw: Деревянная подставка для гитары стоит у стены, в ней гитара Сальмы с красным ремнём.
+- `public/art/ar/tunis/l4-1.jpg` — phrase — AR Тунис 4 vocab «غُرْفَتِي»
+  - Draw: Сальма распахивает дверь своей комнаты.
+- `public/art/ar/tunis/l4-2.jpg` — phrase — AR Тунис 4 vocab «غُرْفَتُهُ»
+  - Draw: Карим стоит в дверях маленькой аккуратной комнаты.
+- `public/art/ar/tunis/l4-3.jpg` — phrase — AR Тунис 4 vocab «غُرْفَتُهَا»
+  - Draw: Комната Сальмы: ноты и книги повсюду.
+- `public/art/ar/tunis/l4-4.jpg` — phrase — AR Тунис 4 vocab «سَرِير»
+  - Draw: Кровать с горой подушек.
+- `public/art/ar/tunis/l4-5.jpg` — phrase — AR Тунис 4 vocab «نَافِذَة»
+  - Draw: Окно с синей решёткой, за ним белые крыши.
+- `public/art/ar/tunis/l4-6.jpg` — phrase — AR Тунис 4 vocab «مَكْتَب»
+  - Draw: Стол, заваленный нотами и тетрадками.
+- `public/art/ar/tunis/l4-7.jpg` — phrase — AR Тунис 4 vocab «غُرْفَتُهَا فَوْضَى!»
+  - Draw: Мурзик выглядывает из-под кучи одежды.
+- `public/art/ar/tunis/maktaba.jpg` — reward — AR Тунис 4 reward «مَكْتَبَة»
+  - Draw: Узкий голубой книжный шкафчик у стены, на полках книги, ноты и альбом Карима.
+- `public/art/ar/tunis/l5-1.jpg` — phrase — AR Тунис 5 vocab «عَائِلَتُنَا»
+  - Draw: Старая большая фотография: вся семья за длинным столом.
+- `public/art/ar/tunis/l5-2.jpg` — phrase — AR Тунис 5 vocab «جَدِّي»
+  - Draw: Седой мужчина с усами на старом фото.
+- `public/art/ar/tunis/l5-3.jpg` — phrase — AR Тунис 5 vocab «جَدَّتِي»
+  - Draw: Молодая бабушка Фатима улыбается на фото.
+- `public/art/ar/tunis/l5-4.jpg` — phrase — AR Тунис 5 vocab «عَمِّي»
+  - Draw: Высокий мужчина с большими усами.
+- `public/art/ar/tunis/l5-5.jpg` — phrase — AR Тунис 5 vocab «خَالِي»
+  - Draw: Мужчина в очках держит младенца.
+- `public/art/ar/tunis/l5-6.jpg` — phrase — AR Тунис 5 vocab «صُورَة»
+  - Draw: Мурзик держит фотографию двумя лапками.
+- `public/art/ar/tunis/l5-7.jpg` — phrase — AR Тунис 5 vocab «صُورَةٌ قَدِيمَة»
+  - Draw: Пожелтевшее фото с загнутым уголком.
+- `public/art/ar/tunis/sunduq.jpg` — reward — AR Тунис 5 reward «صُنْدُوق»
+  - Draw: Резная деревянная шкатулка с перламутровыми вставками стоит на полке, из неё выглядывают старые фотографии.
+- `public/art/ar/tunis/l6-1.jpg` — phrase — AR Тунис 6 vocab «أُغْنِيَة»
+  - Draw: Сальма пишет ноты в тетрадке.
+- `public/art/ar/tunis/l6-2.jpg` — phrase — AR Тунис 6 vocab «مُوسِيقَى»
+  - Draw: Из гитары разлетаются нотки.
+- `public/art/ar/tunis/l6-3.jpg` — phrase — AR Тунис 6 vocab «أُحِبُّ الْمُوسِيقَى.»
+  - Draw: Мурзик качает головой в такт.
+- `public/art/ar/tunis/l6-4.jpg` — phrase — AR Тунис 6 vocab «صَوْتُكِ جَمِيل!»
+  - Draw: Мурзик восхищённо слушает Сальму.
+- `public/art/ar/tunis/l6-5.jpg` — phrase — AR Тунис 6 vocab «مَرَّةً أُخْرَى!»
+  - Draw: Карим хлопает и поднимает палец: ещё!
+- `public/art/ar/tunis/l6-6.jpg` — phrase — AR Тунис 6 vocab «هَيَّا!»
+  - Draw: Мурзик подбадривает Сальму лапками.
+- `public/art/ar/tunis/l6-7.jpg` — phrase — AR Тунис 6 vocab «أُغْنِيَةٌ لِلْجَدَّة»
+  - Draw: Сальма с гитарой, вокруг сидят все и слушают.
+- `public/art/ar/tunis/arika.jpg` — reward — AR Тунис 6 reward «أَرِيكَة»
+  - Draw: Маленький диванчик с синей обивкой и подушками в белую полоску стоит у окна.
+- `public/art/ar/tunis/l7-1.jpg` — phrase — AR Тунис 7 vocab «إِطَار»
+  - Draw: Пустая рамка для фото на столе.
+- `public/art/ar/tunis/l7-2.jpg` — phrase — AR Тунис 7 vocab «إِطَارٌ فِضِّيّ»
+  - Draw: Серебряная рамка с узором из цветов блестит в руках Сальмы.
+- `public/art/ar/tunis/l7-3.jpg` — phrase — AR Тунис 7 vocab «لِصُورَةِ الْعَائِلَة»
+  - Draw: Сальма примеряет рамку к старому фото.
+- `public/art/ar/tunis/l7-4.jpg` — phrase — AR Тунис 7 vocab «عِنْدَنَا فِكْرَة!»
+  - Draw: Мурзик и Сальма хитро переглядываются.
+- `public/art/ar/tunis/l7-5.jpg` — phrase — AR Тунис 7 vocab «سَأُسَافِرُ مَعَكُمْ!»
+  - Draw: Сальма закидывает гитару за спину.
+- `public/art/ar/tunis/l7-6.jpg` — phrase — AR Тунис 7 vocab «حَقِيبَتِي جَاهِزَة!»
+  - Draw: Сальма захлопывает чемодан с наклейками.
+- `public/art/ar/tunis/l7-7.jpg` — phrase — AR Тунис 7 vocab «إِلَى سِيدِي بُو سَعِيد!»
+  - Draw: Карим показывает на карте городок у моря.
+- `public/art/ar/tunis/itar.jpg` — reward — AR Тунис 7 reward «إِطَارٌ فِضِّيّ»; AR Тунис farewell 1
+  - Draw: Серебряная рамка с узором из цветов, пока пустая, лежит в чемодане рядом с тажином, вазой и синим шарфом.
+- `public/art/ar/tunis/departure.jpg` — scene — AR Тунис departure; AR Тунис farewell 4
+  - Draw: Соседи машут с балкона, Сальма с гитарой и чемоданом идёт вместе со всеми.
+- `public/art/ar/tunis/home.jpg` — scene — AR Тунис farewell 2
+  - Draw: Мурзик обходит свою комнату в старом Тунисе, которую обставлял урок за уроком.
+- `public/art/ar/tunis/train.jpg` — scene — AR Тунис farewell 5
+  - Draw: Маленькая электричка едет вдоль моря, в окне Мурзик и Сальма с гитарой.
+
+## Arabic course — Sidi Bou Said (60 pictures)
+
+- `public/art/ar/sidibousaid/arrival.jpg` — scene — AR Тунис farewell 6; AR Сиди-Бу-Саид welcome
+  - Draw: Белый городок на холме над синим морем: белые дома, синие двери и ставни, розовые цветы бугенвиллеи.
+- `public/art/ar/sidibousaid/l1-1.jpg` — phrase — AR Сиди-Бу-Саид 1 vocab «أُرِيدُ شَايًا، مِنْ فَضْلِكَ.»
+  - Draw: Мурзик за столиком на террасе над морем.
+- `public/art/ar/sidibousaid/l1-2.jpg` — phrase — AR Сиди-Бу-Саид 1 vocab «شَايٌ بِالنَّعْنَاع»
+  - Draw: Стаканчик чая с листьями мяты и кедровыми орешками.
+- `public/art/ar/sidibousaid/l1-3.jpg` — phrase — AR Сиди-Бу-Саид 1 vocab «قَهْوَة»
+  - Draw: Маленькая чашка крепкого кофе.
+- `public/art/ar/sidibousaid/l1-4.jpg` — phrase — AR Сиди-Бу-Саид 1 vocab «مَاء»
+  - Draw: Кувшин холодной воды.
+- `public/art/ar/sidibousaid/l1-5.jpg` — phrase — AR Сиди-Бу-Саид 1 vocab «حَلِيب»
+  - Draw: Мисочка молока — Мурзик облизывается.
+- `public/art/ar/sidibousaid/l1-6.jpg` — phrase — AR Сиди-Бу-Саид 1 vocab «نُرِيدُ شَايًا.»
+  - Draw: Вся компания поднимает руки.
+- `public/art/ar/sidibousaid/l1-7.jpg` — phrase — AR Сиди-Бу-Саид 1 vocab «مَاذَا تُرِيد؟»
+  - Draw: Официант в белой рубашке с блокнотом.
+- `public/art/ar/sidibousaid/qafas.jpg` — reward — AR Сиди-Бу-Саид 1 reward «قَفَص»
+  - Draw: Под потолком висит круглая синяя кованая клетка-светильник, внутри вместо птицы горит лампочка.
+- `public/art/ar/sidibousaid/l2-1.jpg` — phrase — AR Сиди-Бу-Саид 2 vocab «قَائِمَةُ الطَّعَام»
+  - Draw: Официант протягивает меню в синей обложке.
+- `public/art/ar/sidibousaid/l2-2.jpg` — phrase — AR Сиди-Бу-Саид 2 vocab «كُسْكُسِي»
+  - Draw: Большая тарелка кускуса с овощами.
+- `public/art/ar/sidibousaid/l2-3.jpg` — phrase — AR Сиди-Бу-Саид 2 vocab «سَمَك»
+  - Draw: Жареная рыба с лимоном. Мурзик в восторге.
+- `public/art/ar/sidibousaid/l2-4.jpg` — phrase — AR Сиди-Бу-Саид 2 vocab «سَلَطَة»
+  - Draw: Миска салата с помидорами и оливками.
+- `public/art/ar/sidibousaid/l2-5.jpg` — phrase — AR Сиди-Бу-Саид 2 vocab «بْرِيك»
+  - Draw: Золотистый треугольный пирожок на тарелке.
+- `public/art/ar/sidibousaid/l2-6.jpg` — phrase — AR Сиди-Бу-Саид 2 vocab «هَلْ هَذَا حَارّ؟»
+  - Draw: Мурзик с подозрением нюхает красный соус.
+- `public/art/ar/sidibousaid/l2-7.jpg` — phrase — AR Сиди-Бу-Саид 2 vocab «حَارٌّ جِدًّا!»
+  - Draw: У Мурзика из ушей идёт пар.
+- `public/art/ar/sidibousaid/barrad.jpg` — reward — AR Сиди-Бу-Саид 2 reward «بَرَّاد»
+  - Draw: Блестящий металлический чайник с длинным изогнутым носиком стоит на подносе рядом со стаканчиками.
+- `public/art/ar/sidibousaid/l3-1.jpg` — phrase — AR Сиди-Бу-Саид 3 vocab «الْحِسَاب، مِنْ فَضْلِكَ.»
+  - Draw: Карим поднимает руку и улыбается официанту.
+- `public/art/ar/sidibousaid/l3-2.jpg` — phrase — AR Сиди-Бу-Саид 3 vocab «كَمِ الْحِسَاب؟»
+  - Draw: Официант кладёт на стол маленький счёт.
+- `public/art/ar/sidibousaid/l3-3.jpg` — phrase — AR Сиди-Бу-Саид 3 vocab «دِينَار»
+  - Draw: Монетка в один тунисский динар.
+- `public/art/ar/sidibousaid/l3-4.jpg` — phrase — AR Сиди-Бу-Саид 3 vocab «عَشَرَةُ دَنَانِير»
+  - Draw: Купюра в десять динаров.
+- `public/art/ar/sidibousaid/l3-5.jpg` — phrase — AR Сиди-Бу-Саид 3 vocab «بِالْبِطَاقَة، مِنْ فَضْلِكَ.»
+  - Draw: Тётя Амина протягивает банковскую карточку.
+- `public/art/ar/sidibousaid/l3-6.jpg` — phrase — AR Сиди-Бу-Саид 3 vocab «نَقْدًا»
+  - Draw: Монетки и купюры на ладони.
+- `public/art/ar/sidibousaid/l3-7.jpg` — phrase — AR Сиди-Бу-Саид 3 vocab «الْبَاقِي لَكَ.»
+  - Draw: Карим оставляет монетки на блюдечке.
+- `public/art/ar/sidibousaid/tawila.jpg` — reward — AR Сиди-Бу-Саид 3 reward «طَاوِلَة»
+  - Draw: Маленький круглый столик с синей мозаикой на столешнице стоит на балконе у моря.
+- `public/art/ar/sidibousaid/l4-1.jpg` — phrase — AR Сиди-Бу-Саид 4 vocab «بَامْبَالُونِي»
+  - Draw: Горячие пончики в сахаре на бумажке.
+- `public/art/ar/sidibousaid/l4-2.jpg` — phrase — AR Сиди-Бу-Саид 4 vocab «لَذِيذٌ جِدًّا!»
+  - Draw: Мурзик с сахаром на усах жмурится.
+- `public/art/ar/sidibousaid/l4-3.jpg` — phrase — AR Сиди-Бу-Саид 4 vocab «حُلْو»
+  - Draw: Сахарная пудра сыплется с пончика.
+- `public/art/ar/sidibousaid/l4-4.jpg` — phrase — AR Сиди-Бу-Саид 4 vocab «مَالِح»
+  - Draw: Солёные оливки в мисочке.
+- `public/art/ar/sidibousaid/l4-5.jpg` — phrase — AR Сиди-Бу-Саид 4 vocab «سَاخِن»
+  - Draw: Над пончиком поднимается пар.
+- `public/art/ar/sidibousaid/l4-6.jpg` — phrase — AR Сиди-Бу-Саид 4 vocab «بَارِد»
+  - Draw: Стакан холодного лимонада.
+- `public/art/ar/sidibousaid/l4-7.jpg` — phrase — AR Сиди-Бу-Саид 4 vocab «هَلْ هُوَ لَذِيذ؟»
+  - Draw: Продавец пончиков с улыбкой ждёт ответа.
+- `public/art/ar/sidibousaid/mafrash.jpg` — reward — AR Сиди-Бу-Саид 4 reward «مَفْرَش»
+  - Draw: Белая скатерть с синей вышивкой по краю застелена на круглом столике.
+- `public/art/ar/sidibousaid/l5-1.jpg` — phrase — AR Сиди-Бу-Саид 5 vocab «خُبْز»
+  - Draw: Круглая лепёшка из печки.
+- `public/art/ar/sidibousaid/l5-2.jpg` — phrase — AR Сиди-Бу-Саид 5 vocab «بَيْض»
+  - Draw: Корзинка с яйцами.
+- `public/art/ar/sidibousaid/l5-3.jpg` — phrase — AR Сиди-Бу-Саид 5 vocab «طَمَاطِم»
+  - Draw: Красные помидоры на доске.
+- `public/art/ar/sidibousaid/l5-4.jpg` — phrase — AR Сиди-Бу-Саид 5 vocab «زَيْتُ الزَّيْتُون»
+  - Draw: Бутылка золотистого оливкового масла.
+- `public/art/ar/sidibousaid/l5-5.jpg` — phrase — AR Сиди-Бу-Саид 5 vocab «مِلْح»
+  - Draw: Щепотка соли над сковородкой.
+- `public/art/ar/sidibousaid/l5-6.jpg` — phrase — AR Сиди-Бу-Саид 5 vocab «أَعْطِنِي الْمِلْح، مِنْ فَضْلِكَ.»
+  - Draw: Тётя Амина протягивает руку, не глядя.
+- `public/art/ar/sidibousaid/l5-7.jpg` — phrase — AR Сиди-Бу-Саид 5 vocab «كُلُوا!»
+  - Draw: Тётя Амина ставит на стол огромную сковородку.
+- `public/art/ar/sidibousaid/finjan.jpg` — reward — AR Сиди-Бу-Саид 5 reward «فَنَاجِين»
+  - Draw: Четыре маленькие белые кофейные чашечки с синими цветами стоят на подносе.
+- `public/art/ar/sidibousaid/l6-1.jpg` — phrase — AR Сиди-Бу-Саид 6 vocab «الْبَحْر»
+  - Draw: Синее море под белым городком.
+- `public/art/ar/sidibousaid/l6-2.jpg` — phrase — AR Сиди-Бу-Саид 6 vocab «غُرُوبُ الشَّمْس»
+  - Draw: Оранжевое солнце садится в море.
+- `public/art/ar/sidibousaid/l6-3.jpg` — phrase — AR Сиди-Бу-Саид 6 vocab «سَفِينَة»
+  - Draw: Белый парусник на горизонте.
+- `public/art/ar/sidibousaid/l6-4.jpg` — phrase — AR Сиди-Бу-Саид 6 vocab «مَا أَجْمَلَ الْبَحْر!»
+  - Draw: Мурзик сидит на перилах и смотрит вдаль.
+- `public/art/ar/sidibousaid/l6-5.jpg` — phrase — AR Сиди-Бу-Саид 6 vocab «اُنْظُرُوا!»
+  - Draw: Сальма показывает на дельфинов.
+- `public/art/ar/sidibousaid/l6-6.jpg` — phrase — AR Сиди-Бу-Саид 6 vocab «هَادِئ»
+  - Draw: Гладкое вечернее море.
+- `public/art/ar/sidibousaid/l6-7.jpg` — phrase — AR Сиди-Бу-Саид 6 vocab «دَلَافِين»
+  - Draw: Дельфины выпрыгивают из воды на закате.
+- `public/art/ar/sidibousaid/sadafa.jpg` — reward — AR Сиди-Бу-Саид 6 reward «صَدَفَة»
+  - Draw: Большая розовато-белая ракушка лежит на подоконнике, за окном вечернее море.
+- `public/art/ar/sidibousaid/l7-1.jpg` — phrase — AR Сиди-Бу-Саид 7 vocab «يَاسَمِين»
+  - Draw: Веточка белого жасмина за ухом у продавца.
+- `public/art/ar/sidibousaid/l7-2.jpg` — phrase — AR Сиди-Бу-Саид 7 vocab «شَايُ الْيَاسَمِين»
+  - Draw: Синяя жестяная банка с белыми цветами.
+- `public/art/ar/sidibousaid/l7-3.jpg` — phrase — AR Сиди-Бу-Саид 7 vocab «أُرِيدُ هَدِيَّةً لِجَدَّتِي.»
+  - Draw: Мурзик стоит у прилавка лавки с сувенирами.
+- `public/art/ar/sidibousaid/l7-4.jpg` — phrase — AR Сиди-Бу-Саид 7 vocab «رَائِحَةٌ جَمِيلَة!»
+  - Draw: Мурзик нюхает банку и блаженно закрывает глаза.
+- `public/art/ar/sidibousaid/l7-5.jpg` — phrase — AR Сиди-Бу-Саид 7 vocab «بِكَمْ هَذِهِ الْعُلْبَة؟»
+  - Draw: Мурзик держит банку двумя лапками.
+- `public/art/ar/sidibousaid/l7-6.jpg` — phrase — AR Сиди-Бу-Саид 7 vocab «خَمْسَةُ دَنَانِير.»
+  - Draw: Продавец показывает пять пальцев.
+- `public/art/ar/sidibousaid/l7-7.jpg` — phrase — AR Сиди-Бу-Саид 7 vocab «إِلَى الْقَاهِرَة!»
+  - Draw: Карим показывает на карте Египет.
+- `public/art/ar/sidibousaid/yasamin.jpg` — reward — AR Сиди-Бу-Саид 7 reward «شَايُ الْيَاسَمِين»; AR Сиди-Бу-Саид farewell 1
+  - Draw: Синяя жестяная банка с белыми цветами жасмина лежит в чемодане рядом с тажином, вазой, синим шарфом и серебряной рамкой.
+- `public/art/ar/sidibousaid/departure.jpg` — scene — AR Сиди-Бу-Саид departure; AR Сиди-Бу-Саид farewell 4
+  - Draw: Хозяин кафе и продавец жасмина машут с белой улочки.
+- `public/art/ar/sidibousaid/home.jpg` — scene — AR Сиди-Бу-Саид farewell 2
+  - Draw: Мурзик обходит свою комнату в белом домике, которую обставлял урок за уроком.
+- `public/art/ar/sidibousaid/flight.jpg` — scene — AR Сиди-Бу-Саид farewell 5
+  - Draw: Самолёт летит на восток над Средиземным морем, в иллюминаторе Мурзик и Сальма с гитарой.
+
+## Arabic course — Cairo (60 pictures)
+
+- `public/art/ar/cairo/arrival.jpg` — scene — AR Сиди-Бу-Саид farewell 6; AR Каир welcome
+  - Draw: Мурзик и вся компания на шумной улице Каира, вдали за домами видны пирамиды. Навстречу машет девушка в очках с бейджиком музея.
+- `public/art/ar/cairo/l1-1.jpg` — phrase — AR Каир 1 vocab «عِشْرُونَ، ثَلَاثُون»
+  - Draw: На двери лифта табличка: ٢٠ и ٣٠.
+- `public/art/ar/cairo/l1-2.jpg` — phrase — AR Каир 1 vocab «أَرْبَعُونَ، خَمْسُون»
+  - Draw: Мурзик на ступеньке с номером ٤٠.
+- `public/art/ar/cairo/l1-3.jpg` — phrase — AR Каир 1 vocab «سِتُّونَ، سَبْعُون»
+  - Draw: Число ٦٠ мелом на ступеньке.
+- `public/art/ar/cairo/l1-4.jpg` — phrase — AR Каир 1 vocab «ثَمَانُونَ، تِسْعُون»
+  - Draw: Ступеньки уходят высоко вверх.
+- `public/art/ar/cairo/l1-5.jpg` — phrase — AR Каир 1 vocab «مِئَة»
+  - Draw: Табличка ١٠٠ над дверью квартиры.
+- `public/art/ar/cairo/l1-6.jpg` — phrase — AR Каир 1 vocab «خَمْسَةٌ وَعِشْرُون»
+  - Draw: Мурзик показывает пять пальчиков, Хана — две ладони по десять.
+- `public/art/ar/cairo/l1-7.jpg` — phrase — AR Каир 1 vocab «٢٥»
+  - Draw: Цифры ٢٥ крупно на табличке.
+- `public/art/ar/cairo/qindil.jpg` — reward — AR Каир 1 reward «قِنْدِيل»
+  - Draw: Под потолком висит фонарь из цветного стекла, на стенах пляшут красные, синие и зелёные пятна света.
+- `public/art/ar/cairo/l2-1.jpg` — phrase — AR Каир 2 vocab «جُنَيْه»
+  - Draw: Бумажные египетские фунты с пирамидами.
+- `public/art/ar/cairo/l2-2.jpg` — phrase — AR Каир 2 vocab «بِكَمْ هَذَا الْفَانُوس؟»
+  - Draw: Сальма показывает на медный фонарь в лавке.
+- `public/art/ar/cairo/l2-3.jpg` — phrase — AR Каир 2 vocab «عِشْرُونَ جُنَيْهًا.»
+  - Draw: Продавец показывает две ладони два раза.
+- `public/art/ar/cairo/l2-4.jpg` — phrase — AR Каир 2 vocab «مِئَةُ جُنَيْه.»
+  - Draw: Ценник ١٠٠ на большом фонаре.
+- `public/art/ar/cairo/l2-5.jpg` — phrase — AR Каир 2 vocab «سِعْر»
+  - Draw: Маленький ценник на верёвочке.
+- `public/art/ar/cairo/l2-6.jpg` — phrase — AR Каир 2 vocab «هَذَا رَخِيص!»
+  - Draw: Мурзик радостно держит маленькую чашечку.
+- `public/art/ar/cairo/l2-7.jpg` — phrase — AR Каир 2 vocab «فَقَط»
+  - Draw: Продавец поднимает один палец: всего!
+- `public/art/ar/cairo/bisat.jpg` — reward — AR Каир 2 reward «بِسَاط»
+  - Draw: На полу лежит ковёр песочного цвета, на нём вытканы пальмы и маленькие пирамиды.
+- `public/art/ar/cairo/l3-1.jpg` — phrase — AR Каир 3 vocab «غَالٍ جِدًّا!»
+  - Draw: Хана картинно хватается за голову.
+- `public/art/ar/cairo/l3-2.jpg` — phrase — AR Каир 3 vocab «أَرْخَص، مِنْ فَضْلِكَ.»
+  - Draw: Хана показывает рукой вниз: ниже!
+- `public/art/ar/cairo/l3-3.jpg` — phrase — AR Каир 3 vocab «آخِرُ سِعْر؟»
+  - Draw: Продавец задумчиво чешет бороду.
+- `public/art/ar/cairo/l3-4.jpg` — phrase — AR Каир 3 vocab «لَا، شُكْرًا.»
+  - Draw: Хана разворачивается и делает шаг прочь.
+- `public/art/ar/cairo/l3-5.jpg` — phrase — AR Каир 3 vocab «تَعَالَيْ!»
+  - Draw: Продавец машет Хане вслед.
+- `public/art/ar/cairo/l3-6.jpg` — phrase — AR Каир 3 vocab «اِتَّفَقْنَا!»
+  - Draw: Хана и продавец жмут руки и смеются.
+- `public/art/ar/cairo/l3-7.jpg` — phrase — AR Каир 3 vocab «أَكْبَرُ وَأَصْغَر»
+  - Draw: Два фонаря рядом: большой и маленький.
+- `public/art/ar/cairo/kharita.jpg` — reward — AR Каир 3 reward «خَرِيطَة»
+  - Draw: На стене висит старинная карта с Нилом, пирамидами и маленькими корабликами.
+- `public/art/ar/cairo/l4-1.jpg` — phrase — AR Каир 4 vocab «تَوَابِل»
+  - Draw: Горки разноцветных специй в мешочках.
+- `public/art/ar/cairo/l4-2.jpg` — phrase — AR Каир 4 vocab «عِطْر»
+  - Draw: Флакончики духов из цветного стекла.
+- `public/art/ar/cairo/l4-3.jpg` — phrase — AR Каир 4 vocab «ذَهَب»
+  - Draw: Золотые браслеты в витрине.
+- `public/art/ar/cairo/l4-4.jpg` — phrase — AR Каир 4 vocab «فِضَّة»
+  - Draw: Серебряные кольца на бархате.
+- `public/art/ar/cairo/l4-5.jpg` — phrase — AR Каир 4 vocab «نُحَاس»
+  - Draw: Медные подносы и кувшины горят на солнце.
+- `public/art/ar/cairo/l4-6.jpg` — phrase — AR Каир 4 vocab «خَاتَمٌ مِنْ فِضَّة»
+  - Draw: Сальма примеряет серебряное кольцо.
+- `public/art/ar/cairo/l4-7.jpg` — phrase — AR Каир 4 vocab «رَائِحَةٌ قَوِيَّة!»
+  - Draw: Мурзик зажимает лапкой нос у лавки специй.
+- `public/art/ar/cairo/tawabil.jpg` — reward — AR Каир 4 reward «عُلْبَةُ التَّوَابِل»
+  - Draw: Деревянная коробочка с семью маленькими медными отделениями, в каждом — специя своего цвета.
+- `public/art/ar/cairo/l5-1.jpg` — phrase — AR Каир 5 vocab «كُتُب»
+  - Draw: Стопки книг выше Мурзика.
+- `public/art/ar/cairo/l5-2.jpg` — phrase — AR Каир 5 vocab «بُيُوت»
+  - Draw: Крыши Каира до самого горизонта.
+- `public/art/ar/cairo/l5-3.jpg` — phrase — AR Каир 5 vocab «أَقْلَام»
+  - Draw: Стакан, полный ручек и карандашей.
+- `public/art/ar/cairo/l5-4.jpg` — phrase — AR Каир 5 vocab «سَيَّارَات»
+  - Draw: Пробка на улице: машины гудят.
+- `public/art/ar/cairo/l5-5.jpg` — phrase — AR Каир 5 vocab «حَقَائِب»
+  - Draw: Гора чемоданов в прихожей.
+- `public/art/ar/cairo/l5-6.jpg` — phrase — AR Каир 5 vocab «كَثِير»
+  - Draw: Мурзик разводит лапки широко-широко.
+- `public/art/ar/cairo/l5-7.jpg` — phrase — AR Каир 5 vocab «كُتُبٌ كَثِيرَة»
+  - Draw: Хана пытается закрыть чемодан с книгами.
+- `public/art/ar/cairo/khayamiya.jpg` — reward — AR Каир 5 reward «خِيَامِيَّة»
+  - Draw: На стене висит яркое лоскутное панно хиямийя: узоры из звёзд и цветов, нашитые из цветной ткани.
+- `public/art/ar/cairo/l6-1.jpg` — phrase — AR Каир 6 vocab «مَتْحَف»
+  - Draw: Огромный зал музея с колоннами.
+- `public/art/ar/cairo/l6-2.jpg` — phrase — AR Каир 6 vocab «تِمْثَال»
+  - Draw: Каменная статуя выше всех в зале.
+- `public/art/ar/cairo/l6-3.jpg` — phrase — AR Каир 6 vocab «مُومْيَاء»
+  - Draw: Мумия в расписном саркофаге за стеклом.
+- `public/art/ar/cairo/l6-4.jpg` — phrase — AR Каир 6 vocab «فِرْعَوْن»
+  - Draw: Золотая маска фараона.
+- `public/art/ar/cairo/l6-5.jpg` — phrase — AR Каир 6 vocab «قَدِيمٌ جِدًّا»
+  - Draw: Мурзик с уважением разглядывает древнюю вазу.
+- `public/art/ar/cairo/l6-6.jpg` — phrase — AR Каир 6 vocab «لَا، مَمْنُوعُ التَّصْوِير.»
+  - Draw: Хана строго качает пальцем Сальме.
+- `public/art/ar/cairo/l6-7.jpg` — phrase — AR Каир 6 vocab «عُمْرُهُ ثَلَاثَةُ آلَافِ سَنَة.»
+  - Draw: Хана показывает на табличку у статуи.
+- `public/art/ar/cairo/bastet.jpg` — reward — AR Каир 6 reward «تِمْثَالُ بَاسْتِت»
+  - Draw: На полке стоит маленькая чёрная статуэтка сидящей кошки с золотой серёжкой в ухе.
+- `public/art/ar/cairo/l7-1.jpg` — phrase — AR Каир 7 vocab «بَرْدِيّ»
+  - Draw: Лист папируса с волокнами крест-накрест.
+- `public/art/ar/cairo/l7-2.jpg` — phrase — AR Каир 7 vocab «رَسْمُ الْعَائِلَة»
+  - Draw: На папирусе нарисованы люди за длинным столом.
+- `public/art/ar/cairo/l7-3.jpg` — phrase — AR Каир 7 vocab «كَرِيمٌ يَرْسُمُ جَيِّدًا.»
+  - Draw: Карим с тонкой кисточкой склонился над папирусом.
+- `public/art/ar/cairo/l7-4.jpg` — phrase — AR Каир 7 vocab «فِي الْوَسَط»
+  - Draw: В центре рисунка — бабушка Фатима.
+- `public/art/ar/cairo/l7-5.jpg` — phrase — AR Каир 7 vocab «أَيْنَ أَنَا؟»
+  - Draw: Мурзик ищет себя на рисунке, прищурившись.
+- `public/art/ar/cairo/l7-6.jpg` — phrase — AR Каир 7 vocab «أَمْزَح!»
+  - Draw: Карим смеётся и подмигивает.
+- `public/art/ar/cairo/l7-7.jpg` — phrase — AR Каир 7 vocab «إِلَى أَسْوَان!»
+  - Draw: Карим показывает на карте город на юге, у Нила.
+- `public/art/ar/cairo/bardi.jpg` — reward — AR Каир 7 reward «بَرْدِيّ»; AR Каир farewell 1
+  - Draw: Свёрнутый папирус перевязан лентой и лежит в чемодане рядом с тажином, вазой, синим шарфом, серебряной рамкой и банкой жасминового чая.
+- `public/art/ar/cairo/departure.jpg` — scene — AR Каир departure; AR Каир farewell 4
+  - Draw: Продавец с рынка и соседи машут с балконов вслед машине.
+- `public/art/ar/cairo/home.jpg` — scene — AR Каир farewell 2
+  - Draw: Мурзик обходит свою комнату в каирской квартире, которую обставлял урок за уроком.
+- `public/art/ar/cairo/train.jpg` — scene — AR Каир farewell 5
+  - Draw: Ночной поезд едет на юг вдоль Нила, в окне купе спит Мурзик, свернувшись клубком на чемодане.
+
+## Arabic course — Aswan (60 pictures)
+
+- `public/art/ar/aswan/arrival.jpg` — scene — AR Каир farewell 6; AR Асуан welcome
+  - Draw: Утро в Асуане: широкий синий Нил, белые паруса лодок-фелук, на другом берегу жёлтые пески и разноцветные нубийские домики.
+- `public/art/ar/aswan/l1-1.jpg` — phrase — AR Асуан 1 vocab «كَمِ السَّاعَة؟»
+  - Draw: Мурзик сонно трёт глаза, за окном ещё темно.
+- `public/art/ar/aswan/l1-2.jpg` — phrase — AR Асуан 1 vocab «السَّاعَةُ الْوَاحِدَة»
+  - Draw: Часы со стрелками на единице.
+- `public/art/ar/aswan/l1-3.jpg` — phrase — AR Асуан 1 vocab «السَّاعَةُ الْخَامِسَة»
+  - Draw: Будильник звенит: 5:00.
+- `public/art/ar/aswan/l1-4.jpg` — phrase — AR Асуан 1 vocab «السَّاعَةُ الثَّامِنَة»
+  - Draw: Часы на стене показывают восемь.
+- `public/art/ar/aswan/l1-5.jpg` — phrase — AR Асуан 1 vocab «وَالنِّصْف»
+  - Draw: Циферблат, закрашенный наполовину.
+- `public/art/ar/aswan/l1-6.jpg` — phrase — AR Асуан 1 vocab «وَالرُّبْع»
+  - Draw: Циферблат, закрашенный на четверть.
+- `public/art/ar/aswan/l1-7.jpg` — phrase — AR Асуан 1 vocab «مُبَكِّرٌ جِدًّا!»
+  - Draw: Мурзик прячется под одеяло с головой.
+- `public/art/ar/aswan/munabbih.jpg` — reward — AR Асуан 1 reward «مُنَبِّه»
+  - Draw: Круглый жёлтый будильник с двумя звонками сверху стоит на подоконнике нубийского домика.
+- `public/art/ar/aswan/l2-1.jpg` — phrase — AR Асуан 2 vocab «صَبَاحًا»
+  - Draw: Солнце встаёт над Нилом.
+- `public/art/ar/aswan/l2-2.jpg` — phrase — AR Асуан 2 vocab «مَسَاءً»
+  - Draw: Розовый вечер над пальмами.
+- `public/art/ar/aswan/l2-3.jpg` — phrase — AR Асуан 2 vocab «أَسْتَيْقِظُ مُبَكِّرًا.»
+  - Draw: Мурзик зевает и потягивается.
+- `public/art/ar/aswan/l2-4.jpg` — phrase — AR Асуан 2 vocab «أَشْرَبُ الشَّايَ صَبَاحًا.»
+  - Draw: Мурзик держит стаканчик чая обеими лапками.
+- `public/art/ar/aswan/l2-5.jpg` — phrase — AR Асуан 2 vocab «آكُلُ الْخُبْز.»
+  - Draw: Мурзик откусывает от лепёшки.
+- `public/art/ar/aswan/l2-6.jpg` — phrase — AR Асуан 2 vocab «أَنَامُ لَيْلًا.»
+  - Draw: Мурзик спит под звёздным небом.
+- `public/art/ar/aswan/l2-7.jpg` — phrase — AR Асуан 2 vocab «كُلَّ يَوْم»
+  - Draw: Календарь, в каждой клеточке нарисован спящий кот.
+- `public/art/ar/aswan/hasir.jpg` — reward — AR Асуан 2 reward «حَصِير»
+  - Draw: На глиняном полу лежит плетёный коврик из пальмовых листьев с красными и зелёными полосками.
+- `public/art/ar/aswan/l3-1.jpg` — phrase — AR Асуан 3 vocab «أَكْتُبُ»
+  - Draw: Мурзик держит карандаш в лапке.
+- `public/art/ar/aswan/l3-2.jpg` — phrase — AR Асуан 3 vocab «تَكْتُبُ»
+  - Draw: Карим заглядывает в тетрадку через плечо.
+- `public/art/ar/aswan/l3-3.jpg` — phrase — AR Асуан 3 vocab «يَكْتُبُ»
+  - Draw: Карим пишет письмо при свете фонаря.
+- `public/art/ar/aswan/l3-4.jpg` — phrase — AR Асуан 3 vocab «هِيَ تَكْتُبُ»
+  - Draw: Сальма пишет слова песни.
+- `public/art/ar/aswan/l3-5.jpg` — phrase — AR Асуан 3 vocab «نَكْتُبُ»
+  - Draw: Все пишут за одним столом.
+- `public/art/ar/aswan/l3-6.jpg` — phrase — AR Асуан 3 vocab «رِسَالَة»
+  - Draw: Конверт с марками.
+- `public/art/ar/aswan/l3-7.jpg` — phrase — AR Асуан 3 vocab «تَقْرَأُ كِتَابًا.»
+  - Draw: Хана в очках читает толстую книгу.
+- `public/art/ar/aswan/taqwim.jpg` — reward — AR Асуан 3 reward «تَقْوِيم»
+  - Draw: На стене висит календарь с фотографиями Нила, один день обведён красным сердечком.
+- `public/art/ar/aswan/l4-1.jpg` — phrase — AR Асуан 4 vocab «مَا الْيَوْم؟»
+  - Draw: Мурзик смотрит на календарь и чешет затылок.
+- `public/art/ar/aswan/l4-2.jpg` — phrase — AR Асуан 4 vocab «الْيَوْمُ الْأَحَد.»
+  - Draw: На календаре отмечено воскресенье.
+- `public/art/ar/aswan/l4-3.jpg` — phrase — AR Асуан 4 vocab «الِاثْنَيْنِ وَالثُّلَاثَاء»
+  - Draw: Две странички календаря.
+- `public/art/ar/aswan/l4-4.jpg` — phrase — AR Асуан 4 vocab «الْأَرْبِعَاءُ وَالْخَمِيس»
+  - Draw: Ещё две странички календаря.
+- `public/art/ar/aswan/l4-5.jpg` — phrase — AR Асуан 4 vocab «الْجُمُعَةُ وَالسَّبْت»
+  - Draw: Выходные: семья гуляет у Нила.
+- `public/art/ar/aswan/l4-6.jpg` — phrase — AR Асуан 4 vocab «غَدًا»
+  - Draw: Солнышко на завтрашней страничке.
+- `public/art/ar/aswan/l4-7.jpg` — phrase — AR Асуан 4 vocab «أُسْبُوع»
+  - Draw: Семь клеточек календаря в ряд.
+- `public/art/ar/aswan/sahn.jpg` — reward — AR Асуан 4 reward «صَحْن»
+  - Draw: Глиняная миска, расписанная жёлтыми треугольниками и синими точками, стоит на полке, в ней финики.
+- `public/art/ar/aswan/l5-1.jpg` — phrase — AR Асуан 5 vocab «فَلُوكَة»
+  - Draw: Деревянная лодка с огромным белым парусом.
+- `public/art/ar/aswan/l5-2.jpg` — phrase — AR Асуан 5 vocab «شِرَاع»
+  - Draw: Белый треугольный парус надувается ветром.
+- `public/art/ar/aswan/l5-3.jpg` — phrase — AR Асуан 5 vocab «النِّيل»
+  - Draw: Широкая синяя река между жёлтыми берегами.
+- `public/art/ar/aswan/l5-4.jpg` — phrase — AR Асуан 5 vocab «يَعْمَلُ عَلَى النِّيل.»
+  - Draw: Лодочник держит руль фелуки.
+- `public/art/ar/aswan/l5-5.jpg` — phrase — AR Асуан 5 vocab «الرِّيحُ قَوِيَّة.»
+  - Draw: Парус сильно надут, у Мурзика развеваются усы.
+- `public/art/ar/aswan/l5-6.jpg` — phrase — AR Асуан 5 vocab «هَلْ تَسْبَح؟»
+  - Draw: Хана показывает на воду.
+- `public/art/ar/aswan/l5-7.jpg` — phrase — AR Асуан 5 vocab «لَا أَسْبَح!»
+  - Draw: Мурзик вцепился в мачту всеми лапами.
+- `public/art/ar/aswan/namudhaj.jpg` — reward — AR Асуан 5 reward «نَمُوذَجُ فَلُوكَة»
+  - Draw: Маленькая деревянная модель фелуки с белым тканевым парусом стоит на полке.
+- `public/art/ar/aswan/l6-1.jpg` — phrase — AR Асуан 6 vocab «نَجْلِسُ عِنْدَ النِّيل.»
+  - Draw: Вся компания на берегу на циновке.
+- `public/art/ar/aswan/l6-2.jpg` — phrase — AR Асуан 6 vocab «نَشْرَبُ الشَّاي.»
+  - Draw: Чайник и пять стаканчиков на подносе.
+- `public/art/ar/aswan/l6-3.jpg` — phrase — AR Асуан 6 vocab «نُغَنِّي»
+  - Draw: Сальма играет на гитаре, все поют.
+- `public/art/ar/aswan/l6-4.jpg` — phrase — AR Асуан 6 vocab «مَاذَا تَفْعَلُون؟»
+  - Draw: Бабушка Фатима на экране телефона.
+- `public/art/ar/aswan/l6-5.jpg` — phrase — AR Асуан 6 vocab «اُسْكُتْ!»
+  - Draw: Карим прикладывает палец к губам.
+- `public/art/ar/aswan/l6-6.jpg` — phrase — AR Асуан 6 vocab «النُّجُوم»
+  - Draw: Над Нилом высыпали звёзды.
+- `public/art/ar/aswan/l6-7.jpg` — phrase — AR Асуан 6 vocab «لَا أَحَد!»
+  - Draw: Карим машет руками: никого тут нет!
+- `public/art/ar/aswan/shumu.jpg` — reward — AR Асуан 6 reward «شُمُوع»
+  - Draw: Три маленькие свечи в расписных глиняных подсвечниках горят на подоконнике, за окном Нил и звёзды.
+- `public/art/ar/aswan/l7-1.jpg` — phrase — AR Асуан 7 vocab «صُنْدُوقٌ نُوبِيّ»
+  - Draw: Деревянная шкатулка, расписанная яркими узорами.
+- `public/art/ar/aswan/l7-2.jpg` — phrase — AR Асуан 7 vocab «تَرْسُمُ عَلَى الْخَشَب.»
+  - Draw: Мастерица расписывает шкатулку тонкой кисточкой.
+- `public/art/ar/aswan/l7-3.jpg` — phrase — AR Асуан 7 vocab «أَلْوَانٌ كَثِيرَة»
+  - Draw: Баночки с жёлтой, синей, зелёной и красной краской.
+- `public/art/ar/aswan/l7-4.jpg` — phrase — AR Асуан 7 vocab «مَتَى يَكُونُ جَاهِزًا؟»
+  - Draw: Карим смотрит на часы.
+- `public/art/ar/aswan/l7-5.jpg` — phrase — AR Асуан 7 vocab «فِي السَّاعَةِ الرَّابِعَة.»
+  - Draw: Мастерица показывает четыре пальца.
+- `public/art/ar/aswan/l7-6.jpg` — phrase — AR Асуан 7 vocab «نَنْتَظِر!»
+  - Draw: Вся компания садится на скамейку у двери.
+- `public/art/ar/aswan/l7-7.jpg` — phrase — AR Асуан 7 vocab «إِلَى عَمَّان!»
+  - Draw: Карим показывает на карте Иорданию.
+- `public/art/ar/aswan/nubi.jpg` — reward — AR Асуан 7 reward «صُنْدُوقٌ نُوبِيّ»; AR Асуан farewell 1
+  - Draw: Расписная нубийская шкатулка с жёлтыми треугольниками и синими волнами лежит в чемодане рядом с остальными подарками.
+- `public/art/ar/aswan/departure.jpg` — scene — AR Асуан departure; AR Асуан farewell 4
+  - Draw: Лодочник машет с фелуки, хозяйка нубийского домика — с порога.
+- `public/art/ar/aswan/home.jpg` — scene — AR Асуан farewell 2
+  - Draw: Мурзик обходит свою комнату в нубийском домике, которую обставлял урок за уроком.
+- `public/art/ar/aswan/flight.jpg` — scene — AR Асуан farewell 5
+  - Draw: Самолёт летит на северо-восток над пустыней и Красным морем.
+
+## Arabic course — Amman (60 pictures)
+
+- `public/art/ar/amman/arrival.jpg` — scene — AR Асуан farewell 6; AR Амман welcome
+  - Draw: Белые дома Аммана на холмах. У аэропорта стоит старый бирюзовый микроавтобус, рядом машет усатый мужчина.
+- `public/art/ar/amman/l1-1.jpg` — phrase — AR Амман 1 vocab «هَذَا عَمِّي يُوسُف.»
+  - Draw: Усатый мужчина в кепке широко раскрывает объятия.
+- `public/art/ar/amman/l1-2.jpg` — phrase — AR Амман 1 vocab «عِنْدَهُ حَافِلَة.»
+  - Draw: Старый бирюзовый микроавтобус с багажником на крыше.
+- `public/art/ar/amman/l1-3.jpg` — phrase — AR Амман 1 vocab «حَافِلَةٌ قَدِيمَة»
+  - Draw: Микроавтобус чихает дымом.
+- `public/art/ar/amman/l1-4.jpg` — phrase — AR Амман 1 vocab «عِنْدَهَا»
+  - Draw: Сальма держит гитару, Хана — книгу.
+- `public/art/ar/amman/l1-5.jpg` — phrase — AR Амман 1 vocab «مَكَان»
+  - Draw: Свободное сиденье в автобусе.
+- `public/art/ar/amman/l1-6.jpg` — phrase — AR Амман 1 vocab «هَلْ هُنَاكَ مَكَان؟»
+  - Draw: Хана заглядывает в набитый автобус.
+- `public/art/ar/amman/l1-7.jpg` — phrase — AR Амман 1 vocab «لِلْجَمِيع»
+  - Draw: Все рассаживаются, чемоданы на крыше.
+- `public/art/ar/amman/surayusuf.jpg` — reward — AR Амман 1 reward «صُورَةُ الْعَائِلَة»
+  - Draw: На стене в деревянной рамке висит старая фотография: молодая бабушка Фатима и пятеро детей вокруг неё.
+- `public/art/ar/amman/l2-1.jpg` — phrase — AR Амман 2 vocab «كَمْ عُمْرُكَ؟»
+  - Draw: Дядя Юсуф наклоняется к Мурзику с хитрой улыбкой.
+- `public/art/ar/amman/l2-2.jpg` — phrase — AR Амман 2 vocab «عُمْرِي عِشْرُونَ سَنَة.»
+  - Draw: Торт с двумя свечками-цифрами ٢ и ٠.
+- `public/art/ar/amman/l2-3.jpg` — phrase — AR Амман 2 vocab «سَنَة»
+  - Draw: Календарь с одним годом.
+- `public/art/ar/amman/l2-4.jpg` — phrase — AR Амман 2 vocab «عُمْرِي خَمْسُ سَنَوَات.»
+  - Draw: Мурзик показывает пять пальчиков.
+- `public/art/ar/amman/l2-5.jpg` — phrase — AR Амман 2 vocab «عُمْرُهَا تِسْعُونَ سَنَةً تَقْرِيبًا.»
+  - Draw: Фотография бабушки Фатимы с улыбкой.
+- `public/art/ar/amman/l2-6.jpg` — phrase — AR Амман 2 vocab «شَابّ»
+  - Draw: Дядя Юсуф изображает молодого: поправляет кепку набок.
+- `public/art/ar/amman/l2-7.jpg` — phrase — AR Амман 2 vocab «كَبِيرٌ فِي السِّنّ»
+  - Draw: Пожилой мужчина с палочкой на скамейке.
+- `public/art/ar/amman/hazzaz.jpg` — reward — AR Амман 2 reward «كُرْسِيٌّ هَزَّاز»
+  - Draw: У окна стоит старое деревянное кресло-качалка с вышитой подушкой, за окном белые дома на холмах.
+- `public/art/ar/amman/l3-1.jpg` — phrase — AR Амман 3 vocab «إِخْوَة»
+  - Draw: Три мальчика на старой фотографии.
+- `public/art/ar/amman/l3-2.jpg` — phrase — AR Амман 3 vocab «أَخَوَات»
+  - Draw: Две девочки в одинаковых платьях.
+- `public/art/ar/amman/l3-3.jpg` — phrase — AR Амман 3 vocab «الْأَخُ الْأَكْبَر»
+  - Draw: Самый высокий мальчик на фото.
+- `public/art/ar/amman/l3-4.jpg` — phrase — AR Амман 3 vocab «الْأُخْتُ الصُّغْرَى»
+  - Draw: Маленькая девочка с бантом — это тётя Амина!
+- `public/art/ar/amman/l3-5.jpg` — phrase — AR Амман 3 vocab «كَمْ أَخًا عِنْدَكَ؟»
+  - Draw: Дядя Юсуф загибает пальцы.
+- `public/art/ar/amman/l3-6.jpg` — phrase — AR Амман 3 vocab «عِنْدِي أَخٌ وَاحِد.»
+  - Draw: Мальчик держит за руку младшего брата.
+- `public/art/ar/amman/l3-7.jpg` — phrase — AR Амман 3 vocab «أَنَا وَحِيد.»
+  - Draw: Мурзик один на большом диване.
+- `public/art/ar/amman/masanid.jpg` — reward — AR Амман 3 reward «مَسَانِد»
+  - Draw: Вдоль стены разложены длинные красные подушки с чёрным бедуинским узором.
+- `public/art/ar/amman/l4-1.jpg` — phrase — AR Амман 4 vocab «هُوَ طَوِيل.»
+  - Draw: Карим головой почти задевает лампу.
+- `public/art/ar/amman/l4-2.jpg` — phrase — AR Амман 4 vocab «هِيَ قَصِيرَة.»
+  - Draw: Тётя Амина встаёт на цыпочки у полки.
+- `public/art/ar/amman/l4-3.jpg` — phrase — AR Амман 4 vocab «شَعْرُهُ أَسْوَد.»
+  - Draw: Кудрявые чёрные волосы Карима.
+- `public/art/ar/amman/l4-4.jpg` — phrase — AR Амман 4 vocab «عِنْدَهُ شَارِب.»
+  - Draw: Огромные пушистые усы дяди Юсуфа.
+- `public/art/ar/amman/l4-5.jpg` — phrase — AR Амман 4 vocab «عِنْدَهَا نَظَّارَة.»
+  - Draw: Хана поправляет круглые очки.
+- `public/art/ar/amman/l4-6.jpg` — phrase — AR Амман 4 vocab «هِيَ ذَكِيَّة.»
+  - Draw: Хана решает кроссворд за минуту.
+- `public/art/ar/amman/l4-7.jpg` — phrase — AR Амман 4 vocab «مَنْ هُوَ؟»
+  - Draw: Дядя Юсуф загадочно прищуривается.
+- `public/art/ar/amman/zarbiya.jpg` — reward — AR Амман 4 reward «سَجَّادَة»
+  - Draw: На полу лежит тканый ковёр с красными, оранжевыми и чёрными полосами и ромбами.
+- `public/art/ar/amman/l5-1.jpg` — phrase — AR Амман 5 vocab «نُكْتَة»
+  - Draw: Дядя Юсуф поднимает палец: внимание, шутка!
+- `public/art/ar/amman/l5-2.jpg` — phrase — AR Амман 5 vocab «اِسْمَعُوا!»
+  - Draw: Дядя Юсуф стучит ложкой по стакану.
+- `public/art/ar/amman/l5-3.jpg` — phrase — AR Амман 5 vocab «مُضْحِك»
+  - Draw: Мурзик катается по полу от смеха.
+- `public/art/ar/amman/l5-4.jpg` — phrase — AR Амман 5 vocab «النُّكْتَةُ لَيْسَتْ مُضْحِكَة!»
+  - Draw: Сальма закатывает глаза.
+- `public/art/ar/amman/l5-5.jpg` — phrase — AR Амман 5 vocab «نَضْحَكُ كَثِيرًا.»
+  - Draw: Вся компания хохочет в микроавтобусе.
+- `public/art/ar/amman/l5-6.jpg` — phrase — AR Амман 5 vocab «لَسْتُ مُتْعَبًا.»
+  - Draw: Мурзик зевает, но бодро держит глаза открытыми.
+- `public/art/ar/amman/l5-7.jpg` — phrase — AR Амман 5 vocab «أَتَكَلَّمُ خَمْسَ لُغَات!»
+  - Draw: Дядя Юсуф гордо поднимает пять пальцев.
+- `public/art/ar/amman/shitranj.jpg` — reward — AR Амман 5 reward «شِطْرَنْج»
+  - Draw: На низком столике стоит деревянная шахматная доска с резными фигурами, рядом стаканчик чая.
+- `public/art/ar/amman/l6-1.jpg` — phrase — AR Амман 6 vocab «مَنْسَف»
+  - Draw: Огромное блюдо риса с мясом, сверху орешки.
+- `public/art/ar/amman/l6-2.jpg` — phrase — AR Амман 6 vocab «بِالْهَنَاءِ وَالشِّفَاء!»
+  - Draw: Дядя Юсуф ставит блюдо в центр стола.
+- `public/art/ar/amman/l6-3.jpg` — phrase — AR Амман 6 vocab «كُلْ أَكْثَر!»
+  - Draw: Тётя Амина подкладывает Мурзику рис.
+- `public/art/ar/amman/l6-4.jpg` — phrase — AR Амман 6 vocab «لَا، شُكْرًا، شَبِعْت.»
+  - Draw: Мурзик держится за круглый живот.
+- `public/art/ar/amman/l6-5.jpg` — phrase — AR Амман 6 vocab «قَلِيلًا فَقَط»
+  - Draw: Мурзик показывает пальчиками маленькую щепотку.
+- `public/art/ar/amman/l6-6.jpg` — phrase — AR Амман 6 vocab «أَرُزّ»
+  - Draw: Горка белого риса.
+- `public/art/ar/amman/l6-7.jpg` — phrase — AR Амман 6 vocab «لَحْم»
+  - Draw: Кусочки мяса на рисе.
+- `public/art/ar/amman/abajura.jpg` — reward — AR Амман 6 reward «أَبَاجُورَة»
+  - Draw: На столике у кресла-качалки горит лампа с абажуром из ткани в красно-белую клетку.
+- `public/art/ar/amman/l7-1.jpg` — phrase — AR Амман 7 vocab «دَلَّة»
+  - Draw: Медный кофейник с длинным изогнутым носиком.
+- `public/art/ar/amman/l7-2.jpg` — phrase — AR Амман 7 vocab «قَهْوَةٌ عَرَبِيَّة»
+  - Draw: Крошечные чашечки с тёмным горьким кофе.
+- `public/art/ar/amman/l7-3.jpg` — phrase — AR Амман 7 vocab «هَذِهِ دَلَّةُ أُمِّي.»
+  - Draw: Дядя Юсуф бережно держит старый кофейник.
+- `public/art/ar/amman/l7-4.jpg` — phrase — AR Амман 7 vocab «عُمْرُهَا خَمْسُونَ سَنَة.»
+  - Draw: На кофейнике видны царапинки от времени.
+- `public/art/ar/amman/l7-5.jpg` — phrase — AR Амман 7 vocab «هَدِيَّةٌ لَهَا»
+  - Draw: Кофейник завёрнут в платок.
+- `public/art/ar/amman/l7-6.jpg` — phrase — AR Амман 7 vocab «سَأُسَافِرُ مَعَكُمْ أَيْضًا!»
+  - Draw: Дядя Юсуф заводит свой микроавтобус.
+- `public/art/ar/amman/l7-7.jpg` — phrase — AR Амман 7 vocab «إِلَى الْبَتْرَاء!»
+  - Draw: Дорога на юг среди холмов.
+- `public/art/ar/amman/dalla.jpg` — reward — AR Амман 7 reward «دَلَّة»; AR Амман farewell 1
+  - Draw: Старый медный кофейник-далла, начищенный до блеска, лежит в чемодане рядом с остальными подарками.
+- `public/art/ar/amman/departure.jpg` — scene — AR Амман departure; AR Амман farewell 4
+  - Draw: Соседи машут вслед бирюзовому микроавтобусу, на крыше гора чемоданов.
+- `public/art/ar/amman/home.jpg` — scene — AR Амман farewell 2
+  - Draw: Мурзик обходит свою комнату на холме, которую обставлял урок за уроком.
+- `public/art/ar/amman/road.jpg` — scene — AR Амман farewell 5
+  - Draw: Бирюзовый микроавтобус едет по пустынной дороге между холмами, из окна торчит гитара Сальмы.
+
+## Arabic course — Petra (60 pictures)
+
+- `public/art/ar/petra/arrival.jpg` — scene — AR Амман farewell 6; AR Петра welcome
+  - Draw: Узкое ущелье между розовыми скалами, в конце виден высеченный в скале древний храм.
+- `public/art/ar/petra/l1-1.jpg` — phrase — AR Петра 1 vocab «أَيْنَ الْمَدْخَل؟»
+  - Draw: Мурзик стоит у развилки с указателями.
+- `public/art/ar/petra/l1-2.jpg` — phrase — AR Петра 1 vocab «الْمَدْخَلُ هُنَا.»
+  - Draw: Гид показывает на ворота у дороги в ущелье.
+- `public/art/ar/petra/l1-3.jpg` — phrase — AR Петра 1 vocab «تَذْكِرَة»
+  - Draw: Билет с картинкой розового храма.
+- `public/art/ar/petra/l1-4.jpg` — phrase — AR Петра 1 vocab «سِتُّ تَذَاكِرَ، مِنْ فَضْلِكَ.»
+  - Draw: Карим протягивает деньги в окошко кассы.
+- `public/art/ar/petra/l1-5.jpg` — phrase — AR Петра 1 vocab «الْمَخْرَج»
+  - Draw: Табличка со стрелкой к выходу.
+- `public/art/ar/petra/l1-6.jpg` — phrase — AR Петра 1 vocab «مَفْتُوح»
+  - Draw: Открытые ворота, солнце.
+- `public/art/ar/petra/l1-7.jpg` — phrase — AR Петра 1 vocab «مُغْلَق»
+  - Draw: Закрытые ворота вечером.
+- `public/art/ar/petra/kharitapetra.jpg` — reward — AR Петра 1 reward «خَرِيطَةُ الْبَتْرَاء»
+  - Draw: На стене висит карта Петры: ущелье, храмы, тропинки и лестницы, нарисованные коричневым.
+- `public/art/ar/petra/l2-1.jpg` — phrase — AR Петра 2 vocab «عَلَى الْيَمِين»
+  - Draw: Стрелка вправо на камне.
+- `public/art/ar/petra/l2-2.jpg` — phrase — AR Петра 2 vocab «عَلَى الْيَسَار»
+  - Draw: Стрелка влево на камне.
+- `public/art/ar/petra/l2-3.jpg` — phrase — AR Петра 2 vocab «إِلَى الْأَمَام»
+  - Draw: Длинная тропинка уходит прямо между скалами.
+- `public/art/ar/petra/l2-4.jpg` — phrase — AR Петра 2 vocab «ثُمَّ»
+  - Draw: Две стрелки одна за другой.
+- `public/art/ar/petra/l2-5.jpg` — phrase — AR Петра 2 vocab «الطَّرِيق»
+  - Draw: Каменистая дорога в ущелье.
+- `public/art/ar/petra/l2-6.jpg` — phrase — AR Петра 2 vocab «أَيْنَ الْخَزْنَة؟»
+  - Draw: Мурзик держит карту вверх ногами.
+- `public/art/ar/petra/l2-7.jpg` — phrase — AR Петра 2 vocab «إِلَى الْأَمَام، ثُمَّ عَلَى الْيَمِين.»
+  - Draw: Гид показывает рукой: прямо, а потом направо.
+- `public/art/ar/petra/torch.jpg` — reward — AR Петра 2 reward «مِصْبَاحٌ يَدَوِيّ»
+  - Draw: На тумбочке лежит маленький металлический фонарик на ремешке.
+- `public/art/ar/petra/l3-1.jpg` — phrase — AR Петра 3 vocab «هَلِ الْخَزْنَةُ بَعِيدَة؟»
+  - Draw: Тётя Амина обмахивается шляпой.
+- `public/art/ar/petra/l3-2.jpg` — phrase — AR Петра 3 vocab «لَا، قَرِيبَةٌ جِدًّا.»
+  - Draw: Гид показывает: вон за тем поворотом.
+- `public/art/ar/petra/l3-3.jpg` — phrase — AR Петра 3 vocab «دَقِيقَة»
+  - Draw: Часы со стрелкой на одной минуте.
+- `public/art/ar/petra/l3-4.jpg` — phrase — AR Петра 3 vocab «عَشْرُ دَقَائِق»
+  - Draw: Мурзик показывает десять пальчиков.
+- `public/art/ar/petra/l3-5.jpg` — phrase — AR Петра 3 vocab «مَشْيًا»
+  - Draw: Ноги в сандалиях шагают по камням.
+- `public/art/ar/petra/l3-6.jpg` — phrase — AR Петра 3 vocab «عَلَى الْجَمَل»
+  - Draw: Верблюд с бахромой на сбруе жуёт и смотрит на Мурзика.
+- `public/art/ar/petra/l3-7.jpg` — phrase — AR Петра 3 vocab «عَلَى الْحِصَان»
+  - Draw: Белая лошадь у входа в ущелье.
+- `public/art/ar/petra/qubbaa.jpg` — reward — AR Петра 3 reward «قُبَّعَة»
+  - Draw: На крючке у двери висит соломенная шляпа с широкими полями, с прорезями для кошачьих ушей.
+- `public/art/ar/petra/l4-1.jpg` — phrase — AR Петра 4 vocab «الْمَدِينَةُ الْوَرْدِيَّة»
+  - Draw: Розовые скалы на закате.
+- `public/art/ar/petra/l4-2.jpg` — phrase — AR Петра 4 vocab «صَخْر»
+  - Draw: Полосатая розово-красная скала.
+- `public/art/ar/petra/l4-3.jpg` — phrase — AR Петра 4 vocab «مَحْفُورٌ فِي الصَّخْر»
+  - Draw: Колонны храма вырезаны прямо в скале.
+- `public/art/ar/petra/l4-4.jpg` — phrase — AR Петра 4 vocab «الْخَزْنَة»
+  - Draw: Огромный фасад с колоннами в конце ущелья.
+- `public/art/ar/petra/l4-5.jpg` — phrase — AR Петра 4 vocab «أَجْمَلُ مَدِينَة!»
+  - Draw: Мурзик раскинул лапы от восторга.
+- `public/art/ar/petra/l4-6.jpg` — phrase — AR Петра 4 vocab «أَقْدَمُ مِنْ أَلْفَيْ سَنَة»
+  - Draw: Хана показывает на древние ступени.
+- `public/art/ar/petra/l4-7.jpg` — phrase — AR Петра 4 vocab «كَبِيرٌ جِدًّا!»
+  - Draw: Крошечный Мурзик у подножия огромного храма.
+- `public/art/ar/petra/zujaja.jpg` — reward — AR Петра 4 reward «زُجَاجَةُ مَاء»
+  - Draw: На полке стоит металлическая бутылка для воды, на ней нацарапан маленький верблюд.
+- `public/art/ar/petra/l5-1.jpg` — phrase — AR Петра 5 vocab «ضِعْنَا!»
+  - Draw: Вся компания стоит на развилке среди одинаковых скал.
+- `public/art/ar/petra/l5-2.jpg` — phrase — AR Петра 5 vocab «أَيْنَ نَحْنُ؟»
+  - Draw: Карим крутит карту во все стороны.
+- `public/art/ar/petra/l5-3.jpg` — phrase — AR Петра 5 vocab «لَا أَعْرِفُ الطَّرِيق.»
+  - Draw: Дядя Юсуф виновато чешет затылок.
+- `public/art/ar/petra/l5-4.jpg` — phrase — AR Петра 5 vocab «لَا شَبَكَة!»
+  - Draw: Сальма поднимает телефон повыше.
+- `public/art/ar/petra/l5-5.jpg` — phrase — AR Петра 5 vocab «سَاعِدْنَا، مِنْ فَضْلِكَ!»
+  - Draw: Мурзик машет лапой мальчику на ослике.
+- `public/art/ar/petra/l5-6.jpg` — phrase — AR Петра 5 vocab «اِتْبَعُونِي!»
+  - Draw: Мальчик на ослике машет рукой: за мной!
+- `public/art/ar/petra/l5-7.jpg` — phrase — AR Петра 5 vocab «وَصَلْنَا!»
+  - Draw: Компания выходит на широкую тропу у входа.
+- `public/art/ar/petra/zahr.jpg` — reward — AR Петра 5 reward «حَقِيبَةُ ظَهْر»
+  - Draw: На стуле висит маленький рюкзак песочного цвета с вышитым розовым узором.
+- `public/art/ar/petra/l6-1.jpg` — phrase — AR Петра 6 vocab «رَمْلٌ مُلَوَّن»
+  - Draw: Мисочки с красным, жёлтым, белым и розовым песком.
+- `public/art/ar/petra/l6-2.jpg` — phrase — AR Петра 6 vocab «زُجَاجَةٌ صَغِيرَة»
+  - Draw: Пустая стеклянная бутылочка на ладони.
+- `public/art/ar/petra/l6-3.jpg` — phrase — AR Петра 6 vocab «كَيْفَ تَصْنَعُ هَذَا؟»
+  - Draw: Мурзик заворожённо смотрит на руки мастера.
+- `public/art/ar/petra/l6-4.jpg` — phrase — AR Петра 6 vocab «بِالصَّبْر!»
+  - Draw: Мастер тонкой палочкой укладывает песчинки.
+- `public/art/ar/petra/l6-5.jpg` — phrase — AR Петра 6 vocab «اُكْتُبِ اسْمَهَا، مِنْ فَضْلِكَ.»
+  - Draw: Карим протягивает бумажку с именем бабушки.
+- `public/art/ar/petra/l6-6.jpg` — phrase — AR Петра 6 vocab «جَمَلٌ فِي الصَّحْرَاء»
+  - Draw: Внутри бутылочки появляется песочный верблюд.
+- `public/art/ar/petra/l6-7.jpg` — phrase — AR Петра 6 vocab «بِأَيِّ لَوْن؟»
+  - Draw: Мастер держит палочку над мисочками.
+- `public/art/ar/petra/busla.jpg` — reward — AR Петра 6 reward «بُوصْلَة»
+  - Draw: На тумбочке лежит старый латунный компас с открытой крышкой, стрелка показывает на север.
+- `public/art/ar/petra/l7-1.jpg` — phrase — AR Петра 7 vocab «زُجَاجَةُ رَمْل»
+  - Draw: Готовая бутылочка: верблюд, пустыня и имя.
+- `public/art/ar/petra/l7-2.jpg` — phrase — AR Петра 7 vocab «الزُّجَاجَةُ جَاهِزَة!»
+  - Draw: Мастер протягивает бутылочку двумя руками.
+- `public/art/ar/petra/l7-3.jpg` — phrase — AR Петра 7 vocab «اِسْمُ الْجَدَّةِ بِالْأَحْمَر»
+  - Draw: Красные арабские буквы в песке.
+- `public/art/ar/petra/l7-4.jpg` — phrase — AR Петра 7 vocab «لَا تَهُزَّهَا!»
+  - Draw: Мастер строго качает пальцем.
+- `public/art/ar/petra/l7-5.jpg` — phrase — AR Петра 7 vocab «بِحَذَر»
+  - Draw: Мурзик заворачивает бутылочку в шарф.
+- `public/art/ar/petra/l7-6.jpg` — phrase — AR Петра 7 vocab «أَجْمَلُ هَدِيَّة!»
+  - Draw: Все склонились над бутылочкой.
+- `public/art/ar/petra/l7-7.jpg` — phrase — AR Петра 7 vocab «إِلَى وَادِي رَم!»
+  - Draw: Карим показывает на карте пустыню на юге.
+- `public/art/ar/petra/raml.jpg` — reward — AR Петра 7 reward «زُجَاجَةُ رَمْل»; AR Петра farewell 1
+  - Draw: Стеклянная бутылочка с узором из цветного песка — верблюд, кот и имя «Фатима» красным — завёрнута в шарф и лежит в чемодане рядом с остальными подарками.
+- `public/art/ar/petra/departure.jpg` — scene — AR Петра departure; AR Петра farewell 4
+  - Draw: Мастер песка и мальчик на ослике машут вслед бирюзовому микроавтобусу.
+- `public/art/ar/petra/home.jpg` — scene — AR Петра farewell 2
+  - Draw: Мурзик обходит свою комнату в гостевом доме, которую обставлял урок за уроком.
+- `public/art/ar/petra/road.jpg` — scene — AR Петра farewell 5
+  - Draw: Бирюзовый микроавтобус едет на юг, дорога спускается в красную пустыню.
+
+## Arabic course — Wadi Rum (60 pictures)
+
+- `public/art/ar/wadirum/arrival.jpg` — scene — AR Петра farewell 6; AR Вади-Рам welcome
+  - Draw: Красная пустыня с огромными скалами, у бедуинского шатра стоит проводник в красно-белом платке.
+- `public/art/ar/wadirum/l1-1.jpg` — phrase — AR Вади-Рам 1 vocab «الْجَوُّ حَارٌّ جِدًّا!»
+  - Draw: Мурзик лежит в тени скалы, высунув язык.
+- `public/art/ar/wadirum/l1-2.jpg` — phrase — AR Вади-Рам 1 vocab «كَمْ دَرَجَةً الْيَوْم؟»
+  - Draw: Термометр на палатке.
+- `public/art/ar/wadirum/l1-3.jpg` — phrase — AR Вади-Рам 1 vocab «أَرْبَعُونَ دَرَجَة!»
+  - Draw: Красный столбик термометра на отметке ٤٠.
+- `public/art/ar/wadirum/l1-4.jpg` — phrase — AR Вади-Рам 1 vocab «الشَّمْسُ قَوِيَّة.»
+  - Draw: Яркое солнце над красными скалами.
+- `public/art/ar/wadirum/l1-5.jpg` — phrase — AR Вади-Рам 1 vocab «ظِلّ»
+  - Draw: Тёмная прохладная тень под скалой.
+- `public/art/ar/wadirum/l1-6.jpg` — phrase — AR Вади-Рам 1 vocab «اِشْرَبْ مَاءً!»
+  - Draw: Бедуин протягивает Мурзику флягу.
+- `public/art/ar/wadirum/l1-7.jpg` — phrase — AR Вади-Рам 1 vocab «أَنَا عَطْشَان!»
+  - Draw: Мурзик с пустой бутылкой.
+- `public/art/ar/wadirum/mirwaha.jpg` — reward — AR Вади-Рам 1 reward «مِرْوَحَة»
+  - Draw: На подушке в шатре лежит маленький плетёный веер из пальмовых листьев с красной кисточкой.
+- `public/art/ar/wadirum/l2-1.jpg` — phrase — AR Вади-Рам 2 vocab «فِي اللَّيْلِ الْجَوُّ بَارِد.»
+  - Draw: Тёмная пустыня, Мурзик дрожит.
+- `public/art/ar/wadirum/l2-2.jpg` — phrase — AR Вади-Рам 2 vocab «أَنَا بَرْدَان!»
+  - Draw: Мурзик стучит зубами.
+- `public/art/ar/wadirum/l2-3.jpg` — phrase — AR Вади-Рам 2 vocab «نَار»
+  - Draw: Костёр перед шатром.
+- `public/art/ar/wadirum/l2-4.jpg` — phrase — AR Вади-Рам 2 vocab «سُتْرَة»
+  - Draw: Тёплая куртка на плечах Карима.
+- `public/art/ar/wadirum/l2-5.jpg` — phrase — AR Вади-Рам 2 vocab «اِلْبَسْ سُتْرَتَك!»
+  - Draw: Тётя Амина протягивает Мурзику куртку.
+- `public/art/ar/wadirum/l2-6.jpg` — phrase — AR Вади-Рам 2 vocab «نَهَارًا حَارّ، وَلَيْلًا بَارِد.»
+  - Draw: Половина картинки — солнце, половина — луна.
+- `public/art/ar/wadirum/l2-7.jpg` — phrase — AR Вади-Рам 2 vocab «دَافِئ»
+  - Draw: Мурзик греет лапки у огня.
+- `public/art/ar/wadirum/mawqid.jpg` — reward — AR Вади-Рам 2 reward «مَوْقِد»
+  - Draw: У входа в шатёр стоит маленькая металлическая жаровня, в ней тлеют угольки.
+- `public/art/ar/wadirum/l3-1.jpg` — phrase — AR Вади-Рам 3 vocab «الرِّمَالُ حَمْرَاء.»
+  - Draw: Красный песок до самого горизонта.
+- `public/art/ar/wadirum/l3-2.jpg` — phrase — AR Вади-Рам 3 vocab «الْجِبَالُ عَالِيَة.»
+  - Draw: Огромные скалы, как замки.
+- `public/art/ar/wadirum/l3-3.jpg` — phrase — AR Вади-Рам 3 vocab «كُثْبَان»
+  - Draw: Высокие песчаные дюны.
+- `public/art/ar/wadirum/l3-4.jpg` — phrase — AR Вади-Рам 3 vocab «صُخُور»
+  - Draw: Скалы, похожие на грибы.
+- `public/art/ar/wadirum/l3-5.jpg` — phrase — AR Вади-Рам 3 vocab «وَاسِع»
+  - Draw: Пустыня до самого горизонта.
+- `public/art/ar/wadirum/l3-6.jpg` — phrase — AR Вади-Рам 3 vocab «هَادِئٌ جِدًّا»
+  - Draw: Мурзик сидит на камне, вокруг ни звука.
+- `public/art/ar/wadirum/l3-7.jpg` — phrase — AR Вади-Рам 3 vocab «لَا يُوجَدُ مَاء.»
+  - Draw: Сухая трещина в земле.
+- `public/art/ar/wadirum/siraj.jpg` — reward — AR Вади-Рам 3 reward «سِرَاج»
+  - Draw: На сундуке в шатре стоит старая медная масляная лампа с маленьким огоньком.
+- `public/art/ar/wadirum/l4-1.jpg` — phrase — AR Вади-Рам 4 vocab «السَّمَاء»
+  - Draw: Тёмно-синее небо над дюнами.
+- `public/art/ar/wadirum/l4-2.jpg` — phrase — AR Вади-Рам 4 vocab «نُجُومٌ كَثِيرَة»
+  - Draw: Тысячи звёзд и Млечный Путь.
+- `public/art/ar/wadirum/l4-3.jpg` — phrase — AR Вади-Рам 4 vocab «هَلْ تَرَى النُّجُوم؟»
+  - Draw: Салим показывает рукой в небо.
+- `public/art/ar/wadirum/l4-4.jpg` — phrase — AR Вади-Рам 4 vocab «نَعَم، أَرَى نُجُومًا كَثِيرَة!»
+  - Draw: Мурзик лежит на спине на песке.
+- `public/art/ar/wadirum/l4-5.jpg` — phrase — AR Вади-Рам 4 vocab «نَجْمٌ سَاطِع»
+  - Draw: Одна звезда сияет ярче всех.
+- `public/art/ar/wadirum/l4-6.jpg` — phrase — AR Вади-Рам 4 vocab «سَمَاءٌ صَافِيَة»
+  - Draw: Ни облачка, только звёзды.
+- `public/art/ar/wadirum/l4-7.jpg` — phrase — AR Вади-Рам 4 vocab «نَرَى الْقَمَر.»
+  - Draw: Над скалой поднимается круглая луна.
+- `public/art/ar/wadirum/kharitanujum.jpg` — reward — AR Вади-Рам 4 reward «خَرِيطَةُ النُّجُوم»
+  - Draw: На стенке шатра висит тёмно-синяя карта звёздного неба с золотыми точками и линиями созвездий.
+- `public/art/ar/wadirum/l5-1.jpg` — phrase — AR Вади-Рам 5 vocab «جِمَال»
+  - Draw: Караван верблюдов на гребне дюны.
+- `public/art/ar/wadirum/l5-2.jpg` — phrase — AR Вади-Рам 5 vocab «يَمْشِي بِبُطْء.»
+  - Draw: Верблюд неторопливо шагает по песку.
+- `public/art/ar/wadirum/l5-3.jpg` — phrase — AR Вади-Рам 5 vocab «بِسُرْعَة»
+  - Draw: Мурзик бежит по песку, поднимая облачко пыли.
+- `public/art/ar/wadirum/l5-4.jpg` — phrase — AR Вади-Рам 5 vocab «يَأْكُلُ وَيَشْرَب.»
+  - Draw: Верблюд жуёт колючку.
+- `public/art/ar/wadirum/l5-5.jpg` — phrase — AR Вади-Рам 5 vocab «الْجَمَلُ صَبُور.»
+  - Draw: Верблюд спокойно лежит, на нём сидят трое.
+- `public/art/ar/wadirum/l5-6.jpg` — phrase — AR Вади-Рам 5 vocab «اِنْتَبِهْ!»
+  - Draw: Верблюд встаёт, Мурзик чуть не падает.
+- `public/art/ar/wadirum/l5-7.jpg` — phrase — AR Вади-Рам 5 vocab «اِسْمُهُ سُلْطَان.»
+  - Draw: Салим гладит верблюда по шее.
+- `public/art/ar/wadirum/jaras.jpg` — reward — AR Вади-Рам 5 reward «جَرَس»
+  - Draw: На верёвочке с яркими кисточками висит маленький медный колокольчик.
+- `public/art/ar/wadirum/l6-1.jpg` — phrase — AR Вади-Рам 6 vocab «الرِّيحُ قَوِيَّةٌ جِدًّا!»
+  - Draw: У всех развеваются волосы и шарфы.
+- `public/art/ar/wadirum/l6-2.jpg` — phrase — AR Вади-Рам 6 vocab «عَاصِفَةٌ رَمْلِيَّة»
+  - Draw: Жёлтая стена песка надвигается на лагерь.
+- `public/art/ar/wadirum/l6-3.jpg` — phrase — AR Вади-Рам 6 vocab «خَيْمَة»
+  - Draw: Чёрный бедуинский шатёр из козьей шерсти.
+- `public/art/ar/wadirum/l6-4.jpg` — phrase — AR Вади-Рам 6 vocab «اُدْخُلُوا الْخَيْمَة!»
+  - Draw: Салим держит полог шатра.
+- `public/art/ar/wadirum/l6-5.jpg` — phrase — AR Вади-Рам 6 vocab «أَغْلِقُوا الْبَاب!»
+  - Draw: Карим и дядя Юсуф завязывают полог.
+- `public/art/ar/wadirum/l6-6.jpg` — phrase — AR Вади-Рам 6 vocab «الرَّمْلُ فِي كُلِّ مَكَان!»
+  - Draw: Мурзик весь в песке, только глаза видны.
+- `public/art/ar/wadirum/l6-7.jpg` — phrase — AR Вади-Рам 6 vocab «اِنْتَهَتِ الْعَاصِفَة.»
+  - Draw: Небо снова голубое, песок улёгся.
+- `public/art/ar/wadirum/duff.jpg` — reward — AR Вади-Рам 6 reward «دُفّ»
+  - Draw: У подушек лежит круглый бубен из кожи и дерева с медными тарелочками по краю.
+- `public/art/ar/wadirum/l7-1.jpg` — phrase — AR Вади-Рам 7 vocab «وَبَرُ الْجِمَال»
+  - Draw: Мягкий коричневый моток шерсти.
+- `public/art/ar/wadirum/l7-2.jpg` — phrase — AR Вади-Рам 7 vocab «بَطَّانِيَّةٌ دَافِئَة»
+  - Draw: Коричневый плед с красным узором.
+- `public/art/ar/wadirum/l7-3.jpg` — phrase — AR Вади-Рам 7 vocab «نَسَجَتْهَا أُمِّي.»
+  - Draw: Пожилая бедуинка за ткацким станком.
+- `public/art/ar/wadirum/l7-4.jpg` — phrase — AR Вади-Рам 7 vocab «لِلَّيَالِي الْبَارِدَة»
+  - Draw: Звёздная ночь, плед у костра.
+- `public/art/ar/wadirum/l7-5.jpg` — phrase — AR Вади-Рам 7 vocab «نَاعِمَةٌ جِدًّا!»
+  - Draw: Мурзик трётся щекой о плед.
+- `public/art/ar/wadirum/l7-6.jpg` — phrase — AR Вади-Рам 7 vocab «شُكْرًا يَا سَلِيم!»
+  - Draw: Мурзик прижимает лапку к сердцу.
+- `public/art/ar/wadirum/l7-7.jpg` — phrase — AR Вади-Рам 7 vocab «إِلَى الْعُلَا!»
+  - Draw: Карим показывает на карте оазис в Саудовской Аравии.
+- `public/art/ar/wadirum/wabar.jpg` — reward — AR Вади-Рам 7 reward «بَطَّانِيَّةٌ مِنْ وَبَرِ الْجِمَال»; AR Вади-Рам farewell 1
+  - Draw: Сложенный коричневый плед из верблюжьей шерсти с красным узором лежит в чемодане поверх остальных подарков.
+- `public/art/ar/wadirum/departure.jpg` — scene — AR Вади-Рам departure; AR Вади-Рам farewell 4
+  - Draw: Салим и верблюд Султан машут вслед бирюзовому микроавтобусу.
+- `public/art/ar/wadirum/home.jpg` — scene — AR Вади-Рам farewell 2
+  - Draw: Мурзик обходит свой шатёр, который обставлял урок за уроком.
+- `public/art/ar/wadirum/road.jpg` — scene — AR Вади-Рам farewell 5
+  - Draw: Бирюзовый микроавтобус едет по длинной пустынной дороге на юг, впереди горизонт.
+
+## Arabic course — AlUla (60 pictures)
+
+- `public/art/ar/alula/arrival.jpg` — scene — AR Вади-Рам farewell 6; AR Аль-Ула welcome
+  - Draw: Зелёный оазис с пальмами среди огромных песчаных скал. У старого глиняного города машут мужчина, женщина и малыш.
+- `public/art/ar/alula/l1-1.jpg` — phrase — AR Аль-Ула 1 vocab «أَخِيرًا وَصَلْنَا!»
+  - Draw: Микроавтобус останавливается среди пальм оазиса.
+- `public/art/ar/alula/l1-2.jpg` — phrase — AR Аль-Ула 1 vocab «كَيْفَ كَانَتِ الرِّحْلَة؟»
+  - Draw: Насер встречает всех у ворот.
+- `public/art/ar/alula/l1-3.jpg` — phrase — AR Аль-Ула 1 vocab «كَانَتْ طَوِيلَةً جِدًّا!»
+  - Draw: Дядя Юсуф потягивается и держится за спину.
+- `public/art/ar/alula/l1-4.jpg` — phrase — AR Аль-Ула 1 vocab «نِمْتُ فِي الْحَافِلَة.»
+  - Draw: Мурзик зевает, на щеке след от подушки.
+- `public/art/ar/alula/l1-5.jpg` — phrase — AR Аль-Ула 1 vocab «تَعِبْنَا.»
+  - Draw: Вся компания сидит на чемоданах.
+- `public/art/ar/alula/l1-6.jpg` — phrase — AR Аль-Ула 1 vocab «وَاحَة»
+  - Draw: Зелёные пальмы среди жёлтых скал.
+- `public/art/ar/alula/l1-7.jpg` — phrase — AR Аль-Ула 1 vocab «هَذِهِ زَوْجَتِي لَيْلَى.»
+  - Draw: Насер обнимает за плечи молодую женщину с малышом на руках.
+- `public/art/ar/alula/luebajamal.jpg` — reward — AR Аль-Ула 1 reward «لُعْبَةُ جَمَل»
+  - Draw: На подоконнике стоит мягкий игрушечный верблюд с красным седлом и кисточками.
+- `public/art/ar/alula/l2-1.jpg` — phrase — AR Аль-Ула 2 vocab «مَاذَا رَأَيْت؟»
+  - Draw: Ляйля с улыбкой наливает чай.
+- `public/art/ar/alula/l2-2.jpg` — phrase — AR Аль-Ула 2 vocab «رَأَيْتُ صَخْرَةً كَبِيرَة.»
+  - Draw: Огромная скала посреди песка.
+- `public/art/ar/alula/l2-3.jpg` — phrase — AR Аль-Ула 2 vocab «ذَهَبْنَا إِلَى الصُّخُور.»
+  - Draw: Компания идёт по песку к скалам.
+- `public/art/ar/alula/l2-4.jpg` — phrase — AR Аль-Ула 2 vocab «أَكَلْتُ تَمْرًا.»
+  - Draw: Мурзик с фиником в лапках.
+- `public/art/ar/alula/l2-5.jpg` — phrase — AR Аль-Ула 2 vocab «شَرِبْتُ الْقَهْوَة.»
+  - Draw: Крошечная чашечка арабского кофе.
+- `public/art/ar/alula/l2-6.jpg` — phrase — AR Аль-Ула 2 vocab «صَوَّرَتْ سَلْمَى كُلَّ شَيْء.»
+  - Draw: Сальма с телефоном на вытянутой руке.
+- `public/art/ar/alula/l2-7.jpg` — phrase — AR Аль-Ула 2 vocab «أَمْس»
+  - Draw: Календарь: вчерашний день зачёркнут.
+- `public/art/ar/alula/minzar.jpg` — reward — AR Аль-Ула 2 reward «مِنْظَار»
+  - Draw: На полке лежит маленький чёрный бинокль на ремешке.
+- `public/art/ar/alula/l3-1.jpg` — phrase — AR Аль-Ула 3 vocab «أَوَّلًا»
+  - Draw: Цифра ١ на первой картинке комикса.
+- `public/art/ar/alula/l3-2.jpg` — phrase — AR Аль-Ула 3 vocab «ثُمَّ أَكَلْنَا.»
+  - Draw: Стрелка ко второй картинке: все обедают.
+- `public/art/ar/alula/l3-3.jpg` — phrase — AR Аль-Ула 3 vocab «بَعْدَ ذَلِكَ»
+  - Draw: Третья картинка комикса.
+- `public/art/ar/alula/l3-4.jpg` — phrase — AR Аль-Ула 3 vocab «أَخِيرًا»
+  - Draw: Последняя картинка: все спят.
+- `public/art/ar/alula/l3-5.jpg` — phrase — AR Аль-Ула 3 vocab «اِسْتَيْقَظْنَا مُبَكِّرًا.»
+  - Draw: Будильник звенит, все зевают.
+- `public/art/ar/alula/l3-6.jpg` — phrase — AR Аль-Ула 3 vocab «أَوَّلًا ذَهَبْنَا إِلَى الْحِجْر، ثُمَّ أَكَلْنَا.»
+  - Draw: Комикс из двух картинок: древние скалы и обед.
+- `public/art/ar/alula/l3-7.jpg` — phrase — AR Аль-Ула 3 vocab «رَجَعْنَا إِلَى الْبَيْت.»
+  - Draw: Микроавтобус въезжает в ворота оазиса.
+- `public/art/ar/alula/saaramliya.jpg` — reward — AR Аль-Ула 3 reward «سَاعَةٌ رَمْلِيَّة»
+  - Draw: На столике стоят деревянные песочные часы с красным песком.
+- `public/art/ar/alula/l4-1.jpg` — phrase — AR Аль-Ула 4 vocab «عَلِيٌّ صَغِيرٌ جِدًّا.»
+  - Draw: Малыш в полосатой пижамке сидит на ковре.
+- `public/art/ar/alula/l4-2.jpg` — phrase — AR Аль-Ула 4 vocab «بَكَى»
+  - Draw: Али плачет, открыв рот.
+- `public/art/ar/alula/l4-3.jpg` — phrase — AR Аль-Ула 4 vocab «ضَحِكَ»
+  - Draw: Али хохочет, Мурзик щекочет его хвостом.
+- `public/art/ar/alula/l4-4.jpg` — phrase — AR Аль-Ула 4 vocab «نَامَ عَلِيٌّ فِي الْعَرَبَة.»
+  - Draw: Малыш спит в коляске под пальмой.
+- `public/art/ar/alula/l4-5.jpg` — phrase — AR Аль-Ула 4 vocab «هُوَ جَائِع.»
+  - Draw: Али тянет ручки к бутылочке.
+- `public/art/ar/alula/l4-6.jpg` — phrase — AR Аль-Ула 4 vocab «ضَحِكَتْ لَيْلَى.»
+  - Draw: Ляйля смеётся, прикрыв рот рукой.
+- `public/art/ar/alula/l4-7.jpg` — phrase — AR Аль-Ула 4 vocab «مَاذَا فَعَلَ عَلِيّ؟»
+  - Draw: Насер в дверях удивлённо поднимает брови.
+- `public/art/ar/alula/araba.jpg` — reward — AR Аль-Ула 4 reward «عَرَبَةٌ صَغِيرَة»
+  - Draw: В углу стоит маленькая игрушечная коляска, в ней спит игрушечный верблюд.
+- `public/art/ar/alula/l5-1.jpg` — phrase — AR Аль-Ула 5 vocab «الْحِجْر»
+  - Draw: Огромные скалы, в них вырезаны высокие двери.
+- `public/art/ar/alula/l5-2.jpg` — phrase — AR Аль-Ула 5 vocab «نُقُوشٌ قَدِيمَة»
+  - Draw: Старые буквы, вырезанные на камне.
+- `public/art/ar/alula/l5-3.jpg` — phrase — AR Аль-Ула 5 vocab «بَابٌ فِي الصَّخْر»
+  - Draw: Высокая резная дверь прямо в скале.
+- `public/art/ar/alula/l5-4.jpg` — phrase — AR Аль-Ула 5 vocab «عَاشَ النَّاسُ هُنَا.»
+  - Draw: Хана показывает рукой на скалы.
+- `public/art/ar/alula/l5-5.jpg` — phrase — AR Аль-Ула 5 vocab «قَبْلَ أَلْفَيْ سَنَة»
+  - Draw: Песочные часы и старые камни.
+- `public/art/ar/alula/l5-6.jpg` — phrase — AR Аль-Ула 5 vocab «صَخْرَةُ الْفِيل»
+  - Draw: Скала, похожая на слона с хоботом.
+- `public/art/ar/alula/l5-7.jpg` — phrase — AR Аль-Ула 5 vocab «مِثْلَ الْبَتْرَاء!»
+  - Draw: Мурзик сравнивает фото Петры и Хегры.
+- `public/art/ar/alula/surasakhra.jpg` — reward — AR Аль-Ула 5 reward «صُورَةُ صَخْرَةِ الْفِيل»
+  - Draw: На стене в рамке висит фотография Скалы-слона на закате, рядом крошечный силуэт кота.
+- `public/art/ar/alula/l6-1.jpg` — phrase — AR Аль-Ула 6 vocab «نَخْلَة»
+  - Draw: Высокая финиковая пальма с гроздьями.
+- `public/art/ar/alula/l6-2.jpg` — phrase — AR Аль-Ула 6 vocab «نَخِيل»
+  - Draw: Ряды пальм до самых скал.
+- `public/art/ar/alula/l6-3.jpg` — phrase — AR Аль-Ула 6 vocab «تَمْرَة»
+  - Draw: Один блестящий финик на ладони.
+- `public/art/ar/alula/l6-4.jpg` — phrase — AR Аль-Ула 6 vocab «كَمْ تَمْرَةً أَكَلْت؟»
+  - Draw: Ляйля смотрит на горку косточек рядом с Мурзиком.
+- `public/art/ar/alula/l6-5.jpg` — phrase — AR Аль-Ула 6 vocab «أَكَلْتُ عَشْرَ تَمَرَات!»
+  - Draw: Мурзик гордо показывает десять пальчиков.
+- `public/art/ar/alula/l6-6.jpg` — phrase — AR Аль-Ула 6 vocab «حُلْوٌ مِثْلَ الْعَسَل»
+  - Draw: Финик и ложечка мёда рядом.
+- `public/art/ar/alula/l6-7.jpg` — phrase — AR Аль-Ула 6 vocab «سَلَّةُ تَمْر»
+  - Draw: Плетёная корзина, полная фиников.
+- `public/art/ar/alula/nakhla.jpg` — reward — AR Аль-Ула 6 reward «نَخْلَةٌ صَغِيرَة»
+  - Draw: У окна в глиняном горшке растёт маленькая финиковая пальма с тремя листьями.
+- `public/art/ar/alula/l7-1.jpg` — phrase — AR Аль-Ула 7 vocab «عُلْبَةُ تَمْر»
+  - Draw: Красивая коробка с рядами фиников.
+- `public/art/ar/alula/l7-2.jpg` — phrase — AR Аль-Ула 7 vocab «اِخْتَرْتُ أَحْسَنَ تَمْر.»
+  - Draw: Ляйля раскладывает финики по ячейкам.
+- `public/art/ar/alula/l7-3.jpg` — phrase — AR Аль-Ула 7 vocab «مِنْ نَخِيلِنَا»
+  - Draw: Пальмовая роща за окном.
+- `public/art/ar/alula/l7-4.jpg` — phrase — AR Аль-Ула 7 vocab «سَنُسَافِرُ مَعَكُمْ!»
+  - Draw: Насер укладывает в багажник детскую коляску.
+- `public/art/ar/alula/l7-5.jpg` — phrase — AR Аль-Ула 7 vocab «عَلِيٌّ أَيْضًا!»
+  - Draw: Али машет ручкой из автокресла.
+- `public/art/ar/alula/l7-6.jpg` — phrase — AR Аль-Ула 7 vocab «الْآنَ نَحْنُ تِسْعَة!»
+  - Draw: Огромное общее фото у микроавтобуса.
+- `public/art/ar/alula/l7-7.jpg` — phrase — AR Аль-Ула 7 vocab «إِلَى جِدَّة!»
+  - Draw: Карим показывает на карте город у Красного моря.
+- `public/art/ar/alula/tamr.jpg` — reward — AR Аль-Ула 7 reward «عُلْبَةُ تَمْر»; AR Аль-Ула farewell 1
+  - Draw: Красивая коробка с финиками, перевязанная зелёной лентой, лежит в чемодане рядом с остальными подарками.
+- `public/art/ar/alula/departure.jpg` — scene — AR Аль-Ула departure; AR Аль-Ула farewell 4
+  - Draw: Соседи машут вслед бирюзовому микроавтобусу, за ним едет машина Насера с коляской на багажнике.
+- `public/art/ar/alula/home.jpg` — scene — AR Аль-Ула farewell 2
+  - Draw: Мурзик обходит свой домик в оазисе, который обставлял урок за уроком.
+- `public/art/ar/alula/flight.jpg` — scene — AR Аль-Ула farewell 5
+  - Draw: Маленький самолёт летит над пустыней к синему Красному морю.
+
+## Arabic course — Jeddah (60 pictures)
+
+- `public/art/ar/jeddah/arrival.jpg` — scene — AR Аль-Ула farewell 6; AR Джидда welcome
+  - Draw: Старый город Джидды: высокие дома из кораллового камня с деревянными резными балконами, над крышами пальмы.
+- `public/art/ar/jeddah/l1-1.jpg` — phrase — AR Джидда 1 vocab «عِنْدَنَا حَجْزٌ بِاسْمِ كَرِيم.»
+  - Draw: Карим у стойки администратора в старой гостинице.
+- `public/art/ar/jeddah/l1-2.jpg` — phrase — AR Джидда 1 vocab «كَمْ لَيْلَة؟»
+  - Draw: Администратор в белой одежде смотрит в компьютер.
+- `public/art/ar/jeddah/l1-3.jpg` — phrase — AR Джидда 1 vocab «ثَلَاثُ لَيَال.»
+  - Draw: Карим показывает три пальца.
+- `public/art/ar/jeddah/l1-4.jpg` — phrase — AR Джидда 1 vocab «جَوَازُ السَّفَر»
+  - Draw: Стопка паспортов на стойке.
+- `public/art/ar/jeddah/l1-5.jpg` — phrase — AR Джидда 1 vocab «مِفْتَاحُ الْغُرْفَة»
+  - Draw: Старинный ключ с деревянным брелоком.
+- `public/art/ar/jeddah/l1-6.jpg` — phrase — AR Джидда 1 vocab «الطَّابِقُ الثَّالِث»
+  - Draw: Узкая деревянная лестница вверх.
+- `public/art/ar/jeddah/l1-7.jpg` — phrase — AR Джидда 1 vocab «غُرَفٌ كَثِيرَة»
+  - Draw: Длинный коридор с резными дверями.
+- `public/art/ar/jeddah/mashrabiya.jpg` — reward — AR Джидда 1 reward «مَشْرَبِيَّة»
+  - Draw: Окно номера закрыто резной деревянной решёткой-машрабией, сквозь узор падает солнечный свет.
+- `public/art/ar/jeddah/l2-1.jpg` — phrase — AR Джидда 2 vocab «الْمُكَيِّفُ لَا يَعْمَل!»
+  - Draw: Мурзик с веером перед молчащим кондиционером.
+- `public/art/ar/jeddah/l2-2.jpg` — phrase — AR Джидда 2 vocab «هُنَاكَ مُشْكِلَة.»
+  - Draw: Мурзик звонит на ресепшен по старому телефону.
+- `public/art/ar/jeddah/l2-3.jpg` — phrase — AR Джидда 2 vocab «لَا يُوجَدُ مَاءٌ سَاخِن.»
+  - Draw: Тётя Амина с полотенцем на голове возмущённо смотрит на кран.
+- `public/art/ar/jeddah/l2-4.jpg` — phrase — AR Джидда 2 vocab «الضَّوْءُ لَا يَعْمَل.»
+  - Draw: В темноте светятся только глаза Мурзика.
+- `public/art/ar/jeddah/l2-5.jpg` — phrase — AR Джидда 2 vocab «التِّلْفَاز»
+  - Draw: Старый телевизор с антенной.
+- `public/art/ar/jeddah/l2-6.jpg` — phrase — AR Джидда 2 vocab «سَنُصْلِحُهُ الْآن.»
+  - Draw: Мастер с чемоданчиком инструментов в дверях.
+- `public/art/ar/jeddah/l2-7.jpg` — phrase — AR Джидда 2 vocab «آسِفٌ جِدًّا!»
+  - Draw: Администратор виновато прижимает руку к груди.
+- `public/art/ar/jeddah/saqf.jpg` — reward — AR Джидда 2 reward «مِرْوَحَةُ السَّقْف»
+  - Draw: Под высоким потолком медленно крутится старый деревянный вентилятор с широкими лопастями.
+- `public/art/ar/jeddah/l3-1.jpg` — phrase — AR Джидда 3 vocab «لَمْ تَصِلْ حَقِيبَتِي!»
+  - Draw: Мурзик у пустой багажной ленты.
+- `public/art/ar/jeddah/l3-2.jpg` — phrase — AR Джидда 3 vocab «بَحَثْتُ فِي كُلِّ مَكَان.»
+  - Draw: Мурзик заглядывает под все сиденья аэропорта.
+- `public/art/ar/jeddah/l3-3.jpg` — phrase — AR Джидда 3 vocab «لَمْ أَجِدْهَا.»
+  - Draw: Мурзик разводит пустыми лапками.
+- `public/art/ar/jeddah/l3-4.jpg` — phrase — AR Джидда 3 vocab «مَا لَوْنُ حَقِيبَتِك؟»
+  - Draw: Сотрудница аэропорта с планшетом.
+- `public/art/ar/jeddah/l3-5.jpg` — phrase — AR Джидда 3 vocab «لَوْنُهَا بُرْتُقَالِيّ.»
+  - Draw: Картинка оранжевого чемодана с наклейками.
+- `public/art/ar/jeddah/l3-6.jpg` — phrase — AR Джидда 3 vocab «فِيهَا هَدَايَا!»
+  - Draw: Мурзик в отчаянии хватается за голову.
+- `public/art/ar/jeddah/l3-7.jpg` — phrase — AR Джидда 3 vocab «الْمَطَار»
+  - Draw: Большой зал аэропорта с табло.
+- `public/art/ar/jeddah/bitaqa.jpg` — reward — AR Джидда 3 reward «بِطَاقَةُ الْحَقِيبَة»
+  - Draw: На столе лежит кожаная бирка для чемодана в форме кошачьей мордочки, на ней написан адрес.
+- `public/art/ar/jeddah/l4-1.jpg` — phrase — AR Джидда 4 vocab «نَحْتَاجُ إِلَى سَيَّارَةٍ كَبِيرَة.»
+  - Draw: Девять человек и гора чемоданов у маленькой машины.
+- `public/art/ar/jeddah/l4-2.jpg` — phrase — AR Джидда 4 vocab «كَمْ مَقْعَدًا فِيهَا؟»
+  - Draw: Карим заглядывает в окно микроавтобуса.
+- `public/art/ar/jeddah/l4-3.jpg` — phrase — AR Джидда 4 vocab «عَشَرَةُ مَقَاعِد.»
+  - Draw: Ряды сидений в большом микроавтобусе.
+- `public/art/ar/jeddah/l4-4.jpg` — phrase — AR Джидда 4 vocab «هَذِهِ لَيْسَتْ صَغِيرَة!»
+  - Draw: Огромный белый микроавтобус блестит на солнце.
+- `public/art/ar/jeddah/l4-5.jpg` — phrase — AR Джидда 4 vocab «نَحْتَاجُ إِلَى مَكَانٍ لِلْحَقَائِب.»
+  - Draw: Чемоданы на крыше микроавтобуса.
+- `public/art/ar/jeddah/l4-6.jpg` — phrase — AR Джидда 4 vocab «سَائِق»
+  - Draw: Водитель в белой одежде и красном платке.
+- `public/art/ar/jeddah/l4-7.jpg` — phrase — AR Джидда 4 vocab «مُنَاسِب»
+  - Draw: Карим показывает большой палец.
+- `public/art/ar/jeddah/hatif.jpg` — reward — AR Джидда 4 reward «هَاتِفٌ قَدِيم»
+  - Draw: На тумбочке стоит старый красный телефон с круглым диском и витым проводом.
+- `public/art/ar/jeddah/l5-1.jpg` — phrase — AR Джидда 5 vocab «أَيْنَ أَنْتُمْ؟»
+  - Draw: Бабушка Фатима с телефоном прищурилась.
+- `public/art/ar/jeddah/l5-2.jpg` — phrase — AR Джидда 5 vocab «لَا أُصَدِّقُكُمْ!»
+  - Draw: Бабушка качает головой, улыбаясь.
+- `public/art/ar/jeddah/l5-3.jpg` — phrase — AR Джидда 5 vocab «لَا تَقْلَقِي يَا جَدَّتِي!»
+  - Draw: Карим машет рукой всем: тише!
+- `public/art/ar/jeddah/l5-4.jpg` — phrase — AR Джидда 5 vocab «كُلُّ شَيْءٍ بِخَيْر!»
+  - Draw: Карим старается говорить спокойно.
+- `public/art/ar/jeddah/l5-5.jpg` — phrase — AR Джидда 5 vocab «أَسْمَعُ الْبَحْر!»
+  - Draw: Волны Красного моря за окном.
+- `public/art/ar/jeddah/l5-6.jpg` — phrase — AR Джидда 5 vocab «مُفَاجَأَة»
+  - Draw: Мурзик прячет за спиной коробку с бантом.
+- `public/art/ar/jeddah/l5-7.jpg` — phrase — AR Джидда 5 vocab «قَرِيبًا جِدًّا»
+  - Draw: Календарь с обведённым сердечком днём.
+- `public/art/ar/jeddah/makhadda.jpg` — reward — AR Джидда 5 reward «مَخَدَّة»
+  - Draw: На кровати лежит подушка с вышитым золотыми нитками словом-завитком, похожим на облако.
+- `public/art/ar/jeddah/l6-1.jpg` — phrase — AR Джидда 6 vocab «وَجَدْنَاهَا!»
+  - Draw: Мурзик обнимает оранжевый чемодан.
+- `public/art/ar/jeddah/l6-2.jpg` — phrase — AR Джидда 6 vocab «كَانَتْ فِي الْقَاهِرَة!»
+  - Draw: На чемодане бирка с надписью «Каир».
+- `public/art/ar/jeddah/l6-3.jpg` — phrase — AR Джидда 6 vocab «نَعُدُّ الْهَدَايَا.»
+  - Draw: Подарки разложены на кровати в ряд.
+- `public/art/ar/jeddah/l6-4.jpg` — phrase — AR Джидда 6 vocab «لَا يَنْقُصُ شَيْء.»
+  - Draw: Все подарки на месте, Мурзик сияет.
+- `public/art/ar/jeddah/l6-5.jpg` — phrase — AR Джидда 6 vocab «الْحَمْدُ لِلَّه!»
+  - Draw: Тётя Амина облегчённо прикладывает руку к сердцу.
+- `public/art/ar/jeddah/l6-6.jpg` — phrase — AR Джидда 6 vocab «إِحْدَى عَشْرَةَ هَدِيَّة»
+  - Draw: Одиннадцать подарков в ряд.
+- `public/art/ar/jeddah/l6-7.jpg` — phrase — AR Джидда 6 vocab «كُلُّهَا هُنَا!»
+  - Draw: Мурзик раскинул лапы над подарками.
+- `public/art/ar/jeddah/thurayya.jpg` — reward — AR Джидда 6 reward «ثُرَيَّا»
+  - Draw: Под потолком висит маленькая люстра из цветного стекла, свет рассыпается по стенам разноцветными бликами.
+- `public/art/ar/jeddah/l7-1.jpg` — phrase — AR Джидда 7 vocab «مَاءُ الْوَرْد»
+  - Draw: Стеклянный флакон с розовой жидкостью и лепестками.
+- `public/art/ar/jeddah/l7-2.jpg` — phrase — AR Джидда 7 vocab «رَائِحَتُهُ جَمِيلَة!»
+  - Draw: Мурзик нюхает флакон и закрывает глаза.
+- `public/art/ar/jeddah/l7-3.jpg` — phrase — AR Джидда 7 vocab «زُجَاجَةٌ جَمِيلَة»
+  - Draw: Крошечный граненый флакон на ладони.
+- `public/art/ar/jeddah/l7-4.jpg` — phrase — AR Джидда 7 vocab «الْبَحْرُ الْأَحْمَر»
+  - Draw: Синее море на закате, совсем не красное.
+- `public/art/ar/jeddah/l7-5.jpg` — phrase — AR Джидда 7 vocab «لَيْسَ أَحْمَرَ!»
+  - Draw: Мурзик удивлённо смотрит на синее море.
+- `public/art/ar/jeddah/l7-6.jpg` — phrase — AR Джидда 7 vocab «سُوقُ الْبَلَد»
+  - Draw: Узкие улочки старой Джидды с лавками.
+- `public/art/ar/jeddah/l7-7.jpg` — phrase — AR Джидда 7 vocab «إِلَى مَسْقَط!»
+  - Draw: Карим показывает на карте Оман.
+- `public/art/ar/jeddah/maalward.jpg` — reward — AR Джидда 7 reward «مَاءُ الْوَرْد»; AR Джидда farewell 1
+  - Draw: Граненый стеклянный флакон розовой воды завёрнут в бумагу и лежит в оранжевом чемодане рядом с остальными подарками.
+- `public/art/ar/jeddah/departure.jpg` — scene — AR Джидда departure; AR Джидда farewell 4
+  - Draw: Администратор гостиницы машет с порога вслед большому белому микроавтобусу с чемоданами на крыше.
+- `public/art/ar/jeddah/home.jpg` — scene — AR Джидда farewell 2
+  - Draw: Мурзик обходит свой номер в старом доме, который обставлял урок за уроком.
+- `public/art/ar/jeddah/flight.jpg` — scene — AR Джидда farewell 5
+  - Draw: Самолёт летит на восток над Аравийским полуостровом, внизу пески и горы.
+
+## Arabic course — Muscat (60 pictures)
+
+- `public/art/ar/muscat/arrival.jpg` — scene — AR Джидда farewell 6; AR Маскат welcome
+  - Draw: Белые дома Маската между тёмными горами и синим морем. У входа в старый дом стоит пожилой мужчина с белой бородой в белой одежде и вышитой шапочке.
+- `public/art/ar/muscat/l1-1.jpg` — phrase — AR Маскат 1 vocab «مَا تَارِيخُ الْيَوْم؟»
+  - Draw: Дедушка Саид у настенного календаря, в руке очки.
+- `public/art/ar/muscat/l1-2.jpg` — phrase — AR Маскат 1 vocab «الْيَوْمُ عِشْرُونَ نُوفَمْبِر.»
+  - Draw: Календарь открыт на ноябре, отмечено число ٢٠.
+- `public/art/ar/muscat/l1-3.jpg` — phrase — AR Маскат 1 vocab «الشَّهْر»
+  - Draw: Страница календаря с тридцатью клеточками.
+- `public/art/ar/muscat/l1-4.jpg` — phrase — AR Маскат 1 vocab «أَيَّام»
+  - Draw: Семь солнышек в ряд.
+- `public/art/ar/muscat/l1-5.jpg` — phrase — AR Маскат 1 vocab «بَعْدَ خَمْسَةِ أَيَّام»
+  - Draw: Карим загибает пять пальцев.
+- `public/art/ar/muscat/l1-6.jpg` — phrase — AR Маскат 1 vocab «بَعْدَ غَدٍ»
+  - Draw: Две странички календаря вперёд.
+- `public/art/ar/muscat/l1-7.jpg` — phrase — AR Маскат 1 vocab «الْعِيدُ قَرِيب!»
+  - Draw: Мурзик подпрыгивает от нетерпения.
+- `public/art/ar/muscat/surafatima.jpg` — reward — AR Маскат 1 reward «صُورَةُ الْجَدَّةِ الشَّابَّة»
+  - Draw: На стене в старой деревянной рамке висит чёрно-белая фотография: молодая девушка в платке смеётся на берегу моря.
+- `public/art/ar/muscat/l2-1.jpg` — phrase — AR Маскат 2 vocab «يَنَايِر، فِبْرَايِر، مَارِس»
+  - Draw: Три листка календаря: снег, ветер, цветы.
+- `public/art/ar/muscat/l2-2.jpg` — phrase — AR Маскат 2 vocab «أَبْرِيل، مَايُو، يُونْيُو»
+  - Draw: Цветущие деревья и солнце.
+- `public/art/ar/muscat/l2-3.jpg` — phrase — AR Маскат 2 vocab «يُولْيُو، أُغُسْطُس، سِبْتَمْبِر»
+  - Draw: Море, пляж, первые жёлтые листья.
+- `public/art/ar/muscat/l2-4.jpg` — phrase — AR Маскат 2 vocab «أُكْتُوبَر، نُوفَمْبِر، دِيسَمْبِر»
+  - Draw: Листья, дождь и праздничные огоньки.
+- `public/art/ar/muscat/l2-5.jpg` — phrase — AR Маскат 2 vocab «فِي أَيِّ شَهْرٍ وُلِدْت؟»
+  - Draw: Дедушка Саид с хитрой улыбкой.
+- `public/art/ar/muscat/l2-6.jpg` — phrase — AR Маскат 2 vocab «وُلِدْتُ فِي مَارِس.»
+  - Draw: Мурзик рядом с весенними цветами.
+- `public/art/ar/muscat/l2-7.jpg` — phrase — AR Маскат 2 vocab «وُلِدَتْ فِي دِيسَمْبِر.»
+  - Draw: Девочка у зимнего окна.
+- `public/art/ar/muscat/mandus.jpg` — reward — AR Маскат 2 reward «مَنْدُوس»
+  - Draw: В углу стоит деревянный оманский сундучок с медными гвоздиками и узорами на крышке.
+- `public/art/ar/muscat/l3-1.jpg` — phrase — AR Маскат 3 vocab «سَنَذْهَبُ إِلَى أَبُوظَبْي.»
+  - Draw: Карим обводит на карте Абу-Даби.
+- `public/art/ar/muscat/l3-2.jpg` — phrase — AR Маскат 3 vocab «سَوْفَ نَصِلُ بَعْدَ غَدٍ.»
+  - Draw: Билеты на самолёт веером на столе.
+- `public/art/ar/muscat/l3-3.jpg` — phrase — AR Маскат 3 vocab «هَلْ سَتَأْتِي مَعَنَا؟»
+  - Draw: Мурзик с надеждой смотрит на тебя.
+- `public/art/ar/muscat/l3-4.jpg` — phrase — AR Маскат 3 vocab «نَعَم، سَآتِي مَعَكُمْ!»
+  - Draw: Дедушка Саид уже держит маленький чемодан.
+- `public/art/ar/muscat/l3-5.jpg` — phrase — AR Маскат 3 vocab «سَأَشْتَرِي الْكَعْكَة.»
+  - Draw: Тётя Амина с длинным списком покупок.
+- `public/art/ar/muscat/l3-6.jpg` — phrase — AR Маскат 3 vocab «الطَّائِرَة»
+  - Draw: Белый самолёт над горами.
+- `public/art/ar/muscat/l3-7.jpg` — phrase — AR Маскат 3 vocab «الْخُطَّة»
+  - Draw: Большой лист с планом праздника на стене.
+- `public/art/ar/muscat/khanjar.jpg` — reward — AR Маскат 3 reward «خَنْجَرٌ فِي إِطَار»
+  - Draw: На стене в застеклённой рамке висит изогнутый серебряный кинжал-ханджар в ножнах с узорами — старинное украшение.
+- `public/art/ar/muscat/l4-1.jpg` — phrase — AR Маскат 4 vocab «قِصَّةٌ قَدِيمَة»
+  - Draw: Дедушка Саид в кресле, вокруг сидят все.
+- `public/art/ar/muscat/l4-2.jpg` — phrase — AR Маскат 4 vocab «عِنْدَمَا كَانَتْ صَغِيرَة»
+  - Draw: Маленькая девочка бежит по берегу моря.
+- `public/art/ar/muscat/l4-3.jpg` — phrase — AR Маскат 4 vocab «كَانَتْ تُغَنِّي كُلَّ يَوْم.»
+  - Draw: Девочка поёт, сидя на старой лодке.
+- `public/art/ar/muscat/l4-4.jpg` — phrase — AR Маскат 4 vocab «قَبْلَ سَبْعِينَ سَنَة»
+  - Draw: Пожелтевшая фотография старого Маската.
+- `public/art/ar/muscat/l4-5.jpg` — phrase — AR Маскат 4 vocab «تَزَوَّجَتْ جَدَّكُمْ.»
+  - Draw: Старое свадебное фото: молодые Фатима и дедушка.
+- `public/art/ar/muscat/l4-6.jpg` — phrase — AR Маскат 4 vocab «أَتَذَكَّرُ كُلَّ شَيْء.»
+  - Draw: Дедушка Саид стучит пальцем по виску.
+- `public/art/ar/muscat/l4-7.jpg` — phrase — AR Маскат 4 vocab «كَانَتْ تُحِبُّ الْبَحْر.»
+  - Draw: Молодая Фатима смотрит на море с закатом.
+- `public/art/ar/muscat/kumma.jpg` — reward — AR Маскат 4 reward «كُمَّة»
+  - Draw: На крючке висит круглая белая оманская шапочка-кумма с цветной вышивкой.
+- `public/art/ar/muscat/l5-1.jpg` — phrase — AR Маскат 5 vocab «كُلُّ عَامٍ وَأَنْتِ بِخَيْر!»
+  - Draw: Сальма репетирует поздравление перед зеркалом.
+- `public/art/ar/muscat/l5-2.jpg` — phrase — AR Маскат 5 vocab «عِيدُ مِيلَادٍ سَعِيد!»
+  - Draw: Открытка с тортом и свечами.
+- `public/art/ar/muscat/l5-3.jpg` — phrase — AR Маскат 5 vocab «أَتَمَنَّى لَكِ الصِّحَّة.»
+  - Draw: Тётя Амина прикладывает руку к сердцу.
+- `public/art/ar/muscat/l5-4.jpg` — phrase — AR Маскат 5 vocab «وَالسَّعَادَة»
+  - Draw: Улыбающееся солнышко на открытке.
+- `public/art/ar/muscat/l5-5.jpg` — phrase — AR Маскат 5 vocab «وَطُولَ الْعُمْر»
+  - Draw: Старое дерево с густой кроной.
+- `public/art/ar/muscat/l5-6.jpg` — phrase — AR Маскат 5 vocab «بِطَاقَةُ تَهْنِئَة»
+  - Draw: Большая открытка, на ней подписи всей семьи.
+- `public/art/ar/muscat/l5-7.jpg` — phrase — AR Маскат 5 vocab «مَبْرُوك!»
+  - Draw: Все хлопают в ладоши.
+- `public/art/ar/muscat/bitaqatahnia.jpg` — reward — AR Маскат 5 reward «بِطَاقَةُ تَهْنِئَة»
+  - Draw: На столе лежит большая самодельная открытка: нарисованный торт с девятью свечками-десятками, вокруг подписи разными цветами и отпечаток кошачьей лапки.
+- `public/art/ar/muscat/l6-1.jpg` — phrase — AR Маскат 6 vocab «لَا تَنْسَوُا الْهَدَايَا!»
+  - Draw: Карим с длинным списком у двери.
+- `public/art/ar/muscat/l6-2.jpg` — phrase — AR Маскат 6 vocab «الْكَعْكَة»
+  - Draw: Огромный торт с цифрой ٩٠.
+- `public/art/ar/muscat/l6-3.jpg` — phrase — AR Маскат 6 vocab «الْبَالُونَات»
+  - Draw: Связка разноцветных шариков.
+- `public/art/ar/muscat/l6-4.jpg` — phrase — AR Маскат 6 vocab «مَنْ سَيَحْمِلُ الْكَعْكَة؟»
+  - Draw: Все смотрят на огромный торт.
+- `public/art/ar/muscat/l6-5.jpg` — phrase — AR Маскат 6 vocab «أَنَا سَأَحْمِلُهَا!»
+  - Draw: Дядя Юсуф поднимает торт двумя руками.
+- `public/art/ar/muscat/l6-6.jpg` — phrase — AR Маскат 6 vocab «كُلُّ شَيْءٍ جَاهِز!»
+  - Draw: Чемоданы, шарики и торт у двери.
+- `public/art/ar/muscat/l6-7.jpg` — phrase — AR Маскат 6 vocab «بِحَذَرٍ يَا يُوسُف!»
+  - Draw: Тётя Амина хватается за голову.
+- `public/art/ar/muscat/lafita.jpg` — reward — AR Маскат 6 reward «لَافِتَة»
+  - Draw: Над дверью висит длинная растяжка из цветных флажков-треугольников, свёрнутая для дороги.
+- `public/art/ar/muscat/l7-1.jpg` — phrase — AR Маскат 7 vocab «لُبَان»
+  - Draw: Светлые янтарные кусочки смолы в мешочке.
+- `public/art/ar/muscat/l7-2.jpg` — phrase — AR Маскат 7 vocab «مِبْخَرَة»
+  - Draw: Глиняная курильница, расписанная красным и белым.
+- `public/art/ar/muscat/l7-3.jpg` — phrase — AR Маскат 7 vocab «رَائِحَتُهُ جَمِيلَةٌ جِدًّا!»
+  - Draw: Тонкий дымок поднимается над курильницей.
+- `public/art/ar/muscat/l7-4.jpg` — phrase — AR Маскат 7 vocab «فَاطِمَةُ تُحِبُّ اللُّبَان.»
+  - Draw: Старое фото: Фатима у курильницы.
+- `public/art/ar/muscat/l7-5.jpg` — phrase — AR Маскат 7 vocab «هَذِهِ آخِرُ هَدِيَّة!»
+  - Draw: Мурзик прижимает курильницу к груди.
+- `public/art/ar/muscat/l7-6.jpg` — phrase — AR Маскат 7 vocab «غَدًا سَنَطِيرُ إِلَى أَبُوظَبْي!»
+  - Draw: Билеты на самолёт у Карима в руке.
+- `public/art/ar/muscat/l7-7.jpg` — phrase — AR Маскат 7 vocab «إِلَى أَبُوظَبْي!»
+  - Draw: Карим показывает на карте последний город маршрута.
+- `public/art/ar/muscat/mibkhara.jpg` — reward — AR Маскат 7 reward «لُبَانٌ وَمِبْخَرَة»; AR Маскат farewell 1
+  - Draw: Расписная глиняная курильница и мешочек ладана лежат в оранжевом чемодане рядом со всеми остальными подарками.
+- `public/art/ar/muscat/departure.jpg` — scene — AR Маскат departure; AR Маскат farewell 4
+  - Draw: Соседи машут вслед, дедушка Саид с маленьким чемоданом садится в машину вместе со всеми.
+- `public/art/ar/muscat/home.jpg` — scene — AR Маскат farewell 2
+  - Draw: Мурзик обходит свою комнату в белом доме, которую обставлял урок за уроком.
+- `public/art/ar/muscat/flight.jpg` — scene — AR Маскат farewell 5
+  - Draw: Самолёт летит над морем на закате, в иллюминаторе — Мурзик в шапочке-кумме и оранжевый чемодан у него на коленях.
+
+## Arabic course — Abu Dhabi (59 pictures)
+
+- `public/art/ar/abudhabi/arrival.jpg` — scene — AR Маскат farewell 6; AR Абу-Даби welcome
+  - Draw: Абу-Даби на закате: белоснежные здания, пальмы, синяя вода. Вся компания с чемоданами, тортом и шариками на тихой улице у белого дома с зелёной дверью.
+- `public/art/ar/abudhabi/l1-1.jpg` — phrase — AR Абу-Даби 1 vocab «تَكَلَّمُوا بِهُدُوء!»
+  - Draw: Карим прикладывает палец к губам у зелёной двери.
+- `public/art/ar/abudhabi/l1-2.jpg` — phrase — AR Абу-Даби 1 vocab «اِخْتَبِئُوا!»
+  - Draw: Все прячутся за пальмами и машиной.
+- `public/art/ar/abudhabi/l1-3.jpg` — phrase — AR Абу-Даби 1 vocab «لَا تَدُقُّوا الْبَاب!»
+  - Draw: Дядя Юсуф замер с поднятым кулаком.
+- `public/art/ar/abudhabi/l1-4.jpg` — phrase — AR Абу-Даби 1 vocab «كُلُّنَا هُنَا!»
+  - Draw: Вся компания выглядывает из-за пальмы.
+- `public/art/ar/abudhabi/l1-5.jpg` — phrase — AR Абу-Даби 1 vocab «الْبَابُ الْأَخْضَر»
+  - Draw: Зелёная дверь белого дома, у порога горшки с цветами.
+- `public/art/ar/abudhabi/l1-6.jpg` — phrase — AR Абу-Даби 1 vocab «هَلِ الْجَدَّةُ فِي الْبَيْت؟»
+  - Draw: Мурзик заглядывает в окно на цыпочках.
+- `public/art/ar/abudhabi/l1-7.jpg` — phrase — AR Абу-Даби 1 vocab «أَنَا خَائِف… وَسَعِيد!»
+  - Draw: Мурзик прижимает к груди оранжевый чемодан.
+- `public/art/ar/abudhabi/balunat.jpg` — reward — AR Абу-Даби 1 reward «بَالُونَات»
+  - Draw: К ручке оранжевого чемодана привязана связка разноцветных воздушных шариков.
+- `public/art/ar/abudhabi/l2-1.jpg` — phrase — AR Абу-Даби 2 vocab «مِنْ أَيْنَ هَذَا الطَّبَق؟»
+  - Draw: Длинный стол во дворе, заставленный блюдами.
+- `public/art/ar/abudhabi/l2-2.jpg` — phrase — AR Абу-Даби 2 vocab «مِنَ الْمَغْرِب!»
+  - Draw: Тётя Амина ставит на стол тажин.
+- `public/art/ar/abudhabi/l2-3.jpg` — phrase — AR Абу-Даби 2 vocab «الْمَغْرِبُ وَتُونِسُ وَمِصْر»
+  - Draw: Три тарелки с узорами этих стран.
+- `public/art/ar/abudhabi/l2-4.jpg` — phrase — AR Абу-Даби 2 vocab «الْأُرْدُنُّ وَالسُّعُودِيَّةُ وَعُمَان»
+  - Draw: Мансаф, финики и оманская халва на столе.
+- `public/art/ar/abudhabi/l2-5.jpg` — phrase — AR Абу-Даби 2 vocab «الْإِمَارَات»
+  - Draw: Белоснежные башни Абу-Даби за пальмами.
+- `public/art/ar/abudhabi/l2-6.jpg` — phrase — AR Абу-Даби 2 vocab «نَضَعُ الْأَطْبَاقَ عَلَى الطَّاوِلَة.»
+  - Draw: Все несут тарелки к длинному столу.
+- `public/art/ar/abudhabi/l2-7.jpg` — phrase — AR Абу-Даби 2 vocab «سَبْعُ دُوَل»
+  - Draw: Мурзик загибает семь пальчиков.
+- `public/art/ar/abudhabi/mafrashid.jpg` — reward — AR Абу-Даби 2 reward «مَفْرَشُ الْعِيد»
+  - Draw: Длинный стол во дворе накрыт белой скатертью, по краю вышиты узоры из всех стран: марокканские звёзды, тунисские птички, египетские пальмы.
+- `public/art/ar/abudhabi/l3-1.jpg` — phrase — AR Абу-Даби 3 vocab «مُفَاجَأَةٌ يَا جَدَّتِي!»
+  - Draw: Все выскакивают из-за пальм с шариками.
+- `public/art/ar/abudhabi/l3-2.jpg` — phrase — AR Абу-Даби 3 vocab «مَنْ هُنَاك؟»
+  - Draw: Зелёная дверь чуть приоткрыта.
+- `public/art/ar/abudhabi/l3-3.jpg` — phrase — AR Абу-Даби 3 vocab «لَا أُصَدِّق!»
+  - Draw: Бабушка Фатима в дверях прижимает руки к щекам.
+- `public/art/ar/abudhabi/l3-4.jpg` — phrase — AR Абу-Даби 3 vocab «كُلُّكُمْ هُنَا؟!»
+  - Draw: Бабушка смотрит на толпу родных.
+- `public/art/ar/abudhabi/l3-5.jpg` — phrase — AR Абу-Даби 3 vocab «اِشْتَقْتُ إِلَيْكُمْ كَثِيرًا!»
+  - Draw: Бабушка обнимает Карима и тётю Амину.
+- `public/art/ar/abudhabi/l3-6.jpg` — phrase — AR Абу-Даби 3 vocab «أَهْلًا بِأَوْلَادِي وَأَحْفَادِي!»
+  - Draw: Бабушка раскрывает руки всем сразу.
+- `public/art/ar/abudhabi/l3-7.jpg` — phrase — AR Абу-Даби 3 vocab «دُمُوعُ الْفَرَح»
+  - Draw: У бабушки и тёти Амины блестят глаза.
+- `public/art/ar/abudhabi/iklil.jpg` — reward — AR Абу-Даби 3 reward «إِكْلِيلُ زُهُور»
+  - Draw: На зелёной двери висит круглый венок из белых и розовых цветов с лентой.
+- `public/art/ar/abudhabi/l4-1.jpg` — phrase — AR Абу-Даби 4 vocab «هَذِهِ هَدِيَّةٌ لَكِ يَا جَدَّتِي.»
+  - Draw: Мурзик протягивает бабушке тажин.
+- `public/art/ar/abudhabi/l4-2.jpg` — phrase — AR Абу-Даби 4 vocab «مِنْ مُورْزِيكَ وَمِنْ كُلِّ الْعَائِلَة»
+  - Draw: Все стоят вокруг бабушки с подарками.
+- `public/art/ar/abudhabi/l4-3.jpg` — phrase — AR Абу-Даби 4 vocab «مَا أَجْمَلَهَا!»
+  - Draw: Бабушка держит синюю вазу из Феса.
+- `public/art/ar/abudhabi/l4-4.jpg` — phrase — AR Абу-Даби 4 vocab «هَذَا الشَّالُ مِنْ شَفْشَاوَن.»
+  - Draw: Бабушка накидывает на плечи синий шарф.
+- `public/art/ar/abudhabi/l4-5.jpg` — phrase — AR Абу-Даби 4 vocab «صَدِيقَتُكِ النَّسَّاجَةُ تُسَلِّمُ عَلَيْكِ.»
+  - Draw: Бабушка прижимает шарф к сердцу.
+- `public/art/ar/abudhabi/l4-6.jpg` — phrase — AR Абу-Даби 4 vocab «ثَلَاثَ عَشْرَةَ هَدِيَّة!»
+  - Draw: Подарки разложены на столе в ряд.
+- `public/art/ar/abudhabi/l4-7.jpg` — phrase — AR Абу-Даби 4 vocab «شُكْرًا يَا أَوْلَادِي!»
+  - Draw: Бабушка обнимает всех сразу.
+- `public/art/ar/abudhabi/wisadajadda.jpg` — reward — AR Абу-Даби 4 reward «وِسَادَةٌ مُطَرَّزَة»
+  - Draw: На диване лежит маленькая подушка, вышитая бабушкой: на ней рыжий кот с чемоданом.
+- `public/art/ar/abudhabi/l5-1.jpg` — phrase — AR Абу-Даби 5 vocab «أَنَا سَعِيدَةٌ جِدًّا!»
+  - Draw: Бабушка сидит в кресле, глаза сияют.
+- `public/art/ar/abudhabi/l5-2.jpg` — phrase — AR Абу-Даби 5 vocab «كَيْفَ تَشْعُرُ الْآن؟»
+  - Draw: Хана присаживается рядом.
+- `public/art/ar/abudhabi/l5-3.jpg` — phrase — AR Абу-Даби 5 vocab «أَنَا سَعِيدٌ جِدًّا!»
+  - Draw: Ты улыбаешься до ушей.
+- `public/art/ar/abudhabi/l5-4.jpg` — phrase — AR Абу-Даби 5 vocab «تَبْكِي مِنَ الْفَرَح.»
+  - Draw: Бабушка вытирает слезу краешком платка.
+- `public/art/ar/abudhabi/l5-5.jpg` — phrase — AR Абу-Даби 5 vocab «أُغْنِيَةٌ عَنِ الْعَائِلَة»
+  - Draw: Сальма с гитарой, все вокруг слушают.
+- `public/art/ar/abudhabi/l5-6.jpg` — phrase — AR Абу-Даби 5 vocab «نُغَنِّي مَعًا!»
+  - Draw: Все поют, даже малыш Али хлопает.
+- `public/art/ar/abudhabi/l5-7.jpg` — phrase — AR Абу-Даби 5 vocab «أَجْمَلُ يَوْمٍ فِي حَيَاتِي!»
+  - Draw: Бабушка обнимает Сальму.
+- `public/art/ar/abudhabi/oud.jpg` — reward — AR Абу-Даби 5 reward «عُودٌ صَغِير»
+  - Draw: У стены стоит маленький уд — арабская лютня с круглым корпусом и резной розеткой.
+- `public/art/ar/abudhabi/l6-1.jpg` — phrase — AR Абу-Даби 6 vocab «قِفُوا مَعًا!»
+  - Draw: Карим машет рукой: ближе, ближе!
+- `public/art/ar/abudhabi/l6-2.jpg` — phrase — AR Абу-Даби 6 vocab «اِبْتَسِمُوا!»
+  - Draw: Все улыбаются, Мурзик — шире всех.
+- `public/art/ar/abudhabi/l6-3.jpg` — phrase — AR Абу-Даби 6 vocab «الْجَدَّةُ فِي الْوَسَط.»
+  - Draw: Бабушка в кресле в центре.
+- `public/art/ar/abudhabi/l6-4.jpg` — phrase — AR Абу-Даби 6 vocab «مُورْزِيك بِجَانِبِ الْجَدَّة.»
+  - Draw: Мурзик сидит на подлокотнике кресла.
+- `public/art/ar/abudhabi/l6-5.jpg` — phrase — AR Абу-Даби 6 vocab «يُوسُفُ خَلْفَ الْجَمِيع.»
+  - Draw: Высокий дядя Юсуф выглядывает сзади.
+- `public/art/ar/abudhabi/l6-6.jpg` — phrase — AR Абу-Даби 6 vocab «وَاحِد، اِثْنَان، ثَلَاثَة!»
+  - Draw: Карим держит телефон на таймере.
+- `public/art/ar/abudhabi/l6-7.jpg` — phrase — AR Абу-Даби 6 vocab «الصُّورَةُ فِي الْإِطَارِ الْفِضِّيّ»
+  - Draw: Новое фото всей семьи в серебряной рамке.
+- `public/art/ar/abudhabi/kamira.jpg` — reward — AR Абу-Даби 6 reward «كَامِيرَا قَدِيمَة»
+  - Draw: На полке стоит старый плёночный фотоаппарат в кожаном чехле.
+- `public/art/ar/abudhabi/l7-1.jpg` — phrase — AR Абу-Даби 7 vocab «سَافَرْنَا إِلَى أَرْبَعَ عَشْرَةَ مَدِينَة.»
+  - Draw: Карта с маршрутом от Марракеша до Абу-Даби.
+- `public/art/ar/abudhabi/l7-2.jpg` — phrase — AR Абу-Даби 7 vocab «رَأَيْتُ عَائِلَتِي كُلَّهَا مَعًا!»
+  - Draw: Бабушка держит в руках новое фото в серебряной рамке.
+- `public/art/ar/abudhabi/l7-3.jpg` — phrase — AR Абу-Даби 7 vocab «تَحَقَّقَ حُلْمِي.»
+  - Draw: Старое и новое фото рядом: пустые стулья — и полный стол.
+- `public/art/ar/abudhabi/l7-4.jpg` — phrase — AR Абу-Даби 7 vocab «تَعَلَّمْتُ الْعَرَبِيَّة!»
+  - Draw: Мурзик гордо держит тетрадку с арабскими буквами.
+- `public/art/ar/abudhabi/l7-5.jpg` — phrase — AR Абу-Даби 7 vocab «شُكْرًا لَكَ يَا مُورْزِيك.»
+  - Draw: Бабушка гладит Мурзика по голове.
+- `public/art/ar/abudhabi/l7-6.jpg` — phrase — AR Абу-Даби 7 vocab «أَنْتَ مِنَ الْعَائِلَةِ الْآن.»
+  - Draw: Все обнимают Мурзика.
+- `public/art/ar/abudhabi/l7-7.jpg` — phrase — AR Абу-Даби 7 vocab «إِلَى اللِّقَاءِ يَا أَصْدِقَائِي!»
+  - Draw: Мурзик машет лапкой на фоне ночного Абу-Даби.
+- `public/art/ar/abudhabi/familyphoto.jpg` — reward — AR Абу-Даби 7 reward «صُورَةُ الْعَائِلَةِ كُلِّهَا»; AR Абу-Даби farewell 2
+  - Draw: В серебряной рамке из Туниса — новое фото: бабушка Фатима в середине, рядом Мурзик, вокруг вся семья, позади высокий дядя Юсуф, малыш Али на оранжевом чемодане.
+- `public/art/ar/abudhabi/party.jpg` — scene — AR Абу-Даби departure; AR Абу-Даби farewell 1; AR Абу-Даби farewell 5
+  - Draw: Праздник во дворе: длинный стол, шарики, растяжка, вся семья вокруг бабушки Фатимы, Мурзик у неё на коленях.
+- `public/art/ar/abudhabi/home.jpg` — scene — AR Абу-Даби farewell 3
+  - Draw: Мурзик обходит свою комнату в доме бабушки, которую обставлял урок за уроком.
+
+# Korean course
+
+The sixth course, «Мяу! Снимаем дораму»: Korean for Russian speakers. Murzik is invited to play a small role in a Korean TV drama and travels across South Korea with the film crew; by the end his role grows and the whole crew watches the premiere in Seoul. The story starts in Paris; the lessons start in Seoul. All pictures go to `public/art/ko/<city>/`. The `draw` notes for this course are written in Russian — draw exactly what they say.
+
+## Style and cast for the Korean course
+
+- Same storybook style and the same **Murzik** as in the other courses. Tom is **not** in this course.
+- **No flags. No readable words or letters** in the pictures, Korean included (signs, scripts and badges are drawn as squiggles; numbers on clocks and price tags are fine).
+- **Only Murzik is a talking cat.** Everyone else is a human.
+- **Sua**: a Korean young woman of about 23, short bob, big round glasses, a denim jacket, a film-crew badge on a lanyard, a walkie-talkie. Murzik's companion in every city. Same look in every picture.
+- **The film crew** (appear again and again): Director Park (about 55, a cap and glasses, a megaphone), Minho (the star actor, about 27, tall, neat hair, shy smile), Jiyeon (the lead actress, about 25, long hair, bright and funny), the make-up artist (about 35, a belt with brushes), the cameraman (about 40, a beard, headphones).
+- Only South Korea. No politics, no military. Calm, friendly, modern and traditional Korea together.
+- Phrase pictures and rewards: square, 1408 × 1408. Scenes: portrait, 1152 × 1728.
+
+## Korean course — Prologue (Paris) (3 pictures)
+
+- `public/art/ko/prologue/1.jpg` — scene — KO Prologue find
+  - Draw: Утро в Париже. Мурзик сидит на подоконнике и держит конверт с корейскими марками. Из конверта выглядывает фотография съёмочной площадки.
+- `public/art/ko/prologue/2.jpg` — scene — KO Prologue postcard
+  - Draw: Записка крупно: несколько строк корейскими буквами, внизу нарисована хлопушка и кошачья лапка.
+- `public/art/ko/prologue/3.jpg` — scene — KO Prologue journey
+  - Draw: Мурзик с чемоданом у самолёта. На чемодане наклейка с хлопушкой.
+
+## Korean course — Sua (intro) (1 pictures)
+
+- `public/art/ko/sua.jpg` — reward — KO intro (Sua)
+  - Draw: Суа — девушка лет двадцати трёх, кореянка, короткое каре, большие очки, джинсовая куртка, на шее бейджик съёмочной группы, в руке рация. Машет рукой и улыбается. Квадратная картинка, та же Суа, что на всех картинках корейского курса.
+
+## Korean course — Seoul (59 pictures)
+
+- `public/art/ko/seoul/l1-1.jpg` — phrase — KO Сеул 1 vocab «안녕하세요!»
+  - Draw: Мурзик в аэропорту Инчхон машет лапкой, за стеклом самолёты.
+- `public/art/ko/seoul/l1-2.jpg` — phrase — KO Сеул 1 vocab «네.»
+  - Draw: Мурзик уверенно кивает.
+- `public/art/ko/seoul/l1-3.jpg` — phrase — KO Сеул 1 vocab «아니요.»
+  - Draw: Мурзик мотает головой и машет лапкой.
+- `public/art/ko/seoul/l1-5.jpg` — phrase — KO Сеул 1 vocab «반가워요!»
+  - Draw: Мурзик и Суа пожимают руки, то есть руку и лапку.
+- `public/art/ko/seoul/l1-6.jpg` — phrase — KO Сеул 1 vocab «환영합니다!»
+  - Draw: Суа держит табличку с именем Мурзика по-корейски.
+- `public/art/ko/seoul/l1-7.jpg` — phrase — KO Сеул 1 vocab «서울»
+  - Draw: Вечерний Сеул: огни небоскрёбов и башня на горе.
+- `public/art/ko/seoul/ibul.jpg` — reward — KO Сеул 1 reward «이불»
+  - Draw: На тёплом полу лежит толстое стёганое одеяло-матрас в розовых и голубых цветах.
+- `public/art/ko/seoul/l2-1.jpg` — phrase — KO Сеул 2 vocab «이름이 뭐예요?»
+  - Draw: Режиссёр Пак в кепке смотрит на Мурзика поверх очков.
+- `public/art/ko/seoul/l2-2.jpg` — phrase — KO Сеул 2 vocab «제 이름은 사샤예요.»
+  - Draw: Бейджик с именем на ленточке.
+- `public/art/ko/seoul/l2-3.jpg` — phrase — KO Сеул 2 vocab «배우»
+  - Draw: Актёр Минхо в костюме перед зеркалом с лампочками.
+- `public/art/ko/seoul/l2-4.jpg` — phrase — KO Сеул 2 vocab «감독님»
+  - Draw: Режиссёр Пак в складном кресле с надписью на спинке.
+- `public/art/ko/seoul/l2-5.jpg` — phrase — KO Сеул 2 vocab «친구»
+  - Draw: Мурзик и Минхо делают селфи.
+- `public/art/ko/seoul/l2-6.jpg` — phrase — KO Сеул 2 vocab «우리»
+  - Draw: Вся съёмочная группа собралась для общего фото.
+- `public/art/ko/seoul/l2-7.jpg` — phrase — KO Сеул 2 vocab «이 사람은 민호 씨예요.»
+  - Draw: Суа показывает на улыбающегося Минхо.
+- `public/art/ko/seoul/bapsang.jpg` — reward — KO Сеул 2 reward «밥상»
+  - Draw: Низкий круглый деревянный столик с короткими ножками стоит на полу у одеяла.
+- `public/art/ko/seoul/l3-1.jpg` — phrase — KO Сеул 3 vocab «감사합니다!»
+  - Draw: Мурзик низко кланяется, сложив лапки.
+- `public/art/ko/seoul/l3-2.jpg` — phrase — KO Сеул 3 vocab «고마워요!»
+  - Draw: Мурзик улыбается Суа и машет лапкой.
+- `public/art/ko/seoul/l3-3.jpg` — phrase — KO Сеул 3 vocab «죄송합니다!»
+  - Draw: Мурзик в ужасе смотрит на пролитый кофе.
+- `public/art/ko/seoul/l3-4.jpg` — phrase — KO Сеул 3 vocab «미안해요.»
+  - Draw: Мурзик виновато прижимает уши.
+- `public/art/ko/seoul/l3-5.jpg` — phrase — KO Сеул 3 vocab «괜찮아요.»
+  - Draw: Гримёрша машет руками и смеётся.
+- `public/art/ko/seoul/l3-6.jpg` — phrase — KO Сеул 3 vocab «커피»
+  - Draw: Бумажный стаканчик с кофе со льдом.
+- `public/art/ko/seoul/l3-7.jpg` — phrase — KO Сеул 3 vocab «여기요.»
+  - Draw: Гримёрша протягивает стаканчик.
+- `public/art/ko/seoul/hwabun.jpg` — reward — KO Сеул 3 reward «화분»
+  - Draw: На подоконнике стоит глиняный горшок с маленьким зелёным деревцем.
+- `public/art/ko/seoul/l4-1.jpg` — phrase — KO Сеул 4 vocab «이거 뭐예요?»
+  - Draw: Мурзик показывает лапкой на большую камеру.
+- `public/art/ko/seoul/l4-2.jpg` — phrase — KO Сеул 4 vocab «이건 대본이에요.»
+  - Draw: Суа держит толстую пачку листов со скрепкой.
+- `public/art/ko/seoul/l4-3.jpg` — phrase — KO Сеул 4 vocab «카메라»
+  - Draw: Большая кинокамера на тележке.
+- `public/art/ko/seoul/l4-4.jpg` — phrase — KO Сеул 4 vocab «마이크»
+  - Draw: Пушистый микрофон на длинной палке над головами.
+- `public/art/ko/seoul/l4-5.jpg` — phrase — KO Сеул 4 vocab «그거»
+  - Draw: Мурзик показывает на вещь в руках оператора.
+- `public/art/ko/seoul/l4-6.jpg` — phrase — KO Сеул 4 vocab «저거»
+  - Draw: Мурзик показывает вдаль, на прожектор.
+- `public/art/ko/seoul/l4-7.jpg` — phrase — KO Сеул 4 vocab «의자»
+  - Draw: Складной стул режиссёра с именем на спинке.
+- `public/art/ko/seoul/naembi.jpg` — reward — KO Сеул 4 reward «냄비»
+  - Draw: Маленькая жёлтая кастрюлька с ручками и крышкой стоит на столике, рядом пачка лапши.
+- `public/art/ko/seoul/l5-1.jpg` — phrase — KO Сеул 5 vocab «어디에서 왔어요?»
+  - Draw: Актриса Чиён с любопытством наклоняется к Мурзику.
+- `public/art/ko/seoul/l5-2.jpg` — phrase — KO Сеул 5 vocab «파리에서 왔어요.»
+  - Draw: Мурзик показывает открытку с Эйфелевой башней.
+- `public/art/ko/seoul/l5-3.jpg` — phrase — KO Сеул 5 vocab «한국»
+  - Draw: Карта Кореи, на ней сердечком отмечен Сеул.
+- `public/art/ko/seoul/l5-4.jpg` — phrase — KO Сеул 5 vocab «한국 사람»
+  - Draw: Чиён в ханбоке на съёмках.
+- `public/art/ko/seoul/l5-5.jpg` — phrase — KO Сеул 5 vocab «한국어»
+  - Draw: Тетрадка Мурзика, исписанная корейскими буквами.
+- `public/art/ko/seoul/l5-6.jpg` — phrase — KO Сеул 5 vocab «조금»
+  - Draw: Мурзик показывает пальчиками: чуть-чуть.
+- `public/art/ko/seoul/l5-7.jpg` — phrase — KO Сеул 5 vocab «한국어 잘해요!»
+  - Draw: Чиён показывает большой палец.
+- `public/art/ko/seoul/seonpunggi.jpg` — reward — KO Сеул 5 reward «선풍기»
+  - Draw: Маленький мятно-зелёный вентилятор на ножке крутит головой у окна, занавеска колышется.
+- `public/art/ko/seoul/l6-1.jpg` — phrase — KO Сеул 6 vocab «잠깐만요!»
+  - Draw: Мурзик поднимает лапку: подождите!
+- `public/art/ko/seoul/l6-2.jpg` — phrase — KO Сеул 6 vocab «다시 한 번 말해 주세요.»
+  - Draw: Мурзик наклоняет голову и прикладывает лапку к уху.
+- `public/art/ko/seoul/l6-3.jpg` — phrase — KO Сеул 6 vocab «천천히 말해 주세요.»
+  - Draw: Мурзик плавно опускает лапки вниз: потише, помедленнее.
+- `public/art/ko/seoul/l6-4.jpg` — phrase — KO Сеул 6 vocab «몰라요.»
+  - Draw: Мурзик пожимает плечами.
+- `public/art/ko/seoul/l6-5.jpg` — phrase — KO Сеул 6 vocab «알겠어요!»
+  - Draw: Мурзик радостно кивает и показывает «окей».
+- `public/art/ko/seoul/l6-6.jpg` — phrase — KO Сеул 6 vocab «이해 못 해요.»
+  - Draw: Над головой Мурзика вопросительные знаки.
+- `public/art/ko/seoul/l6-7.jpg` — phrase — KO Сеул 6 vocab «화이팅!»
+  - Draw: Суа сжимает кулачки и подбадривает Мурзика.
+- `public/art/ko/seoul/pyeongsang.jpg` — reward — KO Сеул 6 reward «평상»
+  - Draw: На крыше у комнаты стоит широкий низкий деревянный топчан, над ним гирлянда лампочек, вдали огни Сеула.
+- `public/art/ko/seoul/l7-1.jpg` — phrase — KO Сеул 7 vocab «레디, 액션!»
+  - Draw: Режиссёр Пак кричит в рупор, перед камерой щёлкает хлопушка.
+- `public/art/ko/seoul/l7-2.jpg` — phrase — KO Сеул 7 vocab «컷!»
+  - Draw: Режиссёр поднимает руку.
+- `public/art/ko/seoul/l7-3.jpg` — phrase — KO Сеул 7 vocab «좋아요!»
+  - Draw: Режиссёр показывает большой палец.
+- `public/art/ko/seoul/l7-4.jpg` — phrase — KO Сеул 7 vocab «잘했어요!»
+  - Draw: Минхо гладит Мурзика по голове.
+- `public/art/ko/seoul/l7-5.jpg` — phrase — KO Сеул 7 vocab «수고하셨습니다!»
+  - Draw: Вся группа кланяется друг другу после съёмок.
+- `public/art/ko/seoul/l7-6.jpg` — phrase — KO Сеул 7 vocab «내일 봐요!»
+  - Draw: Мурзик машет со ступенек фургона.
+- `public/art/ko/seoul/l7-7.jpg` — phrase — KO Сеул 7 vocab «안녕히 가세요!»
+  - Draw: Суа машет вслед уезжающей машине.
+- `public/art/ko/seoul/daebon.jpg` — reward — KO Сеул 7 reward «대본»; KO Сеул farewell 1
+  - Draw: Сценарий первой серии, обложка вся в автографах разными ручками, сверху маленький рисунок кота.
+- `public/art/ko/seoul/arrival.jpg` — scene — KO Сеул welcome
+  - Draw: Мурзик с чемоданом в аэропорту Инчхон. Суа держит табличку с его именем по-корейски.
+- `public/art/ko/seoul/departure.jpg` — scene — KO Сеул departure; KO Сеул farewell 4
+  - Draw: Съёмочная группа машет Мурзику с крыши.
+- `public/art/ko/seoul/home.jpg` — scene — KO Сеул farewell 2
+  - Draw: Мурзик обходит свою комнатку на крыше, которую обставлял урок за уроком.
+- `public/art/ko/seoul/metro.jpg` — scene — KO Сеул farewell 5
+  - Draw: Мурзик и Суа в вагоне сеульского метро, на табло корейские буквы.
+
+## Korean course — Hongdae (60 pictures)
+
+- `public/art/ko/hongdae/arrival.jpg` — scene — KO Сеул farewell 6; KO Хондэ welcome
+  - Draw: Мурзик и Суа на яркой улице Хондэ: уличные музыканты, кафе, вывески с корейскими буквами.
+- `public/art/ko/hongdae/l1-1.jpg` — phrase — KO Хондэ 1 vocab «아이스 아메리카노 있어요?»
+  - Draw: Мурзик заглядывает через стойку кафе.
+- `public/art/ko/hongdae/l1-2.jpg` — phrase — KO Хондэ 1 vocab «네, 있어요.»
+  - Draw: Бариста улыбается и кивает.
+- `public/art/ko/hongdae/l1-3.jpg` — phrase — KO Хондэ 1 vocab «아니요, 없어요.»
+  - Draw: Бариста разводит руками.
+- `public/art/ko/hongdae/l1-4.jpg` — phrase — KO Хондэ 1 vocab «물»
+  - Draw: Стакан воды со льдом.
+- `public/art/ko/hongdae/l1-5.jpg` — phrase — KO Хондэ 1 vocab «우유»
+  - Draw: Стакан молока с усами из пенки.
+- `public/art/ko/hongdae/l1-6.jpg` — phrase — KO Хондэ 1 vocab «빵»
+  - Draw: Пышная булочка на тарелке.
+- `public/art/ko/hongdae/l1-7.jpg` — phrase — KO Хондэ 1 vocab «케이크»
+  - Draw: Кусочек клубничного торта.
+- `public/art/ko/hongdae/beanbag.jpg` — reward — KO Хондэ 1 reward «빈백»
+  - Draw: Мягкое жёлтое кресло-мешок в углу маленькой комнаты, в нём продавлена ямка точно по размеру кота.
+- `public/art/ko/hongdae/l2-1.jpg` — phrase — KO Хондэ 2 vocab «일, 이, 삼»
+  - Draw: Мурзик показывает на пальчиках: раз, два, три.
+- `public/art/ko/hongdae/l2-2.jpg` — phrase — KO Хондэ 2 vocab «사, 오, 육»
+  - Draw: Шесть пирожных на витрине кафе.
+- `public/art/ko/hongdae/l2-3.jpg` — phrase — KO Хондэ 2 vocab «칠, 팔, 구»
+  - Draw: Девять воздушных шариков у входа в кафе.
+- `public/art/ko/hongdae/l2-4.jpg` — phrase — KO Хондэ 2 vocab «십»
+  - Draw: Мурзик поднимает обе лапки: десять!
+- `public/art/ko/hongdae/l2-5.jpg` — phrase — KO Хондэ 2 vocab «공»
+  - Draw: Круглый пончик, похожий на ноль.
+- `public/art/ko/hongdae/l2-6.jpg` — phrase — KO Хондэ 2 vocab «전화번호가 뭐예요?»
+  - Draw: Чиён протягивает Мурзику свой телефон.
+- `public/art/ko/hongdae/l2-7.jpg` — phrase — KO Хондэ 2 vocab «비밀이에요!»
+  - Draw: Чиён подмигивает и прикладывает палец к губам.
+- `public/art/ko/hongdae/sigye.jpg` — reward — KO Хондэ 2 reward «시계»
+  - Draw: Круглые настенные часы в виде кошачьей мордочки, стрелки — усы.
+- `public/art/ko/hongdae/l3-1.jpg` — phrase — KO Хондэ 3 vocab «얼마예요?»
+  - Draw: Мурзик показывает на стаканчик кофе.
+- `public/art/ko/hongdae/l3-2.jpg` — phrase — KO Хондэ 3 vocab «원»
+  - Draw: Монетки и бумажные деньги на ладошке.
+- `public/art/ko/hongdae/l3-3.jpg` — phrase — KO Хондэ 3 vocab «백, 천»
+  - Draw: Блестящая монетка в сто вон и голубая бумажка в тысячу вон.
+- `public/art/ko/hongdae/l3-5.jpg` — phrase — KO Хондэ 3 vocab «만»
+  - Draw: Зелёная бумажка в десять тысяч вон.
+- `public/art/ko/hongdae/l3-6.jpg` — phrase — KO Хондэ 3 vocab «비싸요.»
+  - Draw: Мурзик хватается за голову.
+- `public/art/ko/hongdae/l3-4.jpg` — phrase — KO Хондэ 3 vocab «싸요.»
+  - Draw: Мурзик радостно показывает монетку: дёшево!
+- `public/art/ko/hongdae/l3-7.jpg` — phrase — KO Хондэ 3 vocab «카드 돼요?»
+  - Draw: Мурзик протягивает маленькую карточку.
+- `public/art/ko/hongdae/piggy.jpg` — reward — KO Хондэ 3 reward «저금통»
+  - Draw: Розовая копилка-свинка на полке, рядом горка монеток по сто вон.
+- `public/art/ko/hongdae/l4-1.jpg` — phrase — KO Хондэ 4 vocab «화장실이 어디예요?»
+  - Draw: Мурзик переминается с лапки на лапку.
+- `public/art/ko/hongdae/l4-2.jpg` — phrase — KO Хондэ 4 vocab «역»
+  - Draw: Вход на станцию метро, ступеньки вниз.
+- `public/art/ko/hongdae/l4-3.jpg` — phrase — KO Хондэ 4 vocab «지하철»
+  - Draw: Блестящий поезд метро подъезжает к платформе.
+- `public/art/ko/hongdae/l4-4.jpg` — phrase — KO Хондэ 4 vocab «출구»
+  - Draw: Жёлтая табличка выхода со стрелкой.
+- `public/art/ko/hongdae/l4-5.jpg` — phrase — KO Хондэ 4 vocab «여기예요.»
+  - Draw: Суа топает ногой: здесь!
+- `public/art/ko/hongdae/l4-6.jpg` — phrase — KO Хондэ 4 vocab «저기예요.»
+  - Draw: Суа показывает рукой вдаль.
+- `public/art/ko/hongdae/l4-7.jpg` — phrase — KO Хондэ 4 vocab «지하철 쉬워요!»
+  - Draw: Мурзик гордо держит схему метро.
+- `public/art/ko/hongdae/usan.jpg` — reward — KO Хондэ 4 reward «우산»
+  - Draw: Маленький прозрачный зонтик сохнет раскрытым у двери, на нём капли дождя.
+- `public/art/ko/hongdae/l5-1.jpg` — phrase — KO Хондэ 5 vocab «노래»
+  - Draw: Уличный музыкант поёт с гитарой, вокруг толпа.
+- `public/art/ko/hongdae/l5-2.jpg` — phrase — KO Хондэ 5 vocab «진짜 좋아요!»
+  - Draw: Мурзик хлопает в ладошки.
+- `public/art/ko/hongdae/l5-3.jpg` — phrase — KO Хондэ 5 vocab «진짜요?»
+  - Draw: Мурзик широко раскрывает глаза.
+- `public/art/ko/hongdae/l5-4.jpg` — phrase — KO Хондэ 5 vocab «너무»
+  - Draw: Огромный стакан бабл-ти — слишком большой для кота.
+- `public/art/ko/hongdae/l5-5.jpg` — phrase — KO Хондэ 5 vocab «또»
+  - Draw: Музыкант снова поднимает гитару.
+- `public/art/ko/hongdae/l5-6.jpg` — phrase — KO Хондэ 5 vocab «한 번 더!»
+  - Draw: Толпа поднимает руки и просит ещё.
+- `public/art/ko/hongdae/l5-7.jpg` — phrase — KO Хондэ 5 vocab «박수!»
+  - Draw: Все хлопают, Мурзик громче всех.
+- `public/art/ko/hongdae/gita.jpg` — reward — KO Хондэ 5 reward «기타»; KO Хондэ farewell 1
+  - Draw: Маленькая деревянная гитара-укулеле прислонена к креслу-мешку, на ней наклейка с котиком.
+- `public/art/ko/hongdae/l6-1.jpg` — phrase — KO Хондэ 6 vocab «저기요, 자리 있어요?»
+  - Draw: Мурзик заглядывает в уютное кафе.
+- `public/art/ko/hongdae/l6-2.jpg` — phrase — KO Хондэ 6 vocab «여기 앉으세요.»
+  - Draw: Чиён в фартуке отодвигает стул.
+- `public/art/ko/hongdae/l6-3.jpg` — phrase — KO Хондэ 6 vocab «메뉴»
+  - Draw: Меню с картинками десертов.
+- `public/art/ko/hongdae/l6-4.jpg` — phrase — KO Хондэ 6 vocab «맛있어요!»
+  - Draw: Мурзик с кремом на усах жмурится от удовольствия.
+- `public/art/ko/hongdae/l6-5.jpg` — phrase — KO Хондэ 6 vocab «맛없어요.»
+  - Draw: Мурзик морщит нос над лимоном.
+- `public/art/ko/hongdae/l6-6.jpg` — phrase — KO Хондэ 6 vocab «웨이터»
+  - Draw: Официант с подносом в роли из сценария.
+- `public/art/ko/hongdae/l6-7.jpg` — phrase — KO Хондэ 6 vocab «재미있어요!»
+  - Draw: Мурзик смеётся вместе со съёмочной группой.
+- `public/art/ko/hongdae/mug.jpg` — reward — KO Хондэ 6 reward «머그컵»
+  - Draw: Белая кружка с нарисованным рыжим котом и ушками на краю стоит на подоконнике.
+- `public/art/ko/hongdae/l7-1.jpg` — phrase — KO Хондэ 7 vocab «교통카드»
+  - Draw: Карточка для метро и автобуса с наклейкой-котиком.
+- `public/art/ko/hongdae/l7-2.jpg` — phrase — KO Хондэ 7 vocab «충전해 주세요.»
+  - Draw: Мурзик протягивает карту продавцу в магазинчике.
+- `public/art/ko/hongdae/l7-3.jpg` — phrase — KO Хондэ 7 vocab «만 원이요.»
+  - Draw: Мурзик кладёт на прилавок зелёную бумажку.
+- `public/art/ko/hongdae/l7-4.jpg` — phrase — KO Хондэ 7 vocab «얘기해 주세요.»
+  - Draw: Мурзик слушает Суа, подперев щёку лапкой.
+- `public/art/ko/hongdae/l7-5.jpg` — phrase — KO Хондэ 7 vocab «재미있었어요!»
+  - Draw: Мурзик и Суа смеются на ночной улице Хондэ.
+- `public/art/ko/hongdae/l7-6.jpg` — phrase — KO Хондэ 7 vocab «또 오세요!»
+  - Draw: Хозяйка кафе машет из дверей.
+- `public/art/ko/hongdae/l7-7.jpg` — phrase — KO Хондэ 7 vocab «내일은 수원이에요!»
+  - Draw: Суа показывает на карте город с крепостью.
+- `public/art/ko/hongdae/tcard.jpg` — reward — KO Хондэ 7 reward «교통카드»
+  - Draw: Маленькая транспортная карта на шнурке с брелком-котиком, на ней наклейка с гитарой.
+- `public/art/ko/hongdae/departure.jpg` — scene — KO Хондэ departure; KO Хондэ farewell 4
+  - Draw: Хозяйка кафе машет Мурзику из дверей, Минхо в кепке прячется за её спиной и тоже машет.
+- `public/art/ko/hongdae/home.jpg` — scene — KO Хондэ farewell 2
+  - Draw: Мурзик обходит свою комнатку над кафе, которую обставлял урок за уроком.
+- `public/art/ko/hongdae/metro.jpg` — scene — KO Хондэ farewell 5
+  - Draw: Мурзик сам прикладывает транспортную карту к турникету метро, Суа рядом показывает большой палец.
+
+## Korean course — Suwon (60 pictures)
+
+- `public/art/ko/suwon/arrival.jpg` — scene — KO Хондэ farewell 6; KO Сувон welcome
+  - Draw: Мурзик и Суа у старинных каменных ворот крепости в Сувоне, над стеной развеваются разноцветные полотнища на шестах.
+- `public/art/ko/suwon/l1-1.jpg` — phrase — KO Сувон 1 vocab «하나»
+  - Draw: Одна стрела в руке Минхо.
+- `public/art/ko/suwon/l1-2.jpg` — phrase — KO Сувон 1 vocab «둘»
+  - Draw: Две стрелы.
+- `public/art/ko/suwon/l1-3.jpg` — phrase — KO Сувон 1 vocab «셋»
+  - Draw: Три стрелы.
+- `public/art/ko/suwon/l1-4.jpg` — phrase — KO Сувон 1 vocab «넷»
+  - Draw: Четыре стрелы в колчане.
+- `public/art/ko/suwon/l1-5.jpg` — phrase — KO Сувон 1 vocab «다섯»
+  - Draw: Пять стрел веером.
+- `public/art/ko/suwon/l1-6.jpg` — phrase — KO Сувон 1 vocab «화살»
+  - Draw: Стрела с ярким оперением.
+- `public/art/ko/suwon/l1-7.jpg` — phrase — KO Сувон 1 vocab «몇 개예요?»
+  - Draw: Мурзик показывает на колчан и чешет затылок.
+- `public/art/ko/suwon/bangseok.jpg` — reward — KO Сувон 1 reward «방석»
+  - Draw: Квадратная шёлковая подушка для сидения на полу, красная с синей каймой, лежит у окна ханока.
+- `public/art/ko/suwon/l2-1.jpg` — phrase — KO Сувон 2 vocab «여섯»
+  - Draw: Шесть фонарей на стене.
+- `public/art/ko/suwon/l2-2.jpg` — phrase — KO Сувон 2 vocab «일곱»
+  - Draw: Семь ступенек к воротам.
+- `public/art/ko/suwon/l2-3.jpg` — phrase — KO Сувон 2 vocab «여덟»
+  - Draw: Восемь окошек в башне.
+- `public/art/ko/suwon/l2-4.jpg` — phrase — KO Сувон 2 vocab «아홉»
+  - Draw: Девять камней в ряд.
+- `public/art/ko/suwon/l2-5.jpg` — phrase — KO Сувон 2 vocab «열»
+  - Draw: Десять фонарей светятся на стене.
+- `public/art/ko/suwon/l2-6.jpg` — phrase — KO Сувон 2 vocab «등»
+  - Draw: Круглый бумажный фонарь светится оранжевым.
+- `public/art/ko/suwon/l2-7.jpg` — phrase — KO Сувон 2 vocab «몇 개 있어요?»
+  - Draw: Мурзик смотрит на ряд фонарей.
+- `public/art/ko/suwon/deung.jpg` — reward — KO Сувон 2 reward «한지 등»
+  - Draw: Круглый фонарь из корейской бумаги ханджи висит под потолком и светится тёплым оранжевым светом.
+- `public/art/ko/suwon/l3-1.jpg` — phrase — KO Сувон 3 vocab «한 명»
+  - Draw: Минхо стоит один у ворот.
+- `public/art/ko/suwon/l3-2.jpg` — phrase — KO Сувон 3 vocab «두 명»
+  - Draw: Чиён и Суа машут рукой.
+- `public/art/ko/suwon/l3-3.jpg` — phrase — KO Сувон 3 vocab «몇 명이에요?»
+  - Draw: Продавщица обедов смотрит на толпу съёмочной группы.
+- `public/art/ko/suwon/l3-4.jpg` — phrase — KO Сувон 3 vocab «세 명이에요.»
+  - Draw: Мурзик, Суа и Минхо стоят рядышком.
+- `public/art/ko/suwon/l3-5.jpg` — phrase — KO Сувон 3 vocab «잔»
+  - Draw: Две чашки кофе на подносе.
+- `public/art/ko/suwon/l3-6.jpg` — phrase — KO Сувон 3 vocab «커피 두 잔 주세요.»
+  - Draw: Суа показывает два пальца.
+- `public/art/ko/suwon/l3-7.jpg` — phrase — KO Сувон 3 vocab «도시락»
+  - Draw: Коробка с рисом, яйцом и овощами в отделениях.
+- `public/art/ko/suwon/chatjan.jpg` — reward — KO Сувон 3 reward «찻잔»
+  - Draw: Две маленькие белые фарфоровые чашки с синим узором и чайничек стоят на подносе.
+- `public/art/ko/suwon/l4-1.jpg` — phrase — KO Сувон 4 vocab «위»
+  - Draw: Лук лежит на стуле.
+- `public/art/ko/suwon/l4-2.jpg` — phrase — KO Сувон 4 vocab «아래»
+  - Draw: Мурзик заглядывает под стул.
+- `public/art/ko/suwon/l4-3.jpg` — phrase — KO Сувон 4 vocab «앞»
+  - Draw: Мурзик стоит перед камерой.
+- `public/art/ko/suwon/l4-4.jpg` — phrase — KO Сувон 4 vocab «뒤»
+  - Draw: Лук висит у Минхо за спиной.
+- `public/art/ko/suwon/l4-5.jpg` — phrase — KO Сувон 4 vocab «옆»
+  - Draw: Суа стоит рядом с оператором.
+- `public/art/ko/suwon/l4-6.jpg` — phrase — KO Сувон 4 vocab «안»
+  - Draw: Мурзик выглядывает из коробки.
+- `public/art/ko/suwon/l4-7.jpg` — phrase — KO Сувон 4 vocab «활이 어디에 있어요?»
+  - Draw: Минхо растерянно оглядывается.
+- `public/art/ko/suwon/chaeksang.jpg` — reward — KO Сувон 4 reward «책상»
+  - Draw: Низкий деревянный письменный столик у окна ханока, на нём кисточка и тетрадь, рядом подушка для сидения.
+- `public/art/ko/suwon/l5-1.jpg` — phrase — KO Сувон 5 vocab «성»
+  - Draw: Старая каменная крепость с башнями.
+- `public/art/ko/suwon/l5-2.jpg` — phrase — KO Сувон 5 vocab «성문»
+  - Draw: Огромные каменные ворота с деревянной крышей.
+- `public/art/ko/suwon/l5-3.jpg` — phrase — KO Сувон 5 vocab «성벽»
+  - Draw: Каменная стена тянется по холмам.
+- `public/art/ko/suwon/l5-4.jpg` — phrase — KO Сувон 5 vocab «시장이 있어요.»
+  - Draw: Рынок с палатками внутри крепости.
+- `public/art/ko/suwon/l5-5.jpg` — phrase — KO Сувон 5 vocab «밖»
+  - Draw: Тихая тропинка снаружи стены.
+- `public/art/ko/suwon/l5-6.jpg` — phrase — KO Сувон 5 vocab «사람이 많아요!»
+  - Draw: Толпа туристов у ворот.
+- `public/art/ko/suwon/l5-7.jpg` — phrase — KO Сувон 5 vocab «조용해요.»
+  - Draw: Мурзик сидит один на стене, вокруг тишина.
+- `public/art/ko/suwon/byeongpung.jpg` — reward — KO Сувон 5 reward «병풍»
+  - Draw: Складная ширма из нескольких створок стоит у стены, на ней нарисованы горы, сосны и журавли.
+- `public/art/ko/suwon/l6-1.jpg` — phrase — KO Сувон 6 vocab «몇 살이에요?»
+  - Draw: Гримёрша с кисточкой в руке с любопытством смотрит на Мурзика.
+- `public/art/ko/suwon/l6-2.jpg` — phrase — KO Сувон 6 vocab «다섯 살이에요.»
+  - Draw: Мурзик показывает пять пальчиков.
+- `public/art/ko/suwon/l6-3.jpg` — phrase — KO Сувон 6 vocab «스무 살이에요.»
+  - Draw: Торт с двумя свечками в виде цифр 2 и 0.
+- `public/art/ko/suwon/l6-4.jpg` — phrase — KO Сувон 6 vocab «스물»
+  - Draw: Двадцать фонариков на верёвочке.
+- `public/art/ko/suwon/l6-5.jpg` — phrase — KO Сувон 6 vocab «서른»
+  - Draw: Тридцать свечек на большом торте.
+- `public/art/ko/suwon/l6-6.jpg` — phrase — KO Сувон 6 vocab «나이»
+  - Draw: Мурзик перед зеркалом рассматривает свои усы.
+- `public/art/ko/suwon/l6-7.jpg` — phrase — KO Сувон 6 vocab «어려요!»
+  - Draw: Гримёрша умилённо складывает руки.
+- `public/art/ko/suwon/yeon.jpg` — reward — KO Сувон 6 reward «연»
+  - Draw: Прямоугольный корейский воздушный змей с круглой дыркой посередине и разноцветным хвостом висит на стене.
+- `public/art/ko/suwon/l7-1.jpg` — phrase — KO Сувон 7 vocab «활»
+  - Draw: Деревянный лук с красной обмоткой.
+- `public/art/ko/suwon/l7-2.jpg` — phrase — KO Сувон 7 vocab «과녁»
+  - Draw: Круглая мишень на соломенной подставке.
+- `public/art/ko/suwon/l7-3.jpg` — phrase — KO Сувон 7 vocab «쏘세요!»
+  - Draw: Режиссёр Пак машет рукой.
+- `public/art/ko/suwon/l7-4.jpg` — phrase — KO Сувон 7 vocab «조심하세요!»
+  - Draw: Минхо вытягивает руку: аккуратнее!
+- `public/art/ko/suwon/l7-5.jpg` — phrase — KO Сувон 7 vocab «맞았어요!»
+  - Draw: Стрела торчит в самом центре мишени.
+- `public/art/ko/suwon/l7-6.jpg` — phrase — KO Сувон 7 vocab «대단해요!»
+  - Draw: Вся группа аплодирует.
+- `public/art/ko/suwon/l7-7.jpg` — phrase — KO Сувон 7 vocab «다음은 남이섬이에요!»
+  - Draw: Суа показывает фото острова с аллеей высоких деревьев.
+- `public/art/ko/suwon/hwal.jpg` — reward — KO Сувон 7 reward «활»; KO Сувон farewell 1
+  - Draw: Маленький деревянный лук с красной обмоткой и стрела с мягким наконечником лежат на столике.
+- `public/art/ko/suwon/departure.jpg` — scene — KO Сувон departure; KO Сувон farewell 4
+  - Draw: Хозяйка ханока машет Мурзику у ворот, за ней крепостная стена.
+- `public/art/ko/suwon/home.jpg` — scene — KO Сувон farewell 2
+  - Draw: Мурзик обходит свою комнату в ханоке, которую обставлял урок за уроком.
+- `public/art/ko/suwon/bus.jpg` — scene — KO Сувон farewell 5
+  - Draw: Автобус съёмочной группы едет по дороге среди зелёных холмов, Мурзик смотрит в окно.
+
+## Korean course — Nami Island (1 pictures)
+
+- `public/art/ko/nami/arrival.jpg` — scene — KO Сувон farewell 6
+  - Draw: Мурзик и Суа на маленьком пароме, впереди остров с аллеей высоких деревьев.

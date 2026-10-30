@@ -33,7 +33,12 @@ export function useProgressSync(onRestored?: () => void) {
   useEffect(() => {
     const setStatus = useSyncStatus.getState().set;
     if (!identityAvailable()) return setStatus("off");
-    if (!userId) return setStatus("local");
+    if (!userId) {
+      // Signed out: the list of the account's courses is not this device's to show.
+      if (useIdentity.getState().status === "signed-out" && Object.keys(useProgress.getState().accountCourses).length > 0)
+        useProgress.getState().setAccountCourses({});
+      return setStatus("local");
+    }
 
     let cancelled = false;
     let timer: ReturnType<typeof setTimeout> | undefined;
@@ -71,6 +76,10 @@ export function useProgressSync(onRestored?: () => void) {
         });
         if (cancelled) return;
         const now = useProgress.getState();
+        // Kept outside the subscription below: the course list alone does not need saving back.
+        applying = true;
+        now.setAccountCourses(result.courses ?? {});
+        applying = false;
         const patch: Partial<ReturnType<typeof useProgress.getState>> = {};
         if (!sameProgress(normalizeProgress(now), result.progress)) Object.assign(patch, result.progress);
         if (result.nativeLang && result.nativeLang !== now.nativeLang) patch.nativeLang = result.nativeLang;

@@ -5,7 +5,8 @@ import { course } from "./active";
 
 type SpeechValue = {
   playing: string | null;
-  play: (id: string, text: string, lang?: string, voice?: VoiceId) => void;
+  /** `slow` plays the same phrase at about 0.7 of the normal speed (the “slowly” button). */
+  play: (id: string, text: string, lang?: string, voice?: VoiceId, slow?: boolean) => void;
   playAll: (lines: { id: string; text: string; lang?: string; voice?: VoiceId }[]) => void;
   stop: () => void;
 };
@@ -35,13 +36,13 @@ let current: SpeechSynthesisUtterance | null = null;
  * a tap, so nothing is awaited before `speak`. If the voice list is not loaded yet, the language alone
  * picks the phone's default voice for it.
  */
-function utter(text: string, lang: string) {
+function utter(text: string, lang: string, slow = false) {
   return new Promise<void>((resolve) => {
     const synth = typeof window !== "undefined" ? window.speechSynthesis : undefined;
     if (!synth || typeof SpeechSynthesisUtterance === "undefined") return resolve();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = lang;
-    u.rate = 0.9;
+    u.rate = slow ? 0.6 : 0.9;
     const voice = pickVoice(synth.getVoices(), lang);
     if (voice) u.voice = voice;
     const done = () => {
@@ -77,7 +78,7 @@ function stopFile() {
 }
 
 /** Plays a recorded mp3. Resolves true when it finished, false if there is no file. */
-function playFile(url: string): Promise<boolean> {
+function playFile(url: string, slow = false): Promise<boolean> {
   if (missing.has(url) || typeof Audio === "undefined") return Promise.resolve(false);
   // One shared element, so iPhone keeps allowing playback after the first tap.
   player ??= new Audio();
@@ -93,6 +94,9 @@ function playFile(url: string): Promise<boolean> {
       resolve(started);
     };
     el.src = url;
+    // Slower without a lower voice: the browser keeps the pitch.
+    el.playbackRate = slow ? 0.7 : 1;
+    el.preservesPitch = true;
     el.play().catch(() => {
       if (!started) missing.add(url);
       resolve(false);
@@ -101,12 +105,12 @@ function playFile(url: string): Promise<boolean> {
 }
 
 /** A recording when this phrase has one (listed in audio-recorded.ts); otherwise the phone's voice at once. */
-async function say(text: string, lang: string, voice: VoiceId, isCurrent: () => boolean) {
+async function say(text: string, lang: string, voice: VoiceId, isCurrent: () => boolean, slow = false) {
   if (lang.startsWith("ru") && recordedAudio.has(`${voice}/${audioKey(text)}`)) {
-    if (await playFile(audioUrl(voice, text))) return;
+    if (await playFile(audioUrl(voice, text), slow)) return;
     if (!isCurrent()) return;
   }
-  await utter(text, lang);
+  await utter(text, lang, slow);
 }
 
 export function SpeechProvider({ children }: { children: ReactNode }) {
@@ -119,13 +123,13 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
     setPlaying(null);
   }, []);
 
-  const play = useCallback((id: string, text: string, lang?: string, voice: VoiceId = NARRATOR) => {
+  const play = useCallback((id: string, text: string, lang?: string, voice: VoiceId = NARRATOR, slow = false) => {
     const my = ++token;
     stopFile();
     cancelVoice();
     setPlaying(id);
     void (async () => {
-      await say(text, lang ?? course.speechLang, voice, () => my === token);
+      await say(text, lang ?? course.speechLang, voice, () => my === token, slow);
       if (my === token) setPlaying(null);
     })();
   }, []);
