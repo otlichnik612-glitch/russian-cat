@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiHealthRouteImport } from './routes/api/health'
+import { Route as ApiVoiceLangSpeakerKeyRouteImport } from './routes/api/voice/$lang.$speaker.$key'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,40 @@ const ApiHealthRoute = ApiHealthRouteImport.update({
   path: '/api/health',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiVoiceLangSpeakerKeyRoute = ApiVoiceLangSpeakerKeyRouteImport.update({
+  id: '/api/voice/$lang/$speaker/$key',
+  path: '/api/voice/$lang/$speaker/$key',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/api/health': typeof ApiHealthRoute
+  '/api/voice/$lang/$speaker/$key': typeof ApiVoiceLangSpeakerKeyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/api/health': typeof ApiHealthRoute
+  '/api/voice/$lang/$speaker/$key': typeof ApiVoiceLangSpeakerKeyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/api/health': typeof ApiHealthRoute
+  '/api/voice/$lang/$speaker/$key': typeof ApiVoiceLangSpeakerKeyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/api/health'
+  fullPaths: '/' | '/api/health' | '/api/voice/$lang/$speaker/$key'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/api/health'
-  id: '__root__' | '/' | '/api/health'
+  to: '/' | '/api/health' | '/api/voice/$lang/$speaker/$key'
+  id: '__root__' | '/' | '/api/health' | '/api/voice/$lang/$speaker/$key'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ApiHealthRoute: typeof ApiHealthRoute
+  ApiVoiceLangSpeakerKeyRoute: typeof ApiVoiceLangSpeakerKeyRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +75,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiHealthRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/voice/$lang/$speaker/$key': {
+      id: '/api/voice/$lang/$speaker/$key'
+      path: '/api/voice/$lang/$speaker/$key'
+      fullPath: '/api/voice/$lang/$speaker/$key'
+      preLoaderRoute: typeof ApiVoiceLangSpeakerKeyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ApiHealthRoute: ApiHealthRoute,
+  ApiVoiceLangSpeakerKeyRoute: ApiVoiceLangSpeakerKeyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

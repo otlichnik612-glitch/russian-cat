@@ -5,10 +5,12 @@ import { SpeechProvider } from "@/lib/course/speech";
 import { startIdentity, useIdentity } from "@/lib/identity/client";
 import { useProgressSync } from "@/lib/sync/use-progress-sync";
 import { useDeveloperCheck } from "@/lib/identity/developer";
+import { loadClips } from "@/lib/voice/clips";
 import { DevPanel } from "./dev";
 import { CoursePicker, MyCourses, NativePicker } from "./languages";
+import { VoicePage } from "./voice-page";
 import { LessonPlayer } from "./player";
-import { Apartment, Finale, GenderScreen, Home, Intro, Journey, Opening, Phrases, RewardScreen, Splash } from "./screens";
+import { Apartment, CityWelcome, Finale, GenderScreen, Home, Intro, Journey, Opening, Phrases, RewardScreen, Splash } from "./screens";
 import { AccountScreen, NewPassword, SignInScreen } from "./welcome";
 
 type Screen =
@@ -26,9 +28,11 @@ type Screen =
   | { name: "phrases" }
   | { name: "apartment" }
   | { name: "lesson"; lessonId: string }
+  | { name: "city-welcome"; lessonId: string }
   | { name: "reward"; lessonId: string }
   | { name: "finale"; cityId: string }
-  | { name: "dev" };
+  | { name: "dev" }
+  | { name: "voice" };
 
 export function RussianCatApp() {
   const [screen, setScreen] = useState<Screen>({ name: "loading" });
@@ -40,6 +44,8 @@ export function RussianCatApp() {
   const learnerGender = useProgress((state) => state.learnerGender);
   // The chosen course decides the lessons and the interface language. Set before children render.
   setActiveCourse(targetLang, nativeLang, learnerGender);
+  // Recordings of the course's phrases (voice page); without them the phone's voice reads.
+  useEffect(() => loadClips(course.speechLang), [targetLang, nativeLang]);
   const recovering = useIdentity((state) => state.recovering);
   const screenName = useRef(screen.name);
   screenName.current = screen.name;
@@ -55,7 +61,15 @@ export function RussianCatApp() {
   useEffect(() => {
     void Promise.all([Promise.resolve(useProgress.persist.rehydrate()), startIdentity()]).then(() => {
       const state = useProgress.getState();
-      if (state.seenIntro) setScreen({ name: "home" });
+      // The voice page (recording phrases with Grok): https://…/?voice=1, password-protected.
+      let voice = false;
+      try {
+        voice = new URLSearchParams(window.location.search).get("voice") === "1";
+      } catch {
+        voice = false;
+      }
+      if (voice) setScreen({ name: "voice" });
+      else if (state.seenIntro) setScreen({ name: "home" });
       else if (!state.nativeLang) setScreen({ name: "native" });
       else if (!state.targetLang) setScreen({ name: "languages" });
       else afterCourse();
@@ -72,6 +86,14 @@ export function RussianCatApp() {
 
   // A developer account (Netlify variable DEVELOPER_EMAILS) sees every lesson and the developer panel.
   useDeveloperCheck();
+
+  // Starting the first lesson of a city (in any order): the city's welcome page comes first.
+  const openLesson = (lessonId: string) => {
+    const lesson = getLesson(lessonId);
+    const state = useProgress.getState();
+    const starting = lesson?.number === 1 && !state.completedLessonIds.includes(lessonId) && state.draft?.lessonId !== lessonId;
+    setScreen(starting && getCity(lesson.cityId)?.story ? { name: "city-welcome", lessonId } : { name: "lesson", lessonId });
+  };
 
   let body: ReactNode = null;
   if (screen?.name === "loading") body = <Splash />;
@@ -113,7 +135,7 @@ export function RussianCatApp() {
   if (screen?.name === "home") {
     body = (
       <Home
-        onLesson={(lessonId) => setScreen({ name: "lesson", lessonId })}
+        onLesson={openLesson}
         onJourney={() => setScreen({ name: "journey" })}
         onPhrases={() => setScreen({ name: "phrases" })}
         onApartment={() => setScreen({ name: "apartment" })}
@@ -144,6 +166,15 @@ export function RussianCatApp() {
   if (screen?.name === "journey") body = <Journey onBack={() => setScreen({ name: "home" })} />;
   if (screen?.name === "phrases") body = <Phrases onBack={() => setScreen({ name: "home" })} />;
   if (screen?.name === "apartment") body = <Apartment onBack={() => setScreen({ name: "home" })} />;
+  if (screen?.name === "city-welcome") {
+    body = (
+      <CityWelcome
+        lessonId={screen.lessonId}
+        onStart={() => setScreen({ name: "lesson", lessonId: screen.lessonId })}
+        onBack={() => setScreen({ name: "home" })}
+      />
+    );
+  }
   if (screen?.name === "lesson") {
     const lesson = getLesson(screen.lessonId);
     body = lesson ? (
@@ -181,9 +212,11 @@ export function RussianCatApp() {
         onLesson={(lessonId) => setScreen({ name: "lesson", lessonId })}
         onFinale={(cityId) => setScreen({ name: "finale", cityId })}
         onWelcome={() => setScreen({ name: "native" })}
+        onVoice={() => setScreen({ name: "voice" })}
       />
     );
   }
+  if (screen?.name === "voice") body = <VoicePage onBack={() => setScreen(useProgress.getState().seenIntro ? { name: "home" } : { name: "native" })} />;
   if (screen?.name === "finale") body = <Finale cityId={screen.cityId} onDone={() => setScreen({ name: "home" })} />;
 
   // A password-reset link was opened: ask for the new password first.

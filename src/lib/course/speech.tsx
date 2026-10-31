@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { audioKey, audioUrl, NARRATOR, type VoiceId } from "./audio";
-import { recordedAudio } from "./audio-recorded";
+import { NARRATOR, type VoiceId } from "./audio";
+import { clipUrl } from "@/lib/voice/clips";
 import { course } from "./active";
 
 type SpeechValue = {
@@ -104,10 +104,12 @@ function playFile(url: string, slow = false): Promise<boolean> {
   });
 }
 
-/** A recording when this phrase has one (listed in audio-recorded.ts); otherwise the phone's voice at once. */
+/** A recording from the voice page when this phrase has one; otherwise the phone's voice at once. */
 async function say(text: string, lang: string, voice: VoiceId, isCurrent: () => boolean, slow = false) {
-  if (lang.startsWith("ru") && recordedAudio.has(`${voice}/${audioKey(text)}`)) {
-    if (await playFile(audioUrl(voice, text), slow)) return;
+  // A recording from the voice page (Grok), if this phrase has one; it is in the course's own language.
+  const url = lang === course.speechLang ? clipUrl(text, voice) : null;
+  if (url) {
+    if (await playFile(url, slow)) return;
     if (!isCurrent()) return;
   }
   await utter(text, lang, slow);

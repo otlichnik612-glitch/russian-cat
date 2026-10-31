@@ -70,12 +70,15 @@ export function DevPanel({
   onLesson,
   onFinale,
   onWelcome,
+  onVoice,
 }: {
   onBack: () => void;
   onLesson: (lessonId: string) => void;
   onFinale: (cityId: string) => void;
   /** Shows the hello and sign-in screens again (progress is not changed). */
   onWelcome: () => void;
+  /** The voice page: recording phrases with Grok. */
+  onVoice: () => void;
 }) {
   const [status, setStatus] = useState("");
   const heading = useRef<HTMLHeadingElement>(null);
@@ -93,6 +96,9 @@ export function DevPanel({
       <h1 ref={heading} tabIndex={-1} className="font-display text-4xl">
         Developer panel
       </h1>
+      <Button variant="ghost" onClick={onVoice}>
+        Озвучка (Grok)
+      </Button>
       <p>For testing only. Each city has its own heading. “Start” buttons change your progress; “Open lesson” buttons do not.</p>
       <p role="status" aria-live="polite" className="font-bold text-garden">
         {status}

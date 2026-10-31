@@ -213,15 +213,6 @@ export function Home({
             <p className="text-base font-bold text-garden">
               {ui.lessonOf(shown.level, shownCity.name, shown.number, LESSONS_PER_CITY)}
             </p>
-            {shown.number === 1 && shownCity.story && shownCity.id !== readyCities[0]?.id ? (
-              <>
-                <h2 className="text-4xl">
-                  <Ru>{shownCity.story.welcomeRu}</Ru>
-                </h2>
-                <p>{shownCity.story.welcomeEn}</p>
-                <Illustration src={shownCity.story.welcomeImage} a11y={shownCity.story.welcomeA11y} />
-              </>
-            ) : null}
             <h2 className="font-display text-4xl">{shown.title}</h2>
             <p>{ui.aboutMinutes(shown.minutes)}</p>
             <Button onClick={() => onLesson(shown.id)}>
@@ -710,6 +701,39 @@ export function GenderScreen({ onDone }: { onDone: () => void }) {
           {q.female}
         </Button>
       </div>
+    </main>
+  );
+}
+
+/**
+ * The city's welcome page, shown before its first lesson is started (any city, in any order).
+ * Murzik's first phrase in the city with its sound, the translation and the arrival picture.
+ */
+export function CityWelcome({ lessonId, onStart, onBack }: { lessonId: string; onStart: () => void; onBack: () => void }) {
+  const lesson = courseLessons.find((l) => l.id === lessonId);
+  const place = lesson ? getCity(lesson.cityId) : undefined;
+  const heading = useRef<HTMLHeadingElement>(null);
+  useEffect(() => heading.current?.focus(), []);
+  const story = place?.story;
+  if (!lesson || !place || !story) return null;
+  return (
+    <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-5 px-5 py-6">
+      <p className="text-base font-bold text-garden">
+        {levelOf(place.id)} · {place.name}{" "}
+        <span lang={course.htmlLang} className="font-sans">
+          {place.nameRu}
+        </span>
+      </p>
+      <h1 ref={heading} tabIndex={-1} className="font-display text-4xl outline-none">
+        {place.name}
+      </h1>
+      <Illustration src={story.welcomeImage} a11y={story.welcomeA11y} />
+      <RussianLine text={story.welcomeRu} id={`welcome-${place.id}`} label={`${ui.play} ${story.welcomeRu}`} />
+      <p className="text-xl">{story.welcomeEn}</p>
+      <Button onClick={onStart}>{ui.startThisLesson}</Button>
+      <Button variant="quiet" onClick={onBack}>
+        {ui.back}
+      </Button>
     </main>
   );
 }

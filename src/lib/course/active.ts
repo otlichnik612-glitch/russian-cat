@@ -98,6 +98,18 @@ function pick(id: CourseId, native?: UiLang | null): CourseDef {
   return (native ? versions[native] : undefined) ?? Object.values(versions)[0]!;
 }
 
+/** Every written version of every course (and its female-forms twin), for the voice page. */
+export function allCourseVersions(): { id: CourseId; native: UiLang; def: CourseDef }[] {
+  const out: { id: CourseId; native: UiLang; def: CourseDef }[] = [];
+  for (const [id, versions] of Object.entries(registry) as [CourseId, Partial<Record<UiLang, CourseDef>>][])
+    for (const [native, def] of Object.entries(versions) as [UiLang, CourseDef | undefined][]) {
+      if (!def || def.model.readyCities.length === 0) continue;
+      out.push({ id, native, def });
+      if (def.gender) out.push({ id, native, def: def.gender.female });
+    }
+  return out;
+}
+
 /** Interface texts in a given language (for screens shown before or outside the active course). */
 export const uiFor = (lang: UiLang): UiText => uiText[lang];
 
