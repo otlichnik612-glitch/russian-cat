@@ -348,24 +348,16 @@ export function grokOgHeadTags({
 } = {}) {
   const title = resolveOgTitle(site, appName, host, documentTitle);
   const publicHost = resolvePublicHost(host);
-  // site.json `ogTitle` is the link-preview text only; `title` stays the app name
-  // (tab title, Home Screen name, manifest).
-  const shareTitle = String(site.ogTitle ?? "").trim() || title;
   const tags = [
     `<meta name="twitter:card" content="summary_large_image">`,
-    `<meta property="og:title" content="${escapeHtml(shareTitle)}">`,
+    `<meta property="og:title" content="${escapeHtml(title)}">`,
   ];
   const description = String(site.description ?? "").trim();
   if (description) {
     tags.push(`<meta property="og:description" content="${escapeHtml(description)}">`);
   }
-  const ogType = String(site.type ?? "").trim();
-  if (ogType) {
-    tags.push(`<meta property="og:type" content="${escapeHtml(ogType)}">`);
-  }
-  const ogUrl = String(site.url ?? "").trim();
-  if (ogUrl) {
-    tags.push(`<meta property="og:url" content="${escapeHtml(ogUrl)}">`);
+  if (String(site.type ?? "").toLowerCase() === "x:game") {
+    tags.push(`<meta property="og:type" content="x:game">`);
   }
   if (publicHost) {
     const asset = resolveOgCardAsset(site, cwd);
