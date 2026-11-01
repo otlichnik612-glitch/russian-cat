@@ -61,10 +61,10 @@ export function RussianCatApp() {
   useEffect(() => {
     void Promise.all([Promise.resolve(useProgress.persist.rehydrate()), startIdentity()]).then(() => {
       const state = useProgress.getState();
-      // The voice page (recording phrases with Grok): https://…/?voice=1, password-protected.
+      // The voice page: /?voice=<code>. The code is the URL value, checked on the server.
       let voice = false;
       try {
-        voice = new URLSearchParams(window.location.search).get("voice") === "1";
+        voice = (new URLSearchParams(window.location.search).get("voice")?.trim() ?? "").length > 0;
       } catch {
         voice = false;
       }

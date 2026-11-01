@@ -22,5 +22,8 @@ if (!html.includes('src="/assets/')) {
   process.exit(1);
 }
 await writeFile("dist/client/index.html", html);
-await writeFile("dist/client/_redirects", "/*  /index.html  200\n");
+await writeFile(
+  "dist/client/_redirects",
+  ["/_serverFn/*  /.netlify/functions/server  200", "/api/*  /.netlify/functions/server  200", "/*  /index.html  200", ""].join("\n"),
+);
 console.log("[netlify-shell] wrote dist/client/index.html");

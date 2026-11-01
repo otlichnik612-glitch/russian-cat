@@ -3,13 +3,14 @@ import { courseDef, type CourseId } from "@/lib/course/active";
 import { voiceCast, type VoiceId } from "@/lib/course/audio";
 import { grokLanguage } from "@/lib/voice/phrases-lang";
 import { voiceAdmin } from "@/lib/voice/voice.functions";
+import type { VoiceAdminResult } from "@/lib/voice/voice.functions";
+import { VOICE_COURSES } from "@/lib/voice/voice-courses";
 import { Button } from "./ui";
 
 /**
- * The voice page: records the course phrases with Grok, city by city. Opened with ?voice=1 or from the
- * developer panel, and only with the password from the Netlify variable VOICE_ADMIN_CODE.
- * In Russian (the author's language). Built for VoiceOver: one heading per part, plain buttons,
- * every result announced in a status line.
+ * The voice page: records the course phrases with Grok, city by city.
+ * Opened as /?voice=<code>. The code is read from that address, never written into the script.
+ * The server still compares it with the Netlify variable VOICE_ADMIN_CODE.
  */
 
 type Status = {
@@ -21,26 +22,52 @@ type Status = {
 
 const PRICE_PER_CHAR = 15 / 1_000_000;
 const dollars = (chars: number) => `$${(chars * PRICE_PER_CHAR).toFixed(2)}`;
-const CODE_KEY = "talky-kitty-voice-code";
 
-function savedCode(): string {
+function codeFromAddress(): string {
+  if (typeof window === "undefined") return "";
   try {
-    return window.sessionStorage.getItem(CODE_KEY) ?? "";
+    return new URLSearchParams(window.location.search).get("voice")?.trim() ?? "";
   } catch {
     return "";
   }
 }
 
 export function VoicePage({ onBack }: { onBack: () => void }) {
-  const [code, setCode] = useState(savedCode);
-  const [courses, setCourses] = useState<{ id: string; title: string }[] | null>(null);
+  const code = codeFromAddress();
+  const [courses, setCourses] = useState<{ id: string; title: string }[] | null>(code ? VOICE_COURSES : null);
   const [course, setCourse] = useState<CourseId | null>(null);
   const [status, setStatus] = useState<Status | null>(null);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(code ? "Код отправлен. Выбери курс." : "В адресе нет кода. Открой страницу так: /?voice= и код.");
   const [busy, setBusy] = useState<string | null>(null);
   const stopRef = useRef(false);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => heading.current?.focus(), []);
+  useEffect(() => {
+    if (!code) return;
+    let cancelled = false;
+    void (async () => {
+      try {
+        const raw = await withTimeout(voiceAdmin({ data: { code, action: "courses" } }), 12_000);
+        if (cancelled) return;
+        if (!isAdminResult(raw)) {
+          setMessage("Список курсов открыт. Сервер пока не подтвердил код.");
+          return;
+        }
+        if (!raw.ok) {
+          setCourses(null);
+          setMessage(explain(raw.error));
+          return;
+        }
+        if ("courses" in raw) setCourses(raw.courses);
+        setMessage("Код верный. Выбери курс.");
+      } catch (error) {
+        if (!cancelled) setMessage(`${signInError(error)} Список курсов открыт.`);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [code]);
 
   const call = async (input: {
     action: "courses" | "status" | "record" | "sample";
@@ -51,27 +78,9 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
     lang?: string;
   }) => {
     const result = await voiceAdmin({ data: { code, ...input } });
+    if (!isAdminResult(result)) throw new Error("Сервер вернул страницу вместо ответа.");
     if (!result.ok) throw new Error(explain(result.error));
     return result;
-  };
-
-  const signIn = async () => {
-    setMessage("Проверяю пароль…");
-    setBusy("signin");
-    try {
-      const result = await withTimeout(call({ action: "courses" }), 12_000);
-      if ("courses" in result) setCourses(result.courses);
-      try {
-        window.sessionStorage.setItem(CODE_KEY, code);
-      } catch {
-        // Private mode: the password is asked again next time.
-      }
-      setMessage("Пароль верный. Выбери курс.");
-    } catch (error) {
-      setMessage(signInError(error));
-    } finally {
-      setBusy(null);
-    }
   };
 
   const refresh = async (id: CourseId) => {
@@ -133,29 +142,7 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
         {message}
       </p>
 
-      {!courses ? (
-        <form
-          className="flex flex-col gap-3"
-          onSubmit={(event) => {
-            event.preventDefault();
-            void signIn();
-          }}
-        >
-          <label className="flex flex-col gap-2 text-lg font-bold">
-            Пароль озвучки
-            <input
-              type="password"
-              autoComplete="off"
-              value={code}
-              onChange={(event) => setCode(event.target.value)}
-              className="min-h-14 rounded-2xl border border-line bg-card px-4 text-lg font-normal"
-            />
-          </label>
-          <Button type="submit" disabled={!code.trim() || busy === "signin"}>
-            Войти
-          </Button>
-        </form>
-      ) : (
+      {!courses ? null : (
         <>
           <h2 className="font-display text-2xl">Курс</h2>
           <div className="grid gap-3">
@@ -253,6 +240,10 @@ function VoiceSamples({ course, code, onMessage }: { course: CourseId; code: str
       </ul>
     </>
   );
+}
+
+function isAdminResult(value: unknown): value is VoiceAdminResult {
+  return !!value && typeof value === "object" && !(value instanceof Response) && "ok" in value;
 }
 
 function withTimeout<T>(work: Promise<T>, ms: number): Promise<T> {
