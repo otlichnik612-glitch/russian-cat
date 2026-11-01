@@ -57,8 +57,9 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
 
   const signIn = async () => {
     setMessage("Проверяю пароль…");
+    setBusy("signin");
     try {
-      const result = await call({ action: "courses" });
+      const result = await withTimeout(call({ action: "courses" }), 12_000);
       if ("courses" in result) setCourses(result.courses);
       try {
         window.sessionStorage.setItem(CODE_KEY, code);
@@ -67,7 +68,9 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
       }
       setMessage("Пароль верный. Выбери курс.");
     } catch (error) {
-      setMessage((error as Error).message);
+      setMessage(signInError(error));
+    } finally {
+      setBusy(null);
     }
   };
 
@@ -148,7 +151,7 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
               className="min-h-14 rounded-2xl border border-line bg-card px-4 text-lg font-normal"
             />
           </label>
-          <Button type="submit" disabled={!code.trim()}>
+          <Button type="submit" disabled={!code.trim() || busy === "signin"}>
             Войти
           </Button>
         </form>
@@ -250,6 +253,29 @@ function VoiceSamples({ course, code, onMessage }: { course: CourseId; code: str
       </ul>
     </>
   );
+}
+
+function withTimeout<T>(work: Promise<T>, ms: number): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error("timeout")), ms);
+    work.then(
+      (value) => {
+        clearTimeout(timer);
+        resolve(value);
+      },
+      (error: unknown) => {
+        clearTimeout(timer);
+        reject(error instanceof Error ? error : new Error(String(error)));
+      },
+    );
+  });
+}
+
+function signInError(error: unknown): string {
+  const raw = error instanceof Error ? error.message : String(error);
+  if (raw === "timeout") return "Сервер не ответил за 12 секунд. Проверка пароля не должна зависать.";
+  if (/fetch|network|load failed|failed to fetch/i.test(raw)) return `Нет ответа от сервера. ${raw}`;
+  return raw || "Ошибка сервера. Попробуй ещё раз.";
 }
 
 function explain(error: string): string {
