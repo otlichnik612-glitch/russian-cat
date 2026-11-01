@@ -6,8 +6,9 @@ import { voiceAdmin } from "@/lib/voice/voice.functions";
 import { Button } from "./ui";
 
 /**
- * The voice page: records the course phrases with Grok, city by city. Opened with ?voice=1 or from the
- * developer panel, and only with the password from the Netlify variable VOICE_ADMIN_CODE.
+ * The voice page: records the course phrases with Grok, city by city. Opened with ?voice=<code>, where
+ * the code is the Netlify variable VOICE_ADMIN_CODE (checked on the server). No password form: the code
+ * from the link is sent automatically and kept for the tab, so the developer panel can open it too.
  * In Russian (the author's language). Built for VoiceOver: one heading per part, plain buttons,
  * every result announced in a status line.
  */
@@ -23,8 +24,17 @@ const PRICE_PER_CHAR = 15 / 1_000_000;
 const dollars = (chars: number) => `$${(chars * PRICE_PER_CHAR).toFixed(2)}`;
 const CODE_KEY = "talky-kitty-voice-code";
 
-function savedCode(): string {
+/** The code from ?voice=<code> (then hidden from the address bar), or the one saved for this tab. */
+function linkCode(): string {
   try {
+    const url = new URL(window.location.href);
+    const fromLink = url.searchParams.get("voice")?.trim() ?? "";
+    if (fromLink && fromLink !== "1") {
+      window.sessionStorage.setItem(CODE_KEY, fromLink);
+      url.searchParams.set("voice", "1");
+      window.history.replaceState(window.history.state, "", url);
+      return fromLink;
+    }
     return window.sessionStorage.getItem(CODE_KEY) ?? "";
   } catch {
     return "";
@@ -32,7 +42,7 @@ function savedCode(): string {
 }
 
 export function VoicePage({ onBack }: { onBack: () => void }) {
-  const [code, setCode] = useState(savedCode);
+  const [code] = useState(linkCode);
   const [courses, setCourses] = useState<{ id: string; title: string }[] | null>(null);
   const [course, setCourse] = useState<CourseId | null>(null);
   const [status, setStatus] = useState<Status | null>(null);
@@ -41,6 +51,12 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
   const stopRef = useRef(false);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => heading.current?.focus(), []);
+  useEffect(() => {
+    if (code) void signIn();
+    else setMessage("Нет кода озвучки. Открой ссылку вида ?voice=КОД.");
+    // Runs once on open.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const call = async (input: {
     action: "courses" | "status" | "record" | "sample";
@@ -56,19 +72,19 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
   };
 
   const signIn = async () => {
-    setMessage("Проверяю пароль…");
+    setMessage("Проверяю код…");
     setBusy("signin");
     try {
       const result = await withTimeout(call({ action: "courses" }), 12_000);
       if ("courses" in result) setCourses(result.courses);
-      try {
-        window.sessionStorage.setItem(CODE_KEY, code);
-      } catch {
-        // Private mode: the password is asked again next time.
-      }
-      setMessage("Пароль верный. Выбери курс.");
+      setMessage("Код верный. Выбери курс.");
     } catch (error) {
       setMessage(signInError(error));
+      try {
+        window.sessionStorage.removeItem(CODE_KEY);
+      } catch {
+        // Private mode: nothing was saved.
+      }
     } finally {
       setBusy(null);
     }
@@ -134,27 +150,9 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
       </p>
 
       {!courses ? (
-        <form
-          className="flex flex-col gap-3"
-          onSubmit={(event) => {
-            event.preventDefault();
-            void signIn();
-          }}
-        >
-          <label className="flex flex-col gap-2 text-lg font-bold">
-            Пароль озвучки
-            <input
-              type="password"
-              autoComplete="off"
-              value={code}
-              onChange={(event) => setCode(event.target.value)}
-              className="min-h-14 rounded-2xl border border-line bg-card px-4 text-lg font-normal"
-            />
-          </label>
-          <Button type="submit" disabled={!code.trim() || busy === "signin"}>
-            Войти
-          </Button>
-        </form>
+        busy === "signin" ? null : code ? (
+          <Button onClick={() => void signIn()}>Попробовать ещё раз</Button>
+        ) : null
       ) : (
         <>
           <h2 className="font-display text-2xl">Курс</h2>
@@ -273,13 +271,13 @@ function withTimeout<T>(work: Promise<T>, ms: number): Promise<T> {
 
 function signInError(error: unknown): string {
   const raw = error instanceof Error ? error.message : String(error);
-  if (raw === "timeout") return "Сервер не ответил за 12 секунд. Проверка пароля не должна зависать.";
+  if (raw === "timeout") return "Сервер не ответил за 12 секунд. Проверка кода не должна зависать.";
   if (/fetch|network|load failed|failed to fetch/i.test(raw)) return `Нет ответа от сервера. ${raw}`;
   return raw || "Ошибка сервера. Попробуй ещё раз.";
 }
 
 function explain(error: string): string {
-  if (error === "wrong password") return "Неверный пароль.";
+  if (error === "wrong password") return "Неверный код в ссылке.";
   if (error.includes("VOICE_ADMIN_CODE")) return "В Netlify нет переменной VOICE_ADMIN_CODE.";
   if (error.includes("XAI_API_KEY")) return "В Netlify нет переменной XAI_API_KEY.";
   if (error.startsWith("daily limit")) return "Достигнут дневной предел знаков. Продолжить можно завтра.";

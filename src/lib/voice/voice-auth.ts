@@ -11,8 +11,6 @@ export function checkVoiceCode(code: string): void {
   const received = code.trim();
   const expected = process.env.VOICE_ADMIN_CODE?.trim() ?? "";
   console.error("[voice-admin] password check", {
-    received,
-    expected,
     receivedLength: received.length,
     expectedLength: expected.length,
     expectedSet: expected.length > 0,
@@ -24,7 +22,7 @@ export function checkVoiceCode(code: string): void {
     const a = Buffer.from(received);
     const b = Buffer.from(expected);
     if (a.length !== b.length || !timingSafeEqual(a, b)) {
-      console.error("[voice-admin] password mismatch", { received, expected });
+      console.error("[voice-admin] password mismatch");
       throw new VoiceError("wrong password");
     }
     console.error("[voice-admin] password accepted");
