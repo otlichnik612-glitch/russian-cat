@@ -48,6 +48,7 @@ export function RussianCatApp() {
   useEffect(() => loadClips(course.speechLang), [targetLang, nativeLang]);
   const recovering = useIdentity((state) => state.recovering);
   const screenName = useRef(screen.name);
+  const voiceCode = useRef("");
   screenName.current = screen.name;
 
   // First run: hello + own language → course → sign in (or "Not now"), in that language → opening → first city.
@@ -61,14 +62,18 @@ export function RussianCatApp() {
   useEffect(() => {
     void Promise.all([Promise.resolve(useProgress.persist.rehydrate()), startIdentity()]).then(() => {
       const state = useProgress.getState();
-      // The voice page: /?voice=<code>. The code is the URL value, checked on the server.
-      let voice = false;
+      // The voice page (recording phrases with Grok): https://…/?voice=<password> opens it at once;
+      // ?voice=1 asks for the password.
+      let voice: string | null = null;
       try {
-        voice = (new URLSearchParams(window.location.search).get("voice")?.trim() ?? "").length > 0;
+        voice = new URLSearchParams(window.location.search).get("voice");
       } catch {
-        voice = false;
+        voice = null;
       }
-      if (voice) setScreen({ name: "voice" });
+      if (voice) {
+        voiceCode.current = voice === "1" ? "" : voice;
+        setScreen({ name: "voice" });
+      }
       else if (state.seenIntro) setScreen({ name: "home" });
       else if (!state.nativeLang) setScreen({ name: "native" });
       else if (!state.targetLang) setScreen({ name: "languages" });
@@ -216,7 +221,7 @@ export function RussianCatApp() {
       />
     );
   }
-  if (screen?.name === "voice") body = <VoicePage onBack={() => setScreen(useProgress.getState().seenIntro ? { name: "home" } : { name: "native" })} />;
+  if (screen?.name === "voice") body = <VoicePage initialCode={voiceCode.current} onBack={() => setScreen(useProgress.getState().seenIntro ? { name: "home" } : { name: "native" })} />;
   if (screen?.name === "finale") body = <Finale cityId={screen.cityId} onDone={() => setScreen({ name: "home" })} />;
 
   // A password-reset link was opened: ask for the new password first.

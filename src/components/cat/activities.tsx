@@ -27,6 +27,11 @@ export function ActivityCard({
         {activity.promptLang === "ru" ? <Ru>{activity.prompt}</Ru> : activity.prompt}
       </h3>
       {activity.help ? <p className="text-muted">{activity.help}</p> : null}
+      {activity.text ? (
+        <div className="whitespace-pre-line rounded-3xl border border-line bg-paper-deep p-4 text-xl">
+          <Ru>{activity.text}</Ru>
+        </div>
+      ) : null}
       {activity.audio ? (
         <div className="flex flex-col gap-2 rounded-3xl bg-paper-deep p-4">
           <PlayButton id={`${activity.id}-audio`} text={activity.audio} label={ui.playTarget} />

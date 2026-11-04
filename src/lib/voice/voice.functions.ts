@@ -1,15 +1,10 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
-import { checkVoiceCode, VoiceError } from "./voice-auth";
-import { VOICE_COURSES } from "./voice-courses";
 
 /**
  * The voice page and the app talk to the server through these calls.
  * - voiceFiles: which phrases of a language have a recording (public, no secrets).
  * - voiceAdmin: status, recording and voice samples, only with the VOICE_ADMIN_CODE password.
- *
- * Login (`courses`) checks the password and returns this list. It does not open the database,
- * call xAI, or load the lesson texts.
  */
 
 const lang = z.string().min(2).max(8);
@@ -46,18 +41,25 @@ export type VoiceAdminResult =
 export const voiceAdmin = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => adminInput.parse(data))
   .handler(async ({ data }): Promise<VoiceAdminResult> => {
-    console.error("[voice-admin] request", { action: data.action, course: data.course ?? null });
+    const started = Date.now();
+    // Logged to Netlify (Logs → Functions) without the password itself: only whether it is set and matched.
+    const expected = process.env.VOICE_ADMIN_CODE?.trim() ?? "";
+    console.info(`[voice] ${data.action}: password set in Netlify: ${expected ? "yes" : "no"}, received length ${data.code.trim().length}, expected length ${expected.length}`);
+    const server = await import("./voice.server");
     try {
-      checkVoiceCode(data.code);
-      if (data.action === "courses") return { ok: true, courses: VOICE_COURSES };
-      const server = await import("./voice.server");
+      server.checkVoiceCode(data.code);
+      console.info(`[voice] ${data.action}: password ok (${Date.now() - started} ms)`);
+      if (data.action === "courses") {
+        const { voiceCourses } = await import("./phrases");
+        return { ok: true, courses: voiceCourses().map((c) => ({ id: c.id, title: c.title })) };
+      }
       if (!data.course && data.action !== "sample") return { ok: false, error: "no course" };
       if (data.action === "status") return { ok: true, status: await server.voiceStatus(data.course!) };
       if (data.action === "record") return { ok: true, ...(await server.recordNext(data.course!, data.place ?? "all")) };
       if (!data.speaker || !data.text || !data.lang) return { ok: false, error: "no sample text" };
       return { ok: true, audio: await server.sampleVoice(data.speaker as never, data.text, data.lang) };
     } catch (error) {
-      console.error("[voice-admin] handler error", error);
-      return { ok: false, error: error instanceof VoiceError ? error.message : "server error" };
+      console.error(`[voice] ${data.action} failed after ${Date.now() - started} ms:`, error instanceof Error ? error.message : error);
+      return { ok: false, error: error instanceof server.VoiceError ? error.message : "server error" };
     }
   });

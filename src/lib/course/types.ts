@@ -36,6 +36,52 @@ export type SpeakerId =
   | "receptionist"
   | "ewa"
   | "dora"
+  | "nina"
+  | "dave"
+  | "carmen"
+  | "ollie"
+  | "ruth"
+  | "lucas"
+  | "rosa"
+  | "giulia"
+  | "franco"
+  | "kerra"
+  | "jago"
+  | "greta"
+  | "max"
+  | "otto"
+  | "megan"
+  | "glenys"
+  | "ines"
+  | "tiagu"
+  | "rui"
+  | "jake"
+  | "maureen"
+  | "kasia"
+  | "janek"
+  | "lena"
+  | "ilze"
+  | "danny"
+  | "aisha"
+  | "edna"
+  | "vera"
+  | "bella"
+  | "arthur"
+  | "yuki"
+  | "clerk"
+  | "marina"
+  | "freya"
+  | "gordon"
+  | "jean"
+  | "ingrid"
+  | "solveig"
+  | "kirsty"
+  | "effie"
+  | "ursula"
+  | "maggie"
+  | "conor"
+  | "lily"
+  | "bernard"
   | "jamie"
   | "lev"
   // Turkish course
@@ -152,7 +198,7 @@ export type ScriptLine =
   | { speaker: string; answer: string; options: string[] };
 
 /** Which skill a task trains. The lesson screen shows it as the task's label. */
-export type Skill = "words" | "listening" | "grammar" | "letters" | "speaking" | "review";
+export type Skill = "words" | "listening" | "reading" | "grammar" | "letters" | "speaking" | "review";
 
 type Base = {
   id: string;
@@ -167,6 +213,8 @@ type Base = {
    * the task is solved, and the answer options lose their own play buttons.
    */
   audio?: string;
+  /** A short text to read before answering (a note, a sign, a menu, a message). A2 and later. */
+  text?: string;
 };
 
 export type Activity =

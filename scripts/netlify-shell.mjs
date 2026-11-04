@@ -22,8 +22,6 @@ if (!html.includes('src="/assets/')) {
   process.exit(1);
 }
 await writeFile("dist/client/index.html", html);
-await writeFile(
-  "dist/client/_redirects",
-  ["/_serverFn/*  /.netlify/functions/server  200", "/api/*  /.netlify/functions/server  200", "/*  /index.html  200", ""].join("\n"),
-);
+// No catch-all "/* → /index.html" rewrite: it swallowed the server calls (/_serverFn/…, /api/…),
+// so the voice page and saving progress never reached the server. Other paths go to the Nitro function.
 console.log("[netlify-shell] wrote dist/client/index.html");

@@ -119,6 +119,7 @@ const en = {
   skill: {
     words: "Words",
     listening: "Listening",
+    reading: "Reading",
     grammar: "Grammar",
     letters: "Letters",
     speaking: "Speaking",
@@ -164,6 +165,10 @@ const en = {
   playEntireDialogue: "Listen to the entire dialogue",
   playAll: "Listen to all",
   lettersIntro: "Russian uses the Cyrillic alphabet. Here are the letters from today's phrases.",
+  /** From A2 the letters part becomes “Sounds and reading”: how words from the lesson are said. */
+  sounds: "Sounds and reading",
+  soundsTitle: "How it sounds",
+  soundsIntro: "Words from today's lesson that are not said the way they are written.",
   // Activities
   playTarget: "Listen to the Russian",
   youHeard: "You heard: ",
@@ -268,6 +273,7 @@ const ru: UiText = {
   skill: {
     words: "Слова",
     listening: "Аудирование",
+    reading: "Чтение",
     grammar: "Грамматика",
     letters: "Буквы",
     speaking: "Говорение",
@@ -313,6 +319,9 @@ const ru: UiText = {
   playEntireDialogue: "Послушать весь диалог",
   playAll: "Послушать всё",
   lettersIntro: "В турецком латинский алфавит, но некоторые буквы читаются иначе. Вот буквы из сегодняшних фраз.",
+  sounds: "Звуки и чтение",
+  soundsTitle: "Как это звучит",
+  soundsIntro: "Слова из сегодняшнего урока, которые читаются не так, как пишутся.",
   playTarget: "Послушать по-турецки",
   youHeard: "Звучало: ",
   modelAnswer: "Пример ответа",

@@ -183,7 +183,9 @@ export function LessonPlayer({
           : frame.type === "grammar"
             ? ui.grammarFocus
             : frame.type === "letters"
-              ? ui.letters
+              ? lesson.level === "A1"
+                ? ui.letters
+                : ui.sounds
               : frame.type === "single" && single?.skill && !frame.listenFirst
                 ? skillLabel(single.skill)
                 : frame.kicker;
@@ -198,7 +200,9 @@ export function LessonPlayer({
           : frame.type === "grammar"
             ? ui.howItWorks
             : frame.type === "letters"
-              ? ui.newLetters
+              ? lesson.level === "A1"
+                ? ui.newLetters
+                : ui.soundsTitle
               : frame.title;
 
   return (
@@ -365,10 +369,10 @@ function ListenFirst({ lesson }: { lesson: Lesson }) {
 function Letters({ lesson }: { lesson: Lesson }) {
   return (
     <div className="flex flex-col gap-4">
-      <p>{ui.lettersIntro}</p>
+      <p>{lesson.level === "A1" ? ui.lettersIntro : ui.soundsIntro}</p>
       {(lesson.letters ?? []).map((card) => (
         <article key={card.letter} className="flex flex-col gap-2 rounded-3xl border border-line bg-card p-4">
-          <p className="text-6xl font-bold">
+          <p className={lesson.level === "A1" ? "text-6xl font-bold" : "text-4xl font-bold"}>
             <Ru>{card.letter}</Ru>
           </p>
           <p className="text-xl">{card.sound}</p>

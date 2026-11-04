@@ -7,6 +7,7 @@ type Extra = {
   imageA11y?: string;
   skill?: Skill;
   audio?: string;
+  text?: string;
 };
 
 export function v(
@@ -143,6 +144,17 @@ export function listen(
   extra?: Extra,
 ): Activity {
   return choice(id, prompt, options, { skill: "listening", ...extra, audio });
+}
+
+/** Read a short text (a note, a sign, a menu, a message) and choose. A2 and later. */
+export function read(
+  id: string,
+  prompt: string,
+  text: string,
+  options: [string, boolean][],
+  extra?: Extra,
+): Activity {
+  return choice(id, prompt, options, { skill: "reading", ...extra, text });
 }
 
 /** Build a word from its letters. */

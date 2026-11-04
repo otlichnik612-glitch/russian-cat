@@ -19,7 +19,7 @@ function playable(def: CourseDef, text: string | undefined): text is string {
   return true;
 }
 
-const SKIP = new Set(["id", "kind", "skill", "prompt", "help", "image", "imageA11y", "modelEn", "promptLang", "speaker", "extra", "before", "after"]);
+const SKIP = new Set(["id", "kind", "skill", "prompt", "help", "image", "imageA11y", "modelEn", "promptLang", "speaker", "extra", "before", "after", "text"]);
 
 function activityTexts(a: Activity, push: (text: string) => void) {
   const any = a as Record<string, unknown>;

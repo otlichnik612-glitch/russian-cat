@@ -4,6 +4,16 @@ import { hasCyrillic } from "../make";
 import { makeCourse } from "../model";
 import type { CityPlan, LevelPlan } from "../types";
 import { enCities } from "./cities";
+import { enBrighton } from "./brighton";
+import { enCambridge } from "./cambridge";
+import { enStIves } from "./stives";
+import { enCardiff } from "./cardiff";
+import { enLiverpool } from "./liverpool";
+import { enManchester } from "./manchester";
+import { enYork } from "./york";
+import { enLakes } from "./lakes";
+import { enGlasgow } from "./glasgow";
+import { enBelfast } from "./belfast";
 import { enSpeakers } from "./speakers";
 
 /**
@@ -16,7 +26,37 @@ import { enSpeakers } from "./speakers";
 
 const a1: CityPlan[] = enCities.map((c) => ({ id: c.id, name: c.name, nameRu: c.nameEn, lessons: c.lessons, story: c.story }));
 
-const levels: LevelPlan[] = [{ id: "A1", title: "A1", subtitle: "Первые разговоры и жизнь в пути", cities: a1 }];
+/** A2 «Кафе на колёсах»: the route (docs/ENGLISH-A2-PLAN.md); cities without lessons yet are shown as planned. */
+const a2Written = [enBrighton, enCambridge, enStIves, enCardiff, enLiverpool, enManchester, enYork, enLakes, enGlasgow, enBelfast];
+const a2Route: [string, string, string][] = [
+  ["en-brighton", "Брайтон", "Brighton"],
+  ["en-cambridge", "Кембридж", "Cambridge"],
+  ["en-stives", "Сент-Айвс", "St Ives"],
+  ["en-cardiff", "Кардифф", "Cardiff"],
+  ["en-liverpool", "Ливерпуль", "Liverpool"],
+  ["en-manchester", "Манчестер", "Manchester"],
+  ["en-york", "Йорк", "York"],
+  ["en-lakes", "Озёрный край", "The Lake District"],
+  ["en-glasgow", "Глазго", "Glasgow"],
+  ["en-belfast", "Белфаст", "Belfast"],
+  ["en-galway", "Голуэй", "Galway"],
+  ["en-seattle", "Сиэтл", "Seattle"],
+  ["en-portland", "Портленд", "Portland"],
+  ["en-losangeles", "Лос-Анджелес", "Los Angeles"],
+  ["en-austin", "Остин", "Austin"],
+  ["en-nashville", "Нэшвилл", "Nashville"],
+  ["en-miami", "Майами", "Miami"],
+  ["en-london-festival", "Лондон", "London"],
+];
+const a2: CityPlan[] = a2Route.map(([id, name, nameEn]) => {
+  const c = a2Written.find((w) => w.id === id);
+  return { id, name, nameRu: nameEn, lessons: c?.lessons ?? [], story: c?.story };
+});
+
+const levels: LevelPlan[] = [
+  { id: "A1", title: "A1", subtitle: "Первые разговоры и жизнь в пути", cities: a1 },
+  { id: "A2", title: "A2", subtitle: "Кафе на колёсах", cities: a2 },
+];
 
 /** English text: Latin letters and no Cyrillic. Russian translations are Cyrillic. */
 function isEnglish(text: string): boolean {

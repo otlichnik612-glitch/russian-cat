@@ -23,6 +23,7 @@ const sheetText = {
     vocab: "Vocabulary Focus",
     note: "Note",
     newLetters: "New letters",
+    sounds: "Sounds and reading",
     dialogue: (t: string) => `Dialogue: ${t}`,
     grammar: "Grammar Focus",
     practice: "Practice",
@@ -52,6 +53,7 @@ const sheetText = {
     vocab: "Новые слова",
     note: "Заметка",
     newLetters: "Новые буквы",
+    sounds: "Звуки и чтение",
     dialogue: (t: string) => `Диалог: ${t}`,
     grammar: "Грамматика",
     practice: "Практика",
@@ -87,6 +89,7 @@ function slug(title: string) {
 function activityText(activity: Activity): string[] {
   const lines: string[] = [activity.prompt];
   if (activity.help) lines.push(activity.help);
+  if (activity.text) lines.push(activity.text);
   if (activity.audio) lines.push(`${t().listenOrRead} ${activity.audio}`);
   switch (activity.kind) {
     case "choice":
@@ -167,7 +170,7 @@ export async function downloadLessonDoc(lesson: Lesson) {
   if (lesson.vocabNote) push(text.note, [lesson.vocabNote]);
   if (lesson.letters?.length) {
     push(
-      text.newLetters,
+      lesson.level === "A1" ? text.newLetters : text.sounds,
       lesson.letters.flatMap((card) => [
         `${card.letter} — ${card.sound}`,
         `${card.example} (${card.exampleEn})`,

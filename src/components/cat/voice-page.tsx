@@ -3,14 +3,13 @@ import { courseDef, type CourseId } from "@/lib/course/active";
 import { voiceCast, type VoiceId } from "@/lib/course/audio";
 import { grokLanguage } from "@/lib/voice/phrases-lang";
 import { voiceAdmin } from "@/lib/voice/voice.functions";
-import type { VoiceAdminResult } from "@/lib/voice/voice.functions";
-import { VOICE_COURSES } from "@/lib/voice/voice-courses";
 import { Button } from "./ui";
 
 /**
- * The voice page: records the course phrases with Grok, city by city.
- * Opened as /?voice=<code>. The code is read from that address, never written into the script.
- * The server still compares it with the Netlify variable VOICE_ADMIN_CODE.
+ * The voice page: records the course phrases with Grok, city by city. Opened with ?voice=1 or from the
+ * developer panel, and only with the password from the Netlify variable VOICE_ADMIN_CODE.
+ * In Russian (the author's language). Built for VoiceOver: one heading per part, plain buttons,
+ * every result announced in a status line.
  */
 
 type Status = {
@@ -22,52 +21,34 @@ type Status = {
 
 const PRICE_PER_CHAR = 15 / 1_000_000;
 const dollars = (chars: number) => `$${(chars * PRICE_PER_CHAR).toFixed(2)}`;
+const CODE_KEY = "talky-kitty-voice-code";
 
-function codeFromAddress(): string {
-  if (typeof window === "undefined") return "";
+function savedCode(): string {
   try {
-    return new URLSearchParams(window.location.search).get("voice")?.trim() ?? "";
+    return window.sessionStorage.getItem(CODE_KEY) ?? "";
   } catch {
     return "";
   }
 }
 
-export function VoicePage({ onBack }: { onBack: () => void }) {
-  const code = codeFromAddress();
-  const [courses, setCourses] = useState<{ id: string; title: string }[] | null>(code ? VOICE_COURSES : null);
+/** A server call that never answers must not leave the page waiting: give up after 15 seconds. */
+function withTimeout<T>(promise: Promise<T>, ms = 15_000): Promise<T> {
+  return Promise.race([
+    promise,
+    new Promise<T>((_, reject) => setTimeout(() => reject(new Error("timeout")), ms)),
+  ]);
+}
+
+export function VoicePage({ onBack, initialCode = "" }: { onBack: () => void; initialCode?: string }) {
+  const [code, setCode] = useState(() => initialCode || savedCode());
+  const [courses, setCourses] = useState<{ id: string; title: string }[] | null>(null);
   const [course, setCourse] = useState<CourseId | null>(null);
   const [status, setStatus] = useState<Status | null>(null);
-  const [message, setMessage] = useState(code ? "Код отправлен. Выбери курс." : "В адресе нет кода. Открой страницу так: /?voice= и код.");
+  const [message, setMessage] = useState("");
   const [busy, setBusy] = useState<string | null>(null);
   const stopRef = useRef(false);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => heading.current?.focus(), []);
-  useEffect(() => {
-    if (!code) return;
-    let cancelled = false;
-    void (async () => {
-      try {
-        const raw = await withTimeout(voiceAdmin({ data: { code, action: "courses" } }), 12_000);
-        if (cancelled) return;
-        if (!isAdminResult(raw)) {
-          setMessage("Список курсов открыт. Сервер пока не подтвердил код.");
-          return;
-        }
-        if (!raw.ok) {
-          setCourses(null);
-          setMessage(explain(raw.error));
-          return;
-        }
-        if ("courses" in raw) setCourses(raw.courses);
-        setMessage("Код верный. Выбери курс.");
-      } catch (error) {
-        if (!cancelled) setMessage(`${signInError(error)} Список курсов открыт.`);
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [code]);
 
   const call = async (input: {
     action: "courses" | "status" | "record" | "sample";
@@ -77,10 +58,33 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
     text?: string;
     lang?: string;
   }) => {
-    const result = await voiceAdmin({ data: { code, ...input } });
-    if (!isAdminResult(result)) throw new Error("Сервер вернул страницу вместо ответа.");
+    const result = await withTimeout(voiceAdmin({ data: { code, ...input } }));
     if (!result.ok) throw new Error(explain(result.error));
     return result;
+  };
+
+  // Opened as ?voice=<password>: sign in at once, without the form.
+  useEffect(() => {
+    if (initialCode) void signIn();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const signIn = async () => {
+    setMessage("Проверяю пароль…");
+    try {
+      const result = await call({ action: "courses" });
+      if ("courses" in result) setCourses(result.courses);
+      try {
+        window.sessionStorage.setItem(CODE_KEY, code);
+        // The password must not stay in the address bar or the browser history.
+        if (initialCode) window.history.replaceState(null, "", "/?voice=1");
+      } catch {
+        // Private mode: the password is asked again next time.
+      }
+      setMessage("Пароль верный. Выбери курс.");
+    } catch (error) {
+      setMessage(readable(error));
+    }
   };
 
   const refresh = async (id: CourseId) => {
@@ -96,7 +100,7 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
       await refresh(id);
       setMessage("");
     } catch (error) {
-      setMessage((error as Error).message);
+      setMessage(readable(error));
     }
   };
 
@@ -122,7 +126,7 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
         }
       }
     } catch (error) {
-      setMessage(`${name}: ошибка. ${(error as Error).message}. Записано ${total}.`);
+      setMessage(`${name}: ошибка. ${readable(error)} Записано ${total}.`);
     } finally {
       setBusy(null);
       await refresh(course).catch(() => undefined);
@@ -142,7 +146,29 @@ export function VoicePage({ onBack }: { onBack: () => void }) {
         {message}
       </p>
 
-      {!courses ? null : (
+      {!courses ? (
+        <form
+          className="flex flex-col gap-3"
+          onSubmit={(event) => {
+            event.preventDefault();
+            void signIn();
+          }}
+        >
+          <label className="flex flex-col gap-2 text-lg font-bold">
+            Пароль озвучки
+            <input
+              type="password"
+              autoComplete="off"
+              value={code}
+              onChange={(event) => setCode(event.target.value)}
+              className="min-h-14 rounded-2xl border border-line bg-card px-4 text-lg font-normal"
+            />
+          </label>
+          <Button type="submit" disabled={!code.trim()}>
+            Войти
+          </Button>
+        </form>
+      ) : (
         <>
           <h2 className="font-display text-2xl">Курс</h2>
           <div className="grid gap-3">
@@ -242,31 +268,16 @@ function VoiceSamples({ course, code, onMessage }: { course: CourseId; code: str
   );
 }
 
-function isAdminResult(value: unknown): value is VoiceAdminResult {
-  return !!value && typeof value === "object" && !(value instanceof Response) && "ok" in value;
-}
-
-function withTimeout<T>(work: Promise<T>, ms: number): Promise<T> {
-  return new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error("timeout")), ms);
-    work.then(
-      (value) => {
-        clearTimeout(timer);
-        resolve(value);
-      },
-      (error: unknown) => {
-        clearTimeout(timer);
-        reject(error instanceof Error ? error : new Error(String(error)));
-      },
-    );
-  });
-}
-
-function signInError(error: unknown): string {
-  const raw = error instanceof Error ? error.message : String(error);
-  if (raw === "timeout") return "Сервер не ответил за 12 секунд. Проверка пароля не должна зависать.";
-  if (/fetch|network|load failed|failed to fetch/i.test(raw)) return `Нет ответа от сервера. ${raw}`;
-  return raw || "Ошибка сервера. Попробуй ещё раз.";
+/** A failed call as a short sentence: never the raw page the server sent back. */
+function readable(error: unknown): string {
+  const text = error instanceof Error ? error.message : String(error);
+  if (text === "timeout") return "Сервер не ответил за 15 секунд. Проверь, что на сайте последняя версия, и попробуй ещё раз.";
+  if (/<html|<!doctype/i.test(text)) {
+    return /not found|404/i.test(text)
+      ? "Сервер сайта не отвечает (страница не найдена). Похоже, на Netlify опубликована только внешняя часть сайта, без серверной."
+      : "Сервер сайта ответил ошибкой.";
+  }
+  return text.length > 200 ? `${text.slice(0, 200)}…` : text;
 }
 
 function explain(error: string): string {

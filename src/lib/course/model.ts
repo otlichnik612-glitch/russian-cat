@@ -69,10 +69,16 @@ export function makeCourse(levels: LevelPlan[]) {
 
 export type CourseModel = ReturnType<typeof makeCourse>;
 
+/** New words in one lesson: 7 on A1, 8 from A2 on. */
+export function wordsPerLesson(level: Lesson["level"]): number {
+  return level === "A1" ? 7 : 8;
+}
+
 function validate(readyCities: CityPlan[], courseLessons: Lesson[]) {
   const seen = new Set<string>();
   for (const lesson of courseLessons) {
-    if (lesson.vocab.length !== 7) throw new Error(`${lesson.id} must teach exactly 7 phrases`);
+    const want = wordsPerLesson(lesson.level);
+    if (lesson.vocab.length !== want) throw new Error(`${lesson.id} must teach exactly ${want} phrases`);
     const ids = [
       lesson.id,
       ...lesson.vocab.map((item) => item.id),

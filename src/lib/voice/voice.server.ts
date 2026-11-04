@@ -1,9 +1,7 @@
+import { timingSafeEqual } from "node:crypto";
 import { voiceCast, type VoiceId } from "@/lib/course/audio";
 import type { CourseId } from "@/lib/course/active";
 import { coursePhrases, voiceCourses, type Phrase } from "./phrases";
-import { VoiceError } from "./voice-auth";
-
-export { VoiceError, checkVoiceCode } from "./voice-auth";
 
 /**
  * Server-only: recording phrases with Grok text-to-speech (xAI) and keeping the mp3 files in the database.
@@ -17,6 +15,16 @@ export const DAILY_CHAR_LIMIT = 300_000;
 const BATCH = 6;
 /** Small files: speech sounds fine at 32 kbps, and the database stays small. */
 const OUTPUT = { codec: "mp3", sample_rate: 24000, bit_rate: 32000 };
+
+export class VoiceError extends Error {}
+
+export function checkVoiceCode(code: string): void {
+  const expected = process.env.VOICE_ADMIN_CODE?.trim();
+  if (!expected) throw new VoiceError("VOICE_ADMIN_CODE is not set in Netlify");
+  const a = Buffer.from(code.trim());
+  const b = Buffer.from(expected);
+  if (a.length !== b.length || !timingSafeEqual(a, b)) throw new VoiceError("wrong password");
+}
 
 function apiKey(): string {
   const key = process.env.XAI_API_KEY?.trim();
