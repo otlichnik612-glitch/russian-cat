@@ -14,6 +14,14 @@ import { enYork } from "./york";
 import { enLakes } from "./lakes";
 import { enGlasgow } from "./glasgow";
 import { enBelfast } from "./belfast";
+import { enGalway } from "./galway";
+import { enSeattle } from "./seattle";
+import { enPortland } from "./portland";
+import { enLosAngeles } from "./losangeles";
+import { enAustin } from "./austin";
+import { enNashville } from "./nashville";
+import { enMiami } from "./miami";
+import { enLondonFestival } from "./londonfestival";
 import { enSpeakers } from "./speakers";
 
 /**
@@ -27,7 +35,7 @@ import { enSpeakers } from "./speakers";
 const a1: CityPlan[] = enCities.map((c) => ({ id: c.id, name: c.name, nameRu: c.nameEn, lessons: c.lessons, story: c.story }));
 
 /** A2 «Кафе на колёсах»: the route (docs/ENGLISH-A2-PLAN.md); cities without lessons yet are shown as planned. */
-const a2Written = [enBrighton, enCambridge, enStIves, enCardiff, enLiverpool, enManchester, enYork, enLakes, enGlasgow, enBelfast];
+const a2Written = [enBrighton, enCambridge, enStIves, enCardiff, enLiverpool, enManchester, enYork, enLakes, enGlasgow, enBelfast, enGalway, enSeattle, enPortland, enLosAngeles, enAustin, enNashville, enMiami, enLondonFestival];
 const a2Route: [string, string, string][] = [
   ["en-brighton", "Брайтон", "Brighton"],
   ["en-cambridge", "Кембридж", "Cambridge"],

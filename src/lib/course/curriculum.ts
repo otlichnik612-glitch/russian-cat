@@ -41,6 +41,13 @@ import { tallinnLessons } from "./lessons/tallinn";
 import { helsinkiLessons } from "./lessons/helsinki";
 import { osloLessons } from "./lessons/oslo";
 import { zurichLessons } from "./lessons/zurich";
+import { genevaLessons } from "./lessons/geneva";
+import { niceLessons } from "./lessons/nice";
+import { marseilleLessons } from "./lessons/marseille";
+import { sevilleLessons } from "./lessons/seville";
+import { naplesLessons } from "./lessons/naples";
+import { dubrovnikLessons } from "./lessons/dubrovnik";
+import { bratislavaLessons } from "./lessons/bratislava";
 import type { CityPlan, CityStory, Lesson, LevelPlan } from "./types";
 
 /**
@@ -1712,6 +1719,423 @@ const zurichStory: CityStory = {
   ],
 };
 
+const genevaStory: CityStory = {
+  home: {
+    name: "Murzik's room in Geneva",
+    nameRu: "Комната в Женеве",
+    image: pic("geneva/home"),
+    a11y: "An empty small room in an old-town guesthouse: a sloping ceiling, a narrow bed and a window onto the lake and a tall white fountain.",
+  },
+  keepsakeId: "asyacopy",
+  welcomeRu: "Привет, Женева!",
+  welcomeEn: "Hello, Geneva!",
+  welcomeImage: pic("geneva/arrival"),
+  welcomeA11y: "Murzik and Tom arrive in Geneva: a huge fountain shooting water high above the lake, an old town on a hill.",
+  departureImage: pic("geneva/departure"),
+  departureA11y: "Sophie waves goodbye at Geneva station; Murzik holds a framed drawing in both paws.",
+  finale: [
+    {
+      image: pic("geneva/finale-1"),
+      a11y: "The room is cosy now: an exhibition poster, a gallery floor plan, art postcards on the windowsill, a brass magnifying glass, a fountain snow globe, a sketchpad and a framed copy of Asya's drawing.",
+      lines: [
+        { en: "Murzik's room looks like a tiny gallery now." },
+        { en: "He takes his favourite thing with him: the copy of the drawing Grandma made of him." },
+      ],
+    },
+    {
+      image: pic("geneva/finale-2"),
+      a11y: "Murzik, Tom and Sophie stand by the lake; the tall fountain glows in the evening sun.",
+      lines: [
+        { ru: "Женева завершена!", en: "Geneva complete!" },
+        { en: "7 / 7 lessons" },
+        { ru: "Картина, которую я люблю, — рисунок бабушки!", en: "The picture I love is Grandma's drawing!" },
+      ],
+    },
+    {
+      image: pic("geneva/suitcase"),
+      a11y: "Murzik's suitcase is very full; on top, a framed drawing of a Paris window with a ginger kitten.",
+      lines: [
+        { en: "Grandma knows who Murzik is. Someone sent the drawing from somewhere near the sea." },
+        { ru: "На обратной стороне — «Ницца». Едем!", en: "On the back: «Nice». Let's go!" },
+      ],
+    },
+    {
+      image: pic("geneva/departure"),
+      a11y: "Sophie waves goodbye at Geneva station; Murzik holds a framed drawing in both paws.",
+      lines: [
+        { ru: "Спасибо, Софи! До свидания, Женева!", en: "Thank you, Sophie! Goodbye, Geneva!" },
+        { ru: "Следующая остановка: Ницца!", en: "Next stop: Nice!" },
+      ],
+    },
+    {
+      image: pic("geneva/finale-5"),
+      a11y: "A train runs south from the mountains towards the sea.",
+      lines: [{ ru: "Женева → Лион → Ницца", en: "Geneva → Lyon → Nice" }],
+    },
+    {
+      image: pic("nice/arrival"),
+      a11y: "Murzik and Tom arrive in Nice: a long curved seafront, a blue sea, palm trees and blue-and-white beach chairs.",
+      lines: [{ ru: "Привет, Ницца!", en: "Hello, Nice!" }],
+    },
+  ],
+};
+
+const niceStory: CityStory = {
+  home: {
+    name: "Murzik's room in Nice",
+    nameRu: "Комната в Ницце",
+    image: pic("nice/home"),
+    a11y: "An empty small room in a yellow old-town house with green shutters; through the window, a narrow street and a strip of blue sea.",
+  },
+  keepsakeId: "nicepostcard",
+  welcomeRu: "Привет, Ницца!",
+  welcomeEn: "Hello, Nice!",
+  welcomeImage: pic("nice/arrival"),
+  welcomeA11y: "Murzik and Tom arrive in Nice: a long curved seafront, a blue sea, palm trees and blue-and-white beach chairs.",
+  departureImage: pic("nice/departure"),
+  departureA11y: "Dasha waves goodbye on the platform; Murzik holds Asya's new postcard.",
+  finale: [
+    {
+      image: pic("nice/finale-1"),
+      a11y: "The room is cosy now: a striped beach towel, Dasha's sketch, a tiny blue chair, a pocket mirror, fairy lights round the window, a sheet of sea stamps and Asya's new postcard.",
+      lines: [
+        { en: "Murzik's room smells of the sea and glows with fairy lights." },
+        { en: "He takes his favourite thing with him: Asya's new postcard — «Я близко»." },
+      ],
+    },
+    {
+      image: pic("nice/finale-2"),
+      a11y: "Murzik, Tom, Dasha and her friends sit on Castle Hill at sunset; Luca plays the guitar.",
+      lines: [
+        { ru: "Ницца завершена!", en: "Nice complete!" },
+        { en: "7 / 7 lessons" },
+        { ru: "Знакомься, улыбайся, не торопись — я всё запомнил!", en: "Get to know people, smile, take your time — I've remembered it all!" },
+      ],
+    },
+    {
+      image: pic("nice/suitcase"),
+      a11y: "Murzik's suitcase is full; on top, Asya's postcards in the same curly handwriting and a grey feather.",
+      lines: [
+        { en: "Grandma was here a week ago. And Lev is looking for her too." },
+        { ru: "Бабушка близко. Едем дальше — в Марсель!", en: "Grandma is close. On we go — to Marseille!" },
+      ],
+    },
+    {
+      image: pic("nice/departure"),
+      a11y: "Dasha waves goodbye on the platform; Murzik holds Asya's new postcard.",
+      lines: [
+        { ru: "Спасибо, Даша! До свидания, Ницца!", en: "Thank you, Dasha! Goodbye, Nice!" },
+        { ru: "Следующая остановка: Марсель!", en: "Next stop: Marseille!" },
+      ],
+    },
+    {
+      image: pic("nice/finale-5"),
+      a11y: "A train runs west along the coast, between red rocks and the blue sea.",
+      lines: [{ ru: "Ницца → Марсель", en: "Nice → Marseille" }],
+    },
+    {
+      image: pic("marseille/arrival"),
+      a11y: "Murzik and Tom arrive in Marseille: an old harbour full of boats and a church with a golden statue on a hill.",
+      lines: [{ ru: "Привет, Марсель!", en: "Hello, Marseille!" }],
+    },
+  ],
+};
+
+const marseilleStory: CityStory = {
+  home: {
+    name: "Murzik's room in Marseille",
+    nameRu: "Комната в Марселе",
+    image: pic("marseille/home"),
+    a11y: "An empty tiny room above a café by the Old Port: a narrow bed, a small washbasin and a window full of boats and masts.",
+  },
+  keepsakeId: "marseillesoap",
+  welcomeRu: "Привет, Марсель!",
+  welcomeEn: "Hello, Marseille!",
+  welcomeImage: pic("marseille/arrival"),
+  welcomeA11y: "Murzik and Tom arrive in Marseille: an old harbour full of boats and a church with a golden statue on a hill.",
+  departureImage: pic("marseille/departure"),
+  departureA11y: "Isabelle waves goodbye by the blue door of her soap workshop; Murzik pulls his suitcase with a bright red tag.",
+  finale: [
+    {
+      image: pic("marseille/finale-1"),
+      a11y: "The room is cosy now: a red luggage tag, a map of Marseille, a cup with two toothbrushes, a tin of boat-shaped biscuits, a lavender sachet, an orange travel pillow and a cube of Marseille soap.",
+      lines: [
+        { en: "The suitcase got lost — and found its way back, smelling of lavender." },
+        { en: "He takes his favourite thing with him: a cube of Marseille soap from Isabelle." },
+      ],
+    },
+    {
+      image: pic("marseille/finale-2"),
+      a11y: "Murzik, Tom and Isabelle drink coffee outside the soap workshop; Olga waves from across the street.",
+      lines: [
+        { ru: "Марсель завершён!", en: "Marseille complete!" },
+        { en: "7 / 7 lessons" },
+        { ru: "Приехали, ушли, увезли, привезли — я всё понял!", en: "Arrived, left, took away, brought back — I've got it all!" },
+      ],
+    },
+    {
+      image: pic("marseille/suitcase"),
+      a11y: "Murzik's suitcase with a red tag; on top, a cube of soap and a scrap of paper: «Сначала Севилья».",
+      lines: [
+        { en: "A ginger cat in a straw hat bought lavender soap here a few days ago — and left a message for Murzik." },
+        { ru: "«Сначала Севилья». Летим!", en: "“Seville first.” Let's fly!" },
+      ],
+    },
+    {
+      image: pic("marseille/departure"),
+      a11y: "Isabelle waves goodbye by the blue door of her soap workshop; Murzik pulls his suitcase with a bright red tag.",
+      lines: [
+        { ru: "Спасибо, Изабель! Спасибо, Ольга! До свидания, Марсель!", en: "Thank you, Isabelle! Thank you, Olga! Goodbye, Marseille!" },
+        { ru: "Следующая остановка: Севилья!", en: "Next stop: Seville!" },
+      ],
+    },
+    {
+      image: pic("marseille/finale-5"),
+      a11y: "A plane flies south-west over the sea at sunset.",
+      lines: [{ ru: "Марсель → Севилья", en: "Marseille → Seville" }],
+    },
+    {
+      image: pic("seville/arrival"),
+      a11y: "Murzik and Tom arrive in Seville: orange trees, white and yellow houses and a tall old bell tower.",
+      lines: [{ ru: "Привет, Севилья!", en: "Hello, Seville!" }],
+    },
+  ],
+};
+
+const sevilleStory: CityStory = {
+  home: {
+    name: "Murzik's room in Seville",
+    nameRu: "Комната в Севилье",
+    image: pic("seville/home"),
+    a11y: "An empty small white room with closed green shutters in an old house; outside, a tiled courtyard with an orange tree.",
+  },
+  keepsakeId: "asyafan",
+  welcomeRu: "Привет, Севилья!",
+  welcomeEn: "Hello, Seville!",
+  welcomeImage: pic("seville/arrival"),
+  welcomeA11y: "Murzik and Tom arrive in Seville: orange trees, white and yellow houses and a tall old bell tower.",
+  departureImage: pic("seville/departure"),
+  departureA11y: "Dolores and Marisol wave at the gate of the tiled courtyard; Murzik holds a black fan painted with cats and boats.",
+  finale: [
+    {
+      image: pic("seville/finale-1"),
+      a11y: "The room is cosy now: a red paper fan, a festival poster, castanets, a red carnation in a tiled vase, a paper lantern, a copy of an old drawing and Asya's painted fan.",
+      lines: [
+        { en: "Murzik learned to dance — and learned a secret from forty years ago." },
+        { en: "He takes his favourite thing with him: Asya's fan, to give to her when they meet." },
+      ],
+    },
+    {
+      image: pic("seville/finale-2"),
+      a11y: "Murzik dances flamenco with Marisol under paper lanterns; Dolores claps; Tom takes photos.",
+      lines: [
+        { ru: "Севилья завершена!", en: "Seville complete!" },
+        { en: "7 / 7 lessons" },
+        { ru: "Я рад, я готов, я счастлив!", en: "I'm glad, I'm ready, I'm happy!" },
+      ],
+    },
+    {
+      image: pic("seville/suitcase"),
+      a11y: "Murzik's suitcase; on top, a black painted fan next to the silk scarf with cats and boats.",
+      lines: [
+        { en: "Lev was here. He still remembers Seville — and he is still looking for Asya." },
+        { ru: "А теперь — каникулы с Барсиком и Мусей!", en: "And now — holidays with Barsik and Musya!" },
+      ],
+    },
+    {
+      image: pic("seville/departure"),
+      a11y: "Dolores and Marisol wave at the gate of the tiled courtyard; Murzik holds a black fan painted with cats and boats.",
+      lines: [
+        { ru: "Спасибо, Долорес! Спасибо, Марисоль! До свидания, Севилья!", en: "Thank you, Dolores! Thank you, Marisol! Goodbye, Seville!" },
+        { ru: "Следующая остановка: Неаполь!", en: "Next stop: Naples!" },
+      ],
+    },
+    {
+      image: pic("seville/finale-5"),
+      a11y: "A plane flies east over the blue Mediterranean.",
+      lines: [{ ru: "Севилья → Неаполь", en: "Seville → Naples" }],
+    },
+    {
+      image: pic("naples/arrival"),
+      a11y: "Murzik and Tom arrive in Naples: a wide bay, a volcano in the distance and colourful houses on the hill.",
+      lines: [{ ru: "Привет, Неаполь!", en: "Hello, Naples!" }],
+    },
+  ],
+};
+
+const naplesStory: CityStory = {
+  home: {
+    name: "Murzik's room in Naples",
+    nameRu: "Комната в Неаполе",
+    image: pic("naples/home"),
+    a11y: "An empty small room in a holiday flat; a balcony door opens onto washing lines and a blue bay with a volcano.",
+  },
+  keepsakeId: "musyadrawing",
+  welcomeRu: "Привет, Неаполь!",
+  welcomeEn: "Hello, Naples!",
+  welcomeImage: pic("naples/arrival"),
+  welcomeA11y: "Murzik and Tom arrive in Naples: a wide bay, a volcano in the distance and colourful houses on the hill.",
+  departureImage: pic("naples/departure"),
+  departureA11y: "Aunt Olya, Barsik and Musya wave on the station platform; Murzik holds a child's drawing in a shell frame.",
+  finale: [
+    {
+      image: pic("naples/finale-1"),
+      a11y: "The room is cosy now: a family photo, a week's plan on the fridge, a mini pizza paddle, a mosaic magnet, a red bucket and yellow spade, and Musya's drawing in a shell frame.",
+      lines: [
+        { en: "A whole week with family — noisy, sandy and full of pizza." },
+        { en: "He takes his favourite thing with him: Musya's drawing of Grandma Asya." },
+      ],
+    },
+    {
+      image: pic("naples/finale-2"),
+      a11y: "The whole family eats pizza on the balcony at sunset; the volcano is pink across the bay.",
+      lines: [
+        { ru: "Неаполь завершён!", en: "Naples complete!" },
+        { en: "7 / 7 lessons" },
+        { ru: "Каждый взял свой чемодан и взял с собой хорошие воспоминания!", en: "Everyone took their own suitcase — and good memories with them!" },
+      ],
+    },
+    {
+      image: pic("naples/suitcase"),
+      a11y: "Murzik's suitcase; on top, a child's drawing of two ginger cats in a shell frame, next to a black painted fan.",
+      lines: [
+        { en: "Musya has never seen Grandma Asya — but she drew her from Murzik's stories." },
+        { ru: "Теперь — ночной паром через море.", en: "Now — the night ferry across the sea." },
+      ],
+    },
+    {
+      image: pic("naples/departure"),
+      a11y: "Aunt Olya, Barsik and Musya wave on the station platform; Murzik holds a child's drawing in a shell frame.",
+      lines: [
+        { ru: "Пока, Муся! Пока, Барсик! Спасибо, тётя Оля!", en: "Bye, Musya! Bye, Barsik! Thank you, Aunt Olya!" },
+        { ru: "Следующая остановка: Дубровник!", en: "Next stop: Dubrovnik!" },
+      ],
+    },
+    {
+      image: pic("naples/finale-5"),
+      a11y: "A big white ferry with lit windows crosses a dark sea under the stars.",
+      lines: [{ ru: "Неаполь → Бари → Дубровник", en: "Naples → Bari → Dubrovnik" }],
+    },
+    {
+      image: pic("dubrovnik/arrival"),
+      a11y: "Murzik and Tom arrive in Dubrovnik by ferry at sunrise: old stone walls, orange roofs and a turquoise sea.",
+      lines: [{ ru: "Привет, Дубровник!", en: "Hello, Dubrovnik!" }],
+    },
+  ],
+};
+
+const dubrovnikStory: CityStory = {
+  home: {
+    name: "Murzik's room in Dubrovnik",
+    nameRu: "Комната в Дубровнике",
+    image: pic("dubrovnik/home"),
+    a11y: "An empty small hotel room with stone walls and a window onto a quiet courtyard with a lemon tree.",
+  },
+  keepsakeId: "asyashell",
+  welcomeRu: "Привет, Дубровник!",
+  welcomeEn: "Hello, Dubrovnik!",
+  welcomeImage: pic("dubrovnik/arrival"),
+  welcomeA11y: "Murzik and Tom arrive in Dubrovnik by ferry at sunrise: old stone walls, orange roofs and a turquoise sea.",
+  departureImage: pic("dubrovnik/departure"),
+  departureA11y: "Mara and Ivo wave by the hotel door; Murzik holds a spiral shell to his ear, a bag of figs in his other paw.",
+  finale: [
+    {
+      image: pic("dubrovnik/finale-1"),
+      a11y: "The room is cosy now: an old iron key, a tin of earplugs, a little red toolbox, a jar of fig jam, a walls ticket, a photo of a guestbook page and Asya's shell.",
+      lines: [
+        { en: "A lost booking, loud bells and a dripping tap — and the kindest hotel on the coast." },
+        { en: "He takes his favourite thing with him: the shell Asya left for him." },
+      ],
+    },
+    {
+      image: pic("dubrovnik/finale-2"),
+      a11y: "Murzik, Tom, Mara and Ivo eat figs in the courtyard under the lemon tree.",
+      lines: [
+        { ru: "Дубровник завершён!", en: "Dubrovnik complete!" },
+        { en: "7 / 7 lessons" },
+        { ru: "Вы не могли бы… Я хотел бы… Было бы здорово!", en: "Could you… I'd like… That would be great!" },
+      ],
+    },
+    {
+      image: pic("dubrovnik/suitcase"),
+      a11y: "Murzik's suitcase; on top, a spiral shell, a bag of figs and a photo of a drawing of a river and a castle on a hill.",
+      lines: [
+        { en: "Asya was here a week ago. She left a shell — and said she was going to a big river." },
+        { ru: "Большая река и замок на холме. Это Братислава!", en: "A big river and a castle on a hill. It's Bratislava!" },
+      ],
+    },
+    {
+      image: pic("dubrovnik/departure"),
+      a11y: "Mara and Ivo wave by the hotel door; Murzik holds a spiral shell to his ear, a bag of figs in his other paw.",
+      lines: [
+        { ru: "Спасибо, Мара! Спасибо, Иво! До свидания, Дубровник!", en: "Thank you, Mara! Thank you, Ivo! Goodbye, Dubrovnik!" },
+        { ru: "Следующая остановка: Братислава!", en: "Next stop: Bratislava!" },
+      ],
+    },
+    {
+      image: pic("dubrovnik/finale-5"),
+      a11y: "A plane flies north over mountains; then a bus drives along a wide river at night.",
+      lines: [{ ru: "Дубровник → Вена → Братислава", en: "Dubrovnik → Vienna → Bratislava" }],
+    },
+    {
+      image: pic("bratislava/arrival"),
+      a11y: "Murzik and Tom arrive in Bratislava: the wide Danube, a white castle on a hill and a bridge with a flying-saucer-shaped restaurant on top of its tower.",
+      lines: [{ ru: "Привет, Братислава!", en: "Hello, Bratislava!" }],
+    },
+  ],
+};
+
+const bratislavaStory: CityStory = {
+  home: {
+    name: "Murzik's room in Bratislava",
+    nameRu: "Комната в Братиславе",
+    image: pic("bratislava/home"),
+    a11y: "An empty small room in a white guesthouse by the Danube; a window onto the river and the castle on the hill.",
+  },
+  keepsakeId: "asyasketchbook",
+  welcomeRu: "Привет, Братислава!",
+  welcomeEn: "Hello, Bratislava!",
+  welcomeImage: pic("bratislava/arrival"),
+  welcomeA11y: "Murzik and Tom arrive in Bratislava: the wide Danube, a white castle on a hill and a bridge with a flying-saucer-shaped restaurant on top of its tower.",
+  departureImage: pic("bratislava/departure"),
+  departureA11y: "Asya, Murzik and Tom walk along the Danube embankment at sunrise with their suitcases; Asya carries her easel.",
+  finale: [
+    {
+      image: pic("bratislava/finale-1"),
+      a11y: "The room is cosy now: a night photo of the Danube, a charcoal portrait, seven yellow roses, a printed video-call screenshot, a pressed willow leaf, Asya's river painting and her old sketchbook.",
+      lines: [
+        { en: "Eighteen cities. Eighteen keepsakes. And at the end of the road — Grandma." },
+        { en: "He takes his favourite thing with him: Asya's very first sketchbook." },
+      ],
+    },
+    {
+      image: pic("bratislava/finale-2"),
+      a11y: "Asya and Murzik hug on the old bench by the river at sunset; Tom stands a little way off, smiling, with his camera lowered.",
+      lines: [
+        { ru: "Братислава завершена!", en: "Bratislava complete!" },
+        { en: "7 / 7 lessons" },
+        { ru: "Уровень A2 завершён! Восемнадцать городов!", en: "Level A2 complete! Eighteen cities!" },
+      ],
+    },
+    {
+      image: pic("bratislava/suitcase"),
+      a11y: "Two suitcases side by side — Murzik's, covered in stickers, and Asya's, old and leather, with an easel strapped to it.",
+      lines: [
+        { en: "Asya has a long story to tell — about Lev, about Seville, about why she left." },
+        { ru: "Мне нужно собрать свои рисунки — и найти одного старого кота.", en: "I need to gather my drawings — and find one old cat." },
+      ],
+    },
+    {
+      image: pic("bratislava/departure"),
+      a11y: "Asya, Murzik and Tom walk along the Danube embankment at sunrise with their suitcases; Asya carries her easel.",
+      lines: [
+        { ru: "До свидания, Братислава! Спасибо, Дунай!", en: "Goodbye, Bratislava! Thank you, Danube!" },
+        { ru: "Дальше — вместе. Начинается B1!", en: "From now on — together. B1 begins!" },
+      ],
+    },
+  ],
+};
+
 function city(
   id: string,
   name: string,
@@ -1845,7 +2269,14 @@ export const levels: LevelPlan[] = [
       city("helsinki", "Helsinki", "Хельсинки", helsinkiLessons, helsinkiStory),
       city("oslo", "Oslo", "Осло", osloLessons, osloStory),
       city("zurich", "Zurich", "Цюрих", zurichLessons, zurichStory),
-      ...fromTuples(a2.filter(([id]) => !["lyon", "barcelona", "milan", "munich", "porto", "krakow", "riga", "tallinn", "helsinki", "oslo", "zurich"].includes(id))),
+      city("geneva", "Geneva", "Женева", genevaLessons, genevaStory),
+      city("nice", "Nice", "Ницца", niceLessons, niceStory),
+      city("marseille", "Marseille", "Марсель", marseilleLessons, marseilleStory),
+      city("seville", "Seville", "Севилья", sevilleLessons, sevilleStory),
+      city("naples", "Naples", "Неаполь", naplesLessons, naplesStory),
+      city("dubrovnik", "Dubrovnik", "Дубровник", dubrovnikLessons, dubrovnikStory),
+      city("bratislava", "Bratislava", "Братислава", bratislavaLessons, bratislavaStory),
+      ...fromTuples(a2.filter(([id]) => !["lyon", "barcelona", "milan", "munich", "porto", "krakow", "riga", "tallinn", "helsinki", "oslo", "zurich", "geneva", "nice", "marseille", "seville", "naples", "dubrovnik", "bratislava"].includes(id))),
     ],
   },
   { id: "B1", title: "B1", subtitle: "Independent Russian", cities: fromTuples(b1) },

@@ -22,16 +22,16 @@ export const krakow1: Lesson = {
   number: 1,
   title: "What Does He Look Like?",
   minutes: 8,
-  goals: ["Describe someone's appearance", "Say с бородой, в очках, светлые волосы", "Ask: Вы не видели моего друга?"],
+  goals: ["Describe someone's appearance", "Say с бородой, в очках, кудрявые волосы", "Ask: Вы не видели моего друга?"],
   vocabNote: "To describe a person: с + instrumental for things they have (с бородой — with a beard), в + prepositional for things they wear (в очках — in glasses).",
   vocab: [
     v("kr1-1", "Я потерял(а) друга.", "I've lost my friend.", "Murzik alone in the crowded market square, looking around.", "Listen to Я потерял друга", p("1-1")),
     v("kr1-2", "Вы не видели моего друга?", "Have you seen my friend?", "Murzik asks a woman with a pram.", "Listen to Вы не видели моего друга", p("1-2")),
     v("kr1-3", "худой", "thin, slim", "A thin man in a long coat.", "Listen to худой", p("1-3")),
-    v("kr1-4", "светлые волосы", "fair hair", "Tom's fair, slightly messy hair.", "Listen to светлые волосы", p("1-4")),
+    v("kr1-4", "кудрявые волосы", "curly hair", "Tom's curly brown hair.", "Listen to кудрявые волосы", p("1-4")),
     v("kr1-5", "с бородой", "with a beard", "A man with a short beard.", "Listen to с бородой", p("1-5")),
-    v("kr1-6", "в очках", "wearing glasses", "Tom in round glasses.", "Listen to в очках", p("1-6")),
-    v("kr1-7", "лет тридцати", "about thirty years old", "A smiling man of about thirty.", "Listen to лет тридцати", p("1-7")),
+    v("kr1-6", "в очках", "wearing glasses", "A man in round glasses.", "Listen to в очках", p("1-6")),
+    v("kr1-7", "лет двадцати пяти", "about twenty-five years old", "A smiling young man of about twenty-five.", "Listen to лет двадцати пяти", p("1-7")),
     v("kr1-8", "Он примерно такого роста.", "He's about this tall.", "Murzik reaches up high with his paw.", "Listen to Он примерно такого роста", p("1-8")),
   ],
   letters: [
@@ -44,15 +44,15 @@ export const krakow1: Lesson = {
     lines: [
       line("murzik", "Извините, вы не видели моего друга? Я его потерял!", "Excuse me, have you seen my friend? I've lost him!"),
       line("kasia", "Как он выглядит?", "What does he look like?"),
-      line("murzik", "Высокий, худой, лет тридцати. Светлые волосы.", "Tall, thin, about thirty. Fair hair."),
+      line("murzik", "Высокий, худой, лет двадцати пяти. Кудрявые волосы.", "Tall, thin, about twenty-five. Curly hair."),
       line("kasia", "С бородой?", "With a beard?"),
-      line("murzik", "Нет, без бороды. Но в очках. Он примерно такого роста!", "No, no beard. But he wears glasses. He's about this tall!"),
+      line("murzik", "Нет, без бороды. И без очков. Он примерно такого роста!", "No, no beard. And no glasses. He's about this tall!"),
       line("kasia", "Не волнуйся. Я тебе помогу. Меня зовут Кася.", "Don't worry. I'll help you. My name is Kasia."),
     ],
     gist: choice("kr1-d1", "What does Tom look like?", [
-      ["Tall, thin, fair hair, glasses, no beard.", true],
+      ["Tall, thin, curly hair, no beard, no glasses.", true],
       ["Short, with a beard.", false],
-      ["Dark hair, no glasses.", false],
+      ["Short, with a beard and glasses.", false],
     ]),
   },
   grammar: [
@@ -69,8 +69,8 @@ export const krakow1: Lesson = {
     },
   ],
   tasks: [
-    listen("kr1-t1", "Listen. How old is Tom, more or less?", "Высокий, худой, лет тридцати. Светлые волосы.", [
-      ["About thirty.", true],
+    listen("kr1-t1", "Listen. How old is Tom, more or less?", "Высокий, худой, лет двадцати пяти. Кудрявые волосы.", [
+      ["About twenty-five.", true],
       ["About thirteen.", false],
       ["About fifty.", false],
     ]),
@@ -89,7 +89,7 @@ export const krakow1: Lesson = {
       ["худой", "thin"],
       ["с бородой", "with a beard"],
       ["в очках", "wearing glasses"],
-      ["светлые волосы", "fair hair"],
+      ["кудрявые волосы", "curly hair"],
     ], { skill: "words" }),
     tf("kr1-t6", "Без бороды means “with a beard”.", false, "True or false?", { skill: "words" }),
     speak("kr1-t7", "Как выглядит твой лучший друг?", "Он высокий, с тёмными волосами и в очках. Ему лет тридцать.", "He's tall, with dark hair and glasses. He's about thirty.", {
@@ -173,7 +173,7 @@ export const krakow2: Lesson = {
       ["На ней красном платье.", false],
     ], { skill: "grammar" }),
     fill("kr2-t3", "Choose the right form: “I'm looking for a young man.”", "Я ищу молодого", ".", "человека", ["человека", "человек", "человеку"], { skill: "grammar" }),
-    read("kr2-t4", "Read Murzik's note for the police. What colour is Tom's rucksack?", "Том, 30 лет.\nВысокий, худой, в очках.\nСиняя куртка, клетчатая кепка.\nЗелёный рюкзак, на нём фотоаппарат.", [
+    read("kr2-t4", "Read Murzik's note for the police. What colour is Tom's rucksack?", "Том, 25 лет.\nВысокий, худой, кудрявый.\nСиняя куртка, клетчатая кепка.\nЗелёный рюкзак, на нём фотоаппарат.", [
       ["Green.", true],
       ["Blue.", false],
       ["Checked.", false],
@@ -315,7 +315,7 @@ export const krakow4: Lesson = {
     v("kr4-2", "Я похожа на папу.", "I look like my dad. (a woman says)", "Kasia and her dad in a photo — same nose, same eyes.", "Listen to Я похожа на папу", p("4-2")),
     v("kr4-3", "общительный", "sociable, outgoing", "Kasia's brother chatting with a group of friends.", "Listen to общительный", p("4-3")),
     v("kr4-4", "спокойный", "calm", "Kasia's mother reading calmly while kids run around.", "Listen to спокойный", p("4-4")),
-    v("kr4-5", "рассеянный", "absent-minded", "Tom wearing his glasses on his forehead and looking for them.", "Listen to рассеянный", p("4-5")),
+    v("kr4-5", "рассеянный", "absent-minded", "Tom looking everywhere for the camera that hangs round his neck.", "Listen to рассеянный", p("4-5")),
     v("kr4-6", "у него золотые руки", "he's good with his hands (golden hands)", "Old hands carving wood.", "Listen to у него золотые руки", p("4-6")),
     v("kr4-7", "характер", "character, personality", "Two cats: one jumping, one sleeping.", "Listen to характер", p("4-7")),
     v("kr4-8", "Он резчик по дереву.", "He's a woodcarver.", "Pan Janek in a workshop full of wooden figures.", "Listen to Он резчик по дереву", p("4-8")),
@@ -630,7 +630,7 @@ export const krakow7: Lesson = {
     {
       title: "Krakow review",
       paragraphs: [
-        "Appearance: высокий, худой, светлые волосы, с бородой, в очках, лет тридцати. Clothes: на нём куртка, он в кепке.",
+        "Appearance: высокий, худой, кудрявые волосы, с бородой, в очках, лет двадцати пяти. Clothes: на нём куртка, он в кепке.",
         "Accusative of people: вижу Тома, жду Касю, ищу мужчину, помню её, похож на маму. Commands: Подождите меня! Береги Тома!",
       ],
       examples: [

@@ -28,10 +28,14 @@ export function NativePicker({ onChosen }: { onChosen: (nativeLang: NativeLang) 
           <span lang="en" className="font-display text-3xl">
             {page.helloEn}
           </span>
+          <span lang="fr" className="font-display text-3xl">
+            {page.helloFr}
+          </span>
         </p>
         <p className="flex flex-col text-lg">
           <span lang="ru">{page.textRu}</span>
           <span lang="en">{page.textEn}</span>
+          <span lang="fr">{page.textFr}</span>
         </p>
       </div>
       <h1 ref={heading} tabIndex={-1} className="flex flex-col gap-1">
@@ -41,12 +45,15 @@ export function NativePicker({ onChosen }: { onChosen: (nativeLang: NativeLang) 
         <span lang="en" className="font-display text-2xl">
           {page.titleEn}
         </span>
+        <span lang="fr" className="font-display text-2xl">
+          {page.titleFr}
+        </span>
       </h1>
       <div className="grid gap-3">
         {nativeOptions.map((option) => (
           <Button
             key={option.id}
-            aria-label={`${option.a11y}. ${languageBadges[option.id].say}`}
+            aria-label={`${option.a11y}. ${languageBadges[option.id].say.split(" · ").slice(0, 2).join(" · ")}`}
             className="justify-start gap-4 py-2 pl-2"
             onClick={() => onChosen(option.id)}
           >
@@ -81,10 +88,10 @@ export function NativePicker({ onChosen }: { onChosen: (nativeLang: NativeLang) 
   );
 }
 
-/** A bilingual badge description ("ru · en") in one language. */
+/** A badge description ("ru · en · fr") in one language. */
 function sayIn(say: string, native: NativeLang) {
-  const [ru, en] = say.split(" · ");
-  return (native === "ru" ? ru : en) ?? say;
+  const [ru, en, fr] = say.split(" · ");
+  return (native === "ru" ? ru : native === "fr" ? fr ?? en : en) ?? say;
 }
 
 /**

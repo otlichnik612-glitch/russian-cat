@@ -4,6 +4,10 @@ import type { CourseModel } from "./model";
 import { prologue as russianPrologue } from "./prologue";
 import { speakers as russianSpeakers } from "./speakers";
 import { englishCourseDef } from "./en";
+import { englishCourseFr } from "./en/fr";
+import { russianCourseFr } from "./fr";
+import { portugueseCourseFr } from "./pt/fr";
+import { koreanCourseFr } from "./ko/fr";
 import { portugueseCourseDefs } from "./pt";
 import { turkishCourseDef } from "./tr";
 import { turkishCourseDefEn } from "./tr/en";
@@ -84,12 +88,12 @@ const russianCourseDef: CourseDef = {
  * The story depends on the language being learned; the explanations are written for each native language.
  */
 const registry: Record<CourseId, Partial<Record<UiLang, CourseDef>>> = {
-  ru: { en: russianCourseDef },
+  ru: { en: russianCourseDef, fr: russianCourseFr },
   tr: { ru: turkishCourseDef, en: turkishCourseDefEn },
-  en: { ru: englishCourseDef },
-  pt: portugueseCourseDefs,
+  en: { ru: englishCourseDef, fr: englishCourseFr },
+  pt: { ...portugueseCourseDefs, fr: portugueseCourseFr },
   ar: { ru: arabicCourseDef },
-  ko: { ru: koreanCourseDef, en: koreanCourseDefEn },
+  ko: { ru: koreanCourseDef, en: koreanCourseDefEn, fr: koreanCourseFr },
 };
 
 /** The version of a course for this native language, or its only version. */
