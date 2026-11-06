@@ -7,6 +7,7 @@ import { lesson1, lesson2, lesson3 } from "./lessons/early";
 import { lesson4, lesson5, lesson6, lesson7 } from "./lessons/late";
 import { prologueFr } from "./prologue";
 import { speakersFr } from "./speakers";
+import { citiesFr } from "./cities";
 
 /**
  * « Le chat russe » — Russian for French speakers.
@@ -119,8 +120,8 @@ const a1: CityPlan[] = a1Route.map(([id, name, nameRu]) => ({
   id,
   name,
   nameRu,
-  lessons: id === "paris" ? parisLessonsFr : [],
-  story: id === "paris" ? parisStoryFr : undefined,
+  lessons: id === "paris" ? parisLessonsFr : (citiesFr[id]?.lessons ?? []),
+  story: id === "paris" ? parisStoryFr : citiesFr[id]?.story,
 }));
 
 const levelsFr: LevelPlan[] = [{ id: "A1", title: "A1", subtitle: "Survie et premières conversations", cities: a1 }];

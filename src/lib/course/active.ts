@@ -11,7 +11,9 @@ import { koreanCourseFr } from "./ko/fr";
 import { portugueseCourseDefs } from "./pt";
 import { turkishCourseDef } from "./tr";
 import { turkishCourseDefEn } from "./tr/en";
+import { turkishCourseDefFr } from "./tr/fr";
 import { arabicCourseDef } from "./ar";
+import { arabicCourseFr } from "./ar/fr";
 import { koreanCourseDef } from "./ko";
 import { koreanCourseDefEn } from "./ko/en";
 import type { SpeakerId } from "./types";
@@ -89,10 +91,10 @@ const russianCourseDef: CourseDef = {
  */
 const registry: Record<CourseId, Partial<Record<UiLang, CourseDef>>> = {
   ru: { en: russianCourseDef, fr: russianCourseFr },
-  tr: { ru: turkishCourseDef, en: turkishCourseDefEn },
+  tr: { ru: turkishCourseDef, en: turkishCourseDefEn, fr: turkishCourseDefFr },
   en: { ru: englishCourseDef, fr: englishCourseFr },
   pt: { ...portugueseCourseDefs, fr: portugueseCourseFr },
-  ar: { ru: arabicCourseDef },
+  ar: { ru: arabicCourseDef, fr: arabicCourseFr },
   ko: { ru: koreanCourseDef, en: koreanCourseDefEn, fr: koreanCourseFr },
 };
 
