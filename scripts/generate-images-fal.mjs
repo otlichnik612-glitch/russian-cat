@@ -3,7 +3,7 @@
  * Draw the missing course pictures with fal.ai (FLUX.2 [flash] edit).
  *
  *   FAL_KEY=… node scripts/generate-images-fal.mjs                 # Portuguese course, 50 new pictures
- *   FAL_KEY=… COURSE=tr LIMIT=20 node scripts/generate-images-fal.mjs
+ *   FAL_KEY=… COURSE=ar node scripts/generate-images-fal.mjs        # Arabic course, 50 new pictures
  *   DRY_RUN=1 node scripts/generate-images-fal.mjs                 # only list what would be drawn
  *
  * Settings (environment variables):
@@ -46,9 +46,17 @@ const FAL_KEY = process.env.FAL_KEY;
 const COURSE_FOLDERS = ["pt", "tr", "en", "ar", "ko"];
 const NOT_A_COURSE = ["welcome", "prologue", "languages", "ui"];
 
-/** The four references show the style; the note says what to draw. */
+/** The four references show the style; the note says what to draw (including the background). */
 const REFERENCE_HINT =
-  "Use the reference images only for the art style and for how the recurring characters look. Do not copy their scenes.";
+  "Strictly follow the background described in the prompt. Do NOT copy the background from the reference images. Only use the references for the character's style and appearance.";
+/** Phrase cards (kind "phrase" in the list) have a plain background. */
+const PHRASE_HINT = "Simple neutral background, no city landscape.";
+
+function promptFor(entry) {
+  const parts = [entry.draw, REFERENCE_HINT];
+  if (entry.kind === "phrase") parts.push(PHRASE_HINT);
+  return parts.join("\n\n");
+}
 
 /** Picture sizes from docs/grok-image-notes.md: phrase pictures and rewards are square, scenes are portrait. */
 function sizeFor(kind) {
@@ -91,7 +99,7 @@ async function draw(entry, references) {
   const submitted = await falJson(QUEUE_URL, {
     method: "POST",
     body: JSON.stringify({
-      prompt: `${entry.draw}\n\n${REFERENCE_HINT}`,
+      prompt: promptFor(entry),
       image_urls: references,
       image_size: sizeFor(entry.kind),
       num_images: 1,
