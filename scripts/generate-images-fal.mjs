@@ -2,25 +2,26 @@
 /**
  * Draw the missing course pictures with fal.ai (FLUX.2 [flash] edit).
  *
- *   FAL_KEY=… node scripts/generate-images-fal.mjs                 # Portuguese course, 50 new pictures
- *   FAL_KEY=… COURSE=ar node scripts/generate-images-fal.mjs        # Arabic course, 50 new pictures
+ *   FAL_KEY=… COURSE=all node scripts/generate-images-fal.mjs       # every missing picture of every course
+ *   FAL_KEY=… COURSE=ar node scripts/generate-images-fal.mjs        # only the Arabic course
  *   DRY_RUN=1 node scripts/generate-images-fal.mjs                 # only list what would be drawn
  *
  * Settings (environment variables):
  *   FAL_KEY   fal.ai key (required unless DRY_RUN=1). Never write it into code.
- *   COURSE    which course to draw: pt (default), tr, en, ar, ko, ru.
- *   LIMIT     how many NEW pictures to draw in this run (default 50), then stop.
+ *   COURSE    which course to draw: pt (default), ar, tr, en, ko, ru, or all (every course and the
+ *             shared pictures: welcome screen, prologue, language buttons).
+ *   LIMIT     optional: stop after this many NEW pictures. Without it, every missing picture is drawn.
  *   DRY_RUN   1 = send nothing, only print the list.
  *
  * Where things are:
  *   - The text of every picture is the `draw` note in docs/grok-image-list.json.
  *   - Four reference pictures (style and look of the characters) are sent with every request:
  *     assets/references/ref1.jpg … ref4.jpg.
- *   - Results are saved to public/art/<the same path as in the list, without public/art/>,
- *     for example public/art/pt/rio/l1-1.jpg stays public/art/pt/rio/l1-1.jpg.
+ *   - Results are saved to public/art/ at the path from the list (where the app reads them),
+ *     for example public/art/pt/rio/l1-1.jpg.
  *
- * Existing files are never touched: if the picture is already in public/art/
- * (or already drawn in public/art/), it is skipped completely — no request to the API,
+ * Existing files are never touched: if the picture already exists in public/art/,
+ * it is skipped completely — no request to the API,
  * no redrawing, no overwriting.
  */
 import { existsSync, linkSync, mkdirSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
@@ -38,12 +39,15 @@ const ENDPOINT = "fal-ai/flux-2/flash/edit";
 const QUEUE_URL = `https://queue.fal.run/${ENDPOINT}`;
 
 const COURSE = (process.env.COURSE || "pt").trim().toLowerCase();
-const LIMIT = Number.parseInt(process.env.LIMIT || "50", 10);
+const LIMIT = process.env.LIMIT ? Number.parseInt(process.env.LIMIT, 10) : Infinity;
 const DRY_RUN = process.env.DRY_RUN === "1";
 const FAL_KEY = process.env.FAL_KEY;
 
 /** Folders of the other courses inside public/art/. Everything else (city folders) is the Russian course. */
 const COURSE_FOLDERS = ["pt", "tr", "en", "ar", "ko"];
+const ALL_COURSES = ["pt", "ar", "tr", "en", "ko", "ru"];
+/** One course, several separated by commas (pt,ar), or all. "" is the shared screens. */
+const SELECTED = COURSE === "all" ? [...ALL_COURSES, ""] : COURSE.split(",").map((s) => s.trim()).filter(Boolean);
 const NOT_A_COURSE = ["welcome", "prologue", "languages", "ui"];
 
 /** The four references show the style; the note says what to draw (including the background). */
@@ -74,8 +78,9 @@ function outPath(file) {
   return join(OUT_DIR, file.replace(/^public\/art\//, ""));
 }
 
+/** Already drawn: the file is in public/art/. */
 function alreadyThere(entry) {
-  return existsSync(outPath(entry.file)) || existsSync(join(ROOT, entry.file));
+  return existsSync(join(ROOT, entry.file)) || existsSync(outPath(entry.file));
 }
 
 function dataUri(path) {
@@ -136,20 +141,27 @@ function saveNew(target, bytes) {
 }
 
 async function main() {
-  if (![...COURSE_FOLDERS, "ru"].includes(COURSE)) {
-    console.error(`COURSE must be one of: ${[...COURSE_FOLDERS, "ru"].join(", ")}`);
+  const bad = COURSE === "all" ? [] : SELECTED.filter((c) => !ALL_COURSES.includes(c));
+  if (!SELECTED.length || bad.length) {
+    console.error(`COURSE must be one of: ${[...ALL_COURSES, "all"].join(", ")} (or a comma-separated list).`);
     process.exit(1);
   }
-  if (!Number.isFinite(LIMIT) || LIMIT < 1) {
+  if (Number.isNaN(LIMIT) || LIMIT < 1) {
     console.error("LIMIT must be a positive number.");
     process.exit(1);
   }
 
   const list = JSON.parse(readFileSync(LIST, "utf8"));
-  const course = list.filter((e) => courseOf(e.file) === COURSE && e.draw);
+  const course = list.filter((e) => e.draw && SELECTED.includes(courseOf(e.file)));
   const todo = course.filter((e) => !alreadyThere(e));
   console.log(`Course ${COURSE}: ${course.length} pictures in the list, ${course.length - todo.length} already exist, ${todo.length} missing.`);
-  console.log(`This run draws at most ${LIMIT}.`);
+  if (SELECTED.length > 1) {
+    for (const c of SELECTED) {
+      const n = todo.filter((e) => courseOf(e.file) === c).length;
+      if (n) console.log(`  ${c || "shared"}: ${n} missing`);
+    }
+  }
+  console.log(Number.isFinite(LIMIT) ? `This run draws at most ${LIMIT}.` : "No limit: every missing picture will be drawn.");
 
   if (DRY_RUN) {
     for (const e of todo.slice(0, LIMIT)) console.log(`would draw ${outPath(e.file).slice(ROOT.length + 1)}`);
@@ -186,7 +198,7 @@ async function main() {
       saveNew(target, bytes);
       made++;
       failedInARow = 0;
-      console.log(`[${made}/${LIMIT}] saved ${target.slice(ROOT.length + 1)}`);
+      console.log(`[${made}/${Number.isFinite(LIMIT) ? LIMIT : todo.length}] saved ${target.slice(ROOT.length + 1)}`);
     } catch (err) {
       failedInARow++;
       console.error(`failed ${entry.file}: ${err.message}`);
