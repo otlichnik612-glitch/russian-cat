@@ -11,14 +11,14 @@
  * `GROK_AUTH_*` that overrides these (see `server.ts`).
  *
  * These MUST equal the broker's `GROK_PREVIEW_CLIENT_ID` /
- * `GROK_PREVIEW_CLIENT_SECRET` (set in the broker's Vercel env; the broker stores
- * only the secret's `base64url(SHA-256)` hash). This is a dedicated, low-privilege
- * client (preview-only, `*.grok-sandbox.com`) — rotate it by regenerating the
- * broker env var and this constant together.
+ * `GROK_PREVIEW_CLIENT_SECRET` (set in the broker's env; the broker stores
+ * only the secret's hash). Never write the secret into this repository.
+ * Set `GROK_PREVIEW_CLIENT_SECRET` in the host environment (Netlify). This is a
+ * dedicated, low-privilege client (preview-only, `*.grok-sandbox.com`).
  */
 export const PREVIEW_CLIENT_ID = "grok_preview";
-export const PREVIEW_CLIENT_SECRET =
-  "8bcdb7fc5a33874ad933ca568918d5790388a0795e44c4d1dea691f801b17ec5";
+const fromEnv = (key: string): string => process.env[key]?.trim() || "";
+export const PREVIEW_CLIENT_SECRET = fromEnv("GROK_PREVIEW_CLIENT_SECRET");
 
 /** The shared auth broker issuer (OIDC discovery lives under it). */
 export const GROK_ISSUER_DEFAULT = "https://auth.grok.me";
