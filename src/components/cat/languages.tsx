@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { courseDef, courseReady, uiFor, type CourseId } from "@/lib/course/active";
 import { startedCourses, useProgress } from "@/lib/course/progress";
 import { useAllOpen } from "./dev";
@@ -173,7 +173,17 @@ export function MyCourses({
   onBack: () => void;
 }) {
   const active = useProgress((state) => state.targetLang);
-  const started = useProgress((state) => startedCourses(state));
+  // Select the stored values one by one and build the list here. A selector that returns a new
+  // array on every call makes zustand re-render forever ("Maximum update depth exceeded").
+  const targetLang = useProgress((state) => state.targetLang);
+  const seenIntro = useProgress((state) => state.seenIntro);
+  const completedLessonIds = useProgress((state) => state.completedLessonIds);
+  const stash = useProgress((state) => state.stash);
+  const accountCourses = useProgress((state) => state.accountCourses);
+  const started = useMemo(
+    () => startedCourses({ targetLang, seenIntro, completedLessonIds, stash, accountCourses }),
+    [targetLang, seenIntro, completedLessonIds, stash, accountCourses],
+  );
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => heading.current?.focus(), []);
   const t = uiFor(native);

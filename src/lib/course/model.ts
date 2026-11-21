@@ -3,11 +3,21 @@ import type { CityPlan, Lesson, LevelId, LevelPlan } from "./types";
 export const LESSONS_PER_CITY = 7;
 
 /**
+ * Levels hidden on the site for now (their pictures are not drawn yet). Their cities stay on the map
+ * as "coming soon", like the levels that are not written yet; the lessons themselves are kept in the
+ * code and come back as soon as the level is removed from this list.
+ */
+export const HIDDEN_LEVELS: LevelId[] = ["A2"];
+
+/**
  * Everything the app needs to know about one course, built from its levels.
  * The Russian course and the Turkish course both use this, so the player, home screen,
  * downloads and progress work the same way for every language.
  */
-export function makeCourse(levels: LevelPlan[]) {
+export function makeCourse(allLevels: LevelPlan[]) {
+  const levels: LevelPlan[] = allLevels.map((level) =>
+    HIDDEN_LEVELS.includes(level.id) ? { ...level, cities: level.cities.map((c) => ({ ...c, lessons: [] })) } : level,
+  );
   const allCities = levels.flatMap((level) => level.cities);
   /** Cities that already have lessons, in story order. */
   const readyCities: CityPlan[] = allCities.filter((c) => c.lessons.length > 0);
