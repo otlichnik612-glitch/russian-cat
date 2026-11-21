@@ -62,6 +62,26 @@ export type CourseDef = {
     question: { title: string; text: string; male: string; female: string; change: string };
     female: CourseDef;
   };
+  /**
+   * New phrases are practised in mixed groups (2–3 phrases, then varied tasks in a mixed order,
+   * some of them later in the lesson) instead of the same two checks after every phrase.
+   * Only courses that set this; the texts are in the interface language.
+   */
+  mixedWords?: MixedWordTexts;
+};
+
+export type MixedWordTexts = {
+  /** "What is in the picture?" */
+  picture: string;
+  /** Prompt of the true-or-false task about a translation. */
+  trueFalse: string;
+  /** The statement checked in that task. */
+  statement: (target: string, native: string) => string;
+  /** "Build the phrase: …" (the translation is given). */
+  build: (native: string) => string;
+  buildHelp: string;
+  /** "Fill in the missing word: …" (the translation is given). */
+  fill: (native: string) => string;
 };
 
 const russianCourseDef: CourseDef = {

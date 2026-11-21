@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from "react";
 import { ChevronLeft } from "lucide-react";
-import { cityName, course, speakerName, ui } from "@/lib/course/active";
+import { cityName, course, speakerName, ui, type MixedWordTexts } from "@/lib/course/active";
 import { useProgress } from "@/lib/course/progress";
 import { useSpeech } from "@/lib/course/speech";
 import type { Activity, Lesson, Skill, VocabItem } from "@/lib/course/types";
@@ -25,6 +25,7 @@ const skillLabel = (skill: Skill) => ui.skill[skill];
  * a short mixed check of the words met so far (up to four).
  */
 function wordFrames(lesson: Lesson): Frame[] {
+  if (course.mixedWords) return mixedWordFrames(lesson, course.mixedWords);
   const vocab = lesson.vocab;
   const frames: Frame[] = [];
   const others = (item: VocabItem) => vocab.filter((other) => other.id !== item.id);
@@ -70,6 +71,196 @@ function wordFrames(lesson: Lesson): Frame[] {
       });
     }
   });
+  return frames;
+}
+
+/** A number from 0 to 1, always the same for the same seed. */
+function seeded(seed: string): number {
+  let h = 2166136261;
+  for (const ch of seed) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
+  h ^= h << 13;
+  h ^= h >>> 17;
+  h ^= h << 5;
+  return (h >>> 0) / 4294967296;
+}
+
+type WordTask = "hear" | "say" | "picture" | "truefalse" | "build" | "fill";
+
+/** A plain word of a phrase (no punctuation), usable as a gap or as a wrong option. */
+const plainWord = (token: string) => /^[\p{L}'-]+$/u.test(token) && token.length >= 2;
+
+/** One task of the given kind about one phrase, or null when that kind does not suit the phrase. */
+function wordTask(kind: WordTask, item: VocabItem, vocab: VocabItem[], texts: MixedWordTexts, tag: string): Activity | null {
+  const id = `${item.id}-mx-${kind}${tag}`;
+  const others = seededShuffle(
+    vocab.filter((other) => other.id !== item.id),
+    id,
+  );
+  const distract = others.slice(0, 2);
+  const tokens = item.ru.split(/\s+/).filter(Boolean);
+  const alternatives = item.ru.includes("/");
+  switch (kind) {
+    case "hear":
+      if (!distract.length) return null;
+      return {
+        kind: "choice",
+        id,
+        prompt: ui.whatDidYouHear,
+        audio: item.ru,
+        skill: "listening",
+        options: seededShuffle([item, ...distract], id).map((o) => ({ label: o.en, correct: o.id === item.id })),
+      };
+    case "say":
+      if (!distract.length) return null;
+      return {
+        kind: "choice",
+        id,
+        prompt: ui.howDoYouSay(item.en),
+        skill: "words",
+        options: seededShuffle([item, ...distract], id).map((o) => ({ label: o.ru, correct: o.id === item.id })),
+      };
+    case "picture":
+      if (!distract.length || !item.image) return null;
+      return {
+        kind: "choice",
+        id,
+        prompt: texts.picture,
+        image: item.image,
+        imageA11y: item.a11y,
+        skill: "words",
+        options: seededShuffle([item, ...distract], id).map((o) => ({ label: o.ru, correct: o.id === item.id })),
+      };
+    case "truefalse": {
+      const wrong = others[0];
+      const right = !wrong || seeded(id) < 0.5;
+      return {
+        kind: "truefalse",
+        id,
+        prompt: texts.trueFalse,
+        statement: texts.statement(item.ru, right ? item.en : (wrong?.en ?? item.en)),
+        correct: right,
+        skill: "words",
+      };
+    }
+    case "build":
+      if (alternatives || tokens.length < 3) return null;
+      return { kind: "build", id, prompt: texts.build(item.en), words: tokens, skill: "grammar", help: texts.buildHelp };
+    case "fill": {
+      if (alternatives || tokens.length < 2) return null;
+      const gaps = tokens.map((token, index) => ({ token, index })).filter(({ token }) => plainWord(token));
+      const gap = gaps[Math.floor(seeded(id) * gaps.length)];
+      if (!gap) return null;
+      const lower = gap.token.toLowerCase();
+      const pool = [
+        ...new Set(
+          others.flatMap((other) => other.ru.split(/\s+/)).filter((token) => plainWord(token) && token.toLowerCase() !== lower),
+        ),
+      ];
+      const wrongs = seededShuffle(pool, id).slice(0, 2);
+      if (wrongs.length < 2) return null;
+      return {
+        kind: "fill",
+        id,
+        prompt: texts.fill(item.en),
+        before: tokens.slice(0, gap.index).join(" "),
+        after: tokens.slice(gap.index + 1).join(" "),
+        answer: gap.token,
+        options: seededShuffle([gap.token, ...wrongs], id),
+        skill: "grammar",
+      };
+    }
+  }
+}
+
+/**
+ * Up to `count` tasks about one phrase, each of a different kind, in a mixed order.
+ * `skip`: kinds this phrase already had. `screen`: kinds already on this screen (used last, so a screen stays varied).
+ */
+function tasksFor(
+  item: VocabItem,
+  vocab: VocabItem[],
+  texts: MixedWordTexts,
+  count: number,
+  tag: string,
+  skip: WordTask[] = [],
+  screen: WordTask[] = [],
+) {
+  const shuffled = seededShuffle<WordTask>(["hear", "say", "picture", "truefalse", "build", "fill"], `${item.id}${tag}-kinds`);
+  const kinds = [...shuffled.filter((kind) => !screen.includes(kind)), ...shuffled.filter((kind) => screen.includes(kind))];
+  const out: { kind: WordTask; task: Activity }[] = [];
+  for (const kind of kinds) {
+    if (out.length >= count) break;
+    if (skip.includes(kind)) continue;
+    const task = wordTask(kind, item, vocab, texts, tag);
+    if (task) out.push({ kind, task });
+  }
+  return out;
+}
+
+/**
+ * Mixed word practice (courses with `mixedWords`): phrases come in groups of two or three.
+ * After each group comes one practice screen: one or two tasks of different kinds per new phrase,
+ * plus a task about a phrase from an earlier group, all in a mixed order. The lesson ends the words
+ * with a mixed round over all its phrases. The order is fixed per lesson, so a lesson can be resumed.
+ */
+function mixedWordFrames(lesson: Lesson, texts: MixedWordTexts): Frame[] {
+  const vocab = lesson.vocab;
+  const frames: Frame[] = [];
+  const sizes: number[] = [];
+  let left = vocab.length;
+  while (left > 0) {
+    const size = left <= 3 ? left : left === 4 ? 2 : seeded(`${lesson.id}-group-${sizes.length}`) < 0.5 ? 2 : 3;
+    sizes.push(size);
+    left -= size;
+  }
+  const used = new Map<string, WordTask[]>();
+  let start = 0;
+  sizes.forEach((size, group) => {
+    const batch = vocab.slice(start, start + size);
+    const earlier = vocab.slice(0, start);
+    batch.forEach((item, offset) =>
+      frames.push({ type: "word", item, index: start + offset, total: vocab.length, checks: [] }),
+    );
+    const items: Activity[] = [];
+    const onScreen: WordTask[] = [];
+    for (const item of batch) {
+      const count = seeded(`${item.id}-count`) < 0.5 ? 1 : 2;
+      const picked = tasksFor(item, vocab, texts, count, "", [], onScreen);
+      used.set(item.id, picked.map((p) => p.kind));
+      onScreen.push(...picked.map((p) => p.kind));
+      items.push(...picked.map((p) => p.task));
+    }
+    if (earlier.length) {
+      const back = seededShuffle(earlier, `${lesson.id}-back-${group}`)[0]!;
+      items.push(...tasksFor(back, vocab, texts, 1, `-late${group}`, used.get(back.id), onScreen).map((p) => p.task));
+    }
+    frames.push({
+      type: "single",
+      kicker: ui.vocabFocus,
+      title: ui.mixedCheck,
+      items: seededShuffle(items, `${lesson.id}-mix-${group}`),
+    });
+    start += size;
+  });
+  if (vocab.length >= 3) {
+    const pairs = seededShuffle(vocab, `${lesson.id}-final`).slice(0, 4);
+    const finale: Activity[] = [
+      {
+        kind: "match",
+        id: `${lesson.id}-mx-final`,
+        prompt: ui.matchPairs,
+        skill: "words",
+        pairs: pairs.map((w) => ({ left: w.ru, right: w.en })),
+      },
+    ];
+    const onScreen: WordTask[] = [];
+    for (const item of seededShuffle(vocab, `${lesson.id}-final-tasks`).slice(0, 2)) {
+      const picked = tasksFor(item, vocab, texts, 1, "-final", used.get(item.id), onScreen);
+      onScreen.push(...picked.map((p) => p.kind));
+      finale.push(...picked.map((p) => p.task));
+    }
+    frames.push({ type: "single", kicker: ui.vocabFocus, title: ui.mixedCheck, items: seededShuffle(finale, `${lesson.id}-finale`) });
+  }
   return frames;
 }
 

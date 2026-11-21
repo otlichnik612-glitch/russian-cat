@@ -1,4 +1,4 @@
-import type { CourseDef } from "../active";
+import type { CourseDef, MixedWordTexts } from "../active";
 import { pic } from "../art";
 import { hasCyrillic } from "../make";
 import { makeCourse } from "../model";
@@ -108,8 +108,20 @@ function makeDef(lang: PtNative, isTarget: (text: string) => boolean): CourseDef
     intro: resolveFor(intro, lang),
     speakers: ptSpeakers(lang),
     uiOverrides: resolveFor(uiOverrides, lang),
+    // Mixed word practice: for now only in the version for Russian speakers.
+    ...(lang === "ru" ? { mixedWords: mixedWordsRu } : {}),
   };
 }
+
+/** Task texts of the mixed word practice (version for Russian speakers). */
+const mixedWordsRu: MixedWordTexts = {
+  picture: "Что на картинке?",
+  trueFalse: "Перевод верный?",
+  statement: (target, native) => `«${target}» — это «${native}»`,
+  build: (native) => `Собери фразу: «${native}»`,
+  buildHelp: "Кнопками «Вверх» и «Вниз» поставь слова по порядку.",
+  fill: (native) => `Вставь пропущенное слово: «${native}»`,
+};
 
 const forRussians = makeDef("ru", isPortugueseForRussians);
 
